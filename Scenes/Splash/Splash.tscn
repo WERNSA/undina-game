@@ -1,13 +1,15 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Scenes/Splash/Sounds/sea-waves.ogg" type="AudioStream" id=1]
 [ext_resource path="res://Scenes/Splash/Scripts/Splash.gd" type="Script" id=2]
 [ext_resource path="res://Scenes/Splash/Images/wern-logo.png" type="Texture" id=3]
 [ext_resource path="res://Scenes/Splash/Images/fzt-logo.png" type="Texture" id=4]
+[ext_resource path="res://Scenes/Menu/Images/clouds.png" type="Texture" id=5]
+[ext_resource path="res://Scenes/Menu/Images/logo.png" type="Texture" id=6]
 
 [sub_resource type="Animation" id=1]
-resource_name = "FZT"
-length = 4.0
+resource_name = "Splash"
+length = 7.0
 tracks/0/type = "value"
 tracks/0/path = NodePath("FZTLogo:modulate")
 tracks/0/interp = 1
@@ -32,6 +34,42 @@ tracks/1/keys = {
 "update": 0,
 "values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
 }
+tracks/2/type = "value"
+tracks/2/path = NodePath("BgColor:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 4, 7 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("BgImage:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 4, 7 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Logo:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 5.5, 7 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
 
 [sub_resource type="Animation" id=2]
 resource_name = "Wern"
@@ -50,8 +88,8 @@ tracks/0/keys = {
 }
 
 [node name="Splash" type="Control"]
-margin_right = 1024.0
-margin_bottom = 600.0
+margin_right = 3200.0
+margin_bottom = 1400.0
 script = ExtResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -77,22 +115,31 @@ autostart = true
 
 [node name="WernLogo" type="Sprite" parent="."]
 modulate = Color( 1, 1, 1, 0 )
-position = Vector2( 768, 300 )
-scale = Vector2( 0.25, 0.25 )
+position = Vector2( 2558, 700 )
+scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 3 )
 
 [node name="FZTLogo" type="Sprite" parent="."]
 modulate = Color( 1, 1, 1, 0 )
-position = Vector2( 256, 300 )
-scale = Vector2( 0.5, 0.5 )
+position = Vector2( 900, 700 )
 texture = ExtResource( 4 )
-offset = Vector2( 145, 0 )
 
 [node name="AnimationSplash" type="AnimationPlayer" parent="."]
-anims/FZT = SubResource( 1 )
+anims/Splash = SubResource( 1 )
 anims/Wern = SubResource( 2 )
 
 [node name="TimerChangeScene" type="Timer" parent="."]
+
+[node name="BgImage" type="Sprite" parent="."]
+modulate = Color( 1, 1, 1, 0 )
+texture = ExtResource( 5 )
+centered = false
+
+[node name="Logo" type="Sprite" parent="."]
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 1600, 350 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 6 )
 
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
 [connection signal="animation_finished" from="AnimationSplash" to="." method="_on_AnimationSplash_animation_finished"]
