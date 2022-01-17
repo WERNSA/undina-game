@@ -19,12 +19,12 @@ size = 70
 outline_color = Color( 0, 0, 0, 1 )
 font_data = ExtResource( 6 )
 
-[sub_resource type="DynamicFont" id=4]
+[sub_resource type="DynamicFont" id=3]
 size = 70
 outline_color = Color( 0, 0, 0, 1 )
 font_data = ExtResource( 6 )
 
-[sub_resource type="DynamicFont" id=5]
+[sub_resource type="DynamicFont" id=4]
 size = 70
 outline_color = Color( 0, 0, 0, 1 )
 font_data = ExtResource( 6 )
@@ -187,7 +187,7 @@ margin_top = 61.0
 margin_right = 420.0
 margin_bottom = 211.0
 rect_min_size = Vector2( 350, 150 )
-custom_fonts/font = SubResource( 4 )
+custom_fonts/font = SubResource( 3 )
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 custom_constants/shadow_offset_x = -3
 text = "CARRERA
@@ -217,7 +217,7 @@ margin_top = 61.0
 margin_right = 420.0
 margin_bottom = 211.0
 rect_min_size = Vector2( 350, 150 )
-custom_fonts/font = SubResource( 5 )
+custom_fonts/font = SubResource( 4 )
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 custom_constants/shadow_offset_x = -3
 text = "LIMPIA LA COSTA"

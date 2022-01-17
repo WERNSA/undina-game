@@ -1,7 +1,7 @@
 [gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://Scenes/Registro/Scripts/Registro.gd" type="Script" id=1]
-[ext_resource path="res://Assets/Images/bg_main.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Images/bg_main.jpg" type="Texture" id=2]
 [ext_resource path="res://Assets/Images/board.png" type="Texture" id=3]
 [ext_resource path="res://Assets/Images/board_name.png" type="Texture" id=4]
 [ext_resource path="res://Assets/Images/board_label.png" type="Texture" id=5]
@@ -89,7 +89,7 @@ tracks/5/keys = {
 "times": PoolRealArray( 0, 0.5, 1 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ Vector2( 3203, 415 ), Vector2( 3203, 415 ), Vector2( 2475, 415 ) ]
+"values": [ Vector2( 3203, 750 ), Vector2( 3203, 750 ), Vector2( 2475, 750 ) ]
 }
 tracks/6/type = "value"
 tracks/6/path = NodePath("CartelIllea:modulate")
@@ -166,7 +166,7 @@ tracks/11/keys = {
 
 [node name="Registro" type="Control"]
 margin_right = 3200.0
-margin_bottom = 1400.0
+margin_bottom = 1800.0
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -174,10 +174,11 @@ __meta__ = {
 
 [node name="BgSound" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 12 )
+bus = "Music"
 
 [node name="BgImage" type="TextureRect" parent="."]
 margin_right = 3200.0
-margin_bottom = 1400.0
+margin_bottom = 1800.0
 texture = ExtResource( 2 )
 expand = true
 __meta__ = {
@@ -285,8 +286,9 @@ anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = 3.0
-margin_top = -985.0
+margin_top = -1050.0
 margin_right = 728.0
+margin_bottom = -65.0
 texture = ExtResource( 8 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -298,10 +300,14 @@ anims/ShowIllea = SubResource( 2 )
 [node name="CartelIllea" type="TextureRect" parent="."]
 visible = false
 modulate = Color( 1, 1, 1, 0 )
-margin_left = 759.5
-margin_top = 231.0
-margin_right = 2440.5
-margin_bottom = 1169.0
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -840.5
+margin_top = -469.0
+margin_right = 840.5
+margin_bottom = 469.0
 texture = ExtResource( 9 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -317,7 +323,7 @@ anchor_bottom = 0.5
 margin_left = -650.0
 margin_top = -100.0
 margin_right = 650.0
-margin_bottom = 100.0
+margin_bottom = 113.0
 custom_fonts/font = ExtResource( 10 )
 autowrap = true
 __meta__ = {
@@ -331,9 +337,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 margin_left = 702.77
-margin_top = 127.798
+margin_top = 210.0
 margin_right = 957.77
-margin_bottom = 400.798
+margin_bottom = 483.0
 rect_rotation = 180.0
 rect_scale = Vector2( 0.5, 0.5 )
 texture_normal = ExtResource( 11 )

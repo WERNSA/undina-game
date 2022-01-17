@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://Scenes/Options/Images/btnSettings.png" type="Texture" id=1]
 [ext_resource path="res://Scenes/Options/Images/btnExit.png" type="Texture" id=2]
@@ -6,6 +6,9 @@
 [ext_resource path="res://Assets/Fonts/MouseMemoirs-Regular.ttf" type="DynamicFontData" id=4]
 [ext_resource path="res://Assets/Images/btn_yes.png" type="Texture" id=5]
 [ext_resource path="res://Assets/Images/btn_no.png" type="Texture" id=6]
+[ext_resource path="res://Assets/Fonts/settingsFonts.tres" type="DynamicFont" id=7]
+[ext_resource path="res://Assets/Images/btn_arrow.png" type="Texture" id=8]
+[ext_resource path="res://Assets/Fonts/btnFont.tres" type="DynamicFont" id=9]
 
 [sub_resource type="DynamicFont" id=1]
 size = 150
@@ -13,7 +16,7 @@ outline_color = Color( 0, 0, 0, 1 )
 font_data = ExtResource( 4 )
 
 [sub_resource type="Animation" id=2]
-resource_name = "ConfirmExit"
+resource_name = "AudioSettings"
 tracks/0/type = "value"
 tracks/0/path = NodePath(".:rect_size")
 tracks/0/interp = 1
@@ -24,7 +27,7 @@ tracks/0/keys = {
 "times": PoolRealArray( 0, 0.1 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
-"values": [ Vector2( 3200, 238 ), Vector2( 3200, 1400 ) ]
+"values": [ Vector2( 3200, 250 ), Vector2( 3200, 1800 ) ]
 }
 tracks/1/type = "value"
 tracks/1/path = NodePath(".:rect_position")
@@ -36,7 +39,96 @@ tracks/1/keys = {
 "times": PoolRealArray( 0, 0.1 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
-"values": [ Vector2( 0, 1162 ), Vector2( 0, 0 ) ]
+"values": [ Vector2( 0, 1550 ), Vector2( 0, 0 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("AudioSettings:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+
+[sub_resource type="Animation" id=3]
+resource_name = "CloseMenu"
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 0, 1563 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:rect_size")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 3200, 237 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("ConfirmExit:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("AudioSettings:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+
+[sub_resource type="Animation" id=4]
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:rect_size")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 3200, 246 ), Vector2( 3200, 1800 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:rect_position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 1554 ), Vector2( 0, 0 ) ]
 }
 tracks/2/type = "value"
 tracks/2/path = NodePath("ConfirmExit:visible")
@@ -52,9 +144,10 @@ tracks/2/keys = {
 }
 
 [node name="Options" type="Control"]
+anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_top = 1162.0
+margin_top = -250.0
 script = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -66,6 +159,9 @@ anchor_bottom = 1.0
 margin_top = -273.0
 margin_right = 255.0
 texture_normal = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="btnExit" type="TextureButton" parent="."]
 anchor_left = 1.0
@@ -82,14 +178,14 @@ __meta__ = {
 [node name="ConfirmExit" type="Control" parent="."]
 visible = false
 margin_right = 3200.0
-margin_bottom = 1400.0
+margin_bottom = 1800.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="ColorRect" type="ColorRect" parent="ConfirmExit"]
 margin_right = 3200.0
-margin_bottom = 1400.0
+margin_bottom = 1800.0
 color = Color( 0, 0, 0, 0.588235 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -142,10 +238,141 @@ __meta__ = {
 }
 
 [node name="AnimationConfirm" type="AnimationPlayer" parent="."]
-anims/ConfirmExit = SubResource( 2 )
+anims/AudioSettings = SubResource( 2 )
+anims/CloseMenu = SubResource( 3 )
+anims/ConfirmExit = SubResource( 4 )
 
+[node name="AudioSettings" type="Control" parent="."]
+visible = false
+margin_right = 3200.0
+margin_bottom = 1800.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="AudioSettings"]
+margin_right = 3200.0
+margin_bottom = 1800.0
+color = Color( 0, 0, 0, 0.588235 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LblMusic" type="Label" parent="AudioSettings"]
+margin_left = 1234.5
+margin_top = 653.914
+margin_right = 1965.5
+margin_bottom = 721.914
+rect_pivot_offset = Vector2( -552.951, 118.944 )
+custom_fonts/font = ExtResource( 7 )
+text = "MÚSICA"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LblAudioSettings" type="Label" parent="AudioSettings"]
+margin_left = 1234.5
+margin_top = 476.914
+margin_right = 1965.5
+margin_bottom = 649.914
+rect_pivot_offset = Vector2( -552.951, 118.944 )
+custom_fonts/font = SubResource( 1 )
+text = "AJUSTES DE AUDIO"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SliderMusic" type="HSlider" parent="AudioSettings"]
+margin_left = 1235.0
+margin_top = 720.243
+margin_right = 1416.0
+margin_bottom = 736.243
+rect_scale = Vector2( 4, 4 )
+min_value = -40.0
+max_value = 0.0
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": "Musica"
+}
+
+[node name="LblVoices" type="Label" parent="AudioSettings"]
+margin_left = 1234.5
+margin_top = 791.914
+margin_right = 1965.5
+margin_bottom = 859.914
+rect_pivot_offset = Vector2( -552.951, 118.944 )
+custom_fonts/font = ExtResource( 7 )
+text = "VOCES"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SliderVoices" type="HSlider" parent="AudioSettings"]
+margin_left = 1234.5
+margin_top = 854.914
+margin_right = 1415.5
+margin_bottom = 870.914
+rect_scale = Vector2( 4, 4 )
+min_value = -40.0
+max_value = 0.0
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": "Musica"
+}
+
+[node name="LblSFX" type="Label" parent="AudioSettings"]
+margin_left = 1234.5
+margin_top = 916.914
+margin_right = 1965.5
+margin_bottom = 984.914
+rect_pivot_offset = Vector2( -552.951, 118.944 )
+custom_fonts/font = ExtResource( 7 )
+text = "EFECTOS DE SONIDO"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SliderSFX" type="HSlider" parent="AudioSettings"]
+margin_left = 1234.5
+margin_top = 978.914
+margin_right = 1415.5
+margin_bottom = 994.914
+rect_scale = Vector2( 4, 4 )
+min_value = -40.0
+max_value = 0.0
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": "Musica"
+}
+
+[node name="BtnBack" type="TextureButton" parent="AudioSettings"]
+margin_right = 255.0
+margin_bottom = 273.0
+texture_normal = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="AudioSettings"]
+margin_left = 1332.29
+margin_top = 1093.0
+margin_right = 1859.29
+margin_bottom = 1202.0
+custom_fonts/font = ExtResource( 9 )
+text = "SILENCIAR TODO"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="pressed" from="btnSettings" to="." method="_on_btnSettings_pressed"]
 [connection signal="pressed" from="btnExit" to="." method="_on_btnExit_pressed"]
-[connection signal="pressed" from="ConfirmExit/VBoxContainer/HBoxContainer/btnYes" to="." method="_on_btnYes_pressed"]
 [connection signal="pressed" from="ConfirmExit/VBoxContainer/HBoxContainer/btnYes" to="." method="_on_btnExit_pressed"]
+[connection signal="pressed" from="ConfirmExit/VBoxContainer/HBoxContainer/btnYes" to="." method="_on_btnYes_pressed"]
 [connection signal="pressed" from="ConfirmExit/VBoxContainer/HBoxContainer/btnNo" to="." method="_on_btnExit_pressed"]
 [connection signal="pressed" from="ConfirmExit/VBoxContainer/HBoxContainer/btnNo" to="." method="_on_btnNo_pressed"]
+[connection signal="value_changed" from="AudioSettings/SliderMusic" to="." method="_on_SliderMusic_value_changed"]
+[connection signal="value_changed" from="AudioSettings/SliderVoices" to="." method="_on_SliderVoices_value_changed"]
+[connection signal="value_changed" from="AudioSettings/SliderSFX" to="." method="_on_SliderSFX_value_changed"]
+[connection signal="pressed" from="AudioSettings/BtnBack" to="." method="_on_BtnBack_pressed"]
+[connection signal="pressed" from="AudioSettings/Button" to="." method="_on_Button_pressed"]

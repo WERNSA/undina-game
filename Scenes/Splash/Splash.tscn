@@ -4,7 +4,7 @@
 [ext_resource path="res://Scenes/Splash/Scripts/Splash.gd" type="Script" id=2]
 [ext_resource path="res://Scenes/Splash/Images/wern-logo.png" type="Texture" id=3]
 [ext_resource path="res://Scenes/Splash/Images/fzt-logo.png" type="Texture" id=4]
-[ext_resource path="res://Scenes/Menu/Images/clouds.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Images/bg_main.jpg" type="Texture" id=5]
 [ext_resource path="res://Scenes/Menu/Images/logo.png" type="Texture" id=6]
 
 [sub_resource type="Animation" id=1]
@@ -41,7 +41,7 @@ tracks/2/loop_wrap = true
 tracks/2/imported = false
 tracks/2/enabled = true
 tracks/2/keys = {
-"times": PoolRealArray( 4, 7 ),
+"times": PoolRealArray( 0, 7 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
 "values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
@@ -89,13 +89,14 @@ tracks/0/keys = {
 
 [node name="Splash" type="Control"]
 margin_right = 3200.0
-margin_bottom = 1400.0
+margin_bottom = 1800.0
 script = ExtResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="BgColor" type="ColorRect" parent="."]
+modulate = Color( 1, 1, 1, 0.996917 )
 anchor_right = 1.0
 anchor_bottom = 1.0
 color = Color( 0, 0, 0, 1 )
@@ -107,6 +108,7 @@ __meta__ = {
 stream = ExtResource( 1 )
 volume_db = -5.0
 autoplay = true
+bus = "Music"
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 2.0
@@ -115,13 +117,13 @@ autostart = true
 
 [node name="WernLogo" type="Sprite" parent="."]
 modulate = Color( 1, 1, 1, 0 )
-position = Vector2( 2558, 700 )
+position = Vector2( 2558, 900 )
 scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 3 )
 
 [node name="FZTLogo" type="Sprite" parent="."]
 modulate = Color( 1, 1, 1, 0 )
-position = Vector2( 900, 700 )
+position = Vector2( 900, 900 )
 texture = ExtResource( 4 )
 
 [node name="AnimationSplash" type="AnimationPlayer" parent="."]
