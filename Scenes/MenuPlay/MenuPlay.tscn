@@ -47,9 +47,9 @@ anchor_right = 0.5
 margin_left = -517.5
 margin_right = 517.5
 margin_bottom = 101.0
-custom_fonts/font = SubResource( 1 )
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 custom_constants/shadow_offset_x = -3
+custom_fonts/font = SubResource( 1 )
 align = 1
 __meta__ = {
 "_edit_use_anchors_": false
@@ -95,9 +95,9 @@ margin_left = 100.0
 margin_top = 93.0
 margin_right = 389.0
 margin_bottom = 179.0
-custom_fonts/font = ExtResource( 1 )
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 custom_constants/shadow_offset_x = -3
+custom_fonts/font = ExtResource( 1 )
 text = "HISTORIA"
 
 [node name="FishContainer" type="CenterContainer" parent="ButtonsContainer/FirstContainer"]
@@ -122,9 +122,9 @@ margin_left = 125.0
 margin_top = 93.0
 margin_right = 364.0
 margin_bottom = 179.0
-custom_fonts/font = ExtResource( 1 )
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 custom_constants/shadow_offset_x = -3
+custom_fonts/font = ExtResource( 1 )
 text = "PESCAR"
 
 [node name="TimeContainer" type="CenterContainer" parent="ButtonsContainer/FirstContainer"]
@@ -150,9 +150,9 @@ margin_top = 61.0
 margin_right = 420.0
 margin_bottom = 211.0
 rect_min_size = Vector2( 350, 150 )
-custom_fonts/font = SubResource( 2 )
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 custom_constants/shadow_offset_x = -3
+custom_fonts/font = SubResource( 2 )
 text = "CONTRA TIEMPO"
 align = 1
 autowrap = true
@@ -187,9 +187,9 @@ margin_top = 61.0
 margin_right = 420.0
 margin_bottom = 211.0
 rect_min_size = Vector2( 350, 150 )
-custom_fonts/font = SubResource( 3 )
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 custom_constants/shadow_offset_x = -3
+custom_fonts/font = SubResource( 3 )
 text = "CARRERA
 OBSTÁCULOS"
 align = 1
@@ -217,9 +217,9 @@ margin_top = 61.0
 margin_right = 420.0
 margin_bottom = 211.0
 rect_min_size = Vector2( 350, 150 )
-custom_fonts/font = SubResource( 4 )
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 custom_constants/shadow_offset_x = -3
+custom_fonts/font = SubResource( 4 )
 text = "LIMPIA LA COSTA"
 align = 1
 autowrap = true
@@ -246,9 +246,9 @@ margin_left = 137.0
 margin_top = 93.0
 margin_right = 353.0
 margin_bottom = 179.0
-custom_fonts/font = ExtResource( 1 )
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 custom_constants/shadow_offset_x = -3
+custom_fonts/font = ExtResource( 1 )
 text = "TRIVIA"
 
 [node name="BtnBack" type="TextureButton" parent="."]
