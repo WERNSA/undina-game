@@ -33,11 +33,9 @@ font_data = ExtResource( 6 )
 anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource( 7 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="BgImage" type="Sprite" parent="."]
+scale = Vector2( 1, 1.29286 )
 texture = ExtResource( 2 )
 centered = false
 
@@ -82,6 +80,7 @@ margin_bottom = 273.0
 [node name="BtnHistory" type="TextureButton" parent="ButtonsContainer/FirstContainer/HistoryContainer"]
 margin_right = 490.0
 margin_bottom = 273.0
+disabled = true
 texture_normal = ExtResource( 4 )
 texture_pressed = ExtResource( 5 )
 texture_hover = ExtResource( 5 )
@@ -108,7 +107,6 @@ margin_bottom = 550.0
 [node name="BtnFish" type="TextureButton" parent="ButtonsContainer/FirstContainer/FishContainer"]
 margin_right = 490.0
 margin_bottom = 273.0
-disabled = true
 texture_normal = ExtResource( 4 )
 texture_pressed = ExtResource( 5 )
 texture_hover = ExtResource( 5 )
@@ -232,7 +230,6 @@ margin_bottom = 827.0
 [node name="BtnQuiz" type="TextureButton" parent="ButtonsContainer/SecondContainer/QuizContainer"]
 margin_right = 490.0
 margin_bottom = 273.0
-disabled = true
 texture_normal = ExtResource( 4 )
 texture_pressed = ExtResource( 5 )
 texture_hover = ExtResource( 5 )
@@ -261,4 +258,6 @@ __meta__ = {
 
 [node name="Options" parent="." instance=ExtResource( 3 )]
 
+[connection signal="pressed" from="ButtonsContainer/FirstContainer/FishContainer/BtnFish" to="." method="_on_BtnFish_pressed"]
+[connection signal="pressed" from="ButtonsContainer/SecondContainer/QuizContainer/BtnQuiz" to="." method="_on_BtnQuiz_pressed"]
 [connection signal="pressed" from="BtnBack" to="." method="_on_BtnBack_pressed"]

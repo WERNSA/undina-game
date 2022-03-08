@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Assets/Images/btn_pause.png" type="Texture" id=1]
+[ext_resource path="res://Scenes/Pause/PauseMenu.gd" type="Script" id=2]
+
+[node name="PauseMenu" type="Sprite"]
+z_index = 2
+script = ExtResource( 2 )
+
+[node name="BtnPause" type="TextureButton" parent="."]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -255.0
+margin_top = -240.0
+texture_normal = ExtResource( 1 )
+
+[connection signal="pressed" from="BtnPause" to="." method="_on_BtnPause_pressed"]

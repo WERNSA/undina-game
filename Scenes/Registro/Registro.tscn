@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://Scenes/Registro/Scripts/Registro.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Images/bg_main.jpg" type="Texture" id=2]
@@ -15,6 +15,21 @@
 [ext_resource path="res://Assets/Images/btn_yellow_disabled.png" type="Texture" id=13]
 
 [sub_resource type="StyleBoxEmpty" id=1]
+
+[sub_resource type="Animation" id=3]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("Illea:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 3203, 550 ) ]
+}
 
 [sub_resource type="Animation" id=2]
 resource_name = "ShowIllea"
@@ -89,7 +104,7 @@ tracks/5/keys = {
 "times": PoolRealArray( 0, 0.5, 1 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ Vector2( 3203, 750 ), Vector2( 3203, 750 ), Vector2( 2475, 750 ) ]
+"values": [ Vector2( 3203, 550 ), Vector2( 3203, 550 ), Vector2( 2475, 550 ) ]
 }
 tracks/6/type = "value"
 tracks/6/path = NodePath("CartelIllea:modulate")
@@ -255,9 +270,9 @@ margin_left = 129.0
 margin_top = 93.0
 margin_right = 360.0
 margin_bottom = 179.0
-custom_fonts/font = ExtResource( 6 )
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 custom_constants/shadow_offset_x = -3
+custom_fonts/font = ExtResource( 6 )
 text = "SEGUIR"
 align = 1
 uppercase = true
@@ -271,8 +286,8 @@ margin_left = -400.0
 margin_top = -170.0
 margin_right = 400.0
 margin_bottom = 50.0
-custom_styles/normal = SubResource( 1 )
 custom_fonts/font = ExtResource( 6 )
+custom_styles/normal = SubResource( 1 )
 align = 1
 max_length = 16
 placeholder_text = "INSERTAR NOMBRE"
@@ -285,16 +300,14 @@ anchor_left = 1.0
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = 3.0
-margin_top = -1050.0
-margin_right = 728.0
-margin_bottom = -65.0
+margin_left = 3203.0
+margin_top = 550.0
+margin_right = 3928.0
+margin_bottom = 1788.0
 texture = ExtResource( 8 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="AnimationIllea" type="AnimationPlayer" parent="."]
+anims/RESET = SubResource( 3 )
 anims/ShowIllea = SubResource( 2 )
 
 [node name="CartelIllea" type="TextureRect" parent="."]
@@ -332,6 +345,7 @@ __meta__ = {
 
 [node name="btnContinue" type="TextureButton" parent="."]
 visible = false
+modulate = Color( 1, 1, 1, 0.0211673 )
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5

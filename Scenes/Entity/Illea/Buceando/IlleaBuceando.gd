@@ -1,0 +1,83 @@
+extends KinematicBody2D
+
+const SPEED = 100
+const SPEED_RUN = 150 ## RUN SPEED
+const FLOOR = Vector2(0, -1)
+const GRAVITY =  1
+onready var motion = Vector2.ZERO
+const BOUNCING_JUMP = 60 # He creado esta constante para definir la fuerza de rebote en la pared.
+const CAST_WALL = 10 # Esta constante es para definir la distancia de colisión con la pared.
+const CAST_ENEMY = 300 # Esta constante es para definir la distancia de colisión con los enemigos.
+onready var level = get_tree().get_nodes_in_group("level_pesca")[0]
+onready var trash = []
+var box
+var pointing : int = 1
+""" STATE MACHINE """
+
+func _ready():
+	$AnimationPlayer.play("Idle") # Iniciamos en el estado Idle.
+
+func _process(_delta):
+	motion_ctrl()
+	direction_ctrl()
+
+func get_axis() -> Vector2:
+	var axis = Vector2.ZERO
+	axis.x = int(Input.is_action_pressed("ui_right")) - int(Input.is_action_pressed("ui_left"))
+	if Input.is_action_pressed("ui_up"):
+		axis.y = int(Input.is_action_pressed("ui_down")) - int(Input.is_action_pressed("ui_up"))
+	else:
+		axis.y = int(Input.is_action_pressed("ui_down")) - int(Input.is_action_pressed("ui_up")) + GRAVITY
+
+	if axis.x != 0:
+		pointing = axis.x
+	
+	return axis
+
+func motion_ctrl():
+	if Input.is_action_pressed("run"):
+		motion = get_axis() * SPEED_RUN
+	else:
+		motion = get_axis() * SPEED
+#	motion.y += GRAVITY
+		
+	$AnimationPlayer.play("Idle" if get_axis().x == 0 else "Move")
+	if Input.is_action_pressed("grab"):
+		$AnimationPlayer.play("Grab")
+	if get_axis().x == 0:
+		$Sprite.flip_h = pointing == -1
+	elif !Input.is_action_pressed("grab"):
+		$Sprite.flip_h = get_axis().x == -1 ## DIRECCIÓN EN LA QUE EL SPRITE MIRA
+	motion = move_and_slide(motion, FLOOR)
+	for t in trash:
+		if t != null:
+			t.move_and_slide(motion, FLOOR)
+	raycast_ctrl(motion)
+	
+
+func raycast_ctrl(mot):
+	var col = $RayEnemy.get_collider() # Mismo procedimiento que el Raycast de la pared.
+	var col_boat = $RayBoat.get_collider()
+	if $RayBoat.is_colliding() and col_boat.is_in_group("boat"):
+		free_trash()
+	if $RayEnemy.is_colliding():
+		if col.is_in_group("enemy"):
+			if trash.empty():
+				trash.append(col)
+				col.disable_collider()
+		if col.is_in_group("boat"):
+			free_trash()
+		if Input.is_action_pressed("grab") and col.is_in_group("obstacle"):
+			col.apply_central_impulse(mot)
+
+func free_trash():
+	for t in trash:
+		t.queue_free()
+		level.add_trash_count()
+	trash = []
+	
+
+# Como es probable que se vayan agregando componentes creamos esta función para mantener cierto orden en el código e indicar la dirección de ciertos elementos.
+func direction_ctrl(): 
+	# MOVER EL RAYCAST EN LA DIRECCIÓN QUE VA EL PLAYER
+	$RayEnemy.cast_to.x = CAST_ENEMY * get_axis().x

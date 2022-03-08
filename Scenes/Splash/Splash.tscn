@@ -91,9 +91,6 @@ tracks/0/keys = {
 margin_right = 3200.0
 margin_bottom = 1800.0
 script = ExtResource( 2 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="BgColor" type="ColorRect" parent="."]
 modulate = Color( 1, 1, 1, 0.996917 )
