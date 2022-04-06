@@ -5,9 +5,7 @@ const SPEED_RUN = 150 ## RUN SPEED
 const FLOOR = Vector2(0, -1)
 const GRAVITY =  1
 onready var motion = Vector2.ZERO
-const BOUNCING_JUMP = 60 # He creado esta constante para definir la fuerza de rebote en la pared.
-const CAST_WALL = 10 # Esta constante es para definir la distancia de colisión con la pared.
-const CAST_ENEMY = 300 # Esta constante es para definir la distancia de colisión con los enemigos.
+const CAST_ENEMY = 70 # Esta constante es para definir la distancia de colisión con los enemigos.
 onready var level = get_tree().get_nodes_in_group("level_pesca")[0]
 onready var trash = []
 var box
@@ -31,7 +29,6 @@ func get_axis() -> Vector2:
 
 	if axis.x != 0:
 		pointing = axis.x
-	
 	return axis
 
 func motion_ctrl():
@@ -41,7 +38,13 @@ func motion_ctrl():
 		motion = get_axis() * SPEED
 #	motion.y += GRAVITY
 		
-	$AnimationPlayer.play("Idle" if get_axis().x == 0 else "Move")
+	if get_axis().y == -1:
+		$AnimationPlayer.play("Move")
+	elif get_axis().x == 0:
+		$AnimationPlayer.play("Idle")
+	else:
+		$AnimationPlayer.play("Move")
+
 	if Input.is_action_pressed("grab"):
 		$AnimationPlayer.play("Grab")
 	if get_axis().x == 0:

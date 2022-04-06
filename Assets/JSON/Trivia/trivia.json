@@ -1,0 +1,98 @@
+{
+    "Geografia": [
+        {
+            "title": "¿Cuál es el océano más profundo?",
+            "options": [
+                "Océano Pacífico",
+                "Atlántico",
+                "Indico"
+            ],
+            "answer": "Océano Pacífico",
+            "long_answer": "Océano Pacífico (El punto más profundo es de 10,924 m del Abismo de Challenger, en la fosa de las Marianas)"
+        },
+        {
+            "title": "¿Cuántos océanos hay en la tierra?",
+            "options": [
+                "6",
+                "5",
+                "7"
+            ],
+            "answer": "5",
+            "long_answer": "5 (Pacífico, Atlántico, índico, Antártico, Ártico.)"
+        },
+        {
+            "title": "¿Cuál es el océano menos profundo?",
+            "options": [
+                "Ártico",
+                "Antártico",
+                "Indico"
+            ],
+            "answer": "Ártico",
+            "long_answer": "Océano Ártico (Con una profundidad promedio de 1,500 metros)"
+        },
+        {
+            "title": "¿Qué porcentaje de la tierra está cubierta por océanos?",
+            "options": [
+                "80.4%",
+                "50.3%",
+                "70.9%"
+            ],
+            "answer": "70.9%",
+            "long_answer": "Un 70.9% ( Entre océanos, mares, glaciares, casquetes polares, pozos y subsuelo)"
+        }
+    ],
+    "Fauna": [
+        {
+            "title": "¿Cuál es la comida favorita de las tortugas?",
+            "options": [
+                "Medusas",
+                "Peces",
+                "Caracoles"
+            ],
+            "answer": "Medusas",
+            "long_answer": "Medusas (Las tortugas aman las medusas, sin embargo, con la contaminación en los océanos las confunden con bolsas plásticas)"
+        },
+        {
+            "title": "¿Cuántos especies de tiburones existen?",
+            "options": [
+                "350-400",
+                "50-100",
+                "200-300"
+            ],
+            "answer": "350-400",
+            "long_answer": "Entre 350-400 (tiburones navegando en las profundidades marinas y oceánicas del mundo)"
+        },
+        {
+            "title": "¿Cuál es el animal más grande que vive en los océanos?",
+            "options": [
+                "Orca",
+                "Ballena Azul",
+                "Elefante Marino"
+            ],
+            "answer": "Ballena Azul",
+            "long_answer": "Ballena azul (Un majestuoso mamífero marino que alcanza los 30 metros de longitud y las 180 toneladas de peso)"
+        },
+        {
+            "title": "¿Qué es veda marina?",
+            "options": [
+                "Periodo de tiempo en el que se prohíbe la captura.",
+                "Periodo de tiempo en que los animales del océano se alimentan.",
+                "Periodo de tiempo en que las algas crecen."
+            ],
+            "answer": "Periodo de tiempo en el que se prohíbe la captura.",
+            "long_answer": "Periodo de tiempo en el que se prohíbe la captura de especies marinas."
+        }
+    ],
+    "Flora": [
+        {
+            "title": "¿Cuántos tipos de algas existen?",
+            "options": [
+                "4",
+                "10",
+                "55"
+            ],
+            "answer": "4",
+            "long_answer": "4 (Algas verdes, rojas, pardas y azules)"
+        }
+    ]
+}

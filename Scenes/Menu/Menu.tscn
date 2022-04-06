@@ -81,9 +81,6 @@ anchor_bottom = 0.5
 margin_left = -739.0
 margin_right = 739.0
 margin_bottom = 136.5
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="PlayContainer" type="CenterContainer" parent="ButtonsContainer"]
 margin_right = 490.0

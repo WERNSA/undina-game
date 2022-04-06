@@ -1,11 +1,54 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Scenes/Splash/Sounds/sea-waves.ogg" type="AudioStream" id=1]
 [ext_resource path="res://Scenes/Splash/Scripts/Splash.gd" type="Script" id=2]
 [ext_resource path="res://Scenes/Splash/Images/wern-logo.png" type="Texture" id=3]
 [ext_resource path="res://Scenes/Splash/Images/fzt-logo.png" type="Texture" id=4]
 [ext_resource path="res://Assets/Images/bg_main.jpg" type="Texture" id=5]
-[ext_resource path="res://Scenes/Menu/Images/logo.png" type="Texture" id=6]
+[ext_resource path="res://Assets/Fonts/btnFont.tres" type="DynamicFont" id=6]
+
+[sub_resource type="Animation" id=3]
+length = 0.001
+tracks/0/type = "bezier"
+tracks/0/path = NodePath("LblPlay:modulate:r")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"points": PoolRealArray( 1, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/1/type = "bezier"
+tracks/1/path = NodePath("LblPlay:modulate:g")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"points": PoolRealArray( 1, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/2/type = "bezier"
+tracks/2/path = NodePath("LblPlay:modulate:b")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"points": PoolRealArray( 1, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/3/type = "bezier"
+tracks/3/path = NodePath("LblPlay:modulate:a")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
 
 [sub_resource type="Animation" id=1]
 resource_name = "Splash"
@@ -58,17 +101,45 @@ tracks/3/keys = {
 "update": 0,
 "values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
 }
-tracks/4/type = "value"
-tracks/4/path = NodePath("Logo:modulate")
+tracks/4/type = "bezier"
+tracks/4/path = NodePath("LblPlay:modulate:r")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/imported = false
 tracks/4/enabled = true
 tracks/4/keys = {
-"times": PoolRealArray( 0, 5.5, 7 ),
-"transitions": PoolRealArray( 1, 1, 1 ),
-"update": 0,
-"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+"points": PoolRealArray( 1, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 2, 4 )
+}
+tracks/5/type = "bezier"
+tracks/5/path = NodePath("LblPlay:modulate:g")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"points": PoolRealArray( 1, -0.25, 0, 0.25, 0, 0.788235, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 2, 4 )
+}
+tracks/6/type = "bezier"
+tracks/6/path = NodePath("LblPlay:modulate:b")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"points": PoolRealArray( 1, -0.25, 0, 0.25, 0, 0.819608, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 2, 4 )
+}
+tracks/7/type = "bezier"
+tracks/7/path = NodePath("LblPlay:modulate:a")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 2, 4 )
 }
 
 [sub_resource type="Animation" id=2]
@@ -93,7 +164,6 @@ margin_bottom = 1800.0
 script = ExtResource( 2 )
 
 [node name="BgColor" type="ColorRect" parent="."]
-modulate = Color( 1, 1, 1, 0.996917 )
 anchor_right = 1.0
 anchor_bottom = 1.0
 color = Color( 0, 0, 0, 1 )
@@ -120,10 +190,11 @@ texture = ExtResource( 3 )
 
 [node name="FZTLogo" type="Sprite" parent="."]
 modulate = Color( 1, 1, 1, 0 )
-position = Vector2( 900, 900 )
+position = Vector2( 700, 900 )
 texture = ExtResource( 4 )
 
 [node name="AnimationSplash" type="AnimationPlayer" parent="."]
+anims/RESET = SubResource( 3 )
 anims/Splash = SubResource( 1 )
 anims/Wern = SubResource( 2 )
 
@@ -131,14 +202,28 @@ anims/Wern = SubResource( 2 )
 
 [node name="BgImage" type="Sprite" parent="."]
 modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 916, 1230 )
 texture = ExtResource( 5 )
 centered = false
+offset = Vector2( -916, -1230 )
 
-[node name="Logo" type="Sprite" parent="."]
+[node name="LblPlay" type="Label" parent="."]
 modulate = Color( 1, 1, 1, 0 )
-position = Vector2( 1600, 350 )
-scale = Vector2( 0.5, 0.5 )
-texture = ExtResource( 6 )
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -364.5
+margin_top = -87.5
+margin_right = 460.5
+margin_bottom = 87.5
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = -3
+custom_fonts/font = ExtResource( 6 )
+text = "FAMILIA
+RODRÍGUEZ VELÁSQUEZ"
+align = 1
+autowrap = true
 
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
 [connection signal="animation_finished" from="AnimationSplash" to="." method="_on_AnimationSplash_animation_finished"]

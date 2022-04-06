@@ -17,3 +17,7 @@ func _on_BtnFish_pressed():
 func _on_BtnQuiz_pressed():
 	get_tree().call_deferred("change_scene", "res://Scenes/Games/Trivia/Trivia.tscn")
 	
+
+
+func _on_BtnClean_pressed():
+	get_tree().call_deferred("change_scene", "res://Scenes/Games/LimpiandoCosta/LimpiandoCosta.tscn")

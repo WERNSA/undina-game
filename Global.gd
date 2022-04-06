@@ -3,6 +3,7 @@ extends Node
 
 # Declare member variables here. Examples:
 var player_name
+onready var rng : RandomNumberGenerator = RandomNumberGenerator.new()
 
 
 # Called when the node enters the scene tree for the first time.
@@ -30,3 +31,13 @@ func write_data(text):
 	file.open(dir, File.WRITE)
 	file.store_string(text)
 	file.close()
+
+func random_int(min_number, max_number):
+	rng.randomize()
+	var random = rng.randi_range(min_number, max_number)
+	return random
+
+func random_float(min_number, max_number):
+	rng.randomize()
+	var random = rng.randf_range(min_number, max_number)
+	return random

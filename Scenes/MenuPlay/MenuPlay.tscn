@@ -200,7 +200,6 @@ margin_bottom = 550.0
 [node name="BtnClean" type="TextureButton" parent="ButtonsContainer/SecondContainer/CleanContainer"]
 margin_right = 490.0
 margin_bottom = 273.0
-disabled = true
 texture_normal = ExtResource( 4 )
 texture_pressed = ExtResource( 5 )
 texture_hover = ExtResource( 5 )
@@ -259,5 +258,6 @@ __meta__ = {
 [node name="Options" parent="." instance=ExtResource( 3 )]
 
 [connection signal="pressed" from="ButtonsContainer/FirstContainer/FishContainer/BtnFish" to="." method="_on_BtnFish_pressed"]
+[connection signal="pressed" from="ButtonsContainer/SecondContainer/CleanContainer/BtnClean" to="." method="_on_BtnClean_pressed"]
 [connection signal="pressed" from="ButtonsContainer/SecondContainer/QuizContainer/BtnQuiz" to="." method="_on_BtnQuiz_pressed"]
 [connection signal="pressed" from="BtnBack" to="." method="_on_BtnBack_pressed"]
