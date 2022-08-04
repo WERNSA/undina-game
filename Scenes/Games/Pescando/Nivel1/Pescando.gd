@@ -120,6 +120,7 @@ var turtle_trash_position = [
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	randomize()
 	$Contador.set_count(str(TRASH_COUNT))
 	$HUD/GameOver/CenterContainer/HBoxContainer/BtnTry.connect("pressed", self, "_on_try_again")
 	$HUD/Win/CenterContainer/HBoxContainer/BtnTry.connect("pressed", self, "_on_try_again")

@@ -7,7 +7,7 @@
 [ext_resource path="res://Assets/Images/board_label.png" type="Texture" id=5]
 [ext_resource path="res://Assets/Fonts/btnFont.tres" type="DynamicFont" id=6]
 [ext_resource path="res://Assets/Images/btn_yellow.png" type="Texture" id=7]
-[ext_resource path="res://Assets/Images/Animaciones/Caminando/Tres cuartos a la derecha/Derecha 9.png" type="Texture" id=8]
+[ext_resource path="res://Assets/Images/Animaciones/Recogiendo basura/De frente/Illea de frente 1.png" type="Texture" id=8]
 [ext_resource path="res://Assets/Images/board_dialog.png" type="Texture" id=9]
 [ext_resource path="res://Assets/Fonts/dialogFont.tres" type="DynamicFont" id=10]
 [ext_resource path="res://Assets/Images/btn_arrow.png" type="Texture" id=11]
@@ -246,9 +246,6 @@ margin_left = -245.0
 margin_top = 50.0
 margin_right = 245.0
 margin_bottom = 136.5
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="BtnLog" type="TextureButton" parent="LogContainer"]
 margin_right = 490.0
@@ -299,7 +296,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = 3.0
 margin_top = -1250.0
-margin_right = 728.0
+margin_right = 627.0
 margin_bottom = -12.0
 texture = ExtResource( 8 )
 expand = true

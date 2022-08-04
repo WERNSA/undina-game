@@ -76,6 +76,7 @@ wait_time = 5.0
 
 [node name="BGSong" type="AudioStreamPlayer" parent="Sounds"]
 stream = ExtResource( 14 )
+volume_db = -10.0
 autoplay = true
 bus = "Music"
 

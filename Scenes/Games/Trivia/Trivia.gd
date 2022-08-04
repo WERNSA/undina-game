@@ -48,6 +48,7 @@ func _on_BtnLoop_pressed():
 	randomize()
 	actual_theme.shuffle()
 	question_qty = questions[TRIVIA_THEME].size()
+	$Timer/Timer.start()
 
 func _on_Timer_timeout():
 	$Roulette/AnimationPlayer.play("Trivia")
@@ -175,16 +176,7 @@ func _game_over():
 	$Sounds/BgSong.stop()
 
 func _on_try_again():
-	TRIVIA_POINTS = 0
-	$Contador.set_count(str(TRIVIA_POINTS))
-	tries = 3
-	$Timer/VBoxContainer/Tries/Label.text = "INTENTOS: " + str(tries)
-	game_over = false
-	$GameOver.visible = false
-	$Win.visible = false
-	$Sounds/BgSong.play()
-	$Timer/Timer.start()
-	$Roulette/AnimationPlayer.play("RESET")
+	get_tree().change_scene("res://Scenes/Games/Trivia/Trivia.tscn")
 
 func _on_Timer_Timer_timeout():
 	$Timer/Timer.stop()

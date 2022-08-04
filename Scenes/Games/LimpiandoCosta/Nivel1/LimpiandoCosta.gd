@@ -11,6 +11,7 @@ onready var tries = 3
 var trash_qty
 
 func _ready():
+	randomize()
 	$Background/Contador.set_count(str(TRASH_COUNT))
 	trash_array = get_tree().get_nodes_in_group('enemy')
 	trash_qty = len(trash_array)

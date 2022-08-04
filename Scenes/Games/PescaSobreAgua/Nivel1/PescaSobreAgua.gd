@@ -28,6 +28,7 @@ onready var FishingRodItemPosition = Vector2(450, 650)
 onready var FishBoxPosition = Vector2(3020, 850)
 
 func _ready():
+	randomize()
 	$Characters/FishBox.visible = false
 	$Characters/FishBox.can_move = false
 	$GameOver/CenterContainer/HBoxContainer/BtnTry.connect("pressed", self, "_on_try_again")
@@ -35,7 +36,8 @@ func _ready():
 	$Contador.set_count(str(TRASH_COUNT))
 
 func _process(_delta):
-	$Timer/MarginContainer/Label.text = Global.get_timer($Timer/Timer.time_left)
+	$Timer/VBoxContainer/Tries/Label.text = "INTENTOS: " + str(tries)
+	$Timer/VBoxContainer/Timer/Label.text = Global.get_timer($Timer/Timer.time_left)
 
 func _on_RadarItemTimer_timeout():
 	spawn_radar_item()
@@ -110,9 +112,11 @@ func add_fishing_points():
 	if points >= $Sensor/SliderPoints.max_value:
 		if options == 0:
 			tries -= 1
+			$Timer/VBoxContainer/Tries/Label.text = "INTENTOS: " + str(tries)
 			TRASH_COUNT = TRASH_COUNT - 10
 			$Contador.set_count(str(TRASH_COUNT))
 			$Sounds/SoundSplash.play()
+			$Sounds/PunchSound.play()
 			$Characters/FishingTimer.stop()
 			stop_fishing()
 			if tries == 0:
@@ -163,21 +167,7 @@ func _game_win():
 	$Sounds/BGSong.stop()
 
 func _on_try_again():
-	TRASH_COUNT = 0
-	$Contador.set_count(str(TRASH_COUNT))
-	tries = 3
-	game_over = false
-	$GameOver.visible = false
-	$Win.visible = false
-	$Characters/FishBox.can_move = false
-	$Characters/FishingRod.can_move = false
-	$Characters/FishingRodItem.can_move = false
-	$Characters/FishBox.position = FishBoxPosition
-	$Characters/FishingRod.position = FishingRodPosition
-	$Characters/FishingRodItem.position = FishingRodItemPosition
-	$Sounds/BGSong.play()
-	$Timer/Timer.start()
-	stop_fishing()
+	get_tree().change_scene("res://Scenes/Games/PescaSobreAgua/Nivel1/PescaSobreAgua.tscn")
 
 
 func _on_Timer_timeout():

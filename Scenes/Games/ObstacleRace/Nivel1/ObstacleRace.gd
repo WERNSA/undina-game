@@ -143,15 +143,4 @@ func _game_over():
 	$Sounds/BGSong.stop()
 
 func _on_try_again():
-	tries = 3
-	TRASH_COUNT = 0
-	$Contador.set_count(str(TRASH_COUNT))
-	$Win.visible = false
-	$GameOver.visible = false
-	$Characters/IleaNadando.can_move = true
-	$Characters/Turtle.position = Vector2(2784, 832)
-	$Spawn/IslandTimer.start()
-	$Spawn/IslandSpeedTimer.start()
-	island_position.y = bottom_position
-	island_position.x = 3600
-	$Sounds/BGSong.start()
+	get_tree().change_scene("res://Scenes/Games/ObstacleRace/Nivel1/ObstacleRace.tscn")

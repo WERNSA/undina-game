@@ -1077,7 +1077,6 @@ valign = 1
 
 [node name="Timer" type="Timer" parent="Timer"]
 wait_time = 180.0
-autostart = true
 
 [connection signal="pressed" from="Roulette/BtnLoop" to="." method="_on_BtnLoop_pressed"]
 [connection signal="animation_finished" from="Roulette/AnimationPlayer" to="." method="_on_AnimationPlayer_animation_finished"]

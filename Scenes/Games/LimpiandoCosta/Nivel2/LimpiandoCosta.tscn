@@ -607,6 +607,7 @@ shape = SubResource( 4 )
 [node name="BGSong" type="AudioStreamPlayer" parent="Songs"]
 stream = ExtResource( 19 )
 volume_db = -10.0
+autoplay = true
 bus = "Music"
 
 [node name="GetSound" type="AudioStreamPlayer" parent="Songs"]
