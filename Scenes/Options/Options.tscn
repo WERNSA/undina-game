@@ -303,9 +303,7 @@ stream = ExtResource( 22 )
 
 [connection signal="pressed" from="btnSettings" to="." method="_on_btnSettings_pressed"]
 [connection signal="pressed" from="btnExit" to="." method="_on_btnExit_pressed"]
-[connection signal="pressed" from="ConfirmExit/Sprite/VBoxContainer/HBoxContainer/btnYes" to="." method="_on_btnExit_pressed"]
 [connection signal="pressed" from="ConfirmExit/Sprite/VBoxContainer/HBoxContainer/btnYes" to="." method="_on_btnYes_pressed"]
-[connection signal="pressed" from="ConfirmExit/Sprite/VBoxContainer/HBoxContainer/btnNo" to="." method="_on_btnExit_pressed"]
 [connection signal="pressed" from="ConfirmExit/Sprite/VBoxContainer/HBoxContainer/btnNo" to="." method="_on_btnNo_pressed"]
 [connection signal="pressed" from="AudioSettings/BtnAccept" to="." method="_on_BtnAccept_pressed"]
 [connection signal="value_changed" from="AudioSettings/SliderMusic" to="." method="_on_SliderMusic_value_changed"]

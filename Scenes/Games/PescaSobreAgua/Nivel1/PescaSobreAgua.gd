@@ -150,6 +150,8 @@ func stop_fishing():
 func _game_over():
 	$Timer/Timer.stop()
 	game_over = true
+	Global.player_points += TRASH_COUNT
+	Global.write_points(TRASH_COUNT)
 	$GameOver.set_score(TRASH_COUNT)
 	$GameOver.visible = true
 	$Characters/FishBox.can_move = false
@@ -159,6 +161,8 @@ func _game_over():
 
 func _game_win():
 	game_over = true
+	Global.player_points += TRASH_COUNT
+	Global.write_points(TRASH_COUNT)
 	$Win.set_score(TRASH_COUNT)
 	$Win.visible = true
 	$Characters/FishBox.can_move = false

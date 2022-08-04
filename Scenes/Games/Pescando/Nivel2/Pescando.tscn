@@ -2093,6 +2093,7 @@ shape = SubResource( 122 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Boat/Claw"]
 frames = SubResource( 123 )
+frame = 2
 playing = true
 
 [node name="HUD" type="CanvasLayer" parent="."]

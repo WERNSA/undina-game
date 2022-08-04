@@ -3,6 +3,7 @@ extends Node
 
 # Declare member variables here. Examples:
 var player_name
+var player_points
 onready var rng : RandomNumberGenerator = RandomNumberGenerator.new()
 const const_enemy_speed : int = 400
 onready var min_enemy_speed : int = 400
@@ -31,6 +32,23 @@ func write_data(text):
 	var dir = "user://data.txt"
 	file.open(dir, File.WRITE)
 	file.store_string(text)
+	file.close()
+
+func read_points(): 
+	var file = File.new()
+	var dir = "user://points.txt"
+	if not file.file_exists(dir):
+		return 0 
+	file.open(dir, File.READ)
+	var data = file.get_as_text() 
+	file.close()
+	return int(data)
+
+func write_points(text):
+	var file = File.new()
+	var dir = "user://points.txt"
+	file.open(dir, File.WRITE)
+	file.store_string(str(text))
 	file.close()
 
 func random_int(min_number, max_number):

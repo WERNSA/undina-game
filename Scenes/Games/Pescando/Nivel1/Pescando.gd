@@ -287,6 +287,8 @@ func _on_TurtleTimer_timeout():
 
 func _game_win():
 	game_over = true
+	Global.player_points += TRASH_COUNT
+	Global.write_points(TRASH_COUNT)
 	$HUD/Win.set_score(TRASH_COUNT)
 	$HUD/Win.visible = true
 	$Sounds/BGSong.stop()
@@ -299,6 +301,8 @@ func _game_win():
 func _game_over():
 	game_over = true
 	$Songs/PunchSound.play()
+	Global.player_points += TRASH_COUNT
+	Global.write_points(TRASH_COUNT)
 	$HUD/GameOver.set_score(TRASH_COUNT)
 	$HUD/GameOver.visible = true
 	$Songs/BGSong.stop()

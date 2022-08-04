@@ -4,6 +4,8 @@ func _on_BtnLog_pressed():
 	var player_name = $LineEdit.text.to_upper()
 	Global.write_data(player_name)
 	Global.player_name = player_name
+	Global.write_points(0)
+	Global.player_points = 0
 	$LblDialog.text = "¡Hola " + player_name + """! Soy Ilea, gracias por unirte a la misión de salvar los océanos, juntos(as) lograremos que los océanos de la región de Cabia vuelvan a ser como antes."""
 	$AnimationIllea.play("ShowIllea")
 

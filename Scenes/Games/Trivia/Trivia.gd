@@ -48,9 +48,10 @@ func _on_BtnLoop_pressed():
 	randomize()
 	actual_theme.shuffle()
 	question_qty = questions[TRIVIA_THEME].size()
-	$Timer/Timer.start()
 
 func _on_Timer_timeout():
+	if $Timer/Timer.is_stopped():
+		$Timer/Timer.start()
 	$Roulette/AnimationPlayer.play("Trivia")
 	load_questions()
 
@@ -165,13 +166,17 @@ func _on_btnContinue_pressed():
 
 func _game_win():
 	game_over = true
-	$Win.set_score(TRIVIA_POINTS)
+	Global.player_points += points
+	Global.write_points(points)
+	$Win.set_score(points)
 	$Win.visible = true
 	$Sounds/BgSong.stop()
 
 func _game_over():
 	game_over = true
-	$GameOver.set_score(TRIVIA_POINTS)
+	Global.player_points += points
+	Global.write_points(points)
+	$GameOver.set_score(points)
 	$GameOver.visible = true
 	$Sounds/BgSong.stop()
 
@@ -180,7 +185,7 @@ func _on_try_again():
 
 func _on_Timer_Timer_timeout():
 	$Timer/Timer.stop()
-	if TRIVIA_POINTS > 0:
+	if points > 0:
 		_game_win()
 	else:
 		_game_over()

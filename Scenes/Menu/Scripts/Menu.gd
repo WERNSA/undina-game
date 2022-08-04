@@ -4,9 +4,14 @@ extends Control
 func _ready():
 	$AnimationInit.play("Init")
 	if Global.player_name:
-		$PlayerName.text = Global.player_name
+		$VBoxContainer/PlayerName.text = Global.player_name
 	else:
-		$PlayerName.text = ""
+		$VBoxContainer/PlayerName.text = ""
+	
+	if Global.player_points:
+		$VBoxContainer/PlayerPoints.text = "PUNTUACIÓN: " + str(Global.player_points)
+	else:
+		$VBoxContainer/PlayerPoints.text = "PUNTUACIÓN: " + str(0)
 
 func _on_BtnPlay_pressed():
 	$SoundPress.play()

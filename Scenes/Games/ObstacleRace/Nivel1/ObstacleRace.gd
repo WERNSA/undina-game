@@ -90,10 +90,7 @@ func reduce_distance():
 	$Characters/Tween.start()
 
 func add_distance():
-	if TRASH_COUNT <= 0:
-		TRASH_COUNT = 0
-	else:
-		TRASH_COUNT -= 10
+	TRASH_COUNT -= 10
 	$Contador.set_count(str(TRASH_COUNT))
 	if $Characters/Turtle.position.x >= 2700:
 		tries -= 1
@@ -125,6 +122,8 @@ func _on_IslandSpeedTimer_timeout():
 
 func win():
 	game_over = true
+	Global.player_points += TRASH_COUNT
+	Global.write_points(TRASH_COUNT)
 	$Win.set_score(TRASH_COUNT)
 	$Win.visible = true
 	$Characters/IleaNadando.can_move = false
@@ -134,6 +133,8 @@ func win():
 
 func _game_over():
 	game_over = true
+	Global.player_points += TRASH_COUNT
+	Global.write_points(TRASH_COUNT)
 	$GameOver.set_score(TRASH_COUNT)
 	$GameOver.visible = true
 	$Characters/IleaNadando.can_move = false

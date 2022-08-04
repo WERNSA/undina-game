@@ -3,7 +3,11 @@ extends Control
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	if Global.player_name:
-		$PlayerName.text = Global.player_name
+		$TitleContainer/PlayerName.text = Global.player_name
+	if Global.player_points:
+		$TitleContainer/PlayerPoints.text = "PUNTUACIÓN: " + str(Global.player_points)
+	else:
+		$TitleContainer/PlayerPoints.text = "PUNTUACIÓN: " + str(0)
 
 
 func _on_BtnBack_pressed():

@@ -41,19 +41,30 @@ scale = Vector2( 1, 1.29286 )
 texture = ExtResource( 2 )
 centered = false
 
-[node name="PlayerName" type="Label" parent="."]
+[node name="TitleContainer" type="VBoxContainer" parent="."]
 anchor_left = 0.5
 anchor_right = 0.5
-margin_left = -517.5
-margin_right = 517.5
+margin_left = -298.5
+margin_right = 298.5
+margin_bottom = 206.0
+
+[node name="PlayerName" type="Label" parent="TitleContainer"]
+margin_right = 597.0
 margin_bottom = 101.0
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 custom_constants/shadow_offset_x = -3
 custom_fonts/font = SubResource( 1 )
 align = 1
-__meta__ = {
-"_edit_use_anchors_": false
-}
+
+[node name="PlayerPoints" type="Label" parent="TitleContainer"]
+margin_top = 105.0
+margin_right = 597.0
+margin_bottom = 206.0
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = -3
+custom_fonts/font = SubResource( 1 )
+text = "PUNTUACIÓN: 0"
+align = 1
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 anchor_left = 0.5
