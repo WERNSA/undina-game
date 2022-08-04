@@ -1,0 +1,101 @@
+[gd_scene load_steps=19 format=2]
+
+[ext_resource path="res://Scenes/Utility/Contador.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scenes/Utility/analog/Analog.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/Pause/PauseMenu.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scenes/Utility/shader/ShaderWindWaker.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Scenes/Entity/Turtle/Turtle.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Scenes/Entity/Illea/Nadando/IleaNadando.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Scenes/Games/ObstacleRace/Nivel1/ObstacleRace.gd" type="Script" id=7]
+[ext_resource path="res://Scenes/Entity/Islands/Island1/Island.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Scenes/Entity/Islands/Island2/Island.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Scenes/Entity/Islands/Trash/Trash2/Trash.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Scenes/Entity/Islands/Trash/Trash1/Trash.tscn" type="PackedScene" id=11]
+[ext_resource path="res://Scenes/Entity/Islands/Trash/Trash3/Trash.tscn" type="PackedScene" id=12]
+[ext_resource path="res://Scenes/Entity/Islands/Trash/Trash4/Trash.tscn" type="PackedScene" id=13]
+[ext_resource path="res://Assets/Sounds/obstacle_race.ogg" type="AudioStream" id=14]
+[ext_resource path="res://Assets/Sounds/SFX/get_item.wav" type="AudioStream" id=15]
+[ext_resource path="res://Scenes/Utility/GameOver/GameOver.tscn" type="PackedScene" id=16]
+[ext_resource path="res://Scenes/Utility/Win/Win.tscn" type="PackedScene" id=17]
+
+[sub_resource type="Curve2D" id=1]
+_data = {
+"points": PoolVector2Array( 0, 0, 0, 0, 3200, 2, 0, 0, 0, 0, 3200, 1798 )
+}
+
+[node name="ObstacleRace" type="Node2D" groups=["level_obstacle_race"]]
+script = ExtResource( 7 )
+Island1 = ExtResource( 8 )
+Island2 = ExtResource( 9 )
+Trash1 = ExtResource( 11 )
+Trash2 = ExtResource( 10 )
+Trash3 = ExtResource( 12 )
+Trash4 = ExtResource( 13 )
+
+[node name="Contador" parent="." instance=ExtResource( 1 )]
+z_index = 2
+
+[node name="Analog" parent="." instance=ExtResource( 2 )]
+position = Vector2( 213, 1582 )
+scale = Vector2( 2, 2 )
+z_index = 100
+
+[node name="Background" type="Node" parent="."]
+
+[node name="CanvasLayer" parent="Background" instance=ExtResource( 4 )]
+z_index = -1
+z_as_relative = false
+
+[node name="Characters" type="Node" parent="."]
+
+[node name="Turtle" parent="Characters" groups=["obstacle_race_turtle"] instance=ExtResource( 5 )]
+position = Vector2( 2784, 832 )
+rotation = 1.5708
+
+[node name="IleaNadando" parent="Characters" instance=ExtResource( 6 )]
+position = Vector2( 250, 900 )
+rotation = 1.5708
+
+[node name="Tween" type="Tween" parent="Characters"]
+
+[node name="Spawn" type="Node" parent="."]
+
+[node name="IslandPath" type="Path2D" parent="Spawn"]
+curve = SubResource( 1 )
+
+[node name="IslandSpawn" type="PathFollow2D" parent="Spawn/IslandPath"]
+position = Vector2( 3200, 2 )
+rotation = 1.57073
+
+[node name="IslandTimer" type="Timer" parent="Spawn"]
+
+[node name="IslandSpeedTimer" type="Timer" parent="Spawn"]
+wait_time = 5.0
+
+[node name="Sounds" type="Node" parent="."]
+
+[node name="BGSong" type="AudioStreamPlayer" parent="Sounds"]
+stream = ExtResource( 14 )
+autoplay = true
+bus = "Music"
+
+[node name="GetSound" type="AudioStreamPlayer" parent="Sounds"]
+stream = ExtResource( 15 )
+bus = "SFX"
+
+[node name="Pause" type="Node2D" parent="."]
+z_index = 100
+
+[node name="PauseMenu" parent="Pause" instance=ExtResource( 3 )]
+modulate = Color( 1, 1, 1, 0.588235 )
+position = Vector2( 3200, 1750 )
+z_index = 100
+
+[node name="GameOver" parent="." instance=ExtResource( 16 )]
+visible = false
+
+[node name="Win" parent="." instance=ExtResource( 17 )]
+visible = false
+
+[connection signal="timeout" from="Spawn/IslandTimer" to="." method="_on_IslandTimer_timeout"]
+[connection signal="timeout" from="Spawn/IslandSpeedTimer" to="." method="_on_IslandSpeedTimer_timeout"]

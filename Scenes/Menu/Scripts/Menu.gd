@@ -9,7 +9,12 @@ func _ready():
 		$PlayerName.text = ""
 
 func _on_BtnPlay_pressed():
+	$SoundPress.play()
 	get_tree().call_deferred("change_scene", "res://Scenes/MenuPlay/MenuPlay.tscn")
 
 func _on_BtnCredits_pressed():
-	get_tree().call_deferred("change_scene", "res://Scenes/Credits/Credits.tscn")
+	$SoundPress.play()
+	#get_tree().call_deferred("change_scene", "res://Scenes/Credits/Credits.tscn")
+
+func _on_BtnLearn_pressed():
+	$SoundPress.play()

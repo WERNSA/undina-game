@@ -1,0 +1,197 @@
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://Assets/Fonts/btnFont.tres" type="DynamicFont" id=1]
+[ext_resource path="res://Assets/Images/bg_underwater.png" type="Texture" id=2]
+[ext_resource path="res://Scenes/Options/Options.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Assets/Images/btn_yellow.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Images/btn_yellow_disabled.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Fonts/Marujo.ttf" type="DynamicFontData" id=6]
+[ext_resource path="res://Scenes/MenuPlay/PESCAR/Pescar.gd" type="Script" id=7]
+[ext_resource path="res://Assets/Images/btn_arrow.png" type="Texture" id=8]
+[ext_resource path="res://Assets/Sounds/menu_play.ogg" type="AudioStream" id=9]
+
+[sub_resource type="DynamicFont" id=1]
+size = 100
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 6 )
+
+[sub_resource type="DynamicFont" id=5]
+size = 150
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 6 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 85
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 6 )
+
+[node name="Pescar" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 7 )
+
+[node name="BgImage" type="Sprite" parent="."]
+scale = Vector2( 1, 1.29286 )
+texture = ExtResource( 2 )
+centered = false
+
+[node name="PlayerName" type="Label" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -517.5
+margin_right = 517.5
+margin_bottom = 101.0
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = -3
+custom_fonts/font = SubResource( 1 )
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GameName" type="Label" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -517.5
+margin_top = -452.5
+margin_right = 517.5
+margin_bottom = -301.5
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = -3
+custom_fonts/font = SubResource( 5 )
+text = "CORALIMPIO"
+align = 1
+
+[node name="ButtonsContainer" type="HBoxContainer" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -739.0
+margin_top = -136.5
+margin_right = 739.0
+margin_bottom = 136.5
+
+[node name="FirstContainer" type="VBoxContainer" parent="ButtonsContainer"]
+margin_right = 490.0
+margin_bottom = 273.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="FishContainer" type="CenterContainer" parent="ButtonsContainer/FirstContainer"]
+margin_right = 490.0
+margin_bottom = 273.0
+
+[node name="BtnFish" type="TextureButton" parent="ButtonsContainer/FirstContainer/FishContainer"]
+margin_right = 490.0
+margin_bottom = 273.0
+texture_normal = ExtResource( 4 )
+texture_pressed = ExtResource( 5 )
+texture_hover = ExtResource( 5 )
+texture_disabled = ExtResource( 5 )
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="LblFish" type="Label" parent="ButtonsContainer/FirstContainer/FishContainer"]
+margin_left = 132.0
+margin_top = 97.0
+margin_right = 358.0
+margin_bottom = 176.0
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = -3
+custom_fonts/font = ExtResource( 1 )
+text = "NIVEL 1"
+
+[node name="SecondContainer" type="VBoxContainer" parent="ButtonsContainer"]
+margin_left = 494.0
+margin_right = 984.0
+margin_bottom = 273.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CleanContainer" type="CenterContainer" parent="ButtonsContainer/SecondContainer"]
+margin_right = 490.0
+margin_bottom = 273.0
+
+[node name="BtnClean" type="TextureButton" parent="ButtonsContainer/SecondContainer/CleanContainer"]
+margin_right = 490.0
+margin_bottom = 273.0
+texture_normal = ExtResource( 4 )
+texture_pressed = ExtResource( 5 )
+texture_hover = ExtResource( 5 )
+texture_disabled = ExtResource( 5 )
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="LblClean" type="Label" parent="ButtonsContainer/SecondContainer/CleanContainer"]
+margin_left = 70.0
+margin_top = 61.0
+margin_right = 420.0
+margin_bottom = 211.0
+rect_min_size = Vector2( 350, 150 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = -3
+custom_fonts/font = SubResource( 4 )
+text = "NIVEL 2"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="ThirdContainer" type="VBoxContainer" parent="ButtonsContainer"]
+margin_left = 988.0
+margin_right = 1478.0
+margin_bottom = 273.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Container" type="CenterContainer" parent="ButtonsContainer/ThirdContainer"]
+margin_right = 490.0
+margin_bottom = 273.0
+
+[node name="BtnLvl3" type="TextureButton" parent="ButtonsContainer/ThirdContainer/Container"]
+margin_right = 490.0
+margin_bottom = 273.0
+texture_normal = ExtResource( 4 )
+texture_pressed = ExtResource( 5 )
+texture_hover = ExtResource( 5 )
+texture_disabled = ExtResource( 5 )
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="LblLvl3" type="Label" parent="ButtonsContainer/ThirdContainer/Container"]
+margin_left = 70.0
+margin_top = 61.0
+margin_right = 420.0
+margin_bottom = 211.0
+rect_min_size = Vector2( 350, 150 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = -3
+custom_fonts/font = SubResource( 4 )
+text = "NIVEL 3"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="BtnBack" type="TextureButton" parent="."]
+margin_right = 255.0
+margin_bottom = 273.0
+texture_normal = ExtResource( 8 )
+
+[node name="Options" parent="." instance=ExtResource( 3 )]
+
+[node name="BGSong" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 9 )
+autoplay = true
+
+[connection signal="pressed" from="ButtonsContainer/FirstContainer/FishContainer/BtnFish" to="." method="_on_BtnFish_pressed"]
+[connection signal="pressed" from="ButtonsContainer/SecondContainer/CleanContainer/BtnClean" to="." method="_on_BtnClean_pressed"]
+[connection signal="pressed" from="ButtonsContainer/ThirdContainer/Container/BtnLvl3" to="." method="_on_BtnLvl3_pressed"]
+[connection signal="pressed" from="BtnBack" to="." method="_on_BtnBack_pressed"]

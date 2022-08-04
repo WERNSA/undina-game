@@ -3,6 +3,6 @@
 [ext_resource path="res://Assets/Fonts/Marujo.ttf" type="DynamicFontData" id=1]
 
 [resource]
-size = 85
+size = 78
 outline_color = Color( 0, 0, 0, 1 )
 font_data = ExtResource( 1 )

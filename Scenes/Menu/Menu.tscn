@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://Scenes/Menu/Scripts/Menu.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Images/bg_main.jpg" type="Texture" id=2]
@@ -9,6 +9,8 @@
 [ext_resource path="res://Assets/Fonts/Marujo.ttf" type="DynamicFontData" id=7]
 [ext_resource path="res://Scenes/Options/Options.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Assets/Images/btn_yellow_disabled.png" type="Texture" id=9]
+[ext_resource path="res://Assets/Sounds/main_menu.ogg" type="AudioStream" id=10]
+[ext_resource path="res://Assets/Sounds/SFX/button_press.wav" type="AudioStream" id=11]
 
 [sub_resource type="DynamicFont" id=1]
 size = 100
@@ -53,6 +55,13 @@ stream = ExtResource( 4 )
 autoplay = true
 bus = "Music"
 
+[node name="BgSong" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 10 )
+autoplay = true
+
+[node name="SoundPress" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 11 )
+
 [node name="BgImage" type="Sprite" parent="."]
 texture = ExtResource( 2 )
 centered = false
@@ -81,9 +90,11 @@ anchor_bottom = 0.5
 margin_left = -739.0
 margin_right = 739.0
 margin_bottom = 136.5
+alignment = 1
 
 [node name="PlayContainer" type="CenterContainer" parent="ButtonsContainer"]
-margin_right = 490.0
+margin_left = 494.0
+margin_right = 984.0
 margin_bottom = 273.0
 __meta__ = {
 "_edit_use_anchors_": false
@@ -101,21 +112,24 @@ __meta__ = {
 }
 
 [node name="LblPlay" type="Label" parent="ButtonsContainer/PlayContainer"]
-margin_left = 132.0
-margin_top = 93.0
-margin_right = 358.0
-margin_bottom = 179.0
+margin_left = 141.0
+margin_top = 97.0
+margin_right = 348.0
+margin_bottom = 176.0
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 custom_constants/shadow_offset_x = -3
 custom_fonts/font = ExtResource( 6 )
 text = "JUGAR"
 
-[node name="LearnContainer" type="CenterContainer" parent="ButtonsContainer"]
+[node name="Learn" type="Node2D" parent="ButtonsContainer"]
+visible = false
+
+[node name="LearnContainer" type="CenterContainer" parent="ButtonsContainer/Learn"]
 margin_left = 494.0
 margin_right = 984.0
 margin_bottom = 273.0
 
-[node name="BtnLearn" type="TextureButton" parent="ButtonsContainer/LearnContainer"]
+[node name="BtnLearn" type="TextureButton" parent="ButtonsContainer/Learn/LearnContainer"]
 margin_right = 490.0
 margin_bottom = 273.0
 texture_normal = ExtResource( 5 )
@@ -126,22 +140,25 @@ __meta__ = {
 "_editor_description_": ""
 }
 
-[node name="LblLearn" type="Label" parent="ButtonsContainer/LearnContainer"]
-margin_left = 75.0
-margin_top = 93.0
-margin_right = 414.0
-margin_bottom = 179.0
+[node name="LblLearn" type="Label" parent="ButtonsContainer/Learn/LearnContainer"]
+margin_left = 89.0
+margin_top = 97.0
+margin_right = 401.0
+margin_bottom = 176.0
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 custom_constants/shadow_offset_x = -3
 custom_fonts/font = ExtResource( 6 )
 text = "APRENDER"
 
-[node name="CreditContainer" type="CenterContainer" parent="ButtonsContainer"]
-margin_left = 988.0
-margin_right = 1478.0
+[node name="Credit" type="Node2D" parent="ButtonsContainer"]
+visible = false
+
+[node name="CreditContainer" type="CenterContainer" parent="ButtonsContainer/Credit"]
+margin_left = 494.0
+margin_right = 984.0
 margin_bottom = 273.0
 
-[node name="BtnCredits" type="TextureButton" parent="ButtonsContainer/CreditContainer"]
+[node name="BtnCredits" type="TextureButton" parent="ButtonsContainer/Credit/CreditContainer"]
 margin_right = 490.0
 margin_bottom = 273.0
 texture_normal = ExtResource( 5 )
@@ -152,11 +169,11 @@ __meta__ = {
 "_editor_description_": ""
 }
 
-[node name="LblCredits" type="Label" parent="ButtonsContainer/CreditContainer"]
-margin_left = 96.0
-margin_top = 93.0
-margin_right = 394.0
-margin_bottom = 179.0
+[node name="LblCredits" type="Label" parent="ButtonsContainer/Credit/CreditContainer"]
+margin_left = 108.0
+margin_top = 97.0
+margin_right = 382.0
+margin_bottom = 176.0
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 custom_constants/shadow_offset_x = -3
 custom_fonts/font = ExtResource( 6 )
@@ -168,4 +185,5 @@ text = "CRÉDITOS"
 anims/Init = SubResource( 2 )
 
 [connection signal="pressed" from="ButtonsContainer/PlayContainer/BtnPlay" to="." method="_on_BtnPlay_pressed"]
-[connection signal="pressed" from="ButtonsContainer/CreditContainer/BtnCredits" to="." method="_on_BtnCredits_pressed"]
+[connection signal="pressed" from="ButtonsContainer/Learn/LearnContainer/BtnLearn" to="." method="_on_BtnLearn_pressed"]
+[connection signal="pressed" from="ButtonsContainer/Credit/CreditContainer/BtnCredits" to="." method="_on_BtnCredits_pressed"]

@@ -7,7 +7,7 @@
 [ext_resource path="res://Assets/Images/board_label.png" type="Texture" id=5]
 [ext_resource path="res://Assets/Fonts/btnFont.tres" type="DynamicFont" id=6]
 [ext_resource path="res://Assets/Images/btn_yellow.png" type="Texture" id=7]
-[ext_resource path="res://Assets/Images/illea.png" type="Texture" id=8]
+[ext_resource path="res://Assets/Images/Animaciones/Caminando/Tres cuartos a la derecha/Derecha 9.png" type="Texture" id=8]
 [ext_resource path="res://Assets/Images/board_dialog.png" type="Texture" id=9]
 [ext_resource path="res://Assets/Fonts/dialogFont.tres" type="DynamicFont" id=10]
 [ext_resource path="res://Assets/Images/btn_arrow.png" type="Texture" id=11]
@@ -183,9 +183,6 @@ tracks/11/keys = {
 margin_right = 3200.0
 margin_bottom = 1800.0
 script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="BgSound" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 12 )
@@ -266,10 +263,10 @@ __meta__ = {
 }
 
 [node name="LblLog" type="Label" parent="LogContainer"]
-margin_left = 129.0
-margin_top = 93.0
-margin_right = 360.0
-margin_bottom = 179.0
+margin_left = 139.0
+margin_top = 97.0
+margin_right = 351.0
+margin_bottom = 176.0
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 custom_constants/shadow_offset_x = -3
 custom_fonts/font = ExtResource( 6 )
@@ -305,6 +302,8 @@ margin_top = -1250.0
 margin_right = 728.0
 margin_bottom = -12.0
 texture = ExtResource( 8 )
+expand = true
+flip_h = true
 
 [node name="AnimationIllea" type="AnimationPlayer" parent="."]
 anims/RESET = SubResource( 3 )

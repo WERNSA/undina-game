@@ -10,14 +10,16 @@ onready var level = get_tree().get_nodes_in_group("level_pesca")[0]
 onready var trash = []
 var box
 var pointing : int = 1
+onready var can_move = true
 """ STATE MACHINE """
 
 func _ready():
 	$AnimationPlayer.play("Idle") # Iniciamos en el estado Idle.
 
 func _process(_delta):
-	motion_ctrl()
-	direction_ctrl()
+	if can_move:
+		motion_ctrl()
+		direction_ctrl()
 
 func get_axis() -> Vector2:
 	var axis = Vector2.ZERO
@@ -66,6 +68,8 @@ func raycast_ctrl(mot):
 	if $RayEnemy.is_colliding():
 		if col.is_in_group("enemy"):
 			if trash.empty():
+				level.remove_trash_turtle(col.position)
+				level.get_sound()
 				trash.append(col)
 				col.disable_collider()
 		if col.is_in_group("boat"):
