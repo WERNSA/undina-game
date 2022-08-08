@@ -1,8 +1,11 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=11 format=2]
 
-[ext_resource path="res://Assets/Images/ObstacleRace/Ilea Placeholder.png" type="Texture" id=1]
+[ext_resource path="res://Assets/Images/ObstacleRace/Ilea nadando/Ilea nadando 1.png" type="Texture" id=1]
 [ext_resource path="res://Scenes/Entity/Illea/Nadando/IleaNadando.gd" type="Script" id=2]
 [ext_resource path="res://Assets/Sounds/SFX/swimming.mp3" type="AudioStream" id=3]
+[ext_resource path="res://Assets/Images/ObstacleRace/Ilea nadando/Ilea nadando 3.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Images/ObstacleRace/Ilea nadando/Ilea nadando 2.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Images/ObstacleRace/Ilea nadando/Ilea nadando 4.png" type="Texture" id=6]
 
 [sub_resource type="CapsuleShape2D" id=1]
 radius = 25.0
@@ -38,6 +41,34 @@ tracks/0/keys = {
 "update": 0,
 "values": [ Color( 1, 1, 1, 1 ) ]
 }
+tracks/1/type = "value"
+tracks/1/path = NodePath("Sprite:texture")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ ExtResource( 1 ) ]
+}
+
+[sub_resource type="Animation" id=4]
+resource_name = "Swim"
+length = 0.8
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ ExtResource( 1 ), ExtResource( 5 ), ExtResource( 4 ), ExtResource( 6 ) ]
+}
 
 [node name="IleaNadando" type="KinematicBody2D" groups=["player"]]
 script = ExtResource( 2 )
@@ -57,6 +88,7 @@ bus = "SFX"
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 anims/Punch = SubResource( 2 )
 anims/RESET = SubResource( 3 )
+anims/Swim = SubResource( 4 )
 
 [node name="InvisibiltyTimer" type="Timer" parent="."]
 wait_time = 3.0

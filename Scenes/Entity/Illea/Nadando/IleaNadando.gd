@@ -5,6 +5,7 @@ const SPEED = 300
 onready var motion = Vector2.ZERO # ESTA PROP DEL VECTOR ES LO MISMO QUE (0,0)
 onready var can_move : bool = true
 onready var screensize = get_viewport_rect().size # tamaño de la ventana
+onready var is_punch : bool = false
 
 
 func _physics_process(delta):
@@ -31,7 +32,11 @@ func motion_ctrl(): # Controlador de Movimiento
 	position.y = clamp(position.y, 0, screensize.y)
 
 func animation_ctrl(): #Controlador de Animaciones
-	pass
+	if can_move:
+		if is_punch:
+			$AnimationPlayer.play("Punch")
+		else:
+			$AnimationPlayer.play("Swim")
 
 func _on_BGSound_finished():
 	if can_move:
@@ -39,8 +44,9 @@ func _on_BGSound_finished():
 
 func _on_InvisibiltyTimer_timeout():
 	$CollisionShape2D.disabled = false
+	is_punch = false
 
 func punch_ctrl():
 	$CollisionShape2D.disabled = true
-	$AnimationPlayer.play("Punch")
 	$InvisibiltyTimer.start()
+	is_punch = true
