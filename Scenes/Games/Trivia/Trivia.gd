@@ -71,6 +71,7 @@ func load_file():
 		return parse_json(file.get_as_text())
 
 func _on_Btn1_pressed():
+	disable_buttons(true)
 	$Sounds/SoundPress.play()
 	var answer = question_obj["options"][0]
 	var is_correct : bool = question_obj["answer"] == answer
@@ -87,6 +88,7 @@ func _on_Btn1_pressed():
 		remove_points()
 
 func _on_Btn2_pressed():
+	disable_buttons(true)
 	$Sounds/SoundPress.play()
 	var answer = question_obj["options"][1]
 	var is_correct : bool = question_obj["answer"] == answer
@@ -103,6 +105,7 @@ func _on_Btn2_pressed():
 		remove_points()
 
 func _on_Btn3_pressed():
+	disable_buttons(true)
 	$Sounds/SoundPress.play()
 	var answer = question_obj["options"][2]
 	var is_correct : bool = question_obj["answer"] == answer
@@ -161,6 +164,7 @@ func _on_btnContinue_pressed():
 	$DialogBG.visible = false
 	question_idx += 1
 	load_questions()
+	disable_buttons(false)
 	if tries == 0:
 		_game_over()
 
@@ -189,3 +193,8 @@ func _on_Timer_Timer_timeout():
 		_game_win()
 	else:
 		_game_over()
+
+func disable_buttons(val: bool):
+	$Trivia/Answers/Btn1.disabled = val
+	$Trivia/Answers/Btn2.disabled = val
+	$Trivia/Answers/Btn3.disabled = val

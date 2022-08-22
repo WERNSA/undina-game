@@ -25,6 +25,9 @@ func _ready():
 	$Contador.set_count(str(TRASH_COUNT))
 	randomize()
 
+func _process(_delta):
+	$Timer/VBoxContainer/Timer/Label.text = Global.get_timer($Timer/Timer.time_left)
+
 func _on_IslandTimer_timeout():
 	get_node("Spawn/IslandPath/IslandSpawn").set_offset(randi())
 	var island_number = Global.random_int(1, 2)
@@ -90,8 +93,6 @@ func reduce_distance():
 	$Characters/Tween.start()
 
 func add_distance():
-	TRASH_COUNT -= 10
-	$Contador.set_count(str(TRASH_COUNT))
 	if $Characters/Turtle.position.x >= 2700:
 		tries -= 1
 		if tries == 0:
@@ -122,9 +123,10 @@ func _on_IslandSpeedTimer_timeout():
 
 func win():
 	game_over = true
-	Global.player_points += TRASH_COUNT
-	Global.write_points(TRASH_COUNT)
-	$Win.set_score(TRASH_COUNT)
+	var total_points = floor($Timer/Timer.time_left / 20) * 10
+	Global.player_points += (TRASH_COUNT + total_points)
+	Global.write_points(TRASH_COUNT + total_points)
+	$Win.set_score(TRASH_COUNT + total_points)
 	$Win.visible = true
 	$Characters/IleaNadando.can_move = false
 	$Spawn/IslandTimer.stop()
@@ -145,3 +147,19 @@ func _game_over():
 
 func _on_try_again():
 	get_tree().change_scene("res://Scenes/Games/ObstacleRace/Nivel1/ObstacleRace.tscn")
+
+func _on_StepTimer_timeout():
+	TRASH_COUNT -= 10
+	$Contador.set_count(str(TRASH_COUNT))
+
+func _on_Timer_timeout():
+	$Timer/StepTimer.stop()
+	tries = 0
+	var new_position = 3400
+	$Characters/Tween.interpolate_property(
+		$Characters/Turtle, "position",$Characters/Turtle.position,
+		Vector2(new_position, $Characters/Turtle.position.y), 2,
+		Tween.TRANS_LINEAR, Tween.EASE_IN_OUT
+	)
+	$Characters/Tween.start()
+	_game_over()

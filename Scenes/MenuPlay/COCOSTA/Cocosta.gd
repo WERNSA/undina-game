@@ -16,3 +16,12 @@ func _on_BtnFish_pressed():
 
 func _on_BtnClean_pressed():
 	get_tree().call_deferred("change_scene", "res://Scenes/Games/LimpiandoCosta/Nivel2/LimpiandoCosta.tscn")
+
+
+func _on_BtnThird_pressed():
+	get_tree().call_deferred("change_scene", "res://Scenes/Games/LimpiandoCosta/Nivel4/LimpiandoCosta.tscn")
+
+
+func _on_BtnFourth_pressed():
+	get_tree().call_deferred("change_scene", "res://Scenes/Games/LimpiandoCosta/Nivel5/LimpiandoCosta.tscn")
+

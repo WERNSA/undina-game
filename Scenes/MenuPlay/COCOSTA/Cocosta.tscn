@@ -64,9 +64,9 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -492.0
+margin_left = -986.0
 margin_top = -136.5
-margin_right = 492.0
+margin_right = 986.0
 margin_bottom = 136.5
 
 [node name="FirstContainer" type="VBoxContainer" parent="ButtonsContainer"]
@@ -138,6 +138,80 @@ align = 1
 valign = 1
 autowrap = true
 
+[node name="ThirdContainer" type="VBoxContainer" parent="ButtonsContainer"]
+margin_left = 988.0
+margin_right = 1478.0
+margin_bottom = 273.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CleanContainer" type="CenterContainer" parent="ButtonsContainer/ThirdContainer"]
+margin_right = 490.0
+margin_bottom = 273.0
+
+[node name="BtnThird" type="TextureButton" parent="ButtonsContainer/ThirdContainer/CleanContainer"]
+margin_right = 490.0
+margin_bottom = 273.0
+texture_normal = ExtResource( 4 )
+texture_pressed = ExtResource( 5 )
+texture_hover = ExtResource( 5 )
+texture_disabled = ExtResource( 5 )
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="LblClean" type="Label" parent="ButtonsContainer/ThirdContainer/CleanContainer"]
+margin_left = 70.0
+margin_top = 61.0
+margin_right = 420.0
+margin_bottom = 211.0
+rect_min_size = Vector2( 350, 150 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = -3
+custom_fonts/font = SubResource( 4 )
+text = "NIVEL 3"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="FourthContainer" type="VBoxContainer" parent="ButtonsContainer"]
+margin_left = 1482.0
+margin_right = 1972.0
+margin_bottom = 273.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CleanContainer" type="CenterContainer" parent="ButtonsContainer/FourthContainer"]
+margin_right = 490.0
+margin_bottom = 273.0
+
+[node name="BtnFourth" type="TextureButton" parent="ButtonsContainer/FourthContainer/CleanContainer"]
+margin_right = 490.0
+margin_bottom = 273.0
+texture_normal = ExtResource( 4 )
+texture_pressed = ExtResource( 5 )
+texture_hover = ExtResource( 5 )
+texture_disabled = ExtResource( 5 )
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="LblClean" type="Label" parent="ButtonsContainer/FourthContainer/CleanContainer"]
+margin_left = 70.0
+margin_top = 61.0
+margin_right = 420.0
+margin_bottom = 211.0
+rect_min_size = Vector2( 350, 150 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = -3
+custom_fonts/font = SubResource( 4 )
+text = "NIVEL 4"
+align = 1
+valign = 1
+autowrap = true
+
 [node name="BtnBack" type="TextureButton" parent="."]
 margin_right = 255.0
 margin_bottom = 273.0
@@ -151,4 +225,6 @@ autoplay = true
 
 [connection signal="pressed" from="ButtonsContainer/FirstContainer/FishContainer/BtnFish" to="." method="_on_BtnFish_pressed"]
 [connection signal="pressed" from="ButtonsContainer/SecondContainer/CleanContainer/BtnClean" to="." method="_on_BtnClean_pressed"]
+[connection signal="pressed" from="ButtonsContainer/ThirdContainer/CleanContainer/BtnThird" to="." method="_on_BtnThird_pressed"]
+[connection signal="pressed" from="ButtonsContainer/FourthContainer/CleanContainer/BtnFourth" to="." method="_on_BtnFourth_pressed"]
 [connection signal="pressed" from="BtnBack" to="." method="_on_BtnBack_pressed"]

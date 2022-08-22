@@ -1014,6 +1014,7 @@ texture_normal = ExtResource( 18 )
 
 [node name="BgSong" type="AudioStreamPlayer" parent="Sounds"]
 stream = ExtResource( 14 )
+volume_db = -10.0
 autoplay = true
 
 [node name="SoundPress" type="AudioStreamPlayer" parent="Sounds"]

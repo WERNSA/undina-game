@@ -621,7 +621,7 @@ bus = "SFX"
 [node name="Crab" type="Node" parent="."]
 
 [node name="Crab" parent="Crab" instance=ExtResource( 42 )]
-position = Vector2( 1200, 1900 )
+position = Vector2( 1200, 1960 )
 scale = Vector2( 0.4, 0.4 )
 
 [node name="InitTween" type="Tween" parent="Crab"]
@@ -634,7 +634,6 @@ one_shot = true
 
 [node name="SpawnTimer" type="Timer" parent="Crab"]
 wait_time = 3.0
-one_shot = true
 
 [node name="HideTween" type="Tween" parent="Crab"]
 

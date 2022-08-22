@@ -30,7 +30,7 @@ func add_trash_count():
 
 func get_trash(_trash):
 	get_sound()
-	if _trash == actual_trash.get_ref():
+	if actual_trash and _trash == actual_trash.get_ref():
 		$Trash/TrashTween.stop_all()
 		var _idx = trash_array.find(actual_trash.get_ref())
 		trash_array.pop_at(_idx)
@@ -92,7 +92,7 @@ func hide_crab():
 	$Crab/HideTween.start()
 
 func _on_FinalTween_tween_all_completed():
-	if actual_trash.get_ref() and actual_trash.get_ref().position.y > 1800:
+	if actual_trash and actual_trash.get_ref() and actual_trash.get_ref().position.y > 1800:
 		var _idx = trash_array.find(actual_trash.get_ref())
 		trash_array.pop_at(_idx)
 		actual_trash = null
@@ -113,7 +113,8 @@ func remove_trash_count():
 
 func _on_SpawnTimer_timeout():
 	if not game_over:
-		move_crab()
+		if $Crab/Crab.position.y >= position_out_screen: 
+			move_crab()
 
 func _on_HideTween_tween_all_completed():
 	$Crab/SpawnTimer.start()
@@ -124,7 +125,7 @@ func _game_win():
 	Global.write_points(TRASH_COUNT)
 	$HUD/Win.set_score(TRASH_COUNT)
 	$HUD/Win.visible = true
-	$Sounds/BGSong.stop()
+	$Songs/BGSong.stop()
 	$Background/Ambience/IlleaCaminando.can_move = false
 
 func _game_over():
