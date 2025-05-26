@@ -22,6 +22,6 @@ func _on_AnimationSplash_animation_finished(_anim_name):
 
 func _on_TimerChangeScene_timeout():
 	if Global.player_name:
-				get_tree().call_deferred("change_scene", "res://Scenes/Menu/Menu.tscn")
+				get_tree().call_deferred("change_scene_to_file", "res://Scenes/Menu/Menu.tscn")
 	else:
-		get_tree().call_deferred("change_scene", "res://Scenes/Registro/Registro.tscn")
+		get_tree().call_deferred("change_scene_to_file", "res://Scenes/Registro/Registro.tscn")

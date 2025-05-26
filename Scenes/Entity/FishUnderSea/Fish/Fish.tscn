@@ -1,11 +1,11 @@
 [gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Scenes/Entity/FishUnderSea/Fish/Fish.gd" type="Script" id=1]
-[ext_resource path="res://Assets/Images/PescaBajoAgua/Pez loro.png" type="Texture" id=2]
-[ext_resource path="res://Assets/Images/PescaBajoAgua/Pez ángel.png" type="Texture" id=3]
-[ext_resource path="res://Assets/Images/PescaBajoAgua/Mantaraya.png" type="Texture" id=4]
-[ext_resource path="res://Assets/Images/PescaBajoAgua/Tiburón.png" type="Texture" id=5]
-[ext_resource path="res://Scenes/Utility/shader/UnderWater2D_obj.shader" type="Shader" id=6]
+[ext_resource path="res://Assets/Images/PescaBajoAgua/Pez loro.png" type="Texture2D" id=2]
+[ext_resource path="res://Assets/Images/PescaBajoAgua/Pez ángel.png" type="Texture2D" id=3]
+[ext_resource path="res://Assets/Images/PescaBajoAgua/Mantaraya.png" type="Texture2D" id=4]
+[ext_resource path="res://Assets/Images/PescaBajoAgua/Tiburón.png" type="Texture2D" id=5]
+[ext_resource path="res://Scenes/Utility/shader/UnderWater2D_obj.gdshader" type="Shader" id=6]
 
 [sub_resource type="ShaderMaterial" id=2]
 shader = ExtResource( 6 )
@@ -25,7 +25,7 @@ Option2 = ExtResource( 2 )
 Option3 = ExtResource( 3 )
 Option4 = ExtResource( 5 )
 
-[node name="Sprite" type="Sprite" parent="."]
+[node name="Sprite2D" type="Sprite2D" parent="."]
 material = SubResource( 2 )
 scale = Vector2( 0.03, 0.03 )
 

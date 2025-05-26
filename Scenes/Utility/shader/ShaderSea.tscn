@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://Scenes/Utility/shader/UnderWater2D_screen.shader" type="Shader" id=1]
+[ext_resource path="res://Scenes/Utility/shader/UnderWater2D_screen.gdshader" type="Shader" id=1]
 
 [sub_resource type="ShaderMaterial" id=1]
 shader = ExtResource( 1 )
@@ -12,6 +12,6 @@ shader_param/wave_width = 0.23
 
 [node name="ColorRect" type="ColorRect" parent="."]
 material = SubResource( 1 )
-margin_top = 250.0
-margin_right = 3200.0
-margin_bottom = 1800.0
+offset_top = 250.0
+offset_right = 3200.0
+offset_bottom = 1800.0

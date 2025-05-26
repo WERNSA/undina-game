@@ -1,7 +1,7 @@
 extends Area2D
 
 var speed
-onready var level = get_tree().get_nodes_in_group("level_obstacle_race")[0]
+@onready var level = get_tree().get_nodes_in_group("level_obstacle_race")[0]
 
 func _ready():
 	speed = Global.min_enemy_speed - 50

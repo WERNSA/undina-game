@@ -7,17 +7,17 @@ func _ready():
 
 
 func _on_BtnBack_pressed():
-	get_tree().call_deferred("change_scene", "res://Scenes/MenuPlay/MenuPlay.tscn")
+	get_tree().call_deferred("change_scene_to_file", "res://Scenes/MenuPlay/MenuPlay.tscn")
 
 
 func _on_BtnFish_pressed():
-	get_tree().call_deferred("change_scene", "res://Scenes/Games/Pescando/Nivel1/Pescando.tscn")
+	get_tree().call_deferred("change_scene_to_file", "res://Scenes/Games/Pescando/Nivel1/Pescando.tscn")
 
 
 func _on_BtnClean_pressed():
-	get_tree().call_deferred("change_scene", "res://Scenes/Games/Pescando/Nivel2/Pescando.tscn")
+	get_tree().call_deferred("change_scene_to_file", "res://Scenes/Games/Pescando/Nivel2/Pescando.tscn")
 
 
 func _on_BtnLvl3_pressed():
-	get_tree().call_deferred("change_scene", "res://Scenes/Games/Pescando/Nivel3/Pescando.tscn")
+	get_tree().call_deferred("change_scene_to_file", "res://Scenes/Games/Pescando/Nivel3/Pescando.tscn")
 	

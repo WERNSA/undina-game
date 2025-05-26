@@ -1,64 +1,64 @@
 [gd_scene load_steps=192 format=2]
 
-[ext_resource path="res://Assets/Images/UnderSeaBG/Luces 2.png" type="Texture" id=1]
-[ext_resource path="res://Assets/Images/UnderSeaBG/Textura 3.png" type="Texture" id=2]
-[ext_resource path="res://Assets/Images/UnderSeaBG/Luces.png" type="Texture" id=3]
-[ext_resource path="res://Assets/Images/UnderSeaBG/Oleaje.png" type="Texture" id=4]
-[ext_resource path="res://Assets/Images/UnderSeaBG/Textura 2.png" type="Texture" id=5]
-[ext_resource path="res://Assets/Images/UnderSeaBG/Textura 1.png" type="Texture" id=6]
-[ext_resource path="res://Assets/Images/UnderSeaBG/Fondo de agua.png" type="Texture" id=7]
-[ext_resource path="res://Assets/Images/UnderSeaBG/Cielo.png" type="Texture" id=8]
-[ext_resource path="res://Assets/Images/UnderSeaBG/Nubes3.png" type="Texture" id=9]
+[ext_resource path="res://Assets/Images/UnderSeaBG/Luces 2.png" type="Texture2D" id=1]
+[ext_resource path="res://Assets/Images/UnderSeaBG/Textura 3.png" type="Texture2D" id=2]
+[ext_resource path="res://Assets/Images/UnderSeaBG/Luces.png" type="Texture2D" id=3]
+[ext_resource path="res://Assets/Images/UnderSeaBG/Oleaje.png" type="Texture2D" id=4]
+[ext_resource path="res://Assets/Images/UnderSeaBG/Textura 2.png" type="Texture2D" id=5]
+[ext_resource path="res://Assets/Images/UnderSeaBG/Textura 1.png" type="Texture2D" id=6]
+[ext_resource path="res://Assets/Images/UnderSeaBG/Fondo de agua.png" type="Texture2D" id=7]
+[ext_resource path="res://Assets/Images/UnderSeaBG/Cielo.png" type="Texture2D" id=8]
+[ext_resource path="res://Assets/Images/UnderSeaBG/Nubes3.png" type="Texture2D" id=9]
 [ext_resource path="res://Scenes/Games/Pescando/Nivel1/Pescando.gd" type="Script" id=10]
-[ext_resource path="res://Assets/Images/Tilesets/Barrera de coral.png" type="Texture" id=11]
+[ext_resource path="res://Assets/Images/Tilesets/Barrera de coral.png" type="Texture2D" id=11]
 [ext_resource path="res://Scenes/Entity/Illea/Buceando/IlleaBuceando.tscn" type="PackedScene" id=12]
-[ext_resource path="res://Assets/Images/Tilesets/Bloque.png" type="Texture" id=13]
-[ext_resource path="res://Assets/Images/Tilesets/CORAL1.png" type="Texture" id=14]
-[ext_resource path="res://Assets/Images/UnderSeaBG/Items/Coral.png" type="Texture" id=15]
-[ext_resource path="res://Assets/Images/UnderSeaBG/Items/Coral cerebro 2.png" type="Texture" id=16]
-[ext_resource path="res://Assets/Images/UnderSeaBG/Items/Estrella de mar.png" type="Texture" id=17]
-[ext_resource path="res://Assets/Images/UnderSeaBG/Items/algas.png" type="Texture" id=18]
+[ext_resource path="res://Assets/Images/Tilesets/Bloque.png" type="Texture2D" id=13]
+[ext_resource path="res://Assets/Images/Tilesets/CORAL1.png" type="Texture2D" id=14]
+[ext_resource path="res://Assets/Images/UnderSeaBG/Items/Coral.png" type="Texture2D" id=15]
+[ext_resource path="res://Assets/Images/UnderSeaBG/Items/Coral cerebro 2.png" type="Texture2D" id=16]
+[ext_resource path="res://Assets/Images/UnderSeaBG/Items/Estrella de mar.png" type="Texture2D" id=17]
+[ext_resource path="res://Assets/Images/UnderSeaBG/Items/algas.png" type="Texture2D" id=18]
 [ext_resource path="res://Scenes/Utility/Contador.tscn" type="PackedScene" id=19]
-[ext_resource path="res://Assets/Images/UnderSeaBG/Items/Coral astas de reno 2.png" type="Texture" id=20]
-[ext_resource path="res://Assets/Images/UnderSeaBG/Items/Coral astas de reno.png" type="Texture" id=21]
-[ext_resource path="res://Assets/Images/UnderSeaBG/Items/Coral pilar.png" type="Texture" id=22]
+[ext_resource path="res://Assets/Images/UnderSeaBG/Items/Coral astas de reno 2.png" type="Texture2D" id=20]
+[ext_resource path="res://Assets/Images/UnderSeaBG/Items/Coral astas de reno.png" type="Texture2D" id=21]
+[ext_resource path="res://Assets/Images/UnderSeaBG/Items/Coral pilar.png" type="Texture2D" id=22]
 [ext_resource path="res://Scenes/Utility/analog/Analog.tscn" type="PackedScene" id=23]
-[ext_resource path="res://Assets/Images/UnderSeaBG/Items/Seguro para latas.png" type="Texture" id=24]
-[ext_resource path="res://Assets/Images/UnderSeaBG/Items/Lancha a motor.png" type="Texture" id=25]
-[ext_resource path="res://Assets/Images/UnderSeaBG/Items/botella.png" type="Texture" id=26]
-[ext_resource path="res://Assets/Images/UnderSeaBG/Garra Media.png" type="Texture" id=27]
-[ext_resource path="res://Assets/Images/UnderSeaBG/Garra Cerrada.png" type="Texture" id=28]
-[ext_resource path="res://Assets/Images/UnderSeaBG/Garra Abierta.png" type="Texture" id=29]
+[ext_resource path="res://Assets/Images/UnderSeaBG/Items/Seguro para latas.png" type="Texture2D" id=24]
+[ext_resource path="res://Assets/Images/UnderSeaBG/Items/Lancha a motor.png" type="Texture2D" id=25]
+[ext_resource path="res://Assets/Images/UnderSeaBG/Items/botella.png" type="Texture2D" id=26]
+[ext_resource path="res://Assets/Images/UnderSeaBG/Garra Media.png" type="Texture2D" id=27]
+[ext_resource path="res://Assets/Images/UnderSeaBG/Garra Cerrada.png" type="Texture2D" id=28]
+[ext_resource path="res://Assets/Images/UnderSeaBG/Garra Abierta.png" type="Texture2D" id=29]
 [ext_resource path="res://Scenes/Games/Pescando/Trash/SeguroLata.gd" type="Script" id=30]
 [ext_resource path="res://Scenes/Games/Pescando/Trash/Botella.gd" type="Script" id=31]
 [ext_resource path="res://Assets/Sounds/pesca_bajo_agua.ogg" type="AudioStream" id=32]
-[ext_resource path="res://Assets/Images/UnderSeaBG/Items/Trash/Calcetín.png" type="Texture" id=33]
-[ext_resource path="res://Assets/Images/UnderSeaBG/Items/Trash/mascarilla.png" type="Texture" id=34]
-[ext_resource path="res://Assets/Images/UnderSeaBG/Items/Trash/Máquina de afeitar.png" type="Texture" id=35]
-[ext_resource path="res://Assets/Images/UnderSeaBG/Items/Trash/lata.png" type="Texture" id=36]
-[ext_resource path="res://Assets/Images/UnderSeaBG/Items/Trash/Jeringa.png" type="Texture" id=37]
-[ext_resource path="res://Assets/Images/UnderSeaBG/Items/Trash/Cuchara.png" type="Texture" id=38]
+[ext_resource path="res://Assets/Images/UnderSeaBG/Items/Trash/Calcetín.png" type="Texture2D" id=33]
+[ext_resource path="res://Assets/Images/UnderSeaBG/Items/Trash/mascarilla.png" type="Texture2D" id=34]
+[ext_resource path="res://Assets/Images/UnderSeaBG/Items/Trash/Máquina de afeitar.png" type="Texture2D" id=35]
+[ext_resource path="res://Assets/Images/UnderSeaBG/Items/Trash/lata.png" type="Texture2D" id=36]
+[ext_resource path="res://Assets/Images/UnderSeaBG/Items/Trash/Jeringa.png" type="Texture2D" id=37]
+[ext_resource path="res://Assets/Images/UnderSeaBG/Items/Trash/Cuchara.png" type="Texture2D" id=38]
 [ext_resource path="res://Scenes/Games/Pescando/Trash/Cuchara.gd" type="Script" id=39]
 [ext_resource path="res://Scenes/Pause/PauseMenu.tscn" type="PackedScene" id=40]
-[ext_resource path="res://Assets/Images/UnderSeaBG/Items/Trash/trampa.png" type="Texture" id=41]
+[ext_resource path="res://Assets/Images/UnderSeaBG/Items/Trash/trampa.png" type="Texture2D" id=41]
 [ext_resource path="res://Scenes/Games/Pescando/Nivel1/Trampa.gd" type="Script" id=42]
 [ext_resource path="res://Assets/Sounds/SFX/get_item.wav" type="AudioStream" id=43]
-[ext_resource path="res://Assets/Images/UnderSeaBG/Items/Fish/barracuda.png" type="Texture" id=44]
+[ext_resource path="res://Assets/Images/UnderSeaBG/Items/Fish/barracuda.png" type="Texture2D" id=44]
 [ext_resource path="res://Scenes/Utility/shader/ShaderSea.tscn" type="PackedScene" id=45]
-[ext_resource path="res://Scenes/Utility/shader/UnderWater2D_obj.shader" type="Shader" id=46]
+[ext_resource path="res://Scenes/Utility/shader/UnderWater2D_obj.gdshader" type="Shader" id=46]
 [ext_resource path="res://Scenes/Entity/FishUnderSea/Fish/Fish.tscn" type="PackedScene" id=47]
 [ext_resource path="res://Scenes/Entity/FishUnderSea/Turtle/Turtle.tscn" type="PackedScene" id=48]
-[ext_resource path="res://Assets/Fonts/btnFont.tres" type="DynamicFont" id=49]
-[ext_resource path="res://Assets/Images/Fondo de contador de puntos.png" type="Texture" id=50]
+[ext_resource path="res://Assets/Fonts/btnFont.tres" type="FontFile" id=49]
+[ext_resource path="res://Assets/Images/Fondo de contador de puntos.png" type="Texture2D" id=50]
 [ext_resource path="res://Assets/Sounds/SFX/ender_punch.wav" type="AudioStream" id=51]
 [ext_resource path="res://Scenes/Utility/GameOver/GameOver.tscn" type="PackedScene" id=52]
 [ext_resource path="res://Scenes/Utility/Win/Win.tscn" type="PackedScene" id=53]
 
 [sub_resource type="ConvexPolygonShape2D" id=126]
-points = PoolVector2Array( 8, 8, 72, 8, 72, 72, 8, 72 )
+points = PackedVector2Array( 8, 8, 72, 8, 72, 72, 8, 72 )
 
 [sub_resource type="ConvexPolygonShape2D" id=127]
-points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
+points = PackedVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 
 [sub_resource type="TileSet" id=3]
 0/name = "Bloque.png 0"
@@ -105,346 +105,346 @@ points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 1/z_index = 0
 
 [sub_resource type="ConvexPolygonShape2D" id=6]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=7]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=8]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=9]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=10]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=11]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=12]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=13]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=14]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=15]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=16]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=17]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=18]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=19]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=20]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=21]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=22]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=23]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=24]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=25]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=26]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=27]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=28]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=29]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=30]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=31]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=32]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=33]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=34]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=35]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=36]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=37]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=38]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=39]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=40]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=41]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=42]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=43]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=44]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=45]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=46]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=47]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=48]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=49]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=50]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=51]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=52]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=53]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=54]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=55]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=56]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=57]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=58]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=59]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=60]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=61]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=62]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=63]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=64]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=65]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=66]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=67]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=68]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=69]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=70]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=71]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=72]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=73]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=74]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=75]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=76]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=77]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=78]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=79]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=80]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=81]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=82]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=83]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=84]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=85]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=86]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=87]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=88]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=89]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=90]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=91]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=92]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=93]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=94]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=95]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=96]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=97]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=98]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=99]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=100]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=101]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=102]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=103]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=104]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=105]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=106]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=107]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=108]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=109]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=110]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=111]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=112]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=113]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=114]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=115]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=116]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=117]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=118]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=119]
-points = PoolVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
+points = PackedVector2Array( 0, 0, 40, 0, 40, 40, 0, 40 )
 
 [sub_resource type="TileSet" id=5]
 0/name = "CORAL1.png 0"
@@ -1348,7 +1348,7 @@ bus = "SFX"
 [node name="ParallaxLayer" type="ParallaxLayer" parent="Background/Sky"]
 motion_mirroring = Vector2( 3200, 0 )
 
-[node name="Sprite" type="Sprite" parent="Background/Sky/ParallaxLayer"]
+[node name="Sprite2D" type="Sprite2D" parent="Background/Sky/ParallaxLayer"]
 texture = ExtResource( 8 )
 centered = false
 
@@ -1357,7 +1357,7 @@ centered = false
 [node name="ParallaxLayer2" type="ParallaxLayer" parent="Background/Clouds"]
 motion_mirroring = Vector2( 3200, 0 )
 
-[node name="Sprite" type="Sprite" parent="Background/Clouds/ParallaxLayer2"]
+[node name="Sprite2D" type="Sprite2D" parent="Background/Clouds/ParallaxLayer2"]
 texture = ExtResource( 9 )
 centered = false
 
@@ -1366,28 +1366,28 @@ centered = false
 [node name="ParallaxLayer" type="ParallaxLayer" parent="Background/Sea"]
 motion_mirroring = Vector2( 3185, 0 )
 
-[node name="Sprite" type="Sprite" parent="Background/Sea/ParallaxLayer"]
+[node name="Sprite2D" type="Sprite2D" parent="Background/Sea/ParallaxLayer"]
 texture = ExtResource( 7 )
 centered = false
 
 [node name="ParallaxLayer2" type="ParallaxLayer" parent="Background/Sea"]
 motion_mirroring = Vector2( 3185, 0 )
 
-[node name="Sprite" type="Sprite" parent="Background/Sea/ParallaxLayer2"]
+[node name="Sprite2D" type="Sprite2D" parent="Background/Sea/ParallaxLayer2"]
 texture = ExtResource( 6 )
 centered = false
 
 [node name="ParallaxLayer3" type="ParallaxLayer" parent="Background/Sea"]
 motion_mirroring = Vector2( 3185, 0 )
 
-[node name="Sprite" type="Sprite" parent="Background/Sea/ParallaxLayer3"]
+[node name="Sprite2D" type="Sprite2D" parent="Background/Sea/ParallaxLayer3"]
 texture = ExtResource( 5 )
 centered = false
 
 [node name="ParallaxLayer4" type="ParallaxLayer" parent="Background/Sea"]
 motion_mirroring = Vector2( 3185, 0 )
 
-[node name="Sprite" type="Sprite" parent="Background/Sea/ParallaxLayer4"]
+[node name="Sprite2D" type="Sprite2D" parent="Background/Sea/ParallaxLayer4"]
 scale = Vector2( 0.99875, 1 )
 texture = ExtResource( 2 )
 centered = false
@@ -1396,7 +1396,7 @@ centered = false
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="Background/Boat"]
 
-[node name="Boat" type="Sprite" parent="Background/Boat/ParallaxLayer"]
+[node name="Boat" type="Sprite2D" parent="Background/Boat/ParallaxLayer"]
 position = Vector2( 1600, 325 )
 texture = ExtResource( 25 )
 
@@ -1405,7 +1405,7 @@ texture = ExtResource( 25 )
 [node name="ParallaxLayer" type="ParallaxLayer" parent="Background/Wave"]
 motion_mirroring = Vector2( 3175, 0 )
 
-[node name="Sprite" type="Sprite" parent="Background/Wave/ParallaxLayer"]
+[node name="Sprite2D" type="Sprite2D" parent="Background/Wave/ParallaxLayer"]
 texture = ExtResource( 4 )
 centered = false
 
@@ -1414,14 +1414,14 @@ centered = false
 [node name="ParallaxLayer" type="ParallaxLayer" parent="Background/Lights"]
 motion_mirroring = Vector2( 3200, 0 )
 
-[node name="Sprite" type="Sprite" parent="Background/Lights/ParallaxLayer"]
+[node name="Sprite2D" type="Sprite2D" parent="Background/Lights/ParallaxLayer"]
 texture = ExtResource( 3 )
 centered = false
 
 [node name="ParallaxLayer2" type="ParallaxLayer" parent="Background/Lights"]
 motion_mirroring = Vector2( 3200, 0 )
 
-[node name="Sprite" type="Sprite" parent="Background/Lights/ParallaxLayer2"]
+[node name="Sprite2D" type="Sprite2D" parent="Background/Lights/ParallaxLayer2"]
 modulate = Color( 1, 1, 1, 0.490196 )
 texture = ExtResource( 1 )
 centered = false
@@ -1432,22 +1432,22 @@ centered = false
 visible = false
 tile_set = SubResource( 3 )
 format = 1
-tile_data = PoolIntArray( 327679, 0, 0, 262144, 0, 0, 262145, 0, 0, 262146, 0, 0, 262147, 0, 0, 262148, 0, 0, 262149, 0, 0, 262150, 0, 0, 262151, 0, 0, 262152, 0, 0, 262153, 0, 0, 262154, 0, 0, 262155, 0, 0, 262156, 0, 0, 262157, 0, 0, 262158, 0, 0, 262159, 0, 0, 262160, 0, 0, 262161, 0, 0, 262162, 0, 0, 262163, 0, 0, 262164, 0, 0, 262165, 0, 0, 262166, 0, 0, 262167, 0, 0, 262168, 0, 0, 262169, 0, 0, 262170, 0, 0, 262171, 0, 0, 262172, 0, 0, 262173, 0, 0, 262174, 0, 0, 262175, 0, 0, 262176, 0, 0, 262177, 0, 0, 262178, 0, 0, 262179, 0, 0, 262180, 0, 0, 262181, 0, 0, 262182, 0, 0, 262183, 0, 0, 262184, 0, 0, 262185, 0, 0, 262186, 0, 0, 262187, 0, 0, 262188, 0, 0, 262189, 0, 0, 262190, 0, 0, 262191, 0, 0, 262192, 0, 0, 262193, 0, 0, 262194, 0, 0, 393215, 0, 0, 327730, 0, 0, 458751, 0, 0, 393266, 0, 0, 524287, 0, 0, 458802, 0, 0, 589823, 0, 0, 524338, 0, 0, 655359, 0, 0, 589858, 0, 0, 589859, 0, 0, 589860, 0, 0, 589874, 0, 0, 720895, 0, 0, 655362, 0, 0, 655363, 0, 0, 655364, 0, 0, 655394, 0, 0, 655395, 0, 0, 655396, 0, 0, 655410, 0, 0, 720896, 0, 0, 720897, 0, 0, 720898, 0, 0, 720899, 0, 0, 720900, 0, 0, 720901, 0, 0, 720902, 0, 0, 720914, 0, 0, 720915, 0, 0, 720916, 0, 0, 720927, 0, 0, 720928, 0, 0, 720929, 0, 0, 720930, 0, 0, 720931, 0, 0, 720932, 0, 0, 720946, 0, 0, 786432, 0, 0, 786433, 0, 0, 786434, 0, 0, 786435, 0, 0, 786436, 0, 0, 786437, 0, 0, 786438, 0, 0, 786442, 0, 0, 786443, 0, 0, 786444, 0, 0, 786445, 0, 0, 786446, 0, 0, 786447, 0, 0, 786448, 0, 0, 786449, 0, 0, 786450, 0, 0, 786451, 0, 0, 786452, 0, 0, 786456, 0, 0, 786457, 0, 0, 786458, 0, 0, 786459, 0, 0, 786460, 0, 0, 786461, 0, 0, 786462, 0, 0, 786463, 0, 0, 786464, 0, 0, 786465, 0, 0, 786466, 0, 0, 786467, 0, 0, 786468, 0, 0, 786469, 0, 0, 786482, 0, 0, 851968, 0, 0, 851969, 0, 0, 851970, 0, 0, 851971, 0, 0, 851972, 0, 0, 851973, 0, 0, 851974, 0, 0, 851978, 0, 0, 851979, 0, 0, 851980, 0, 0, 851981, 0, 0, 851982, 0, 0, 851983, 0, 0, 851984, 0, 0, 851985, 0, 0, 851986, 0, 0, 851987, 0, 0, 852000, 0, 0, 852001, 0, 0, 852002, 0, 0, 852003, 0, 0, 852004, 0, 0, 852005, 0, 0, 852018, 0, 0, 917504, 0, 0, 917505, 0, 0, 917506, 0, 0, 917507, 0, 0, 917513, 0, 0, 917514, 0, 0, 917537, 0, 0, 917538, 0, 0, 917539, 0, 0, 917540, 0, 0, 917541, 0, 0, 917542, 0, 0, 917543, 0, 0, 917544, 0, 0, 917545, 0, 0, 917546, 0, 0, 917547, 0, 0, 917550, 0, 0, 917551, 0, 0, 917552, 0, 0, 917553, 0, 0, 917554, 0, 0, 983040, 0, 0, 983041, 0, 0, 983042, 0, 0, 983043, 0, 0, 983049, 0, 0, 983050, 0, 0, 983061, 0, 0, 983062, 0, 0, 983073, 0, 0, 983074, 0, 0, 983075, 0, 0, 983076, 0, 0, 983077, 0, 0, 983078, 0, 0, 983079, 0, 0, 983080, 0, 0, 983081, 0, 0, 983082, 0, 0, 983083, 0, 0, 983086, 0, 0, 983087, 0, 0, 983088, 0, 0, 983089, 0, 0, 983090, 0, 0, 1048576, 0, 0, 1048577, 0, 0, 1048578, 0, 0, 1048579, 0, 0, 1048585, 0, 0, 1048586, 0, 0, 1048597, 0, 0, 1048598, 0, 0, 1048599, 0, 0, 1048608, 0, 0, 1048609, 0, 0, 1048610, 0, 0, 1048618, 0, 0, 1048619, 0, 0, 1048622, 0, 0, 1048623, 0, 0, 1048624, 0, 0, 1048625, 0, 0, 1048626, 0, 0, 1114112, 0, 0, 1114113, 0, 0, 1114114, 0, 0, 1114115, 0, 0, 1114119, 0, 0, 1114120, 0, 0, 1114121, 0, 0, 1114122, 0, 0, 1114123, 0, 0, 1114124, 0, 0, 1114125, 0, 0, 1114126, 0, 0, 1114127, 0, 0, 1114128, 0, 0, 1114129, 0, 0, 1114130, 0, 0, 1114131, 0, 0, 1114132, 0, 0, 1114133, 0, 0, 1114134, 0, 0, 1114135, 0, 0, 1114136, 0, 0, 1114137, 0, 0, 1114138, 0, 0, 1114139, 0, 0, 1114142, 0, 0, 1114143, 0, 0, 1114144, 0, 0, 1114145, 0, 0, 1114146, 0, 0, 1114154, 0, 0, 1114155, 0, 0, 1114158, 0, 0, 1114159, 0, 0, 1114160, 0, 0, 1114161, 0, 0, 1114162, 0, 0, 1179690, 0, 0, 1179691, 0, 0, 1179694, 0, 0, 1179695, 0, 0, 1179696, 0, 0, 1179697, 0, 0, 1179698, 0, 0, 1245224, 0, 0, 1245225, 0, 0, 1245226, 0, 0, 1245227, 0, 0, 1245234, 0, 0, 1310761, 0, 0, 1310762, 0, 0, 1310763, 0, 0, 1310770, 0, 0, 1376256, 0, 0, 1376257, 0, 0, 1376258, 0, 0, 1376259, 0, 0, 1376260, 0, 0, 1376263, 0, 0, 1376278, 0, 0, 1376279, 0, 0, 1376280, 0, 0, 1376281, 0, 0, 1376282, 0, 0, 1376283, 0, 0, 1376284, 0, 0, 1376289, 0, 0, 1376290, 0, 0, 1376291, 0, 0, 1376292, 0, 0, 1376293, 0, 0, 1376297, 0, 0, 1376298, 0, 0, 1376299, 0, 0, 1376306, 0, 0, 1441792, 0, 0, 1441793, 0, 0, 1441799, 0, 0, 1441824, 0, 0, 1441825, 0, 0, 1441826, 0, 0, 1441827, 0, 0, 1441828, 0, 0, 1441838, 0, 0, 1441842, 0, 0, 1507328, 0, 0, 1507329, 0, 0, 1507335, 0, 0, 1507336, 0, 0, 1507340, 0, 0, 1507341, 0, 0, 1507342, 0, 0, 1507343, 0, 0, 1507344, 0, 0, 1507345, 0, 0, 1507346, 0, 0, 1507360, 0, 0, 1507361, 0, 0, 1507362, 0, 0, 1507374, 0, 0, 1507378, 0, 0, 1572864, 0, 0, 1572865, 0, 0, 1572871, 0, 0, 1572872, 0, 0, 1572876, 0, 0, 1572897, 0, 0, 1572898, 0, 0, 1572910, 0, 0, 1572914, 0, 0, 1638400, 0, 0, 1638401, 0, 0, 1638407, 0, 0, 1638408, 0, 0, 1638412, 0, 0, 1638430, 0, 0, 1638431, 0, 0, 1638432, 0, 0, 1638433, 0, 0, 1638434, 0, 0, 1638435, 0, 0, 1638436, 0, 0, 1638437, 0, 0, 1638438, 0, 0, 1638439, 0, 0, 1638440, 0, 0, 1638441, 0, 0, 1638442, 0, 0, 1638446, 0, 0, 1638450, 0, 0, 1703936, 0, 0, 1703937, 0, 0, 1703938, 0, 0, 1703939, 0, 0, 1703940, 0, 0, 1703941, 0, 0, 1703942, 0, 0, 1703943, 0, 0, 1703944, 0, 0, 1703948, 0, 0, 1703966, 0, 0, 1703967, 0, 0, 1703968, 0, 0, 1703969, 0, 0, 1703970, 0, 0, 1703971, 0, 0, 1703972, 0, 0, 1703973, 0, 0, 1703974, 0, 0, 1703975, 0, 0, 1703976, 0, 0, 1703977, 0, 0, 1703978, 0, 0, 1703982, 0, 0, 1703986, 0, 0, 1769472, 0, 0, 1769473, 0, 0, 1769474, 0, 0, 1769475, 0, 0, 1769476, 0, 0, 1769477, 0, 0, 1769478, 0, 0, 1769479, 0, 0, 1769480, 0, 0, 1769484, 0, 0, 1769485, 0, 0, 1769486, 0, 0, 1769487, 0, 0, 1769488, 0, 0, 1769489, 0, 0, 1769490, 0, 0, 1769491, 0, 0, 1769492, 0, 0, 1769493, 0, 0, 1769494, 0, 0, 1769495, 0, 0, 1769496, 0, 0, 1769497, 0, 0, 1769498, 0, 0, 1769499, 0, 0, 1769500, 0, 0, 1769501, 0, 0, 1769502, 0, 0, 1769503, 0, 0, 1769504, 0, 0, 1769505, 0, 0, 1769506, 0, 0, 1769507, 0, 0, 1769508, 0, 0, 1769509, 0, 0, 1769510, 0, 0, 1769511, 0, 0, 1769512, 0, 0, 1769513, 0, 0, 1769514, 0, 0, 1769518, 0, 0, 1769519, 0, 0, 1769520, 0, 0, 1769521, 0, 0, 1769522, 0, 0, 1835016, 0, 0, 1835017, 0, 0, 1835018, 0, 0, 1835019, 0, 0, 1835020, 0, 0, 1835051, 0, 0, 1835052, 0, 0, 1835053, 0, 0 )
+tile_data = PackedInt32Array( 327679, 0, 0, 262144, 0, 0, 262145, 0, 0, 262146, 0, 0, 262147, 0, 0, 262148, 0, 0, 262149, 0, 0, 262150, 0, 0, 262151, 0, 0, 262152, 0, 0, 262153, 0, 0, 262154, 0, 0, 262155, 0, 0, 262156, 0, 0, 262157, 0, 0, 262158, 0, 0, 262159, 0, 0, 262160, 0, 0, 262161, 0, 0, 262162, 0, 0, 262163, 0, 0, 262164, 0, 0, 262165, 0, 0, 262166, 0, 0, 262167, 0, 0, 262168, 0, 0, 262169, 0, 0, 262170, 0, 0, 262171, 0, 0, 262172, 0, 0, 262173, 0, 0, 262174, 0, 0, 262175, 0, 0, 262176, 0, 0, 262177, 0, 0, 262178, 0, 0, 262179, 0, 0, 262180, 0, 0, 262181, 0, 0, 262182, 0, 0, 262183, 0, 0, 262184, 0, 0, 262185, 0, 0, 262186, 0, 0, 262187, 0, 0, 262188, 0, 0, 262189, 0, 0, 262190, 0, 0, 262191, 0, 0, 262192, 0, 0, 262193, 0, 0, 262194, 0, 0, 393215, 0, 0, 327730, 0, 0, 458751, 0, 0, 393266, 0, 0, 524287, 0, 0, 458802, 0, 0, 589823, 0, 0, 524338, 0, 0, 655359, 0, 0, 589858, 0, 0, 589859, 0, 0, 589860, 0, 0, 589874, 0, 0, 720895, 0, 0, 655362, 0, 0, 655363, 0, 0, 655364, 0, 0, 655394, 0, 0, 655395, 0, 0, 655396, 0, 0, 655410, 0, 0, 720896, 0, 0, 720897, 0, 0, 720898, 0, 0, 720899, 0, 0, 720900, 0, 0, 720901, 0, 0, 720902, 0, 0, 720914, 0, 0, 720915, 0, 0, 720916, 0, 0, 720927, 0, 0, 720928, 0, 0, 720929, 0, 0, 720930, 0, 0, 720931, 0, 0, 720932, 0, 0, 720946, 0, 0, 786432, 0, 0, 786433, 0, 0, 786434, 0, 0, 786435, 0, 0, 786436, 0, 0, 786437, 0, 0, 786438, 0, 0, 786442, 0, 0, 786443, 0, 0, 786444, 0, 0, 786445, 0, 0, 786446, 0, 0, 786447, 0, 0, 786448, 0, 0, 786449, 0, 0, 786450, 0, 0, 786451, 0, 0, 786452, 0, 0, 786456, 0, 0, 786457, 0, 0, 786458, 0, 0, 786459, 0, 0, 786460, 0, 0, 786461, 0, 0, 786462, 0, 0, 786463, 0, 0, 786464, 0, 0, 786465, 0, 0, 786466, 0, 0, 786467, 0, 0, 786468, 0, 0, 786469, 0, 0, 786482, 0, 0, 851968, 0, 0, 851969, 0, 0, 851970, 0, 0, 851971, 0, 0, 851972, 0, 0, 851973, 0, 0, 851974, 0, 0, 851978, 0, 0, 851979, 0, 0, 851980, 0, 0, 851981, 0, 0, 851982, 0, 0, 851983, 0, 0, 851984, 0, 0, 851985, 0, 0, 851986, 0, 0, 851987, 0, 0, 852000, 0, 0, 852001, 0, 0, 852002, 0, 0, 852003, 0, 0, 852004, 0, 0, 852005, 0, 0, 852018, 0, 0, 917504, 0, 0, 917505, 0, 0, 917506, 0, 0, 917507, 0, 0, 917513, 0, 0, 917514, 0, 0, 917537, 0, 0, 917538, 0, 0, 917539, 0, 0, 917540, 0, 0, 917541, 0, 0, 917542, 0, 0, 917543, 0, 0, 917544, 0, 0, 917545, 0, 0, 917546, 0, 0, 917547, 0, 0, 917550, 0, 0, 917551, 0, 0, 917552, 0, 0, 917553, 0, 0, 917554, 0, 0, 983040, 0, 0, 983041, 0, 0, 983042, 0, 0, 983043, 0, 0, 983049, 0, 0, 983050, 0, 0, 983061, 0, 0, 983062, 0, 0, 983073, 0, 0, 983074, 0, 0, 983075, 0, 0, 983076, 0, 0, 983077, 0, 0, 983078, 0, 0, 983079, 0, 0, 983080, 0, 0, 983081, 0, 0, 983082, 0, 0, 983083, 0, 0, 983086, 0, 0, 983087, 0, 0, 983088, 0, 0, 983089, 0, 0, 983090, 0, 0, 1048576, 0, 0, 1048577, 0, 0, 1048578, 0, 0, 1048579, 0, 0, 1048585, 0, 0, 1048586, 0, 0, 1048597, 0, 0, 1048598, 0, 0, 1048599, 0, 0, 1048608, 0, 0, 1048609, 0, 0, 1048610, 0, 0, 1048618, 0, 0, 1048619, 0, 0, 1048622, 0, 0, 1048623, 0, 0, 1048624, 0, 0, 1048625, 0, 0, 1048626, 0, 0, 1114112, 0, 0, 1114113, 0, 0, 1114114, 0, 0, 1114115, 0, 0, 1114119, 0, 0, 1114120, 0, 0, 1114121, 0, 0, 1114122, 0, 0, 1114123, 0, 0, 1114124, 0, 0, 1114125, 0, 0, 1114126, 0, 0, 1114127, 0, 0, 1114128, 0, 0, 1114129, 0, 0, 1114130, 0, 0, 1114131, 0, 0, 1114132, 0, 0, 1114133, 0, 0, 1114134, 0, 0, 1114135, 0, 0, 1114136, 0, 0, 1114137, 0, 0, 1114138, 0, 0, 1114139, 0, 0, 1114142, 0, 0, 1114143, 0, 0, 1114144, 0, 0, 1114145, 0, 0, 1114146, 0, 0, 1114154, 0, 0, 1114155, 0, 0, 1114158, 0, 0, 1114159, 0, 0, 1114160, 0, 0, 1114161, 0, 0, 1114162, 0, 0, 1179690, 0, 0, 1179691, 0, 0, 1179694, 0, 0, 1179695, 0, 0, 1179696, 0, 0, 1179697, 0, 0, 1179698, 0, 0, 1245224, 0, 0, 1245225, 0, 0, 1245226, 0, 0, 1245227, 0, 0, 1245234, 0, 0, 1310761, 0, 0, 1310762, 0, 0, 1310763, 0, 0, 1310770, 0, 0, 1376256, 0, 0, 1376257, 0, 0, 1376258, 0, 0, 1376259, 0, 0, 1376260, 0, 0, 1376263, 0, 0, 1376278, 0, 0, 1376279, 0, 0, 1376280, 0, 0, 1376281, 0, 0, 1376282, 0, 0, 1376283, 0, 0, 1376284, 0, 0, 1376289, 0, 0, 1376290, 0, 0, 1376291, 0, 0, 1376292, 0, 0, 1376293, 0, 0, 1376297, 0, 0, 1376298, 0, 0, 1376299, 0, 0, 1376306, 0, 0, 1441792, 0, 0, 1441793, 0, 0, 1441799, 0, 0, 1441824, 0, 0, 1441825, 0, 0, 1441826, 0, 0, 1441827, 0, 0, 1441828, 0, 0, 1441838, 0, 0, 1441842, 0, 0, 1507328, 0, 0, 1507329, 0, 0, 1507335, 0, 0, 1507336, 0, 0, 1507340, 0, 0, 1507341, 0, 0, 1507342, 0, 0, 1507343, 0, 0, 1507344, 0, 0, 1507345, 0, 0, 1507346, 0, 0, 1507360, 0, 0, 1507361, 0, 0, 1507362, 0, 0, 1507374, 0, 0, 1507378, 0, 0, 1572864, 0, 0, 1572865, 0, 0, 1572871, 0, 0, 1572872, 0, 0, 1572876, 0, 0, 1572897, 0, 0, 1572898, 0, 0, 1572910, 0, 0, 1572914, 0, 0, 1638400, 0, 0, 1638401, 0, 0, 1638407, 0, 0, 1638408, 0, 0, 1638412, 0, 0, 1638430, 0, 0, 1638431, 0, 0, 1638432, 0, 0, 1638433, 0, 0, 1638434, 0, 0, 1638435, 0, 0, 1638436, 0, 0, 1638437, 0, 0, 1638438, 0, 0, 1638439, 0, 0, 1638440, 0, 0, 1638441, 0, 0, 1638442, 0, 0, 1638446, 0, 0, 1638450, 0, 0, 1703936, 0, 0, 1703937, 0, 0, 1703938, 0, 0, 1703939, 0, 0, 1703940, 0, 0, 1703941, 0, 0, 1703942, 0, 0, 1703943, 0, 0, 1703944, 0, 0, 1703948, 0, 0, 1703966, 0, 0, 1703967, 0, 0, 1703968, 0, 0, 1703969, 0, 0, 1703970, 0, 0, 1703971, 0, 0, 1703972, 0, 0, 1703973, 0, 0, 1703974, 0, 0, 1703975, 0, 0, 1703976, 0, 0, 1703977, 0, 0, 1703978, 0, 0, 1703982, 0, 0, 1703986, 0, 0, 1769472, 0, 0, 1769473, 0, 0, 1769474, 0, 0, 1769475, 0, 0, 1769476, 0, 0, 1769477, 0, 0, 1769478, 0, 0, 1769479, 0, 0, 1769480, 0, 0, 1769484, 0, 0, 1769485, 0, 0, 1769486, 0, 0, 1769487, 0, 0, 1769488, 0, 0, 1769489, 0, 0, 1769490, 0, 0, 1769491, 0, 0, 1769492, 0, 0, 1769493, 0, 0, 1769494, 0, 0, 1769495, 0, 0, 1769496, 0, 0, 1769497, 0, 0, 1769498, 0, 0, 1769499, 0, 0, 1769500, 0, 0, 1769501, 0, 0, 1769502, 0, 0, 1769503, 0, 0, 1769504, 0, 0, 1769505, 0, 0, 1769506, 0, 0, 1769507, 0, 0, 1769508, 0, 0, 1769509, 0, 0, 1769510, 0, 0, 1769511, 0, 0, 1769512, 0, 0, 1769513, 0, 0, 1769514, 0, 0, 1769518, 0, 0, 1769519, 0, 0, 1769520, 0, 0, 1769521, 0, 0, 1769522, 0, 0, 1835016, 0, 0, 1835017, 0, 0, 1835018, 0, 0, 1835019, 0, 0, 1835020, 0, 0, 1835051, 0, 0, 1835052, 0, 0, 1835053, 0, 0 )
 
 [node name="Rocks" type="TileMap" parent="Collisions"]
 tile_set = SubResource( 3 )
 format = 1
-tile_data = PoolIntArray( 1179648, 0, 0, 1245184, 0, 0, 1310720, 0, 0, 1441815, 0, 0, 1441817, 0, 0, 1441819, 0, 0, 1507351, 0, 0, 1507353, 0, 0, 1507355, 0, 0, 1572896, 0, 0, 1638432, 0, 0, 1703949, 0, 0, 1703950, 0, 0, 1703951, 0, 0, 1703960, 0, 0, 1703962, 0, 0, 1769495, 0, 0, 1769497, 0, 0, 1769499, 0, 0 )
+tile_data = PackedInt32Array( 1179648, 0, 0, 1245184, 0, 0, 1310720, 0, 0, 1441815, 0, 0, 1441817, 0, 0, 1441819, 0, 0, 1507351, 0, 0, 1507353, 0, 0, 1507355, 0, 0, 1572896, 0, 0, 1638432, 0, 0, 1703949, 0, 0, 1703950, 0, 0, 1703951, 0, 0, 1703960, 0, 0, 1703962, 0, 0, 1769495, 0, 0, 1769497, 0, 0, 1769499, 0, 0 )
 
 [node name="Coral" type="TileMap" parent="Collisions"]
 tile_set = SubResource( 5 )
 cell_tile_origin = 1
 format = 1
-tile_data = PoolIntArray( 458821, 0, 0, 458822, 0, 0, 458823, 0, 0, 458824, 0, 0, 458825, 0, 0, 458826, 0, 0, 458827, 0, 0, 458828, 0, 0, 458829, 0, 0, 458830, 0, 0, 458831, 0, 0, 524347, 0, 0, 524348, 0, 0, 524349, 0, 0, 524350, 0, 0, 524351, 0, 0, 524352, 0, 0, 524353, 0, 0, 524354, 0, 0, 524355, 0, 0, 524356, 0, 0, 524367, 0, 0, 589873, 0, 0, 589874, 0, 0, 589875, 0, 0, 589876, 0, 0, 589877, 0, 0, 589878, 0, 0, 589879, 0, 0, 589880, 0, 0, 589881, 0, 0, 589882, 0, 0, 655404, 0, 0, 655405, 0, 0, 655406, 0, 0, 655407, 0, 0, 655408, 0, 0, 720935, 0, 0, 720936, 0, 0, 720937, 0, 0, 720938, 0, 0, 720939, 0, 0, 786434, 0, 0, 786435, 0, 0, 786467, 0, 0, 786468, 0, 0, 786469, 0, 0, 786470, 0, 0, 851972, 0, 0, 851973, 0, 0, 851974, 0, 0, 852000, 0, 0, 852001, 0, 0, 852002, 0, 0, 917510, 0, 0, 917511, 0, 0, 917512, 0, 0, 917531, 0, 0, 917532, 0, 0, 917533, 0, 0, 917534, 0, 0, 917535, 0, 0, 983048, 0, 0, 983049, 0, 0, 983062, 0, 0, 983063, 0, 0, 983064, 0, 0, 983065, 0, 0, 983066, 0, 0, 1048585, 0, 0, 1048586, 0, 0, 1048593, 0, 0, 1048594, 0, 0, 1048595, 0, 0, 1048596, 0, 0, 1048597, 0, 0, 1114122, 0, 0, 1114124, 0, 0, 1114125, 0, 0, 1114126, 0, 0, 1114127, 0, 0, 1114128, 0, 0, 1179658, 0, 0, 1179659, 0, 0 )
+tile_data = PackedInt32Array( 458821, 0, 0, 458822, 0, 0, 458823, 0, 0, 458824, 0, 0, 458825, 0, 0, 458826, 0, 0, 458827, 0, 0, 458828, 0, 0, 458829, 0, 0, 458830, 0, 0, 458831, 0, 0, 524347, 0, 0, 524348, 0, 0, 524349, 0, 0, 524350, 0, 0, 524351, 0, 0, 524352, 0, 0, 524353, 0, 0, 524354, 0, 0, 524355, 0, 0, 524356, 0, 0, 524367, 0, 0, 589873, 0, 0, 589874, 0, 0, 589875, 0, 0, 589876, 0, 0, 589877, 0, 0, 589878, 0, 0, 589879, 0, 0, 589880, 0, 0, 589881, 0, 0, 589882, 0, 0, 655404, 0, 0, 655405, 0, 0, 655406, 0, 0, 655407, 0, 0, 655408, 0, 0, 720935, 0, 0, 720936, 0, 0, 720937, 0, 0, 720938, 0, 0, 720939, 0, 0, 786434, 0, 0, 786435, 0, 0, 786467, 0, 0, 786468, 0, 0, 786469, 0, 0, 786470, 0, 0, 851972, 0, 0, 851973, 0, 0, 851974, 0, 0, 852000, 0, 0, 852001, 0, 0, 852002, 0, 0, 917510, 0, 0, 917511, 0, 0, 917512, 0, 0, 917531, 0, 0, 917532, 0, 0, 917533, 0, 0, 917534, 0, 0, 917535, 0, 0, 983048, 0, 0, 983049, 0, 0, 983062, 0, 0, 983063, 0, 0, 983064, 0, 0, 983065, 0, 0, 983066, 0, 0, 1048585, 0, 0, 1048586, 0, 0, 1048593, 0, 0, 1048594, 0, 0, 1048595, 0, 0, 1048596, 0, 0, 1048597, 0, 0, 1114122, 0, 0, 1114124, 0, 0, 1114125, 0, 0, 1114126, 0, 0, 1114127, 0, 0, 1114128, 0, 0, 1179658, 0, 0, 1179659, 0, 0 )
 
 [node name="Placeholder" type="Node" parent="."]
 
-[node name="Terrain" type="Sprite" parent="Placeholder"]
+[node name="Terrain" type="Sprite2D" parent="Placeholder"]
 position = Vector2( -57, 504 )
 scale = Vector2( 0.363, 0.414 )
 z_index = 1
@@ -1456,78 +1456,78 @@ centered = false
 
 [node name="Corals" type="Node" parent="Placeholder"]
 
-[node name="Coral" type="Sprite" parent="Placeholder/Corals"]
+[node name="Coral" type="Sprite2D" parent="Placeholder/Corals"]
 material = SubResource( 137 )
 position = Vector2( 74, 669 )
 scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 15 )
 
-[node name="Coral2" type="Sprite" parent="Placeholder/Corals"]
+[node name="Coral2" type="Sprite2D" parent="Placeholder/Corals"]
 material = SubResource( 138 )
 position = Vector2( 975, 1047 )
 scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 15 )
 
-[node name="Coral3" type="Sprite" parent="Placeholder/Corals"]
+[node name="Coral3" type="Sprite2D" parent="Placeholder/Corals"]
 material = SubResource( 139 )
 position = Vector2( 2609, 850 )
 scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 15 )
 
-[node name="Coral4" type="Sprite" parent="Placeholder/Corals"]
+[node name="Coral4" type="Sprite2D" parent="Placeholder/Corals"]
 position = Vector2( 254, 604 )
 scale = Vector2( 0.5, 0.5 )
 z_index = 2
 texture = ExtResource( 20 )
 
-[node name="Coral5" type="Sprite" parent="Placeholder/Corals"]
+[node name="Coral5" type="Sprite2D" parent="Placeholder/Corals"]
 position = Vector2( 2681, 1555 )
 scale = Vector2( 0.5, 0.5 )
 z_index = 2
 texture = ExtResource( 20 )
 
-[node name="Coral6" type="Sprite" parent="Placeholder/Corals"]
+[node name="Coral6" type="Sprite2D" parent="Placeholder/Corals"]
 position = Vector2( 550, 1005 )
 scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 20 )
 
-[node name="Coral7" type="Sprite" parent="Placeholder/Corals"]
+[node name="Coral7" type="Sprite2D" parent="Placeholder/Corals"]
 position = Vector2( 1805, 731 )
 scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 21 )
 
-[node name="Coral8" type="Sprite" parent="Placeholder/Corals"]
+[node name="Coral8" type="Sprite2D" parent="Placeholder/Corals"]
 position = Vector2( 1023, 1414 )
 scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 21 )
 
-[node name="Coral9" type="Sprite" parent="Placeholder/Corals"]
+[node name="Coral9" type="Sprite2D" parent="Placeholder/Corals"]
 position = Vector2( 1640, 1266 )
 scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 21 )
 
-[node name="Coral10" type="Sprite" parent="Placeholder/Corals"]
+[node name="Coral10" type="Sprite2D" parent="Placeholder/Corals"]
 position = Vector2( 2636, 1189 )
 scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 21 )
 
-[node name="Coral11" type="Sprite" parent="Placeholder/Corals"]
+[node name="Coral11" type="Sprite2D" parent="Placeholder/Corals"]
 position = Vector2( 2355, 1267 )
 scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 21 )
 
-[node name="Coral12" type="Sprite" parent="Placeholder/Corals"]
+[node name="Coral12" type="Sprite2D" parent="Placeholder/Corals"]
 position = Vector2( 3143, 1688 )
 scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 21 )
 
-[node name="Coral13" type="Sprite" parent="Placeholder/Corals"]
+[node name="Coral13" type="Sprite2D" parent="Placeholder/Corals"]
 material = SubResource( 140 )
 position = Vector2( 3073, 1672 )
 scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 22 )
 
-[node name="Coral14" type="Sprite" parent="Placeholder/Corals"]
+[node name="Coral14" type="Sprite2D" parent="Placeholder/Corals"]
 material = SubResource( 141 )
 position = Vector2( 354, 1659 )
 scale = Vector2( 0.5, 0.5 )
@@ -1535,56 +1535,56 @@ texture = ExtResource( 22 )
 
 [node name="BrainCoral" type="Node" parent="Placeholder"]
 
-[node name="BrainCoral" type="Sprite" parent="Placeholder/BrainCoral"]
+[node name="BrainCoral" type="Sprite2D" parent="Placeholder/BrainCoral"]
 position = Vector2( 224, 632 )
 scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 16 )
 
-[node name="BrainCoral2" type="Sprite" parent="Placeholder/BrainCoral"]
+[node name="BrainCoral2" type="Sprite2D" parent="Placeholder/BrainCoral"]
 position = Vector2( 1252, 680 )
 scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 16 )
 
-[node name="BrainCoral3" type="Sprite" parent="Placeholder/BrainCoral"]
+[node name="BrainCoral3" type="Sprite2D" parent="Placeholder/BrainCoral"]
 position = Vector2( 881, 1416 )
 scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 16 )
 
-[node name="BrainCoral4" type="Sprite" parent="Placeholder/BrainCoral"]
+[node name="BrainCoral4" type="Sprite2D" parent="Placeholder/BrainCoral"]
 position = Vector2( 3051, 856 )
 scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 16 )
 
 [node name="Starfish" type="Node" parent="Placeholder"]
 
-[node name="Starfish" type="Sprite" parent="Placeholder/Starfish"]
+[node name="Starfish" type="Sprite2D" parent="Placeholder/Starfish"]
 position = Vector2( 2317, 656 )
 scale = Vector2( 0.3, 0.3 )
 z_index = 2
 texture = ExtResource( 17 )
 
-[node name="Starfish5" type="Sprite" parent="Placeholder/Starfish"]
+[node name="Starfish5" type="Sprite2D" parent="Placeholder/Starfish"]
 position = Vector2( 2628, 1706 )
 rotation = -0.261799
 scale = Vector2( 0.25, 0.25 )
 z_index = 2
 texture = ExtResource( 17 )
 
-[node name="Starfish3" type="Sprite" parent="Placeholder/Starfish"]
+[node name="Starfish3" type="Sprite2D" parent="Placeholder/Starfish"]
 position = Vector2( 646, 1110 )
 rotation = -0.174533
 scale = Vector2( 0.2, 0.2 )
 z_index = 2
 texture = ExtResource( 17 )
 
-[node name="Starfish4" type="Sprite" parent="Placeholder/Starfish"]
+[node name="Starfish4" type="Sprite2D" parent="Placeholder/Starfish"]
 position = Vector2( 715, 1116 )
 rotation = -0.174533
 scale = Vector2( 0.15, 0.15 )
 z_index = 2
 texture = ExtResource( 17 )
 
-[node name="Starfish2" type="Sprite" parent="Placeholder/Starfish"]
+[node name="Starfish2" type="Sprite2D" parent="Placeholder/Starfish"]
 position = Vector2( 2232, 697 )
 rotation = -0.785398
 scale = Vector2( 0.15, 0.15 )
@@ -1593,55 +1593,55 @@ texture = ExtResource( 17 )
 
 [node name="Seaweed" type="Node" parent="Placeholder"]
 
-[node name="Seaweed" type="Sprite" parent="Placeholder/Seaweed"]
+[node name="Seaweed" type="Sprite2D" parent="Placeholder/Seaweed"]
 material = SubResource( 129 )
 position = Vector2( 3128, 817 )
 scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 18 )
 
-[node name="Seaweed2" type="Sprite" parent="Placeholder/Seaweed"]
+[node name="Seaweed2" type="Sprite2D" parent="Placeholder/Seaweed"]
 material = SubResource( 130 )
 position = Vector2( 1943, 731 )
 scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 18 )
 
-[node name="Seaweed4" type="Sprite" parent="Placeholder/Seaweed"]
+[node name="Seaweed4" type="Sprite2D" parent="Placeholder/Seaweed"]
 material = SubResource( 131 )
 position = Vector2( 274, 1641 )
 scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 18 )
 
-[node name="Seaweed5" type="Sprite" parent="Placeholder/Seaweed"]
+[node name="Seaweed5" type="Sprite2D" parent="Placeholder/Seaweed"]
 material = SubResource( 128 )
 position = Vector2( 1143, 1674 )
 scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 18 )
 
-[node name="Seaweed6" type="Sprite" parent="Placeholder/Seaweed"]
+[node name="Seaweed6" type="Sprite2D" parent="Placeholder/Seaweed"]
 material = SubResource( 132 )
 position = Vector2( 2489, 1555 )
 scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 18 )
 
-[node name="Seaweed7" type="Sprite" parent="Placeholder/Seaweed"]
+[node name="Seaweed7" type="Sprite2D" parent="Placeholder/Seaweed"]
 material = SubResource( 133 )
 position = Vector2( 2300, 1555 )
 scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 18 )
 
-[node name="Seaweed8" type="Sprite" parent="Placeholder/Seaweed"]
+[node name="Seaweed8" type="Sprite2D" parent="Placeholder/Seaweed"]
 material = SubResource( 134 )
 position = Vector2( 1961, 1539 )
 scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 18 )
 
-[node name="Seaweed9" type="Sprite" parent="Placeholder/Seaweed"]
+[node name="Seaweed9" type="Sprite2D" parent="Placeholder/Seaweed"]
 material = SubResource( 135 )
 position = Vector2( 2645, 1155 )
 scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 18 )
 
-[node name="Seaweed3" type="Sprite" parent="Placeholder/Seaweed"]
+[node name="Seaweed3" type="Sprite2D" parent="Placeholder/Seaweed"]
 material = SubResource( 136 )
 position = Vector2( 177, 575 )
 scale = Vector2( 0.5, 0.5 )
@@ -1650,11 +1650,11 @@ texture = ExtResource( 18 )
 
 [node name="Trash" type="Node" parent="."]
 
-[node name="SeguroLata" type="KinematicBody2D" parent="Trash" groups=["enemy"]]
+[node name="SeguroLata" type="CharacterBody2D" parent="Trash" groups=["enemy"]]
 position = Vector2( 955.5, 756.8 )
 script = ExtResource( 30 )
 
-[node name="Sprite" type="Sprite" parent="Trash/SeguroLata"]
+[node name="Sprite2D" type="Sprite2D" parent="Trash/SeguroLata"]
 scale = Vector2( 0.6, 0.6 )
 texture = ExtResource( 24 )
 
@@ -1662,77 +1662,77 @@ texture = ExtResource( 24 )
 rotation = 1.13446
 shape = SubResource( 120 )
 
-[node name="Botella" type="KinematicBody2D" parent="Trash" groups=["enemy"]]
+[node name="Botella" type="CharacterBody2D" parent="Trash" groups=["enemy"]]
 position = Vector2( 1600, 1285 )
 script = ExtResource( 31 )
 
-[node name="Sprite" type="Sprite" parent="Trash/Botella"]
+[node name="Sprite2D" type="Sprite2D" parent="Trash/Botella"]
 scale = Vector2( 0.6, 0.6 )
 texture = ExtResource( 26 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Trash/Botella"]
 shape = SubResource( 120 )
 
-[node name="Botella2" type="KinematicBody2D" parent="Trash" groups=["enemy"]]
+[node name="Botella2" type="CharacterBody2D" parent="Trash" groups=["enemy"]]
 position = Vector2( 1200, 1400 )
 script = ExtResource( 31 )
 
-[node name="Sprite" type="Sprite" parent="Trash/Botella2"]
+[node name="Sprite2D" type="Sprite2D" parent="Trash/Botella2"]
 scale = Vector2( 0.6, 0.6 )
 texture = ExtResource( 26 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Trash/Botella2"]
 shape = SubResource( 120 )
 
-[node name="Botella3" type="KinematicBody2D" parent="Trash" groups=["enemy"]]
+[node name="Botella3" type="CharacterBody2D" parent="Trash" groups=["enemy"]]
 position = Vector2( 800, 730 )
 script = ExtResource( 31 )
 
-[node name="Sprite" type="Sprite" parent="Trash/Botella3"]
+[node name="Sprite2D" type="Sprite2D" parent="Trash/Botella3"]
 scale = Vector2( 0.6, 0.6 )
 texture = ExtResource( 26 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Trash/Botella3"]
 shape = SubResource( 120 )
 
-[node name="Botella6" type="KinematicBody2D" parent="Trash" groups=["enemy"]]
+[node name="Botella6" type="CharacterBody2D" parent="Trash" groups=["enemy"]]
 position = Vector2( 2000, 1560 )
 script = ExtResource( 31 )
 
-[node name="Sprite" type="Sprite" parent="Trash/Botella6"]
+[node name="Sprite2D" type="Sprite2D" parent="Trash/Botella6"]
 scale = Vector2( 0.6, 0.6 )
 texture = ExtResource( 26 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Trash/Botella6"]
 shape = SubResource( 120 )
 
-[node name="Botella5" type="KinematicBody2D" parent="Trash" groups=["enemy"]]
+[node name="Botella5" type="CharacterBody2D" parent="Trash" groups=["enemy"]]
 position = Vector2( 2350, 1560 )
 script = ExtResource( 31 )
 
-[node name="Sprite" type="Sprite" parent="Trash/Botella5"]
+[node name="Sprite2D" type="Sprite2D" parent="Trash/Botella5"]
 scale = Vector2( 0.6, 0.6 )
 texture = ExtResource( 26 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Trash/Botella5"]
 shape = SubResource( 120 )
 
-[node name="Botella4" type="KinematicBody2D" parent="Trash" groups=["enemy"]]
+[node name="Botella4" type="CharacterBody2D" parent="Trash" groups=["enemy"]]
 position = Vector2( 1700, 1050 )
 script = ExtResource( 31 )
 
-[node name="Sprite" type="Sprite" parent="Trash/Botella4"]
+[node name="Sprite2D" type="Sprite2D" parent="Trash/Botella4"]
 scale = Vector2( 0.6, 0.6 )
 texture = ExtResource( 26 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Trash/Botella4"]
 shape = SubResource( 120 )
 
-[node name="Calcetin" type="KinematicBody2D" parent="Trash" groups=["enemy"]]
+[node name="Calcetin" type="CharacterBody2D" parent="Trash" groups=["enemy"]]
 position = Vector2( 250, 1300 )
 script = ExtResource( 31 )
 
-[node name="Sprite" type="Sprite" parent="Trash/Calcetin"]
+[node name="Sprite2D" type="Sprite2D" parent="Trash/Calcetin"]
 scale = Vector2( 0.6, 0.6 )
 texture = ExtResource( 33 )
 
@@ -1740,11 +1740,11 @@ texture = ExtResource( 33 )
 rotation = 1.5708
 shape = SubResource( 120 )
 
-[node name="Calcetin2" type="KinematicBody2D" parent="Trash" groups=["enemy"]]
+[node name="Calcetin2" type="CharacterBody2D" parent="Trash" groups=["enemy"]]
 position = Vector2( 1200, 660 )
 script = ExtResource( 31 )
 
-[node name="Sprite" type="Sprite" parent="Trash/Calcetin2"]
+[node name="Sprite2D" type="Sprite2D" parent="Trash/Calcetin2"]
 scale = Vector2( 0.6, 0.6 )
 texture = ExtResource( 33 )
 
@@ -1752,11 +1752,11 @@ texture = ExtResource( 33 )
 rotation = 1.5708
 shape = SubResource( 120 )
 
-[node name="Calcetin3" type="KinematicBody2D" parent="Trash" groups=["enemy"]]
+[node name="Calcetin3" type="CharacterBody2D" parent="Trash" groups=["enemy"]]
 position = Vector2( 2450, 760 )
 script = ExtResource( 31 )
 
-[node name="Sprite" type="Sprite" parent="Trash/Calcetin3"]
+[node name="Sprite2D" type="Sprite2D" parent="Trash/Calcetin3"]
 scale = Vector2( 0.6, 0.6 )
 texture = ExtResource( 33 )
 
@@ -1764,11 +1764,11 @@ texture = ExtResource( 33 )
 rotation = 1.5708
 shape = SubResource( 120 )
 
-[node name="Mascarilla" type="KinematicBody2D" parent="Trash" groups=["enemy"]]
+[node name="Mascarilla" type="CharacterBody2D" parent="Trash" groups=["enemy"]]
 position = Vector2( 950, 1650 )
 script = ExtResource( 31 )
 
-[node name="Sprite" type="Sprite" parent="Trash/Mascarilla"]
+[node name="Sprite2D" type="Sprite2D" parent="Trash/Mascarilla"]
 scale = Vector2( 0.6, 0.6 )
 texture = ExtResource( 34 )
 
@@ -1776,11 +1776,11 @@ texture = ExtResource( 34 )
 rotation = 1.5708
 shape = SubResource( 120 )
 
-[node name="Mascarilla2" type="KinematicBody2D" parent="Trash" groups=["enemy"]]
+[node name="Mascarilla2" type="CharacterBody2D" parent="Trash" groups=["enemy"]]
 position = Vector2( 1200, 1710 )
 script = ExtResource( 31 )
 
-[node name="Sprite" type="Sprite" parent="Trash/Mascarilla2"]
+[node name="Sprite2D" type="Sprite2D" parent="Trash/Mascarilla2"]
 scale = Vector2( 0.6, 0.6 )
 texture = ExtResource( 34 )
 
@@ -1788,11 +1788,11 @@ texture = ExtResource( 34 )
 rotation = 1.5708
 shape = SubResource( 120 )
 
-[node name="Mascarilla8" type="KinematicBody2D" parent="Trash" groups=["enemy"]]
+[node name="Mascarilla8" type="CharacterBody2D" parent="Trash" groups=["enemy"]]
 position = Vector2( 550, 1040 )
 script = ExtResource( 31 )
 
-[node name="Sprite" type="Sprite" parent="Trash/Mascarilla8"]
+[node name="Sprite2D" type="Sprite2D" parent="Trash/Mascarilla8"]
 scale = Vector2( 0.6, 0.6 )
 texture = ExtResource( 34 )
 
@@ -1800,11 +1800,11 @@ texture = ExtResource( 34 )
 rotation = 1.5708
 shape = SubResource( 120 )
 
-[node name="Mascarilla5" type="KinematicBody2D" parent="Trash" groups=["enemy"]]
+[node name="Mascarilla5" type="CharacterBody2D" parent="Trash" groups=["enemy"]]
 position = Vector2( 2050, 1050 )
 script = ExtResource( 31 )
 
-[node name="Sprite" type="Sprite" parent="Trash/Mascarilla5"]
+[node name="Sprite2D" type="Sprite2D" parent="Trash/Mascarilla5"]
 scale = Vector2( 0.6, 0.6 )
 texture = ExtResource( 34 )
 
@@ -1812,11 +1812,11 @@ texture = ExtResource( 34 )
 rotation = 1.5708
 shape = SubResource( 120 )
 
-[node name="Mascarilla6" type="KinematicBody2D" parent="Trash" groups=["enemy"]]
+[node name="Mascarilla6" type="CharacterBody2D" parent="Trash" groups=["enemy"]]
 position = Vector2( 1000, 1420 )
 script = ExtResource( 31 )
 
-[node name="Sprite" type="Sprite" parent="Trash/Mascarilla6"]
+[node name="Sprite2D" type="Sprite2D" parent="Trash/Mascarilla6"]
 scale = Vector2( 0.6, 0.6 )
 texture = ExtResource( 34 )
 
@@ -1824,11 +1824,11 @@ texture = ExtResource( 34 )
 rotation = 1.5708
 shape = SubResource( 120 )
 
-[node name="Mascarilla3" type="KinematicBody2D" parent="Trash" groups=["enemy"]]
+[node name="Mascarilla3" type="CharacterBody2D" parent="Trash" groups=["enemy"]]
 position = Vector2( 1750, 760 )
 script = ExtResource( 31 )
 
-[node name="Sprite" type="Sprite" parent="Trash/Mascarilla3"]
+[node name="Sprite2D" type="Sprite2D" parent="Trash/Mascarilla3"]
 scale = Vector2( 0.6, 0.6 )
 texture = ExtResource( 34 )
 
@@ -1836,11 +1836,11 @@ texture = ExtResource( 34 )
 rotation = 1.5708
 shape = SubResource( 120 )
 
-[node name="Mascarilla7" type="KinematicBody2D" parent="Trash" groups=["enemy"]]
+[node name="Mascarilla7" type="CharacterBody2D" parent="Trash" groups=["enemy"]]
 position = Vector2( 1100, 1060 )
 script = ExtResource( 31 )
 
-[node name="Sprite" type="Sprite" parent="Trash/Mascarilla7"]
+[node name="Sprite2D" type="Sprite2D" parent="Trash/Mascarilla7"]
 scale = Vector2( 0.6, 0.6 )
 texture = ExtResource( 34 )
 
@@ -1848,11 +1848,11 @@ texture = ExtResource( 34 )
 rotation = 1.5708
 shape = SubResource( 120 )
 
-[node name="Mascarilla4" type="KinematicBody2D" parent="Trash" groups=["enemy"]]
+[node name="Mascarilla4" type="CharacterBody2D" parent="Trash" groups=["enemy"]]
 position = Vector2( 2600, 870 )
 script = ExtResource( 31 )
 
-[node name="Sprite" type="Sprite" parent="Trash/Mascarilla4"]
+[node name="Sprite2D" type="Sprite2D" parent="Trash/Mascarilla4"]
 scale = Vector2( 0.6, 0.6 )
 texture = ExtResource( 34 )
 
@@ -1860,11 +1860,11 @@ texture = ExtResource( 34 )
 rotation = 1.5708
 shape = SubResource( 120 )
 
-[node name="Afeitadora" type="KinematicBody2D" parent="Trash" groups=["enemy"]]
+[node name="Afeitadora" type="CharacterBody2D" parent="Trash" groups=["enemy"]]
 position = Vector2( 2640, 1190 )
 script = ExtResource( 31 )
 
-[node name="Sprite" type="Sprite" parent="Trash/Afeitadora"]
+[node name="Sprite2D" type="Sprite2D" parent="Trash/Afeitadora"]
 scale = Vector2( 0.6, 0.6 )
 texture = ExtResource( 35 )
 
@@ -1872,11 +1872,11 @@ texture = ExtResource( 35 )
 rotation = 1.5708
 shape = SubResource( 120 )
 
-[node name="Lata" type="KinematicBody2D" parent="Trash" groups=["enemy"]]
+[node name="Lata" type="CharacterBody2D" parent="Trash" groups=["enemy"]]
 position = Vector2( 360, 700 )
 script = ExtResource( 31 )
 
-[node name="Sprite" type="Sprite" parent="Trash/Lata"]
+[node name="Sprite2D" type="Sprite2D" parent="Trash/Lata"]
 scale = Vector2( 0.6, 0.6 )
 texture = ExtResource( 36 )
 
@@ -1884,11 +1884,11 @@ texture = ExtResource( 36 )
 rotation = 1.5708
 shape = SubResource( 120 )
 
-[node name="Lata4" type="KinematicBody2D" parent="Trash" groups=["enemy"]]
+[node name="Lata4" type="CharacterBody2D" parent="Trash" groups=["enemy"]]
 position = Vector2( 150, 1300 )
 script = ExtResource( 31 )
 
-[node name="Sprite" type="Sprite" parent="Trash/Lata4"]
+[node name="Sprite2D" type="Sprite2D" parent="Trash/Lata4"]
 scale = Vector2( 0.6, 0.6 )
 texture = ExtResource( 36 )
 
@@ -1896,11 +1896,11 @@ texture = ExtResource( 36 )
 rotation = 1.5708
 shape = SubResource( 120 )
 
-[node name="Lata2" type="KinematicBody2D" parent="Trash" groups=["enemy"]]
+[node name="Lata2" type="CharacterBody2D" parent="Trash" groups=["enemy"]]
 position = Vector2( 2500, 1600 )
 script = ExtResource( 31 )
 
-[node name="Sprite" type="Sprite" parent="Trash/Lata2"]
+[node name="Sprite2D" type="Sprite2D" parent="Trash/Lata2"]
 scale = Vector2( 0.6, 0.6 )
 texture = ExtResource( 36 )
 
@@ -1908,11 +1908,11 @@ texture = ExtResource( 36 )
 rotation = 1.5708
 shape = SubResource( 120 )
 
-[node name="Lata3" type="KinematicBody2D" parent="Trash" groups=["enemy"]]
+[node name="Lata3" type="CharacterBody2D" parent="Trash" groups=["enemy"]]
 position = Vector2( 900, 1060 )
 script = ExtResource( 31 )
 
-[node name="Sprite" type="Sprite" parent="Trash/Lata3"]
+[node name="Sprite2D" type="Sprite2D" parent="Trash/Lata3"]
 scale = Vector2( 0.6, 0.6 )
 texture = ExtResource( 36 )
 
@@ -1920,11 +1920,11 @@ texture = ExtResource( 36 )
 rotation = 1.5708
 shape = SubResource( 120 )
 
-[node name="Jeringa" type="KinematicBody2D" parent="Trash" groups=["enemy"]]
+[node name="Jeringa" type="CharacterBody2D" parent="Trash" groups=["enemy"]]
 position = Vector2( 2300, 550 )
 script = ExtResource( 31 )
 
-[node name="Sprite" type="Sprite" parent="Trash/Jeringa"]
+[node name="Sprite2D" type="Sprite2D" parent="Trash/Jeringa"]
 scale = Vector2( 0.6, 0.6 )
 texture = ExtResource( 37 )
 
@@ -1932,11 +1932,11 @@ texture = ExtResource( 37 )
 rotation = 1.5708
 shape = SubResource( 120 )
 
-[node name="Jeringa5" type="KinematicBody2D" parent="Trash" groups=["enemy"]]
+[node name="Jeringa5" type="CharacterBody2D" parent="Trash" groups=["enemy"]]
 position = Vector2( 1900, 760 )
 script = ExtResource( 31 )
 
-[node name="Sprite" type="Sprite" parent="Trash/Jeringa5"]
+[node name="Sprite2D" type="Sprite2D" parent="Trash/Jeringa5"]
 scale = Vector2( 0.6, 0.6 )
 texture = ExtResource( 37 )
 
@@ -1944,11 +1944,11 @@ texture = ExtResource( 37 )
 rotation = 1.5708
 shape = SubResource( 120 )
 
-[node name="Jeringa6" type="KinematicBody2D" parent="Trash" groups=["enemy"]]
+[node name="Jeringa6" type="CharacterBody2D" parent="Trash" groups=["enemy"]]
 position = Vector2( 1440, 930 )
 script = ExtResource( 31 )
 
-[node name="Sprite" type="Sprite" parent="Trash/Jeringa6"]
+[node name="Sprite2D" type="Sprite2D" parent="Trash/Jeringa6"]
 scale = Vector2( 0.6, 0.6 )
 texture = ExtResource( 37 )
 
@@ -1956,11 +1956,11 @@ texture = ExtResource( 37 )
 rotation = 1.5708
 shape = SubResource( 120 )
 
-[node name="Jeringa2" type="KinematicBody2D" parent="Trash" groups=["enemy"]]
+[node name="Jeringa2" type="CharacterBody2D" parent="Trash" groups=["enemy"]]
 position = Vector2( 2300, 1300 )
 script = ExtResource( 31 )
 
-[node name="Sprite" type="Sprite" parent="Trash/Jeringa2"]
+[node name="Sprite2D" type="Sprite2D" parent="Trash/Jeringa2"]
 scale = Vector2( 0.6, 0.6 )
 texture = ExtResource( 37 )
 
@@ -1968,11 +1968,11 @@ texture = ExtResource( 37 )
 rotation = 1.5708
 shape = SubResource( 120 )
 
-[node name="Jeringa3" type="KinematicBody2D" parent="Trash" groups=["enemy"]]
+[node name="Jeringa3" type="CharacterBody2D" parent="Trash" groups=["enemy"]]
 position = Vector2( 3000, 870 )
 script = ExtResource( 31 )
 
-[node name="Sprite" type="Sprite" parent="Trash/Jeringa3"]
+[node name="Sprite2D" type="Sprite2D" parent="Trash/Jeringa3"]
 scale = Vector2( 0.6, 0.6 )
 texture = ExtResource( 37 )
 
@@ -1980,11 +1980,11 @@ texture = ExtResource( 37 )
 rotation = 1.5708
 shape = SubResource( 120 )
 
-[node name="Jeringa4" type="KinematicBody2D" parent="Trash" groups=["enemy"]]
+[node name="Jeringa4" type="CharacterBody2D" parent="Trash" groups=["enemy"]]
 position = Vector2( 2700, 1600 )
 script = ExtResource( 31 )
 
-[node name="Sprite" type="Sprite" parent="Trash/Jeringa4"]
+[node name="Sprite2D" type="Sprite2D" parent="Trash/Jeringa4"]
 scale = Vector2( 0.6, 0.6 )
 texture = ExtResource( 37 )
 
@@ -1992,12 +1992,12 @@ texture = ExtResource( 37 )
 rotation = 1.5708
 shape = SubResource( 120 )
 
-[node name="Cuchara" type="KinematicBody2D" parent="Trash" groups=["enemy"]]
+[node name="Cuchara" type="CharacterBody2D" parent="Trash" groups=["enemy"]]
 position = Vector2( 2100, 650 )
 scale = Vector2( 0.98, 1 )
 script = ExtResource( 39 )
 
-[node name="Sprite" type="Sprite" parent="Trash/Cuchara"]
+[node name="Sprite2D" type="Sprite2D" parent="Trash/Cuchara"]
 scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 38 )
 
@@ -2005,12 +2005,12 @@ texture = ExtResource( 38 )
 rotation = 1.5708
 shape = SubResource( 120 )
 
-[node name="Cuchara2" type="KinematicBody2D" parent="Trash" groups=["enemy"]]
+[node name="Cuchara2" type="CharacterBody2D" parent="Trash" groups=["enemy"]]
 position = Vector2( 850, 1430 )
 scale = Vector2( 0.98, 1 )
 script = ExtResource( 39 )
 
-[node name="Sprite" type="Sprite" parent="Trash/Cuchara2"]
+[node name="Sprite2D" type="Sprite2D" parent="Trash/Cuchara2"]
 scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 38 )
 
@@ -2018,12 +2018,12 @@ texture = ExtResource( 38 )
 rotation = 1.5708
 shape = SubResource( 120 )
 
-[node name="Cuchara3" type="KinematicBody2D" parent="Trash" groups=["enemy"]]
+[node name="Cuchara3" type="CharacterBody2D" parent="Trash" groups=["enemy"]]
 position = Vector2( 780, 1060 )
 scale = Vector2( 0.98, 1 )
 script = ExtResource( 39 )
 
-[node name="Sprite" type="Sprite" parent="Trash/Cuchara3"]
+[node name="Sprite2D" type="Sprite2D" parent="Trash/Cuchara3"]
 scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 38 )
 
@@ -2037,7 +2037,7 @@ scale = Vector2( 0.98, 1 )
 mass = 100.0
 script = ExtResource( 42 )
 
-[node name="Sprite" type="Sprite" parent="Trash/Trampa"]
+[node name="Sprite2D" type="Sprite2D" parent="Trash/Trampa"]
 scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 41 )
 
@@ -2052,7 +2052,7 @@ scale = Vector2( 0.98, 1 )
 mass = 100.0
 script = ExtResource( 42 )
 
-[node name="Sprite" type="Sprite" parent="Trash/Trampa2"]
+[node name="Sprite2D" type="Sprite2D" parent="Trash/Trampa2"]
 scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 41 )
 
@@ -2067,7 +2067,7 @@ scale = Vector2( 0.98, 1 )
 mass = 100.0
 script = ExtResource( 42 )
 
-[node name="Sprite" type="Sprite" parent="Trash/Trampa3"]
+[node name="Sprite2D" type="Sprite2D" parent="Trash/Trampa3"]
 scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 41 )
 
@@ -2082,7 +2082,7 @@ scale = Vector2( 0.98, 1 )
 mass = 100.0
 script = ExtResource( 42 )
 
-[node name="Sprite" type="Sprite" parent="Trash/Trampa4"]
+[node name="Sprite2D" type="Sprite2D" parent="Trash/Trampa4"]
 scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 41 )
 
@@ -2093,27 +2093,27 @@ shape = SubResource( 124 )
 
 [node name="Boat" type="Node" parent="."]
 
-[node name="Claw" type="KinematicBody2D" parent="Boat" groups=["boat"]]
+[node name="Claw" type="CharacterBody2D" parent="Boat" groups=["boat"]]
 position = Vector2( 1600, 385 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Boat/Claw"]
 position = Vector2( 0, 15 )
 shape = SubResource( 122 )
 
-[node name="AnimatedSprite" type="AnimatedSprite" parent="Boat/Claw"]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Boat/Claw"]
 frames = SubResource( 123 )
 frame = 1
 playing = true
 
 [node name="Fish" type="Node" parent="."]
 
-[node name="Barracuda" type="KinematicBody2D" parent="Fish"]
+[node name="Barracuda" type="CharacterBody2D" parent="Fish"]
 material = SubResource( 142 )
 position = Vector2( 650, 1800 )
 rotation = 1.48353
 scale = Vector2( 1, 2 )
 
-[node name="Sprite" type="Sprite" parent="Fish/Barracuda"]
+[node name="Sprite2D" type="Sprite2D" parent="Fish/Barracuda"]
 texture = ExtResource( 44 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Fish/Barracuda"]
@@ -2173,7 +2173,7 @@ one_shot = true
 position = Vector2( 1600, -200 )
 z_index = 2
 
-[node name="BGTimer" type="Sprite" parent="Timer"]
+[node name="BGTimer" type="Sprite2D" parent="Timer"]
 position = Vector2( 0, 55 )
 rotation = -1.5708
 scale = Vector2( 1, 3.2 )
@@ -2187,31 +2187,31 @@ one_shot = true
 [node name="MarginContainer" type="MarginContainer" parent="Timer"]
 anchor_left = 0.5
 anchor_right = 0.5
-margin_left = -189.0
-margin_right = 189.0
-margin_bottom = 162.0
+offset_left = -189.0
+offset_right = 189.0
+offset_bottom = 162.0
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Timer/MarginContainer"]
-margin_right = 378.0
-margin_bottom = 162.0
+offset_right = 378.0
+offset_bottom = 162.0
 
 [node name="LblTries" type="Label" parent="Timer/MarginContainer/VBoxContainer"]
-margin_right = 378.0
-margin_bottom = 79.0
-custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
-custom_constants/shadow_offset_x = -3
-custom_fonts/font = ExtResource( 49 )
+offset_right = 378.0
+offset_bottom = 79.0
+theme_override_colors/font_shadow_color = Color( 0, 0, 0, 1 )
+theme_override_constants/shadow_offset_x = -3
+theme_override_fonts/font = ExtResource( 49 )
 text = "INTENTOS: 0"
 align = 1
 valign = 1
 
 [node name="LblTimer" type="Label" parent="Timer/MarginContainer/VBoxContainer"]
-margin_top = 83.0
-margin_right = 378.0
-margin_bottom = 162.0
-custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
-custom_constants/shadow_offset_x = -3
-custom_fonts/font = ExtResource( 49 )
+offset_top = 83.0
+offset_right = 378.0
+offset_bottom = 162.0
+theme_override_colors/font_shadow_color = Color( 0, 0, 0, 1 )
+theme_override_constants/shadow_offset_x = -3
+theme_override_fonts/font = ExtResource( 49 )
 text = "00:00"
 align = 1
 valign = 1

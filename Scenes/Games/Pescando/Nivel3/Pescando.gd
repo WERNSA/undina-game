@@ -1,10 +1,10 @@
 extends Node2D
 var TRASH_COUNT = 0
-onready var trash_qty = 30
-onready var tries = 3
-onready var game_over : bool = false
-onready var ilea_position = Vector2(1600, 600)
-export (PackedScene) var FishBG
+@onready var trash_qty = 30
+@onready var tries = 3
+@onready var game_over : bool = false
+@onready var ilea_position = Vector2(1600, 600)
+@export var FishBG: PackedScene
 
 var coral_rock_position = {
 	"initial": [
@@ -38,8 +38,8 @@ var barracuda_position = [
 	Vector2(2800, 1400),
 ]
 
-onready var turtle_position_idx : int = 0
-onready var actual_trash_position : Vector2 = Vector2.ZERO
+@onready var turtle_position_idx : int = 0
+@onready var actual_trash_position : Vector2 = Vector2.ZERO
 var turtle_initial_position = [
 	Vector2(1000, 1900),
 	Vector2(2900, 1900),
@@ -165,8 +165,8 @@ var turtle_trash_position = [
 func _ready():
 	randomize()
 	$Contador.set_count(str(TRASH_COUNT))
-	$HUD/GameOver/CenterContainer/HBoxContainer/BtnTry.connect("pressed", self, "_on_try_again")
-	$HUD/Win/CenterContainer/HBoxContainer/BtnTry.connect("pressed", self, "_on_try_again")
+	$HUD/GameOver/CenterContainer/HBoxContainer/BtnTry.connect("pressed", Callable(self, "_on_try_again"))
+	$HUD/Win/CenterContainer/HBoxContainer/BtnTry.connect("pressed", Callable(self, "_on_try_again"))
 	
 	spawn_fish_bg()
 	$FishBG/SpawnFishBGTimer.start()
@@ -204,7 +204,7 @@ func spawn_fish_bg():
 	var options_final = Global.random_int(0, len(fish_final_positions) - 1)
 	var _position_initial = fish_initial_positions[options_initial]
 	var _position_final = fish_final_positions[options_final]
-	var fish_bg = FishBG.instance()
+	var fish_bg = FishBG.instantiate()
 	fish_bg.position = _position_initial
 	fish_bg.z_index = -1
 	add_child(fish_bg)
@@ -350,7 +350,7 @@ func _game_over():
 	$HUD/GameOver.visible = true
 	$Songs/BGSong.stop()
 	$FishBG/Turtle._set_dead(true)
-	$FishBG/Turtle/Sprite.flip_v = true
+	$FishBG/Turtle/Sprite2D.flip_v = true
 	$FishBG/Tween.interpolate_property($FishBG/Turtle, "position",
 	Vector2($FishBG/Turtle.position.x, $FishBG/Turtle.position.y), Vector2($FishBG/Turtle.position.x, 400), 5,
 	Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
@@ -358,4 +358,4 @@ func _game_over():
 	$IlleaBuceando.can_move = false
 
 func _on_try_again():
-	get_tree().change_scene("res://Scenes/Games/Pescando/Nivel3/Pescando.tscn")
+	get_tree().change_scene_to_file("res://Scenes/Games/Pescando/Nivel3/Pescando.tscn")

@@ -1,61 +1,61 @@
 [gd_scene load_steps=53 format=2]
 
-[ext_resource path="res://Assets/Images/LimpiandoCosta/Pantalla 1/Arena de Fondo.png" type="Texture" id=1]
-[ext_resource path="res://Assets/Images/LimpiandoCosta/Pantalla 1/Mar/Primera capa mar.png" type="Texture" id=2]
-[ext_resource path="res://Assets/Images/LimpiandoCosta/Pantalla 1/Mar/Segunda capa mar.png" type="Texture" id=3]
-[ext_resource path="res://Assets/Images/LimpiandoCosta/Pantalla 1/Mar/Tercera capa mar.png" type="Texture" id=4]
-[ext_resource path="res://Assets/Images/LimpiandoCosta/Pantalla 1/Mar/Ola.png" type="Texture" id=5]
-[ext_resource path="res://Assets/Images/LimpiandoCosta/Pantalla 1/Mar/Espuma.png" type="Texture" id=6]
-[ext_resource path="res://Assets/Images/LimpiandoCosta/Pantalla 1/Piedra impenetrable.png" type="Texture" id=7]
-[ext_resource path="res://Assets/Images/LimpiandoCosta/Pantalla 1/Calle.png" type="Texture" id=8]
-[ext_resource path="res://Assets/Images/LimpiandoCosta/Pantalla 1/Detalles de la arena.png" type="Texture" id=9]
-[ext_resource path="res://Assets/Images/LimpiandoCosta/Pantalla 1/Mar/Arena humeda.png" type="Texture" id=10]
-[ext_resource path="res://Assets/Images/LimpiandoCosta/Pantalla 1/Casa color turquesa.png" type="Texture" id=11]
-[ext_resource path="res://Assets/Images/LimpiandoCosta/Pantalla 1/Banca.png" type="Texture" id=12]
-[ext_resource path="res://Assets/Images/LimpiandoCosta/Pantalla 1/Farol.png" type="Texture" id=13]
-[ext_resource path="res://Assets/Images/LimpiandoCosta/Pantalla 1/Basurero.png" type="Texture" id=14]
-[ext_resource path="res://Assets/Images/LimpiandoCosta/Pantalla 1/Rótulo.png" type="Texture" id=15]
-[ext_resource path="res://Assets/Images/LimpiandoCosta/Pantalla 1/Palmeras/Palmera 3.png" type="Texture" id=16]
-[ext_resource path="res://Assets/Images/LimpiandoCosta/Pantalla 1/Palmeras/Palmera 4.png" type="Texture" id=17]
-[ext_resource path="res://Assets/Images/LimpiandoCosta/Pantalla 1/Palmeras/Palmera 1.png" type="Texture" id=18]
-[ext_resource path="res://Assets/Images/LimpiandoCosta/Pantalla 1/Palmeras/Palmera 2.png" type="Texture" id=19]
-[ext_resource path="res://Assets/Images/LimpiandoCosta/Pantalla 1/Arbusto.png" type="Texture" id=20]
+[ext_resource path="res://Assets/Images/LimpiandoCosta/Pantalla 1/Arena de Fondo.png" type="Texture2D" id=1]
+[ext_resource path="res://Assets/Images/LimpiandoCosta/Pantalla 1/Mar/Primera capa mar.png" type="Texture2D" id=2]
+[ext_resource path="res://Assets/Images/LimpiandoCosta/Pantalla 1/Mar/Segunda capa mar.png" type="Texture2D" id=3]
+[ext_resource path="res://Assets/Images/LimpiandoCosta/Pantalla 1/Mar/Tercera capa mar.png" type="Texture2D" id=4]
+[ext_resource path="res://Assets/Images/LimpiandoCosta/Pantalla 1/Mar/Ola.png" type="Texture2D" id=5]
+[ext_resource path="res://Assets/Images/LimpiandoCosta/Pantalla 1/Mar/Espuma.png" type="Texture2D" id=6]
+[ext_resource path="res://Assets/Images/LimpiandoCosta/Pantalla 1/Piedra impenetrable.png" type="Texture2D" id=7]
+[ext_resource path="res://Assets/Images/LimpiandoCosta/Pantalla 1/Calle.png" type="Texture2D" id=8]
+[ext_resource path="res://Assets/Images/LimpiandoCosta/Pantalla 1/Detalles de la arena.png" type="Texture2D" id=9]
+[ext_resource path="res://Assets/Images/LimpiandoCosta/Pantalla 1/Mar/Arena humeda.png" type="Texture2D" id=10]
+[ext_resource path="res://Assets/Images/LimpiandoCosta/Pantalla 1/Casa color turquesa.png" type="Texture2D" id=11]
+[ext_resource path="res://Assets/Images/LimpiandoCosta/Pantalla 1/Banca.png" type="Texture2D" id=12]
+[ext_resource path="res://Assets/Images/LimpiandoCosta/Pantalla 1/Farol.png" type="Texture2D" id=13]
+[ext_resource path="res://Assets/Images/LimpiandoCosta/Pantalla 1/Basurero.png" type="Texture2D" id=14]
+[ext_resource path="res://Assets/Images/LimpiandoCosta/Pantalla 1/Rótulo.png" type="Texture2D" id=15]
+[ext_resource path="res://Assets/Images/LimpiandoCosta/Pantalla 1/Palmeras/Palmera 3.png" type="Texture2D" id=16]
+[ext_resource path="res://Assets/Images/LimpiandoCosta/Pantalla 1/Palmeras/Palmera 4.png" type="Texture2D" id=17]
+[ext_resource path="res://Assets/Images/LimpiandoCosta/Pantalla 1/Palmeras/Palmera 1.png" type="Texture2D" id=18]
+[ext_resource path="res://Assets/Images/LimpiandoCosta/Pantalla 1/Palmeras/Palmera 2.png" type="Texture2D" id=19]
+[ext_resource path="res://Assets/Images/LimpiandoCosta/Pantalla 1/Arbusto.png" type="Texture2D" id=20]
 [ext_resource path="res://Scenes/Entity/Illea/Caminando/IlleaCaminando.tscn" type="PackedScene" id=21]
-[ext_resource path="res://Assets/Images/Tilesets/Bloque.png" type="Texture" id=22]
+[ext_resource path="res://Assets/Images/Tilesets/Bloque.png" type="Texture2D" id=22]
 [ext_resource path="res://Scenes/Utility/Contador.tscn" type="PackedScene" id=23]
 [ext_resource path="res://Scenes/Games/Pescando/Trash/Botella.gd" type="Script" id=24]
 [ext_resource path="res://Scenes/Games/Pescando/Trash/Cuchara.gd" type="Script" id=25]
 [ext_resource path="res://Scenes/Games/Pescando/Trash/SeguroLata.gd" type="Script" id=26]
-[ext_resource path="res://Assets/Images/UnderSeaBG/Items/Trash/Jeringa.png" type="Texture" id=27]
-[ext_resource path="res://Assets/Images/UnderSeaBG/Items/Trash/lata.png" type="Texture" id=28]
-[ext_resource path="res://Assets/Images/UnderSeaBG/Items/Trash/Máquina de afeitar.png" type="Texture" id=29]
-[ext_resource path="res://Assets/Images/UnderSeaBG/Items/Seguro para latas.png" type="Texture" id=30]
-[ext_resource path="res://Assets/Images/UnderSeaBG/Items/botella.png" type="Texture" id=31]
-[ext_resource path="res://Assets/Images/UnderSeaBG/Items/Trash/Calcetín.png" type="Texture" id=32]
-[ext_resource path="res://Assets/Images/UnderSeaBG/Items/Trash/mascarilla.png" type="Texture" id=33]
-[ext_resource path="res://Assets/Images/UnderSeaBG/Items/Trash/Cuchara.png" type="Texture" id=34]
+[ext_resource path="res://Assets/Images/UnderSeaBG/Items/Trash/Jeringa.png" type="Texture2D" id=27]
+[ext_resource path="res://Assets/Images/UnderSeaBG/Items/Trash/lata.png" type="Texture2D" id=28]
+[ext_resource path="res://Assets/Images/UnderSeaBG/Items/Trash/Máquina de afeitar.png" type="Texture2D" id=29]
+[ext_resource path="res://Assets/Images/UnderSeaBG/Items/Seguro para latas.png" type="Texture2D" id=30]
+[ext_resource path="res://Assets/Images/UnderSeaBG/Items/botella.png" type="Texture2D" id=31]
+[ext_resource path="res://Assets/Images/UnderSeaBG/Items/Trash/Calcetín.png" type="Texture2D" id=32]
+[ext_resource path="res://Assets/Images/UnderSeaBG/Items/Trash/mascarilla.png" type="Texture2D" id=33]
+[ext_resource path="res://Assets/Images/UnderSeaBG/Items/Trash/Cuchara.png" type="Texture2D" id=34]
 [ext_resource path="res://Scenes/Games/LimpiandoCosta/Nivel1/LimpiandoCosta.gd" type="Script" id=35]
 [ext_resource path="res://Scenes/Pause/PauseMenu.tscn" type="PackedScene" id=36]
 [ext_resource path="res://Assets/Sounds/limpiando_costa.ogg" type="AudioStream" id=37]
 [ext_resource path="res://Assets/Sounds/SFX/get_item.wav" type="AudioStream" id=38]
 [ext_resource path="res://Scenes/Utility/shader/ShaderWindWakerBeach.tscn" type="PackedScene" id=39]
 [ext_resource path="res://Scenes/Entity/CleanBeach/Crab/Crab.tscn" type="PackedScene" id=40]
-[ext_resource path="res://Assets/Fonts/btnFont.tres" type="DynamicFont" id=41]
-[ext_resource path="res://Assets/Images/Fondo de contador de puntos.png" type="Texture" id=42]
+[ext_resource path="res://Assets/Fonts/btnFont.tres" type="FontFile" id=41]
+[ext_resource path="res://Assets/Images/Fondo de contador de puntos.png" type="Texture2D" id=42]
 [ext_resource path="res://Scenes/Utility/analog/Analog.tscn" type="PackedScene" id=43]
 [ext_resource path="res://Scenes/Utility/GameOver/GameOver.tscn" type="PackedScene" id=44]
 [ext_resource path="res://Scenes/Utility/Win/Win.tscn" type="PackedScene" id=45]
 [ext_resource path="res://Assets/Sounds/SFX/ender_punch.wav" type="AudioStream" id=46]
-[ext_resource path="res://Assets/Images/LimpiandoCosta/Pantalla 1/arena humeda final .png" type="Texture" id=47]
+[ext_resource path="res://Assets/Images/LimpiandoCosta/Pantalla 1/arena humeda final .png" type="Texture2D" id=47]
 
 [sub_resource type="RectangleShape2D" id=7]
 extents = Vector2( 70, 40 )
 
 [sub_resource type="ConvexPolygonShape2D" id=5]
-points = PoolVector2Array( 8, 8, 72, 8, 72, 72, 8, 72 )
+points = PackedVector2Array( 8, 8, 72, 8, 72, 72, 8, 72 )
 
 [sub_resource type="ConvexPolygonShape2D" id=6]
-points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
+points = PackedVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 
 [sub_resource type="TileSet" id=3]
 0/name = "Bloque.png 0"
@@ -112,18 +112,18 @@ script = ExtResource( 35 )
 
 [node name="Wave" type="ParallaxBackground" parent="Background"]
 
-[node name="Sand" type="Sprite" parent="Background/Wave"]
+[node name="Sand" type="Sprite2D" parent="Background/Wave"]
 visible = false
 z_index = -1
 texture = ExtResource( 1 )
 centered = false
 
-[node name="Sand2" type="Sprite" parent="Background/Wave"]
+[node name="Sand2" type="Sprite2D" parent="Background/Wave"]
 z_index = -1
 texture = ExtResource( 47 )
 centered = false
 
-[node name="WetSand" type="Sprite" parent="Background/Wave"]
+[node name="WetSand" type="Sprite2D" parent="Background/Wave"]
 visible = false
 position = Vector2( 0, 800 )
 texture = ExtResource( 10 )
@@ -135,12 +135,12 @@ z_index = -2
 [node name="First" type="ParallaxLayer" parent="Background/Wave"]
 visible = false
 
-[node name="Sea" type="Sprite" parent="Background/Wave/First"]
+[node name="Sea" type="Sprite2D" parent="Background/Wave/First"]
 position = Vector2( -4, 800 )
 texture = ExtResource( 2 )
 centered = false
 
-[node name="Wave" type="Sprite" parent="Background/Wave/First"]
+[node name="Wave" type="Sprite2D" parent="Background/Wave/First"]
 position = Vector2( 0, 880 )
 z_index = 1
 texture = ExtResource( 5 )
@@ -149,12 +149,12 @@ centered = false
 [node name="Second" type="ParallaxLayer" parent="Background/Wave"]
 visible = false
 
-[node name="Sea" type="Sprite" parent="Background/Wave/Second"]
+[node name="Sea" type="Sprite2D" parent="Background/Wave/Second"]
 position = Vector2( -4, 908 )
 texture = ExtResource( 3 )
 centered = false
 
-[node name="Wave" type="Sprite" parent="Background/Wave/Second"]
+[node name="Wave" type="Sprite2D" parent="Background/Wave/Second"]
 position = Vector2( 0, 1100 )
 z_index = 1
 texture = ExtResource( 5 )
@@ -163,12 +163,12 @@ centered = false
 [node name="Third" type="ParallaxLayer" parent="Background/Wave"]
 visible = false
 
-[node name="Sea" type="Sprite" parent="Background/Wave/Third"]
+[node name="Sea" type="Sprite2D" parent="Background/Wave/Third"]
 position = Vector2( -4, 886 )
 texture = ExtResource( 4 )
 centered = false
 
-[node name="Wave" type="Sprite" parent="Background/Wave/Third"]
+[node name="Wave" type="Sprite2D" parent="Background/Wave/Third"]
 position = Vector2( 0, 1400 )
 z_index = 1
 texture = ExtResource( 5 )
@@ -177,12 +177,12 @@ centered = false
 [node name="Bubbles" type="ParallaxLayer" parent="Background/Wave"]
 visible = false
 
-[node name="Sprite" type="Sprite" parent="Background/Wave/Bubbles"]
+[node name="Sprite2D" type="Sprite2D" parent="Background/Wave/Bubbles"]
 position = Vector2( 0, 1050 )
 texture = ExtResource( 6 )
 centered = false
 
-[node name="SandDetail" type="Sprite" parent="Background/Wave"]
+[node name="SandDetail" type="Sprite2D" parent="Background/Wave"]
 position = Vector2( 0, 256 )
 scale = Vector2( 1.07962, 1.34797 )
 texture = ExtResource( 9 )
@@ -190,16 +190,16 @@ centered = false
 
 [node name="Ambience" type="Node2D" parent="Background"]
 
-[node name="Rock" type="Sprite" parent="Background/Ambience"]
+[node name="Rock" type="Sprite2D" parent="Background/Ambience"]
 texture = ExtResource( 7 )
 centered = false
 
-[node name="Road" type="Sprite" parent="Background/Ambience"]
+[node name="Road" type="Sprite2D" parent="Background/Ambience"]
 position = Vector2( 890, 0 )
 texture = ExtResource( 8 )
 centered = false
 
-[node name="House" type="Sprite" parent="Background/Ambience"]
+[node name="House" type="Sprite2D" parent="Background/Ambience"]
 position = Vector2( 2600, 0 )
 texture = ExtResource( 11 )
 
@@ -207,66 +207,66 @@ texture = ExtResource( 11 )
 position = Vector2( 2504, 1100 )
 scale = Vector2( 0.4, 0.4 )
 
-[node name="Chair1" type="Sprite" parent="Background/Ambience"]
+[node name="Chair1" type="Sprite2D" parent="Background/Ambience"]
 position = Vector2( 2400, 422 )
 texture = ExtResource( 12 )
 
-[node name="Light1" type="Sprite" parent="Background/Ambience"]
+[node name="Light1" type="Sprite2D" parent="Background/Ambience"]
 position = Vector2( 2482, 650 )
 texture = ExtResource( 13 )
 
-[node name="Light2" type="Sprite" parent="Background/Ambience"]
+[node name="Light2" type="Sprite2D" parent="Background/Ambience"]
 position = Vector2( 1422, 608 )
 texture = ExtResource( 13 )
 
-[node name="Light3" type="Sprite" parent="Background/Ambience"]
+[node name="Light3" type="Sprite2D" parent="Background/Ambience"]
 position = Vector2( 2917, 186 )
 texture = ExtResource( 13 )
 
-[node name="Light4" type="Sprite" parent="Background/Ambience"]
+[node name="Light4" type="Sprite2D" parent="Background/Ambience"]
 position = Vector2( 1673, 99 )
 texture = ExtResource( 13 )
 
-[node name="Palmera1" type="Sprite" parent="Background/Ambience"]
+[node name="Palmera1" type="Sprite2D" parent="Background/Ambience"]
 position = Vector2( 1117, 424 )
 texture = ExtResource( 18 )
 
-[node name="Palmera3" type="Sprite" parent="Background/Ambience"]
+[node name="Palmera3" type="Sprite2D" parent="Background/Ambience"]
 position = Vector2( 3006, 682 )
 texture = ExtResource( 16 )
 
-[node name="Fence" type="Sprite" parent="Background/Ambience"]
+[node name="Fence" type="Sprite2D" parent="Background/Ambience"]
 position = Vector2( 2721, 795 )
 texture = ExtResource( 15 )
 
-[node name="Palmera2" type="Sprite" parent="Background/Ambience"]
+[node name="Palmera2" type="Sprite2D" parent="Background/Ambience"]
 position = Vector2( 496, 544 )
 texture = ExtResource( 19 )
 
-[node name="Palmera4" type="Sprite" parent="Background/Ambience"]
+[node name="Palmera4" type="Sprite2D" parent="Background/Ambience"]
 position = Vector2( 1906, 21 )
 texture = ExtResource( 17 )
 
-[node name="Grass1" type="Sprite" parent="Background/Ambience"]
+[node name="Grass1" type="Sprite2D" parent="Background/Ambience"]
 position = Vector2( 171, 571 )
 texture = ExtResource( 20 )
 
-[node name="Grass2" type="Sprite" parent="Background/Ambience"]
+[node name="Grass2" type="Sprite2D" parent="Background/Ambience"]
 position = Vector2( 974, 724 )
 texture = ExtResource( 20 )
 
-[node name="Grass3" type="Sprite" parent="Background/Ambience"]
+[node name="Grass3" type="Sprite2D" parent="Background/Ambience"]
 position = Vector2( 1117, 724 )
 texture = ExtResource( 20 )
 
-[node name="Chair2" type="Sprite" parent="Background/Ambience"]
+[node name="Chair2" type="Sprite2D" parent="Background/Ambience"]
 position = Vector2( 1246, 764 )
 texture = ExtResource( 12 )
 
 [node name="Trash" type="Area2D" parent="Background/Ambience"]
 position = Vector2( 2241, 821 )
 
-[node name="Trash" type="Sprite" parent="Background/Ambience/Trash"]
+[node name="Trash" type="Sprite2D" parent="Background/Ambience/Trash"]
 texture = ExtResource( 14 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Background/Ambience/Trash"]
@@ -281,16 +281,16 @@ shape = SubResource( 7 )
 visible = false
 tile_set = SubResource( 3 )
 format = 1
-tile_data = PoolIntArray( -65532, 0, 0, -65531, 0, 0, -65530, 0, 0, -65529, 0, 0, -65528, 0, 0, -65527, 0, 0, -65526, 0, 0, -65525, 0, 0, -65524, 0, 0, -65523, 0, 0, -65522, 0, 0, -65521, 0, 0, -65520, 0, 0, -65519, 0, 0, -65518, 0, 0, -65517, 0, 0, -65516, 0, 0, -65515, 0, 0, -65514, 0, 0, -65513, 0, 0, -65512, 0, 0, -65511, 0, 0, -65510, 0, 0, -65509, 0, 0, -65508, 0, 0, -65507, 0, 0, -65506, 0, 0, -65505, 0, 0, -65504, 0, 0, -65503, 0, 0, -65488, 0, 0, -65487, 0, 0, -65486, 0, 0, 4, 0, 0, 34, 0, 0, 47, 0, 0, 50, 0, 0, 65539, 0, 0, 65570, 0, 0, 65583, 0, 0, 65586, 0, 0, 131075, 0, 0, 131106, 0, 0, 131119, 0, 0, 131122, 0, 0, 196610, 0, 0, 196611, 0, 0, 196633, 0, 0, 196634, 0, 0, 196642, 0, 0, 196653, 0, 0, 196654, 0, 0, 196655, 0, 0, 196658, 0, 0, 262146, 0, 0, 262169, 0, 0, 262170, 0, 0, 262171, 0, 0, 262172, 0, 0, 262173, 0, 0, 262174, 0, 0, 262175, 0, 0, 262178, 0, 0, 262179, 0, 0, 262180, 0, 0, 262181, 0, 0, 262182, 0, 0, 262183, 0, 0, 262184, 0, 0, 262185, 0, 0, 262186, 0, 0, 262187, 0, 0, 262188, 0, 0, 262189, 0, 0, 262190, 0, 0, 262191, 0, 0, 262194, 0, 0, 327682, 0, 0, 327708, 0, 0, 327709, 0, 0, 327710, 0, 0, 327725, 0, 0, 327730, 0, 0, 393218, 0, 0, 393266, 0, 0, 458754, 0, 0, 458755, 0, 0, 458787, 0, 0, 458790, 0, 0, 458802, 0, 0, 524290, 0, 0, 524291, 0, 0, 524338, 0, 0, 589825, 0, 0, 589826, 0, 0, 589827, 0, 0, 589874, 0, 0, 720895, 0, 0, 655360, 0, 0, 655361, 0, 0, 655375, 0, 0, 655376, 0, 0, 655377, 0, 0, 655410, 0, 0, 786431, 0, 0, 720896, 0, 0, 720910, 0, 0, 720911, 0, 0, 720912, 0, 0, 720913, 0, 0, 720914, 0, 0, 720915, 0, 0, 720916, 0, 0, 720917, 0, 0, 720918, 0, 0, 720946, 0, 0, 851967, 0, 0, 786470, 0, 0, 786476, 0, 0, 786482, 0, 0, 917503, 0, 0, 852002, 0, 0, 852003, 0, 0, 852006, 0, 0, 852007, 0, 0, 852008, 0, 0, 852009, 0, 0, 852010, 0, 0, 852011, 0, 0, 852012, 0, 0, 852016, 0, 0, 852018, 0, 0, 983039, 0, 0, 917552, 0, 0, 917553, 0, 0, 917554, 0, 0, 1048575, 0, 0, 983090, 0, 0, 1114111, 0, 0, 1048626, 0, 0, 1179647, 0, 0, 1114162, 0, 0, 1245183, 0, 0, 1179648, 0, 0, 1179649, 0, 0, 1179698, 0, 0, 1245185, 0, 0, 1245186, 0, 0, 1245234, 0, 0, 1245235, 0, 0, 1310723, 0, 0, 1310770, 0, 0, 1376260, 0, 0, 1376261, 0, 0, 1376306, 0, 0, 1441797, 0, 0, 1441798, 0, 0, 1441842, 0, 0, 1507334, 0, 0, 1507335, 0, 0, 1507336, 0, 0, 1507337, 0, 0, 1507377, 0, 0, 1507378, 0, 0, 1572873, 0, 0, 1572874, 0, 0, 1572875, 0, 0, 1572913, 0, 0, 1638411, 0, 0, 1638412, 0, 0, 1638413, 0, 0, 1638448, 0, 0, 1638449, 0, 0, 1703949, 0, 0, 1703950, 0, 0, 1703982, 0, 0, 1703983, 0, 0, 1703984, 0, 0, 1769486, 0, 0, 1769487, 0, 0, 1769488, 0, 0, 1769489, 0, 0, 1769514, 0, 0, 1769515, 0, 0, 1769516, 0, 0, 1769517, 0, 0, 1835025, 0, 0, 1835026, 0, 0, 1835027, 0, 0, 1835028, 0, 0, 1835029, 0, 0, 1835030, 0, 0, 1835031, 0, 0, 1835032, 0, 0, 1835033, 0, 0, 1835034, 0, 0, 1835035, 0, 0, 1835036, 0, 0, 1835037, 0, 0, 1835038, 0, 0, 1835039, 0, 0, 1835040, 0, 0, 1835041, 0, 0, 1835042, 0, 0, 1835043, 0, 0, 1835044, 0, 0, 1835045, 0, 0, 1835046, 0, 0, 1835047, 0, 0, 1835048, 0, 0, 1835049, 0, 0 )
+tile_data = PackedInt32Array( -65532, 0, 0, -65531, 0, 0, -65530, 0, 0, -65529, 0, 0, -65528, 0, 0, -65527, 0, 0, -65526, 0, 0, -65525, 0, 0, -65524, 0, 0, -65523, 0, 0, -65522, 0, 0, -65521, 0, 0, -65520, 0, 0, -65519, 0, 0, -65518, 0, 0, -65517, 0, 0, -65516, 0, 0, -65515, 0, 0, -65514, 0, 0, -65513, 0, 0, -65512, 0, 0, -65511, 0, 0, -65510, 0, 0, -65509, 0, 0, -65508, 0, 0, -65507, 0, 0, -65506, 0, 0, -65505, 0, 0, -65504, 0, 0, -65503, 0, 0, -65488, 0, 0, -65487, 0, 0, -65486, 0, 0, 4, 0, 0, 34, 0, 0, 47, 0, 0, 50, 0, 0, 65539, 0, 0, 65570, 0, 0, 65583, 0, 0, 65586, 0, 0, 131075, 0, 0, 131106, 0, 0, 131119, 0, 0, 131122, 0, 0, 196610, 0, 0, 196611, 0, 0, 196633, 0, 0, 196634, 0, 0, 196642, 0, 0, 196653, 0, 0, 196654, 0, 0, 196655, 0, 0, 196658, 0, 0, 262146, 0, 0, 262169, 0, 0, 262170, 0, 0, 262171, 0, 0, 262172, 0, 0, 262173, 0, 0, 262174, 0, 0, 262175, 0, 0, 262178, 0, 0, 262179, 0, 0, 262180, 0, 0, 262181, 0, 0, 262182, 0, 0, 262183, 0, 0, 262184, 0, 0, 262185, 0, 0, 262186, 0, 0, 262187, 0, 0, 262188, 0, 0, 262189, 0, 0, 262190, 0, 0, 262191, 0, 0, 262194, 0, 0, 327682, 0, 0, 327708, 0, 0, 327709, 0, 0, 327710, 0, 0, 327725, 0, 0, 327730, 0, 0, 393218, 0, 0, 393266, 0, 0, 458754, 0, 0, 458755, 0, 0, 458787, 0, 0, 458790, 0, 0, 458802, 0, 0, 524290, 0, 0, 524291, 0, 0, 524338, 0, 0, 589825, 0, 0, 589826, 0, 0, 589827, 0, 0, 589874, 0, 0, 720895, 0, 0, 655360, 0, 0, 655361, 0, 0, 655375, 0, 0, 655376, 0, 0, 655377, 0, 0, 655410, 0, 0, 786431, 0, 0, 720896, 0, 0, 720910, 0, 0, 720911, 0, 0, 720912, 0, 0, 720913, 0, 0, 720914, 0, 0, 720915, 0, 0, 720916, 0, 0, 720917, 0, 0, 720918, 0, 0, 720946, 0, 0, 851967, 0, 0, 786470, 0, 0, 786476, 0, 0, 786482, 0, 0, 917503, 0, 0, 852002, 0, 0, 852003, 0, 0, 852006, 0, 0, 852007, 0, 0, 852008, 0, 0, 852009, 0, 0, 852010, 0, 0, 852011, 0, 0, 852012, 0, 0, 852016, 0, 0, 852018, 0, 0, 983039, 0, 0, 917552, 0, 0, 917553, 0, 0, 917554, 0, 0, 1048575, 0, 0, 983090, 0, 0, 1114111, 0, 0, 1048626, 0, 0, 1179647, 0, 0, 1114162, 0, 0, 1245183, 0, 0, 1179648, 0, 0, 1179649, 0, 0, 1179698, 0, 0, 1245185, 0, 0, 1245186, 0, 0, 1245234, 0, 0, 1245235, 0, 0, 1310723, 0, 0, 1310770, 0, 0, 1376260, 0, 0, 1376261, 0, 0, 1376306, 0, 0, 1441797, 0, 0, 1441798, 0, 0, 1441842, 0, 0, 1507334, 0, 0, 1507335, 0, 0, 1507336, 0, 0, 1507337, 0, 0, 1507377, 0, 0, 1507378, 0, 0, 1572873, 0, 0, 1572874, 0, 0, 1572875, 0, 0, 1572913, 0, 0, 1638411, 0, 0, 1638412, 0, 0, 1638413, 0, 0, 1638448, 0, 0, 1638449, 0, 0, 1703949, 0, 0, 1703950, 0, 0, 1703982, 0, 0, 1703983, 0, 0, 1703984, 0, 0, 1769486, 0, 0, 1769487, 0, 0, 1769488, 0, 0, 1769489, 0, 0, 1769514, 0, 0, 1769515, 0, 0, 1769516, 0, 0, 1769517, 0, 0, 1835025, 0, 0, 1835026, 0, 0, 1835027, 0, 0, 1835028, 0, 0, 1835029, 0, 0, 1835030, 0, 0, 1835031, 0, 0, 1835032, 0, 0, 1835033, 0, 0, 1835034, 0, 0, 1835035, 0, 0, 1835036, 0, 0, 1835037, 0, 0, 1835038, 0, 0, 1835039, 0, 0, 1835040, 0, 0, 1835041, 0, 0, 1835042, 0, 0, 1835043, 0, 0, 1835044, 0, 0, 1835045, 0, 0, 1835046, 0, 0, 1835047, 0, 0, 1835048, 0, 0, 1835049, 0, 0 )
 
 [node name="Trash" type="Node" parent="."]
 
-[node name="SeguroLata" type="KinematicBody2D" parent="Trash" groups=["enemy"]]
+[node name="SeguroLata" type="CharacterBody2D" parent="Trash" groups=["enemy"]]
 position = Vector2( 1500, 1000 )
 scale = Vector2( 0.5, 0.5 )
 script = ExtResource( 26 )
 
-[node name="Sprite" type="Sprite" parent="Trash/SeguroLata"]
+[node name="Sprite2D" type="Sprite2D" parent="Trash/SeguroLata"]
 scale = Vector2( 0.6, 0.6 )
 texture = ExtResource( 30 )
 
@@ -298,84 +298,84 @@ texture = ExtResource( 30 )
 rotation = 1.13446
 shape = SubResource( 4 )
 
-[node name="Botella" type="KinematicBody2D" parent="Trash" groups=["enemy"]]
+[node name="Botella" type="CharacterBody2D" parent="Trash" groups=["enemy"]]
 position = Vector2( 1600, 1285 )
 scale = Vector2( 0.5, 0.5 )
 script = ExtResource( 24 )
 
-[node name="Sprite" type="Sprite" parent="Trash/Botella"]
+[node name="Sprite2D" type="Sprite2D" parent="Trash/Botella"]
 scale = Vector2( 0.6, 0.6 )
 texture = ExtResource( 31 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Trash/Botella"]
 shape = SubResource( 4 )
 
-[node name="Botella2" type="KinematicBody2D" parent="Trash" groups=["enemy"]]
+[node name="Botella2" type="CharacterBody2D" parent="Trash" groups=["enemy"]]
 position = Vector2( 600, 150 )
 scale = Vector2( 0.5, 0.5 )
 script = ExtResource( 24 )
 
-[node name="Sprite" type="Sprite" parent="Trash/Botella2"]
+[node name="Sprite2D" type="Sprite2D" parent="Trash/Botella2"]
 scale = Vector2( 0.6, 0.6 )
 texture = ExtResource( 31 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Trash/Botella2"]
 shape = SubResource( 4 )
 
-[node name="Botella3" type="KinematicBody2D" parent="Trash" groups=["enemy"]]
+[node name="Botella3" type="CharacterBody2D" parent="Trash" groups=["enemy"]]
 position = Vector2( 2100, 650 )
 scale = Vector2( 0.5, 0.5 )
 script = ExtResource( 24 )
 
-[node name="Sprite" type="Sprite" parent="Trash/Botella3"]
+[node name="Sprite2D" type="Sprite2D" parent="Trash/Botella3"]
 scale = Vector2( 0.6, 0.6 )
 texture = ExtResource( 31 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Trash/Botella3"]
 shape = SubResource( 4 )
 
-[node name="Botella4" type="KinematicBody2D" parent="Trash" groups=["enemy"]]
+[node name="Botella4" type="CharacterBody2D" parent="Trash" groups=["enemy"]]
 position = Vector2( 1900, 1200 )
 scale = Vector2( 0.5, 0.5 )
 script = ExtResource( 24 )
 
-[node name="Sprite" type="Sprite" parent="Trash/Botella4"]
+[node name="Sprite2D" type="Sprite2D" parent="Trash/Botella4"]
 scale = Vector2( 0.6, 0.6 )
 texture = ExtResource( 31 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Trash/Botella4"]
 shape = SubResource( 4 )
 
-[node name="Botella5" type="KinematicBody2D" parent="Trash" groups=["enemy"]]
+[node name="Botella5" type="CharacterBody2D" parent="Trash" groups=["enemy"]]
 position = Vector2( 2850, 1000 )
 scale = Vector2( 0.5, 0.5 )
 script = ExtResource( 24 )
 
-[node name="Sprite" type="Sprite" parent="Trash/Botella5"]
+[node name="Sprite2D" type="Sprite2D" parent="Trash/Botella5"]
 scale = Vector2( 0.6, 0.6 )
 texture = ExtResource( 31 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Trash/Botella5"]
 shape = SubResource( 4 )
 
-[node name="Botella6" type="KinematicBody2D" parent="Trash" groups=["enemy"]]
+[node name="Botella6" type="CharacterBody2D" parent="Trash" groups=["enemy"]]
 position = Vector2( 2600, 625 )
 scale = Vector2( 0.5, 0.5 )
 script = ExtResource( 24 )
 
-[node name="Sprite" type="Sprite" parent="Trash/Botella6"]
+[node name="Sprite2D" type="Sprite2D" parent="Trash/Botella6"]
 scale = Vector2( 0.6, 0.6 )
 texture = ExtResource( 31 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Trash/Botella6"]
 shape = SubResource( 4 )
 
-[node name="Calcetin" type="KinematicBody2D" parent="Trash" groups=["enemy"]]
+[node name="Calcetin" type="CharacterBody2D" parent="Trash" groups=["enemy"]]
 position = Vector2( 1200, 1150 )
 scale = Vector2( 0.6, 0.6 )
 script = ExtResource( 24 )
 
-[node name="Sprite" type="Sprite" parent="Trash/Calcetin"]
+[node name="Sprite2D" type="Sprite2D" parent="Trash/Calcetin"]
 scale = Vector2( 0.6, 0.6 )
 texture = ExtResource( 32 )
 
@@ -383,12 +383,12 @@ texture = ExtResource( 32 )
 rotation = 1.5708
 shape = SubResource( 4 )
 
-[node name="Calcetin2" type="KinematicBody2D" parent="Trash" groups=["enemy"]]
+[node name="Calcetin2" type="CharacterBody2D" parent="Trash" groups=["enemy"]]
 position = Vector2( 450, 320 )
 scale = Vector2( 0.6, 0.6 )
 script = ExtResource( 24 )
 
-[node name="Sprite" type="Sprite" parent="Trash/Calcetin2"]
+[node name="Sprite2D" type="Sprite2D" parent="Trash/Calcetin2"]
 scale = Vector2( 0.6, 0.6 )
 texture = ExtResource( 32 )
 
@@ -396,12 +396,12 @@ texture = ExtResource( 32 )
 rotation = 1.5708
 shape = SubResource( 4 )
 
-[node name="Calcetin3" type="KinematicBody2D" parent="Trash" groups=["enemy"]]
+[node name="Calcetin3" type="CharacterBody2D" parent="Trash" groups=["enemy"]]
 position = Vector2( 1000, 900 )
 scale = Vector2( 0.6, 0.6 )
 script = ExtResource( 24 )
 
-[node name="Sprite" type="Sprite" parent="Trash/Calcetin3"]
+[node name="Sprite2D" type="Sprite2D" parent="Trash/Calcetin3"]
 scale = Vector2( 0.6, 0.6 )
 texture = ExtResource( 32 )
 
@@ -409,12 +409,12 @@ texture = ExtResource( 32 )
 rotation = 1.5708
 shape = SubResource( 4 )
 
-[node name="Mascarilla" type="KinematicBody2D" parent="Trash" groups=["enemy"]]
+[node name="Mascarilla" type="CharacterBody2D" parent="Trash" groups=["enemy"]]
 position = Vector2( 1600, 600 )
 scale = Vector2( 0.6, 0.6 )
 script = ExtResource( 24 )
 
-[node name="Sprite" type="Sprite" parent="Trash/Mascarilla"]
+[node name="Sprite2D" type="Sprite2D" parent="Trash/Mascarilla"]
 scale = Vector2( 0.6, 0.6 )
 texture = ExtResource( 33 )
 
@@ -422,12 +422,12 @@ texture = ExtResource( 33 )
 rotation = 1.5708
 shape = SubResource( 4 )
 
-[node name="Mascarilla2" type="KinematicBody2D" parent="Trash" groups=["enemy"]]
+[node name="Mascarilla2" type="CharacterBody2D" parent="Trash" groups=["enemy"]]
 position = Vector2( 1800, 560 )
 scale = Vector2( 0.6, 0.6 )
 script = ExtResource( 24 )
 
-[node name="Sprite" type="Sprite" parent="Trash/Mascarilla2"]
+[node name="Sprite2D" type="Sprite2D" parent="Trash/Mascarilla2"]
 scale = Vector2( 0.6, 0.6 )
 texture = ExtResource( 33 )
 
@@ -435,12 +435,12 @@ texture = ExtResource( 33 )
 rotation = 1.5708
 shape = SubResource( 4 )
 
-[node name="Mascarilla3" type="KinematicBody2D" parent="Trash" groups=["enemy"]]
+[node name="Mascarilla3" type="CharacterBody2D" parent="Trash" groups=["enemy"]]
 position = Vector2( 850, 450 )
 scale = Vector2( 0.6, 0.6 )
 script = ExtResource( 24 )
 
-[node name="Sprite" type="Sprite" parent="Trash/Mascarilla3"]
+[node name="Sprite2D" type="Sprite2D" parent="Trash/Mascarilla3"]
 scale = Vector2( 0.6, 0.6 )
 texture = ExtResource( 33 )
 
@@ -448,12 +448,12 @@ texture = ExtResource( 33 )
 rotation = 1.5708
 shape = SubResource( 4 )
 
-[node name="Mascarilla4" type="KinematicBody2D" parent="Trash" groups=["enemy"]]
+[node name="Mascarilla4" type="CharacterBody2D" parent="Trash" groups=["enemy"]]
 position = Vector2( 650, 300 )
 scale = Vector2( 0.6, 0.6 )
 script = ExtResource( 24 )
 
-[node name="Sprite" type="Sprite" parent="Trash/Mascarilla4"]
+[node name="Sprite2D" type="Sprite2D" parent="Trash/Mascarilla4"]
 scale = Vector2( 0.6, 0.6 )
 texture = ExtResource( 33 )
 
@@ -461,12 +461,12 @@ texture = ExtResource( 33 )
 rotation = 1.5708
 shape = SubResource( 4 )
 
-[node name="Mascarilla5" type="KinematicBody2D" parent="Trash" groups=["enemy"]]
+[node name="Mascarilla5" type="CharacterBody2D" parent="Trash" groups=["enemy"]]
 position = Vector2( 1800, 1000 )
 scale = Vector2( 0.6, 0.6 )
 script = ExtResource( 24 )
 
-[node name="Sprite" type="Sprite" parent="Trash/Mascarilla5"]
+[node name="Sprite2D" type="Sprite2D" parent="Trash/Mascarilla5"]
 scale = Vector2( 0.6, 0.6 )
 texture = ExtResource( 33 )
 
@@ -474,12 +474,12 @@ texture = ExtResource( 33 )
 rotation = 1.5708
 shape = SubResource( 4 )
 
-[node name="Afeitadora" type="KinematicBody2D" parent="Trash" groups=["enemy"]]
+[node name="Afeitadora" type="CharacterBody2D" parent="Trash" groups=["enemy"]]
 position = Vector2( 2640, 1190 )
 scale = Vector2( 0.6, 0.6 )
 script = ExtResource( 24 )
 
-[node name="Sprite" type="Sprite" parent="Trash/Afeitadora"]
+[node name="Sprite2D" type="Sprite2D" parent="Trash/Afeitadora"]
 scale = Vector2( 0.6, 0.6 )
 texture = ExtResource( 29 )
 
@@ -487,12 +487,12 @@ texture = ExtResource( 29 )
 rotation = 1.5708
 shape = SubResource( 4 )
 
-[node name="Lata" type="KinematicBody2D" parent="Trash" groups=["enemy"]]
+[node name="Lata" type="CharacterBody2D" parent="Trash" groups=["enemy"]]
 position = Vector2( 360, 700 )
 scale = Vector2( 0.6, 0.6 )
 script = ExtResource( 24 )
 
-[node name="Sprite" type="Sprite" parent="Trash/Lata"]
+[node name="Sprite2D" type="Sprite2D" parent="Trash/Lata"]
 scale = Vector2( 0.6, 0.6 )
 texture = ExtResource( 28 )
 
@@ -500,12 +500,12 @@ texture = ExtResource( 28 )
 rotation = 1.5708
 shape = SubResource( 4 )
 
-[node name="Lata2" type="KinematicBody2D" parent="Trash" groups=["enemy"]]
+[node name="Lata2" type="CharacterBody2D" parent="Trash" groups=["enemy"]]
 position = Vector2( 650, 750 )
 scale = Vector2( 0.6, 0.6 )
 script = ExtResource( 24 )
 
-[node name="Sprite" type="Sprite" parent="Trash/Lata2"]
+[node name="Sprite2D" type="Sprite2D" parent="Trash/Lata2"]
 scale = Vector2( 0.6, 0.6 )
 texture = ExtResource( 28 )
 
@@ -513,12 +513,12 @@ texture = ExtResource( 28 )
 rotation = 1.5708
 shape = SubResource( 4 )
 
-[node name="Lata3" type="KinematicBody2D" parent="Trash" groups=["enemy"]]
+[node name="Lata3" type="CharacterBody2D" parent="Trash" groups=["enemy"]]
 position = Vector2( 1750, 750 )
 scale = Vector2( 0.6, 0.6 )
 script = ExtResource( 24 )
 
-[node name="Sprite" type="Sprite" parent="Trash/Lata3"]
+[node name="Sprite2D" type="Sprite2D" parent="Trash/Lata3"]
 scale = Vector2( 0.6, 0.6 )
 texture = ExtResource( 28 )
 
@@ -526,12 +526,12 @@ texture = ExtResource( 28 )
 rotation = 1.5708
 shape = SubResource( 4 )
 
-[node name="Lata4" type="KinematicBody2D" parent="Trash" groups=["enemy"]]
+[node name="Lata4" type="CharacterBody2D" parent="Trash" groups=["enemy"]]
 position = Vector2( 1250, 550 )
 scale = Vector2( 0.6, 0.6 )
 script = ExtResource( 24 )
 
-[node name="Sprite" type="Sprite" parent="Trash/Lata4"]
+[node name="Sprite2D" type="Sprite2D" parent="Trash/Lata4"]
 scale = Vector2( 0.6, 0.6 )
 texture = ExtResource( 28 )
 
@@ -539,12 +539,12 @@ texture = ExtResource( 28 )
 rotation = 1.5708
 shape = SubResource( 4 )
 
-[node name="Lata5" type="KinematicBody2D" parent="Trash" groups=["enemy"]]
+[node name="Lata5" type="CharacterBody2D" parent="Trash" groups=["enemy"]]
 position = Vector2( 2100, 450 )
 scale = Vector2( 0.6, 0.6 )
 script = ExtResource( 24 )
 
-[node name="Sprite" type="Sprite" parent="Trash/Lata5"]
+[node name="Sprite2D" type="Sprite2D" parent="Trash/Lata5"]
 scale = Vector2( 0.6, 0.6 )
 texture = ExtResource( 28 )
 
@@ -552,12 +552,12 @@ texture = ExtResource( 28 )
 rotation = 1.5708
 shape = SubResource( 4 )
 
-[node name="Jeringa" type="KinematicBody2D" parent="Trash" groups=["enemy"]]
+[node name="Jeringa" type="CharacterBody2D" parent="Trash" groups=["enemy"]]
 position = Vector2( 2300, 1300 )
 scale = Vector2( 0.6, 0.6 )
 script = ExtResource( 24 )
 
-[node name="Sprite" type="Sprite" parent="Trash/Jeringa"]
+[node name="Sprite2D" type="Sprite2D" parent="Trash/Jeringa"]
 scale = Vector2( 0.6, 0.6 )
 texture = ExtResource( 27 )
 
@@ -565,12 +565,12 @@ texture = ExtResource( 27 )
 rotation = 1.5708
 shape = SubResource( 4 )
 
-[node name="Cuchara" type="KinematicBody2D" parent="Trash" groups=["enemy"]]
+[node name="Cuchara" type="CharacterBody2D" parent="Trash" groups=["enemy"]]
 position = Vector2( 2100, 1100 )
 scale = Vector2( 0.6, 0.6 )
 script = ExtResource( 25 )
 
-[node name="Sprite" type="Sprite" parent="Trash/Cuchara"]
+[node name="Sprite2D" type="Sprite2D" parent="Trash/Cuchara"]
 scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 34 )
 
@@ -578,12 +578,12 @@ texture = ExtResource( 34 )
 rotation = 1.5708
 shape = SubResource( 4 )
 
-[node name="Cuchara2" type="KinematicBody2D" parent="Trash" groups=["enemy"]]
+[node name="Cuchara2" type="CharacterBody2D" parent="Trash" groups=["enemy"]]
 position = Vector2( 1500, 200 )
 scale = Vector2( 0.6, 0.6 )
 script = ExtResource( 25 )
 
-[node name="Sprite" type="Sprite" parent="Trash/Cuchara2"]
+[node name="Sprite2D" type="Sprite2D" parent="Trash/Cuchara2"]
 scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 34 )
 
@@ -591,12 +591,12 @@ texture = ExtResource( 34 )
 rotation = 1.5708
 shape = SubResource( 4 )
 
-[node name="Cuchara3" type="KinematicBody2D" parent="Trash" groups=["enemy"]]
+[node name="Cuchara3" type="CharacterBody2D" parent="Trash" groups=["enemy"]]
 position = Vector2( 2700, 430 )
 scale = Vector2( 0.6, 0.6 )
 script = ExtResource( 25 )
 
-[node name="Sprite" type="Sprite" parent="Trash/Cuchara3"]
+[node name="Sprite2D" type="Sprite2D" parent="Trash/Cuchara3"]
 scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 34 )
 
@@ -645,7 +645,7 @@ wait_time = 3.0
 position = Vector2( 1600, 0 )
 z_index = 2
 
-[node name="BGTries" type="Sprite" parent="Tries"]
+[node name="BGTries" type="Sprite2D" parent="Tries"]
 rotation = -1.5708
 scale = Vector2( 1, 3.2 )
 texture = ExtResource( 42 )
@@ -654,16 +654,16 @@ offset = Vector2( 100, -2.5 )
 [node name="MarginContainer" type="MarginContainer" parent="Tries"]
 anchor_left = 0.5
 anchor_right = 0.5
-margin_left = -189.0
-margin_right = 189.0
-margin_bottom = 79.0
+offset_left = -189.0
+offset_right = 189.0
+offset_bottom = 79.0
 
 [node name="LblTries" type="Label" parent="Tries/MarginContainer"]
-margin_right = 378.0
-margin_bottom = 79.0
-custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
-custom_constants/shadow_offset_x = -3
-custom_fonts/font = ExtResource( 41 )
+offset_right = 378.0
+offset_bottom = 79.0
+theme_override_colors/font_shadow_color = Color( 0, 0, 0, 1 )
+theme_override_constants/shadow_offset_x = -3
+theme_override_fonts/font = ExtResource( 41 )
 text = "INTENTOS: 0"
 align = 1
 valign = 1

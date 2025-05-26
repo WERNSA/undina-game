@@ -16,4 +16,4 @@ func _on_LineEdit_text_changed(_new_text):
 		$LogContainer/BtnLog.disabled = true
 
 func _on_btnContinue_pressed():
-	get_tree().call_deferred("change_scene", "res://Scenes/Menu/Menu.tscn")
+	get_tree().call_deferred("change_scene_to_file", "res://Scenes/Menu/Menu.tscn")

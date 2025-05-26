@@ -4,10 +4,10 @@ extends Node
 # Declare member variables here. Examples:
 var player_name
 var player_points
-onready var rng : RandomNumberGenerator = RandomNumberGenerator.new()
+@onready var rng : RandomNumberGenerator = RandomNumberGenerator.new()
 const const_enemy_speed : int = 400
-onready var min_enemy_speed : int = 400
-onready var max_enemy_speed : int = 600
+@onready var min_enemy_speed : int = 400
+@onready var max_enemy_speed : int = 600
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass # Replace with function body.
@@ -17,39 +17,39 @@ func _ready():
 #func _process(delta):
 #	pass
 
-func read_data(): 
-	var file = File.new()
+func read_data():
 	var dir = "user://data.txt"
-	if not file.file_exists(dir):
-		return null 
-	file.open(dir, File.READ)
-	var data = file.get_as_text() 
-	file.close()
-	return data
+	if not FileAccess.file_exists(dir):
+		return null
+	
+	var file = FileAccess.open(dir, FileAccess.READ)
+	if file:
+		var data = file.get_as_text()
+		return data
+	return null
 
 func write_data(text):
-	var file = File.new()
 	var dir = "user://data.txt"
-	file.open(dir, File.WRITE)
-	file.store_string(text)
-	file.close()
+	var file = FileAccess.open(dir, FileAccess.WRITE)
+	if file:
+		file.store_string(text)
 
-func read_points(): 
-	var file = File.new()
+func read_points():
 	var dir = "user://points.txt"
-	if not file.file_exists(dir):
-		return 0 
-	file.open(dir, File.READ)
-	var data = file.get_as_text() 
-	file.close()
-	return int(data)
+	if not FileAccess.file_exists(dir):
+		return 0
+
+	var file = FileAccess.open(dir, FileAccess.READ)
+	if file:
+		var data = file.get_as_text()
+		return int(data)
+	return 0
 
 func write_points(text):
-	var file = File.new()
 	var dir = "user://points.txt"
-	file.open(dir, File.WRITE)
-	file.store_string(str(text))
-	file.close()
+	var file = FileAccess.open(dir, FileAccess.WRITE)
+	if file:
+		file.store_string(str(text))
 
 func random_int(min_number, max_number):
 	rng.randomize()

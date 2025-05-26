@@ -1,55 +1,55 @@
 [gd_scene load_steps=45 format=2]
 
-[ext_resource path="res://Assets/Images/Animaciones/Recogiendo basura/De frente/Illea de frente 8.png" type="Texture" id=2]
-[ext_resource path="res://Assets/Images/Animaciones/Recogiendo basura/De frente/Illea de frente 2.png" type="Texture" id=3]
-[ext_resource path="res://Assets/Images/Animaciones/Recogiendo basura/De frente/Illea de frente 5.png" type="Texture" id=4]
-[ext_resource path="res://Assets/Images/Animaciones/Recogiendo basura/De frente/Illea de frente 1.png" type="Texture" id=5]
-[ext_resource path="res://Assets/Images/Animaciones/Recogiendo basura/De frente/Illea de frente 3.png" type="Texture" id=6]
-[ext_resource path="res://Assets/Images/Animaciones/Recogiendo basura/De frente/Illea de frente 7.png" type="Texture" id=7]
-[ext_resource path="res://Assets/Images/Animaciones/Recogiendo basura/Tres cuartos derecha/Illea tres cuartos derecha 3.png" type="Texture" id=8]
-[ext_resource path="res://Assets/Images/Animaciones/Recogiendo basura/De frente/Illea de frente 9.png" type="Texture" id=9]
-[ext_resource path="res://Assets/Images/Animaciones/Recogiendo basura/De frente/Illea de frente 4.png" type="Texture" id=10]
-[ext_resource path="res://Assets/Images/Animaciones/Recogiendo basura/Tres cuartos derecha/Illea tres cuartos derecha 7.png" type="Texture" id=11]
-[ext_resource path="res://Assets/Images/Animaciones/Recogiendo basura/Espalda/Illea espalda 2.png" type="Texture" id=12]
-[ext_resource path="res://Assets/Images/Animaciones/Recogiendo basura/Tres cuartos derecha/Illea tres cuartos derecha 6.png" type="Texture" id=13]
-[ext_resource path="res://Assets/Images/Animaciones/Caminando/De espalda/De espalda 3.png" type="Texture" id=14]
-[ext_resource path="res://Assets/Images/Animaciones/Recogiendo basura/Espalda/Illea espalda 6.png" type="Texture" id=15]
-[ext_resource path="res://Assets/Images/Animaciones/Recogiendo basura/Tres cuartos derecha/Illea tres cuartos derecha 5.png" type="Texture" id=16]
-[ext_resource path="res://Assets/Images/Animaciones/Recogiendo basura/Tres cuartos derecha/Illea tres cuartos derecha 9.png" type="Texture" id=17]
-[ext_resource path="res://Assets/Images/Animaciones/Recogiendo basura/Espalda/Illea espalda 1.png" type="Texture" id=18]
-[ext_resource path="res://Assets/Images/Animaciones/Recogiendo basura/Espalda/Illea espalda 7.png" type="Texture" id=19]
-[ext_resource path="res://Assets/Images/Animaciones/Recogiendo basura/Espalda/Illea espalda 5.png" type="Texture" id=20]
-[ext_resource path="res://Assets/Images/Animaciones/Recogiendo basura/Tres cuartos derecha/Illea tres cuartos derecha 1.png" type="Texture" id=21]
-[ext_resource path="res://Assets/Images/Animaciones/Recogiendo basura/Tres cuartos derecha/Illea tres cuartos derecha 8.png" type="Texture" id=22]
-[ext_resource path="res://Assets/Images/Animaciones/Recogiendo basura/Espalda/Illea espalda 9.png" type="Texture" id=23]
-[ext_resource path="res://Assets/Images/Animaciones/Recogiendo basura/Tres cuartos derecha/Illea tres cuartos derecha 2.png" type="Texture" id=24]
-[ext_resource path="res://Assets/Images/Animaciones/Recogiendo basura/Espalda/Illea espalda 8.png" type="Texture" id=25]
-[ext_resource path="res://Assets/Images/Animaciones/Recogiendo basura/Tres cuartos derecha/Illea tres cuartos derecha 4.png" type="Texture" id=26]
-[ext_resource path="res://Assets/Images/Animaciones/Recogiendo basura/Espalda/Illea espalda 4.png" type="Texture" id=27]
-[ext_resource path="res://Assets/Images/Animaciones/Recogiendo basura/Tres cuartos derecha espalda/Tres cuartos derecha espalda 9.png" type="Texture" id=28]
-[ext_resource path="res://Assets/Images/Animaciones/Recogiendo basura/Tres cuartos derecha espalda/Tres cuartos derecha espalda 8.png" type="Texture" id=29]
-[ext_resource path="res://Assets/Images/Animaciones/Recogiendo basura/Tres cuartos derecha espalda/Tres cuartos derecha espalda 1.png" type="Texture" id=30]
-[ext_resource path="res://Assets/Images/Animaciones/Recogiendo basura/Tres cuartos derecha espalda/Tres cuartos derecha espalda 2.png" type="Texture" id=31]
-[ext_resource path="res://Assets/Images/Animaciones/Recogiendo basura/Tres cuartos derecha espalda/Tres cuartos derecha espalda 3.png" type="Texture" id=32]
-[ext_resource path="res://Assets/Images/Animaciones/Recogiendo basura/Tres cuartos derecha espalda/Tres cuartos derecha espalda 4.png" type="Texture" id=33]
-[ext_resource path="res://Assets/Images/Animaciones/Recogiendo basura/Tres cuartos derecha espalda/Tres cuartos derecha espalda 5.png" type="Texture" id=34]
-[ext_resource path="res://Assets/Images/Animaciones/Recogiendo basura/Tres cuartos derecha espalda/Tres cuartos derecha espalda 6.png" type="Texture" id=35]
-[ext_resource path="res://Assets/Images/Animaciones/Recogiendo basura/Tres cuartos derecha espalda/Tres cuartos derecha espalda 7.png" type="Texture" id=36]
+[ext_resource path="res://Assets/Images/Animaciones/Recogiendo basura/De frente/Illea de frente 8.png" type="Texture2D" id=2]
+[ext_resource path="res://Assets/Images/Animaciones/Recogiendo basura/De frente/Illea de frente 2.png" type="Texture2D" id=3]
+[ext_resource path="res://Assets/Images/Animaciones/Recogiendo basura/De frente/Illea de frente 5.png" type="Texture2D" id=4]
+[ext_resource path="res://Assets/Images/Animaciones/Recogiendo basura/De frente/Illea de frente 1.png" type="Texture2D" id=5]
+[ext_resource path="res://Assets/Images/Animaciones/Recogiendo basura/De frente/Illea de frente 3.png" type="Texture2D" id=6]
+[ext_resource path="res://Assets/Images/Animaciones/Recogiendo basura/De frente/Illea de frente 7.png" type="Texture2D" id=7]
+[ext_resource path="res://Assets/Images/Animaciones/Recogiendo basura/Tres cuartos derecha/Illea tres cuartos derecha 3.png" type="Texture2D" id=8]
+[ext_resource path="res://Assets/Images/Animaciones/Recogiendo basura/De frente/Illea de frente 9.png" type="Texture2D" id=9]
+[ext_resource path="res://Assets/Images/Animaciones/Recogiendo basura/De frente/Illea de frente 4.png" type="Texture2D" id=10]
+[ext_resource path="res://Assets/Images/Animaciones/Recogiendo basura/Tres cuartos derecha/Illea tres cuartos derecha 7.png" type="Texture2D" id=11]
+[ext_resource path="res://Assets/Images/Animaciones/Recogiendo basura/Espalda/Illea espalda 2.png" type="Texture2D" id=12]
+[ext_resource path="res://Assets/Images/Animaciones/Recogiendo basura/Tres cuartos derecha/Illea tres cuartos derecha 6.png" type="Texture2D" id=13]
+[ext_resource path="res://Assets/Images/Animaciones/Caminando/De espalda/De espalda 3.png" type="Texture2D" id=14]
+[ext_resource path="res://Assets/Images/Animaciones/Recogiendo basura/Espalda/Illea espalda 6.png" type="Texture2D" id=15]
+[ext_resource path="res://Assets/Images/Animaciones/Recogiendo basura/Tres cuartos derecha/Illea tres cuartos derecha 5.png" type="Texture2D" id=16]
+[ext_resource path="res://Assets/Images/Animaciones/Recogiendo basura/Tres cuartos derecha/Illea tres cuartos derecha 9.png" type="Texture2D" id=17]
+[ext_resource path="res://Assets/Images/Animaciones/Recogiendo basura/Espalda/Illea espalda 1.png" type="Texture2D" id=18]
+[ext_resource path="res://Assets/Images/Animaciones/Recogiendo basura/Espalda/Illea espalda 7.png" type="Texture2D" id=19]
+[ext_resource path="res://Assets/Images/Animaciones/Recogiendo basura/Espalda/Illea espalda 5.png" type="Texture2D" id=20]
+[ext_resource path="res://Assets/Images/Animaciones/Recogiendo basura/Tres cuartos derecha/Illea tres cuartos derecha 1.png" type="Texture2D" id=21]
+[ext_resource path="res://Assets/Images/Animaciones/Recogiendo basura/Tres cuartos derecha/Illea tres cuartos derecha 8.png" type="Texture2D" id=22]
+[ext_resource path="res://Assets/Images/Animaciones/Recogiendo basura/Espalda/Illea espalda 9.png" type="Texture2D" id=23]
+[ext_resource path="res://Assets/Images/Animaciones/Recogiendo basura/Tres cuartos derecha/Illea tres cuartos derecha 2.png" type="Texture2D" id=24]
+[ext_resource path="res://Assets/Images/Animaciones/Recogiendo basura/Espalda/Illea espalda 8.png" type="Texture2D" id=25]
+[ext_resource path="res://Assets/Images/Animaciones/Recogiendo basura/Tres cuartos derecha/Illea tres cuartos derecha 4.png" type="Texture2D" id=26]
+[ext_resource path="res://Assets/Images/Animaciones/Recogiendo basura/Espalda/Illea espalda 4.png" type="Texture2D" id=27]
+[ext_resource path="res://Assets/Images/Animaciones/Recogiendo basura/Tres cuartos derecha espalda/Tres cuartos derecha espalda 9.png" type="Texture2D" id=28]
+[ext_resource path="res://Assets/Images/Animaciones/Recogiendo basura/Tres cuartos derecha espalda/Tres cuartos derecha espalda 8.png" type="Texture2D" id=29]
+[ext_resource path="res://Assets/Images/Animaciones/Recogiendo basura/Tres cuartos derecha espalda/Tres cuartos derecha espalda 1.png" type="Texture2D" id=30]
+[ext_resource path="res://Assets/Images/Animaciones/Recogiendo basura/Tres cuartos derecha espalda/Tres cuartos derecha espalda 2.png" type="Texture2D" id=31]
+[ext_resource path="res://Assets/Images/Animaciones/Recogiendo basura/Tres cuartos derecha espalda/Tres cuartos derecha espalda 3.png" type="Texture2D" id=32]
+[ext_resource path="res://Assets/Images/Animaciones/Recogiendo basura/Tres cuartos derecha espalda/Tres cuartos derecha espalda 4.png" type="Texture2D" id=33]
+[ext_resource path="res://Assets/Images/Animaciones/Recogiendo basura/Tres cuartos derecha espalda/Tres cuartos derecha espalda 5.png" type="Texture2D" id=34]
+[ext_resource path="res://Assets/Images/Animaciones/Recogiendo basura/Tres cuartos derecha espalda/Tres cuartos derecha espalda 6.png" type="Texture2D" id=35]
+[ext_resource path="res://Assets/Images/Animaciones/Recogiendo basura/Tres cuartos derecha espalda/Tres cuartos derecha espalda 7.png" type="Texture2D" id=36]
 [ext_resource path="res://Scenes/Entity/Illea/Caminando/IlleaCaminando.gd" type="Script" id=37]
-[ext_resource path="res://Assets/Images/Animaciones/Recogiendo basura/De frente/Illea de frente 6.png" type="Texture" id=38]
+[ext_resource path="res://Assets/Images/Animaciones/Recogiendo basura/De frente/Illea de frente 6.png" type="Texture2D" id=38]
 
 [sub_resource type="Animation" id=5]
 resource_name = "Down"
 length = 0.8
 tracks/0/type = "value"
-tracks/0/path = NodePath("Sprite:texture")
+tracks/0/path = NodePath("Sprite2D:texture")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"times": PackedFloat32Array( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8 ),
+"transitions": PackedFloat32Array( 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
 "update": 1,
 "values": [ ExtResource( 5 ), ExtResource( 3 ), ExtResource( 6 ), ExtResource( 10 ), ExtResource( 4 ), ExtResource( 38 ), ExtResource( 7 ), ExtResource( 2 ), ExtResource( 9 ) ]
 }
@@ -58,14 +58,14 @@ tracks/0/keys = {
 resource_name = "DownWalk"
 length = 0.8
 tracks/0/type = "value"
-tracks/0/path = NodePath("Sprite:texture")
+tracks/0/path = NodePath("Sprite2D:texture")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"times": PackedFloat32Array( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8 ),
+"transitions": PackedFloat32Array( 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
 "update": 1,
 "values": [ ExtResource( 21 ), ExtResource( 24 ), ExtResource( 8 ), ExtResource( 26 ), ExtResource( 16 ), ExtResource( 13 ), ExtResource( 11 ), ExtResource( 22 ), ExtResource( 17 ) ]
 }
@@ -73,14 +73,14 @@ tracks/0/keys = {
 [sub_resource type="Animation" id=6]
 resource_name = "Idle"
 tracks/0/type = "value"
-tracks/0/path = NodePath("Sprite:texture")
+tracks/0/path = NodePath("Sprite2D:texture")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PackedFloat32Array( 0 ),
+"transitions": PackedFloat32Array( 1 ),
 "update": 1,
 "values": [ ExtResource( 5 ) ]
 }
@@ -88,14 +88,14 @@ tracks/0/keys = {
 [sub_resource type="Animation" id=7]
 length = 0.001
 tracks/0/type = "value"
-tracks/0/path = NodePath("Sprite:texture")
+tracks/0/path = NodePath("Sprite2D:texture")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PackedFloat32Array( 0 ),
+"transitions": PackedFloat32Array( 1 ),
 "update": 0,
 "values": [ ExtResource( 5 ) ]
 }
@@ -103,14 +103,14 @@ tracks/0/keys = {
 [sub_resource type="Animation" id=8]
 resource_name = "Up"
 tracks/0/type = "value"
-tracks/0/path = NodePath("Sprite:texture")
+tracks/0/path = NodePath("Sprite2D:texture")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"times": PackedFloat32Array( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8 ),
+"transitions": PackedFloat32Array( 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
 "update": 1,
 "values": [ ExtResource( 18 ), ExtResource( 12 ), ExtResource( 14 ), ExtResource( 27 ), ExtResource( 20 ), ExtResource( 15 ), ExtResource( 19 ), ExtResource( 25 ), ExtResource( 23 ) ]
 }
@@ -119,14 +119,14 @@ tracks/0/keys = {
 resource_name = "UpWalk"
 length = 0.8
 tracks/0/type = "value"
-tracks/0/path = NodePath("Sprite:texture")
+tracks/0/path = NodePath("Sprite2D:texture")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"times": PackedFloat32Array( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8 ),
+"transitions": PackedFloat32Array( 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
 "update": 1,
 "values": [ ExtResource( 30 ), ExtResource( 31 ), ExtResource( 32 ), ExtResource( 33 ), ExtResource( 34 ), ExtResource( 35 ), ExtResource( 36 ), ExtResource( 29 ), ExtResource( 28 ) ]
 }
@@ -135,10 +135,10 @@ tracks/0/keys = {
 radius = 57.0
 height = 278.0
 
-[node name="IlleaCaminando" type="KinematicBody2D" groups=["player"]]
+[node name="IlleaCaminando" type="CharacterBody2D" groups=["player"]]
 script = ExtResource( 37 )
 
-[node name="Sprite" type="Sprite" parent="."]
+[node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource( 5 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
@@ -156,4 +156,4 @@ shape = SubResource( 4 )
 position = Vector2( 0, 80 )
 scale = Vector2( 1, 20 )
 enabled = true
-cast_to = Vector2( 70, 0 )
+target_position = Vector2( 70, 0 )

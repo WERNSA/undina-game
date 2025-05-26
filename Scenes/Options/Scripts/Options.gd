@@ -1,7 +1,7 @@
 extends Node2D
 var muted : bool = false
-export (Texture) onready var MuteOnImg
-export (Texture) onready var MuteOffImg
+@export var MuteOnImg: Texture2D
+@export var MuteOffImg: Texture2D
 
 func _on_btnExit_pressed():
 	$SoundPress.play()

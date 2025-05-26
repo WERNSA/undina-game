@@ -1,9 +1,9 @@
-extends KinematicBody2D
+extends CharacterBody2D
 
 const FLOOR = Vector2(0, -1)
-export(int) var GRAVITY =  8
-export(int) var SPEED = 300
-onready var motion = Vector2.ZERO
+@export var GRAVITY: int =  8
+@export var SPEED: int = 300
+@onready var motion = Vector2.ZERO
 var can_move : bool = true
 
 func _process(delta):
@@ -20,4 +20,7 @@ func motion_ctrl():
 		motion.y += GRAVITY
 	elif can_move:
 		motion = get_axis() * SPEED
-	motion = move_and_slide(motion, FLOOR)
+	set_velocity(motion)
+	set_up_direction(FLOOR)
+	move_and_slide()
+	motion = velocity

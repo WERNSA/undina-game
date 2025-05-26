@@ -1,13 +1,13 @@
 extends Node2D
 
-onready var TRASH_COUNT = 0
+@onready var TRASH_COUNT = 0
 var trash_array
-onready var actual_trash = null
-onready var position_offset = 60
-onready var position_out_screen = 1900 + position_offset
-onready var trash_transition_time = 15
-onready var game_over = false
-onready var tries = 3
+@onready var actual_trash = null
+@onready var position_offset = 60
+@onready var position_out_screen = 1900 + position_offset
+@onready var trash_transition_time = 15
+@onready var game_over = false
+@onready var tries = 3
 var trash_qty
 
 func _ready():
@@ -17,8 +17,8 @@ func _ready():
 	trash_qty = len(trash_array)
 	$Crab/SpawnTimer.start()
 	$Tries/MarginContainer/LblTries.text = "INTENTOS: " + str(tries)
-	$HUD/GameOver/CenterContainer/HBoxContainer/BtnTry.connect("pressed", self, "_on_try_again")
-	$HUD/Win/CenterContainer/HBoxContainer/BtnTry.connect("pressed", self, "_on_try_again")
+	$HUD/GameOver/CenterContainer/HBoxContainer/BtnTry.connect("pressed", Callable(self, "_on_try_again"))
+	$HUD/Win/CenterContainer/HBoxContainer/BtnTry.connect("pressed", Callable(self, "_on_try_again"))
 
 func add_trash_count():
 	trash_qty -= 1
@@ -138,4 +138,4 @@ func _game_over():
 	$Background/Ambience/IlleaCaminando.can_move = false
 
 func _on_try_again():
-	get_tree().change_scene("res://Scenes/Games/LimpiandoCosta/Nivel2/LimpiandoCosta.tscn")
+	get_tree().change_scene_to_file("res://Scenes/Games/LimpiandoCosta/Nivel2/LimpiandoCosta.tscn")

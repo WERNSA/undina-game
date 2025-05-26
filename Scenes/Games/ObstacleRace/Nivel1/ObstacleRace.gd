@@ -1,16 +1,16 @@
 extends Node2D
 
-export (PackedScene) var Island1
-export (PackedScene) var Island2
+@export var Island1: PackedScene
+@export var Island2: PackedScene
 
-export (PackedScene) var Trash1
-export (PackedScene) var Trash2
-export (PackedScene) var Trash3
-export (PackedScene) var Trash4
-onready var island_position = Vector2.ZERO
-onready var top_position = 250
-onready var bottom_position = 1550
-onready var tries = 3
+@export var Trash1: PackedScene
+@export var Trash2: PackedScene
+@export var Trash3: PackedScene
+@export var Trash4: PackedScene
+@onready var island_position = Vector2.ZERO
+@onready var top_position = 250
+@onready var bottom_position = 1550
+@onready var tries = 3
 var TRASH_COUNT = 0
 var game_over : bool = false
 
@@ -20,8 +20,8 @@ func _ready():
 	$Spawn/IslandSpeedTimer.start()
 	island_position.y = bottom_position
 	island_position.x = 3600
-	$GameOver/CenterContainer/HBoxContainer/BtnTry.connect("pressed", self, "_on_try_again")
-	$Win/CenterContainer/HBoxContainer/BtnTry.connect("pressed", self, "_on_try_again")
+	$GameOver/CenterContainer/HBoxContainer/BtnTry.connect("pressed", Callable(self, "_on_try_again"))
+	$Win/CenterContainer/HBoxContainer/BtnTry.connect("pressed", Callable(self, "_on_try_again"))
 	$Contador.set_count(str(TRASH_COUNT))
 	randomize()
 
@@ -33,9 +33,9 @@ func _on_IslandTimer_timeout():
 	var island_number = Global.random_int(1, 2)
 	var island
 	if island_number == 1:
-		island = Island1.instance()
+		island = Island1.instantiate()
 	else:
-		island = Island2.instance()
+		island = Island2.instantiate()
 	add_child(island)
 	island.position = island_position
 	spawn_trash()
@@ -55,15 +55,15 @@ func spawn_trash():
 		var trash
 		match trash_number:
 			1:
-				trash = Trash1.instance()
+				trash = Trash1.instantiate()
 			2:
-				trash = Trash2.instance()
+				trash = Trash2.instantiate()
 			3:
-				trash = Trash3.instance()
+				trash = Trash3.instantiate()
 			4:
-				trash = Trash4.instance()
+				trash = Trash4.instantiate()
 			_:
-				trash = Trash1.instance()
+				trash = Trash1.instantiate()
 		add_child(trash)
 		trash.position = island_position
 		var position_x = Global.random_int(1, 4)
@@ -146,7 +146,7 @@ func _game_over():
 	$Sounds/BGSong.stop()
 
 func _on_try_again():
-	get_tree().change_scene("res://Scenes/Games/ObstacleRace/Nivel1/ObstacleRace.tscn")
+	get_tree().change_scene_to_file("res://Scenes/Games/ObstacleRace/Nivel1/ObstacleRace.tscn")
 
 func _on_StepTimer_timeout():
 	TRASH_COUNT -= 10
