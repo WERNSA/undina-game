@@ -1,22 +1,22 @@
 extends Node2D
 var TRIVIA_THEME
-onready var question_idx = 0
-onready var points = 0
-onready var question_qty = 0
+@onready var question_idx = 0
+@onready var points = 0
+@onready var question_qty = 0
 var question_obj
-export(String, FILE, "*.json") var trivia_file
-onready var TRIVIA_POINTS = 0
-onready var tries = 3
-onready var game_over : bool = false
-onready var is_correct : bool = true
+@export_file("*.json") var trivia_file: String # (String, FILE, "*.json")
+@onready var TRIVIA_POINTS = 0
+@onready var tries = 3
+@onready var game_over : bool = false
+@onready var is_correct : bool = true
 var questions
 var actual_theme
 
 func _ready():
 	$Contador.set_count("0")
 	$Roulette/AnimationPlayer.play("RESET")
-	$GameOver/CenterContainer/HBoxContainer/BtnTry.connect("pressed", self, "_on_try_again")
-	$Win/CenterContainer/HBoxContainer/BtnTry.connect("pressed", self, "_on_try_again")
+	$GameOver/CenterContainer/HBoxContainer/BtnTry.connect("pressed", Callable(self, "_on_try_again"))
+	$Win/CenterContainer/HBoxContainer/BtnTry.connect("pressed", Callable(self, "_on_try_again"))
 	$Contador.set_count(str(TRIVIA_POINTS))
 	$Timer/VBoxContainer/Tries/Label.text = "INTENTOS: " + str(tries)
 	questions = load_file()
@@ -64,17 +64,30 @@ func _on_AnimationPlayer_animation_finished(anim_name):
 		$Dialog.visible = true
 		$DialogBG.visible = true
 
-func load_file():
-	var file = File.new()
-	if file.file_exists(trivia_file):
-		file.open(trivia_file, file.READ)
-		return parse_json(file.get_as_text())
+func load_file() -> Variant:
+	if not FileAccess.file_exists(trivia_file):
+		push_error("Archivo no encontrado: " + trivia_file)
+		return null
+
+	var file = FileAccess.open(trivia_file, FileAccess.READ)
+	if file:
+		var content = file.get_as_text()
+		var parsed = JSON.parse_string(content)
+		
+		if parsed == null:
+			push_error("Error al parsear el JSON.")
+			return null
+
+		return parsed
+	else:
+		push_error("No se pudo abrir el archivo.")
+		return null
 
 func _on_Btn1_pressed():
 	disable_buttons(true)
 	$Sounds/SoundPress.play()
 	var answer = question_obj["options"][0]
-	var is_correct : bool = question_obj["answer"] == answer
+	var is_correct = question_obj["answer"] == answer
 	if is_correct:
 		$Trivia/Correct/CorrectOption1/Label.text = answer
 		$Trivia/Correct/CorrectOption1.visible = true
@@ -91,7 +104,7 @@ func _on_Btn2_pressed():
 	disable_buttons(true)
 	$Sounds/SoundPress.play()
 	var answer = question_obj["options"][1]
-	var is_correct : bool = question_obj["answer"] == answer
+	var is_correct = question_obj["answer"] == answer
 	if is_correct:
 		$Trivia/Correct/CorrectOption2/Label.text = answer
 		$Trivia/Correct/CorrectOption2.visible = true
@@ -108,7 +121,7 @@ func _on_Btn3_pressed():
 	disable_buttons(true)
 	$Sounds/SoundPress.play()
 	var answer = question_obj["options"][2]
-	var is_correct : bool = question_obj["answer"] == answer
+	var is_correct = question_obj["answer"] == answer
 	if is_correct:
 		$Trivia/Correct/CorrectOption3/Label.text = answer
 		$Trivia/Correct/CorrectOption3.visible = true
@@ -185,7 +198,7 @@ func _game_over():
 	$Sounds/BgSong.stop()
 
 func _on_try_again():
-	get_tree().change_scene("res://Scenes/Games/Trivia/Trivia.tscn")
+	get_tree().change_scene_to_file("res://Scenes/Games/Trivia/Trivia.tscn")
 
 func _on_Timer_Timer_timeout():
 	$Timer/Timer.stop()
