@@ -3,7 +3,7 @@ extends Node
 
 # Declare member variables here. Examples:
 var player_name
-var player_points
+var player_points: int = 0
 @onready var rng : RandomNumberGenerator = RandomNumberGenerator.new()
 const const_enemy_speed : int = 400
 @onready var min_enemy_speed : int = 400

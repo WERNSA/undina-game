@@ -1,583 +1,583 @@
 {
   "Geografia": [
-    {
-      "title": "¿Cuál es el océano más profundo?",
-      "options": ["Océano Pacífico", "Atlántico", "Indico"],
-      "answer": "Océano Pacífico",
-      "long_answer": "Océano Pacífico (El punto más profundo es de 10,924 m del Abismo de Challenger, en la fosa de las Marianas)"
-    },
-    {
-      "title": "¿Cuántos océanos hay en la tierra?",
-      "options": ["6", "5", "7"],
-      "answer": "5",
-      "long_answer": "5 (Pacífico, Atlántico, índico, Antártico, Ártico.)"
-    },
-    {
-      "title": "¿Cuál es el océano menos profundo?",
-      "options": ["Ártico", "Antártico", "Indico"],
-      "answer": "Ártico",
-      "long_answer": "Océano Ártico (Con una profundidad promedio de 1,500 metros)"
-    },
-    {
-      "title": "¿Qué porcentaje de la tierra está cubierta por océanos?",
-      "options": ["80.4%", "50.3%", "70.9%"],
-      "answer": "70.9%",
-      "long_answer": "Un 70.9% ( Entre océanos, mares, glaciares, casquetes polares, pozos y subsuelo)"
-    },
-    {
-      "title": "¿Cómo se llama la geografía que estudia los océanos?",
-      "options": ["Oceanografía", "Hidrografía", "Biología Marina"],
-      "answer": "Oceanografía",
-      "long_answer": "Es la ciencia que estudia las aguas, los fondos de los mares y los océanos, desde el punto de vista físico, químico y biológico, así como su flora y fauna."
-    },
-    {
-      "title": "¿Cuántas ramas tiene la Oceanografía?",
-      "options": ["4", "5", "6"],
-      "answer": "4",
-      "long_answer": "Oceanografía Física, Oceanografía Química, Oceanografía Biológica, Oceanografía Geológica."
-    },
-    {
-      "title": "¿Cuáles son los océanos que a la vista no se mezclan?",
-      "options": [
-        "Oceano Atlantico, Oceano Pacifico",
-        "Océano Antártico, Océano Ártico"
-      ],
-      "answer": "Oceano Atlantico, Oceano Pacifico",
-      "long_answer": "La explicación se encuentra en los llamados “eddies” que se producen en el golfo de Alaska, son remolinos de cientos de kilómetros de diámetro que forman las corrientes en el océano Atlántico y el océano Pacifico, esto produce que los dos tipos de agua choquen entre sí."
-    },
-    {
-      "title": "¿Dónde se forman los arrecifes?",
-      "options": [
-        "En aguas calmadas y cálidas",
-        "En aguas frías de gran profundidad",
-        "En corrientes de oleaje"
-      ],
-      "answer": "En aguas calmadas y cálidas",
-      "long_answer": "Se desarrollan en aguas cálidas, claras y tranquilas. Su distribución está relacionada con la temperatura del agua, profundidad, intensidad de la luz, salinidad, turbulencia y sedimentación."
-    },
-    {
-      "title": "¿Qué son las dunas?",
-      "options": [
-        "Ondulamiento en la arena de las costas",
-        "Un animal marino",
-        "Una planta marina"
-      ],
-      "answer": "Ondulamiento en la arena de las costas",
-      "long_answer": "Acumulación de arena en forma redondeada o de media luna que forma y empuja el viento en la playa o en el desierto."
-    },
-    {
-      "title": "¿Por qué el océano es salado?",
-      "options": [
-        "Está salado por la mezcla de minerales que hay en las rocas",
-        "Está salado por residuos de animales marinos",
-        "Está salado por la basura"
-      ],
-      "answer": "Está salado por la mezcla de minerales que hay en las rocas",
-      "long_answer": "La sal del océano procede de las rocas que se encuentran sobre la tierra. Así es como se origina, la lluvia que cae sobre la tierra contiene dióxido de carbono disuelto que se encuentra en el aire y deposita en los arroyos y ríos llegando finalmente a los océanos."
-    },
-    {
-      "title": "¿Qué es una zona litoral?",
-      "options": [
-        "Es la frontera ecológica entre el mar y la zona terrestre",
-        "Es una zona de resguardo animal",
-        "Es una zona de pesca"
-      ],
-      "answer": "Es la frontera ecológica entre el mar y la zona terrestre",
-      "long_answer": "El litoral constituye el área de transición entre los sistemas terrestres y marinos."
-    },
-    {
-      "title": "¿Cómo influye el océano en la temperatura de la tierra?",
-      "options": [
-        "La interacción océano-atmósfera regula la temperatura volviendo la tierra habitable",
-        "El viento del mar enfría el planeta",
-        "Produciendo vapor que hace que llueva"
-      ],
-      "answer": "La interacción océano-atmósfera regula la temperatura volviendo la tierra habitable",
-      "long_answer": "El mar actúa como regulador térmico, pues se calienta y enfría más lentamente por lo que los cambios de temperatura son menos extremos en las costas que en el interior."
-    },
-    {
-      "title": "¿Por qué elementos está constituido el océano mundial?",
-      "options": [
-        "Cloruro de Sodio, Potasio, Magnesio y Calcio",
-        "Yodo, Aluminio, Helio",
-        "Fósforo, Zinc, Selenio"
-      ],
-      "answer": "Cloruro de Sodio, Potasio, Magnesio y Calcio",
-      "long_answer": "Contiene sustancias sólidas en disolución, siendo las más abundantes el sodio y el cloro que, en su forma sólida, se combinan para formar el cloruro de sodio o sal común y, junto con el magnesio, el calcio y el potasio, constituyen cerca del 90% de los elementos disueltos en el agua de mar."
-    },
-    {
-      "title": "¿Qué produce una marea roja?",
-      "options": [
-        "Crecimiento abundante de las algas tipo dinoflagelados que son de color rojo",
-        "Por los peces muertos",
-        "Por una gran concentración de hierro y cobre"
-      ],
-      "answer": "Crecimiento abundante de las algas tipo dinoflagelados que son de color rojo",
-      "long_answer": "La marea roja es un crecimiento desproporcionado de algas del tipo de los dinoflagelados, lo que debido a su color rojizo, proporciona al mar un color rojo-pardo de donde viene su nombre."
-    },
-    {
-      "title": "¿Cuál es el porcentaje total explorado del Océano?",
-      "options": ["5%", "10%", "50%"],
-      "answer": "5%",
-      "long_answer": "Se estima que tan sólo se ha explorado un 5% de los océanos, por lo que el 95% del fondo marino está todavía sin mapear."
-    },
-    {
-      "title": "¿Cómo son conocidos también los océanos Ártico y Antártico?",
-      "options": [
-        "Glacial Ártico y Glacial Antártico",
-        "Osa Mayor y Osa Menor",
-        "Océano Grande y Océano Pequeño"
-      ],
-      "answer": "Glacial Ártico y Glacial Antártico",
-      "long_answer": "El océano Ártico es también conocido con el nombre de Océano Glacial Antártico. El océano Ártico es también conocido con el nombre de Océano Glacial Antártico."
-    },
-    {
-      "title": "¿Cuáles son los océanos más grandes del planeta?",
-      "options": [
-        "Pacifico, Atlántico, Indico",
-        "Ártico, Antártico, Índico",
-        "Antártico, Pacifico, Atlántico"
-      ],
-      "answer": "Pacifico, Atlántico, Indico",
-      "long_answer": "El océano más grande es el Pacífico y el más profundo con 10.924 metros. Le sigue el Atlántico con 9.219 metros y el Índico con 7.455 metros."
-    },
-    {
-      "title": "¿Cuál es el océano que contiene la mayor reserva de agua dulce del planeta?",
-      "options": ["Atlántico", "Indico", "Pacifico"],
-      "answer": "Atlántico",
-      "long_answer": "El fondo del océano Atlántico esconde un tesoro mucho más valioso que el de cualquier barco pirata: agua dulce, posee casi 3.000 kilómetros cúbicos de agua dulce atrapada en sedimentos porosos bajo el agua salada del mar."
-    },
-    {
-      "title": "¿Cuál es el océano  más joven del planeta?",
-      "options": ["Atlántico", "Antártico", "Ártico"],
-      "answer": "Atlántico",
-      "long_answer": "El océano Atlántico es además el océano más joven del planeta, formado hace 200 millones de años​ por la división del supercontinente Pangea."
-    },
-    {
-      "title": "¿En qué océano se encuentra la catarata de agua más grande de la tierra?",
-      "options": ["Atlántico", "Pacifico", "Indico"],
-      "answer": "Atlántico",
-      "long_answer": "En el estrecho de Dinamarca, conocido como Canal de Faroe Bank. No es visible porque está bajo la superficie del océano Atlántico. Mide 3.510 metros y es tres veces más grande que el Salto del Ángel, la cascada más alta sobre la superficie."
-    }
+	{
+	  "title": "¿Cuál es el océano más profundo?",
+	  "options": ["Océano Pacífico", "Atlántico", "Indico"],
+	  "answer": "Océano Pacífico",
+	  "long_answer": "Océano Pacífico (El punto más profundo es de 10,924 m del Abismo de Challenger, en la fosa de las Marianas)"
+	},
+	{
+	  "title": "¿Cuántos océanos hay en la tierra?",
+	  "options": ["6", "5", "7"],
+	  "answer": "5",
+	  "long_answer": "5 (Pacífico, Atlántico, índico, Antártico, Ártico.)"
+	},
+	{
+	  "title": "¿Cuál es el océano menos profundo?",
+	  "options": ["Ártico", "Antártico", "Indico"],
+	  "answer": "Ártico",
+	  "long_answer": "Océano Ártico (Con una profundidad promedio de 1,500 metros)"
+	},
+	{
+	  "title": "¿Qué porcentaje de la tierra está cubierta por océanos?",
+	  "options": ["80.4%", "50.3%", "70.9%"],
+	  "answer": "70.9%",
+	  "long_answer": "Un 70.9% ( Entre océanos, mares, glaciares, casquetes polares, pozos y subsuelo)"
+	},
+	{
+	  "title": "¿Cómo se llama la geografía que estudia los océanos?",
+	  "options": ["Oceanografía", "Hidrografía", "Biología Marina"],
+	  "answer": "Oceanografía",
+	  "long_answer": "Es la ciencia que estudia las aguas, los fondos de los mares y los océanos, desde el punto de vista físico, químico y biológico, así como su flora y fauna."
+	},
+	{
+	  "title": "¿Cuántas ramas tiene la Oceanografía?",
+	  "options": ["4", "5", "6"],
+	  "answer": "4",
+	  "long_answer": "Oceanografía Física, Oceanografía Química, Oceanografía Biológica, Oceanografía Geológica."
+	},
+	{
+	  "title": "¿Cuáles son los océanos que a la vista no se mezclan?",
+	  "options": [
+		"Oceano Atlantico, Oceano Pacifico",
+		"Océano Antártico, Océano Ártico"
+	  ],
+	  "answer": "Oceano Atlantico, Oceano Pacifico",
+	  "long_answer": "La explicación se encuentra en los llamados “eddies” que se producen en el golfo de Alaska, son remolinos de cientos de kilómetros de diámetro que forman las corrientes en el océano Atlántico y el océano Pacifico, esto produce que los dos tipos de agua choquen entre sí."
+	},
+	{
+	  "title": "¿Dónde se forman los arrecifes?",
+	  "options": [
+		"En aguas calmadas y cálidas",
+		"En aguas frías de gran profundidad",
+		"En corrientes de oleaje"
+	  ],
+	  "answer": "En aguas calmadas y cálidas",
+	  "long_answer": "Se desarrollan en aguas cálidas, claras y tranquilas. Su distribución está relacionada con la temperatura del agua, profundidad, intensidad de la luz, salinidad, turbulencia y sedimentación."
+	},
+	{
+	  "title": "¿Qué son las dunas?",
+	  "options": [
+		"Ondulamiento en la arena de las costas",
+		"Un animal marino",
+		"Una planta marina"
+	  ],
+	  "answer": "Ondulamiento en la arena de las costas",
+	  "long_answer": "Acumulación de arena en forma redondeada o de media luna que forma y empuja el viento en la playa o en el desierto."
+	},
+	{
+	  "title": "¿Por qué el océano es salado?",
+	  "options": [
+		"Está salado por la mezcla de minerales que hay en las rocas",
+		"Está salado por residuos de animales marinos",
+		"Está salado por la basura"
+	  ],
+	  "answer": "Está salado por la mezcla de minerales que hay en las rocas",
+	  "long_answer": "La sal del océano procede de las rocas que se encuentran sobre la tierra. Así es como se origina, la lluvia que cae sobre la tierra contiene dióxido de carbono disuelto que se encuentra en el aire y deposita en los arroyos y ríos llegando finalmente a los océanos."
+	},
+	{
+	  "title": "¿Qué es una zona litoral?",
+	  "options": [
+		"Es la frontera ecológica entre el mar y la zona terrestre",
+		"Es una zona de resguardo animal",
+		"Es una zona de pesca"
+	  ],
+	  "answer": "Es la frontera ecológica entre el mar y la zona terrestre",
+	  "long_answer": "El litoral constituye el área de transición entre los sistemas terrestres y marinos."
+	},
+	{
+	  "title": "¿Cómo influye el océano en la temperatura de la tierra?",
+	  "options": [
+		"La interacción océano-atmósfera regula la temperatura volviendo la tierra habitable",
+		"El viento del mar enfría el planeta",
+		"Produciendo vapor que hace que llueva"
+	  ],
+	  "answer": "La interacción océano-atmósfera regula la temperatura volviendo la tierra habitable",
+	  "long_answer": "El mar actúa como regulador térmico, pues se calienta y enfría más lentamente por lo que los cambios de temperatura son menos extremos en las costas que en el interior."
+	},
+	{
+	  "title": "¿Por qué elementos está constituido el océano mundial?",
+	  "options": [
+		"Cloruro de Sodio, Potasio, Magnesio y Calcio",
+		"Yodo, Aluminio, Helio",
+		"Fósforo, Zinc, Selenio"
+	  ],
+	  "answer": "Cloruro de Sodio, Potasio, Magnesio y Calcio",
+	  "long_answer": "Contiene sustancias sólidas en disolución, siendo las más abundantes el sodio y el cloro que, en su forma sólida, se combinan para formar el cloruro de sodio o sal común y, junto con el magnesio, el calcio y el potasio, constituyen cerca del 90% de los elementos disueltos en el agua de mar."
+	},
+	{
+	  "title": "¿Qué produce una marea roja?",
+	  "options": [
+		"Crecimiento abundante de las algas tipo dinoflagelados que son de color rojo",
+		"Por los peces muertos",
+		"Por una gran concentración de hierro y cobre"
+	  ],
+	  "answer": "Crecimiento abundante de las algas tipo dinoflagelados que son de color rojo",
+	  "long_answer": "La marea roja es un crecimiento desproporcionado de algas del tipo de los dinoflagelados, lo que debido a su color rojizo, proporciona al mar un color rojo-pardo de donde viene su nombre."
+	},
+	{
+	  "title": "¿Cuál es el porcentaje total explorado del Océano?",
+	  "options": ["5%", "10%", "50%"],
+	  "answer": "5%",
+	  "long_answer": "Se estima que tan sólo se ha explorado un 5% de los océanos, por lo que el 95% del fondo marino está todavía sin mapear."
+	},
+	{
+	  "title": "¿Cómo son conocidos también los océanos Ártico y Antártico?",
+	  "options": [
+		"Glacial Ártico y Glacial Antártico",
+		"Osa Mayor y Osa Menor",
+		"Océano Grande y Océano Pequeño"
+	  ],
+	  "answer": "Glacial Ártico y Glacial Antártico",
+	  "long_answer": "El océano Ártico es también conocido con el nombre de Océano Glacial Antártico. El océano Ártico es también conocido con el nombre de Océano Glacial Antártico."
+	},
+	{
+	  "title": "¿Cuáles son los océanos más grandes del planeta?",
+	  "options": [
+		"Pacifico, Atlántico, Indico",
+		"Ártico, Antártico, Índico",
+		"Antártico, Pacifico, Atlántico"
+	  ],
+	  "answer": "Pacifico, Atlántico, Indico",
+	  "long_answer": "El océano más grande es el Pacífico y el más profundo con 10.924 metros. Le sigue el Atlántico con 9.219 metros y el Índico con 7.455 metros."
+	},
+	{
+	  "title": "¿Cuál es el océano que contiene la mayor reserva de agua dulce del planeta?",
+	  "options": ["Atlántico", "Indico", "Pacifico"],
+	  "answer": "Atlántico",
+	  "long_answer": "El fondo del océano Atlántico esconde un tesoro mucho más valioso que el de cualquier barco pirata: agua dulce, posee casi 3.000 kilómetros cúbicos de agua dulce atrapada en sedimentos porosos bajo el agua salada del mar."
+	},
+	{
+	  "title": "¿Cuál es el océano  más joven del planeta?",
+	  "options": ["Atlántico", "Antártico", "Ártico"],
+	  "answer": "Atlántico",
+	  "long_answer": "El océano Atlántico es además el océano más joven del planeta, formado hace 200 millones de años​ por la división del supercontinente Pangea."
+	},
+	{
+	  "title": "¿En qué océano se encuentra la catarata de agua más grande de la tierra?",
+	  "options": ["Atlántico", "Pacifico", "Indico"],
+	  "answer": "Atlántico",
+	  "long_answer": "En el estrecho de Dinamarca, conocido como Canal de Faroe Bank. No es visible porque está bajo la superficie del océano Atlántico. Mide 3.510 metros y es tres veces más grande que el Salto del Ángel, la cascada más alta sobre la superficie."
+	}
   ],
   "FloraFauna": [
-    {
-      "title": "¿Cuál es la comida favorita de las tortugas?",
-      "options": ["Medusas", "Peces", "Caracoles"],
-      "answer": "Medusas",
-      "long_answer": "Medusas (Las tortugas aman las medusas, sin embargo, con la contaminación en los océanos las confunden con bolsas plásticas)"
-    },
-    {
-      "title": "¿Cuántos especies de tiburones existen?",
-      "options": ["350-400", "50-100", "200-300"],
-      "answer": "350-400",
-      "long_answer": "Entre 350-400 (tiburones navegando en las profundidades marinas y oceánicas del mundo)"
-    },
-    {
-      "title": "¿Cuál es el animal más grande que vive en los océanos?",
-      "options": ["Orca", "Ballena Azul", "Elefante Marino"],
-      "answer": "Ballena Azul",
-      "long_answer": "Ballena azul (Un majestuoso mamífero marino que alcanza los 30 metros de longitud y las 180 toneladas de peso)"
-    },
-    {
-      "title": "¿Qué es veda marina?",
-      "options": [
-        "Periodo de tiempo en el que se prohíbe la captura.",
-        "Periodo de tiempo en que los animales del océano se alimentan.",
-        "Periodo de tiempo en que las algas crecen."
-      ],
-      "answer": "Periodo de tiempo en el que se prohíbe la captura.",
-      "long_answer": "Periodo de tiempo en el que se prohíbe la captura de especies marinas."
-    },
-    {
-      "title": "¿Cómo se llama a la ciencia que estudia flora y fauna marinas?",
-      "options": ["Biología Marina", "Oceanografía Biológica", "Acuacultura"],
-      "answer": "Biología Marina",
-      "long_answer": "La biología marina es la ciencia rama de la biología que estudia la vida marina, lo cual incluye el estudio de la flora, fauna, funga y microbioma propios del mar, así como de los ecosistemas marinos que estos conforman."
-    },
-    {
-      "title": "¿Cuántos mamíferos tienen los ecosistemas marinos?",
-      "options": ["5", "7", "4"],
-      "answer": "5",
-      "long_answer": "Son 5 especies de mamíferos: ●Ballena franca austral (Eubalaena australis) ●Delfín mular o nariz de botella (Tursiops truncatus) ●Orca negra o falsa orca (Pseuorca crassidens) ●Manatíes o vacas marinas (familia Trichechidae) ●Calderón gris (Grampus griseus)"
-    },
-    {
-      "title": "Existe una clasificación de especies entre los animales ¿a cual pertenecen las tortugas?",
-      "options": ["Reptiles Marinos", "Mamíferos Marinos", "Invertebrados"],
-      "answer": "Reptiles Marinos",
-      "long_answer": "Reptiles marinos: ●Tortuga laúd (Dermochelys coriacea) ●Tortuga carey (Eretmochelys imbricata) ●Tortuga boba (Caretta caretta)"
-    },
-    {
-      "title": "¿Cuál es la única planta marina que florece?",
-      "options": ["Los pastos marinos", "Las Algas", "Los Manglares"],
-      "answer": "Los pastos marinos",
-      "long_answer": "Además de las algas también podemos encontrar los pastos marinos. Son las únicas plantas marinas que producen flores y, debido a su capacidad para absorber carbono, son de vital importancia en la lucha contra el cambio climático."
-    },
-    {
-      "title": "¿A qué tipo de ecosistemas pertenecen los manglares?",
-      "options": [
-        "Ecosistemas de Manglares",
-        "Ecosistemas de Aguas dulces",
-        "Ecosistemas de costa rocosa"
-      ],
-      "answer": "Ecosistemas de Manglares",
-      "long_answer": "Los manglares son especies de plantas tolerantes a la sal con raíces que cuelgan en el agua. Los bosques de estas plantas proporcionan refugio para una variedad de vida marina y son áreas importantes de cría de animales marinos jóvenes. Estos ecosistemas se encuentran generalmente en áreas más cálidas."
-    },
-    {
-      "title": "¿Cómo se llaman las únicas plantas que sobreviven y florecen en el frío océano Antártico?",
-      "options": [
-        "Pasto Antártico y Clavel Antartico",
-        "Algas Azules y Gorgonia",
-        "Posidonia Oceánica y Perejil Marino"
-      ],
-      "answer": "Pasto Antártico y Clavel Antartico",
-      "long_answer": "El pasto antártico (Deschampsia antárctica) y el clavel antártico (Colobanthus quitensis). Ambas especies se encuentran principalmente en la Península Antártica, que es la zona menos fría, pues tiene una temperatura media diurna de 4 ºC."
-    },
-    {
-      "title": "¿Cuáles son las principales plantas que conforman un ecosistema marítimo?",
-      "options": [
-        "Las algas y el pasto marinos",
-        "Anémonas de mar y Mangle blanco",
-        "Petrosia dura e Hinojo de mar."
-      ],
-      "answer": "Las algas y el pasto marinos",
-      "long_answer": "Además de las algas marinas, la flora de los ecosistemas marinos está representada por diversas especies vegetales, entre ellas los llamados pastos marinos (especies de las familias Zosteraceae, Cymodoceaceae, Ruppiaceae y Posidoniaceae), las únicas plantas con flores de estos ecosistemas"
-    },
-    {
-      "title": "¿Cuántas especies de algas marinas existen ?",
-      "options": ["Alrededor de 30,000", "50,000", "120,000"],
-      "answer": "Alrededor de 30,000",
-      "long_answer": "Existen alrededor de 30.000 especies de algas marinas, ya que es un grupo muy heterogéneo con una gran variedad de tamaños."
-    },
-    {
-      "title": "¿Cuántas especies marinas están en peligro de extinción?",
-      "options": ["5", "7", "15"],
-      "answer": "5",
-      "long_answer": "Son 5 especies las que en más riesgo se encuentran en peligro de extinción  las cuales son: Foca monje mediterránea, Ballena gris, Pez Napoleon, Manatí, Vaquita Marina."
-    },
-    {
-      "title": "¿Qué está poniendo en riesgo la vida de las especies marinas? ",
-      "options": [
-        "La contaminación y la sobre pesca",
-        "Especies Invasivas",
-        "Marea Roja"
-      ],
-      "answer": "La contaminación y la sobre pesca",
-      "long_answer": "La contaminación o el cambio climático, junto con otras acciones como la sobrepesca, están afectando considerablemente a los ecosistemas marítimos y oceánicos."
-    },
-    {
-      "title": "¿Cuántos corazones tienen los pulpos?",
-      "options": ["3", "9", "5"],
-      "answer": "3",
-      "long_answer": "Dos de ellos bombean sangre a las branquias y el tercero al resto del cuerpo. Tienen nueve cerebros, uno principal y ocho secundarios, uno en cada tentáculo."
-    },
-    {
-      "title": "¿A qué especie pertenecen los pulpos ?",
-      "options": ["Invertebrados", "Reptiles Marinos", "Cetáceo"],
-      "answer": "Invertebrados",
-      "long_answer": "El pulpo, el invertebrado de las mil rarezas que no deja de sorprender a los científicos."
-    },
-    {
-      "title": "¿Qué otro nombre reciben las ballenas (Orcas)?",
-      "options": ["Delfines mayores", "Leones marinos", "Pez gigante"],
-      "answer": "Delfines mayores",
-      "long_answer": "Estos animales pertenecen a la familia Delphinidae, por lo que son delfines a pesar de llamarse ballenas. De hecho, las ballenas orcas son los mayores delfines existentes."
-    },
-    {
-      "title": "¿Cuál de estos animales marinos se camuflan?",
-      "options": ["El pulpo anillos azules", "La Orca", "El pez espada"],
-      "answer": "El pulpo anillos azules",
-      "long_answer": "Diversas especies, todas ellas extremadamente venenosas y expertas del camuflaje, se distribuyen en las aguas del Océano Pacífico. Su piel es amarillenta y pasan completamente desapercibidos entre rocas y fondos oceánicos."
-    },
-    {
-      "title": "¿Cuántos años viven las orcas?",
-      "options": ["Entre 50 y 80 años", "Entre 150 y 180 años", "25 años"],
-      "answer": "Entre 50 y 80 años",
-      "long_answer": "En su hábitat natural, las orcas pueden vivir entre 50 y 80 años. No obstante, algunas pueden alcanzar los 100 años o incluso más."
-    },
-    {
-      "title": "¿Cuántos años viven las tortugas marinas?",
-      "options": [
-        "Desde 50 años a más",
-        "Solo viven 30 años",
-        "Solo viven 10 años"
-      ],
-      "answer": "Desde 50 años a más",
-      "long_answer": "El registro real de la edad de cualquier especie de tortuga marina es difícil de determinar. Lo que sí sabemos es que las tortugas marinas viven mucho tiempo (algunas pueden vivir hasta 50 años o más) y tienen vidas similares a las de los humanos."
-    },
-    {
-      "title": "¿Cuántos huevos ponen las tortugas de mar?",
-      "options": ["de 65 a 180 huevos", "200 huevos", "30 huevos"],
-      "answer": "de 65 a 180 huevos",
-      "long_answer": "En una sola temporada de anidación, las hembras ponen entre dos y seis nidadas de huevos, cada una con 65 a 180 huevos."
-    }
+	{
+	  "title": "¿Cuál es la comida favorita de las tortugas?",
+	  "options": ["Medusas", "Peces", "Caracoles"],
+	  "answer": "Medusas",
+	  "long_answer": "Medusas (Las tortugas aman las medusas, sin embargo, con la contaminación en los océanos las confunden con bolsas plásticas)"
+	},
+	{
+	  "title": "¿Cuántos especies de tiburones existen?",
+	  "options": ["350-400", "50-100", "200-300"],
+	  "answer": "350-400",
+	  "long_answer": "Entre 350-400 (tiburones navegando en las profundidades marinas y oceánicas del mundo)"
+	},
+	{
+	  "title": "¿Cuál es el animal más grande que vive en los océanos?",
+	  "options": ["Orca", "Ballena Azul", "Elefante Marino"],
+	  "answer": "Ballena Azul",
+	  "long_answer": "Ballena azul (Un majestuoso mamífero marino que alcanza los 30 metros de longitud y las 180 toneladas de peso)"
+	},
+	{
+	  "title": "¿Qué es veda marina?",
+	  "options": [
+		"Periodo de tiempo en el que se prohíbe la captura.",
+		"Periodo de tiempo en que los animales del océano se alimentan.",
+		"Periodo de tiempo en que las algas crecen."
+	  ],
+	  "answer": "Periodo de tiempo en el que se prohíbe la captura.",
+	  "long_answer": "Periodo de tiempo en el que se prohíbe la captura de especies marinas."
+	},
+	{
+	  "title": "¿Cómo se llama a la ciencia que estudia flora y fauna marinas?",
+	  "options": ["Biología Marina", "Oceanografía Biológica", "Acuacultura"],
+	  "answer": "Biología Marina",
+	  "long_answer": "La biología marina es la ciencia rama de la biología que estudia la vida marina, lo cual incluye el estudio de la flora, fauna, funga y microbioma propios del mar, así como de los ecosistemas marinos que estos conforman."
+	},
+	{
+	  "title": "¿Cuántos mamíferos tienen los ecosistemas marinos?",
+	  "options": ["5", "7", "4"],
+	  "answer": "5",
+	  "long_answer": "Son 5 especies de mamíferos: ●Ballena franca austral (Eubalaena australis) ●Delfín mular o nariz de botella (Tursiops truncatus) ●Orca negra o falsa orca (Pseuorca crassidens) ●Manatíes o vacas marinas (familia Trichechidae) ●Calderón gris (Grampus griseus)"
+	},
+	{
+	  "title": "Existe una clasificación de especies entre los animales ¿a cual pertenecen las tortugas?",
+	  "options": ["Reptiles Marinos", "Mamíferos Marinos", "Invertebrados"],
+	  "answer": "Reptiles Marinos",
+	  "long_answer": "Reptiles marinos: ●Tortuga laúd (Dermochelys coriacea) ●Tortuga carey (Eretmochelys imbricata) ●Tortuga boba (Caretta caretta)"
+	},
+	{
+	  "title": "¿Cuál es la única planta marina que florece?",
+	  "options": ["Los pastos marinos", "Las Algas", "Los Manglares"],
+	  "answer": "Los pastos marinos",
+	  "long_answer": "Además de las algas también podemos encontrar los pastos marinos. Son las únicas plantas marinas que producen flores y, debido a su capacidad para absorber carbono, son de vital importancia en la lucha contra el cambio climático."
+	},
+	{
+	  "title": "¿A qué tipo de ecosistemas pertenecen los manglares?",
+	  "options": [
+		"Ecosistemas de Manglares",
+		"Ecosistemas de Aguas dulces",
+		"Ecosistemas de costa rocosa"
+	  ],
+	  "answer": "Ecosistemas de Manglares",
+	  "long_answer": "Los manglares son especies de plantas tolerantes a la sal con raíces que cuelgan en el agua. Los bosques de estas plantas proporcionan refugio para una variedad de vida marina y son áreas importantes de cría de animales marinos jóvenes. Estos ecosistemas se encuentran generalmente en áreas más cálidas."
+	},
+	{
+	  "title": "¿Cómo se llaman las únicas plantas que sobreviven y florecen en el frío océano Antártico?",
+	  "options": [
+		"Pasto Antártico y Clavel Antartico",
+		"Algas Azules y Gorgonia",
+		"Posidonia Oceánica y Perejil Marino"
+	  ],
+	  "answer": "Pasto Antártico y Clavel Antartico",
+	  "long_answer": "El pasto antártico (Deschampsia antárctica) y el clavel antártico (Colobanthus quitensis). Ambas especies se encuentran principalmente en la Península Antártica, que es la zona menos fría, pues tiene una temperatura media diurna de 4 ºC."
+	},
+	{
+	  "title": "¿Cuáles son las principales plantas que conforman un ecosistema marítimo?",
+	  "options": [
+		"Las algas y el pasto marinos",
+		"Anémonas de mar y Mangle blanco",
+		"Petrosia dura e Hinojo de mar."
+	  ],
+	  "answer": "Las algas y el pasto marinos",
+	  "long_answer": "Además de las algas marinas, la flora de los ecosistemas marinos está representada por diversas especies vegetales, entre ellas los llamados pastos marinos (especies de las familias Zosteraceae, Cymodoceaceae, Ruppiaceae y Posidoniaceae), las únicas plantas con flores de estos ecosistemas"
+	},
+	{
+	  "title": "¿Cuántas especies de algas marinas existen ?",
+	  "options": ["Alrededor de 30,000", "50,000", "120,000"],
+	  "answer": "Alrededor de 30,000",
+	  "long_answer": "Existen alrededor de 30.000 especies de algas marinas, ya que es un grupo muy heterogéneo con una gran variedad de tamaños."
+	},
+	{
+	  "title": "¿Cuántas especies marinas están en peligro de extinción?",
+	  "options": ["5", "7", "15"],
+	  "answer": "5",
+	  "long_answer": "Son 5 especies las que en más riesgo se encuentran en peligro de extinción  las cuales son: Foca monje mediterránea, Ballena gris, Pez Napoleon, Manatí, Vaquita Marina."
+	},
+	{
+	  "title": "¿Qué está poniendo en riesgo la vida de las especies marinas? ",
+	  "options": [
+		"La contaminación y la sobre pesca",
+		"Especies Invasivas",
+		"Marea Roja"
+	  ],
+	  "answer": "La contaminación y la sobre pesca",
+	  "long_answer": "La contaminación o el cambio climático, junto con otras acciones como la sobrepesca, están afectando considerablemente a los ecosistemas marítimos y oceánicos."
+	},
+	{
+	  "title": "¿Cuántos corazones tienen los pulpos?",
+	  "options": ["3", "9", "5"],
+	  "answer": "3",
+	  "long_answer": "Dos de ellos bombean sangre a las branquias y el tercero al resto del cuerpo. Tienen nueve cerebros, uno principal y ocho secundarios, uno en cada tentáculo."
+	},
+	{
+	  "title": "¿A qué especie pertenecen los pulpos ?",
+	  "options": ["Invertebrados", "Reptiles Marinos", "Cetáceo"],
+	  "answer": "Invertebrados",
+	  "long_answer": "El pulpo, el invertebrado de las mil rarezas que no deja de sorprender a los científicos."
+	},
+	{
+	  "title": "¿Qué otro nombre reciben las ballenas (Orcas)?",
+	  "options": ["Delfines mayores", "Leones marinos", "Pez gigante"],
+	  "answer": "Delfines mayores",
+	  "long_answer": "Estos animales pertenecen a la familia Delphinidae, por lo que son delfines a pesar de llamarse ballenas. De hecho, las ballenas orcas son los mayores delfines existentes."
+	},
+	{
+	  "title": "¿Cuál de estos animales marinos se camuflan?",
+	  "options": ["El pulpo anillos azules", "La Orca", "El pez espada"],
+	  "answer": "El pulpo anillos azules",
+	  "long_answer": "Diversas especies, todas ellas extremadamente venenosas y expertas del camuflaje, se distribuyen en las aguas del Océano Pacífico. Su piel es amarillenta y pasan completamente desapercibidos entre rocas y fondos oceánicos."
+	},
+	{
+	  "title": "¿Cuántos años viven las orcas?",
+	  "options": ["Entre 50 y 80 años", "Entre 150 y 180 años", "25 años"],
+	  "answer": "Entre 50 y 80 años",
+	  "long_answer": "En su hábitat natural, las orcas pueden vivir entre 50 y 80 años. No obstante, algunas pueden alcanzar los 100 años o incluso más."
+	},
+	{
+	  "title": "¿Cuántos años viven las tortugas marinas?",
+	  "options": [
+		"Desde 50 años a más",
+		"Solo viven 30 años",
+		"Solo viven 10 años"
+	  ],
+	  "answer": "Desde 50 años a más",
+	  "long_answer": "El registro real de la edad de cualquier especie de tortuga marina es difícil de determinar. Lo que sí sabemos es que las tortugas marinas viven mucho tiempo (algunas pueden vivir hasta 50 años o más) y tienen vidas similares a las de los humanos."
+	},
+	{
+	  "title": "¿Cuántos huevos ponen las tortugas de mar?",
+	  "options": ["de 65 a 180 huevos", "200 huevos", "30 huevos"],
+	  "answer": "de 65 a 180 huevos",
+	  "long_answer": "En una sola temporada de anidación, las hembras ponen entre dos y seis nidadas de huevos, cada una con 65 a 180 huevos."
+	}
   ],
   "Contaminacion": [
-    {
-      "title": "¿Sabes cuánto plástico que usamos llega a los océanos?",
-      "options": ["40%", "20%", "30%"],
-      "answer": "40%",
-      "long_answer": "¡40%! Afectando directamente la vida de miles de animales que viven dentro de los océanos"
-    },
-    {
-      "title": "¿Qué es el microplástico?",
-      "options": [
-        "Pequeñas piezas desprendidas de bolsas de plástico",
-        "Pequeñas piezas desprendidas de la eliminación",
-        "Los hijos de un súper plástico"
-      ],
-      "answer": "Pequeñas piezas desprendidas de la eliminación",
-      "long_answer": "Pequeñas piezas que se desprenden de la eliminación y descomposición de productos de consumo y residuos industriales."
-    },
-    {
-      "title": "¿Crees que los bloqueadores solares son peligrosos para la vida marina?",
-      "options": ["No", "Si", "Tal vez"],
-      "answer": "Si",
-      "long_answer": "La mayoría de los bloqueadores solares son peligrosos para la vida marina, podemos ayudar seleccionando productos eco amigables tal como lo describe su envase."
-    },
-    {
-      "title": "¿Qué es el cambio climático?",
-      "options": [
-        "Modificaciones de la temperatura",
-        "Cuando pasa de estar soleado a llover",
-        "Cambio entre verano e invierno"
-      ],
-      "answer": "Modificaciones de la temperatura",
-      "long_answer": "Son las modificaciones de las temperaturas y los patrones climáticos, a mediano o largo plazo que afectan el planeta. ¡Debemos cuidar nuestro planeta!"
-    },
-    {
-      "title": "¿El ser humano debe vivir de forma sostenible?",
-      "options": ["Si", "No", "Tal vez"],
-      "answer": "Si",
-      "long_answer": "Sí, porque debe vivir en equilibrio entre la sociedad, la economía y el ambiente. El ser humano debe vivir amigablemente con todo lo que le rodea"
-    },
-    {
-      "title": "¿Qué es el efecto invernadero?",
-      "options": [
-        "Calentamiento de la tierra por gases liberados a nuestro entorno.",
-        "Es la consecuencia del cambio climático.",
-        "Un proceso anual que sucede en los invernaderos."
-      ],
-      "answer": "Calentamiento de la tierra por gases liberados a nuestro entorno.",
-      "long_answer": "Es el calentamiento de la tierra por gases que liberamos a nuestro entorno. Por ejemplo, la quema de combustible de nuestros automóviles cada vez que lo utilizamos"
-    },
-    {
-      "title": "¿Qué es la sobrepesca?",
-      "options": [
-        "Es la pesca excesiva realizada por el humano.",
-        "Es el proceso donde los pescadores pueden pescar más de lo normal.",
-        "Es la temporada donde se prohíbe la pesca."
-      ],
-      "answer": "Es la pesca excesiva realizada por el humano.",
-      "long_answer": "Es la pesca excesiva realizada por el humano, ya sea sobre peces o mariscos. La sobrepesca tiene efectos devastadores sobre el ecosistema marino y sobre nuestra propia vida"
-    },
-    {
-      "title": "¿Qué pueden hacer los pescadores para ser más amigables con los océanos?",
-      "options": [
-        "Pescar o recolectar solo en temporadas permitidas.",
-        "Utilizar bombas artesanales, y no industriales.",
-        "Utilizar barcos de madera."
-      ],
-      "answer": "Pescar o recolectar solo en temporadas permitidas.",
-      "long_answer": "Pescar o recolectar solo en temporadas permitidas."
-    },
-    {
-      "title": "¿Cuál es el océano más contaminado?",
-      "options": ["Océano Pacífico.", "Océano Atlántico.", "Océano Índico."],
-      "answer": "Océano Pacífico.",
-      "long_answer": "Océano Pacífico, Llegan aproximadamente 15 millones de toneladas de basura plástica."
-    },
-    {
-      "title": "¿Existe la isla basura?",
-      "options": ["Sí existe.", "No existe.", "Tal vez existe."],
-      "answer": "Sí existe.",
-      "long_answer": "Sí existe. La isla de basura del Pacífico sur se encuentra en las costas de Valparaíso, Chile."
-    },
-    {
-      "title": "¿Cuáles son los efectos del efecto invernadero?",
-      "options": [
-        "Deshielo de masas glaciares, inundaciones, huracanes más fuertes, migraciones de especies.",
-        "Clima más fresco, suelos más fértiles, las especies se reproducen más.",
-        "Los invernaderos crecen más rápido y con mayor vitalidad."
-      ],
-      "answer": "Deshielo de masas glaciares, inundaciones, huracanes más fuertes, migraciones de especies.",
-      "long_answer": "Deshielo de masas glaciares, inundaciones, huracanes más fuertes, migraciones de especies."
-    },
-    {
-      "title": "¿Cuál es el país que más contamina los océanos?",
-      "options": ["Filipinas", "China", "India"],
-      "answer": "Filipinas",
-      "long_answer": "Filipinas es responsable de más de un tercio de los plásticos que se vierten a los océanos"
-    },
-    {
-      "title": "¿Qué es el calentamiento global?",
-      "options": ["El aumento de la temperatura del sistema climático de La Tierra", "El planeta Tierra calentándose", "Es el aumento de las temperaturas de verano"],
-      "answer": "El aumento de la temperatura del sistema climático de La Tierra",
-      "long_answer": "Consiste en el aumento de la temperatura del sistema climático de La Tierra a largo plazo. Es la consecuencia más peligrosa del cambio climático"
-    },
-    {
-      "title": "¿Cuáles son los tipos de contaminación ambiental?",
-      "options": ["Atmosférica, hídrica, suelo, acústica, lumínica, térmica", "industrial y de hogar", "Alta, media, baja"],
-      "answer": "Atmosférica, hídrica, suelo, acústica, lumínica, térmica",
-      "long_answer": "Atmosférica, hídrica, suelo, acústica, lumínica y térmica."
-    },
-    {
-      "title": "¿Qué es un ODS?",
-      "options": ["Objetivos de Desarrollo Sostenible", "Objetivos de Salud Ambiental", "Objetivos de Salud Marina"],
-      "answer": "Objetivos de Desarrollo Sostenible",
-      "long_answer": "Objetivos de Desarrollo Sostenible son una iniciativa de las Naciones Unidas que busca un mundo más justo para todos"
-    },
-    {
-      "title": "¿Cuál es el ODS 14?",
-      "options": ["Asegurar la vida marina", "Acción por el clima", "Producción y consumo responsable"],
-      "answer": "Asegurar la vida marina",
-      "long_answer": "Conservar y utilizar sosteniblemente los océanos y los mares."
-    },
-    {
-      "title": "¿Qué prefieres contaminar un río o un lago?",
-      "options": ["Ninguno", "Río", "Lago"],
-      "answer": "Ninguno",
-      "long_answer": "Debemos cuidar y amar los océanos por nuestra y las futuras generaciones"
-    },
-    {
-      "title": "Si tuvieras que ahorrar energía eléctrica en tu casa, ¿qué harías?",
-      "options": ["Comprar electrodomésticos ahorrativos", "Desconectar aparatos", "Ambas"],
-      "answer": "Ambas",
-      "long_answer": "Desde casa podemos realizar pequeñas acciones que tienen un efecto positivo para la Tierra y sus océanos"
-    },
-    {
-      "title": "¿Cuál es la acción más eficaz para ahorrar agua desde casa?",
-      "options": ["Limite las descargas del inodoro", "Tomar un baño cada dos días", "Reemplazar los grifos viejos"],
-      "answer": "Limite las descargas del inodoro",
-      "long_answer": "¡Por cada descarga se consume alrededor de 3 litros de agua!"
-    },
-    {
-      "title": "¿Sabes cuánto ha aumentado el nivel del mar en los últimos 20 años?",
-      "options": ["25 centímetros", "1 metro", "50 centímetros"],
-      "answer": "25 centímetros",
-      "long_answer": "Se espera que para el 2050 aumente a 30 centímetros"
-    }
+	{
+	  "title": "¿Sabes cuánto plástico que usamos llega a los océanos?",
+	  "options": ["40%", "20%", "30%"],
+	  "answer": "40%",
+	  "long_answer": "¡40%! Afectando directamente la vida de miles de animales que viven dentro de los océanos"
+	},
+	{
+	  "title": "¿Qué es el microplástico?",
+	  "options": [
+		"Pequeñas piezas desprendidas de bolsas de plástico",
+		"Pequeñas piezas desprendidas de la eliminación",
+		"Los hijos de un súper plástico"
+	  ],
+	  "answer": "Pequeñas piezas desprendidas de la eliminación",
+	  "long_answer": "Pequeñas piezas que se desprenden de la eliminación y descomposición de productos de consumo y residuos industriales."
+	},
+	{
+	  "title": "¿Crees que los bloqueadores solares son peligrosos para la vida marina?",
+	  "options": ["No", "Si", "Tal vez"],
+	  "answer": "Si",
+	  "long_answer": "La mayoría de los bloqueadores solares son peligrosos para la vida marina, podemos ayudar seleccionando productos eco amigables tal como lo describe su envase."
+	},
+	{
+	  "title": "¿Qué es el cambio climático?",
+	  "options": [
+		"Modificaciones de la temperatura",
+		"Cuando pasa de estar soleado a llover",
+		"Cambio entre verano e invierno"
+	  ],
+	  "answer": "Modificaciones de la temperatura",
+	  "long_answer": "Son las modificaciones de las temperaturas y los patrones climáticos, a mediano o largo plazo que afectan el planeta. ¡Debemos cuidar nuestro planeta!"
+	},
+	{
+	  "title": "¿El ser humano debe vivir de forma sostenible?",
+	  "options": ["Si", "No", "Tal vez"],
+	  "answer": "Si",
+	  "long_answer": "Sí, porque debe vivir en equilibrio entre la sociedad, la economía y el ambiente. El ser humano debe vivir amigablemente con todo lo que le rodea"
+	},
+	{
+	  "title": "¿Qué es el efecto invernadero?",
+	  "options": [
+		"Calentamiento de la tierra por gases liberados a nuestro entorno.",
+		"Es la consecuencia del cambio climático.",
+		"Un proceso anual que sucede en los invernaderos."
+	  ],
+	  "answer": "Calentamiento de la tierra por gases liberados a nuestro entorno.",
+	  "long_answer": "Es el calentamiento de la tierra por gases que liberamos a nuestro entorno. Por ejemplo, la quema de combustible de nuestros automóviles cada vez que lo utilizamos"
+	},
+	{
+	  "title": "¿Qué es la sobrepesca?",
+	  "options": [
+		"Es la pesca excesiva realizada por el humano.",
+		"Es el proceso donde los pescadores pueden pescar más de lo normal.",
+		"Es la temporada donde se prohíbe la pesca."
+	  ],
+	  "answer": "Es la pesca excesiva realizada por el humano.",
+	  "long_answer": "Es la pesca excesiva realizada por el humano, ya sea sobre peces o mariscos. La sobrepesca tiene efectos devastadores sobre el ecosistema marino y sobre nuestra propia vida"
+	},
+	{
+	  "title": "¿Qué pueden hacer los pescadores para ser más amigables con los océanos?",
+	  "options": [
+		"Pescar o recolectar solo en temporadas permitidas.",
+		"Utilizar bombas artesanales, y no industriales.",
+		"Utilizar barcos de madera."
+	  ],
+	  "answer": "Pescar o recolectar solo en temporadas permitidas.",
+	  "long_answer": "Pescar o recolectar solo en temporadas permitidas."
+	},
+	{
+	  "title": "¿Cuál es el océano más contaminado?",
+	  "options": ["Océano Pacífico.", "Océano Atlántico.", "Océano Índico."],
+	  "answer": "Océano Pacífico.",
+	  "long_answer": "Océano Pacífico, Llegan aproximadamente 15 millones de toneladas de basura plástica."
+	},
+	{
+	  "title": "¿Existe la isla basura?",
+	  "options": ["Sí existe.", "No existe.", "Tal vez existe."],
+	  "answer": "Sí existe.",
+	  "long_answer": "Sí existe. La isla de basura del Pacífico sur se encuentra en las costas de Valparaíso, Chile."
+	},
+	{
+	  "title": "¿Cuáles son los efectos del efecto invernadero?",
+	  "options": [
+		"Deshielo de masas glaciares, inundaciones, huracanes más fuertes, migraciones de especies.",
+		"Clima más fresco, suelos más fértiles, las especies se reproducen más.",
+		"Los invernaderos crecen más rápido y con mayor vitalidad."
+	  ],
+	  "answer": "Deshielo de masas glaciares, inundaciones, huracanes más fuertes, migraciones de especies.",
+	  "long_answer": "Deshielo de masas glaciares, inundaciones, huracanes más fuertes, migraciones de especies."
+	},
+	{
+	  "title": "¿Cuál es el país que más contamina los océanos?",
+	  "options": ["Filipinas", "China", "India"],
+	  "answer": "Filipinas",
+	  "long_answer": "Filipinas es responsable de más de un tercio de los plásticos que se vierten a los océanos"
+	},
+	{
+	  "title": "¿Qué es el calentamiento global?",
+	  "options": ["El aumento de la temperatura del sistema climático de La Tierra", "El planeta Tierra calentándose", "Es el aumento de las temperaturas de verano"],
+	  "answer": "El aumento de la temperatura del sistema climático de La Tierra",
+	  "long_answer": "Consiste en el aumento de la temperatura del sistema climático de La Tierra a largo plazo. Es la consecuencia más peligrosa del cambio climático"
+	},
+	{
+	  "title": "¿Cuáles son los tipos de contaminación ambiental?",
+	  "options": ["Atmosférica, hídrica, suelo, acústica, lumínica, térmica", "industrial y de hogar", "Alta, media, baja"],
+	  "answer": "Atmosférica, hídrica, suelo, acústica, lumínica, térmica",
+	  "long_answer": "Atmosférica, hídrica, suelo, acústica, lumínica y térmica."
+	},
+	{
+	  "title": "¿Qué es un ODS?",
+	  "options": ["Objetivos de Desarrollo Sostenible", "Objetivos de Salud Ambiental", "Objetivos de Salud Marina"],
+	  "answer": "Objetivos de Desarrollo Sostenible",
+	  "long_answer": "Objetivos de Desarrollo Sostenible son una iniciativa de las Naciones Unidas que busca un mundo más justo para todos"
+	},
+	{
+	  "title": "¿Cuál es el ODS 14?",
+	  "options": ["Asegurar la vida marina", "Acción por el clima", "Producción y consumo responsable"],
+	  "answer": "Asegurar la vida marina",
+	  "long_answer": "Conservar y utilizar sosteniblemente los océanos y los mares."
+	},
+	{
+	  "title": "¿Qué prefieres contaminar un río o un lago?",
+	  "options": ["Ninguno", "Río", "Lago"],
+	  "answer": "Ninguno",
+	  "long_answer": "Debemos cuidar y amar los océanos por nuestra y las futuras generaciones"
+	},
+	{
+	  "title": "Si tuvieras que ahorrar energía eléctrica en tu casa, ¿qué harías?",
+	  "options": ["Comprar electrodomésticos ahorrativos", "Desconectar aparatos", "Ambas"],
+	  "answer": "Ambas",
+	  "long_answer": "Desde casa podemos realizar pequeñas acciones que tienen un efecto positivo para la Tierra y sus océanos"
+	},
+	{
+	  "title": "¿Cuál es la acción más eficaz para ahorrar agua desde casa?",
+	  "options": ["Limite las descargas del inodoro", "Tomar un baño cada dos días", "Reemplazar los grifos viejos"],
+	  "answer": "Limite las descargas del inodoro",
+	  "long_answer": "¡Por cada descarga se consume alrededor de 3 litros de agua!"
+	},
+	{
+	  "title": "¿Sabes cuánto ha aumentado el nivel del mar en los últimos 20 años?",
+	  "options": ["25 centímetros", "1 metro", "50 centímetros"],
+	  "answer": "25 centímetros",
+	  "long_answer": "Se espera que para el 2050 aumente a 30 centímetros"
+	}
   ],
   "Reciclaje": [
-    {
-      "title": "¿Qué es el reciclaje?",
-      "options": ["Proceso cuyo objetivo es convertir residuos en nuevos productos", "Proceso en el cual la temperatura del planeta incrementa.", "Proceso donde se identifica los tipos de residuos para su venta"],
-      "answer": "Proceso cuyo objetivo es convertir residuos en nuevos productos",
-      "long_answer": "Es un proceso cuyo objetivo es convertir residuos en nuevos productos o en materia prima para su posterior utilización"
-    },
-    {
-      "title": "¿Cuáles son las tres maneras de reciclar?",
-      "options": ["Reducir, Reutilizar, Reciclar", "Depositando la basura en su lugar", "Vender, Reutilizar, Ahorrar"],
-      "answer": "Reducir, Reutilizar, Reciclar",
-      "long_answer": "Reducir, Reutilizar, Reciclar"
-    },
-    {
-      "title": "¿Es importante practicar el reciclaje en casa?",
-      "options": ["Si", "No"],
-      "answer": "Si",
-      "long_answer": "¡Es sumamente importante que puedas realizar pequeñas tareas que fomenten el reciclaje dentro de tu hogar, tú puedes!"
-    },
-    {
-      "title": "¿Qué materiales se pueden reciclar de forma segura?",
-      "options": ["Plástico, papel, vidrio, aluminio, cartón", "Material orgánico", "Plástico, papel, vidrio, aluminio, cartón, baterías"],
-      "answer": "Plástico, papel, vidrio, aluminio, cartón",
-      "long_answer": "Reciclar baterías no es recomendable sino tienes el equipo apropiado"
-    },
-    {
-      "title": "¿Cuáles son los colores para identificar los materiales a reciclarse?",
-      "options": ["Gris, naranja, verde, amarillo, azul y rojo", "Negro, naranja, verde, amarillo, rojo, morado", "Gris, negro, verde, amarillo, azul y rojo"],
-      "answer": "Gris, naranja, verde, amarillo, azul y rojo",
-      "long_answer": "Gris: desecho general, naranja: orgánicos, verde: vidrio, amarillo: plástico, azul: papel y cartón, rojo: tóxicos"
-    },
-    {
-      "title": "¿Por qué reciclar permite que seamos sostenibles?",
-      "options": ["Porque cuidamos la naturaleza de nuestro planeta", "Porque nos permite tener más ingresos", "El planeta es sostenible por el mismo"],
-      "answer": "Porque cuidamos la naturaleza de nuestro planeta",
-      "long_answer": "Porque cuidamos la naturaleza de nuestro planeta, lo que permite que alarguemos la vida de este"
-    },
-    {
-      "title": "¿Cuáles son las ventajas de reciclar?",
-      "options": ["Ahorrar electricidad, evita contaminación de agua, disminuir huella de carbono", "No aumenta la temperatura del planeta a corto plazo", "Se crean más empleos, se genera más basura"],
-      "answer": "Ahorrar electricidad, evita contaminación de agua, disminuir huella de carbono",
-      "long_answer": "Ahorro de electricidad, evita la contaminación del agua, disminuye la huella de carbono"
-    },
-    {
-      "title": "¿Cuál crees que es el país que más recicla?",
-      "options": ["Suiza", "Ninguno", "Alemania"],
-      "answer": "Suiza",
-      "long_answer": "En Suiza es obligatorio reciclar sino se incurren en multas"
-    },
-    {
-      "title": "¿Reciclar puede convertirse en una idea de negocio?",
-      "options": ["Si", "No"],
-      "answer": "Si",
-      "long_answer": "Con el reciclaje se crean plantas procesadoras de residuos, se utilizan nuevas materias primas y se genera más empleo"
-    },
-    {
-      "title": "¿En cuánto tiempo desaparece el plástico?",
-      "options": ["500-1,000 años", "100-300 años", "100-500 años"],
-      "answer": "500-1,000 años",
-      "long_answer": "Reflexiona antes de tirar a la calle una bolsa o botella de plástico"
-    },
-    {
-      "title": "¿Cuánto tarda en descomponerse el cartón?",
-      "options": ["1 año", "5 años", "8 años"],
-      "answer": "1 año",
-      "long_answer": "Es importante que puedas reciclar papel y cartón"
-    },
-    {
-      "title": "¿Cuál es la vida útil del aluminio?",
-      "options": ["80 años", "100 años", "200 años"],
-      "answer": "80 años",
-      "long_answer": "¡El aluminio lo encontramos en las ventanas y puertas de nuestros hogares!"
-    },
-    {
-      "title": "¿Cuáles son los países más comprometidos con el reciclaje?",
-      "options": ["Suiza, Australia, Alemania, Países Bajos, Noruega", "Estados Unidos, Francia, España, Países Bajos, Reino Unido", "Reino Unido, Estados Unidos, Suiza, Suecia, Chile"],
-      "answer": "Suiza, Australia, Alemania, Países Bajos, Noruega",
-      "long_answer": "En cada uno de estos países es obligatorio reciclar"
-    },
-    {
-      "title": "¿Cuánta basura produce una persona en un día?",
-      "options": ["4.5 libras", "2 libras", "3.5 libras"],
-      "answer": "4.5 libras",
-      "long_answer": "la mayoría de las personas producen un promedio de 4.5 libras o más"
-    },
-    {
-      "title": "¿Sabes cuántos animales pueden morir a causa del plástico en los océanos?",
-      "options": ["1,000,000", "100,000", "2,000,000"],
-      "answer": "1,000,000",
-      "long_answer": "Las bolsas de plástico que se tiran en el océano matan a más de un millón de criaturas marinas al año"
-    },
-    {
-      "title": "De un bote de basura, ¿cuánto puede ser reciclado?",
-      "options": ["60%", "20%", "100%"],
-      "answer": "60%",
-      "long_answer": "Más del 60% de la basura que acaba en el cubo de basura podría ser reciclado"
-    },
-    {
-      "title": "¿Cuántas veces se puede reciclar el papel?",
-      "options": ["11", "5", "8"],
-      "answer": "11",
-      "long_answer": "Se va convirtiendo en diferentes tipos de papel y cartón"
-    },
-    {
-      "title": "¿Sabes cuánto plástico reciclamos de lo producido a nivel mundial?",
-      "options": ["10%", "30%", "40%"],
-      "answer": "10%",
-      "long_answer": "A lo largo de la historia del planeta hemos reciclado menos del 10% del plástico que producimos a nivel mundial"
-    },
-    {
-      "title": "¿Se puede reciclar una botella de plástico con etiquetas y colores?",
-      "options": ["Sí", "No", "No estoy seguro"],
-      "answer": "Sí",
-      "long_answer": "Pero es más costoso por lo que las industrias prefieren comprar nuevo plástico que reciclar"
-    },
-    {
-      "title": "¿Cuándo es el día mundial del reciclaje?",
-      "options": ["17 de mayo", "8 de agosto", "30 de enero"],
-      "answer": "17 de mayo",
-      "long_answer": "En 2005 la UNESCO lo declara mundial para que reforcemos la importancia de manejar los residuos adecuadamente, reutilizarlos y reciclarlos"
-    }
+	{
+	  "title": "¿Qué es el reciclaje?",
+	  "options": ["Proceso cuyo objetivo es convertir residuos en nuevos productos", "Proceso en el cual la temperatura del planeta incrementa.", "Proceso donde se identifica los tipos de residuos para su venta"],
+	  "answer": "Proceso cuyo objetivo es convertir residuos en nuevos productos",
+	  "long_answer": "Es un proceso cuyo objetivo es convertir residuos en nuevos productos o en materia prima para su posterior utilización"
+	},
+	{
+	  "title": "¿Cuáles son las tres maneras de reciclar?",
+	  "options": ["Reducir, Reutilizar, Reciclar", "Depositando la basura en su lugar", "Vender, Reutilizar, Ahorrar"],
+	  "answer": "Reducir, Reutilizar, Reciclar",
+	  "long_answer": "Reducir, Reutilizar, Reciclar"
+	},
+	{
+	  "title": "¿Es importante practicar el reciclaje en casa?",
+	  "options": ["Si", "No"],
+	  "answer": "Si",
+	  "long_answer": "¡Es sumamente importante que puedas realizar pequeñas tareas que fomenten el reciclaje dentro de tu hogar, tú puedes!"
+	},
+	{
+	  "title": "¿Qué materiales se pueden reciclar de forma segura?",
+	  "options": ["Plástico, papel, vidrio, aluminio, cartón", "Material orgánico", "Plástico, papel, vidrio, aluminio, cartón, baterías"],
+	  "answer": "Plástico, papel, vidrio, aluminio, cartón",
+	  "long_answer": "Reciclar baterías no es recomendable sino tienes el equipo apropiado"
+	},
+	{
+	  "title": "¿Cuáles son los colores para identificar los materiales a reciclarse?",
+	  "options": ["Gris, naranja, verde, amarillo, azul y rojo", "Negro, naranja, verde, amarillo, rojo, morado", "Gris, negro, verde, amarillo, azul y rojo"],
+	  "answer": "Gris, naranja, verde, amarillo, azul y rojo",
+	  "long_answer": "Gris: desecho general, naranja: orgánicos, verde: vidrio, amarillo: plástico, azul: papel y cartón, rojo: tóxicos"
+	},
+	{
+	  "title": "¿Por qué reciclar permite que seamos sostenibles?",
+	  "options": ["Porque cuidamos la naturaleza de nuestro planeta", "Porque nos permite tener más ingresos", "El planeta es sostenible por el mismo"],
+	  "answer": "Porque cuidamos la naturaleza de nuestro planeta",
+	  "long_answer": "Porque cuidamos la naturaleza de nuestro planeta, lo que permite que alarguemos la vida de este"
+	},
+	{
+	  "title": "¿Cuáles son las ventajas de reciclar?",
+	  "options": ["Ahorrar electricidad, evita contaminación de agua, disminuir huella de carbono", "No aumenta la temperatura del planeta a corto plazo", "Se crean más empleos, se genera más basura"],
+	  "answer": "Ahorrar electricidad, evita contaminación de agua, disminuir huella de carbono",
+	  "long_answer": "Ahorro de electricidad, evita la contaminación del agua, disminuye la huella de carbono"
+	},
+	{
+	  "title": "¿Cuál crees que es el país que más recicla?",
+	  "options": ["Suiza", "Ninguno", "Alemania"],
+	  "answer": "Suiza",
+	  "long_answer": "En Suiza es obligatorio reciclar sino se incurren en multas"
+	},
+	{
+	  "title": "¿Reciclar puede convertirse en una idea de negocio?",
+	  "options": ["Si", "No"],
+	  "answer": "Si",
+	  "long_answer": "Con el reciclaje se crean plantas procesadoras de residuos, se utilizan nuevas materias primas y se genera más empleo"
+	},
+	{
+	  "title": "¿En cuánto tiempo desaparece el plástico?",
+	  "options": ["500-1,000 años", "100-300 años", "100-500 años"],
+	  "answer": "500-1,000 años",
+	  "long_answer": "Reflexiona antes de tirar a la calle una bolsa o botella de plástico"
+	},
+	{
+	  "title": "¿Cuánto tarda en descomponerse el cartón?",
+	  "options": ["1 año", "5 años", "8 años"],
+	  "answer": "1 año",
+	  "long_answer": "Es importante que puedas reciclar papel y cartón"
+	},
+	{
+	  "title": "¿Cuál es la vida útil del aluminio?",
+	  "options": ["80 años", "100 años", "200 años"],
+	  "answer": "80 años",
+	  "long_answer": "¡El aluminio lo encontramos en las ventanas y puertas de nuestros hogares!"
+	},
+	{
+	  "title": "¿Cuáles son los países más comprometidos con el reciclaje?",
+	  "options": ["Suiza, Australia, Alemania, Países Bajos, Noruega", "Estados Unidos, Francia, España, Países Bajos, Reino Unido", "Reino Unido, Estados Unidos, Suiza, Suecia, Chile"],
+	  "answer": "Suiza, Australia, Alemania, Países Bajos, Noruega",
+	  "long_answer": "En cada uno de estos países es obligatorio reciclar"
+	},
+	{
+	  "title": "¿Cuánta basura produce una persona en un día?",
+	  "options": ["4.5 libras", "2 libras", "3.5 libras"],
+	  "answer": "4.5 libras",
+	  "long_answer": "la mayoría de las personas producen un promedio de 4.5 libras o más"
+	},
+	{
+	  "title": "¿Sabes cuántos animales pueden morir a causa del plástico en los océanos?",
+	  "options": ["1,000,000", "100,000", "2,000,000"],
+	  "answer": "1,000,000",
+	  "long_answer": "Las bolsas de plástico que se tiran en el océano matan a más de un millón de criaturas marinas al año"
+	},
+	{
+	  "title": "De un bote de basura, ¿cuánto puede ser reciclado?",
+	  "options": ["60%", "20%", "100%"],
+	  "answer": "60%",
+	  "long_answer": "Más del 60% de la basura que acaba en el cubo de basura podría ser reciclado"
+	},
+	{
+	  "title": "¿Cuántas veces se puede reciclar el papel?",
+	  "options": ["11", "5", "8"],
+	  "answer": "11",
+	  "long_answer": "Se va convirtiendo en diferentes tipos de papel y cartón"
+	},
+	{
+	  "title": "¿Sabes cuánto plástico reciclamos de lo producido a nivel mundial?",
+	  "options": ["10%", "30%", "40%"],
+	  "answer": "10%",
+	  "long_answer": "A lo largo de la historia del planeta hemos reciclado menos del 10% del plástico que producimos a nivel mundial"
+	},
+	{
+	  "title": "¿Se puede reciclar una botella de plástico con etiquetas y colores?",
+	  "options": ["Sí", "No", "No estoy seguro"],
+	  "answer": "Sí",
+	  "long_answer": "Pero es más costoso por lo que las industrias prefieren comprar nuevo plástico que reciclar"
+	},
+	{
+	  "title": "¿Cuándo es el día mundial del reciclaje?",
+	  "options": ["17 de mayo", "8 de agosto", "30 de enero"],
+	  "answer": "17 de mayo",
+	  "long_answer": "En 2005 la UNESCO lo declara mundial para que reforcemos la importancia de manejar los residuos adecuadamente, reutilizarlos y reciclarlos"
+	}
   ]
 }
