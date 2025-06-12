@@ -134,9 +134,9 @@ func _ready():
 
 func _physics_process(delta): # SE EJECUTA CADA FRAME A UNA TASA DE FRAMES CONSTANTE
 	var wave_velocity = 35
-	var sea_velocity = 10
-	var lights_velocity = 20
-	var clouds_velocity = 50
+	#var sea_velocity = 10
+	#var lights_velocity = 20
+	#var clouds_velocity = 50
 	""" FORMULA PARA CREAR EFECTO DE MOVMIENTO EN EL FONDO """
 	get_node("Background/Wave").scroll_base_offset += Vector2(1, 0) * wave_velocity * delta
 	$Timer/MarginContainer/VBoxContainer/LblTimer.text = Global.get_timer($Timer/Timer.time_left)
@@ -165,25 +165,28 @@ func spawn_fish_bg():
 	fish_bg.position = _position_initial
 	fish_bg.z_index = -1
 	add_child(fish_bg)
-	$FishBG/Tween.interpolate_property(fish_bg, "position",
-		_position_initial, _position_final, 10,
-		Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
-	$FishBG/Tween.start()
+	var tween = $FishBG.create_tween()
+	tween.tween_property(fish_bg, "position", _position_final, 10.0)\
+	 .set_trans(Tween.TRANS_LINEAR)\
+	 .set_ease(Tween.EASE_IN_OUT)
 
 func _on_BarracudaTimer_timeout():
 	move_barracuda()
 
 func move_barracuda():
 	if $Fish/Barracuda.position == barracuda_position[0]:
-		$FishBG/Tween.interpolate_property($Fish/Barracuda, "position",
-		barracuda_position[0], barracuda_position[1], 2,
-		Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
-		$FishBG/Tween.start()
+		var tween = $FishBG.create_tween()
+		tween.tween_property($Fish/Barracuda, "position", barracuda_position[1], 2.0)\
+	 	.set_trans(Tween.TRANS_LINEAR)\
+	 	.set_ease(Tween.EASE_IN_OUT)
+
 	else:
-		$FishBG/Tween.interpolate_property($Fish/Barracuda, "position",
-		barracuda_position[1], barracuda_position[0], 2,
-		Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
-		$FishBG/Tween.start()
+		$Fish/Barracuda.position = barracuda_position[1]  # Establecer posición inicial
+
+		var tween = $FishBG.create_tween()
+		tween.tween_property($Fish/Barracuda, "position", barracuda_position[0], 2.0)\
+			 .set_trans(Tween.TRANS_LINEAR)\
+			 .set_ease(Tween.EASE_IN_OUT)
 
 func move_turtle():
 	var _initial_position = turtle_initial_position[Global.random_int(0, len(turtle_initial_position) - 1)]
@@ -192,11 +195,14 @@ func move_turtle():
 	## DETERMINAR HACIA DONDE VE LA TORTUGA EN BASE A LA DIRECCION
 	$FishBG/Turtle._set_flip_h(_initial_position.x > _final_position['turtle'].x)
 	## ESTABLECER POSICION DE BASURA A LA QUE SE DIRIJE LA TORTUGA
-	$FishBG/TurtleTween.interpolate_property($FishBG/Turtle, "position",
-		_initial_position, _final_position['turtle'], 3,
-		Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
-	actual_trash_position = _final_position['trash']
-	$FishBG/TurtleTween.start()
+	$FishBG/Turtle.position = _initial_position  # Establece la posición inicial si necesario
+
+	var tween = $FishBG.create_tween()
+	tween.tween_property($FishBG/Turtle, "position", _final_position["turtle"], 3.0)\
+		 .set_trans(Tween.TRANS_LINEAR)\
+		 .set_ease(Tween.EASE_IN_OUT)
+
+	actual_trash_position = _final_position["trash"]
 
 func _on_TurtleTween_tween_completed(object, key):
 	if not game_over:

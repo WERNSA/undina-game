@@ -12,7 +12,7 @@ func _physics_process(delta):
 func _on_VisibilityNotifier2D_screen_exited():
 	queue_free()
 
-func rotate(_degree):
+func rotate_object(_degree):
 	rotation_degrees = _degree
 
 func _on_Trash_body_entered(body):

@@ -16,7 +16,7 @@ func _on_Enemy_body_entered(body):
 func _on_VisibilityNotifier2D_screen_exited():
 	queue_free()
 
-func rotate(_degree):
+func rotate_object(_degree):
 	rotation_degrees = _degree
 
 func _on_Island_body_entered(body):

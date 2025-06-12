@@ -29,7 +29,7 @@ func _process(_delta):
 	$Timer/VBoxContainer/Timer/Label.text = Global.get_timer($Timer/Timer.time_left)
 
 func _on_IslandTimer_timeout():
-	get_node("Spawn/IslandPath/IslandSpawn").set_offset(randi())
+	get_node("Spawn/IslandPath/IslandSpawn").progress = randi()
 	var island_number = Global.random_int(1, 2)
 	var island
 	if island_number == 1:
@@ -40,10 +40,10 @@ func _on_IslandTimer_timeout():
 	island.position = island_position
 	spawn_trash()
 	if island_position.y == top_position:
-		island.rotate(90)
+		island.rotate_object(90)
 		island_position.y = bottom_position
 	else:
-		island.rotate(-90)
+		island.rotate_object(-90)
 		island_position.y = top_position
 	$Spawn/IslandTimer.wait_time = Global.random_float(2, 3)
 	$Spawn/IslandTimer.start()
