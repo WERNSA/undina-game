@@ -31,7 +31,6 @@ func add_trash_count():
 func get_trash(_trash):
 	get_sound()
 	if actual_trash and _trash == actual_trash.get_ref():
-		$Trash/TrashTween.stop_all()
 		var _idx = trash_array.find(actual_trash.get_ref())
 		trash_array.pop_at(_idx)
 		actual_trash = null
@@ -49,47 +48,47 @@ func move_crab():
 	actual_trash = weakref(trash_array[_idx])
 	if actual_trash.get_ref():
 		var _actual_trash = actual_trash.get_ref()
-		$Crab/InitTween.interpolate_property(
+		var tween := create_tween()
+		tween.tween_property(
 			$Crab/Crab, "position",
-			Vector2(_actual_trash.position.x, position_out_screen),
 			Vector2(_actual_trash.position.x, _actual_trash.position.y + position_offset),
-			5, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT
+			5.0
 		)
-		$Crab/InitTween.start()
+		tween.connect("finished", Callable(self, "_on_InitTween_tween_all_completed"))
 
 func _on_InitTween_tween_all_completed():
 	$Crab/WaitTimer.start()
 
 func _on_WaitTimer_timeout():
-	$Crab/FinalTween.interpolate_property(
+	# Mover el cangrejo fuera de la pantalla
+	var crab_tween := create_tween()
+	crab_tween.tween_property(
 		$Crab/Crab, "position",
-		$Crab/Crab.position,
 		Vector2($Crab/Crab.position.x, position_out_screen),
-		trash_transition_time, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT
+		trash_transition_time
 	)
-	
+	crab_tween.connect("finished", Callable(self, "_on_FinalTween_tween_all_completed"))
+
+	# Mover la basura si está activa
 	if actual_trash and actual_trash.get_ref() in trash_array:
 		var _actual_trash = actual_trash.get_ref()
-		$Trash/TrashTween.interpolate_property(
+		var trash_tween := create_tween()
+		trash_tween.tween_property(
 			_actual_trash, "position",
-			_actual_trash.position,
 			Vector2(_actual_trash.position.x, position_out_screen - position_offset),
-			trash_transition_time, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT
+			trash_transition_time
 		)
-		$Trash/TrashTween.start()
-	$Crab/FinalTween.start()
 
 func hide_crab():
-	$Crab/InitTween.stop_all()
-	$Crab/FinalTween.stop_all()
 	$Crab/WaitTimer.stop()
-	$Crab/HideTween.interpolate_property(
+
+	var tween := create_tween()
+	tween.tween_property(
 		$Crab/Crab, "position",
-		$Crab/Crab.position,
 		Vector2($Crab/Crab.position.x, position_out_screen),
-		3, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT
+		3.0
 	)
-	$Crab/HideTween.start()
+	tween.connect("finished", Callable(self, "_on_HideTween_tween_all_completed"))
 
 func _on_FinalTween_tween_all_completed():
 	if actual_trash and actual_trash.get_ref() and actual_trash.get_ref().position.y > 1800:
@@ -140,3 +139,7 @@ func _game_over():
 
 func _on_try_again():
 	get_tree().change_scene_to_file("res://Scenes/Games/LimpiandoCosta/Nivel1/LimpiandoCosta.tscn")
+	
+func animate_position(node: Node2D, to_position: Vector2, duration: float):
+	var tween := create_tween()
+	tween.tween_property(node, "position", to_position, duration)
