@@ -153,9 +153,9 @@ var turtle_trash_position = [
 func _ready():
 	randomize()
 	$Contador.set_count(str(TRASH_COUNT))
-	$HUD/GameOver/CenterContainer/HBoxContainer/BtnTry.connect("pressed", Callable(self, "_on_try_again"))
-	$HUD/Win/CenterContainer/HBoxContainer/BtnTry.connect("pressed", Callable(self, "_on_try_again"))
-	
+	$HUD/GameOver/CenterContainer/HBoxContainer/BtnTry.pressed.connect(_on_try_again)
+	$HUD/Win/CenterContainer/HBoxContainer/BtnTry.pressed.connect(_on_try_again)
+
 	spawn_fish_bg()
 	$FishBG/SpawnFishBGTimer.start()
 	$Fish/BarracudaTimer.start()
@@ -163,15 +163,10 @@ func _ready():
 	move_turtle()
 	$Timer/MarginContainer/VBoxContainer/LblTries.text = "INTENTOS: " + str(tries)
 
-func _physics_process(delta): # SE EJECUTA CADA FRAME A UNA TASA DE FRAMES CONSTANTE
+func _physics_process(delta):
 	var wave_velocity = 35
-	var sea_velocity = 10
-	var lights_velocity = 20
-	var clouds_velocity = 50
-	""" FORMULA PARA CREAR EFECTO DE MOVMIENTO EN EL FONDO """
 	get_node("Background/Wave").scroll_base_offset += Vector2(1, 0) * wave_velocity * delta
 	$Timer/MarginContainer/VBoxContainer/LblTimer.text = Global.get_timer($Timer/Timer.time_left)
-#	get_node("Background/Clouds").scroll_base_offset += Vector2(1, 0) * clouds_velocity * delta
 
 func add_trash_count():
 	TRASH_COUNT += 10
@@ -188,72 +183,45 @@ func _on_SpawnFishBGTimer_timeout():
 	spawn_fish_bg()
 
 func spawn_fish_bg():
-	var options_initial = Global.random_int(0, len(fish_initial_positions) - 1)
-	var options_final = Global.random_int(0, len(fish_final_positions) - 1)
+	var options_initial = Global.random_int(0, fish_initial_positions.size() - 1)
+	var options_final = Global.random_int(0, fish_final_positions.size() - 1)
 	var _position_initial = fish_initial_positions[options_initial]
 	var _position_final = fish_final_positions[options_final]
 	var fish_bg = FishBG.instantiate()
 	fish_bg.position = _position_initial
 	fish_bg.z_index = -1
 	add_child(fish_bg)
-	$FishBG/Tween.interpolate_property(fish_bg, "position",
-		_position_initial, _position_final, 10,
-		Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
-	$FishBG/Tween.start()
+
+	$FishBG.create_tween().tween_property(
+		fish_bg, "position", _position_final, 10
+	).set_trans(Tween.TRANS_LINEAR).set_ease(Tween.EASE_IN_OUT)
 
 func _on_BarracudaTimer_timeout():
 	move_barracuda()
 
 func move_barracuda():
-	if $Fish/Barracuda.position == barracuda_position[0]:
-		$FishBG/Tween.interpolate_property($Fish/Barracuda, "position",
-		barracuda_position[0], barracuda_position[1], 2,
-		Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
-		$FishBG/Tween.start()
-	else:
-		$FishBG/Tween.interpolate_property($Fish/Barracuda, "position",
-		barracuda_position[1], barracuda_position[0], 2,
-		Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
-		$FishBG/Tween.start()
+	var target = barracuda_position[1] if $Fish/Barracuda.position == barracuda_position[0] else barracuda_position[0]
+	$FishBG.create_tween().tween_property(
+		$Fish/Barracuda, "position", target, 2
+	).set_trans(Tween.TRANS_LINEAR).set_ease(Tween.EASE_IN_OUT)
 
 func move_turtle():
-	var _initial_position = turtle_initial_position[Global.random_int(0, len(turtle_initial_position) - 1)]
-	turtle_position_idx = Global.random_int(0, len(turtle_trash_position) - 1)
+	var _initial_position = turtle_initial_position[Global.random_int(0, turtle_initial_position.size() - 1)]
+	turtle_position_idx = Global.random_int(0, turtle_trash_position.size() - 1)
 	var _final_position = turtle_trash_position[turtle_position_idx]
-	## DETERMINAR HACIA DONDE VE LA TORTUGA EN BASE A LA DIRECCION
-	$FishBG/Turtle._set_flip_h(_initial_position.x > _final_position['turtle'].x)
-	## ESTABLECER POSICION DE BASURA A LA QUE SE DIRIJE LA TORTUGA
-	$FishBG/TurtleTween.interpolate_property($FishBG/Turtle, "position",
-		_initial_position, _final_position['turtle'], 3,
-		Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
-	actual_trash_position = _final_position['trash']
-	$FishBG/TurtleTween.start()
+	$FishBG/Turtle._set_flip_h(_initial_position.x > _final_position["turtle"].x)
+	actual_trash_position = _final_position["trash"]
 
-func _on_TurtleTween_tween_completed(object, key):
-	if not game_over:
-		if turtle_initial_position.find($FishBG/Turtle.position) == -1:
-			$FishBG/Turtle._set_flip_h($FishBG/Turtle.position.x > turtle_trash_position[turtle_position_idx]['trash'].x)
-			$FishBG/Turtle._set_eating(true)
-			var _idx = 0
-			var _found = false
-			for p in turtle_trash_position:
-				if p['trash'] == actual_trash_position:
-					_found = true
-					break
-				_idx += 1
-			if _found and turtle_initial_position.find($FishBG/Turtle.position) == -1:
-				$Timer/Timer.start()
-				show_timer(true)
-			else:
-				hide_turtle()
+	$FishBG.create_tween().tween_property(
+		$FishBG/Turtle, "position", _final_position["turtle"], 3
+	).set_trans(Tween.TRANS_LINEAR).set_ease(Tween.EASE_IN_OUT)
 
 func _on_Timer_timeout():
 	$Timer/Timer.stop()
 	if not game_over:
 		var _found = false
 		var _trash
-		var trash_group = get_tree().get_nodes_in_group("enemy")
-		for p in trash_group:
+		for p in get_tree().get_nodes_in_group("enemy"):
 			if p.position == actual_trash_position:
 				_found = true
 				_trash = p
@@ -278,23 +246,24 @@ func _on_Timer_timeout():
 func show_timer(is_show : bool):
 	var _initial_pos_y = -200 if is_show else 0
 	var _final_pos_y = 0 if is_show else -200
-	$FishBG/Tween.interpolate_property($Timer, "position",
-		Vector2(1600, _initial_pos_y), Vector2(1600, _final_pos_y), .5,
-		Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
-	$FishBG/Tween.start()
+
+	$FishBG.create_tween().tween_property(
+		$Timer, "position", Vector2(1600, _final_pos_y), 0.5
+	).set_trans(Tween.TRANS_LINEAR).set_ease(Tween.EASE_IN_OUT)
+
 	$Timer/Timer.start()
 
 func remove_trash_turtle(pos: Vector2):
 	var _idx = 0
 	var _found = false
 	for p in turtle_trash_position:
-		if p['trash'] == pos:
+		if p["trash"] == pos:
 			_found = true
 			break
 		_idx += 1
 	if _found:
 		var trash_pos = turtle_trash_position.pop_at(_idx)
-		if trash_pos['trash'] == actual_trash_position:
+		if trash_pos["trash"] == actual_trash_position:
 			if $Timer.position.y != -200:
 				show_timer(false)
 			hide_turtle()
@@ -302,19 +271,17 @@ func remove_trash_turtle(pos: Vector2):
 func hide_turtle():
 	$FishBG/Turtle._set_eating(false)
 	var _initial_position = $FishBG/Turtle.position
-	var _final_position = turtle_initial_position[Global.random_int(0, len(turtle_initial_position) - 1)]
-	## DETERMINAR HACIA DONDE VE LA TORTUGA EN BASE A LA DIRECCION
+	var _final_position = turtle_initial_position[Global.random_int(0, turtle_initial_position.size() - 1)]
 	$FishBG/Turtle._set_flip_h(_initial_position.x > _final_position.x)
-	## ESTABLECER POSICION DE BASURA A LA QUE SE DIRIJE LA TORTUGA
-	$FishBG/TurtleTween.interpolate_property($FishBG/Turtle, "position",
-		_initial_position, _final_position, 3,
-		Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
-	$FishBG/TurtleTween.start()
+
+	$FishBG.create_tween().tween_property(
+		$FishBG/Turtle, "position", _final_position, 3
+	).set_trans(Tween.TRANS_LINEAR).set_ease(Tween.EASE_IN_OUT)
+
 	$FishBG/TurtleTimer.start()
 
 func _on_TurtleTimer_timeout():
 	move_turtle()
-
 
 func _game_win():
 	game_over = true
@@ -326,7 +293,7 @@ func _game_win():
 	$IlleaBuceando.can_move = false
 	if $Timer.position.y != -200:
 		show_timer(false)
-	if turtle_initial_position.find($FishBG/Turtle.position) != -1:
+	if turtle_initial_position.has($FishBG/Turtle.position):
 		hide_turtle()
 
 func _game_over():
@@ -339,41 +306,26 @@ func _game_over():
 	$Songs/BGSong.stop()
 	$FishBG/Turtle._set_dead(true)
 	$FishBG/Turtle/Sprite2D.flip_v = true
-	$FishBG/Tween.interpolate_property($FishBG/Turtle, "position",
-	Vector2($FishBG/Turtle.position.x, $FishBG/Turtle.position.y), Vector2($FishBG/Turtle.position.x, 400), 5,
-	Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
-	$FishBG/Tween.start()
+
+	$FishBG.create_tween().tween_property(
+		$FishBG/Turtle, "position", Vector2($FishBG/Turtle.position.x, 400), 5
+	).set_trans(Tween.TRANS_LINEAR).set_ease(Tween.EASE_IN_OUT)
+
 	$IlleaBuceando.can_move = false
 
 func _on_try_again():
 	get_tree().change_scene_to_file("res://Scenes/Games/Pescando/Nivel2/Pescando.tscn")
 
 func _on_CoralRockTimer_timeout():
-	if $Placeholder/CoralRock.position == coral_rock_position["initial"][0]:
-		move_coral_rock(
-			$Placeholder/CoralRock,
-			coral_rock_position["initial"][0],
-			coral_rock_position["final"][0]
-		)
-		move_coral_rock(
-			$Placeholder/CoralRock2,
-			coral_rock_position["initial"][1],
-			coral_rock_position["final"][1]
-		)
+	var pos = $Placeholder/CoralRock.position
+	if pos == coral_rock_position["initial"][0]:
+		move_coral_rock($Placeholder/CoralRock, coral_rock_position["initial"][0], coral_rock_position["final"][0])
+		move_coral_rock($Placeholder/CoralRock2, coral_rock_position["initial"][1], coral_rock_position["final"][1])
 	else:
-		move_coral_rock(
-			$Placeholder/CoralRock,
-			coral_rock_position["final"][0],
-			coral_rock_position["initial"][0]
-		)
-		move_coral_rock(
-			$Placeholder/CoralRock2,
-			coral_rock_position["final"][1],
-			coral_rock_position["initial"][1]
-		)
-		
+		move_coral_rock($Placeholder/CoralRock, coral_rock_position["final"][0], coral_rock_position["initial"][0])
+		move_coral_rock($Placeholder/CoralRock2, coral_rock_position["final"][1], coral_rock_position["initial"][1])
+
 func move_coral_rock(_coral_rock, _initial_pos, _final_pos):
-	$FishBG/Tween.interpolate_property(_coral_rock, "position",
-	_initial_pos, _final_pos, 2,
-	Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
-	$FishBG/Tween.start()
+	$FishBG.create_tween().tween_property(
+		_coral_rock, "position", _final_pos, 2
+	).set_trans(Tween.TRANS_LINEAR).set_ease(Tween.EASE_IN_OUT)
