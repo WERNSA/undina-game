@@ -1,19 +1,19 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=3 format=3 uid="uid://cyhtvtynfd65k"]
 
-[ext_resource path="res://Scenes/Entity/Trash/Trash.gd" type="Script" id=1]
+[ext_resource type="Script" uid="uid://p1niku08bj4" path="res://Scenes/Entity/Trash/Trash.gd" id="1"]
 
-[sub_resource type="CapsuleShape2D" id=1]
+[sub_resource type="CapsuleShape2D" id="1"]
 radius = 20.6521
 height = 58.0549
 
 [node name="Trash" type="CharacterBody2D"]
-position = Vector2( 2, 1 )
-script = ExtResource( 1 )
+position = Vector2(2, 1)
+script = ExtResource("1")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2( 0.6, 0.6 )
+scale = Vector2(0.6, 0.6)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 0, 6.10352e-05 )
+position = Vector2(0, 6.10352e-05)
 rotation = 1.13446
-shape = SubResource( 1 )
+shape = SubResource("1")

@@ -1,8 +1,8 @@
 [gd_scene load_steps=9 format=3 uid="uid://b17rf02r12bmp"]
 
 [ext_resource type="Script" uid="uid://cxmbiy2uv3pj4" path="res://Scenes/Utility/analog/analog.gd" id="1"]
-[ext_resource type="Texture2D" uid="uid://bl8atm37jo5ky" path="res://Scenes/Utility/analog/small_circle.png" id="2"]
-[ext_resource type="Texture2D" uid="uid://db66rfbk508d6" path="res://Scenes/Utility/analog/big_circle.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://dr8ss7wl77vm4" path="res://Scenes/Utility/analog/small_circle.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://cm01vxr2reqss" path="res://Scenes/Utility/analog/big_circle.png" id="3"]
 
 [sub_resource type="Animation" id="1"]
 length = 5.0

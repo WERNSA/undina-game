@@ -93,10 +93,11 @@ func move_turtle():
 
 	var tween = create_tween()
 	tween.tween_property($FishBG/Turtle, "position", final_pos["turtle"], 3.0).set_trans(Tween.TRANS_LINEAR).set_ease(Tween.EASE_IN_OUT)
+	tween.connect("finished", _on_TurtleTween_tween_completed())
 
 	actual_trash_position = final_pos["trash"]
 
-func _on_TurtleTween_tween_completed(object, key):
+func _on_TurtleTween_tween_completed():
 	if game_over:
 		return
 	if not turtle_initial_position.has($FishBG/Turtle.position):
@@ -164,7 +165,7 @@ func hide_turtle():
 	var end_pos = turtle_initial_position[Global.random_int(0, turtle_initial_position.size() - 1)]
 	$FishBG/Turtle._set_flip_h(start_pos.x > end_pos.x)
 
-	var tween = $FishBG/TurtleTween
+	var tween = create_tween()
 	tween.interpolate_property($FishBG/Turtle, "position", start_pos, end_pos, 3, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
 	tween.start()
 	$FishBG/TurtleTimer.start()
@@ -203,3 +204,7 @@ func _game_over():
 
 func _on_try_again():
 	get_tree().change_scene_to_file("res://Scenes/Games/Pescando/Nivel1/Pescando.tscn")
+
+
+func _on_bg_song_finished() -> void:
+	$Songs/BGSong.play()

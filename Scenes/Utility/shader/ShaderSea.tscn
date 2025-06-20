@@ -1,17 +1,17 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=3 format=3 uid="uid://cqdoauo42nhxr"]
 
-[ext_resource path="res://Scenes/Utility/shader/UnderWater2D_screen.gdshader" type="Shader" id=1]
+[ext_resource type="Shader" uid="uid://dtqjau2tn3e0u" path="res://Scenes/Utility/shader/UnderWater2D_screen.gdshader" id="1"]
 
-[sub_resource type="ShaderMaterial" id=1]
-shader = ExtResource( 1 )
-shader_param/wave_speed = 0.5
-shader_param/wave_freq = 15.0
-shader_param/wave_width = 0.23
+[sub_resource type="ShaderMaterial" id="1"]
+shader = ExtResource("1")
+shader_parameter/wave_speed = 0.5
+shader_parameter/wave_freq = 15.0
+shader_parameter/wave_width = 0.23
 
 [node name="ShaderSea" type="CanvasLayer"]
 
 [node name="ColorRect" type="ColorRect" parent="."]
-material = SubResource( 1 )
+material = SubResource("1")
 offset_top = 250.0
 offset_right = 3200.0
 offset_bottom = 1800.0

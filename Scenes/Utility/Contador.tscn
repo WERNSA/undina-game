@@ -1,8 +1,8 @@
 [gd_scene load_steps=6 format=3 uid="uid://7jnwei6j4avo"]
 
-[ext_resource type="FontFile" uid="uid://5wbev1yu6wf2" path="res://Assets/Fonts/Marujo.ttf" id="1"]
-[ext_resource type="Texture2D" uid="uid://cob8eefiqhkjs" path="res://Assets/Images/Fondo de contador de puntos.png" id="2"]
-[ext_resource type="Texture2D" uid="uid://dhdp3bs8qn2bp" path="res://Assets/Images/Concha.png" id="3"]
+[ext_resource type="FontFile" uid="uid://b2wbfrap8ifi4" path="res://Assets/Fonts/Marujo.ttf" id="1"]
+[ext_resource type="Texture2D" uid="uid://cxcyi67pybsat" path="res://Assets/Images/Fondo de contador de puntos.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://0h1s0ovkseux" path="res://Assets/Images/Concha.png" id="3"]
 [ext_resource type="Script" uid="uid://dgan1xry4akd5" path="res://Scenes/Utility/Contador.gd" id="4"]
 
 [sub_resource type="FontFile" id="1"]
