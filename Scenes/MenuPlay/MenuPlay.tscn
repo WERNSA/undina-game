@@ -1,8 +1,8 @@
 [gd_scene load_steps=15 format=3 uid="uid://t8mjf6n5lwo"]
 
-[ext_resource type="FontFile" path="res://Assets/Fonts/btnFont.tres" id="1"]
+[ext_resource type="FontFile" uid="uid://byvaqdf2liiep" path="res://Assets/Fonts/btnFont.tres" id="1"]
 [ext_resource type="Texture2D" uid="uid://bhd135ao41ocl" path="res://Assets/Images/bg_underwater.png" id="2"]
-[ext_resource type="PackedScene" path="res://Scenes/Options/Options.tscn" id="3"]
+[ext_resource type="PackedScene" uid="uid://cujr43bnq6o6h" path="res://Scenes/Options/Options.tscn" id="3"]
 [ext_resource type="Texture2D" uid="uid://byxg1vidddqdh" path="res://Assets/Images/btn_yellow.png" id="4"]
 [ext_resource type="Texture2D" uid="uid://bafkk5ay4xpnw" path="res://Assets/Images/btn_yellow_disabled.png" id="5"]
 [ext_resource type="FontFile" uid="uid://b2wbfrap8ifi4" path="res://Assets/Fonts/Marujo.ttf" id="6"]
@@ -18,6 +18,11 @@ cache/0/16/0/descent = 0.0
 cache/0/16/0/underline_position = 0.0
 cache/0/16/0/underline_thickness = 0.0
 cache/0/16/0/scale = 1.0
+cache/0/75/0/ascent = 0.0
+cache/0/75/0/descent = 0.0
+cache/0/75/0/underline_position = 0.0
+cache/0/75/0/underline_thickness = 0.0
+cache/0/75/0/scale = 1.0
 
 [sub_resource type="FontFile" id="2"]
 fallbacks = Array[Font]([ExtResource("6")])
@@ -26,6 +31,271 @@ cache/0/16/0/descent = 0.0
 cache/0/16/0/underline_position = 0.0
 cache/0/16/0/underline_thickness = 0.0
 cache/0/16/0/scale = 1.0
+cache/0/2/0/ascent = 0.0
+cache/0/2/0/descent = 0.0
+cache/0/2/0/underline_position = 0.0
+cache/0/2/0/underline_thickness = 0.0
+cache/0/2/0/scale = 1.0
+cache/0/3/0/ascent = 0.0
+cache/0/3/0/descent = 0.0
+cache/0/3/0/underline_position = 0.0
+cache/0/3/0/underline_thickness = 0.0
+cache/0/3/0/scale = 1.0
+cache/0/4/0/ascent = 0.0
+cache/0/4/0/descent = 0.0
+cache/0/4/0/underline_position = 0.0
+cache/0/4/0/underline_thickness = 0.0
+cache/0/4/0/scale = 1.0
+cache/0/5/0/ascent = 0.0
+cache/0/5/0/descent = 0.0
+cache/0/5/0/underline_position = 0.0
+cache/0/5/0/underline_thickness = 0.0
+cache/0/5/0/scale = 1.0
+cache/0/6/0/ascent = 0.0
+cache/0/6/0/descent = 0.0
+cache/0/6/0/underline_position = 0.0
+cache/0/6/0/underline_thickness = 0.0
+cache/0/6/0/scale = 1.0
+cache/0/7/0/ascent = 0.0
+cache/0/7/0/descent = 0.0
+cache/0/7/0/underline_position = 0.0
+cache/0/7/0/underline_thickness = 0.0
+cache/0/7/0/scale = 1.0
+cache/0/8/0/ascent = 0.0
+cache/0/8/0/descent = 0.0
+cache/0/8/0/underline_position = 0.0
+cache/0/8/0/underline_thickness = 0.0
+cache/0/8/0/scale = 1.0
+cache/0/9/0/ascent = 0.0
+cache/0/9/0/descent = 0.0
+cache/0/9/0/underline_position = 0.0
+cache/0/9/0/underline_thickness = 0.0
+cache/0/9/0/scale = 1.0
+cache/0/10/0/ascent = 0.0
+cache/0/10/0/descent = 0.0
+cache/0/10/0/underline_position = 0.0
+cache/0/10/0/underline_thickness = 0.0
+cache/0/10/0/scale = 1.0
+cache/0/11/0/ascent = 0.0
+cache/0/11/0/descent = 0.0
+cache/0/11/0/underline_position = 0.0
+cache/0/11/0/underline_thickness = 0.0
+cache/0/11/0/scale = 1.0
+cache/0/12/0/ascent = 0.0
+cache/0/12/0/descent = 0.0
+cache/0/12/0/underline_position = 0.0
+cache/0/12/0/underline_thickness = 0.0
+cache/0/12/0/scale = 1.0
+cache/0/13/0/ascent = 0.0
+cache/0/13/0/descent = 0.0
+cache/0/13/0/underline_position = 0.0
+cache/0/13/0/underline_thickness = 0.0
+cache/0/13/0/scale = 1.0
+cache/0/14/0/ascent = 0.0
+cache/0/14/0/descent = 0.0
+cache/0/14/0/underline_position = 0.0
+cache/0/14/0/underline_thickness = 0.0
+cache/0/14/0/scale = 1.0
+cache/0/15/0/ascent = 0.0
+cache/0/15/0/descent = 0.0
+cache/0/15/0/underline_position = 0.0
+cache/0/15/0/underline_thickness = 0.0
+cache/0/15/0/scale = 1.0
+cache/0/17/0/ascent = 0.0
+cache/0/17/0/descent = 0.0
+cache/0/17/0/underline_position = 0.0
+cache/0/17/0/underline_thickness = 0.0
+cache/0/17/0/scale = 1.0
+cache/0/18/0/ascent = 0.0
+cache/0/18/0/descent = 0.0
+cache/0/18/0/underline_position = 0.0
+cache/0/18/0/underline_thickness = 0.0
+cache/0/18/0/scale = 1.0
+cache/0/19/0/ascent = 0.0
+cache/0/19/0/descent = 0.0
+cache/0/19/0/underline_position = 0.0
+cache/0/19/0/underline_thickness = 0.0
+cache/0/19/0/scale = 1.0
+cache/0/20/0/ascent = 0.0
+cache/0/20/0/descent = 0.0
+cache/0/20/0/underline_position = 0.0
+cache/0/20/0/underline_thickness = 0.0
+cache/0/20/0/scale = 1.0
+cache/0/21/0/ascent = 0.0
+cache/0/21/0/descent = 0.0
+cache/0/21/0/underline_position = 0.0
+cache/0/21/0/underline_thickness = 0.0
+cache/0/21/0/scale = 1.0
+cache/0/22/0/ascent = 0.0
+cache/0/22/0/descent = 0.0
+cache/0/22/0/underline_position = 0.0
+cache/0/22/0/underline_thickness = 0.0
+cache/0/22/0/scale = 1.0
+cache/0/23/0/ascent = 0.0
+cache/0/23/0/descent = 0.0
+cache/0/23/0/underline_position = 0.0
+cache/0/23/0/underline_thickness = 0.0
+cache/0/23/0/scale = 1.0
+cache/0/24/0/ascent = 0.0
+cache/0/24/0/descent = 0.0
+cache/0/24/0/underline_position = 0.0
+cache/0/24/0/underline_thickness = 0.0
+cache/0/24/0/scale = 1.0
+cache/0/25/0/ascent = 0.0
+cache/0/25/0/descent = 0.0
+cache/0/25/0/underline_position = 0.0
+cache/0/25/0/underline_thickness = 0.0
+cache/0/25/0/scale = 1.0
+cache/0/26/0/ascent = 0.0
+cache/0/26/0/descent = 0.0
+cache/0/26/0/underline_position = 0.0
+cache/0/26/0/underline_thickness = 0.0
+cache/0/26/0/scale = 1.0
+cache/0/27/0/ascent = 0.0
+cache/0/27/0/descent = 0.0
+cache/0/27/0/underline_position = 0.0
+cache/0/27/0/underline_thickness = 0.0
+cache/0/27/0/scale = 1.0
+cache/0/28/0/ascent = 0.0
+cache/0/28/0/descent = 0.0
+cache/0/28/0/underline_position = 0.0
+cache/0/28/0/underline_thickness = 0.0
+cache/0/28/0/scale = 1.0
+cache/0/29/0/ascent = 0.0
+cache/0/29/0/descent = 0.0
+cache/0/29/0/underline_position = 0.0
+cache/0/29/0/underline_thickness = 0.0
+cache/0/29/0/scale = 1.0
+cache/0/30/0/ascent = 0.0
+cache/0/30/0/descent = 0.0
+cache/0/30/0/underline_position = 0.0
+cache/0/30/0/underline_thickness = 0.0
+cache/0/30/0/scale = 1.0
+cache/0/31/0/ascent = 0.0
+cache/0/31/0/descent = 0.0
+cache/0/31/0/underline_position = 0.0
+cache/0/31/0/underline_thickness = 0.0
+cache/0/31/0/scale = 1.0
+cache/0/32/0/ascent = 0.0
+cache/0/32/0/descent = 0.0
+cache/0/32/0/underline_position = 0.0
+cache/0/32/0/underline_thickness = 0.0
+cache/0/32/0/scale = 1.0
+cache/0/33/0/ascent = 0.0
+cache/0/33/0/descent = 0.0
+cache/0/33/0/underline_position = 0.0
+cache/0/33/0/underline_thickness = 0.0
+cache/0/33/0/scale = 1.0
+cache/0/34/0/ascent = 0.0
+cache/0/34/0/descent = 0.0
+cache/0/34/0/underline_position = 0.0
+cache/0/34/0/underline_thickness = 0.0
+cache/0/34/0/scale = 1.0
+cache/0/35/0/ascent = 0.0
+cache/0/35/0/descent = 0.0
+cache/0/35/0/underline_position = 0.0
+cache/0/35/0/underline_thickness = 0.0
+cache/0/35/0/scale = 1.0
+cache/0/36/0/ascent = 0.0
+cache/0/36/0/descent = 0.0
+cache/0/36/0/underline_position = 0.0
+cache/0/36/0/underline_thickness = 0.0
+cache/0/36/0/scale = 1.0
+cache/0/37/0/ascent = 0.0
+cache/0/37/0/descent = 0.0
+cache/0/37/0/underline_position = 0.0
+cache/0/37/0/underline_thickness = 0.0
+cache/0/37/0/scale = 1.0
+cache/0/38/0/ascent = 0.0
+cache/0/38/0/descent = 0.0
+cache/0/38/0/underline_position = 0.0
+cache/0/38/0/underline_thickness = 0.0
+cache/0/38/0/scale = 1.0
+cache/0/39/0/ascent = 0.0
+cache/0/39/0/descent = 0.0
+cache/0/39/0/underline_position = 0.0
+cache/0/39/0/underline_thickness = 0.0
+cache/0/39/0/scale = 1.0
+cache/0/40/0/ascent = 0.0
+cache/0/40/0/descent = 0.0
+cache/0/40/0/underline_position = 0.0
+cache/0/40/0/underline_thickness = 0.0
+cache/0/40/0/scale = 1.0
+cache/0/41/0/ascent = 0.0
+cache/0/41/0/descent = 0.0
+cache/0/41/0/underline_position = 0.0
+cache/0/41/0/underline_thickness = 0.0
+cache/0/41/0/scale = 1.0
+cache/0/42/0/ascent = 0.0
+cache/0/42/0/descent = 0.0
+cache/0/42/0/underline_position = 0.0
+cache/0/42/0/underline_thickness = 0.0
+cache/0/42/0/scale = 1.0
+cache/0/43/0/ascent = 0.0
+cache/0/43/0/descent = 0.0
+cache/0/43/0/underline_position = 0.0
+cache/0/43/0/underline_thickness = 0.0
+cache/0/43/0/scale = 1.0
+cache/0/44/0/ascent = 0.0
+cache/0/44/0/descent = 0.0
+cache/0/44/0/underline_position = 0.0
+cache/0/44/0/underline_thickness = 0.0
+cache/0/44/0/scale = 1.0
+cache/0/45/0/ascent = 0.0
+cache/0/45/0/descent = 0.0
+cache/0/45/0/underline_position = 0.0
+cache/0/45/0/underline_thickness = 0.0
+cache/0/45/0/scale = 1.0
+cache/0/46/0/ascent = 0.0
+cache/0/46/0/descent = 0.0
+cache/0/46/0/underline_position = 0.0
+cache/0/46/0/underline_thickness = 0.0
+cache/0/46/0/scale = 1.0
+cache/0/47/0/ascent = 0.0
+cache/0/47/0/descent = 0.0
+cache/0/47/0/underline_position = 0.0
+cache/0/47/0/underline_thickness = 0.0
+cache/0/47/0/scale = 1.0
+cache/0/48/0/ascent = 0.0
+cache/0/48/0/descent = 0.0
+cache/0/48/0/underline_position = 0.0
+cache/0/48/0/underline_thickness = 0.0
+cache/0/48/0/scale = 1.0
+cache/0/49/0/ascent = 0.0
+cache/0/49/0/descent = 0.0
+cache/0/49/0/underline_position = 0.0
+cache/0/49/0/underline_thickness = 0.0
+cache/0/49/0/scale = 1.0
+cache/0/50/0/ascent = 0.0
+cache/0/50/0/descent = 0.0
+cache/0/50/0/underline_position = 0.0
+cache/0/50/0/underline_thickness = 0.0
+cache/0/50/0/scale = 1.0
+cache/0/51/0/ascent = 0.0
+cache/0/51/0/descent = 0.0
+cache/0/51/0/underline_position = 0.0
+cache/0/51/0/underline_thickness = 0.0
+cache/0/51/0/scale = 1.0
+cache/0/52/0/ascent = 0.0
+cache/0/52/0/descent = 0.0
+cache/0/52/0/underline_position = 0.0
+cache/0/52/0/underline_thickness = 0.0
+cache/0/52/0/scale = 1.0
+cache/0/100/0/ascent = 0.0
+cache/0/100/0/descent = 0.0
+cache/0/100/0/underline_position = 0.0
+cache/0/100/0/underline_thickness = 0.0
+cache/0/100/0/scale = 1.0
+cache/0/80/0/ascent = 0.0
+cache/0/80/0/descent = 0.0
+cache/0/80/0/underline_position = 0.0
+cache/0/80/0/underline_thickness = 0.0
+cache/0/80/0/scale = 1.0
+cache/0/75/0/ascent = 0.0
+cache/0/75/0/descent = 0.0
+cache/0/75/0/underline_position = 0.0
+cache/0/75/0/underline_thickness = 0.0
+cache/0/75/0/scale = 1.0
 
 [sub_resource type="FontFile" id="3"]
 fallbacks = Array[Font]([ExtResource("6")])
@@ -34,6 +304,11 @@ cache/0/16/0/descent = 0.0
 cache/0/16/0/underline_position = 0.0
 cache/0/16/0/underline_thickness = 0.0
 cache/0/16/0/scale = 1.0
+cache/0/75/0/ascent = 0.0
+cache/0/75/0/descent = 0.0
+cache/0/75/0/underline_position = 0.0
+cache/0/75/0/underline_thickness = 0.0
+cache/0/75/0/scale = 1.0
 
 [sub_resource type="FontFile" id="4"]
 fallbacks = Array[Font]([ExtResource("6")])
@@ -42,10 +317,19 @@ cache/0/16/0/descent = 0.0
 cache/0/16/0/underline_position = 0.0
 cache/0/16/0/underline_thickness = 0.0
 cache/0/16/0/scale = 1.0
+cache/0/75/0/ascent = 0.0
+cache/0/75/0/descent = 0.0
+cache/0/75/0/underline_position = 0.0
+cache/0/75/0/underline_thickness = 0.0
+cache/0/75/0/scale = 1.0
 
 [node name="MenuPlay" type="Control"]
+layout_mode = 3
+anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 script = ExtResource("7")
 
 [node name="BgImage" type="Sprite2D" parent="."]
@@ -54,6 +338,7 @@ texture = ExtResource("2")
 centered = false
 
 [node name="TitleContainer" type="VBoxContainer" parent="."]
+layout_mode = 0
 anchor_left = 0.5
 anchor_right = 0.5
 offset_left = -298.5
@@ -61,24 +346,24 @@ offset_right = 298.5
 offset_bottom = 206.0
 
 [node name="PlayerName" type="Label" parent="TitleContainer"]
-offset_right = 597.0
-offset_bottom = 101.0
+layout_mode = 2
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_constants/shadow_offset_x = -3
 theme_override_fonts/font = SubResource("1")
-align = 1
+theme_override_font_sizes/font_size = 75
+horizontal_alignment = 1
 
 [node name="PlayerPoints" type="Label" parent="TitleContainer"]
-offset_top = 105.0
-offset_right = 597.0
-offset_bottom = 206.0
+layout_mode = 2
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_constants/shadow_offset_x = -3
 theme_override_fonts/font = SubResource("1")
+theme_override_font_sizes/font_size = 75
 text = "PUNTUACIÓN: 0"
-align = 1
+horizontal_alignment = 1
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 0
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -89,171 +374,118 @@ offset_right = 492.0
 offset_bottom = 413.5
 
 [node name="QuizContainer" type="CenterContainer" parent="VBoxContainer"]
-offset_right = 984.0
-offset_bottom = 273.0
+layout_mode = 2
 
 [node name="BtnQuiz" type="TextureButton" parent="VBoxContainer/QuizContainer"]
-offset_left = 247.0
-offset_right = 737.0
-offset_bottom = 273.0
+layout_mode = 2
 texture_normal = ExtResource("4")
 texture_pressed = ExtResource("5")
 texture_hover = ExtResource("5")
 texture_disabled = ExtResource("5")
-__meta__ = {
-"_editor_description_": ""
-}
 
 [node name="LblQuiz" type="Label" parent="VBoxContainer/QuizContainer"]
-offset_left = 392.0
-offset_top = 97.0
-offset_right = 592.0
-offset_bottom = 176.0
+layout_mode = 2
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_constants/shadow_offset_x = -3
 theme_override_fonts/font = ExtResource("1")
+theme_override_font_sizes/font_size = 75
 text = "TRIVIA"
 
 [node name="ButtonsContainer" type="HBoxContainer" parent="VBoxContainer"]
-offset_top = 277.0
-offset_right = 984.0
-offset_bottom = 827.0
+layout_mode = 2
 
 [node name="FirstContainer" type="VBoxContainer" parent="VBoxContainer/ButtonsContainer"]
-offset_right = 490.0
-offset_bottom = 550.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
+layout_mode = 2
 
 [node name="FishContainer" type="CenterContainer" parent="VBoxContainer/ButtonsContainer/FirstContainer"]
-offset_right = 490.0
-offset_bottom = 273.0
+layout_mode = 2
 
 [node name="BtnFish" type="TextureButton" parent="VBoxContainer/ButtonsContainer/FirstContainer/FishContainer"]
-offset_right = 490.0
-offset_bottom = 273.0
+layout_mode = 2
 texture_normal = ExtResource("4")
 texture_pressed = ExtResource("5")
 texture_hover = ExtResource("5")
 texture_disabled = ExtResource("5")
-__meta__ = {
-"_editor_description_": ""
-}
 
 [node name="LblFish" type="Label" parent="VBoxContainer/ButtonsContainer/FirstContainer/FishContainer"]
-offset_left = 66.0
-offset_top = 97.0
-offset_right = 423.0
-offset_bottom = 176.0
+layout_mode = 2
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_constants/shadow_offset_x = -3
 theme_override_fonts/font = ExtResource("1")
+theme_override_font_sizes/font_size = 75
 text = "CORALIMPIO"
 
 [node name="TimeContainer" type="CenterContainer" parent="VBoxContainer/ButtonsContainer/FirstContainer"]
-offset_top = 277.0
-offset_right = 490.0
-offset_bottom = 550.0
+layout_mode = 2
 
 [node name="BtnTime" type="TextureButton" parent="VBoxContainer/ButtonsContainer/FirstContainer/TimeContainer"]
-offset_right = 490.0
-offset_bottom = 273.0
+layout_mode = 2
 texture_normal = ExtResource("4")
 texture_pressed = ExtResource("5")
 texture_hover = ExtResource("5")
 texture_disabled = ExtResource("5")
-__meta__ = {
-"_editor_description_": ""
-}
 
 [node name="LblTime" type="Label" parent="VBoxContainer/ButtonsContainer/FirstContainer/TimeContainer"]
-offset_left = 70.0
-offset_top = 61.0
-offset_right = 420.0
-offset_bottom = 211.0
 custom_minimum_size = Vector2(350, 150)
+layout_mode = 2
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_constants/shadow_offset_x = -3
 theme_override_fonts/font = SubResource("2")
+theme_override_font_sizes/font_size = 75
 text = "PESCANDO"
-align = 1
-valign = 1
-autowrap = true
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="SecondContainer" type="VBoxContainer" parent="VBoxContainer/ButtonsContainer"]
-offset_left = 494.0
-offset_right = 984.0
-offset_bottom = 550.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
+layout_mode = 2
 
 [node name="ObstacleContainer" type="CenterContainer" parent="VBoxContainer/ButtonsContainer/SecondContainer"]
-offset_right = 490.0
-offset_bottom = 273.0
+layout_mode = 2
 
 [node name="BtnObstacle" type="TextureButton" parent="VBoxContainer/ButtonsContainer/SecondContainer/ObstacleContainer"]
-offset_right = 490.0
-offset_bottom = 273.0
+layout_mode = 2
 texture_normal = ExtResource("4")
 texture_pressed = ExtResource("5")
 texture_hover = ExtResource("5")
 texture_disabled = ExtResource("5")
-__meta__ = {
-"_editor_description_": ""
-}
 
 [node name="LblObstacle" type="Label" parent="VBoxContainer/ButtonsContainer/SecondContainer/ObstacleContainer"]
-offset_left = 70.0
-offset_top = 61.0
-offset_right = 420.0
-offset_bottom = 211.0
 custom_minimum_size = Vector2(350, 150)
+layout_mode = 2
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_constants/shadow_offset_x = -3
 theme_override_fonts/font = SubResource("3")
+theme_override_font_sizes/font_size = 75
 text = "CARRERA
 OBSTÁCULOS"
-align = 1
+horizontal_alignment = 1
 
 [node name="CleanContainer" type="CenterContainer" parent="VBoxContainer/ButtonsContainer/SecondContainer"]
-offset_top = 277.0
-offset_right = 490.0
-offset_bottom = 550.0
+layout_mode = 2
 
 [node name="BtnClean" type="TextureButton" parent="VBoxContainer/ButtonsContainer/SecondContainer/CleanContainer"]
-offset_right = 490.0
-offset_bottom = 273.0
+layout_mode = 2
 texture_normal = ExtResource("4")
 texture_pressed = ExtResource("5")
 texture_hover = ExtResource("5")
 texture_disabled = ExtResource("5")
-__meta__ = {
-"_editor_description_": ""
-}
 
 [node name="LblClean" type="Label" parent="VBoxContainer/ButtonsContainer/SecondContainer/CleanContainer"]
-offset_left = 70.0
-offset_top = 61.0
-offset_right = 420.0
-offset_bottom = 211.0
 custom_minimum_size = Vector2(350, 150)
+layout_mode = 2
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_constants/shadow_offset_x = -3
 theme_override_fonts/font = SubResource("4")
+theme_override_font_sizes/font_size = 75
 text = "COCOSTA"
-align = 1
-valign = 1
-autowrap = true
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="BtnBack" type="TextureButton" parent="."]
+layout_mode = 0
 offset_right = 255.0
 offset_bottom = 273.0
 texture_normal = ExtResource("8")
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="Options" parent="." instance=ExtResource("3")]
 

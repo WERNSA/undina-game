@@ -11,7 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://d0a1nnoytuigp" path="res://Assets/Images/Trivia/Tabla de respuestas.png" id="9"]
 [ext_resource type="FontFile" path="res://Assets/Fonts/Trivia.tres" id="10"]
 [ext_resource type="Texture2D" uid="uid://bb3vx4fecpbt7" path="res://Assets/Images/Trivia/Respuesta acertada.png" id="11"]
-[ext_resource type="PackedScene" path="res://Scenes/Pause/PauseMenu.tscn" id="12"]
+[ext_resource type="PackedScene" uid="uid://bx3dd0gnp366n" path="res://Scenes/Pause/PauseMenu.tscn" id="12"]
 [ext_resource type="PackedScene" uid="uid://7jnwei6j4avo" path="res://Scenes/Utility/Contador.tscn" id="13"]
 [ext_resource type="AudioStream" uid="uid://beaasutr35fag" path="res://Assets/Sounds/trivia.ogg" id="14"]
 [ext_resource type="Texture2D" uid="uid://rnq5bma0jvak" path="res://Assets/Images/Trivia/Encabezado contaminación.png" id="15"]
@@ -20,9 +20,9 @@
 [ext_resource type="Texture2D" uid="uid://vg4ldcjv7m84" path="res://Assets/Images/btn_arrow.png" id="18"]
 [ext_resource type="Texture2D" uid="uid://clkmbpd63s5fy" path="res://Assets/Images/Trivia/Encabezado Reciclaje.png" id="19"]
 [ext_resource type="AudioStream" uid="uid://bwkqaogcrblqo" path="res://Assets/Sounds/SFX/button_press.wav" id="20"]
-[ext_resource type="PackedScene" path="res://Scenes/Utility/GameOver/GameOver.tscn" id="21"]
-[ext_resource type="PackedScene" path="res://Scenes/Utility/Win/Win.tscn" id="22"]
-[ext_resource type="FontFile" path="res://Assets/Fonts/btnFont.tres" id="23"]
+[ext_resource type="PackedScene" uid="uid://vdvws6110l8g" path="res://Scenes/Utility/GameOver/GameOver.tscn" id="21"]
+[ext_resource type="PackedScene" uid="uid://dhpnyngl8a034" path="res://Scenes/Utility/Win/Win.tscn" id="22"]
+[ext_resource type="FontFile" uid="uid://byvaqdf2liiep" path="res://Assets/Fonts/btnFont.tres" id="23"]
 [ext_resource type="Texture2D" uid="uid://cxcyi67pybsat" path="res://Assets/Images/Fondo de contador de puntos.png" id="24"]
 
 [sub_resource type="Animation" id="5"]
@@ -702,6 +702,21 @@ cache/0/16/0/descent = 0.0
 cache/0/16/0/underline_position = 0.0
 cache/0/16/0/underline_thickness = 0.0
 cache/0/16/0/scale = 1.0
+cache/0/75/0/ascent = 0.0
+cache/0/75/0/descent = 0.0
+cache/0/75/0/underline_position = 0.0
+cache/0/75/0/underline_thickness = 0.0
+cache/0/75/0/scale = 1.0
+cache/0/100/0/ascent = 0.0
+cache/0/100/0/descent = 0.0
+cache/0/100/0/underline_position = 0.0
+cache/0/100/0/underline_thickness = 0.0
+cache/0/100/0/scale = 1.0
+cache/0/150/0/ascent = 0.0
+cache/0/150/0/descent = 0.0
+cache/0/150/0/underline_position = 0.0
+cache/0/150/0/underline_thickness = 0.0
+cache/0/150/0/scale = 1.0
 
 [sub_resource type="FontFile" id="8"]
 fallbacks = Array[Font]([ExtResource("8")])
@@ -710,6 +725,16 @@ cache/0/16/0/descent = 0.0
 cache/0/16/0/underline_position = 0.0
 cache/0/16/0/underline_thickness = 0.0
 cache/0/16/0/scale = 1.0
+cache/0/75/0/ascent = 0.0
+cache/0/75/0/descent = 0.0
+cache/0/75/0/underline_position = 0.0
+cache/0/75/0/underline_thickness = 0.0
+cache/0/75/0/scale = 1.0
+cache/0/150/0/ascent = 0.0
+cache/0/150/0/descent = 0.0
+cache/0/150/0/underline_position = 0.0
+cache/0/150/0/underline_thickness = 0.0
+cache/0/150/0/scale = 1.0
 
 [sub_resource type="FontFile" id="11"]
 fallbacks = Array[Font]([ExtResource("8")])
@@ -718,6 +743,11 @@ cache/0/16/0/descent = 0.0
 cache/0/16/0/underline_position = 0.0
 cache/0/16/0/underline_thickness = 0.0
 cache/0/16/0/scale = 1.0
+cache/0/75/0/ascent = 0.0
+cache/0/75/0/descent = 0.0
+cache/0/75/0/underline_position = 0.0
+cache/0/75/0/underline_thickness = 0.0
+cache/0/75/0/scale = 1.0
 
 [node name="Trivia" type="Node2D"]
 script = ExtResource("4")
@@ -809,9 +839,10 @@ offset_top = -955.5
 offset_right = -892.0
 offset_bottom = -704.5
 theme_override_fonts/font = ExtResource("10")
-theme_override_font_sizes/font_size = 25
+theme_override_font_sizes/font_size = 125
 horizontal_alignment = 1
 vertical_alignment = 1
+autowrap_mode = 2
 
 [node name="Answers" type="Sprite2D" parent="Trivia"]
 position = Vector2(1200, 1100)
@@ -831,6 +862,7 @@ layout_mode = 0
 anchor_right = 1.0
 anchor_bottom = 1.0
 theme_override_fonts/font = ExtResource("10")
+theme_override_font_sizes/font_size = 100
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -847,6 +879,7 @@ layout_mode = 0
 anchor_right = 1.0
 anchor_bottom = 1.0
 theme_override_fonts/font = ExtResource("10")
+theme_override_font_sizes/font_size = 100
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -863,6 +896,7 @@ layout_mode = 0
 anchor_right = 1.0
 anchor_bottom = 1.0
 theme_override_fonts/font = ExtResource("10")
+theme_override_font_sizes/font_size = 100
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -881,7 +915,9 @@ offset_left = -555.5
 offset_top = -125.5
 offset_right = 555.5
 offset_bottom = 125.5
+theme_override_colors/font_shadow_color = Color(0, 0.745098, 0, 1)
 theme_override_fonts/font = SubResource("4")
+theme_override_font_sizes/font_size = 150
 text = "¡cORRECTO!"
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -900,8 +936,10 @@ offset_left = -555.5
 offset_top = -125.5
 offset_right = 555.5
 offset_bottom = 125.5
+theme_override_colors/font_shadow_color = Color(0.745098, 0, 0, 1)
 theme_override_fonts/font = SubResource("8")
-text = "¡INCORRECTO!"
+theme_override_font_sizes/font_size = 150
+text = "¡iNCORRECTO!"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -922,6 +960,7 @@ offset_top = -281.0
 offset_right = -1800.0
 offset_bottom = -281.0
 theme_override_fonts/font = ExtResource("10")
+theme_override_font_sizes/font_size = 100
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -940,6 +979,7 @@ offset_top = -281.0
 offset_right = -1800.0
 offset_bottom = -281.0
 theme_override_fonts/font = ExtResource("10")
+theme_override_font_sizes/font_size = 100
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -958,6 +998,7 @@ offset_top = -281.0
 offset_right = -1800.0
 offset_bottom = -281.0
 theme_override_fonts/font = ExtResource("10")
+theme_override_font_sizes/font_size = 100
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -978,6 +1019,7 @@ offset_top = -281.0
 offset_right = -1800.0
 offset_bottom = -281.0
 theme_override_fonts/font = ExtResource("10")
+theme_override_font_sizes/font_size = 100
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -996,6 +1038,7 @@ offset_top = -281.0
 offset_right = -1800.0
 offset_bottom = -281.0
 theme_override_fonts/font = ExtResource("10")
+theme_override_font_sizes/font_size = 100
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -1014,6 +1057,7 @@ offset_top = -281.0
 offset_right = -1800.0
 offset_bottom = -281.0
 theme_override_fonts/font = ExtResource("10")
+theme_override_font_sizes/font_size = 100
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -1045,8 +1089,10 @@ offset_top = -1083.0
 offset_right = -713.0
 offset_bottom = -565.0
 theme_override_fonts/font = SubResource("11")
+theme_override_font_sizes/font_size = 75
 horizontal_alignment = 1
 vertical_alignment = 1
+autowrap_mode = 2
 
 [node name="btnContinue" type="TextureButton" parent="Dialog"]
 anchors_preset = 8
@@ -1058,7 +1104,7 @@ offset_left = 2783.0
 offset_top = 1182.0
 offset_right = 3038.0
 offset_bottom = 1455.0
-rotation = 180.0
+rotation = 3.14159
 scale = Vector2(0.5, 0.5)
 texture_normal = ExtResource("18")
 
@@ -1107,6 +1153,7 @@ layout_mode = 2
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_constants/shadow_offset_x = -3
 theme_override_fonts/font = ExtResource("23")
+theme_override_font_sizes/font_size = 75
 text = "00:00"
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -1119,7 +1166,8 @@ layout_mode = 2
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_constants/shadow_offset_x = -3
 theme_override_fonts/font = ExtResource("23")
-text = "INTENTOS: 0"
+theme_override_font_sizes/font_size = 75
+text = "iNTENTOS: 0"
 horizontal_alignment = 1
 vertical_alignment = 1
 

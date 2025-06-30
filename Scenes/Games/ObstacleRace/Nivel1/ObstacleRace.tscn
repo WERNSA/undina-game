@@ -1,9 +1,9 @@
-[gd_scene load_steps=21 format=3 uid="uid://3hb18o8n62d"]
+[gd_scene load_steps=22 format=3 uid="uid://3hb18o8n62d"]
 
 [ext_resource type="PackedScene" uid="uid://7jnwei6j4avo" path="res://Scenes/Utility/Contador.tscn" id="1"]
 [ext_resource type="PackedScene" uid="uid://b17rf02r12bmp" path="res://Scenes/Utility/analog/Analog.tscn" id="2"]
-[ext_resource type="PackedScene" path="res://Scenes/Pause/PauseMenu.tscn" id="3"]
-[ext_resource type="PackedScene" path="res://Scenes/Utility/shader/ShaderWindWakerBeach.tscn" id="4"]
+[ext_resource type="PackedScene" uid="uid://bx3dd0gnp366n" path="res://Scenes/Pause/PauseMenu.tscn" id="3"]
+[ext_resource type="PackedScene" uid="uid://gi1blgmjctq6" path="res://Scenes/Utility/shader/ShaderWindWakerBeach.tscn" id="4"]
 [ext_resource type="PackedScene" uid="uid://dcqx8mh5yw26n" path="res://Scenes/Entity/Turtle/Turtle.tscn" id="5"]
 [ext_resource type="PackedScene" uid="uid://bmjjc5rg4u26d" path="res://Scenes/Entity/Illea/Nadando/IleaNadando.tscn" id="6"]
 [ext_resource type="Script" uid="uid://d0xynw7a8ntdp" path="res://Scenes/Games/ObstacleRace/Nivel1/ObstacleRace.gd" id="7"]
@@ -15,10 +15,11 @@
 [ext_resource type="PackedScene" uid="uid://c8dfg0jcclk0q" path="res://Scenes/Entity/Islands/Trash/Trash4/Trash.tscn" id="13"]
 [ext_resource type="AudioStream" uid="uid://baaubl73yis7t" path="res://Assets/Sounds/obstacle_race.ogg" id="14"]
 [ext_resource type="AudioStream" uid="uid://b31j1y4wh72l8" path="res://Assets/Sounds/SFX/get_item.wav" id="15"]
-[ext_resource type="PackedScene" path="res://Scenes/Utility/GameOver/GameOver.tscn" id="16"]
-[ext_resource type="PackedScene" path="res://Scenes/Utility/Win/Win.tscn" id="17"]
-[ext_resource type="FontFile" path="res://Assets/Fonts/btnFont.tres" id="18"]
+[ext_resource type="PackedScene" uid="uid://vdvws6110l8g" path="res://Scenes/Utility/GameOver/GameOver.tscn" id="16"]
+[ext_resource type="PackedScene" uid="uid://dhpnyngl8a034" path="res://Scenes/Utility/Win/Win.tscn" id="17"]
+[ext_resource type="FontFile" uid="uid://byvaqdf2liiep" path="res://Assets/Fonts/btnFont.tres" id="18"]
 [ext_resource type="Texture2D" uid="uid://cxcyi67pybsat" path="res://Assets/Images/Fondo de contador de puntos.png" id="19"]
+[ext_resource type="Theme" uid="uid://y1ufudag5d7f" path="res://Assets/InputTheme/input_theme.tres" id="19_kr6ct"]
 
 [sub_resource type="Curve2D" id="1"]
 _data = {
@@ -125,6 +126,7 @@ layout_mode = 2
 
 [node name="Label" type="Label" parent="Timer/VBoxContainer/Timer"]
 layout_mode = 2
+theme = ExtResource("19_kr6ct")
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_constants/shadow_offset_x = -3
 theme_override_fonts/font = ExtResource("18")

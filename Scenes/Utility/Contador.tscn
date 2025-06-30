@@ -1,7 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://7jnwei6j4avo"]
+[gd_scene load_steps=7 format=3 uid="uid://7jnwei6j4avo"]
 
 [ext_resource type="FontFile" uid="uid://b2wbfrap8ifi4" path="res://Assets/Fonts/Marujo.ttf" id="1"]
 [ext_resource type="Texture2D" uid="uid://cxcyi67pybsat" path="res://Assets/Images/Fondo de contador de puntos.png" id="2"]
+[ext_resource type="Theme" uid="uid://y1ufudag5d7f" path="res://Assets/InputTheme/input_theme.tres" id="2_udp7a"]
 [ext_resource type="Texture2D" uid="uid://0h1s0ovkseux" path="res://Assets/Images/Concha.png" id="3"]
 [ext_resource type="Script" uid="uid://dgan1xry4akd5" path="res://Scenes/Utility/Contador.gd" id="4"]
 
@@ -15,6 +16,11 @@ cache/0/16/0/descent = 0.0
 cache/0/16/0/underline_position = 0.0
 cache/0/16/0/underline_thickness = 0.0
 cache/0/16/0/scale = 1.0
+cache/0/75/0/ascent = 0.0
+cache/0/75/0/descent = 0.0
+cache/0/75/0/underline_position = 0.0
+cache/0/75/0/underline_thickness = 0.0
+cache/0/75/0/scale = 1.0
 
 [node name="Contador" type="Node2D"]
 script = ExtResource("4")
@@ -32,7 +38,9 @@ layout_mode = 2
 
 [node name="Label" type="Label" parent="LblName/VBoxContainer/CenterContainer"]
 layout_mode = 2
+theme = ExtResource("2_udp7a")
 theme_override_fonts/font = SubResource("1")
+theme_override_font_sizes/font_size = 75
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -53,6 +61,7 @@ offset_bottom = 210.0
 [node name="Label" type="Label" parent="LblCount/VBoxContainer"]
 layout_mode = 2
 theme_override_fonts/font = SubResource("1")
+theme_override_font_sizes/font_size = 75
 vertical_alignment = 1
 
 [node name="FondoL" type="Sprite2D" parent="."]

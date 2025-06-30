@@ -1,4 +1,4 @@
-[gd_scene load_steps=76 format=4 uid="uid://bf5el1wic6x8"]
+[gd_scene load_steps=77 format=4 uid="uid://bf5el1wic6x8"]
 
 [ext_resource type="Texture2D" uid="uid://dyq22351fjpko" path="res://Assets/Images/UnderSeaBG/Luces 2.png" id="1"]
 [ext_resource type="Texture2D" uid="uid://yx2f1bemr7cc" path="res://Assets/Images/UnderSeaBG/Textura 3.png" id="2"]
@@ -46,10 +46,11 @@
 [ext_resource type="Shader" uid="uid://lxowyx3c70bc" path="res://Scenes/Utility/shader/UnderWater2D_obj.gdshader" id="46"]
 [ext_resource type="PackedScene" uid="uid://cpin1y8v60vls" path="res://Scenes/Entity/FishUnderSea/Fish/Fish.tscn" id="47"]
 [ext_resource type="PackedScene" uid="uid://cn40uqftph5ap" path="res://Scenes/Entity/FishUnderSea/Turtle/Turtle.tscn" id="48"]
-[ext_resource type="FontFile" path="res://Assets/Fonts/btnFont.tres" id="49"]
+[ext_resource type="FontFile" uid="uid://byvaqdf2liiep" path="res://Assets/Fonts/btnFont.tres" id="49"]
 [ext_resource type="Texture2D" uid="uid://cxcyi67pybsat" path="res://Assets/Images/Fondo de contador de puntos.png" id="50"]
 [ext_resource type="AudioStream" uid="uid://c8hxugccgxws8" path="res://Assets/Sounds/SFX/ender_punch.wav" id="51"]
 [ext_resource type="PackedScene" uid="uid://vdvws6110l8g" path="res://Scenes/Utility/GameOver/GameOver.tscn" id="52"]
+[ext_resource type="Theme" uid="uid://y1ufudag5d7f" path="res://Assets/InputTheme/input_theme.tres" id="52_8cksg"]
 [ext_resource type="PackedScene" uid="uid://dhpnyngl8a034" path="res://Scenes/Utility/Win/Win.tscn" id="53"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_f31m5"]
@@ -1076,7 +1077,6 @@ wait_time = 15.0
 one_shot = true
 
 [node name="Timer" type="Node2D" parent="."]
-visible = false
 z_index = 2
 position = Vector2(1600, -200)
 
@@ -1104,6 +1104,7 @@ layout_mode = 2
 
 [node name="LblTries" type="Label" parent="Timer/MarginContainer/VBoxContainer"]
 layout_mode = 2
+theme = ExtResource("52_8cksg")
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_constants/shadow_offset_x = -3
 theme_override_fonts/font = ExtResource("49")
@@ -1113,6 +1114,7 @@ vertical_alignment = 1
 
 [node name="LblTimer" type="Label" parent="Timer/MarginContainer/VBoxContainer"]
 layout_mode = 2
+theme = ExtResource("52_8cksg")
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_constants/shadow_offset_x = -3
 theme_override_fonts/font = ExtResource("49")

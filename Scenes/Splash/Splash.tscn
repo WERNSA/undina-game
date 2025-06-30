@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://b04dwg3f6ald1" path="res://Scenes/Splash/Images/wern-logo.png" id="3"]
 [ext_resource type="Texture2D" uid="uid://hp7w06220i47" path="res://Scenes/Splash/Images/fzt-logo.png" id="4"]
 [ext_resource type="Texture2D" uid="uid://daf2ic8wuwyx2" path="res://Assets/Images/bg_main.jpg" id="5"]
-[ext_resource type="FontFile" path="res://Assets/Fonts/btnFont.tres" id="6"]
+[ext_resource type="FontFile" uid="uid://byvaqdf2liiep" path="res://Assets/Fonts/btnFont.tres" id="6"]
 
 [sub_resource type="Animation" id="3"]
 length = 0.001
@@ -236,6 +236,7 @@ offset_bottom = 87.5
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_constants/shadow_offset_x = -3
 theme_override_fonts/font = ExtResource("6")
+theme_override_font_sizes/font_size = 75
 text = "FAMILIA
 RODRÍGUEZ VELÁSQUEZ"
 horizontal_alignment = 1

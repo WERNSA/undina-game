@@ -1,13 +1,13 @@
-[gd_scene load_steps=14 format=3 uid="uid://cvovq5vfp4iko"]
+[gd_scene load_steps=15 format=3 uid="uid://cvovq5vfp4iko"]
 
 [ext_resource type="Script" uid="uid://dv25i8ac00aae" path="res://Scenes/Menu/Scripts/Menu.gd" id="1"]
 [ext_resource type="Texture2D" uid="uid://daf2ic8wuwyx2" path="res://Assets/Images/bg_main.jpg" id="2"]
 [ext_resource type="Texture2D" uid="uid://b6lltgw6d4n6p" path="res://Scenes/Menu/Images/logo.png" id="3"]
 [ext_resource type="AudioStream" uid="uid://dh7x2r3khgr4d" path="res://Scenes/Menu/Sounds/sea-waves.ogg" id="4"]
 [ext_resource type="Texture2D" uid="uid://byxg1vidddqdh" path="res://Assets/Images/btn_yellow.png" id="5"]
-[ext_resource type="FontFile" path="res://Assets/Fonts/btnFont.tres" id="6"]
+[ext_resource type="FontFile" uid="uid://byvaqdf2liiep" path="res://Assets/Fonts/btnFont.tres" id="6"]
 [ext_resource type="FontFile" uid="uid://b2wbfrap8ifi4" path="res://Assets/Fonts/Marujo.ttf" id="7"]
-[ext_resource type="PackedScene" path="res://Scenes/Options/Options.tscn" id="8"]
+[ext_resource type="PackedScene" uid="uid://cujr43bnq6o6h" path="res://Scenes/Options/Options.tscn" id="8"]
 [ext_resource type="Texture2D" uid="uid://bafkk5ay4xpnw" path="res://Assets/Images/btn_yellow_disabled.png" id="9"]
 [ext_resource type="AudioStream" uid="uid://cbok31nb8te2p" path="res://Assets/Sounds/main_menu.ogg" id="10"]
 [ext_resource type="AudioStream" uid="uid://bwkqaogcrblqo" path="res://Assets/Sounds/SFX/button_press.wav" id="11"]
@@ -19,6 +19,11 @@ cache/0/16/0/descent = 0.0
 cache/0/16/0/underline_position = 0.0
 cache/0/16/0/underline_thickness = 0.0
 cache/0/16/0/scale = 1.0
+cache/0/75/0/ascent = 0.0
+cache/0/75/0/descent = 0.0
+cache/0/75/0/underline_position = 0.0
+cache/0/75/0/underline_thickness = 0.0
+cache/0/75/0/scale = 1.0
 
 [sub_resource type="Animation" id="2"]
 resource_name = "Init"
@@ -48,7 +53,14 @@ tracks/1/keys = {
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
 }
 
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_5buhm"]
+_data = {
+&"Init": SubResource("2")
+}
+
 [node name="Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 0
 offset_right = 3200.0
 offset_bottom = 1800.0
 script = ExtResource("1")
@@ -56,7 +68,7 @@ script = ExtResource("1")
 [node name="BgSound" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("4")
 autoplay = true
-bus = "Music"
+bus = &"Music"
 
 [node name="BgSong" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("10")
@@ -71,6 +83,7 @@ texture = ExtResource("2")
 centered = false
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 0
 anchor_left = 0.5
 anchor_right = 0.5
 offset_left = -298.5
@@ -78,22 +91,21 @@ offset_right = 298.5
 offset_bottom = 206.0
 
 [node name="PlayerName" type="Label" parent="VBoxContainer"]
-offset_right = 597.0
-offset_bottom = 101.0
+layout_mode = 2
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_constants/shadow_offset_x = -3
 theme_override_fonts/font = SubResource("1")
-align = 1
+theme_override_font_sizes/font_size = 75
+horizontal_alignment = 1
 
 [node name="PlayerPoints" type="Label" parent="VBoxContainer"]
-offset_top = 105.0
-offset_right = 597.0
-offset_bottom = 206.0
+layout_mode = 2
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_constants/shadow_offset_x = -3
 theme_override_fonts/font = SubResource("1")
+theme_override_font_sizes/font_size = 75
 text = "PUNTUACIÓN: 0"
-align = 1
+horizontal_alignment = 1
 
 [node name="Logo" type="Sprite2D" parent="."]
 position = Vector2(1600, 450)
@@ -101,6 +113,7 @@ scale = Vector2(0.5, 0.5)
 texture = ExtResource("3")
 
 [node name="ButtonsContainer" type="HBoxContainer" parent="."]
+layout_mode = 0
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -111,32 +124,21 @@ offset_bottom = 136.5
 alignment = 1
 
 [node name="PlayContainer" type="CenterContainer" parent="ButtonsContainer"]
-offset_left = 494.0
-offset_right = 984.0
-offset_bottom = 273.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
+layout_mode = 2
 
 [node name="BtnPlay" type="TextureButton" parent="ButtonsContainer/PlayContainer"]
-offset_right = 490.0
-offset_bottom = 273.0
+layout_mode = 2
 texture_normal = ExtResource("5")
 texture_pressed = ExtResource("9")
 texture_hover = ExtResource("9")
 texture_disabled = ExtResource("9")
-__meta__ = {
-"_editor_description_": ""
-}
 
 [node name="LblPlay" type="Label" parent="ButtonsContainer/PlayContainer"]
-offset_left = 141.0
-offset_top = 97.0
-offset_right = 348.0
-offset_bottom = 176.0
+layout_mode = 2
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_constants/shadow_offset_x = -3
 theme_override_fonts/font = ExtResource("6")
+theme_override_font_sizes/font_size = 100
 text = "JUGAR"
 
 [node name="Learn" type="Node2D" parent="ButtonsContainer"]
@@ -148,21 +150,14 @@ offset_right = 984.0
 offset_bottom = 273.0
 
 [node name="BtnLearn" type="TextureButton" parent="ButtonsContainer/Learn/LearnContainer"]
-offset_right = 490.0
-offset_bottom = 273.0
+layout_mode = 2
 texture_normal = ExtResource("5")
 texture_pressed = ExtResource("9")
 texture_hover = ExtResource("9")
 texture_disabled = ExtResource("9")
-__meta__ = {
-"_editor_description_": ""
-}
 
 [node name="LblLearn" type="Label" parent="ButtonsContainer/Learn/LearnContainer"]
-offset_left = 89.0
-offset_top = 97.0
-offset_right = 401.0
-offset_bottom = 176.0
+layout_mode = 2
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_constants/shadow_offset_x = -3
 theme_override_fonts/font = ExtResource("6")
@@ -177,21 +172,14 @@ offset_right = 984.0
 offset_bottom = 273.0
 
 [node name="BtnCredits" type="TextureButton" parent="ButtonsContainer/Credit/CreditContainer"]
-offset_right = 490.0
-offset_bottom = 273.0
+layout_mode = 2
 texture_normal = ExtResource("5")
 texture_pressed = ExtResource("9")
 texture_hover = ExtResource("9")
 texture_disabled = ExtResource("9")
-__meta__ = {
-"_editor_description_": ""
-}
 
 [node name="LblCredits" type="Label" parent="ButtonsContainer/Credit/CreditContainer"]
-offset_left = 108.0
-offset_top = 97.0
-offset_right = 382.0
-offset_bottom = 176.0
+layout_mode = 2
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_constants/shadow_offset_x = -3
 theme_override_fonts/font = ExtResource("6")
@@ -200,7 +188,9 @@ text = "CRÉDITOS"
 [node name="Options" parent="." instance=ExtResource("8")]
 
 [node name="AnimationInit" type="AnimationPlayer" parent="."]
-anims/Init = SubResource("2")
+libraries = {
+&"": SubResource("AnimationLibrary_5buhm")
+}
 
 [connection signal="pressed" from="ButtonsContainer/PlayContainer/BtnPlay" to="." method="_on_BtnPlay_pressed"]
 [connection signal="pressed" from="ButtonsContainer/Learn/LearnContainer/BtnLearn" to="." method="_on_BtnLearn_pressed"]

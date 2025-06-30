@@ -1,40 +1,66 @@
-[gd_scene load_steps=9 format=3 uid="uid://dhpnyngl8a034"]
+[gd_scene load_steps=10 format=3 uid="uid://dhpnyngl8a034"]
 
 [ext_resource type="FontFile" uid="uid://b2wbfrap8ifi4" path="res://Assets/Fonts/Marujo.ttf" id="1"]
 [ext_resource type="Texture2D" uid="uid://bafkk5ay4xpnw" path="res://Assets/Images/btn_yellow_disabled.png" id="2"]
+[ext_resource type="Theme" uid="uid://y1ufudag5d7f" path="res://Assets/InputTheme/input_theme.tres" id="2_aeepg"]
 [ext_resource type="Texture2D" uid="uid://byxg1vidddqdh" path="res://Assets/Images/btn_yellow.png" id="3"]
 [ext_resource type="Script" uid="uid://dlatu4ukmoew1" path="res://Scenes/Utility/Win/Win.gd" id="4"]
-[ext_resource type="FontFile" path="res://Assets/Fonts/btnFont.tres" id="5"]
+[ext_resource type="FontFile" uid="uid://byvaqdf2liiep" path="res://Assets/Fonts/btnFont.tres" id="5"]
 
 [sub_resource type="FontFile" id="1"]
 fallbacks = Array[Font]([ExtResource("1")])
+subpixel_positioning = 0
+msdf_pixel_range = 14
+msdf_size = 128
 cache/0/16/0/ascent = 0.0
 cache/0/16/0/descent = 0.0
 cache/0/16/0/underline_position = 0.0
 cache/0/16/0/underline_thickness = 0.0
 cache/0/16/0/scale = 1.0
+cache/0/75/0/ascent = 0.0
+cache/0/75/0/descent = 0.0
+cache/0/75/0/underline_position = 0.0
+cache/0/75/0/underline_thickness = 0.0
+cache/0/75/0/scale = 1.0
 
 [sub_resource type="FontFile" id="2"]
 fallbacks = Array[Font]([ExtResource("1")])
+subpixel_positioning = 0
+msdf_pixel_range = 14
+msdf_size = 128
 cache/0/16/0/ascent = 0.0
 cache/0/16/0/descent = 0.0
 cache/0/16/0/underline_position = 0.0
 cache/0/16/0/underline_thickness = 0.0
 cache/0/16/0/scale = 1.0
+cache/0/75/0/ascent = 0.0
+cache/0/75/0/descent = 0.0
+cache/0/75/0/underline_position = 0.0
+cache/0/75/0/underline_thickness = 0.0
+cache/0/75/0/scale = 1.0
 
 [sub_resource type="FontFile" id="3"]
 fallbacks = Array[Font]([ExtResource("1")])
+subpixel_positioning = 0
+msdf_pixel_range = 14
+msdf_size = 128
 cache/0/16/0/ascent = 0.0
 cache/0/16/0/descent = 0.0
 cache/0/16/0/underline_position = 0.0
 cache/0/16/0/underline_thickness = 0.0
 cache/0/16/0/scale = 1.0
+cache/0/75/0/ascent = 0.0
+cache/0/75/0/descent = 0.0
+cache/0/75/0/underline_position = 0.0
+cache/0/75/0/underline_thickness = 0.0
+cache/0/75/0/scale = 1.0
 
 [node name="Win" type="Node2D"]
 z_index = 200
 script = ExtResource("4")
 
 [node name="ColorRect" type="ColorRect" parent="."]
+anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -44,6 +70,7 @@ offset_bottom = 1800.0
 color = Color(0, 0, 0, 0.392157)
 
 [node name="CenterContainer" type="VBoxContainer" parent="."]
+anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -53,44 +80,36 @@ offset_bottom = 1800.0
 alignment = 1
 
 [node name="Label" type="Label" parent="CenterContainer"]
-offset_top = 594.0
-offset_right = 3200.0
-offset_bottom = 845.0
+layout_mode = 2
+theme = ExtResource("2_aeepg")
 theme_override_fonts/font = SubResource("1")
 text = "¡GANASTE!"
-align = 1
-valign = 1
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="LblPuntuacion" type="Label" parent="CenterContainer"]
-offset_top = 849.0
-offset_right = 3200.0
-offset_bottom = 928.0
+layout_mode = 2
+theme = ExtResource("2_aeepg")
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_constants/shadow_offset_x = -3
 theme_override_fonts/font = ExtResource("5")
 text = "PUNTUACIÓN: 0"
-align = 1
-valign = 1
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="HBoxContainer" type="HBoxContainer" parent="CenterContainer"]
-offset_top = 932.0
-offset_right = 3200.0
-offset_bottom = 1205.0
+layout_mode = 2
 alignment = 1
 
 [node name="BtnTry" type="TextureButton" parent="CenterContainer/HBoxContainer"]
-offset_left = 1108.0
-offset_right = 1598.0
-offset_bottom = 273.0
+layout_mode = 2
 texture_normal = ExtResource("3")
 texture_pressed = ExtResource("2")
 texture_hover = ExtResource("2")
 texture_disabled = ExtResource("2")
-__meta__ = {
-"_editor_description_": ""
-}
 
 [node name="Label" type="Label" parent="CenterContainer/HBoxContainer/BtnTry"]
+layout_mode = 0
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -99,35 +118,33 @@ offset_left = -178.5
 offset_top = -39.5
 offset_right = 178.5
 offset_bottom = 39.5
+theme = ExtResource("2_aeepg")
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_constants/shadow_offset_x = -3
 theme_override_fonts/font = SubResource("2")
 text = "REINTENTAR"
-align = 1
-valign = 1
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="BtnMenu" type="TextureButton" parent="CenterContainer/HBoxContainer"]
-offset_left = 1602.0
-offset_right = 2092.0
-offset_bottom = 273.0
+layout_mode = 2
 texture_normal = ExtResource("3")
 texture_pressed = ExtResource("2")
 texture_hover = ExtResource("2")
 texture_disabled = ExtResource("2")
-__meta__ = {
-"_editor_description_": ""
-}
 
 [node name="Label" type="Label" parent="CenterContainer/HBoxContainer/BtnMenu"]
+layout_mode = 0
 offset_left = 66.0
 offset_top = 97.0
 offset_right = 423.0
 offset_bottom = 176.0
+theme = ExtResource("2_aeepg")
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_constants/shadow_offset_x = -3
 theme_override_fonts/font = SubResource("3")
 text = "MENÚ"
-align = 1
-valign = 1
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [connection signal="pressed" from="CenterContainer/HBoxContainer/BtnMenu" to="." method="_on_BtnMenu_pressed"]
