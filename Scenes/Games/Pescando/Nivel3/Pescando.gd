@@ -46,120 +46,7 @@ var turtle_initial_position = [
 	Vector2(1400, 1900)
 ]
 
-var turtle_trash_position = [
-	{
-		"turtle": Vector2(575, 500),
-		"trash": Vector2(700, 500),
-	},
-	{
-		"turtle": Vector2(1550, 1310),
-		"trash": Vector2(1550, 1310),
-	},
-	{
-		"turtle": Vector2(1075, 1320),
-		"trash": Vector2(1200, 1320),
-	},
-	{
-		"turtle": Vector2(875, 820),
-		"trash": Vector2(750, 820),
-	},
-	{
-		"turtle": Vector2(375, 1650),
-		"trash": Vector2(500, 1650),
-	},
-	{
-		"turtle": Vector2(3025, 1000),
-		"trash": Vector2(2900, 1000),
-	},
-	{
-		"turtle": Vector2(375, 1310),
-		"trash": Vector2(500, 1310),
-	},
-	{
-		"turtle": Vector2(1275, 860),
-		"trash": Vector2(1400, 860),
-	},
-	{
-		"turtle": Vector2(3200, 820),
-		"trash": Vector2(3075, 820),
-	},
-	{
-		"turtle": Vector2(2725, 530),
-		"trash": Vector2(2600, 530),
-	},
-	{
-		"turtle": Vector2(2025, 1700),
-		"trash": Vector2(1900, 1700),
-	},
-	{
-		"turtle": Vector2(1125, 1670),
-		"trash": Vector2(1000, 1670),
-	},
-	{
-		"turtle": Vector2(1475, 1330),
-		"trash": Vector2(1350, 1330),
-	},
-	{
-		"turtle": Vector2(175, 1180),
-		"trash": Vector2(300, 1180),
-	},
-	{
-		"turtle": Vector2(1275, 1650),
-		"trash": Vector2(1400, 1650),
-	},
-	{
-		"turtle": Vector2(200, 900),
-		"trash": Vector2(325, 900),
-	},
-	{
-		"turtle": Vector2(2775, 1375),
-		"trash": Vector2(2650, 1375),
-	},
-	{
-		"turtle": Vector2(1675, 1320),
-		"trash": Vector2(1800, 1320),
-	},
-	{
-		"turtle": Vector2(575, 1325),
-		"trash": Vector2(700, 1325),
-	},
-	{
-		"turtle": Vector2(2575, 840),
-		"trash": Vector2(2700, 840),
-	},
-	{
-		"turtle": Vector2(2175, 1700),
-		"trash": Vector2(2300, 1700),
-	},
-	{
-		"turtle": Vector2(2025, 850),
-		"trash": Vector2(1900, 850),
-	},
-	{
-		"turtle": Vector2(2225, 1320),
-		"trash": Vector2(2100, 1320),
-	},
-	{
-		"turtle": Vector2(3075, 520),
-		"trash": Vector2(2950, 520),
-	},
-	{
-		"turtle": Vector2(2475, 520),
-		"trash": Vector2(2350, 520),
-	},
-	{
-		"turtle": Vector2(3125, 1300),
-		"trash": Vector2(3000, 1300),
-	},
-	{
-		"turtle": Vector2(2225, 650),
-		"trash": Vector2(2100, 650),
-	},
-	{
-		"turtle": Vector2(2475, 1320),
-		"trash": Vector2(2350, 1320),
-	},
-]
+@onready var turtle_trash_position : Array[Node] = $Trash.get_children()
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -217,16 +104,45 @@ func move_barracuda():
 		$Fish/Barracuda, "position", target, 2
 	).set_trans(Tween.TRANS_LINEAR).set_ease(Tween.EASE_IN_OUT)
 
-func move_turtle():
-	var _initial_position = turtle_initial_position[Global.random_int(0, turtle_initial_position.size() - 1)]
+func get_trash_index():
 	turtle_position_idx = Global.random_int(0, turtle_trash_position.size() - 1)
-	var _final_position = turtle_trash_position[turtle_position_idx]
-	$FishBG/Turtle._set_flip_h(_initial_position.x > _final_position["turtle"].x)
-	actual_trash_position = _final_position["trash"]
+	if is_instance_valid(turtle_trash_position[turtle_position_idx]):
+		return
+	get_trash_index()
 
-	$FishBG.create_tween().tween_property(
-		$FishBG/Turtle, "position", _final_position["turtle"], 3
+func move_turtle():
+	var init_pos = turtle_initial_position[Global.random_int(0, turtle_initial_position.size() - 1)]
+	get_trash_index()
+	var final_pos : CharacterBody2D = turtle_trash_position[turtle_position_idx]
+
+	$FishBG/Turtle._set_flip_h(init_pos.x > final_pos.position.x)
+	$FishBG/Turtle.position = init_pos
+
+	var tween = create_tween()
+	tween.tween_property(
+		$FishBG/Turtle,
+		"position",
+		final_pos.position,
+		3
 	).set_trans(Tween.TRANS_LINEAR).set_ease(Tween.EASE_IN_OUT)
+	tween.connect("finished", _on_TurtleTween_tween_completed)
+
+	actual_trash_position = final_pos.position
+
+func _on_TurtleTween_tween_completed():
+	if game_over:
+		return
+	if not turtle_initial_position.has($FishBG/Turtle.position):		
+		if $FishBG/Turtle.position == actual_trash_position && is_instance_valid(turtle_trash_position[turtle_position_idx]):
+			$Timer/Timer.start()
+			show_timer(true)
+			var flipped = $FishBG/Turtle.position.x > turtle_trash_position[turtle_position_idx].position.x
+			$FishBG/Turtle._set_flip_h(flipped)
+			var margin_pos = 100
+			$FishBG/Turtle.position.x += margin_pos if flipped else (margin_pos * -1)
+			$FishBG/Turtle._set_eating(true)
+		else:
+			hide_turtle()
 
 func _on_Timer_timeout():
 	$Timer/Timer.stop()
@@ -265,16 +181,16 @@ func show_timer(is_show : bool):
 	$Timer/Timer.start()
 
 func remove_trash_turtle(pos: Vector2):
-	var _idx = 0
-	var _found = false
-	for p in turtle_trash_position:
-		if p["trash"] == pos:
-			_found = true
-			break
-		_idx += 1
-	if _found:
-		var trash_pos = turtle_trash_position.pop_at(_idx)
-		if trash_pos["trash"] == actual_trash_position:
+	var index := -1
+	for i in turtle_trash_position.size():
+		if is_instance_valid(turtle_initial_position[i]):
+			if turtle_trash_position[i].position == pos:
+				index = i
+				break
+		else: index = 0
+	if index != -1:
+		var removed = turtle_trash_position.pop_at(index)
+		if removed.position == actual_trash_position:
 			if $Timer.position.y != -200:
 				show_timer(false)
 			hide_turtle()

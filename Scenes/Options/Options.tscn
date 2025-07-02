@@ -989,17 +989,26 @@ cache/0/193/0/underline_position = 0.0
 cache/0/193/0/underline_thickness = 0.0
 cache/0/193/0/scale = 1.0
 
-[sub_resource type="StyleBoxTexture" id="5"]
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_tor1p"]
+content_margin_left = 13.0
+content_margin_top = 18.0
+content_margin_right = 9.0
+content_margin_bottom = 25.0
 texture = ExtResource("18")
-region_rect = Rect2(128.534, 60.6043, 1353.1, 246.838)
 
-[sub_resource type="StyleBoxTexture" id="3"]
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_bnt03"]
+content_margin_left = 15.0
+content_margin_top = 25.0
+content_margin_right = 13.0
+content_margin_bottom = 32.0
 texture = ExtResource("19")
-region_rect = Rect2(148, 85, 1314, 200)
 
-[sub_resource type="StyleBoxTexture" id="4"]
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_hccrg"]
+content_margin_left = 15.0
+content_margin_top = 25.0
+content_margin_right = 15.0
+content_margin_bottom = 33.0
 texture = ExtResource("19")
-region_rect = Rect2(148, 85, 1314, 200)
 
 [node name="Options" type="Node2D"]
 script = ExtResource("3")
@@ -1136,19 +1145,18 @@ text = "MÚSICA"
 
 [node name="SliderMusic" type="HSlider" parent="AudioSettings"]
 layout_mode = 0
-offset_left = 1268.0
-offset_top = 722.0
-offset_right = 2621.0
-offset_bottom = 968.0
-scale = Vector2(0.5, 0.3)
+offset_left = 1225.0
+offset_top = 687.0
+offset_right = 1845.0
+offset_bottom = 822.0
 theme = ExtResource("21")
 theme_override_icons/grabber = ExtResource("20")
 theme_override_icons/grabber_highlight = ExtResource("20")
 theme_override_icons/grabber_disabled = ExtResource("20")
 theme_override_icons/tick = ExtResource("20")
-theme_override_styles/slider = SubResource("5")
-theme_override_styles/grabber_area = SubResource("3")
-theme_override_styles/grabber_area_highlight = SubResource("4")
+theme_override_styles/slider = SubResource("StyleBoxTexture_tor1p")
+theme_override_styles/grabber_area = SubResource("StyleBoxTexture_bnt03")
+theme_override_styles/grabber_area_highlight = SubResource("StyleBoxTexture_hccrg")
 min_value = -40.0
 max_value = 0.0
 
@@ -1165,19 +1173,18 @@ text = "VOCES"
 
 [node name="SliderVoices" type="HSlider" parent="AudioSettings"]
 layout_mode = 0
-offset_left = 1268.0
-offset_top = 858.0
-offset_right = 2621.0
-offset_bottom = 1104.0
-scale = Vector2(0.5, 0.3)
+offset_left = 1225.0
+offset_top = 826.0
+offset_right = 1845.0
+offset_bottom = 961.0
 theme = ExtResource("21")
 theme_override_icons/grabber = ExtResource("20")
 theme_override_icons/grabber_highlight = ExtResource("20")
 theme_override_icons/grabber_disabled = ExtResource("20")
 theme_override_icons/tick = ExtResource("20")
-theme_override_styles/slider = SubResource("5")
-theme_override_styles/grabber_area = SubResource("3")
-theme_override_styles/grabber_area_highlight = SubResource("4")
+theme_override_styles/slider = SubResource("StyleBoxTexture_tor1p")
+theme_override_styles/grabber_area = SubResource("StyleBoxTexture_bnt03")
+theme_override_styles/grabber_area_highlight = SubResource("StyleBoxTexture_hccrg")
 min_value = -40.0
 max_value = 0.0
 
@@ -1194,19 +1201,18 @@ text = "EFECTOS DE SONIDO"
 
 [node name="SliderSFX" type="HSlider" parent="AudioSettings"]
 layout_mode = 0
-offset_left = 1268.0
-offset_top = 991.0
-offset_right = 2621.0
-offset_bottom = 1237.0
-scale = Vector2(0.5, 0.3)
+offset_left = 1225.0
+offset_top = 963.0
+offset_right = 1845.0
+offset_bottom = 1098.0
 theme = ExtResource("21")
 theme_override_icons/grabber = ExtResource("20")
 theme_override_icons/grabber_highlight = ExtResource("20")
 theme_override_icons/grabber_disabled = ExtResource("20")
 theme_override_icons/tick = ExtResource("20")
-theme_override_styles/slider = SubResource("5")
-theme_override_styles/grabber_area = SubResource("3")
-theme_override_styles/grabber_area_highlight = SubResource("4")
+theme_override_styles/slider = SubResource("StyleBoxTexture_tor1p")
+theme_override_styles/grabber_area = SubResource("StyleBoxTexture_bnt03")
+theme_override_styles/grabber_area_highlight = SubResource("StyleBoxTexture_hccrg")
 min_value = -40.0
 max_value = 0.0
 
@@ -1263,7 +1269,7 @@ stream = ExtResource("22")
 [connection signal="pressed" from="ConfirmExit/Sprite2D/VBoxContainer/HBoxContainer/btnNo" to="." method="_on_btnNo_pressed"]
 [connection signal="pressed" from="AudioSettings/BtnAccept" to="." method="_on_BtnAccept_pressed"]
 [connection signal="value_changed" from="AudioSettings/SliderMusic" to="." method="_on_SliderMusic_value_changed"]
-[connection signal="value_changed" from="AudioSettings/SliderVoices" to="." method="_on_SliderVoices_value_changed"]
-[connection signal="value_changed" from="AudioSettings/SliderSFX" to="." method="_on_SliderSFX_value_changed"]
+[connection signal="value_changed" from="AudioSettings/SliderVoices" to="." method="_on_SliderMusic_value_changed"]
+[connection signal="value_changed" from="AudioSettings/SliderSFX" to="." method="_on_SliderMusic_value_changed"]
 [connection signal="pressed" from="AudioSettings/BtnBack" to="." method="_on_BtnBack_pressed"]
 [connection signal="pressed" from="AudioSettings/BtnMute" to="." method="_on_BtnMute_pressed"]

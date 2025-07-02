@@ -1,4 +1,4 @@
-[gd_scene load_steps=81 format=3 uid="uid://bnj330f1fu54v"]
+[gd_scene load_steps=78 format=4 uid="uid://bnj330f1fu54v"]
 
 [ext_resource type="Texture2D" uid="uid://dyq22351fjpko" path="res://Assets/Images/UnderSeaBG/Luces 2.png" id="1"]
 [ext_resource type="Texture2D" uid="uid://yx2f1bemr7cc" path="res://Assets/Images/UnderSeaBG/Textura 3.png" id="2"]
@@ -23,7 +23,6 @@
 [ext_resource type="Texture2D" uid="uid://ck466vdlv2g6h" path="res://Assets/Images/UnderSeaBG/Items/Coral astas de reno.png" id="21"]
 [ext_resource type="Texture2D" uid="uid://bssntaqsuhsvm" path="res://Assets/Images/UnderSeaBG/Items/Coral pilar.png" id="22"]
 [ext_resource type="PackedScene" uid="uid://b17rf02r12bmp" path="res://Scenes/Utility/analog/Analog.tscn" id="23"]
-[ext_resource type="PackedScene" path="res://Scenes/Utility/shader/ShaderSea.tscn" id="24"]
 [ext_resource type="Texture2D" uid="uid://b7svpsrygn35b" path="res://Assets/Images/UnderSeaBG/Items/Lancha a motor.png" id="25"]
 [ext_resource type="Texture2D" uid="uid://dyebpwfvkpoo" path="res://Assets/Images/UnderSeaBG/Items/botella.png" id="26"]
 [ext_resource type="Texture2D" uid="uid://b4kwuswpk3y3r" path="res://Assets/Images/UnderSeaBG/Garra Media.png" id="27"]
@@ -39,9 +38,7 @@
 [ext_resource type="Texture2D" uid="uid://bcgsxay8df3o4" path="res://Assets/Images/UnderSeaBG/Items/Trash/Jeringa.png" id="37"]
 [ext_resource type="Texture2D" uid="uid://b7f8ph0u00odd" path="res://Assets/Images/UnderSeaBG/Items/Trash/Cuchara.png" id="38"]
 [ext_resource type="Script" uid="uid://bcybbewon6ehi" path="res://Scenes/Games/Pescando/Trash/Cuchara.gd" id="39"]
-[ext_resource type="PackedScene" path="res://Scenes/Pause/PauseMenu.tscn" id="40"]
-[ext_resource type="Texture2D" uid="uid://ch4y4o5dfs0dv" path="res://Assets/Images/UnderSeaBG/Items/Trash/trampa.png" id="41"]
-[ext_resource type="Script" uid="uid://cj2215gplbixp" path="res://Scenes/Games/Pescando/Nivel1/Trampa.gd" id="42"]
+[ext_resource type="PackedScene" uid="uid://bx3dd0gnp366n" path="res://Scenes/Pause/PauseMenu.tscn" id="40"]
 [ext_resource type="Texture2D" uid="uid://ci25ddid2nf48" path="res://Assets/Images/UnderSeaBG/Luces de olas 2.png" id="43"]
 [ext_resource type="Texture2D" uid="uid://c2ymb4h0iqc8i" path="res://Assets/Images/Tilesets/Rocas flotantes movedisas.png" id="44"]
 [ext_resource type="Texture2D" uid="uid://biff3qsxr6nx4" path="res://Assets/Images/UnderSeaBG/Items/Barco en el fondo.png" id="45"]
@@ -49,21 +46,24 @@
 [ext_resource type="AudioStream" uid="uid://c8hxugccgxws8" path="res://Assets/Sounds/SFX/ender_punch.wav" id="47"]
 [ext_resource type="PackedScene" uid="uid://cpin1y8v60vls" path="res://Scenes/Entity/FishUnderSea/Fish/Fish.tscn" id="48"]
 [ext_resource type="Texture2D" uid="uid://gggg5x3ab7w0" path="res://Assets/Images/UnderSeaBG/Items/Fish/barracuda.png" id="49"]
-[ext_resource type="PackedScene" path="res://Scenes/Utility/GameOver/GameOver.tscn" id="50"]
-[ext_resource type="PackedScene" path="res://Scenes/Utility/Win/Win.tscn" id="51"]
+[ext_resource type="PackedScene" uid="uid://vdvws6110l8g" path="res://Scenes/Utility/GameOver/GameOver.tscn" id="50"]
+[ext_resource type="PackedScene" uid="uid://dhpnyngl8a034" path="res://Scenes/Utility/Win/Win.tscn" id="51"]
 [ext_resource type="PackedScene" uid="uid://cn40uqftph5ap" path="res://Scenes/Entity/FishUnderSea/Turtle/Turtle.tscn" id="52"]
-[ext_resource type="FontFile" path="res://Assets/Fonts/btnFont.tres" id="53"]
+[ext_resource type="FontFile" uid="uid://byvaqdf2liiep" path="res://Assets/Fonts/btnFont.tres" id="53"]
 [ext_resource type="Texture2D" uid="uid://cxcyi67pybsat" path="res://Assets/Images/Fondo de contador de puntos.png" id="54"]
+[ext_resource type="Theme" uid="uid://y1ufudag5d7f" path="res://Assets/InputTheme/input_theme.tres" id="54_0qgnf"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vt3j4"]
 texture = ExtResource("13")
-texture_region_size = Vector2i(80, 80)
+texture_region_size = Vector2i(60, 60)
+0:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0qgnf"]
 texture = ExtResource("13")
+texture_region_size = Vector2i(60, 60)
 0:0/next_alternative_id = 8
 0:0/0 = 0
-0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-30, -30, 30, -30, 30, 30, -30, 30)
 0:0/1 = 1
 0:0/1/flip_h = true
 0:0/1/physics_layer_0/polygon_0/points = PackedVector2Array(8, -8, -8, -8, -8, 8, 8, 8)
@@ -92,7 +92,7 @@ texture = ExtResource("13")
 0:0/7/physics_layer_0/polygon_0/points = PackedVector2Array(8, 8, 8, -8, -8, -8, -8, 8)
 
 [sub_resource type="TileSet" id="3"]
-tile_size = Vector2i(80, 80)
+tile_size = Vector2i(60, 60)
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_vt3j4")
 sources/1 = SubResource("TileSetAtlasSource_0qgnf")
@@ -237,9 +237,6 @@ height = 504.0
 radius = 27.1021
 height = 54.2041
 
-[sub_resource type="RectangleShape2D" id="124"]
-size = Vector2(74.0002, 71.428)
-
 [sub_resource type="CapsuleShape2D" id="122"]
 radius = 22.0
 height = 162.0
@@ -275,7 +272,6 @@ radius = 19.9751
 height = 367.469
 
 [node name="Pescando" type="Node2D" groups=["level_pesca"]]
-position = Vector2(1, -1)
 script = ExtResource("10")
 FishBG = ExtResource("48")
 
@@ -400,15 +396,18 @@ visible = false
 
 [node name="Layer0" type="TileMapLayer" parent="Collisions/Terrain"]
 use_parent_material = true
+tile_map_data = PackedByteArray("AAAAAAgAAQAAAAAAAAABAAgAAQAAAAAAAAACAAkAAQAAAAAAAAADAAoAAQAAAAAAAAAEAAoAAQAAAAAAAAAEAAsAAQAAAAAAAAADAAwAAQAAAAAAAAACAAwAAQAAAAAAAAABAA0AAQAAAAAAAAABAA4AAQAAAAAAAAABAA8AAQAAAAAAAAABABAAAQAAAAAAAAACABEAAQAAAAAAAAADABEAAQAAAAAAAAAEABEAAQAAAAAAAAAFABEAAQAAAAAAAAAGABEAAQAAAAAAAAAHABEAAQAAAAAAAAAIABEAAQAAAAAAAAAJABEAAQAAAAAAAAAKABEAAQAAAAAAAAALABEAAQAAAAAAAAAMABEAAQAAAAAAAAANABAAAQAAAAAAAAANAA8AAQAAAAAAAAANAA4AAQAAAAAAAAANAA0AAQAAAAAAAAANAAwAAQAAAAAAAAAMAAwAAQAAAAAAAAALAAwAAQAAAAAAAAAKAAwAAQAAAAAAAAAJAAwAAQAAAAAAAAALAAsAAQAAAAAAAAALAAoAAQAAAAAAAAAMAAoAAQAAAAAAAAANAAoAAQAAAAAAAAAOAAoAAQAAAAAAAAAPAAoAAQAAAAAAAAAQAAoAAQAAAAAAAAAQAAkAAQAAAAAAAAARAAkAAQAAAAAAAAASAAkAAQAAAAAAAAATAAkAAQAAAAAAAAAUAAkAAQAAAAAAAAAVAAkAAQAAAAAAAAAVAAoAAQAAAAAAAAAVAAsAAQAAAAAAAAAWAAsAAQAAAAAAAAAXAAsAAQAAAAAAAAAYAAsAAQAAAAAAAAAYAAwAAQAAAAAAAAAXAAwAAQAAAAAAAAAWAAwAAQAAAAAAAAAVAAwAAQAAAAAAAAATAAwAAQAAAAAAAAAUAAwAAQAAAAAAAAARAAwAAQAAAAAAAAASAAwAAQAAAAAAAAAQAAwAAQAAAAAAAAAPAAwAAQAAAAAAAAAPAA0AAQAAAAAAAAAPAA4AAQAAAAAAAAAPAA8AAQAAAAAAAAAPABAAAQAAAAAAAAAPABEAAQAAAAAAAAAQABIAAQAAAAAAAAARABIAAQAAAAAAAAARABMAAQAAAAAAAAAQABMAAQAAAAAAAAAPABMAAQAAAAAAAAAOABMAAQAAAAAAAAANABMAAQAAAAAAAAAMABMAAQAAAAAAAAALABMAAQAAAAAAAAAKABMAAQAAAAAAAAAAABMAAQAAAAAAAAABABMAAQAAAAAAAAACABMAAQAAAAAAAAADABMAAQAAAAAAAAAEABMAAQAAAAAAAAAFABMAAQAAAAAAAAAGABMAAQAAAAAAAAAHABMAAQAAAAAAAAAIABMAAQAAAAAAAAAJABMAAQAAAAAAAAD//xQAAQAAAAAAAAD//xUAAQAAAAAAAAD//xYAAQAAAAAAAAD//xcAAQAAAAAAAAD//xgAAQAAAAAAAAD//xkAAQAAAAAAAAD//xoAAQAAAAAAAAD//xsAAQAAAAAAAAD//xwAAQAAAAAAAAD//x0AAQAAAAAAAAD//x4AAQAAAAAAAAAAAB4AAQAAAAAAAAABAB4AAQAAAAAAAAACAB4AAQAAAAAAAAADAB4AAQAAAAAAAAADAB0AAQAAAAAAAAADABwAAQAAAAAAAAADABsAAQAAAAAAAAADABoAAQAAAAAAAAADABkAAQAAAAAAAAADABgAAQAAAAAAAAAEABgAAQAAAAAAAAAFABgAAQAAAAAAAAAFABkAAQAAAAAAAAAFABoAAQAAAAAAAAAFABsAAQAAAAAAAAAFABwAAQAAAAAAAAAFAB0AAQAAAAAAAAAFAB4AAQAAAAAAAAAGAB4AAQAAAAAAAAAHAB4AAQAAAAAAAAAIAB4AAQAAAAAAAAAJAB4AAQAAAAAAAAAKAB4AAQAAAAAAAAALAB4AAQAAAAAAAAAMAB4AAQAAAAAAAAANAB4AAQAAAAAAAAAOAB4AAQAAAAAAAAAPAB4AAQAAAAAAAAAQAB4AAQAAAAAAAAARAB4AAQAAAAAAAAASAB4AAQAAAAAAAAATAB4AAQAAAAAAAAAUAB4AAQAAAAAAAAAVAB4AAQAAAAAAAAAWAB4AAQAAAAAAAAAXAB4AAQAAAAAAAAAYAB4AAQAAAAAAAAAZAB4AAQAAAAAAAAAaAB4AAQAAAAAAAAAbAB4AAQAAAAAAAAAcAB4AAQAAAAAAAAAdAB4AAQAAAAAAAAAeAB4AAQAAAAAAAAAfAB4AAQAAAAAAAAAgAB4AAQAAAAAAAAAhAB4AAQAAAAAAAAAiAB4AAQAAAAAAAAAjAB4AAQAAAAAAAAAkAB4AAQAAAAAAAAAlAB4AAQAAAAAAAAAmAB4AAQAAAAAAAAAnAB4AAQAAAAAAAAAoAB4AAQAAAAAAAAApAB4AAQAAAAAAAAAqAB4AAQAAAAAAAAArAB4AAQAAAAAAAAAsAB4AAQAAAAAAAAAtAB4AAQAAAAAAAAAzAB4AAQAAAAAAAAAzAB0AAQAAAAAAAAAzABwAAQAAAAAAAAAzABsAAQAAAAAAAAAzABoAAQAAAAAAAAAzABkAAQAAAAAAAAAzABgAAQAAAAAAAAAzABcAAQAAAAAAAAAzABYAAQAAAAAAAAAzABUAAQAAAAAAAAAzABQAAQAAAAAAAAAzABMAAQAAAAAAAAAzABIAAQAAAAAAAAAzABEAAQAAAAAAAAAzABAAAQAAAAAAAAAzAA8AAQAAAAAAAAAzAA4AAQAAAAAAAAA0AAwAAQAAAAAAAAA0AA0AAQAAAAAAAAA0AAsAAQAAAAAAAAA0AAoAAQAAAAAAAAA0AAkAAQAAAAAAAAA0AAgAAQAAAAAAAAAtAAgAAQAAAAAAAAAuAAgAAQAAAAAAAAAvAAgAAQAAAAAAAAAwAAgAAQAAAAAAAAAxAAgAAQAAAAAAAAAyAAgAAQAAAAAAAAAzAAgAAQAAAAAAAAAuAAcAAQAAAAAAAAAuAAYAAQAAAAAAAAAfAAcAAQAAAAAAAAAgAAcAAQAAAAAAAAAhAAcAAQAAAAAAAAAiAAcAAQAAAAAAAAAeAAgAAQAAAAAAAAAdAAgAAQAAAAAAAAAdAAkAAQAAAAAAAAAdAAoAAQAAAAAAAAAdAAsAAQAAAAAAAAAdAAwAAQAAAAAAAAAeAAwAAQAAAAAAAAAfAAwAAQAAAAAAAAAgAAwAAQAAAAAAAAAhAAwAAQAAAAAAAAAiAAwAAQAAAAAAAAAjAAwAAQAAAAAAAAAkAAwAAQAAAAAAAAAlAAwAAQAAAAAAAAAlAA0AAQAAAAAAAAAlAA4AAQAAAAAAAAAmAA4AAQAAAAAAAAAnAA4AAQAAAAAAAAAoAA8AAQAAAAAAAAApAA8AAQAAAAAAAAAqAA8AAQAAAAAAAAArAA8AAQAAAAAAAAAsAA8AAQAAAAAAAAAtAA8AAQAAAAAAAAAuAA8AAQAAAAAAAAAvAA8AAQAAAAAAAAAwAA8AAQAAAAAAAAAwAA4AAQAAAAAAAAAvAA4AAQAAAAAAAAAuAA4AAQAAAAAAAAAtAA4AAQAAAAAAAAAsAA4AAQAAAAAAAAArAA4AAQAAAAAAAAAqAA4AAQAAAAAAAAApAA0AAQAAAAAAAAApAAwAAQAAAAAAAAApAAsAAQAAAAAAAAApAAoAAQAAAAAAAAAoAAoAAQAAAAAAAAAnAAoAAQAAAAAAAAAmAAoAAQAAAAAAAAAlAAoAAQAAAAAAAAAkAAoAAQAAAAAAAAAkAAkAAQAAAAAAAAAkAAgAAQAAAAAAAAAjAAgAAQAAAAAAAAAgABkAAQAAAAAAAAAgABgAAQAAAAAAAAAgABcAAQAAAAAAAAAgABYAAQAAAAAAAAAfABYAAQAAAAAAAAAeABYAAQAAAAAAAAAdABUAAQAAAAAAAAAcABUAAQAAAAAAAAAcABQAAQAAAAAAAAAbABMAAQAAAAAAAAAaABIAAQAAAAAAAAAZABIAAQAAAAAAAAAYABEAAQAAAAAAAAAXABEAAQAAAAAAAAAZABEAAQAAAAAAAAAaABEAAQAAAAAAAAAbABEAAQAAAAAAAAAcABEAAQAAAAAAAAAdABEAAQAAAAAAAAAeABEAAQAAAAAAAAAfABEAAQAAAAAAAAAgABEAAQAAAAAAAAAhABEAAQAAAAAAAAAiABEAAQAAAAAAAAAjABEAAQAAAAAAAAAjABIAAQAAAAAAAAAjABMAAQAAAAAAAAAiABMAAQAAAAAAAAAiABQAAQAAAAAAAAAiABUAAQAAAAAAAAAiABYAAQAAAAAAAAAiABcAAQAAAAAAAAAiABgAAQAAAAAAAAAiABkAAQAAAAAAAAAhABkAAQAAAAAAAAAZABkAAQAAAAAAAAAZABgAAQAAAAAAAAAZABcAAQAAAAAAAAAYABcAAQAAAAAAAAAXABcAAQAAAAAAAAAWABcAAQAAAAAAAAAWABYAAQAAAAAAAAAWABUAAQAAAAAAAAAVABUAAQAAAAAAAAAUABQAAQAAAAAAAAAUABMAAQAAAAAAAAATABMAAQAAAAAAAAASABMAAQAAAAAAAAASABQAAQAAAAAAAAATABQAAQAAAAAAAAARABQAAQAAAAAAAAAVABYAAQAAAAAAAAAWABgAAQAAAAAAAAAWABkAAQAAAAAAAAAXABkAAQAAAAAAAAAYABkAAQAAAAAAAAD//wgAAQAAAAAAAAD//wcAAQAAAAAAAAD//wYAAQAAAAAAAAD//wUAAQAAAAAAAAAAAAUAAQAAAAAAAAABAAUAAQAAAAAAAAACAAUAAQAAAAAAAAADAAUAAQAAAAAAAAAEAAUAAQAAAAAAAAAFAAUAAQAAAAAAAAAGAAUAAQAAAAAAAAAHAAUAAQAAAAAAAAAIAAUAAQAAAAAAAAAJAAUAAQAAAAAAAAAKAAUAAQAAAAAAAAALAAUAAQAAAAAAAAAMAAUAAQAAAAAAAAANAAUAAQAAAAAAAAAOAAUAAQAAAAAAAAAPAAUAAQAAAAAAAAAQAAUAAQAAAAAAAAARAAUAAQAAAAAAAAASAAUAAQAAAAAAAAATAAUAAQAAAAAAAAAUAAUAAQAAAAAAAAAVAAUAAQAAAAAAAAAWAAUAAQAAAAAAAAAXAAUAAQAAAAAAAAAYAAUAAQAAAAAAAAAZAAUAAQAAAAAAAAAaAAUAAQAAAAAAAAAbAAUAAQAAAAAAAAAcAAUAAQAAAAAAAAAdAAUAAQAAAAAAAAAeAAUAAQAAAAAAAAAfAAUAAQAAAAAAAAAgAAUAAQAAAAAAAAAhAAUAAQAAAAAAAAAiAAUAAQAAAAAAAAAjAAUAAQAAAAAAAAAkAAUAAQAAAAAAAAAlAAUAAQAAAAAAAAAmAAUAAQAAAAAAAAAnAAUAAQAAAAAAAAAoAAUAAQAAAAAAAAApAAUAAQAAAAAAAAAqAAUAAQAAAAAAAAArAAUAAQAAAAAAAAAsAAUAAQAAAAAAAAAtAAUAAQAAAAAAAAAuAAUAAQAAAAAAAAAuAB4AAQAAAAAAAAAvAB4AAQAAAAAAAAAwAB4AAQAAAAAAAAAxAB4AAQAAAAAAAAAyAB4AAQAAAAAAAAA=")
 tile_set = SubResource("3")
 
 [node name="Rocks" type="Node2D" parent="Collisions"]
+visible = false
 
 [node name="Layer0" type="TileMapLayer" parent="Collisions/Rocks"]
 use_parent_material = true
 tile_set = SubResource("3")
 
 [node name="Coral" type="Node2D" parent="Collisions"]
+visible = false
 
 [node name="Layer0" type="TileMapLayer" parent="Collisions/Coral"]
 use_parent_material = true
@@ -994,51 +993,6 @@ texture = ExtResource("38")
 rotation = 1.5708
 shape = SubResource("120")
 
-[node name="Trampa" type="RigidBody2D" parent="Trash" groups=["obstacle"]]
-position = Vector2(1500, 1750)
-scale = Vector2(0.98, 1)
-mass = 100.0
-script = ExtResource("42")
-
-[node name="Sprite2D" type="Sprite2D" parent="Trash/Trampa"]
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("41")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Trash/Trampa"]
-position = Vector2(0, -1)
-rotation = 1.5708
-shape = SubResource("124")
-
-[node name="Trampa2" type="RigidBody2D" parent="Trash" groups=["obstacle"]]
-position = Vector2(1500, 1670)
-scale = Vector2(0.98, 1)
-mass = 100.0
-script = ExtResource("42")
-
-[node name="Sprite2D" type="Sprite2D" parent="Trash/Trampa2"]
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("41")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Trash/Trampa2"]
-position = Vector2(0, -1)
-rotation = 1.5708
-shape = SubResource("124")
-
-[node name="Trampa3" type="RigidBody2D" parent="Trash" groups=["obstacle"]]
-position = Vector2(1500, 1590)
-scale = Vector2(0.98, 1)
-mass = 100.0
-script = ExtResource("42")
-
-[node name="Sprite2D" type="Sprite2D" parent="Trash/Trampa3"]
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("41")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Trash/Trampa3"]
-position = Vector2(0, -1)
-rotation = 1.5708
-shape = SubResource("124")
-
 [node name="Boat" type="Node" parent="."]
 
 [node name="Claw" type="CharacterBody2D" parent="Boat" groups=["boat"]]
@@ -1074,9 +1028,6 @@ position = Vector2(1, -1)
 [node name="Win" parent="HUD" instance=ExtResource("51")]
 visible = false
 position = Vector2(1, -1)
-
-[node name="ShaderSea" parent="." instance=ExtResource("24")]
-layer = 0
 
 [node name="Fish" type="Node" parent="."]
 
@@ -1139,6 +1090,7 @@ layout_mode = 2
 
 [node name="LblTries" type="Label" parent="Timer/MarginContainer/VBoxContainer"]
 layout_mode = 2
+theme = ExtResource("54_0qgnf")
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_constants/shadow_offset_x = -3
 theme_override_fonts/font = ExtResource("53")
@@ -1148,6 +1100,7 @@ vertical_alignment = 1
 
 [node name="LblTimer" type="Label" parent="Timer/MarginContainer/VBoxContainer"]
 layout_mode = 2
+theme = ExtResource("54_0qgnf")
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_constants/shadow_offset_x = -3
 theme_override_fonts/font = ExtResource("53")

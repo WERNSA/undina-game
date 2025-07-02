@@ -1,4 +1,4 @@
-[gd_scene load_steps=49 format=3 uid="uid://ba2jgbfurvno7"]
+[gd_scene load_steps=50 format=4 uid="uid://ba2jgbfurvno7"]
 
 [ext_resource type="Texture2D" uid="uid://b33v8ww4pmxd6" path="res://Assets/Images/LimpiandoCosta/Pantalla 1/Arena de Fondo.png" id="1"]
 [ext_resource type="Texture2D" uid="uid://cgntkperasgqn" path="res://Assets/Images/LimpiandoCosta/Pantalla 1/Mar/Primera capa mar.png" id="2"]
@@ -32,30 +32,32 @@
 [ext_resource type="Texture2D" uid="uid://dbgfqlurl127c" path="res://Assets/Images/UnderSeaBG/Items/Trash/mascarilla.png" id="33"]
 [ext_resource type="Texture2D" uid="uid://b7f8ph0u00odd" path="res://Assets/Images/UnderSeaBG/Items/Trash/Cuchara.png" id="34"]
 [ext_resource type="Script" uid="uid://clunet1yn5ur7" path="res://Scenes/Games/LimpiandoCosta/Nivel4/LimpiandoCosta.gd" id="35"]
-[ext_resource type="PackedScene" path="res://Scenes/Pause/PauseMenu.tscn" id="36"]
+[ext_resource type="PackedScene" uid="uid://bx3dd0gnp366n" path="res://Scenes/Pause/PauseMenu.tscn" id="36"]
 [ext_resource type="Texture2D" uid="uid://cqpb2jqyeggbt" path="res://Assets/Images/LimpiandoCosta/Pantalla 1/arena humeda final .png" id="37"]
-[ext_resource type="PackedScene" path="res://Scenes/Utility/shader/ShaderWindWakerBeach.tscn" id="38"]
+[ext_resource type="PackedScene" uid="uid://gi1blgmjctq6" path="res://Scenes/Utility/shader/ShaderWindWakerBeach.tscn" id="38"]
 [ext_resource type="AudioStream" uid="uid://b31j1y4wh72l8" path="res://Assets/Sounds/SFX/get_item.wav" id="39"]
+[ext_resource type="Theme" uid="uid://y1ufudag5d7f" path="res://Assets/InputTheme/input_theme.tres" id="39_iw02y"]
 [ext_resource type="AudioStream" uid="uid://c8hxugccgxws8" path="res://Assets/Sounds/SFX/ender_punch.wav" id="40"]
 [ext_resource type="PackedScene" uid="uid://b17rf02r12bmp" path="res://Scenes/Utility/analog/Analog.tscn" id="41"]
 [ext_resource type="PackedScene" uid="uid://d1qxdr7vxtiqw" path="res://Scenes/Entity/CleanBeach/Crab/Crab.tscn" id="42"]
-[ext_resource type="PackedScene" path="res://Scenes/Utility/GameOver/GameOver.tscn" id="43"]
-[ext_resource type="PackedScene" path="res://Scenes/Utility/Win/Win.tscn" id="44"]
-[ext_resource type="FontFile" path="res://Assets/Fonts/btnFont.tres" id="45"]
+[ext_resource type="PackedScene" uid="uid://vdvws6110l8g" path="res://Scenes/Utility/GameOver/GameOver.tscn" id="43"]
+[ext_resource type="PackedScene" uid="uid://dhpnyngl8a034" path="res://Scenes/Utility/Win/Win.tscn" id="44"]
+[ext_resource type="FontFile" uid="uid://byvaqdf2liiep" path="res://Assets/Fonts/btnFont.tres" id="45"]
 [ext_resource type="Texture2D" uid="uid://cxcyi67pybsat" path="res://Assets/Images/Fondo de contador de puntos.png" id="46"]
 
 [sub_resource type="RectangleShape2D" id="5"]
 size = Vector2(140, 80)
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_y50ud"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_iw02y"]
 texture = ExtResource("22")
 texture_region_size = Vector2i(80, 80)
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_iw02y"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rgin8"]
 texture = ExtResource("22")
+texture_region_size = Vector2i(60, 60)
 0:0/next_alternative_id = 8
 0:0/0 = 0
-0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-30, -30, 30, -30, 30, 30, -30, 30)
 0:0/1 = 1
 0:0/1/flip_h = true
 0:0/1/physics_layer_0/polygon_0/points = PackedVector2Array(8, -8, -8, -8, -8, 8, 8, 8)
@@ -83,11 +85,11 @@ texture = ExtResource("22")
 0:0/7/transpose = true
 0:0/7/physics_layer_0/polygon_0/points = PackedVector2Array(8, 8, 8, -8, -8, -8, -8, 8)
 
-[sub_resource type="TileSet" id="3"]
-tile_size = Vector2i(80, 80)
+[sub_resource type="TileSet" id="TileSet_nuu10"]
+tile_size = Vector2i(60, 60)
 physics_layer_0/collision_layer = 1
-sources/0 = SubResource("TileSetAtlasSource_y50ud")
-sources/1 = SubResource("TileSetAtlasSource_iw02y")
+sources/0 = SubResource("TileSetAtlasSource_iw02y")
+sources/1 = SubResource("TileSetAtlasSource_rgin8")
 
 [sub_resource type="CapsuleShape2D" id="4"]
 radius = 27.1021
@@ -234,10 +236,13 @@ texture = ExtResource("15")
 
 [node name="Collisions" type="Node" parent="."]
 
-[node name="Terrain" type="TileMap" parent="Collisions"]
+[node name="Terrain" type="Node2D" parent="Collisions"]
+
+[node name="Layer0" type="TileMapLayer" parent="Collisions/Terrain"]
 visible = false
-tile_set = SubResource("3")
-format = 2
+use_parent_material = true
+tile_map_data = PackedByteArray("AAAHABEAAQAAAAAAAAAIABEAAQAAAAAAAAAJABEAAQAAAAAAAAAKABIAAQAAAAAAAAAKABEAAQAAAAAAAAALABIAAQAAAAAAAAAMABIAAQAAAAAAAAAMABMAAQAAAAAAAAANABMAAQAAAAAAAAANABQAAQAAAAAAAAAOABQAAQAAAAAAAAAOABUAAQAAAAAAAAAPABUAAQAAAAAAAAAPABYAAQAAAAAAAAAQABYAAQAAAAAAAAARABYAAQAAAAAAAAASABYAAQAAAAAAAAATABYAAQAAAAAAAAATABcAAQAAAAAAAAAUABcAAQAAAAAAAAAUABgAAQAAAAAAAAAVABgAAQAAAAAAAAAWABgAAQAAAAAAAAAWABkAAQAAAAAAAAAXABkAAQAAAAAAAAAYABkAAQAAAAAAAAAZABkAAQAAAAAAAAAbABkAAQAAAAAAAAAcABkAAQAAAAAAAAAdABkAAQAAAAAAAAAaABkAAQAAAAAAAAAeABkAAQAAAAAAAAAfABkAAQAAAAAAAAAgABkAAQAAAAAAAAAhABkAAQAAAAAAAAAiABkAAQAAAAAAAAAjABkAAQAAAAAAAAAkABkAAQAAAAAAAAAlABkAAQAAAAAAAAAmABkAAQAAAAAAAAAmABgAAQAAAAAAAAAnABgAAQAAAAAAAAAoABgAAQAAAAAAAAAoABcAAQAAAAAAAAApABcAAQAAAAAAAAAqABcAAQAAAAAAAAArABcAAQAAAAAAAAAsABcAAQAAAAAAAAAsABYAAQAAAAAAAAAtABYAAQAAAAAAAAAuABYAAQAAAAAAAAAuABUAAQAAAAAAAAAvABUAAQAAAAAAAAAvABQAAQAAAAAAAAAwABQAAQAAAAAAAAAwABMAAQAAAAAAAAAxABMAAQAAAAAAAAAxABIAAQAAAAAAAAAyABIAAQAAAAAAAAAyABEAAQAAAAAAAAAzABEAAQAAAAAAAAAzABAAAQAAAAAAAAA0ABAAAQAAAAAAAAA0AA8AAQAAAAAAAAA1AA8AAQAAAAAAAAAzAA8AAQAAAAAAAAA1AAAAAQAAAAAAAAA1AAEAAQAAAAAAAAA1AAIAAQAAAAAAAAA1AAMAAQAAAAAAAAA1AAQAAQAAAAAAAAA1AAUAAQAAAAAAAAA1AAYAAQAAAAAAAAA1AAcAAQAAAAAAAAA1AAgAAQAAAAAAAAA1AAkAAQAAAAAAAAA1AAoAAQAAAAAAAAA1AAsAAQAAAAAAAAA1AAwAAQAAAAAAAAA1AA0AAQAAAAAAAAA1AA4AAQAAAAAAAAD//wwAAQAAAAAAAAD//w0AAQAAAAAAAAD//w4AAQAAAAAAAAD//w8AAQAAAAAAAAD//xAAAQAAAAAAAAAAABEAAQAAAAAAAAAAABIAAQAAAAAAAAAAABMAAQAAAAAAAAABABMAAQAAAAAAAAABABQAAQAAAAAAAAABABUAAQAAAAAAAAACABUAAQAAAAAAAAACABYAAQAAAAAAAAADABYAAQAAAAAAAAADABcAAQAAAAAAAAADABgAAQAAAAAAAAAEABgAAQAAAAAAAAAFABgAAQAAAAAAAAAGABgAAQAAAAAAAAAGABcAAQAAAAAAAAAHABcAAQAAAAAAAAAIABcAAQAAAAAAAAAIABYAAQAAAAAAAAAJABYAAQAAAAAAAAAJABUAAQAAAAAAAAAJABQAAQAAAAAAAAAIABQAAQAAAAAAAAAIABMAAQAAAAAAAAAIABIAAQAAAAAAAAAHABIAAQAAAAAAAAD//wsAAQAAAAAAAAD//woAAQAAAAAAAAD//wkAAQAAAAAAAAD//wgAAQAAAAAAAAD//wcAAQAAAAAAAAAAAAcAAQAAAAAAAAABAAcAAQAAAAAAAAACAAcAAQAAAAAAAAADAAcAAQAAAAAAAAADAAYAAQAAAAAAAAAEAAYAAQAAAAAAAAAFAAUAAQAAAAAAAAAFAAQAAQAAAAAAAAAFAAMAAQAAAAAAAAAFAAIAAQAAAAAAAAAFAAEAAQAAAAAAAAAFAAAAAQAAAAAAAAAFAP//AQAAAAAAAAAGAP//AQAAAAAAAAAHAP//AQAAAAAAAAAIAP//AQAAAAAAAAAJAP//AQAAAAAAAAAKAP//AQAAAAAAAAALAP//AQAAAAAAAAAMAP//AQAAAAAAAAANAP//AQAAAAAAAAAOAP//AQAAAAAAAAAPAP//AQAAAAAAAAAQAP//AQAAAAAAAAARAP//AQAAAAAAAAASAP//AQAAAAAAAAATAP//AQAAAAAAAAAUAP//AQAAAAAAAAAVAP//AQAAAAAAAAAWAP//AQAAAAAAAAAXAP//AQAAAAAAAAAYAP//AQAAAAAAAAAZAP//AQAAAAAAAAAaAP//AQAAAAAAAAAbAP//AQAAAAAAAAAcAP//AQAAAAAAAAAdAP//AQAAAAAAAAAeAP//AQAAAAAAAAAfAP//AQAAAAAAAAAgAP//AQAAAAAAAAAhAP//AQAAAAAAAAAiAP//AQAAAAAAAAAjAP//AQAAAAAAAAAkAP//AQAAAAAAAAAlAP//AQAAAAAAAAAmAP//AQAAAAAAAAAnAP//AQAAAAAAAAAoAP//AQAAAAAAAAApAP//AQAAAAAAAAAqAP//AQAAAAAAAAArAP//AQAAAAAAAAAsAP//AQAAAAAAAAAtAP//AQAAAAAAAAAuAP//AQAAAAAAAAAvAP//AQAAAAAAAAAwAP//AQAAAAAAAAAxAP//AQAAAAAAAAAyAP//AQAAAAAAAAAzAP//AQAAAAAAAAA0AP//AQAAAAAAAAA1AP//AQAAAAAAAAAwAAMAAQAAAAAAAAAxAAQAAQAAAAAAAAAxAAMAAQAAAAAAAAAwAAQAAQAAAAAAAAAHAAMAAQAAAAAAAAAHAAIAAQAAAAAAAAAIAAIAAQAAAAAAAAAJAAIAAQAAAAAAAAAKAAIAAQAAAAAAAAAKAAEAAQAAAAAAAAAJAAEAAQAAAAAAAAAIAAEAAQAAAAAAAAAHAAEAAQAAAAAAAAAKAAMAAQAAAAAAAAA=")
+tile_set = SubResource("TileSet_nuu10")
 
 [node name="Trash" type="Node" parent="."]
 
@@ -655,6 +660,7 @@ anchor_right = 0.5
 offset_left = -189.0
 offset_right = 189.0
 offset_bottom = 79.0
+theme = ExtResource("39_iw02y")
 
 [node name="LblTries" type="Label" parent="Tries/MarginContainer"]
 layout_mode = 2

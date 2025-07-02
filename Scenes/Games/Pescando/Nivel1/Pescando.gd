@@ -84,9 +84,15 @@ func move_barracuda():
 	var tween = create_tween()
 	tween.tween_property($Fish/Barracuda, "position", target_pos, 2.0).set_trans(Tween.TRANS_LINEAR).set_ease(Tween.EASE_IN_OUT)
 
+func get_trash_index():
+	turtle_position_idx = Global.random_int(0, turtle_trash_position.size() - 1)
+	if is_instance_valid(turtle_trash_position[turtle_position_idx]):
+		return
+	get_trash_index()
+
 func move_turtle():
 	var init_pos = turtle_initial_position[Global.random_int(0, turtle_initial_position.size() - 1)]
-	turtle_position_idx = Global.random_int(0, turtle_trash_position.size() - 1)
+	get_trash_index()
 	var final_pos : CharacterBody2D = turtle_trash_position[turtle_position_idx]
 
 	$FishBG/Turtle._set_flip_h(init_pos.x > final_pos.position.x)
@@ -106,15 +112,15 @@ func move_turtle():
 func _on_TurtleTween_tween_completed():
 	if game_over:
 		return
-	if not turtle_initial_position.has($FishBG/Turtle.position):
-		var flipped = $FishBG/Turtle.position.x > turtle_trash_position[turtle_position_idx].position.x
-		$FishBG/Turtle._set_flip_h(flipped)
-		var margin_pos = 100
-		$FishBG/Turtle.position.x += margin_pos if flipped else (margin_pos * -1)
-		$FishBG/Turtle._set_eating(true)
-		if turtle_trash_position.any(func(p): return p.position == actual_trash_position):
+	if not turtle_initial_position.has($FishBG/Turtle.position):		
+		if $FishBG/Turtle.position == actual_trash_position && is_instance_valid(turtle_trash_position[turtle_position_idx]):
 			$Timer/Timer.start()
 			show_timer(true)
+			var flipped = $FishBG/Turtle.position.x > turtle_trash_position[turtle_position_idx].position.x
+			$FishBG/Turtle._set_flip_h(flipped)
+			var margin_pos = 100
+			$FishBG/Turtle.position.x += margin_pos if flipped else (margin_pos * -1)
+			$FishBG/Turtle._set_eating(true)
 		else:
 			hide_turtle()
 
@@ -163,9 +169,11 @@ func show_timer(is_show: bool):
 func remove_trash_turtle(pos: Vector2):
 	var index := -1
 	for i in turtle_trash_position.size():
-		if turtle_trash_position[i].position == pos:
-			index = i
-			break
+		if is_instance_valid(turtle_initial_position[i]):
+			if turtle_trash_position[i].position == pos:
+				index = i
+				break
+		else: index = 0
 	if index != -1:
 		var removed = turtle_trash_position.pop_at(index)
 		if removed.position == actual_trash_position:

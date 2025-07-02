@@ -28,6 +28,7 @@ var game_over: bool = false
 var FishingRodPosition = Vector2(1100, 450)
 var FishingRodItemPosition = Vector2(450, 650)
 var FishBoxPosition = Vector2(3020, 850)
+var is_previous_fish : bool = false
 
 func _ready():
 	randomize()
@@ -77,15 +78,19 @@ func _on_AnimationPlayer_animation_finished(anim_name):
 		$Items/FishingRodLever/AnimationPlayer.play("Fishing")
 
 func spawn_fishing():
-	options = Global.random_int(0, 1)
+	options = Global.random_int(0, 6)
 	var item
-	if options == 0:
+	if options <= 2 and not is_previous_fish:
+		is_previous_fish = true
 		item = Fish.instantiate()
 		$Sensor/SliderPoints.max_value = 100
+		$Sensor/PointsBar.max_value = 100
 		$Characters/FishingTimer.wait_time = 15
 	else:
+		is_previous_fish = false
 		item = Trash.instantiate()
 		$Sensor/SliderPoints.max_value = 400
+		$Sensor/PointsBar.max_value = 400
 		$Characters/FishingTimer.wait_time = 10
 	$Characters/FishingTimer.start()
 	item.position = fishing_position_min
@@ -94,14 +99,17 @@ func spawn_fishing():
 
 	var tween = get_tree().create_tween()
 	tween.tween_property(item, "position", fishing_position_max, 2)
+	tween.connect("finished", _on_Tween_tween_completed)
 
-func _on_Tween_tween_completed(object, key):
+func _on_Tween_tween_completed():
+	print("holaaaaaaaaaaaaaaaaaaaaaa")
 	if is_fishing:
 		var item_fishing = get_tree().get_nodes_in_group("item_fishing")
 		if item_fishing.size() > 0:
 			var new_position_y = Global.random_int(350, 1340)
 			var tween = get_tree().create_tween()
 			tween.tween_property(item_fishing[0], "position", Vector2(fishing_position_max.x, new_position_y), 2)
+			tween.connect("finished", _on_Tween_tween_completed)
 
 func _on_FishingTimer_timeout():
 	stop_fishing()
@@ -109,6 +117,7 @@ func _on_FishingTimer_timeout():
 func add_fishing_points():
 	points += 1
 	$Sensor/SliderPoints.value += 1
+	$Sensor/PointsBar.value += 1
 	if points >= $Sensor/SliderPoints.max_value:
 		if options == 0:
 			tries -= 1
@@ -148,6 +157,7 @@ func stop_fishing():
 		spawn_radar_item()
 
 	$Sensor/SliderPoints.value = 0
+	$Sensor/PointsBar.value = 0
 
 func _game_over():
 	$Timer/Timer.stop()

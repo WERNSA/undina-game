@@ -24,4 +24,3 @@ func _on_BtnThird_pressed():
 
 func _on_BtnFourth_pressed():
 	get_tree().call_deferred("change_scene_to_file", "res://Scenes/Games/LimpiandoCosta/Nivel5/LimpiandoCosta.tscn")
-

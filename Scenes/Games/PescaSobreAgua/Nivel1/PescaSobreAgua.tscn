@@ -1,4 +1,4 @@
-[gd_scene load_steps=43 format=4 uid="uid://cibnyynhphu76"]
+[gd_scene load_steps=44 format=4 uid="uid://cibnyynhphu76"]
 
 [ext_resource type="PackedScene" uid="uid://gi1blgmjctq6" path="res://Scenes/Utility/shader/ShaderWindWakerBeach.tscn" id="1"]
 [ext_resource type="PackedScene" uid="uid://7jnwei6j4avo" path="res://Scenes/Utility/Contador.tscn" id="2"]
@@ -24,6 +24,7 @@
 [ext_resource type="PackedScene" uid="uid://c8x105gq6ieqg" path="res://Scenes/Entity/FishOverSea/Trash/Trash.tscn" id="22"]
 [ext_resource type="PackedScene" uid="uid://cenweaaa06ab4" path="res://Scenes/Entity/FishOverSea/Fish/Fish.tscn" id="23"]
 [ext_resource type="PackedScene" uid="uid://brb4l6a0f1a1n" path="res://Scenes/Entity/FishOverSea/FishBox/FishBox.tscn" id="24"]
+[ext_resource type="Texture2D" uid="uid://dp6a8vwfsw2fd" path="res://Assets/Images/AudioSettings/Botones/Barra de sonido activado.png" id="24_vkxo2"]
 [ext_resource type="Texture2D" uid="uid://d3op0bg02eneh" path="res://Assets/Images/PescaSobreAgua/Sensor/Membrana del sensor de pesca.png" id="25"]
 [ext_resource type="AudioStream" uid="uid://b7yrfq5st0a5" path="res://Assets/Sounds/SFX/water_splash.mp3" id="26"]
 [ext_resource type="PackedScene" uid="uid://vdvws6110l8g" path="res://Scenes/Utility/GameOver/GameOver.tscn" id="27"]
@@ -264,7 +265,7 @@ offset_left = 3118.0
 offset_top = 1420.0
 offset_right = 4471.0
 offset_bottom = 1666.0
-rotation = -90.0
+rotation = -1.5708
 scale = Vector2(0.845, 0.1)
 theme = ExtResource("29")
 theme_override_styles/slider = SubResource("6")
@@ -272,6 +273,19 @@ theme_override_styles/grabber_area = SubResource("8")
 theme_override_styles/grabber_area_highlight = SubResource("7")
 max_value = 400.0
 editable = false
+
+[node name="PointsBar" type="TextureProgressBar" parent="Sensor"]
+offset_left = 3080.0
+offset_top = 1541.0
+offset_right = 4654.0
+offset_bottom = 1931.0
+rotation = -1.5708
+scale = Vector2(0.87, 0.25)
+size_flags_horizontal = 4
+size_flags_vertical = 4
+max_value = 400.0
+texture_under = ExtResource("28")
+texture_progress = ExtResource("24_vkxo2")
 
 [node name="Analog" parent="." instance=ExtResource("11")]
 z_index = 100
@@ -293,7 +307,7 @@ visible = false
 
 [node name="Layer0" type="TileMapLayer" parent="Collisions/Terrain"]
 use_parent_material = true
-tile_map_data = PackedByteArray("AAAwABcAAQAAAAAAAAAxABcAAQAAAAAAAAAyABcAAQAAAAAAAAAzABcAAQAAAAAAAAA0ABcAAQAAAAAAAAAzABYAAQAAAAAAAAAzABUAAQAAAAAAAAAzABQAAQAAAAAAAAAzABMAAQAAAAAAAAAzABIAAQAAAAAAAAAzABEAAQAAAAAAAAAzABAAAQAAAAAAAAAzAA8AAQAAAAAAAAAzAA4AAQAAAAAAAAAzAA0AAQAAAAAAAAAzAAwAAQAAAAAAAAAzAAsAAQAAAAAAAAAzAAoAAQAAAAAAAAAzAAkAAQAAAAAAAAAzAAgAAQAAAAAAAAAzAAcAAQAAAAAAAAAzAAYAAQAAAAAAAAAzAAUAAQAAAAAAAAAzAAQAAQAAAAAAAAAyAAQAAQAAAAAAAAAxAAQAAQAAAAAAAAAwAAYAAQAAAAAAAAAwAAcAAQAAAAAAAAAwAAQAAQAAAAAAAAAwAAUAAQAAAAAAAAAwAAgAAQAAAAAAAAAwAAkAAQAAAAAAAAAwAAoAAQAAAAAAAAAwAAsAAQAAAAAAAAAwAAwAAQAAAAAAAAAwAA0AAQAAAAAAAAAwAA4AAQAAAAAAAAAwAA8AAQAAAAAAAAAwABAAAQAAAAAAAAAwABEAAQAAAAAAAAAwABIAAQAAAAAAAAAwABMAAQAAAAAAAAAwABQAAQAAAAAAAAAwABUAAQAAAAAAAAAwABYAAQAAAAAAAAA=")
+tile_map_data = PackedByteArray("AAAwABcAAQAAAAAAAAAxABcAAQAAAAAAAAAyABcAAQAAAAAAAAAzABcAAQAAAAAAAAA0ABcAAQAAAAAAAAAzABYAAQAAAAAAAAAzABUAAQAAAAAAAAAzABQAAQAAAAAAAAAzABMAAQAAAAAAAAAzABIAAQAAAAAAAAAzABEAAQAAAAAAAAAzABAAAQAAAAAAAAAzAA8AAQAAAAAAAAAzAA4AAQAAAAAAAAAzAA0AAQAAAAAAAAAzAAwAAQAAAAAAAAAzAAsAAQAAAAAAAAAzAAoAAQAAAAAAAAAzAAkAAQAAAAAAAAAzAAgAAQAAAAAAAAAzAAcAAQAAAAAAAAAzAAYAAQAAAAAAAAAzAAUAAQAAAAAAAAAwAAYAAQAAAAAAAAAwAAcAAQAAAAAAAAAwAAQAAQAAAAAAAAAwAAUAAQAAAAAAAAAwAAgAAQAAAAAAAAAwAAkAAQAAAAAAAAAwAAoAAQAAAAAAAAAwAAsAAQAAAAAAAAAwAAwAAQAAAAAAAAAwAA0AAQAAAAAAAAAwAA4AAQAAAAAAAAAwAA8AAQAAAAAAAAAwABAAAQAAAAAAAAAwABEAAQAAAAAAAAAwABIAAQAAAAAAAAAwABMAAQAAAAAAAAAwABQAAQAAAAAAAAAwABUAAQAAAAAAAAAwABYAAQAAAAAAAAAzAAQAAQAAAAAAAAAyAAQAAQAAAAAAAAAxAAQAAQAAAAAAAAA=")
 tile_set = SubResource("3")
 
 [node name="Characters" type="Node" parent="."]
