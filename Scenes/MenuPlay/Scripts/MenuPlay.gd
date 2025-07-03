@@ -33,3 +33,8 @@ func _on_BtnTime_pressed():
 func _on_BtnObstacle_pressed():
 	$SoundPress.play()
 	get_tree().call_deferred("change_scene_to_file", "res://Scenes/Games/ObstacleRace/Nivel1/ObstacleRace.tscn")
+
+
+func _on_btn_story_pressed() -> void:
+	$SoundPress.play()
+	#get_tree()

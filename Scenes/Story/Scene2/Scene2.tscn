@@ -1,0 +1,279 @@
+[gd_scene load_steps=27 format=3 uid="uid://1fa3jo3j6pn6"]
+
+[ext_resource type="Texture2D" uid="uid://b33v8ww4pmxd6" path="res://Assets/Images/LimpiandoCosta/Pantalla 1/Arena de Fondo.png" id="1"]
+[ext_resource type="Texture2D" uid="uid://ccrwclwna8lw7" path="res://Assets/Images/Story/Scene2/Grama.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://bc0xox0tdx7ug" path="res://Assets/Images/Story/Scene2/Parque.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://x3dcyn3dnw6c" path="res://Assets/Images/Story/Scene2/Estatua de Illea.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://xskjo5fpyaqh" path="res://Assets/Images/Story/Scene2/Casa de madera.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://ddvu28g8bt1hm" path="res://Assets/Images/Story/Scene2/Casa grande.png" id="6"]
+[ext_resource type="Texture2D" uid="uid://e3u8513sk67m" path="res://Assets/Images/Story/Scene2/Basurero.png" id="7"]
+[ext_resource type="Texture2D" uid="uid://csli36e8v4g5a" path="res://Assets/Images/Story/Scene2/Banca a la derecha.png" id="8"]
+[ext_resource type="Texture2D" uid="uid://doy71kxb1qxjr" path="res://Assets/Images/Story/Scene2/Banca.png" id="9"]
+[ext_resource type="Texture2D" uid="uid://becypvqfx2246" path="res://Assets/Images/LimpiandoCosta/Pantalla 1/Farol.png" id="10"]
+[ext_resource type="Texture2D" uid="uid://dyrltflos7dw1" path="res://Assets/Images/LimpiandoCosta/Pantalla 1/Palmeras/Palmera 1.png" id="11"]
+[ext_resource type="Texture2D" uid="uid://dm8ppwkpvvl7v" path="res://Assets/Images/LimpiandoCosta/Pantalla 1/Arbusto.png" id="12"]
+[ext_resource type="Texture2D" uid="uid://cr171owvmwe5d" path="res://Assets/Images/Story/Characters/Secondary/BoyPitahaya.png" id="13"]
+[ext_resource type="Texture2D" uid="uid://30e68o61afp6" path="res://Assets/Images/Story/Characters/Secondary/Mujer.png" id="14"]
+[ext_resource type="Texture2D" uid="uid://c0hf7t1kkhcxw" path="res://Assets/Images/Story/Characters/Secondary/PaloMayo.png" id="15"]
+[ext_resource type="Texture2D" uid="uid://chv4f71hqlcaa" path="res://Assets/Images/Story/Characters/Secondary/GirlWatermelon.png" id="16"]
+[ext_resource type="Texture2D" uid="uid://d28gb1vs47le8" path="res://Assets/Images/Story/Characters/Secondary/BoyWatermelon.png" id="17"]
+[ext_resource type="Texture2D" uid="uid://drjhnkvlrck8g" path="res://Assets/Images/Story/Characters/Secondary/Captain.png" id="18"]
+[ext_resource type="Texture2D" uid="uid://de2hclj0a3o3p" path="res://Assets/Images/Story/Characters/Secondary/Girl.png" id="19"]
+[ext_resource type="Texture2D" uid="uid://bii5dw1t0b5ti" path="res://Assets/Images/Story/Characters/Main/Andres/Andres.png" id="20"]
+[ext_resource type="Texture2D" uid="uid://bs5rlwqxqebq0" path="res://Assets/Images/Story/Characters/Secondary/Bibliotecaria.png" id="21"]
+[ext_resource type="Texture2D" uid="uid://bumujsn6qvvxm" path="res://Assets/Images/Story/Characters/Secondary/DogKabu.png" id="22"]
+[ext_resource type="Script" uid="uid://duqpnd2p00tfh" path="res://Scenes/Story/Scene2/Scene2.gd" id="23"]
+
+[sub_resource type="Animation" id="1"]
+resource_name = "FadeIn"
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("FadeIn:modulate:r")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 1)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("FadeIn:modulate:g")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 1)
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("FadeIn:modulate:b")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 1)
+}
+tracks/3/type = "bezier"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("FadeIn:modulate:a")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 1)
+}
+
+[sub_resource type="Animation" id="2"]
+length = 0.001
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("FadeIn:modulate:r")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("FadeIn:modulate:g")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("FadeIn:modulate:b")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/3/type = "bezier"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("FadeIn:modulate:a")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_qctt4"]
+_data = {
+&"FadeIn": SubResource("1"),
+&"RESET": SubResource("2")
+}
+
+[node name="Scene2" type="Node2D"]
+script = ExtResource("23")
+
+[node name="Background" type="Node2D" parent="."]
+
+[node name="Sand" type="Sprite2D" parent="Background"]
+texture = ExtResource("1")
+centered = false
+
+[node name="Grass" type="Sprite2D" parent="Background"]
+texture = ExtResource("2")
+centered = false
+
+[node name="Park" type="Sprite2D" parent="Background"]
+position = Vector2(1600, 1000)
+texture = ExtResource("3")
+
+[node name="Statue" type="Sprite2D" parent="Background/Park"]
+position = Vector2(-10, -220)
+texture = ExtResource("4")
+
+[node name="Light1" type="Sprite2D" parent="Background/Park"]
+position = Vector2(-515, -400)
+texture = ExtResource("10")
+
+[node name="Light2" type="Sprite2D" parent="Background/Park"]
+position = Vector2(515, -400)
+texture = ExtResource("10")
+
+[node name="Light3" type="Sprite2D" parent="Background/Park"]
+position = Vector2(-515, 50)
+texture = ExtResource("10")
+
+[node name="Light4" type="Sprite2D" parent="Background/Park"]
+position = Vector2(515, 50)
+texture = ExtResource("10")
+
+[node name="Environment" type="Node2D" parent="."]
+
+[node name="HouseBig" type="Sprite2D" parent="Environment"]
+position = Vector2(3800, 0)
+texture = ExtResource("6")
+
+[node name="Palmera2" type="Sprite2D" parent="Environment"]
+position = Vector2(2899, 765)
+texture = ExtResource("11")
+
+[node name="Arbusto" type="Sprite2D" parent="Environment/Palmera2"]
+position = Vector2(-100, 289)
+texture = ExtResource("12")
+
+[node name="Arbusto2" type="Sprite2D" parent="Environment/Palmera2"]
+position = Vector2(50, 289)
+texture = ExtResource("12")
+
+[node name="HouseSmall" type="Sprite2D" parent="Environment"]
+position = Vector2(3150, 1100)
+texture = ExtResource("5")
+
+[node name="Basurero" type="Sprite2D" parent="Environment"]
+position = Vector2(775, 35)
+texture = ExtResource("7")
+
+[node name="ChairL" type="Sprite2D" parent="Environment"]
+position = Vector2(1200, 114)
+texture = ExtResource("9")
+
+[node name="ChairR" type="Sprite2D" parent="Environment"]
+position = Vector2(2000, 114)
+texture = ExtResource("9")
+
+[node name="ChairRightU" type="Sprite2D" parent="Environment"]
+position = Vector2(2480, 583)
+texture = ExtResource("8")
+flip_h = true
+
+[node name="ChairRightD" type="Sprite2D" parent="Environment"]
+position = Vector2(2480, 1383)
+texture = ExtResource("8")
+flip_h = true
+
+[node name="ChairLeftU" type="Sprite2D" parent="Environment"]
+position = Vector2(718, 583)
+texture = ExtResource("8")
+
+[node name="ChairLeftD" type="Sprite2D" parent="Environment"]
+position = Vector2(718, 1383)
+texture = ExtResource("8")
+
+[node name="Palmera1" type="Sprite2D" parent="Environment"]
+position = Vector2(415, 1350)
+texture = ExtResource("11")
+
+[node name="Arbusto" type="Sprite2D" parent="Environment/Palmera1"]
+position = Vector2(-32, 289)
+texture = ExtResource("12")
+
+[node name="Arbusto2" type="Sprite2D" parent="Environment/Palmera1"]
+position = Vector2(65, 289)
+texture = ExtResource("12")
+
+[node name="Arbusto3" type="Sprite2D" parent="Environment/Palmera1"]
+position = Vector2(-135, 289)
+texture = ExtResource("12")
+
+[node name="Characters" type="Node2D" parent="."]
+
+[node name="PaloMayo" type="Sprite2D" parent="Characters"]
+position = Vector2(600, 199)
+texture = ExtResource("15")
+
+[node name="Mujer" type="Sprite2D" parent="Characters"]
+position = Vector2(237, 217)
+texture = ExtResource("14")
+
+[node name="Girl" type="Sprite2D" parent="Characters"]
+position = Vector2(369, 270)
+texture = ExtResource("19")
+
+[node name="Captain" type="Sprite2D" parent="Characters"]
+position = Vector2(814, 826)
+texture = ExtResource("18")
+
+[node name="Bibliotecaria" type="Sprite2D" parent="Characters"]
+position = Vector2(2582, 228)
+texture = ExtResource("21")
+
+[node name="DogKabu" type="Sprite2D" parent="Characters"]
+position = Vector2(1545, 292)
+texture = ExtResource("22")
+
+[node name="BoyWatermelon" type="Sprite2D" parent="Characters/DogKabu"]
+position = Vector2(-421, -214)
+texture = ExtResource("17")
+
+[node name="GirlWatermelon" type="Sprite2D" parent="Characters/DogKabu"]
+position = Vector2(-335, -200)
+texture = ExtResource("16")
+
+[node name="BoyPitahaya" type="Sprite2D" parent="Characters/DogKabu"]
+position = Vector2(-264, -196)
+texture = ExtResource("13")
+
+[node name="Andres" type="Sprite2D" parent="Characters/DogKabu"]
+position = Vector2(-560, -132)
+texture = ExtResource("20")
+
+[node name="FadeIn" type="ColorRect" parent="."]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_qctt4")
+}

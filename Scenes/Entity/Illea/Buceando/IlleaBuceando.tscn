@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://b7y1dci7cjerv"]
+[gd_scene load_steps=21 format=3 uid="uid://b7y1dci7cjerv"]
 
 [ext_resource type="Texture2D" uid="uid://cbvan4uioh0qn" path="res://Assets/Images/Animaciones/Buceando/Illea Buzo Derecha/Illea Buzo Derecha 6.png" id="2"]
 [ext_resource type="Texture2D" uid="uid://bi7qhufs261yc" path="res://Assets/Images/Animaciones/Buceando/Illea Buzo Derecha/Illea Buzo Derecha 3.png" id="4"]
@@ -47,6 +47,7 @@ tracks/0/keys = {
 [sub_resource type="Animation" id="7"]
 resource_name = "Move"
 length = 0.6
+loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -90,6 +91,15 @@ tracks/0/keys = {
 "values": [ExtResource("6")]
 }
 
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_li5lg"]
+_data = {
+&"Grab": SubResource("6"),
+&"Idle": SubResource("2"),
+&"Move": SubResource("7"),
+&"Punch": SubResource("5"),
+&"RESET": SubResource("4")
+}
+
 [sub_resource type="CapsuleShape2D" id="1"]
 radius = 69.2308
 height = 184.615
@@ -102,20 +112,16 @@ script = ExtResource("8")
 texture = ExtResource("6")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-anims/Grab = SubResource("6")
-anims/Idle = SubResource("2")
-anims/Move = SubResource("7")
-anims/Punch = SubResource("5")
-anims/RESET = SubResource("4")
+libraries = {
+&"": SubResource("AnimationLibrary_li5lg")
+}
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("1")
 
 [node name="RayEnemy" type="RayCast2D" parent="."]
 position = Vector2(0, 110)
-enabled = true
 target_position = Vector2(70, 0)
 
 [node name="RayBoat" type="RayCast2D" parent="."]
-enabled = true
 target_position = Vector2(0, -200)
