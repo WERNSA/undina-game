@@ -1,0 +1,46 @@
+[signal arg="write_story_checkpoint"]
+[signal arg="clean_story_game"]
+[signal arg="write_minigames"]
+andres: La tortuga ya cansada y adolorida se rindió al toque de Ilea que con ayuda de mi papá la subimos al barco para quitarle los objetos que la estaban agobiando.
+andres: Una vez que liberamos a la tortuga de vuelta al mar, esta nos lleva a un Cayo lejano a los demás...
+illea: Parece que la tortuguita quiere que la sigamos
+andresBoy: ¿Cómo estás segura de ello?
+illea: Mira como va y vuelve a nosotros, definitivamente quiere que la sigamos, ¡vamos capitán, capitán!
+[background arg="res://Assets/Images/Story/Scene13/Fondo.jpg" fade="1.0"]
+george: Ajoy, ¡zarpemos!
+[background arg="res://Assets/Images/Story/Scene13/Fondo5.jpg" fade="1.0"]
+andres: Llegando a esa isla desconocida e incierta, ahí todos bajamos...
+[background arg="res://Assets/Images/Story/Scene13/Fondo6.jpg" fade="1.0"]
+andres: pero lo que sucedió después, lo sabemos solo por la boca de nuestra amada Ilea.
+andres: Fuimos congelados en un lapso de tiempo y en el centro del cayo se encontraba la tortuga que se transformó en la Nereida Anfitrite y esta le cuenta su historia  y le ofrece uno de varios favores por haberla ayudado y haber demostrado su amor y compasión.
+[background arg="res://Assets/Images/Story/Scene13/Fondo7.jpg" fade="1.0"]
+anfitrite: Saludos Ilea, soy la nereida Anfitrite, esposa consorte del rey de los mares, pero tu puedes llamarme Anfitrite.
+illea: ¡Ah¡ ¿Qué pasó aquí? ¿No era esta la tortuga?
+anfitrite: He visto tu trabajo desde que empezaste a limpiar tu cayo, he visto todo el amor y empeño que le pones a la protección y cuidado de nuestros dominios, de los océanos.
+[background arg="res://Assets/Images/Story/Scene13/Fondo8.jpg" fade="1.0"]
+illea: Anfi, perdona que te interrumpa, pero ¿Qué pasó con Andrés y el capitán? ¿Por qué están congelados?
+anfitrite: Soy Anfitrite la diosa del mar, nadie que no desee puede estar en mi presencia, tienen que ganarse mi favor y no lo han adquirido, pero no te preocupes, no les he hecho daño, simplemente están congelados en el tiempo.
+illea: Mira que tú lo has dicho, no tienen ningún daño y volverán a la normalidad, confío en ti.
+anfitrite: Pagaré esa confianza, te lo aseguro...
+[background arg="res://Assets/Images/Story/Scene13/Fondo7.jpg" fade="1.0"]
+anfitrite: ahora te contaré un poco de mi historia para que entiendas como llegamos hasta acá. Hace mucho tiempo cuando el arrecife de coral apenas comenzaba a tomar forma y anclarse al suelo marino decidí tomar la forma de una tortuga para asegurarme que los mares y mis criaturas estén bien...
+anfitrite: con el tiempo llegue a meterme demasiado en el papel de tortuga que olvidé como era yo, pasó el tiempo y te conocí, la primera vez cuando te vi, fue cuando iba a comerme una bolsa de plástico pensando que era una deliciosa medusa...
+anfitrite: y fue así como fui viendo todas tus acciones, las que has hecho por el bienestar del arrecife y el mar, posteriormente fui víctima de unas de las nefastas creaciones de los humanos y estaba en tanto dolor que no lograba pensar claramente...
+anfitrite: pero estoy agradecida por lo que has hecho porque gracias a eso recordé quién soy y eso nos trajo hasta este momento.
+illea: ¿Quién diría que mi misión me llevaría a conocer a una linda sirenita?
+anfitrite: Soy una diosa y una nereida no soy una sirena, todo lo que ves aquí me pertenece, ahora bien, te he traído hasta acá porque quiero darte una recompensa...
+anfitrite: la "bendición de la Undina" que te convertirá en un hada del mar, el mar será tu hogar, tu sola presencia será de gran beneficio para estas maravillosas criaturas...
+anfitrite: además, podrás combatir las malas acciones de los humanos frente a mis dominios, estaremos juntas por la eternidad...
+anfitrite: pero esto significa que no podrás ver más a tus amigos, ni ellos podrán verte a ti, entonces mi amada Ilea, acércate para recibir la recompensa.
+[background arg="res://Assets/Images/Story/Scene13/Fondo8.jpg" fade="1.0"]
+illea: Agradezco tu amable bendición, pero por favor permíteme legarles mis deseos a mis amigos, sé que con los conocimientos que hemos aprendido si le enseñan a los demás y a las nuevas generaciones las cosas marcharan para bien te lo aseguro, y de vez en cuando nos puedan visitar.
+[background arg="res://Assets/Images/Story/Scene13/Fondo10.png" fade="1.0"]
+andres: Fue entonces cuando sorprendidos de ver a Ilea transformada en una nereida, ella procedió a contarnos sus intenciones de cuidar de todos los mares...
+andres: nos pidió que le llevaramos un mensaje lleno de amor a sus padres, y que nosotros ayudaramos a transmitir sus deseos a las siguientes generaciones.
+[background arg="res://Assets/Images/Story/Scene13/Fondo9.jpg" fade="1.0"]
+andres: Por eso niños es importante aprender nuevos conocimientos, amar nuestra tierra y a nuestros animales porque dependemos de ellos y de nosotros depende mantenerlos cuidados.
+andres: Que esta historia quede bien grabada en su corazón y mente para que puedan seguir con nuestra misión en el futuro. Bueno niños me voy, hoy zarpamos a nuevos rumbos y también iremos a ver a la UNDINA Anfi... y a Ilea...
+[background arg="res://Assets/Images/Story/Scene13/End.jpg" fade="1.0"]
+[wait time="5.0"]
+[signal arg="write_minigames"]
+[signal arg="finished"]

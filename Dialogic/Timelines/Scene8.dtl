@@ -1,0 +1,11 @@
+[background arg="res://Assets/Images/Story/Scene7/Fondo oscuro.png" fade="0.0"]
+illea: Ilea se dirige a su padre quién lideró el pueblo para empezar con el cambio y estableciera leyes de cuidado y protección del medio ambiente, le dijo estas palabras muy seriamente a su papá.
+[background fade="0.0"]
+illea: Quiero hablar contigo acerca del mismo tema de la contaminación de la playa, sé que estás muy ocupada pero esto es algo que nos compete a todos en el pueblo.
+papa: Sirenita para ti siempre tengo tiempo, ¿Qué pasa? ¿No habías limpiado la costa con los demás niños?
+illea: Si papa, pero al parecer no es suficiente, hoy regresé a la playa y estaba sucio de nuevo, investigué más sobre el tema y no solo basta con limpiar, esto es algo que también debe enseñarse a los demás
+andres: Muy conmovido por las palabras de su hija entre llanto y sollozo su papá la tranquilizó y le prometió que realmente tomaría acciones para evitar que se repitiera.
+papa: Dame un tiempo para esta tarde y encontrar una solución, no te desanimes mi pequeña sirenita.
+[signal arg="change_ilea"]
+andres: Esa misma tarde su padre convocó a un congreso a los habitantes de Cayo Cristal.
+[signal arg="finished"]

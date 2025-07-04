@@ -1,0 +1,19 @@
+[signal arg="write_story_checkpoint"]
+[signal arg="clean_story_game"]
+[signal arg="write_minigames"]
+andres: Ilea con una hermosa sonrisa nos agradeció a todos por haber cooperado con esa hermosa misión y haber tomado conciencia con ese problema que no solo afectaba a la vida del mar, sino que nos afectaría a nosotros también.
+[background arg="res://Assets/Images/Story/Scene7/Fondo oscuro.png" fade="1.0"]
+andres: Al final de esa larga jornada Ilea volvió a su casa a contarle a sus padres todo lo que habíamos logrado.
+[background fade="0.0"]
+[signal arg="show_trash"]
+andres: Sin embargo, al día siguiente se vió la playa más limpia que al inicio pero con nueva basura, Ilea estaba muy decepcionada y se cuestionó...
+join illea (Ilea asustada) leftmost
+illea: ¿Qué es todo esto? Ayer este lugar quedó muy limpio gracias al esfuerzo y entusiasmo de todos.
+andres: En eso yo me encontraba de paso, la ví, y comprendí su tristeza, con enojo me dijo
+join andresBoy (AndresSad) rightmost
+illea: ¿Acaso no pensarán un poco si lo que hacen es correcto?
+andresBoy: Te comprendo Ilea pero, ¿Qué podemos hacer?
+leave --All--
+[background arg="res://Assets/Images/Story/Scene7/Fondo oscuro.png" fade="1.0"]
+andres: Nuevamente Ilea nos llamó a todos para explicarnos que nuestra misión había sido saboteada, y volvimos a limpiar la costa; con una nueva determinación para mantener limpia la costa y cuidar los océanos.
+[signal arg="finished"]

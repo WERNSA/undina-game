@@ -1,6 +1,9 @@
 [wait time="1.0"]
 Un día de celebraciones tradicionales y alegría en Cayo Cristal, los niños de la costa rodearon al capitán intrigosos le hacían preguntas de sus hazañas; luego de tanta insistencia el capitán accedió a conversar con ellos y se reunieron al atardecer a la orilla del mar.
-[background arg="res://Assets/Images/Story/Scene3/Fondo.png" fade="0.0"]
+[background arg="res://Assets/Images/Story/Scene3/Fondo.png" fade="1.0"]
 join illea center
 andres: En cayo Cristal residió una pequeña niña con un gran amor y curiosidad por los océanos, ya deben saber su nombre, Ilea, ella soñaba con convertirse en una bióloga marina, le gustaba ir a la playa todos los días después de clases...
+leave illea
+[background arg="res://Assets/Images/Story/Scene2/Kids.jpg" fade="1.0"]
+andres: terminaría convirtiéndose en una sirena, y así, comenzó su historia, nuestra historia; un viaje de cambios, descubrimientos, aventuras y entendimientos.
 [signal arg="finished"]

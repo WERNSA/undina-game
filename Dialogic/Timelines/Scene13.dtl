@@ -1,0 +1,8 @@
+andres: Mientras viajabamos de vuelta a nuestro hogar, la noticia de los logros de Ilea en la isla vecina alcanzaron al Cayo Turquesa, los cuales también se concientizaron y comenzaron a aplicar los cuidados correspondientes a los mares.
+andres: En ese momento, Ilea siempre entusiasta y con gran amor por los mares que la rodean, nos dió otra idea de cómo apoyar a la limpieza de los mares...
+illea: ¡Andrés, estamos cerca de un arrecife y desde acá puedo ver la basura que se encuentra atrapada ahí abajo, vayamos a ayudar a los animales que ahí viven!
+andresBoy: Está bien Ilea, nos detendremos para bajar a limpiar, ¿Cierto papá?
+george: ¡Lo que sea por nuestros mares!
+[signal arg="write_story_checkpoint"]
+[signal arg="story_game"]
+[signal arg="finished"]

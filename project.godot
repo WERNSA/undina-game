@@ -34,8 +34,20 @@ directories/dch_directory={
 "papa": "res://Dialogic/Characters/papa.dch"
 }
 directories/dtl_directory={
+"Scene10": "res://Dialogic/Timelines/Scene10.dtl",
+"Scene11": "res://Dialogic/Timelines/Scene11.dtl",
+"Scene12": "res://Dialogic/Timelines/Scene12.dtl",
+"Scene13": "res://Dialogic/Timelines/Scene13.dtl",
+"Scene14": "res://Dialogic/Timelines/Scene14.dtl",
+"Scene15": "res://Dialogic/Timelines/Scene15.dtl",
 "Scene2": "res://Dialogic/Timelines/Scene2.dtl",
 "Scene3": "res://Dialogic/Timelines/Scene3.dtl",
+"Scene4": "res://Dialogic/Timelines/Scene4.dtl",
+"Scene5": "res://Dialogic/Timelines/Scene5.dtl",
+"Scene6": "res://Dialogic/Timelines/Scene6.dtl",
+"Scene7": "res://Dialogic/Timelines/Scene7.dtl",
+"Scene8": "res://Dialogic/Timelines/Scene8.dtl",
+"Scene9": "res://Dialogic/Timelines/Scene9.dtl",
 "intro": "res://Dialogic/Timelines/intro.dtl"
 }
 glossary/default_case_sensitive=true
