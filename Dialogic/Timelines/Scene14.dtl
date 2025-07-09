@@ -1,12 +1,13 @@
-[signal arg="write_story_checkpoint"]
-[signal arg="write_minigames"]
-[signal arg="clean_story_game"]
+do Global.write_story_checkpoint("Scene13")
+do Global.clean_story_game()
+do Global.write_minigames("coralimpio")
 andres: Cuando nos acercabamos a la costa, Ilea ve una tortuga nadando cerca, nadando de una forma errática, como si estuviera en pánico, pero no estaba siendo perseguida por ningún depredador...
 [background arg="res://Assets/Images/Story/Scene13/Fondo3.jpg" fade="1.0"]
 andres: Es en el momento que pasó cerca nuestra que Ilea ve que tiene un anillo de plástico atorado en el cuello y una bolsa atorada en la boca, ella decide con astucia perseguirla para ayudarla pero cuando se acerca la tortuga comienza a nadar hacia el norte.
 [background arg="res://Assets/Images/Story/Scene13/Fondo2.jpg" fade="1.0"]
 [wait time="2.0"]
 andres: Ilea no se rinde y persigue a la tortuga nadando mientras mi papá y yo, los seguimos en el bote tomando una distancia para no alertar a la tortuga.
-[signal arg="write_story_checkpoint"]
+do Global.write_story_checkpoint("Scene14")
 [signal arg="story_game"]
+do Global.story_game("res://Scenes/Story/Scene15/Scene15.tscn")
 [signal arg="finished"]

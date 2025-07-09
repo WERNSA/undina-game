@@ -1,6 +1,6 @@
-[signal arg="write_story_checkpoint"]
-[signal arg="clean_story_game"]
-[signal arg="write_minigames"]
+do Global.write_story_checkpoint("Scene15")
+do Global.clean_story_game()
+do Global.write_minigames("carrera_obstaculos")
 andres: La tortuga ya cansada y adolorida se rindió al toque de Ilea que con ayuda de mi papá la subimos al barco para quitarle los objetos que la estaban agobiando.
 andres: Una vez que liberamos a la tortuga de vuelta al mar, esta nos lleva a un Cayo lejano a los demás...
 illea: Parece que la tortuguita quiere que la sigamos
@@ -43,4 +43,5 @@ andres: Que esta historia quede bien grabada en su corazón y mente para que pue
 [background arg="res://Assets/Images/Story/Scene13/End.jpg" fade="1.0"]
 [wait time="5.0"]
 [signal arg="write_minigames"]
+do Global.write_minigames("trivia")
 [signal arg="finished"]

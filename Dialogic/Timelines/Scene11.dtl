@@ -8,6 +8,6 @@ george: aprovechando que se encuentran en suelo fértil, sé que se llama Ioni e
 Amaba la naturaleza y el mar con todo su ser.
 illea: ¡Capitán, espere un momento, deténgase por favor! Antes de llegar a tierra firme quiero aprovechar a pescar la basura que se encuentra alrededor nuestro.
 george: ¡Está bien Ilea, hagamoslo!
-[signal arg="write_story_checkpoint"]
-[signal arg="story_game"]
+do Global.write_story_checkpoint("Scene11")
+do Global.story_game("res://Scenes/Story/Scene12/Scene12.tscn")
 [signal arg="finished"]

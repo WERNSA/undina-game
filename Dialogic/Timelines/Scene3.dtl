@@ -1,11 +1,13 @@
 andres: Un día como cualquier otro en la vida de Ilea al llegar a la costa miró a su alrededor, se sorprendió con lo que vió y se cuestionó...
 [background arg="res://Assets/Images/Story/Scene3/FondoDark.png" fade="1.0"]
+[signal arg="show_trash"]
 join illea (Ilea asustada) center
 illea (Ilea asustada): ¿Qué es todo esto? ¿Cómo no me había dado cuenta?, esto no debe hacerles bien a las criaturas en el océano...
 update illea (Default) [animation="Bounce" length="0.0"]
 illea (Ilea asustada): ¡Tengo que hacer algo!
 [background arg="res://Assets/Images/Story/Scene3/Fondo.png" fade="1.0"]
 illea (Default): Lo tengo, ¡primero hablaré con mis padres!
+[signal arg="characters_transition"]
 leave illea
 [background fade="0.0"]
 andres: De camino a su casa nos encontramos, pero pude hablar muy poco con ella, iba tan rápido que a penas pude ver su reflejo.

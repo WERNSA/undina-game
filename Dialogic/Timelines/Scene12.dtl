@@ -1,6 +1,6 @@
-[signal arg="write_story_checkpoint"]
-[signal arg="clean_story_game"]
-[signal arg="write_minigames"]
+do Global.write_story_checkpoint("Scene12")
+do Global.clean_story_game()
+do Global.write_minigames("pescando")
 andres: Una vez que tocamos el suelo de cayo Ioni, nos recibió el líder de la comunidad, Alexander, de inmediato procedimos a contarle nuestro plan...
 andres: y decidimos explorar el lugar para ver las zonas más afectadas, mientras realizábamos este recorrido, nos encontramos un hermoso monumento de Ioni el cual nos dió mucha curiosidad...
 [background arg="res://Assets/Images/Story/Scene12/Fondo.jpg" fade="1.0"]

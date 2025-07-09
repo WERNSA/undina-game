@@ -3,6 +3,6 @@ andres: En ese momento, Ilea siempre entusiasta y con gran amor por los mares qu
 illea: ¡Andrés, estamos cerca de un arrecife y desde acá puedo ver la basura que se encuentra atrapada ahí abajo, vayamos a ayudar a los animales que ahí viven!
 andresBoy: Está bien Ilea, nos detendremos para bajar a limpiar, ¿Cierto papá?
 george: ¡Lo que sea por nuestros mares!
-[signal arg="write_story_checkpoint"]
-[signal arg="story_game"]
+do Global.write_story_checkpoint("Scene13")
+do Global.story_game("res://Scenes/Story/Scene14/Scene14.tscn")
 [signal arg="finished"]

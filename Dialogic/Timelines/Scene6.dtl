@@ -1,9 +1,9 @@
 andres: Una vez que Ilea recolectó toda la información, pensó en buscar a sus amigos, para concientizarlos y emprender poco a poco la tarea de limpiar la basura de la playa.
 andresBoy: Mientras ella se preparaba para dejar la biblioteca y buscarnos me la volví a encontrar.
-join andresBoy (Default) leftmost
+join andresBoy (Default) left
 andresBoy: ¡Hey Ilea!
 [signal arg="hide_ilea"]
-join illea (Default) rightmost
+join illea (Default) right
 illea: ¡Hola Andrés!, ven que necesito tu ayuda, vamos a la playa que el océano nos necesita.
 andresBoy: ¿Qué estás haciendo? ¿Qué nos necesita quién?
 illea (Ilea asustada): El océano Andrés, nos necesita y necesitamos comenzar a ayudar, y limpiar la basura de las costas puede ser un buen inicio, ¿Has visto cuán sucia se encuentra la playa?

@@ -30,6 +30,11 @@ var FishingRodItemPosition = Vector2(450, 650)
 var FishBoxPosition = Vector2(3020, 850)
 var is_previous_fish : bool = false
 
+var color_green = '#3ec91a'
+var color_red = '#ff0e0e'
+var positive_dialog = '¡HAY QUE PESCARLO!'
+var negative_dialog = '¡NO HAY QUE PESCARLO!'
+
 func _ready():
 	randomize()
 	$Characters/FishBox.visible = false
@@ -37,6 +42,15 @@ func _ready():
 	$GameOver/CenterContainer/HBoxContainer/BtnTry.pressed.connect(_on_try_again)
 	$Win/CenterContainer/HBoxContainer/BtnTry.pressed.connect(_on_try_again)
 	$Contador.set_count(str(TRASH_COUNT))
+
+func set_dialog(_is_fishable):
+	$Background/Dialog.visible = true
+	if _is_fishable:
+		$Background/Dialog/Label/Label.text = positive_dialog
+		$Background/Dialog/Label/Label.add_color_override("font_color", Color(color_green))
+	else:
+		$Background/Dialog/Label/Label.text = negative_dialog
+		$Background/Dialog/Label/Label.add_color_override("font_color", Color(color_red))
 
 func _process(_delta):
 	$Timer/VBoxContainer/Tries/Label.text = "INTENTOS: " + str(tries)
@@ -91,7 +105,8 @@ func spawn_fishing():
 		item = Trash.instantiate()
 		$Sensor/SliderPoints.max_value = 400
 		$Sensor/PointsBar.max_value = 400
-		$Characters/FishingTimer.wait_time = 10
+		$Characters/FishingTimer.wait_time = 15
+		set_dialog(true)
 	$Characters/FishingTimer.start()
 	item.position = fishing_position_min
 	item.z_index = 2
@@ -139,6 +154,7 @@ func add_fishing_points():
 
 func stop_fishing():
 	is_fishing = false
+	$Background/Dialog.visible = false
 	$Sounds/SoundCatch.stop()
 	$Items/FishingRodLever/AnimationPlayer.play("RESET")
 	$Characters/FishingRod.can_move = true

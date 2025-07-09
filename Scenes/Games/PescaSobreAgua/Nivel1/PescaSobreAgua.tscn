@@ -1,4 +1,4 @@
-[gd_scene load_steps=44 format=4 uid="uid://cibnyynhphu76"]
+[gd_scene load_steps=46 format=4 uid="uid://cibnyynhphu76"]
 
 [ext_resource type="PackedScene" uid="uid://gi1blgmjctq6" path="res://Scenes/Utility/shader/ShaderWindWakerBeach.tscn" id="1"]
 [ext_resource type="PackedScene" uid="uid://7jnwei6j4avo" path="res://Scenes/Utility/Contador.tscn" id="2"]
@@ -8,7 +8,9 @@
 [ext_resource type="PackedScene" uid="uid://cth3iu2lap5nq" path="res://Scenes/Entity/FishingRod/FishingRod.tscn" id="6"]
 [ext_resource type="Texture2D" uid="uid://ddctdi6k2jmmh" path="res://Assets/Images/PescaSobreAgua/Radar/Radar.png" id="7"]
 [ext_resource type="Texture2D" uid="uid://cq32w0l7hkx7a" path="res://Assets/Images/PescaSobreAgua/Sensor/Sensor de pesca.png" id="8"]
+[ext_resource type="Texture2D" uid="uid://ddi25m0kannbs" path="res://Assets/Images/Story/Characters/Main/Ilea/Illea leyendo.png" id="8_qtfhm"]
 [ext_resource type="Texture2D" uid="uid://wuxfjkxkmkve" path="res://Assets/Images/PescaSobreAgua/Radar/BtnFishInactive.png" id="9"]
+[ext_resource type="Texture2D" uid="uid://bnrnt3w3mmd8i" path="res://Assets/Images/board_label.png" id="9_pub7m"]
 [ext_resource type="Texture2D" uid="uid://c8frk8ero32jh" path="res://Assets/Images/PescaSobreAgua/Radar/BtnFishActive.png" id="10"]
 [ext_resource type="PackedScene" uid="uid://b17rf02r12bmp" path="res://Scenes/Utility/analog/Analog.tscn" id="11"]
 [ext_resource type="PackedScene" uid="uid://bx3dd0gnp366n" path="res://Scenes/Pause/PauseMenu.tscn" id="12"]
@@ -186,6 +188,36 @@ expand_mode = 1
 
 [node name="ShaderWindWakerBeach" parent="Background" instance=ExtResource("1")]
 z_index = -1
+
+[node name="Ilea" type="Sprite2D" parent="Background"]
+position = Vector2(2254, 1687)
+texture = ExtResource("8_qtfhm")
+
+[node name="Dialog" type="Node2D" parent="Background"]
+
+[node name="BoardLabel" type="Sprite2D" parent="Background/Dialog"]
+position = Vector2(1547, 1260)
+texture = ExtResource("9_pub7m")
+
+[node name="Label" type="Sprite2D" parent="Background/Dialog/BoardLabel"]
+position = Vector2(0, -70)
+
+[node name="Label" type="Label" parent="Background/Dialog/BoardLabel/Label"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.5
+offset_top = -12.0
+offset_right = 19.5
+offset_bottom = 11.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+theme = ExtResource("29")
+theme_override_colors/font_color = Color(0, 0.658824, 0, 1)
+text = "¡HAY QUE PESCARLO!"
 
 [node name="Items" type="Node" parent="."]
 

@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://bd53oetciu5no"]
+
+[ext_resource type="Script" uid="uid://c20uexjmsxddp" path="res://Scenes/Story/Scene13/Scene13.gd" id="1_tnqn3"]
+[ext_resource type="Texture2D" uid="uid://bk5l7xba4xitl" path="res://Assets/Images/Story/Scene13/Fondo.jpg" id="2"]
+
+[node name="Scene13" type="Node2D"]
+script = ExtResource("1_tnqn3")
+
+[node name="Background" type="Sprite2D" parent="."]
+texture = ExtResource("2")
+centered = false
