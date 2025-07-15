@@ -21,8 +21,12 @@ var barracuda_position = [Vector2(650, 1800), Vector2(650, 1400)]
 @onready var turtle_position_idx := 0
 @onready var actual_trash_position := Vector2.ZERO
 
+#var turtle_initial_position = [
+	#Vector2(1000, 1900), Vector2(2900, 1900), Vector2(1400, 1900)
+#]
+
 var turtle_initial_position = [
-	Vector2(1000, 1900), Vector2(2900, 1900), Vector2(1400, 1900)
+	Vector2(357, 676), Vector2(1035, 676), Vector2(499, 676)
 ]
 
 #var turtle_trash_position = [

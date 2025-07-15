@@ -1,54 +1,53 @@
-[gd_scene load_steps=75 format=4 uid="uid://bf5el1wic6x8"]
+[gd_scene load_steps=74 format=4 uid="uid://bf5el1wic6x8"]
 
-[ext_resource type="Texture2D" uid="uid://dyq22351fjpko" path="res://Assets/Images/UnderSeaBG/Luces 2.png" id="1"]
-[ext_resource type="Texture2D" uid="uid://yx2f1bemr7cc" path="res://Assets/Images/UnderSeaBG/Textura 3.png" id="2"]
-[ext_resource type="Texture2D" uid="uid://c0pnxb57tcsvm" path="res://Assets/Images/UnderSeaBG/Luces.png" id="3"]
-[ext_resource type="Texture2D" uid="uid://hqg7vqgpll8c" path="res://Assets/Images/UnderSeaBG/Oleaje.png" id="4"]
-[ext_resource type="Texture2D" uid="uid://c1rpw5umjtmob" path="res://Assets/Images/UnderSeaBG/Textura 2.png" id="5"]
-[ext_resource type="Texture2D" uid="uid://23qeiuoow5xt" path="res://Assets/Images/UnderSeaBG/Textura 1.png" id="6"]
-[ext_resource type="Texture2D" uid="uid://c3ttjcw1m1ts8" path="res://Assets/Images/UnderSeaBG/Fondo de agua.png" id="7"]
-[ext_resource type="Texture2D" uid="uid://ixes1rhbw2jb" path="res://Assets/Images/UnderSeaBG/Cielo.png" id="8"]
-[ext_resource type="Texture2D" uid="uid://8tqfoowqqepv" path="res://Assets/Images/UnderSeaBG/Nubes3.png" id="9"]
+[ext_resource type="Texture2D" uid="uid://cp6318s3pe4mg" path="res://Assets/Images/UnderSeaBG/Luces 2.png" id="1"]
+[ext_resource type="Texture2D" uid="uid://bcay7lojk76sh" path="res://Assets/Images/UnderSeaBG/Textura 3.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://baaar6rcwurx1" path="res://Assets/Images/UnderSeaBG/Luces.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://c7eb8204p1l7j" path="res://Assets/Images/UnderSeaBG/Oleaje.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://cm4sxsxnvn348" path="res://Assets/Images/UnderSeaBG/Textura 2.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://bl654ibn6ftn0" path="res://Assets/Images/UnderSeaBG/Textura 1.png" id="6"]
+[ext_resource type="Texture2D" uid="uid://dk71qqh4nfex3" path="res://Assets/Images/UnderSeaBG/Fondo de agua.png" id="7"]
+[ext_resource type="Texture2D" uid="uid://c7p38wn7iw0ir" path="res://Assets/Images/UnderSeaBG/Cielo.png" id="8"]
+[ext_resource type="Texture2D" uid="uid://b08ju6vgehrr4" path="res://Assets/Images/UnderSeaBG/Nubes3.png" id="9"]
 [ext_resource type="Script" uid="uid://domu4155hwdic" path="res://Scenes/Games/Pescando/Nivel1/Pescando.gd" id="10"]
-[ext_resource type="Texture2D" uid="uid://8rk32gj2vele" path="res://Assets/Images/Tilesets/Barrera de coral.png" id="11"]
+[ext_resource type="Texture2D" uid="uid://5vacdy3ddvpt" path="res://Assets/Images/Tilesets/Barrera de coral.png" id="11"]
 [ext_resource type="PackedScene" uid="uid://b7y1dci7cjerv" path="res://Scenes/Entity/Illea/Buceando/IlleaBuceando.tscn" id="12"]
-[ext_resource type="Texture2D" uid="uid://5n2c0rkd2lum" path="res://Assets/Images/Tilesets/Bloque.png" id="13"]
-[ext_resource type="Texture2D" uid="uid://by8y7fvadgfbr" path="res://Assets/Images/Tilesets/CORAL1.png" id="14"]
-[ext_resource type="Texture2D" uid="uid://pixt0krxwhfv" path="res://Assets/Images/UnderSeaBG/Items/Coral.png" id="15"]
-[ext_resource type="Texture2D" uid="uid://brg5celkb0adl" path="res://Assets/Images/UnderSeaBG/Items/Coral cerebro 2.png" id="16"]
-[ext_resource type="Texture2D" uid="uid://c5ntc1cv2wrps" path="res://Assets/Images/UnderSeaBG/Items/Estrella de mar.png" id="17"]
-[ext_resource type="Texture2D" uid="uid://2c655ca47rgb" path="res://Assets/Images/UnderSeaBG/Items/algas.png" id="18"]
+[ext_resource type="Texture2D" uid="uid://boboyoyx5jpwa" path="res://Assets/Images/Tilesets/Bloque.png" id="13"]
+[ext_resource type="Texture2D" uid="uid://hewtni1gwmy" path="res://Assets/Images/Tilesets/CORAL1.png" id="14"]
+[ext_resource type="Texture2D" uid="uid://3tjud0jnlgyh" path="res://Assets/Images/UnderSeaBG/Items/Coral.png" id="15"]
+[ext_resource type="Texture2D" uid="uid://bpi321i4ewbue" path="res://Assets/Images/UnderSeaBG/Items/Coral cerebro 2.png" id="16"]
+[ext_resource type="Texture2D" uid="uid://bjpi5k8uokajf" path="res://Assets/Images/UnderSeaBG/Items/Estrella de mar.png" id="17"]
+[ext_resource type="Texture2D" uid="uid://oqkqyrmmpwb0" path="res://Assets/Images/UnderSeaBG/Items/algas.png" id="18"]
 [ext_resource type="PackedScene" uid="uid://7jnwei6j4avo" path="res://Scenes/Utility/Contador.tscn" id="19"]
-[ext_resource type="Texture2D" uid="uid://cwxi52ybdn1eb" path="res://Assets/Images/UnderSeaBG/Items/Coral astas de reno 2.png" id="20"]
-[ext_resource type="Texture2D" uid="uid://ck466vdlv2g6h" path="res://Assets/Images/UnderSeaBG/Items/Coral astas de reno.png" id="21"]
-[ext_resource type="Texture2D" uid="uid://bssntaqsuhsvm" path="res://Assets/Images/UnderSeaBG/Items/Coral pilar.png" id="22"]
+[ext_resource type="Texture2D" uid="uid://bdodyary5esjg" path="res://Assets/Images/UnderSeaBG/Items/Coral astas de reno 2.png" id="20"]
+[ext_resource type="Texture2D" uid="uid://batx5sqld3b85" path="res://Assets/Images/UnderSeaBG/Items/Coral astas de reno.png" id="21"]
+[ext_resource type="Texture2D" uid="uid://j4kjvgqpaul6" path="res://Assets/Images/UnderSeaBG/Items/Coral pilar.png" id="22"]
 [ext_resource type="PackedScene" uid="uid://b17rf02r12bmp" path="res://Scenes/Utility/analog/Analog.tscn" id="23"]
-[ext_resource type="Texture2D" uid="uid://b7svpsrygn35b" path="res://Assets/Images/UnderSeaBG/Items/Lancha a motor.png" id="25"]
-[ext_resource type="Texture2D" uid="uid://dyebpwfvkpoo" path="res://Assets/Images/UnderSeaBG/Items/botella.png" id="26"]
-[ext_resource type="Texture2D" uid="uid://b4kwuswpk3y3r" path="res://Assets/Images/UnderSeaBG/Garra Media.png" id="27"]
-[ext_resource type="Texture2D" uid="uid://chvfcuc1hrjuq" path="res://Assets/Images/UnderSeaBG/Garra Cerrada.png" id="28"]
-[ext_resource type="Texture2D" uid="uid://cj4s68hjppvpf" path="res://Assets/Images/UnderSeaBG/Garra Abierta.png" id="29"]
+[ext_resource type="Texture2D" uid="uid://d3flebo3ej22y" path="res://Assets/Images/UnderSeaBG/Items/Lancha a motor.png" id="25"]
+[ext_resource type="Texture2D" uid="uid://crud1f8gi60xb" path="res://Assets/Images/UnderSeaBG/Items/botella.png" id="26"]
+[ext_resource type="Texture2D" uid="uid://dpmhhm2vi2qqk" path="res://Assets/Images/UnderSeaBG/Garra Media.png" id="27"]
+[ext_resource type="Texture2D" uid="uid://hwmnmw0ofks6" path="res://Assets/Images/UnderSeaBG/Garra Cerrada.png" id="28"]
+[ext_resource type="Texture2D" uid="uid://bbybv6dk2r3e8" path="res://Assets/Images/UnderSeaBG/Garra Abierta.png" id="29"]
 [ext_resource type="Script" uid="uid://dcsoad8tfhc0u" path="res://Scenes/Games/Pescando/Trash/Botella.gd" id="31"]
-[ext_resource type="AudioStream" uid="uid://c6d82fd7v13sg" path="res://Assets/Sounds/pesca_bajo_agua.ogg" id="32"]
-[ext_resource type="Texture2D" uid="uid://ei176ym1aiob" path="res://Assets/Images/UnderSeaBG/Items/Trash/Calcetín.png" id="33"]
-[ext_resource type="Texture2D" uid="uid://dbgfqlurl127c" path="res://Assets/Images/UnderSeaBG/Items/Trash/mascarilla.png" id="34"]
-[ext_resource type="Texture2D" uid="uid://bbviwmujqvjgf" path="res://Assets/Images/UnderSeaBG/Items/Trash/Máquina de afeitar.png" id="35"]
-[ext_resource type="Texture2D" uid="uid://br4tqoanksxxw" path="res://Assets/Images/UnderSeaBG/Items/Trash/lata.png" id="36"]
-[ext_resource type="Texture2D" uid="uid://bcgsxay8df3o4" path="res://Assets/Images/UnderSeaBG/Items/Trash/Jeringa.png" id="37"]
-[ext_resource type="Texture2D" uid="uid://b7f8ph0u00odd" path="res://Assets/Images/UnderSeaBG/Items/Trash/Cuchara.png" id="38"]
+[ext_resource type="AudioStream" uid="uid://gqi4ky1dp3hj" path="res://Assets/Sounds/pesca_bajo_agua.ogg" id="32"]
+[ext_resource type="Texture2D" uid="uid://simaoxw56lvk" path="res://Assets/Images/UnderSeaBG/Items/Trash/Calcetín.png" id="33"]
+[ext_resource type="Texture2D" uid="uid://b4r3887qb23g3" path="res://Assets/Images/UnderSeaBG/Items/Trash/mascarilla.png" id="34"]
+[ext_resource type="Texture2D" uid="uid://by8im1if4b3q1" path="res://Assets/Images/UnderSeaBG/Items/Trash/Máquina de afeitar.png" id="35"]
+[ext_resource type="Texture2D" uid="uid://ddtofyjqsqpa5" path="res://Assets/Images/UnderSeaBG/Items/Trash/lata.png" id="36"]
+[ext_resource type="Texture2D" uid="uid://rjgs12bga4rg" path="res://Assets/Images/UnderSeaBG/Items/Trash/Jeringa.png" id="37"]
+[ext_resource type="Texture2D" uid="uid://dgtm13bgdoo68" path="res://Assets/Images/UnderSeaBG/Items/Trash/Cuchara.png" id="38"]
 [ext_resource type="Script" uid="uid://bcybbewon6ehi" path="res://Scenes/Games/Pescando/Trash/Cuchara.gd" id="39"]
 [ext_resource type="PackedScene" uid="uid://bx3dd0gnp366n" path="res://Scenes/Pause/PauseMenu.tscn" id="40"]
-[ext_resource type="AudioStream" uid="uid://b31j1y4wh72l8" path="res://Assets/Sounds/SFX/get_item.wav" id="43"]
-[ext_resource type="Texture2D" uid="uid://gggg5x3ab7w0" path="res://Assets/Images/UnderSeaBG/Items/Fish/barracuda.png" id="44"]
+[ext_resource type="AudioStream" uid="uid://cf6arcixejwjv" path="res://Assets/Sounds/SFX/get_item.wav" id="43"]
+[ext_resource type="Texture2D" uid="uid://iosia2iyxkuo" path="res://Assets/Images/UnderSeaBG/Items/Fish/barracuda.png" id="44"]
 [ext_resource type="PackedScene" uid="uid://cqdoauo42nhxr" path="res://Scenes/Utility/shader/ShaderSea.tscn" id="45"]
 [ext_resource type="Shader" uid="uid://lxowyx3c70bc" path="res://Scenes/Utility/shader/UnderWater2D_obj.gdshader" id="46"]
 [ext_resource type="PackedScene" uid="uid://cpin1y8v60vls" path="res://Scenes/Entity/FishUnderSea/Fish/Fish.tscn" id="47"]
 [ext_resource type="PackedScene" uid="uid://cn40uqftph5ap" path="res://Scenes/Entity/FishUnderSea/Turtle/Turtle.tscn" id="48"]
-[ext_resource type="FontFile" uid="uid://byvaqdf2liiep" path="res://Assets/Fonts/btnFont.tres" id="49"]
-[ext_resource type="Texture2D" uid="uid://cxcyi67pybsat" path="res://Assets/Images/Fondo de contador de puntos.png" id="50"]
-[ext_resource type="AudioStream" uid="uid://c8hxugccgxws8" path="res://Assets/Sounds/SFX/ender_punch.wav" id="51"]
+[ext_resource type="Theme" uid="uid://y1ufudag5d7f" path="res://Assets_old/InputTheme/input_theme.tres" id="49"]
+[ext_resource type="Texture2D" uid="uid://ddobqdkmb3ntl" path="res://Assets/Images/Fondo de contador de puntos.png" id="50"]
+[ext_resource type="AudioStream" uid="uid://dk0k0cd0bv8tu" path="res://Assets/Sounds/SFX/ender_punch.wav" id="51"]
 [ext_resource type="PackedScene" uid="uid://vdvws6110l8g" path="res://Scenes/Utility/GameOver/GameOver.tscn" id="52"]
-[ext_resource type="Theme" uid="uid://y1ufudag5d7f" path="res://Assets/InputTheme/input_theme.tres" id="52_8cksg"]
 [ext_resource type="PackedScene" uid="uid://dhpnyngl8a034" path="res://Scenes/Utility/Win/Win.tscn" id="53"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_f31m5"]
@@ -253,7 +252,7 @@ height = 54.2041
 
 [sub_resource type="CapsuleShape2D" id="122"]
 radius = 22.0
-height = 162.0
+height = 63.0
 
 [sub_resource type="SpriteFrames" id="123"]
 animations = [{
@@ -283,14 +282,14 @@ shader_parameter/scrolling_speed = 1.0
 
 [sub_resource type="CapsuleShape2D" id="125"]
 radius = 19.9751
-height = 367.469
+height = 290.52
 
 [node name="Pescando" type="Node2D" groups=["level_pesca"]]
 script = ExtResource("10")
 FishBG = ExtResource("47")
 
 [node name="IlleaBuceando" parent="." instance=ExtResource("12")]
-position = Vector2(1600, 600)
+position = Vector2(429, 273)
 scale = Vector2(0.3, 0.3)
 
 [node name="Contador" parent="." instance=ExtResource("19")]
@@ -367,7 +366,7 @@ centered = false
 [node name="ParallaxLayer" type="ParallaxLayer" parent="Background/Boat"]
 
 [node name="Boat" type="Sprite2D" parent="Background/Boat/ParallaxLayer"]
-position = Vector2(1600, 325)
+position = Vector2(630, 126.5)
 texture = ExtResource("25")
 
 [node name="Wave" type="ParallaxBackground" parent="Background"]
@@ -418,7 +417,7 @@ tile_set = SubResource("5")
 
 [node name="Terrain" type="Sprite2D" parent="Placeholder"]
 z_index = 1
-position = Vector2(-57, 504)
+position = Vector2(-27, 215)
 scale = Vector2(0.363, 0.414)
 texture = ExtResource("11")
 centered = false
@@ -433,7 +432,7 @@ texture = ExtResource("15")
 
 [node name="Coral2" type="Sprite2D" parent="Placeholder/Corals"]
 material = SubResource("138")
-position = Vector2(975, 1047)
+position = Vector2(860, 658)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("15")
 
@@ -664,7 +663,7 @@ texture = ExtResource("26")
 shape = SubResource("120")
 
 [node name="Botella4" type="CharacterBody2D" parent="Trash" groups=["enemy"]]
-position = Vector2(1700, 1050)
+position = Vector2(722, 536)
 script = ExtResource("31")
 
 [node name="Sprite2D" type="Sprite2D" parent="Trash/Botella4"]
@@ -699,7 +698,7 @@ rotation = 1.5708
 shape = SubResource("120")
 
 [node name="Calcetin3" type="CharacterBody2D" parent="Trash" groups=["enemy"]]
-position = Vector2(2450, 760)
+position = Vector2(63, 547)
 script = ExtResource("31")
 
 [node name="Sprite2D" type="Sprite2D" parent="Trash/Calcetin3"]
@@ -747,7 +746,7 @@ rotation = 1.5708
 shape = SubResource("120")
 
 [node name="Mascarilla5" type="CharacterBody2D" parent="Trash" groups=["enemy"]]
-position = Vector2(2050, 1050)
+position = Vector2(1273, 572)
 script = ExtResource("31")
 
 [node name="Sprite2D" type="Sprite2D" parent="Trash/Mascarilla5"]
@@ -759,7 +758,7 @@ rotation = 1.5708
 shape = SubResource("120")
 
 [node name="Mascarilla3" type="CharacterBody2D" parent="Trash" groups=["enemy"]]
-position = Vector2(1750, 760)
+position = Vector2(685, 441)
 script = ExtResource("31")
 
 [node name="Sprite2D" type="Sprite2D" parent="Trash/Mascarilla3"]
@@ -771,7 +770,7 @@ rotation = 1.5708
 shape = SubResource("120")
 
 [node name="Mascarilla7" type="CharacterBody2D" parent="Trash" groups=["enemy"]]
-position = Vector2(1100, 1060)
+position = Vector2(450, 712)
 script = ExtResource("31")
 
 [node name="Sprite2D" type="Sprite2D" parent="Trash/Mascarilla7"]
@@ -807,7 +806,7 @@ rotation = 1.5708
 shape = SubResource("120")
 
 [node name="Lata" type="CharacterBody2D" parent="Trash" groups=["enemy"]]
-position = Vector2(360, 700)
+position = Vector2(382, 593)
 script = ExtResource("31")
 
 [node name="Sprite2D" type="Sprite2D" parent="Trash/Lata"]
@@ -855,7 +854,7 @@ rotation = 1.5708
 shape = SubResource("120")
 
 [node name="Jeringa" type="CharacterBody2D" parent="Trash" groups=["enemy"]]
-position = Vector2(2300, 550)
+position = Vector2(1057, 665)
 script = ExtResource("31")
 
 [node name="Sprite2D" type="Sprite2D" parent="Trash/Jeringa"]
@@ -867,7 +866,7 @@ rotation = 1.5708
 shape = SubResource("120")
 
 [node name="Jeringa6" type="CharacterBody2D" parent="Trash" groups=["enemy"]]
-position = Vector2(1440, 930)
+position = Vector2(620, 722)
 script = ExtResource("31")
 
 [node name="Sprite2D" type="Sprite2D" parent="Trash/Jeringa6"]
@@ -915,7 +914,7 @@ rotation = 1.5708
 shape = SubResource("120")
 
 [node name="Cuchara" type="CharacterBody2D" parent="Trash" groups=["enemy"]]
-position = Vector2(2100, 650)
+position = Vector2(972, 539)
 scale = Vector2(0.98, 1)
 script = ExtResource("39")
 
@@ -941,7 +940,7 @@ rotation = 1.5708
 shape = SubResource("120")
 
 [node name="Cuchara3" type="CharacterBody2D" parent="Trash" groups=["enemy"]]
-position = Vector2(780, 1060)
+position = Vector2(482, 590)
 scale = Vector2(0.98, 1)
 script = ExtResource("39")
 
@@ -956,7 +955,7 @@ shape = SubResource("120")
 [node name="Boat" type="Node" parent="."]
 
 [node name="Claw" type="CharacterBody2D" parent="Boat" groups=["boat"]]
-position = Vector2(1600, 385)
+position = Vector2(630, 186.5)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Boat/Claw"]
 position = Vector2(0, 15)
@@ -970,7 +969,7 @@ frame = 1
 
 [node name="Barracuda" type="CharacterBody2D" parent="Fish"]
 material = SubResource("142")
-position = Vector2(650, 1800)
+position = Vector2(257, 701)
 rotation = 1.48353
 scale = Vector2(1, 2)
 
@@ -995,11 +994,11 @@ position = Vector2(1, -1)
 [node name="PauseMenu" parent="HUD/Pause" instance=ExtResource("40")]
 modulate = Color(1, 1, 1, 0.588235)
 z_index = 100
-position = Vector2(3200, 1750)
+position = Vector2(1299, 709)
 
 [node name="Analog" parent="HUD" instance=ExtResource("23")]
 z_index = 100
-position = Vector2(214, 1581)
+position = Vector2(96, 669)
 scale = Vector2(2, 2)
 
 [node name="GameOver" parent="HUD" instance=ExtResource("52")]
@@ -1017,7 +1016,7 @@ visible = false
 
 [node name="Turtle" parent="FishBG" instance=ExtResource("48")]
 z_index = 2
-position = Vector2(1000, 1900)
+position = Vector2(1118, 347)
 scale = Vector2(0.25, 0.25)
 
 [node name="SpawnFishBGTimer" type="Timer" parent="FishBG"]
@@ -1029,12 +1028,12 @@ one_shot = true
 
 [node name="Timer" type="Node2D" parent="."]
 z_index = 2
-position = Vector2(1600, -200)
+position = Vector2(643, -8)
 
 [node name="BGTimer" type="Sprite2D" parent="Timer"]
-position = Vector2(0, 55)
+position = Vector2(-7.99997, 52)
 rotation = -1.5708
-scale = Vector2(1, 3.2)
+scale = Vector2(0.458372, 1.46679)
 texture = ExtResource("50")
 offset = Vector2(100, -2.5)
 
@@ -1046,29 +1045,29 @@ one_shot = true
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -189.0
-offset_right = 189.0
-offset_bottom = 162.0
+offset_left = -204.0
+offset_top = 13.0
+offset_right = 184.0
+offset_bottom = 89.0
+grow_horizontal = 2
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Timer/MarginContainer"]
 layout_mode = 2
 
 [node name="LblTries" type="Label" parent="Timer/MarginContainer/VBoxContainer"]
 layout_mode = 2
-theme = ExtResource("52_8cksg")
+theme = ExtResource("49")
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_constants/shadow_offset_x = -3
-theme_override_fonts/font = ExtResource("49")
 text = "INTENTOS: 0"
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="LblTimer" type="Label" parent="Timer/MarginContainer/VBoxContainer"]
 layout_mode = 2
-theme = ExtResource("52_8cksg")
+theme = ExtResource("49")
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_constants/shadow_offset_x = -3
-theme_override_fonts/font = ExtResource("49")
 text = "00:00"
 horizontal_alignment = 1
 vertical_alignment = 1

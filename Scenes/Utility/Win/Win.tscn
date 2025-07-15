@@ -1,11 +1,11 @@
 [gd_scene load_steps=10 format=3 uid="uid://dhpnyngl8a034"]
 
-[ext_resource type="FontFile" uid="uid://b2wbfrap8ifi4" path="res://Assets/Fonts/Marujo.ttf" id="1"]
-[ext_resource type="Texture2D" uid="uid://bafkk5ay4xpnw" path="res://Assets/Images/btn_yellow_disabled.png" id="2"]
-[ext_resource type="Theme" uid="uid://y1ufudag5d7f" path="res://Assets/InputTheme/input_theme.tres" id="2_aeepg"]
-[ext_resource type="Texture2D" uid="uid://byxg1vidddqdh" path="res://Assets/Images/btn_yellow.png" id="3"]
+[ext_resource type="FontFile" uid="uid://b4c2f613d82li" path="res://Assets/Fonts/Marujo.ttf" id="1"]
+[ext_resource type="Texture2D" uid="uid://bihlx3gji6v5l" path="res://Assets/Images/btn_yellow_disabled.png" id="2"]
+[ext_resource type="Theme" uid="uid://y1ufudag5d7f" path="res://Assets_old/InputTheme/input_theme.tres" id="2_aeepg"]
+[ext_resource type="Texture2D" uid="uid://b605pt1ywufls" path="res://Assets/Images/btn_yellow.png" id="3"]
 [ext_resource type="Script" uid="uid://dlatu4ukmoew1" path="res://Scenes/Utility/Win/Win.gd" id="4"]
-[ext_resource type="FontFile" uid="uid://byvaqdf2liiep" path="res://Assets/Fonts/btnFont.tres" id="5"]
+[ext_resource type="FontFile" uid="uid://byvaqdf2liiep" path="res://Assets_old/Fonts/btnFont.tres" id="5"]
 
 [sub_resource type="FontFile" id="1"]
 fallbacks = Array[Font]([ExtResource("1")])
@@ -22,6 +22,11 @@ cache/0/75/0/descent = 0.0
 cache/0/75/0/underline_position = 0.0
 cache/0/75/0/underline_thickness = 0.0
 cache/0/75/0/scale = 1.0
+cache/0/35/0/ascent = 0.0
+cache/0/35/0/descent = 0.0
+cache/0/35/0/underline_position = 0.0
+cache/0/35/0/underline_thickness = 0.0
+cache/0/35/0/scale = 1.0
 
 [sub_resource type="FontFile" id="2"]
 fallbacks = Array[Font]([ExtResource("1")])
@@ -38,6 +43,16 @@ cache/0/75/0/descent = 0.0
 cache/0/75/0/underline_position = 0.0
 cache/0/75/0/underline_thickness = 0.0
 cache/0/75/0/scale = 1.0
+cache/0/35/0/ascent = 0.0
+cache/0/35/0/descent = 0.0
+cache/0/35/0/underline_position = 0.0
+cache/0/35/0/underline_thickness = 0.0
+cache/0/35/0/scale = 1.0
+cache/0/30/0/ascent = 0.0
+cache/0/30/0/descent = 0.0
+cache/0/30/0/underline_position = 0.0
+cache/0/30/0/underline_thickness = 0.0
+cache/0/30/0/scale = 1.0
 
 [sub_resource type="FontFile" id="3"]
 fallbacks = Array[Font]([ExtResource("1")])
@@ -54,6 +69,11 @@ cache/0/75/0/descent = 0.0
 cache/0/75/0/underline_position = 0.0
 cache/0/75/0/underline_thickness = 0.0
 cache/0/75/0/scale = 1.0
+cache/0/35/0/ascent = 0.0
+cache/0/35/0/descent = 0.0
+cache/0/35/0/underline_position = 0.0
+cache/0/35/0/underline_thickness = 0.0
+cache/0/35/0/scale = 1.0
 
 [node name="Win" type="Node2D"]
 z_index = 200
@@ -65,8 +85,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_right = 3200.0
-offset_bottom = 1800.0
+offset_right = 1366.0
+offset_bottom = 768.0
+grow_horizontal = 2
+grow_vertical = 2
 color = Color(0, 0, 0, 0.392157)
 
 [node name="CenterContainer" type="VBoxContainer" parent="."]
@@ -75,8 +97,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_right = 3200.0
-offset_bottom = 1800.0
+offset_right = 1366.0
+offset_bottom = 768.0
+grow_horizontal = 2
+grow_vertical = 2
 alignment = 1
 
 [node name="Label" type="Label" parent="CenterContainer"]
@@ -122,6 +146,7 @@ theme = ExtResource("2_aeepg")
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_constants/shadow_offset_x = -3
 theme_override_fonts/font = SubResource("2")
+theme_override_font_sizes/font_size = 30
 text = "REINTENTAR"
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -135,10 +160,10 @@ texture_disabled = ExtResource("2")
 
 [node name="Label" type="Label" parent="CenterContainer/HBoxContainer/BtnMenu"]
 layout_mode = 0
-offset_left = 66.0
-offset_top = 97.0
-offset_right = 423.0
-offset_bottom = 176.0
+offset_left = -77.0
+offset_top = 20.0
+offset_right = 280.0
+offset_bottom = 99.0
 theme = ExtResource("2_aeepg")
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_constants/shadow_offset_x = -3
