@@ -1,16 +1,16 @@
 [gd_scene load_steps=15 format=3 uid="uid://cvovq5vfp4iko"]
 
 [ext_resource type="Script" uid="uid://dv25i8ac00aae" path="res://Scenes/Menu/Scripts/Menu.gd" id="1"]
-[ext_resource type="Texture2D" uid="uid://daf2ic8wuwyx2" path="res://Assets/Images/bg_main.jpg" id="2"]
-[ext_resource type="Texture2D" uid="uid://b6lltgw6d4n6p" path="res://Scenes/Menu/Images/logo.png" id="3"]
-[ext_resource type="AudioStream" uid="uid://dh7x2r3khgr4d" path="res://Scenes/Menu/Sounds/sea-waves.ogg" id="4"]
-[ext_resource type="Texture2D" uid="uid://byxg1vidddqdh" path="res://Assets/Images/btn_yellow.png" id="5"]
-[ext_resource type="FontFile" uid="uid://byvaqdf2liiep" path="res://Assets/Fonts/btnFont.tres" id="6"]
-[ext_resource type="FontFile" uid="uid://b2wbfrap8ifi4" path="res://Assets/Fonts/Marujo.ttf" id="7"]
+[ext_resource type="Texture2D" uid="uid://b681qfvw3i4ko" path="res://Assets/Images/bg_main.jpg" id="2"]
+[ext_resource type="Texture2D" uid="uid://b44wfel5ld3t3" path="res://Scenes/Menu/Images/logo.png" id="3"]
+[ext_resource type="AudioStream" uid="uid://cs3lm6h2uwe2q" path="res://Scenes/Menu/Sounds/sea-waves.ogg" id="4"]
+[ext_resource type="Texture2D" uid="uid://b605pt1ywufls" path="res://Assets/Images/btn_yellow.png" id="5"]
+[ext_resource type="FontFile" uid="uid://byvaqdf2liiep" path="res://Assets_old/Fonts/btnFont.tres" id="6"]
+[ext_resource type="FontFile" uid="uid://b4c2f613d82li" path="res://Assets/Fonts/Marujo.ttf" id="7"]
 [ext_resource type="PackedScene" uid="uid://cujr43bnq6o6h" path="res://Scenes/Options/Options.tscn" id="8"]
-[ext_resource type="Texture2D" uid="uid://bafkk5ay4xpnw" path="res://Assets/Images/btn_yellow_disabled.png" id="9"]
-[ext_resource type="AudioStream" uid="uid://cbok31nb8te2p" path="res://Assets/Sounds/main_menu.ogg" id="10"]
-[ext_resource type="AudioStream" uid="uid://bwkqaogcrblqo" path="res://Assets/Sounds/SFX/button_press.wav" id="11"]
+[ext_resource type="Texture2D" uid="uid://bihlx3gji6v5l" path="res://Assets/Images/btn_yellow_disabled.png" id="9"]
+[ext_resource type="AudioStream" uid="uid://oqgbfhnjnj70" path="res://Assets/Sounds/main_menu.ogg" id="10"]
+[ext_resource type="AudioStream" uid="uid://bdp1xdh7k8sa3" path="res://Assets/Sounds/SFX/button_press.wav" id="11"]
 
 [sub_resource type="FontFile" id="1"]
 fallbacks = Array[Font]([ExtResource("7")])
@@ -24,6 +24,11 @@ cache/0/75/0/descent = 0.0
 cache/0/75/0/underline_position = 0.0
 cache/0/75/0/underline_thickness = 0.0
 cache/0/75/0/scale = 1.0
+cache/0/55/0/ascent = 0.0
+cache/0/55/0/descent = 0.0
+cache/0/55/0/underline_position = 0.0
+cache/0/55/0/underline_thickness = 0.0
+cache/0/55/0/scale = 1.0
 
 [sub_resource type="Animation" id="2"]
 resource_name = "Init"
@@ -84,19 +89,22 @@ texture = ExtResource("2")
 centered = false
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
-layout_mode = 0
+layout_mode = 1
+anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -298.5
-offset_right = 298.5
-offset_bottom = 206.0
+offset_left = -1224.0
+offset_top = 9.0
+offset_right = -627.0
+offset_bottom = 215.0
+grow_horizontal = 2
 
 [node name="PlayerName" type="Label" parent="VBoxContainer"]
 layout_mode = 2
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_constants/shadow_offset_x = -3
 theme_override_fonts/font = SubResource("1")
-theme_override_font_sizes/font_size = 75
+theme_override_font_sizes/font_size = 55
 horizontal_alignment = 1
 
 [node name="PlayerPoints" type="Label" parent="VBoxContainer"]
@@ -104,24 +112,28 @@ layout_mode = 2
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_constants/shadow_offset_x = -3
 theme_override_fonts/font = SubResource("1")
-theme_override_font_sizes/font_size = 75
+theme_override_font_sizes/font_size = 55
 text = "PUNTUACIÓN: 0"
 horizontal_alignment = 1
 
 [node name="Logo" type="Sprite2D" parent="."]
-position = Vector2(1600, 450)
+position = Vector2(674, 255)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("3")
 
 [node name="ButtonsContainer" type="HBoxContainer" parent="."]
-layout_mode = 0
+layout_mode = 1
+anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -739.0
-offset_right = 739.0
-offset_bottom = 136.5
+offset_left = -1597.0
+offset_top = -486.0
+offset_right = -234.0
+offset_bottom = -349.0
+grow_horizontal = 2
+grow_vertical = 2
 alignment = 1
 
 [node name="PlayContainer" type="CenterContainer" parent="ButtonsContainer"]
@@ -139,7 +151,7 @@ layout_mode = 2
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_constants/shadow_offset_x = -3
 theme_override_fonts/font = ExtResource("6")
-theme_override_font_sizes/font_size = 100
+theme_override_font_sizes/font_size = 50
 text = "JUGAR"
 
 [node name="Learn" type="Node2D" parent="ButtonsContainer"]

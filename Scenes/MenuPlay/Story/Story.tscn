@@ -1,14 +1,14 @@
 [gd_scene load_steps=10 format=3 uid="uid://b01rllaywbk8n"]
 
-[ext_resource type="Texture2D" uid="uid://byxg1vidddqdh" path="res://Assets/Images/btn_yellow.png" id="2"]
-[ext_resource type="AudioStream" uid="uid://rmsb4vmss26n" path="res://Assets/Sounds/menu_play.ogg" id="3"]
-[ext_resource type="Theme" uid="uid://y1ufudag5d7f" path="res://Assets/InputTheme/input_theme.tres" id="3_h7cv5"]
-[ext_resource type="Texture2D" uid="uid://bafkk5ay4xpnw" path="res://Assets/Images/btn_yellow_disabled.png" id="4"]
-[ext_resource type="Texture2D" uid="uid://bhd135ao41ocl" path="res://Assets/Images/bg_underwater.png" id="5"]
-[ext_resource type="Texture2D" uid="uid://vg4ldcjv7m84" path="res://Assets/Images/btn_arrow.png" id="6"]
+[ext_resource type="Texture2D" uid="uid://b605pt1ywufls" path="res://Assets/Images/btn_yellow.png" id="2"]
+[ext_resource type="AudioStream" uid="uid://ctj86wdkh2lgv" path="res://Assets/Sounds/menu_play.ogg" id="3"]
+[ext_resource type="Theme" uid="uid://y1ufudag5d7f" path="res://Assets_old/InputTheme/input_theme.tres" id="3_h7cv5"]
+[ext_resource type="Texture2D" uid="uid://bihlx3gji6v5l" path="res://Assets/Images/btn_yellow_disabled.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://byecdevf5dvrx" path="res://Assets/Images/bg_underwater.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://gelv02wuf7r6" path="res://Assets/Images/btn_arrow.png" id="6"]
 [ext_resource type="PackedScene" uid="uid://cujr43bnq6o6h" path="res://Scenes/Options/Options.tscn" id="8"]
 [ext_resource type="Script" uid="uid://dpc67dk57cewr" path="res://Scenes/MenuPlay/Story/Story.gd" id="9"]
-[ext_resource type="AudioStream" uid="uid://bwkqaogcrblqo" path="res://Assets/Sounds/SFX/button_press.wav" id="10"]
+[ext_resource type="AudioStream" uid="uid://bdp1xdh7k8sa3" path="res://Assets/Sounds/SFX/button_press.wav" id="10"]
 
 [node name="Story" type="Control"]
 layout_mode = 3

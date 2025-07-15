@@ -1,11 +1,10 @@
-[gd_scene load_steps=11 format=3 uid="uid://dq7nvmwx1jpeg"]
+[gd_scene load_steps=10 format=3 uid="uid://dq7nvmwx1jpeg"]
 
-[ext_resource type="AudioStream" uid="uid://cnkmpqc44gpln" path="res://Scenes/Splash/Sounds/sea-waves.ogg" id="1"]
+[ext_resource type="AudioStream" uid="uid://bvsnmpn1o5bi8" path="res://Scenes/Splash/Sounds/sea-waves.ogg" id="1"]
 [ext_resource type="Script" uid="uid://psrilxlxfin5" path="res://Scenes/Splash/Scripts/Splash.gd" id="2"]
-[ext_resource type="Texture2D" uid="uid://b04dwg3f6ald1" path="res://Scenes/Splash/Images/wern-logo.png" id="3"]
-[ext_resource type="Texture2D" uid="uid://hp7w06220i47" path="res://Scenes/Splash/Images/fzt-logo.png" id="4"]
-[ext_resource type="Texture2D" uid="uid://daf2ic8wuwyx2" path="res://Assets/Images/bg_main.jpg" id="5"]
-[ext_resource type="FontFile" uid="uid://byvaqdf2liiep" path="res://Assets/Fonts/btnFont.tres" id="6"]
+[ext_resource type="Texture2D" uid="uid://dsubjmlr8gqg4" path="res://Scenes/Splash/Images/wern-logo.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://cfk4adpxvidxg" path="res://Scenes/Splash/Images/fzt-logo.png" id="4"]
+[ext_resource type="FontFile" uid="uid://byvaqdf2liiep" path="res://Assets_old/Fonts/btnFont.tres" id="6"]
 
 [sub_resource type="Animation" id="3"]
 length = 0.001
@@ -188,14 +187,17 @@ _data = {
 [node name="Splash" type="Control"]
 layout_mode = 3
 anchors_preset = 0
-offset_right = 3200.0
-offset_bottom = 1800.0
+offset_right = 1366.0
+offset_bottom = 768.0
 script = ExtResource("2")
 
 [node name="BgColor" type="ColorRect" parent="."]
-layout_mode = 0
+layout_mode = 1
+anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 color = Color(0, 0, 0, 1)
 
 [node name="Sound" type="AudioStreamPlayer" parent="."]
@@ -211,13 +213,13 @@ autostart = true
 
 [node name="WernLogo" type="Sprite2D" parent="."]
 modulate = Color(1, 1, 1, 0)
-position = Vector2(2558, 900)
+position = Vector2(1224, 358)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("3")
 
 [node name="FZTLogo" type="Sprite2D" parent="."]
 modulate = Color(1, 1, 1, 0)
-position = Vector2(700, 900)
+position = Vector2(205, 379)
 texture = ExtResource("4")
 
 [node name="AnimationSplash" type="AnimationPlayer" parent="."]
@@ -230,25 +232,27 @@ libraries = {
 [node name="BgImage" type="Sprite2D" parent="."]
 modulate = Color(1, 1, 1, 0)
 position = Vector2(916, 1230)
-texture = ExtResource("5")
 centered = false
 offset = Vector2(-916, -1230)
 
 [node name="LblPlay" type="Label" parent="."]
 modulate = Color(1, 1, 1, 0)
-layout_mode = 0
+layout_mode = 1
+anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -364.5
-offset_top = -87.5
-offset_right = 460.5
-offset_bottom = 87.5
+offset_left = -397.0
+offset_top = -92.0
+offset_right = 428.0
+offset_bottom = 83.0
+grow_horizontal = 2
+grow_vertical = 2
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_constants/shadow_offset_x = -3
 theme_override_fonts/font = ExtResource("6")
-theme_override_font_sizes/font_size = 75
+theme_override_font_sizes/font_size = 55
 text = "FAMILIA
 RODRÍGUEZ VELÁSQUEZ"
 horizontal_alignment = 1
