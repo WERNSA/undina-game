@@ -1,15 +1,14 @@
-[gd_scene load_steps=11 format=3 uid="uid://bmjjc5rg4u26d"]
+[gd_scene load_steps=12 format=3 uid="uid://bmjjc5rg4u26d"]
 
-[ext_resource type="Texture2D" uid="uid://bijmf51c4ite7" path="res://Assets/Images/ObstacleRace/Ilea nadando/Ilea nadando 1.png" id="1"]
+[ext_resource type="Texture2D" uid="uid://bbgoq317gdd1o" path="res://Assets/Images/ObstacleRace/Ilea nadando/Ilea nadando 1.png" id="1"]
 [ext_resource type="Script" uid="uid://cykigmnxabsnh" path="res://Scenes/Entity/Illea/Nadando/IleaNadando.gd" id="2"]
-[ext_resource type="AudioStream" uid="uid://d4lp8hxt1bcxi" path="res://Assets/Sounds/SFX/swimming.mp3" id="3"]
-[ext_resource type="Texture2D" uid="uid://cu7cib15h50sr" path="res://Assets/Images/ObstacleRace/Ilea nadando/Ilea nadando 3.png" id="4"]
-[ext_resource type="Texture2D" uid="uid://6um2jijxnw37" path="res://Assets/Images/ObstacleRace/Ilea nadando/Ilea nadando 2.png" id="5"]
-[ext_resource type="Texture2D" uid="uid://bas1xy2x4it0" path="res://Assets/Images/ObstacleRace/Ilea nadando/Ilea nadando 4.png" id="6"]
+[ext_resource type="AudioStream" uid="uid://daex6by887v8u" path="res://Assets/Sounds/SFX/swimming.mp3" id="3"]
+[ext_resource type="Texture2D" uid="uid://dgfxwof3xi8ud" path="res://Assets/Images/ObstacleRace/Ilea nadando/Ilea nadando 3.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://yth2b8j3gkw0" path="res://Assets/Images/ObstacleRace/Ilea nadando/Ilea nadando 2.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://wqeve3e7crdu" path="res://Assets/Images/ObstacleRace/Ilea nadando/Ilea nadando 4.png" id="6"]
 
 [sub_resource type="CapsuleShape2D" id="1"]
-radius = 25.0
-height = 150.0
+height = 82.0
 
 [sub_resource type="Animation" id="2"]
 resource_name = "Punch"
@@ -24,7 +23,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 0,
-"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0.235294), Color(1, 1, 1, 1), Color(1, 1, 1, 0.235294), Color(1, 1, 1, 1), Color(1, 1, 1, 0.235294), Color(1, 1, 1, 1), Color(1, 1, 1, 0.235294), Color(1, 1, 1, 1)]
+"values": [Color(1, 0.6, 0.606667, 1), Color(1, 1, 1, 0.235294), Color(1, 0.6, 0.6, 1), Color(1, 1, 1, 0.235294), Color(1, 0.6, 0.6, 1), Color(1, 1, 1, 0.235294), Color(1, 0.6, 0.6, 1), Color(1, 1, 1, 0.235294), Color(1, 0.6, 0.6, 1)]
 }
 
 [sub_resource type="Animation" id="3"]
@@ -57,6 +56,7 @@ tracks/1/keys = {
 [sub_resource type="Animation" id="4"]
 resource_name = "Swim"
 length = 0.8
+loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -68,6 +68,25 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 1,
 "values": [ExtResource("1"), ExtResource("5"), ExtResource("4"), ExtResource("6")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_8t5ue"]
+_data = {
+&"Punch": SubResource("2"),
+&"RESET": SubResource("3"),
+&"Swim": SubResource("4")
 }
 
 [node name="IleaNadando" type="CharacterBody2D" groups=["player"]]
@@ -83,12 +102,12 @@ shape = SubResource("1")
 stream = ExtResource("3")
 volume_db = 0.5
 autoplay = true
-bus = "SFX"
+bus = &"SFX"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-anims/Punch = SubResource("2")
-anims/RESET = SubResource("3")
-anims/Swim = SubResource("4")
+libraries = {
+&"": SubResource("AnimationLibrary_8t5ue")
+}
 
 [node name="InvisibiltyTimer" type="Timer" parent="."]
 wait_time = 3.0

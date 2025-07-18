@@ -7,9 +7,9 @@ extends Node2D
 @export var Trash3: PackedScene
 @export var Trash4: PackedScene
 
-@onready var island_position = Vector2(3600, 1550)
-@onready var top_position = 250
-@onready var bottom_position = 1550
+@onready var island_position = Vector2(1366, 700)
+@onready var top_position = 120
+@onready var bottom_position = 650
 @onready var tries = 3
 var TRASH_COUNT = 0
 var game_over: bool = false
@@ -78,23 +78,23 @@ func reduce_distance():
 	$Contador.set_count(str(TRASH_COUNT))
 	tries = 3
 	$Sounds/GetSound.play()
-	var new_position = $Characters/Turtle.position.x - 400
+	var new_position = $Characters/Turtle.position.x - 150
 	move_turtle_to(Vector2(new_position, $Characters/Turtle.position.y))
 
 func add_distance():
 	var current_x = $Characters/Turtle.position.x
-	if current_x >= 2700:
+	if current_x >= 1366:
 		tries -= 1
 		if tries == 0:
 			move_turtle_to(Vector2(current_x + 600, $Characters/Turtle.position.y))
 			_game_over()
 	else:
-		move_turtle_to(Vector2(current_x + 400, $Characters/Turtle.position.y))
+		move_turtle_to(Vector2(current_x + 110, $Characters/Turtle.position.y))
 
 func _on_IslandSpeedTimer_timeout():
-	Global.min_enemy_speed += 50
-	Global.max_enemy_speed += 50
-	if Global.min_enemy_speed > 500:
+	Global.min_enemy_speed += 20
+	Global.max_enemy_speed += 20
+	if Global.min_enemy_speed > 200:
 		$Spawn/IslandSpeedTimer.stop()
 		print("Velocidad máxima alcanzada")
 	print("Velocidad enemiga aumentada")
@@ -120,7 +120,7 @@ func _game_over():
 	$Characters/IleaNadando.can_move = false
 	$Spawn/IslandTimer.stop()
 	$Spawn/IslandSpeedTimer.stop()
-	$Characters/IleaNadando.position = Vector2(250, 900)
+	$Characters/IleaNadando.position = Vector2(125, 384)
 	$Sounds/BGSong.stop()
 
 func _on_try_again():
@@ -133,7 +133,7 @@ func _on_StepTimer_timeout():
 func _on_Timer_timeout():
 	$Timer/StepTimer.stop()
 	tries = 0
-	move_turtle_to(Vector2(3400, $Characters/Turtle.position.y), 2.0)
+	move_turtle_to(Vector2(1600, $Characters/Turtle.position.y), 2.0)
 	_game_over()
 
 

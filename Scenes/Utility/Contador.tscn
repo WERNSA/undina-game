@@ -1,12 +1,13 @@
 [gd_scene load_steps=7 format=3 uid="uid://7jnwei6j4avo"]
 
-[ext_resource type="FontFile" uid="uid://b4c2f613d82li" path="res://Assets/Fonts/Marujo.ttf" id="1"]
-[ext_resource type="Texture2D" uid="uid://ddobqdkmb3ntl" path="res://Assets/Images/Fondo de contador de puntos.png" id="2"]
-[ext_resource type="Theme" uid="uid://y1ufudag5d7f" path="res://Assets_old/InputTheme/input_theme.tres" id="2_udp7a"]
-[ext_resource type="Texture2D" uid="uid://ceume1knolwc0" path="res://Assets/Images/Concha.png" id="3"]
+[ext_resource type="FontFile" uid="uid://dwuhhld1o3c7v" path="res://Assets/Fonts/Marujo.ttf" id="1"]
+[ext_resource type="Texture2D" uid="uid://dfykkbqn7eqei" path="res://Assets/Images/Fondo de contador de puntos.png" id="2"]
+[ext_resource type="Theme" uid="uid://y1ufudag5d7f" path="res://Assets/InputTheme/input_theme.tres" id="2_udp7a"]
+[ext_resource type="Texture2D" uid="uid://c728i100fawhi" path="res://Assets/Images/Concha.png" id="3"]
 [ext_resource type="Script" uid="uid://dgan1xry4akd5" path="res://Scenes/Utility/Contador.gd" id="4"]
 
 [sub_resource type="FontFile" id="1"]
+resource_name = ""
 fallbacks = Array[Font]([ExtResource("1"), ExtResource("1")])
 subpixel_positioning = 0
 msdf_pixel_range = 14
@@ -38,9 +39,13 @@ offset_left = 14.0
 offset_top = 9.0
 offset_right = 238.0
 offset_bottom = 85.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
 
 [node name="CenterContainer" type="CenterContainer" parent="LblName/VBoxContainer"]
 layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
 
 [node name="Label" type="Label" parent="LblName/VBoxContainer/CenterContainer"]
 layout_mode = 2
@@ -59,10 +64,10 @@ anchor_left = 1.0
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
-offset_left = 1013.0
+offset_left = 1082.0
 offset_top = 29.0
 offset_right = 1249.0
-offset_bottom = 90.0
+offset_bottom = 67.0
 grow_horizontal = 0
 grow_vertical = 2
 
@@ -73,19 +78,19 @@ theme_override_font_sizes/font_size = 35
 vertical_alignment = 1
 
 [node name="FondoL" type="Sprite2D" parent="."]
-position = Vector2(-478, -163)
+position = Vector2(-488, -163)
 rotation = -3.14159
 scale = Vector2(0.54, 0.54)
 texture = ExtResource("2")
 offset = Vector2(-1124.32, -392.23)
 
 [node name="FondoR" type="Sprite2D" parent="."]
-position = Vector2(1740, 261)
+position = Vector2(1794, 248)
 scale = Vector2(0.54, 0.517)
 texture = ExtResource("2")
 offset = Vector2(-1124.32, -392.23)
 
 [node name="Concha" type="Sprite2D" parent="."]
-position = Vector2(1305, 59)
+position = Vector2(1318, 46)
 scale = Vector2(0.491736, 0.491736)
 texture = ExtResource("3")

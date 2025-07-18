@@ -1,15 +1,15 @@
-[gd_scene load_steps=11 format=3 uid="uid://dcqx8mh5yw26n"]
+[gd_scene load_steps=12 format=3 uid="uid://dcqx8mh5yw26n"]
 
-[ext_resource type="Texture2D" uid="uid://bt8yondrvph7r" path="res://Assets/Images/ObstacleRace/Turtle/Tortuga obstaculos 1.png" id="1"]
-[ext_resource type="Texture2D" uid="uid://cqtpglnde7qpb" path="res://Assets/Images/ObstacleRace/Tortuga con basura/Tortuga con basura 1.png" id="2"]
-[ext_resource type="Texture2D" uid="uid://fexgn3jvkcws" path="res://Assets/Images/ObstacleRace/Tortuga con basura/Tortuga con basura 4.png" id="3"]
-[ext_resource type="Texture2D" uid="uid://cnwn8yplm17ci" path="res://Assets/Images/ObstacleRace/Tortuga con basura/Tortuga con basura 3.png" id="4"]
-[ext_resource type="Texture2D" uid="uid://drudpdbv3mnh5" path="res://Assets/Images/ObstacleRace/Tortuga con basura/Tortuga con basura 5.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://bdnvfl4htmmag" path="res://Assets/Images/ObstacleRace/Turtle/Tortuga obstaculos 1.png" id="1"]
+[ext_resource type="Texture2D" uid="uid://01qxnofux8rr" path="res://Assets/Images/ObstacleRace/Tortuga con basura/Tortuga con basura 1.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://dfhdboabkct5b" path="res://Assets/Images/ObstacleRace/Tortuga con basura/Tortuga con basura 4.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://cb0dqoiokaxkr" path="res://Assets/Images/ObstacleRace/Tortuga con basura/Tortuga con basura 3.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://dw2647vhrfbb3" path="res://Assets/Images/ObstacleRace/Tortuga con basura/Tortuga con basura 5.png" id="5"]
 [ext_resource type="Script" uid="uid://by31en7qpps6i" path="res://Scenes/Entity/Turtle/Turtle.gd" id="6"]
-[ext_resource type="Texture2D" uid="uid://cbok2qydbucfi" path="res://Assets/Images/ObstacleRace/Tortuga con basura/Tortuga con basura 2.png" id="7"]
+[ext_resource type="Texture2D" uid="uid://d2wwoq6swfvym" path="res://Assets/Images/ObstacleRace/Tortuga con basura/Tortuga con basura 2.png" id="7"]
 
 [sub_resource type="CircleShape2D" id="1"]
-radius = 120.0
+radius = 61.0082
 
 [sub_resource type="Animation" id="2"]
 resource_name = "Idle"
@@ -42,6 +42,12 @@ tracks/0/keys = {
 "values": [ExtResource("1")]
 }
 
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_n4a2u"]
+_data = {
+&"Idle": SubResource("2"),
+&"RESET": SubResource("3")
+}
+
 [node name="Turtle" type="Area2D"]
 script = ExtResource("6")
 
@@ -53,7 +59,8 @@ position = Vector2(-20, 0)
 shape = SubResource("1")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-anims/Idle = SubResource("2")
-anims/RESET = SubResource("3")
+libraries = {
+&"": SubResource("AnimationLibrary_n4a2u")
+}
 
 [connection signal="body_entered" from="." to="." method="_on_Turtle_body_entered"]
