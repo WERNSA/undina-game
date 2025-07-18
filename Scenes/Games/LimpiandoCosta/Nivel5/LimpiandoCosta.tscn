@@ -1,50 +1,49 @@
-[gd_scene load_steps=51 format=4 uid="uid://bgisyla0f07x6"]
+[gd_scene load_steps=50 format=4 uid="uid://bgisyla0f07x6"]
 
-[ext_resource type="Texture2D" uid="uid://b33v8ww4pmxd6" path="res://Assets/Images/LimpiandoCosta/Pantalla 1/Arena de Fondo.png" id="1"]
-[ext_resource type="Texture2D" uid="uid://cgntkperasgqn" path="res://Assets/Images/LimpiandoCosta/Pantalla 1/Mar/Primera capa mar.png" id="2"]
-[ext_resource type="Texture2D" uid="uid://ki20oxbiwlay" path="res://Assets/Images/LimpiandoCosta/Pantalla 1/Mar/Segunda capa mar.png" id="3"]
-[ext_resource type="Texture2D" uid="uid://cjk23l2t8n7ry" path="res://Assets/Images/LimpiandoCosta/Pantalla 1/Mar/Tercera capa mar.png" id="4"]
-[ext_resource type="Texture2D" uid="uid://dotkd4t0gtu68" path="res://Assets/Images/LimpiandoCosta/Pantalla 1/Mar/Ola.png" id="5"]
-[ext_resource type="Texture2D" uid="uid://clubuxnq6dlic" path="res://Assets/Images/LimpiandoCosta/Pantalla 1/Mar/Espuma.png" id="6"]
-[ext_resource type="Texture2D" uid="uid://r24xq1n4v61v" path="res://Assets/Images/LimpiandoCosta/Pantalla 5/Palmeras/Palmera 1.png" id="7"]
-[ext_resource type="Texture2D" uid="uid://cbe8j7drrlxm" path="res://Assets/Images/LimpiandoCosta/Pantalla 5/Muro y calle.png" id="8"]
-[ext_resource type="Texture2D" uid="uid://04fna84644ue" path="res://Assets/Images/LimpiandoCosta/Pantalla 1/Detalles de la arena.png" id="9"]
-[ext_resource type="Texture2D" uid="uid://bke51w445y3xw" path="res://Assets/Images/LimpiandoCosta/Pantalla 1/Mar/Arena humeda.png" id="10"]
-[ext_resource type="Texture2D" uid="uid://d08nwnjst5lfr" path="res://Assets/Images/LimpiandoCosta/Pantalla 5/Palmeras/Palmera 3.png" id="11"]
-[ext_resource type="Texture2D" uid="uid://cyyicck1yb57x" path="res://Assets/Images/LimpiandoCosta/Pantalla 1/Banca.png" id="12"]
-[ext_resource type="Texture2D" uid="uid://becypvqfx2246" path="res://Assets/Images/LimpiandoCosta/Pantalla 1/Farol.png" id="13"]
-[ext_resource type="Texture2D" uid="uid://bmu6fuybdcmgl" path="res://Assets/Images/LimpiandoCosta/Pantalla 2/Basurero.png" id="14"]
-[ext_resource type="Texture2D" uid="uid://bixew7s31veqf" path="res://Assets/Images/LimpiandoCosta/Pantalla 4/Estrella de mar.png" id="15"]
+[ext_resource type="Texture2D" uid="uid://bd2mx2iqusecf" path="res://Assets/Images/LimpiandoCosta/Pantalla 1/Arena de Fondo.png" id="1"]
+[ext_resource type="Texture2D" uid="uid://dufigfolrijj8" path="res://Assets/Images/LimpiandoCosta/Pantalla 1/Mar/Primera capa mar.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://bexbta3b37f55" path="res://Assets/Images/LimpiandoCosta/Pantalla 1/Mar/Segunda capa mar.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://b38evwxivqkot" path="res://Assets/Images/LimpiandoCosta/Pantalla 1/Mar/Tercera capa mar.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://cjjd7hkreg3wh" path="res://Assets/Images/LimpiandoCosta/Pantalla 1/Mar/Ola.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://cnyif80vbe48r" path="res://Assets/Images/LimpiandoCosta/Pantalla 1/Mar/Espuma.png" id="6"]
+[ext_resource type="Texture2D" uid="uid://d35weomeolm76" path="res://Assets/Images/LimpiandoCosta/Pantalla 5/Palmeras/Palmera 1.png" id="7"]
+[ext_resource type="Texture2D" uid="uid://cymmc5c5m377i" path="res://Assets/Images/LimpiandoCosta/Pantalla 5/Muro y calle.png" id="8"]
+[ext_resource type="Texture2D" uid="uid://cm86pyxofhyxl" path="res://Assets/Images/LimpiandoCosta/Pantalla 1/Detalles de la arena.png" id="9"]
+[ext_resource type="Texture2D" uid="uid://cxi0pihi1eqvc" path="res://Assets/Images/LimpiandoCosta/Pantalla 1/Mar/Arena humeda.png" id="10"]
+[ext_resource type="Texture2D" uid="uid://d25fcp2qdtl8a" path="res://Assets/Images/LimpiandoCosta/Pantalla 5/Palmeras/Palmera 3.png" id="11"]
+[ext_resource type="Texture2D" uid="uid://bbaantl2q2sah" path="res://Assets/Images/LimpiandoCosta/Pantalla 1/Banca.png" id="12"]
+[ext_resource type="Texture2D" uid="uid://cm38j3rkn073j" path="res://Assets/Images/LimpiandoCosta/Pantalla 1/Farol.png" id="13"]
+[ext_resource type="Texture2D" uid="uid://x6yfi52ig5bp" path="res://Assets/Images/LimpiandoCosta/Pantalla 2/Basurero.png" id="14"]
+[ext_resource type="Texture2D" uid="uid://dhvy6hudimv44" path="res://Assets/Images/LimpiandoCosta/Pantalla 4/Estrella de mar.png" id="15"]
 [ext_resource type="Script" uid="uid://cw0q3qhst0ylb" path="res://Scenes/Games/LimpiandoCosta/Nivel5/LimpiandoCosta.gd" id="16"]
-[ext_resource type="Texture2D" uid="uid://cg00niclanl1y" path="res://Assets/Images/LimpiandoCosta/Pantalla 5/Farol.png" id="17"]
-[ext_resource type="Texture2D" uid="uid://boy3iomp3nyce" path="res://Assets/Images/LimpiandoCosta/Pantalla 5/Rótulo.png" id="18"]
-[ext_resource type="AudioStream" uid="uid://b0a5feibcpgbu" path="res://Assets/Sounds/limpiando_costa.ogg" id="19"]
-[ext_resource type="Texture2D" uid="uid://dm8ppwkpvvl7v" path="res://Assets/Images/LimpiandoCosta/Pantalla 1/Arbusto.png" id="20"]
+[ext_resource type="Texture2D" uid="uid://l3jteautjcbr" path="res://Assets/Images/LimpiandoCosta/Pantalla 5/Farol.png" id="17"]
+[ext_resource type="Texture2D" uid="uid://du5lcn67hga4f" path="res://Assets/Images/LimpiandoCosta/Pantalla 5/Rótulo.png" id="18"]
+[ext_resource type="AudioStream" uid="uid://2kpqcqhovnk0" path="res://Assets/Sounds/limpiando_costa.ogg" id="19"]
+[ext_resource type="Texture2D" uid="uid://brlwiy2ba45rw" path="res://Assets/Images/LimpiandoCosta/Pantalla 1/Arbusto.png" id="20"]
 [ext_resource type="PackedScene" uid="uid://wwvm0tjq73m0" path="res://Scenes/Entity/Illea/Caminando/IlleaCaminando.tscn" id="21"]
-[ext_resource type="Texture2D" uid="uid://5n2c0rkd2lum" path="res://Assets/Images/Tilesets/Bloque.png" id="22"]
+[ext_resource type="Texture2D" uid="uid://bb0atwvb5pnpm" path="res://Assets/Images/Tilesets/Bloque.png" id="22"]
 [ext_resource type="PackedScene" uid="uid://7jnwei6j4avo" path="res://Scenes/Utility/Contador.tscn" id="23"]
 [ext_resource type="Script" uid="uid://dcsoad8tfhc0u" path="res://Scenes/Games/Pescando/Trash/Botella.gd" id="24"]
 [ext_resource type="Script" uid="uid://bcybbewon6ehi" path="res://Scenes/Games/Pescando/Trash/Cuchara.gd" id="25"]
 [ext_resource type="Script" uid="uid://coj4uy0xh84g8" path="res://Scenes/Games/Pescando/Trash/SeguroLata.gd" id="26"]
-[ext_resource type="Texture2D" uid="uid://bcgsxay8df3o4" path="res://Assets/Images/UnderSeaBG/Items/Trash/Jeringa.png" id="27"]
-[ext_resource type="Texture2D" uid="uid://br4tqoanksxxw" path="res://Assets/Images/UnderSeaBG/Items/Trash/lata.png" id="28"]
-[ext_resource type="Texture2D" uid="uid://bbviwmujqvjgf" path="res://Assets/Images/UnderSeaBG/Items/Trash/Máquina de afeitar.png" id="29"]
-[ext_resource type="Texture2D" uid="uid://bcyb1btexglo7" path="res://Assets/Images/UnderSeaBG/Items/Seguro para latas.png" id="30"]
-[ext_resource type="Texture2D" uid="uid://dyebpwfvkpoo" path="res://Assets/Images/UnderSeaBG/Items/botella.png" id="31"]
-[ext_resource type="Texture2D" uid="uid://ei176ym1aiob" path="res://Assets/Images/UnderSeaBG/Items/Trash/Calcetín.png" id="32"]
-[ext_resource type="Texture2D" uid="uid://dbgfqlurl127c" path="res://Assets/Images/UnderSeaBG/Items/Trash/mascarilla.png" id="33"]
-[ext_resource type="Texture2D" uid="uid://b7f8ph0u00odd" path="res://Assets/Images/UnderSeaBG/Items/Trash/Cuchara.png" id="34"]
+[ext_resource type="Texture2D" uid="uid://d2s0okndxwwl6" path="res://Assets/Images/UnderSeaBG/Items/Trash/Jeringa.png" id="27"]
+[ext_resource type="Texture2D" uid="uid://bx3axxhcpxhtk" path="res://Assets/Images/UnderSeaBG/Items/Trash/lata.png" id="28"]
+[ext_resource type="Texture2D" uid="uid://b6qfcl40eov4n" path="res://Assets/Images/UnderSeaBG/Items/Trash/Máquina de afeitar.png" id="29"]
+[ext_resource type="Texture2D" uid="uid://0x2dv2bjd2lh" path="res://Assets/Images/UnderSeaBG/Items/Seguro para latas.png" id="30"]
+[ext_resource type="Texture2D" uid="uid://ctu4k45t42kfj" path="res://Assets/Images/UnderSeaBG/Items/botella.png" id="31"]
+[ext_resource type="Texture2D" uid="uid://cgpr6q7ash5jv" path="res://Assets/Images/UnderSeaBG/Items/Trash/Calcetín.png" id="32"]
+[ext_resource type="Texture2D" uid="uid://sm77l28ywijm" path="res://Assets/Images/UnderSeaBG/Items/Trash/mascarilla.png" id="33"]
+[ext_resource type="Texture2D" uid="uid://b2m01vyp0bykx" path="res://Assets/Images/UnderSeaBG/Items/Trash/Cuchara.png" id="34"]
 [ext_resource type="PackedScene" uid="uid://bx3dd0gnp366n" path="res://Scenes/Pause/PauseMenu.tscn" id="36"]
-[ext_resource type="Texture2D" uid="uid://cqpb2jqyeggbt" path="res://Assets/Images/LimpiandoCosta/Pantalla 1/arena humeda final .png" id="37"]
-[ext_resource type="PackedScene" uid="uid://gi1blgmjctq6" path="res://Scenes/Utility/shader/ShaderWindWakerBeach.tscn" id="38"]
-[ext_resource type="AudioStream" uid="uid://b31j1y4wh72l8" path="res://Assets/Sounds/SFX/get_item.wav" id="39"]
-[ext_resource type="AudioStream" uid="uid://c8hxugccgxws8" path="res://Assets/Sounds/SFX/ender_punch.wav" id="40"]
+[ext_resource type="Texture2D" uid="uid://ljsh3pifcei" path="res://Assets/Images/LimpiandoCosta/Pantalla 1/arena humeda final .png" id="37"]
+[ext_resource type="AudioStream" uid="uid://c80nvutqbddct" path="res://Assets/Sounds/SFX/get_item.wav" id="39"]
+[ext_resource type="AudioStream" uid="uid://d3asnuik5xvj8" path="res://Assets/Sounds/SFX/ender_punch.wav" id="40"]
 [ext_resource type="PackedScene" uid="uid://b17rf02r12bmp" path="res://Scenes/Utility/analog/Analog.tscn" id="41"]
 [ext_resource type="PackedScene" uid="uid://d1qxdr7vxtiqw" path="res://Scenes/Entity/CleanBeach/Crab/Crab.tscn" id="42"]
 [ext_resource type="PackedScene" uid="uid://vdvws6110l8g" path="res://Scenes/Utility/GameOver/GameOver.tscn" id="43"]
 [ext_resource type="PackedScene" uid="uid://dhpnyngl8a034" path="res://Scenes/Utility/Win/Win.tscn" id="44"]
 [ext_resource type="FontFile" uid="uid://byvaqdf2liiep" path="res://Assets/Fonts/btnFont.tres" id="45"]
-[ext_resource type="Texture2D" uid="uid://cxcyi67pybsat" path="res://Assets/Images/Fondo de contador de puntos.png" id="46"]
+[ext_resource type="Texture2D" uid="uid://dsngw3k2bi3qg" path="res://Assets/Images/Fondo de contador de puntos.png" id="46"]
 
 [sub_resource type="RectangleShape2D" id="5"]
 size = Vector2(140, 80)
@@ -104,13 +103,11 @@ script = ExtResource("16")
 [node name="Wave" type="ParallaxBackground" parent="Background"]
 
 [node name="Sand" type="Sprite2D" parent="Background/Wave"]
-visible = false
 z_index = -1
 texture = ExtResource("1")
 centered = false
 
 [node name="WetSand" type="Sprite2D" parent="Background/Wave"]
-visible = false
 position = Vector2(0, 800)
 texture = ExtResource("10")
 centered = false
@@ -120,11 +117,7 @@ z_index = -1
 texture = ExtResource("37")
 centered = false
 
-[node name="ShaderWindWakerBeach" parent="Background/Wave" instance=ExtResource("38")]
-z_index = -2
-
 [node name="First" type="ParallaxLayer" parent="Background/Wave"]
-visible = false
 
 [node name="Sea" type="Sprite2D" parent="Background/Wave/First"]
 position = Vector2(-4, 800)
@@ -138,7 +131,6 @@ texture = ExtResource("5")
 centered = false
 
 [node name="Second" type="ParallaxLayer" parent="Background/Wave"]
-visible = false
 
 [node name="Sea" type="Sprite2D" parent="Background/Wave/Second"]
 position = Vector2(-4, 908)
@@ -152,7 +144,6 @@ texture = ExtResource("5")
 centered = false
 
 [node name="Third" type="ParallaxLayer" parent="Background/Wave"]
-visible = false
 
 [node name="Sea" type="Sprite2D" parent="Background/Wave/Third"]
 position = Vector2(-4, 886)
@@ -166,7 +157,6 @@ texture = ExtResource("5")
 centered = false
 
 [node name="Bubbles" type="ParallaxLayer" parent="Background/Wave"]
-visible = false
 
 [node name="Sprite2D" type="Sprite2D" parent="Background/Wave/Bubbles"]
 position = Vector2(0, 1050)

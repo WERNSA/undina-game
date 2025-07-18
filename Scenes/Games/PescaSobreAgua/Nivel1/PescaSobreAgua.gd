@@ -74,6 +74,8 @@ func deactivate_fish():
 	$Sensor/BtnFish.disabled = true
 
 func _on_BtnFish_pressed():
+	if is_fishing:
+		return
 	$Sounds/SoundPress.play()
 	$Sounds/SoundFish.play()
 	$Sounds/SoundCatch.play()

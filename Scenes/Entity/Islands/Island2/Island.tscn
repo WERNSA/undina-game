@@ -1,8 +1,8 @@
 [gd_scene load_steps=5 format=3 uid="uid://behcgy3reshms"]
 
-[ext_resource type="Texture2D" uid="uid://db7vibplxwnub" path="res://Assets/Images/ObstacleRace/Isla 4.png" id="1"]
+[ext_resource type="Texture2D" uid="uid://bjyxeycbyncmg" path="res://Assets/Images/ObstacleRace/Isla 4.png" id="1"]
 [ext_resource type="Script" uid="uid://c0rrt4c0rubiu" path="res://Scenes/Entity/Islands/Island2/Island.gd" id="2"]
-[ext_resource type="AudioStream" uid="uid://c8hxugccgxws8" path="res://Assets/Sounds/SFX/ender_punch.wav" id="3"]
+[ext_resource type="AudioStream" uid="uid://d3asnuik5xvj8" path="res://Assets/Sounds/SFX/ender_punch.wav" id="3"]
 
 [sub_resource type="RectangleShape2D" id="1"]
 size = Vector2(529, 934)
@@ -24,7 +24,7 @@ rect = Rect2(-60, -10, 500, 200)
 
 [node name="PunchSound" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("3")
-bus = "SFX"
+bus = &"SFX"
 
 [connection signal="body_entered" from="." to="." method="_on_Island_body_entered"]
 [connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_VisibilityNotifier2D_screen_exited"]
