@@ -6,28 +6,25 @@ extends Node2D
 
 var is_fishing: bool = false
 var positions = [
-	Vector2(450, 450),
-	Vector2(550, 450),
-	Vector2(300, 450),
-	Vector2(300, 650),
-	Vector2(550, 650),
-	Vector2(450, 800),
-	Vector2(350, 800),
-	Vector2(550, 800),
-	Vector2(450, 900),
-	Vector2(350, 900),
-	Vector2(450, 1000),
+	Vector2(280, 200),
+	Vector2(150, 200),
+	Vector2(250, 200),
+	Vector2(100, 200),
+	Vector2(120, 150),
+	Vector2(250, 140),
+	Vector2(220, 150),
+	Vector2(280, 140),
+	Vector2(250, 320),
+	Vector2(120, 320),
+	Vector2(200, 420),
 ]
-var fishing_position_min = Vector2(3023, 1340)
-var fishing_position_max = Vector2(3023, 350)
+var fishing_position_min = Vector2(1294, 520)
+var fishing_position_max = Vector2(1294, 140)
 var options: int = 0 # 0 => Fish || 1 => Trash
 var points = 0
 var TRASH_COUNT = 0
 var tries = 3
 var game_over: bool = false
-var FishingRodPosition = Vector2(1100, 450)
-var FishingRodItemPosition = Vector2(450, 650)
-var FishBoxPosition = Vector2(3020, 850)
 var is_previous_fish : bool = false
 
 var color_green = '#3ec91a'
@@ -47,10 +44,10 @@ func set_dialog(_is_fishable):
 	$Background/Dialog.visible = true
 	if _is_fishable:
 		$Background/Dialog/Label/Label.text = positive_dialog
-		$Background/Dialog/Label/Label.add_color_override("font_color", Color(color_green))
+		$Background/Dialog/Label/Label.add_theme_color_override("font_color", Color(color_green))
 	else:
 		$Background/Dialog/Label/Label.text = negative_dialog
-		$Background/Dialog/Label/Label.add_color_override("font_color", Color(color_red))
+		$Background/Dialog/Label/Label.add_theme_color_override("font_color", Color(color_red))
 
 func _process(_delta):
 	$Timer/VBoxContainer/Tries/Label.text = "INTENTOS: " + str(tries)
@@ -83,7 +80,7 @@ func _on_BtnFish_pressed():
 	$Characters/FishingRodItem.can_move = false
 	$Characters/FishBox.can_move = true
 	$Characters/FishBox.visible = true
-	$Characters/FishBox.position.y = 850
+	$Characters/FishBox.position.y = 340
 	$Items/FishingRodLever/AnimationPlayer.play("Fishing")
 	is_fishing = true
 	points = 0
@@ -102,6 +99,7 @@ func spawn_fishing():
 		$Sensor/SliderPoints.max_value = 100
 		$Sensor/PointsBar.max_value = 100
 		$Characters/FishingTimer.wait_time = 15
+		set_dialog(false)
 	else:
 		is_previous_fish = false
 		item = Trash.instantiate()
@@ -119,11 +117,10 @@ func spawn_fishing():
 	tween.connect("finished", _on_Tween_tween_completed)
 
 func _on_Tween_tween_completed():
-	print("holaaaaaaaaaaaaaaaaaaaaaa")
 	if is_fishing:
 		var item_fishing = get_tree().get_nodes_in_group("item_fishing")
 		if item_fishing.size() > 0:
-			var new_position_y = Global.random_int(350, 1340)
+			var new_position_y = Global.random_int(fishing_position_max.y, fishing_position_min.y)
 			var tween = get_tree().create_tween()
 			tween.tween_property(item_fishing[0], "position", Vector2(fishing_position_max.x, new_position_y), 2)
 			tween.connect("finished", _on_Tween_tween_completed)

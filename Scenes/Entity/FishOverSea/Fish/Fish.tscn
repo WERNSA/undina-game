@@ -1,11 +1,11 @@
 [gd_scene load_steps=4 format=3 uid="uid://cenweaaa06ab4"]
 
-[ext_resource type="Texture2D" uid="uid://pvqsqoqp7vrr" path="res://Assets/Images/PescaSobreAgua/Animales/Pez loro.png" id="1"]
+[ext_resource type="Texture2D" uid="uid://w7k6o77olcd3" path="res://Assets/Images/PescaSobreAgua/Animales/Pez loro.png" id="1"]
 [ext_resource type="Script" uid="uid://b4opfrxjvifcl" path="res://Scenes/Entity/FishOverSea/Fish/Fish.gd" id="2"]
 
 [sub_resource type="CapsuleShape2D" id="1"]
-radius = 15.0
-height = 75.0
+radius = 10.2942
+height = 56.5692
 
 [node name="Fish" type="Area2D" groups=["item_fishing"]]
 script = ExtResource("2")

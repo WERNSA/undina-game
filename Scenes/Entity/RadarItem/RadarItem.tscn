@@ -1,11 +1,11 @@
-[gd_scene load_steps=7 format=3 uid="uid://bk3kntw4c4uf1"]
+[gd_scene load_steps=8 format=3 uid="uid://bk3kntw4c4uf1"]
 
-[ext_resource type="Texture2D" uid="uid://dqovqxamgl1o0" path="res://Assets/Images/PescaSobreAgua/Radar/SensorInactive.png" id="1"]
-[ext_resource type="Texture2D" uid="uid://cde1xfxqov2m2" path="res://Assets/Images/PescaSobreAgua/Radar/SensorActive.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://daotow8a4yww" path="res://Assets/Images/PescaSobreAgua/Radar/SensorInactive.png" id="1"]
+[ext_resource type="Texture2D" uid="uid://dy55lfxdydl08" path="res://Assets/Images/PescaSobreAgua/Radar/SensorActive.png" id="2"]
 [ext_resource type="Script" uid="uid://cs78o1v62en88" path="res://Scenes/Entity/RadarItem/RadarItem.gd" id="3"]
 
 [sub_resource type="CircleShape2D" id="1"]
-radius = 30.0
+radius = 18.4391
 
 [sub_resource type="Animation" id="2"]
 resource_name = "Active"
@@ -37,6 +37,12 @@ tracks/0/keys = {
 "values": [ExtResource("1")]
 }
 
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_7ormb"]
+_data = {
+&"Active": SubResource("2"),
+&"RESET": SubResource("3")
+}
+
 [node name="RadarItem" type="Area2D" groups=["radar_item"]]
 script = ExtResource("3")
 
@@ -47,8 +53,9 @@ texture = ExtResource("1")
 shape = SubResource("1")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-anims/Active = SubResource("2")
-anims/RESET = SubResource("3")
+libraries = {
+&"": SubResource("AnimationLibrary_7ormb")
+}
 
 [connection signal="body_entered" from="." to="." method="_on_RadarItem_body_entered"]
 [connection signal="body_exited" from="." to="." method="_on_RadarItem_body_exited"]

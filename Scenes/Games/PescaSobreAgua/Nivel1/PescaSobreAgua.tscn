@@ -1,41 +1,41 @@
 [gd_scene load_steps=46 format=4 uid="uid://cibnyynhphu76"]
 
 [ext_resource type="PackedScene" uid="uid://7jnwei6j4avo" path="res://Scenes/Utility/Contador.tscn" id="2"]
-[ext_resource type="Texture2D" uid="uid://bw75gx6p8f4ft" path="res://Assets/Images/PescaSobreAgua/Lancha costado.png" id="3"]
-[ext_resource type="Texture2D" uid="uid://b5obklcdgxok0" path="res://Assets/Images/PescaSobreAgua/FishingRod/Cania de pescar.png" id="4"]
-[ext_resource type="AudioStream" uid="uid://bb1pvuahavsdy" path="res://Assets/Sounds/pesca_sobre_agua.ogg" id="5"]
+[ext_resource type="Texture2D" uid="uid://dxxfi76s7tue" path="res://Assets/Images/PescaSobreAgua/Lancha costado.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://djfv78vsjdcfw" path="res://Assets/Images/PescaSobreAgua/FishingRod/Cania de pescar.png" id="4"]
+[ext_resource type="AudioStream" uid="uid://8i3ltlwwgm6y" path="res://Assets/Sounds/pesca_sobre_agua.ogg" id="5"]
 [ext_resource type="PackedScene" uid="uid://cth3iu2lap5nq" path="res://Scenes/Entity/FishingRod/FishingRod.tscn" id="6"]
-[ext_resource type="Texture2D" uid="uid://ceoc7h7ny0wnd" path="res://Assets/Images/PescaSobreAgua/Radar/Radar.png" id="7"]
-[ext_resource type="Texture2D" uid="uid://dyk7j2fcakvvb" path="res://Assets/Images/PescaSobreAgua/Sensor/Sensor de pesca.png" id="8"]
-[ext_resource type="Texture2D" uid="uid://bcmm6qal5c0lc" path="res://Assets/Images/Story/Characters/Main/Ilea/Illea leyendo.png" id="8_qtfhm"]
-[ext_resource type="Texture2D" uid="uid://dgrx4vpb5yv1k" path="res://Assets/Images/PescaSobreAgua/Radar/BtnFishInactive.png" id="9"]
-[ext_resource type="Texture2D" uid="uid://d34k3ng8vcgm6" path="res://Assets/Images/board_label.png" id="9_pub7m"]
-[ext_resource type="Texture2D" uid="uid://8r4vb74unhl8" path="res://Assets/Images/PescaSobreAgua/Radar/BtnFishActive.png" id="10"]
+[ext_resource type="Texture2D" uid="uid://doybghpxqnbpx" path="res://Assets/Images/PescaSobreAgua/Radar/Radar.png" id="7"]
+[ext_resource type="Texture2D" uid="uid://mryqwoyilb56" path="res://Assets/Images/PescaSobreAgua/Sensor/Sensor de pesca.png" id="8"]
+[ext_resource type="Texture2D" uid="uid://ciug1ywrlymx1" path="res://Assets/Images/Story/Characters/Main/Ilea/Illea leyendo.png" id="8_qtfhm"]
+[ext_resource type="Texture2D" uid="uid://blfqfj8htqu7j" path="res://Assets/Images/PescaSobreAgua/Radar/BtnFishInactive.png" id="9"]
+[ext_resource type="Texture2D" uid="uid://fsycvd8lld1o" path="res://Assets/Images/board_label.png" id="9_pub7m"]
+[ext_resource type="Texture2D" uid="uid://b7b014o85c6s7" path="res://Assets/Images/PescaSobreAgua/Radar/BtnFishActive.png" id="10"]
 [ext_resource type="PackedScene" uid="uid://b17rf02r12bmp" path="res://Scenes/Utility/analog/Analog.tscn" id="11"]
 [ext_resource type="PackedScene" uid="uid://bx3dd0gnp366n" path="res://Scenes/Pause/PauseMenu.tscn" id="12"]
-[ext_resource type="Texture2D" uid="uid://bb0atwvb5pnpm" path="res://Assets/Images/Tilesets/Bloque.png" id="13"]
+[ext_resource type="Texture2D" uid="uid://gfksgacmdrdq" path="res://Assets/Images/Tilesets/Bloque.png" id="13"]
 [ext_resource type="PackedScene" uid="uid://c1vnk2846spqf" path="res://Scenes/Entity/FishingRodItem/FishingRodItem.tscn" id="14"]
 [ext_resource type="PackedScene" uid="uid://bk3kntw4c4uf1" path="res://Scenes/Entity/RadarItem/RadarItem.tscn" id="15"]
 [ext_resource type="Script" uid="uid://duyywp041vv4u" path="res://Scenes/Games/PescaSobreAgua/Nivel1/PescaSobreAgua.gd" id="16"]
-[ext_resource type="AudioStream" uid="uid://mvh8v1pu68rp" path="res://Assets/Sounds/SFX/button_press.wav" id="17"]
-[ext_resource type="AudioStream" uid="uid://d3ys56gr1eyfb" path="res://Assets/Sounds/SFX/fishing_rod_throw.mp3" id="18"]
-[ext_resource type="AudioStream" uid="uid://srug4ry0384m" path="res://Assets/Sounds/SFX/fishing_rod_get.mp3" id="19"]
-[ext_resource type="Texture2D" uid="uid://bg6ftdbmse5ma" path="res://Assets/Images/PescaSobreAgua/FishingRod/Manivela.png" id="20"]
-[ext_resource type="Texture2D" uid="uid://d4nuo040h0mi6" path="res://Assets/Images/PescaSobreAgua/Sensor/Manivela de sensor de pesca.png" id="21"]
+[ext_resource type="AudioStream" uid="uid://iapirq7tctl" path="res://Assets/Sounds/SFX/button_press.wav" id="17"]
+[ext_resource type="AudioStream" uid="uid://dl0y5gyx87m0x" path="res://Assets/Sounds/SFX/fishing_rod_throw.mp3" id="18"]
+[ext_resource type="AudioStream" uid="uid://buqtnm7skbmr7" path="res://Assets/Sounds/SFX/fishing_rod_get.mp3" id="19"]
+[ext_resource type="Texture2D" uid="uid://b0imcuhda1vcr" path="res://Assets/Images/PescaSobreAgua/FishingRod/Manivela.png" id="20"]
+[ext_resource type="Texture2D" uid="uid://cflrweedhhqok" path="res://Assets/Images/PescaSobreAgua/Sensor/Manivela de sensor de pesca.png" id="21"]
 [ext_resource type="PackedScene" uid="uid://c8x105gq6ieqg" path="res://Scenes/Entity/FishOverSea/Trash/Trash.tscn" id="22"]
 [ext_resource type="PackedScene" uid="uid://cenweaaa06ab4" path="res://Scenes/Entity/FishOverSea/Fish/Fish.tscn" id="23"]
 [ext_resource type="PackedScene" uid="uid://brb4l6a0f1a1n" path="res://Scenes/Entity/FishOverSea/FishBox/FishBox.tscn" id="24"]
-[ext_resource type="Texture2D" uid="uid://cb163kn88752c" path="res://Assets/Images/AudioSettings/Botones/Barra de sonido activado.png" id="24_vkxo2"]
-[ext_resource type="Texture2D" uid="uid://tr3a4irhngbf" path="res://Assets/Images/PescaSobreAgua/Sensor/Membrana del sensor de pesca.png" id="25"]
-[ext_resource type="AudioStream" uid="uid://bne5ltykqppi0" path="res://Assets/Sounds/SFX/water_splash.mp3" id="26"]
+[ext_resource type="Texture2D" uid="uid://0x3nxu5cfj68" path="res://Assets/Images/AudioSettings/Botones/Barra de sonido activado.png" id="24_vkxo2"]
+[ext_resource type="Texture2D" uid="uid://b3hkv2n2wpy8r" path="res://Assets/Images/PescaSobreAgua/Sensor/Membrana del sensor de pesca.png" id="25"]
+[ext_resource type="AudioStream" uid="uid://b3hgqq2eai2rn" path="res://Assets/Sounds/SFX/water_splash.mp3" id="26"]
 [ext_resource type="PackedScene" uid="uid://vdvws6110l8g" path="res://Scenes/Utility/GameOver/GameOver.tscn" id="27"]
-[ext_resource type="Texture2D" uid="uid://dfe07lh8t04cs" path="res://Assets/Images/AudioSettings/Botones/Barra de sonido.png" id="28"]
+[ext_resource type="Texture2D" uid="uid://bis63y8u6jsjf" path="res://Assets/Images/AudioSettings/Botones/Barra de sonido.png" id="28"]
 [ext_resource type="Theme" uid="uid://y1ufudag5d7f" path="res://Assets/InputTheme/input_theme.tres" id="29"]
 [ext_resource type="PackedScene" uid="uid://dhpnyngl8a034" path="res://Scenes/Utility/Win/Win.tscn" id="30"]
-[ext_resource type="Texture2D" uid="uid://dsngw3k2bi3qg" path="res://Assets/Images/Fondo de contador de puntos.png" id="31"]
+[ext_resource type="Texture2D" uid="uid://dfykkbqn7eqei" path="res://Assets/Images/Fondo de contador de puntos.png" id="31"]
 [ext_resource type="FontFile" uid="uid://byvaqdf2liiep" path="res://Assets/Fonts/btnFont.tres" id="32"]
-[ext_resource type="Texture2D" uid="uid://cop6wi8nuxnc7" path="res://Assets/Images/ObstacleRace/Fondo-juego-tortuga.png" id="32_pub7m"]
-[ext_resource type="AudioStream" uid="uid://d3asnuik5xvj8" path="res://Assets/Sounds/SFX/ender_punch.wav" id="33"]
+[ext_resource type="Texture2D" uid="uid://c4xbclgevnvsm" path="res://Assets/Images/ObstacleRace/Fondo-juego-tortuga.png" id="32_pub7m"]
+[ext_resource type="AudioStream" uid="uid://dp7o0f7swlalw" path="res://Assets/Sounds/SFX/ender_punch.wav" id="33"]
 
 [sub_resource type="Animation" id="4"]
 resource_name = "Fishing"
@@ -117,38 +117,10 @@ texture_region_size = Vector2i(80, 80)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qtfhm"]
 texture = ExtResource("13")
-texture_region_size = Vector2i(60, 60)
-0:0/next_alternative_id = 8
+texture_region_size = Vector2i(15, 15)
 0:0/0 = 0
-0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-11.5, -11, 10.5, -10, 11.5, 10, -11.5, 11)
-0:0/1 = 1
-0:0/1/flip_h = true
-0:0/1/physics_layer_0/polygon_0/points = PackedVector2Array(8, -8, -8, -8, -8, 8, 8, 8)
-0:0/2 = 2
-0:0/2/flip_v = true
-0:0/2/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 8, 8, 8, 8, -8, -8, -8)
-0:0/3 = 3
-0:0/3/flip_h = true
-0:0/3/flip_v = true
-0:0/3/physics_layer_0/polygon_0/points = PackedVector2Array(8, 8, -8, 8, -8, -8, 8, -8)
-0:0/4 = 4
-0:0/4/transpose = true
-0:0/4/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, -8, 8, 8, 8, 8, -8)
-0:0/5 = 5
-0:0/5/flip_h = true
-0:0/5/transpose = true
-0:0/5/physics_layer_0/polygon_0/points = PackedVector2Array(8, -8, 8, 8, -8, 8, -8, -8)
-0:0/6 = 6
-0:0/6/flip_v = true
-0:0/6/transpose = true
-0:0/6/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 8, -8, -8, 8, -8, 8, 8)
-0:0/7 = 7
-0:0/7/flip_h = true
-0:0/7/flip_v = true
-0:0/7/transpose = true
-0:0/7/physics_layer_0/polygon_0/points = PackedVector2Array(8, 8, 8, -8, -8, -8, -8, 8)
 1:1/0 = 0
-1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-40, -40, 40, -40, 40, 40, -40, 40)
+1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-7.5, -7.5, 7.5, -7.5, 7.5, 7.5, -7.5, 7.5)
 2:1/0 = 0
 2:2/0 = 0
 1:2/0 = 0
@@ -159,7 +131,7 @@ texture_region_size = Vector2i(60, 60)
 3:1/0 = 0
 
 [sub_resource type="TileSet" id="3"]
-tile_size = Vector2i(60, 60)
+tile_size = Vector2i(15, 15)
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_vkxo2")
 sources/1 = SubResource("TileSetAtlasSource_qtfhm")
@@ -171,6 +143,7 @@ Fish = ExtResource("23")
 Trash = ExtResource("22")
 
 [node name="Contador" parent="." instance=ExtResource("2")]
+z_index = 1
 
 [node name="Background" type="Node" parent="."]
 
@@ -179,27 +152,29 @@ anchors_preset = 12
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -14.0
-offset_top = -319.0
-offset_right = 7.0
-offset_bottom = 400.0
+offset_left = -3.0
+offset_top = -172.0
+offset_right = 27.0
+offset_bottom = 253.0
+grow_horizontal = 2
+grow_vertical = 0
 texture = ExtResource("3")
 expand_mode = 1
 
 [node name="Ilea" type="Sprite2D" parent="Background"]
-position = Vector2(2254, 1687)
+position = Vector2(951, 704)
+scale = Vector2(0.38, 0.38)
 texture = ExtResource("8_qtfhm")
 
-[node name="Dialog" type="Node2D" parent="Background"]
-
-[node name="BoardLabel" type="Sprite2D" parent="Background/Dialog"]
-position = Vector2(1547, 1260)
+[node name="Dialog" type="Sprite2D" parent="Background"]
+visible = false
+position = Vector2(657, 574)
 texture = ExtResource("9_pub7m")
 
-[node name="Label" type="Sprite2D" parent="Background/Dialog/BoardLabel"]
-position = Vector2(0, -70)
+[node name="Label" type="Sprite2D" parent="Background/Dialog"]
+position = Vector2(0, -30)
 
-[node name="Label" type="Label" parent="Background/Dialog/BoardLabel/Label"]
+[node name="Label" type="Label" parent="Background/Dialog/Label"]
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -219,17 +194,18 @@ text = "¡HAY QUE PESCARLO!"
 [node name="Items" type="Node" parent="."]
 
 [node name="FishingRod" type="Sprite2D" parent="Items"]
-position = Vector2(2550, 700)
+position = Vector2(1094, 308)
 rotation = 1.48353
 texture = ExtResource("4")
 
 [node name="Radar" type="Sprite2D" parent="Items"]
+position = Vector2(11, -155)
 texture = ExtResource("7")
 centered = false
 offset = Vector2(0, 250)
 
 [node name="FishingRodLever" type="Sprite2D" parent="Items"]
-position = Vector2(2780, 1650)
+position = Vector2(1192, 684)
 rotation = 1.48353
 texture = ExtResource("20")
 flip_v = true
@@ -270,21 +246,23 @@ bus = &"SFX"
 [node name="Sensor" type="Node" parent="."]
 
 [node name="Sprite2D" type="Sprite2D" parent="Sensor"]
-position = Vector2(3000, 850)
+position = Vector2(1284, 339.12)
 texture = ExtResource("8")
 
 [node name="BtnFish" type="TextureButton" parent="Sensor"]
-offset_left = 250.0
-offset_top = 1100.0
-offset_right = 620.0
-offset_bottom = 1469.0
+offset_left = 115.0
+offset_top = 450.0
+offset_right = 272.0
+offset_bottom = 607.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
 disabled = true
 texture_normal = ExtResource("10")
 texture_pressed = ExtResource("9")
 texture_disabled = ExtResource("9")
 
 [node name="FishingRodLever" type="Sprite2D" parent="Sensor"]
-position = Vector2(2820, 1275)
+position = Vector2(1207, 508.12)
 rotation = 3.14159
 texture = ExtResource("21")
 flip_v = true
@@ -304,12 +282,12 @@ max_value = 400.0
 editable = false
 
 [node name="PointsBar" type="TextureProgressBar" parent="Sensor"]
-offset_left = 3080.0
-offset_top = 1541.0
-offset_right = 4654.0
-offset_bottom = 1931.0
+offset_left = 1320.0
+offset_top = 643.12
+offset_right = 2894.0
+offset_bottom = 1033.12
 rotation = -1.5708
-scale = Vector2(0.87, 0.25)
+scale = Vector2(0.38, 0.109)
 size_flags_horizontal = 4
 size_flags_vertical = 4
 max_value = 400.0
@@ -318,7 +296,7 @@ texture_progress = ExtResource("24_vkxo2")
 
 [node name="Analog" parent="." instance=ExtResource("11")]
 z_index = 100
-position = Vector2(213, 1582)
+position = Vector2(120, 660)
 scale = Vector2(2, 2)
 
 [node name="Pause" type="Node2D" parent="."]
@@ -327,7 +305,7 @@ z_index = 100
 [node name="PauseMenu" parent="Pause" instance=ExtResource("12")]
 modulate = Color(1, 1, 1, 0.588235)
 z_index = 100
-position = Vector2(3200, 1750)
+position = Vector2(1295, 680)
 
 [node name="Collisions" type="Node" parent="."]
 
@@ -336,24 +314,25 @@ visible = false
 
 [node name="Layer0" type="TileMapLayer" parent="Collisions/Terrain"]
 use_parent_material = true
-tile_map_data = PackedByteArray("AAAwABcAAQAAAAAAAAAxABcAAQAAAAAAAAAyABcAAQAAAAAAAAAzABcAAQAAAAAAAAA0ABcAAQAAAAAAAAAzABYAAQAAAAAAAAAzABUAAQAAAAAAAAAzABQAAQAAAAAAAAAzABMAAQAAAAAAAAAzABIAAQAAAAAAAAAzABEAAQAAAAAAAAAzABAAAQAAAAAAAAAzAA8AAQAAAAAAAAAzAA4AAQAAAAAAAAAzAA0AAQAAAAAAAAAzAAwAAQAAAAAAAAAzAAsAAQAAAAAAAAAzAAoAAQAAAAAAAAAzAAkAAQAAAAAAAAAzAAgAAQAAAAAAAAAzAAcAAQAAAAAAAAAzAAYAAQAAAAAAAAAzAAUAAQAAAAAAAAAwAAYAAQAAAAAAAAAwAAcAAQAAAAAAAAAwAAQAAQAAAAAAAAAwAAUAAQAAAAAAAAAwAAgAAQAAAAAAAAAwAAkAAQAAAAAAAAAwAAoAAQAAAAAAAAAwAAsAAQAAAAAAAAAwAAwAAQAAAAAAAAAwAA0AAQAAAAAAAAAwAA4AAQAAAAAAAAAwAA8AAQAAAAAAAAAwABAAAQAAAAAAAAAwABEAAQAAAAAAAAAwABIAAQAAAAAAAAAwABMAAQAAAAAAAAAwABQAAQAAAAAAAAAwABUAAQAAAAAAAAAwABYAAQAAAAAAAAAzAAQAAQAAAAAAAAAyAAQAAQAAAAAAAAAxAAQAAQAAAAAAAAA=")
+tile_map_data = PackedByteArray("AAAQACAAAQABAAEAAAAQAB8AAQABAAEAAAARAB4AAQABAAEAAAARAB0AAQABAAEAAAASABwAAQABAAEAAAASABsAAQABAAEAAAASABoAAQABAAEAAAATABkAAQABAAEAAAATABgAAQABAAEAAAAUABcAAQABAAEAAAAUABYAAQABAAEAAAAUABUAAQABAAEAAAAVABQAAQABAAEAAAAVABMAAQABAAEAAAAVABIAAQABAAEAAAAWABEAAQABAAEAAAAWABAAAQABAAEAAAAXAA8AAQABAAEAAAAXAA4AAQABAAEAAAAXAA0AAQABAAEAAAAYAAwAAQABAAEAAAAYAAsAAQABAAEAAAAZAAoAAQABAAEAAAAZAAkAAQABAAEAAAAJACAAAQABAAEAAAAJAB8AAQABAAEAAAAIAB4AAQABAAEAAAAIAB0AAQABAAEAAAAHABwAAQABAAEAAAAHABsAAQABAAEAAAAHABoAAQABAAEAAAAGABkAAQABAAEAAAAGABgAAQABAAEAAAAFABcAAQABAAEAAAAFABYAAQABAAEAAAAFABUAAQABAAEAAAAEABQAAQABAAEAAAAEABMAAQABAAEAAAAEABIAAQABAAEAAAADABEAAQABAAEAAAADABAAAQABAAEAAAACAA8AAQABAAEAAAACAA4AAQABAAEAAAACAA0AAQABAAEAAAABAAwAAQABAAEAAAABAAsAAQABAAEAAAAAAAoAAQABAAEAAAAAAAkAAQABAAEAAAAAAAgAAQABAAEAAAABAAgAAQABAAEAAAACAAgAAQABAAEAAAADAAcAAQABAAEAAAAEAAcAAQABAAEAAAAFAAcAAQABAAEAAAAGAAcAAQABAAEAAAAHAAYAAQABAAEAAAAIAAYAAQABAAEAAAAJAAYAAQABAAEAAAAKAAYAAQABAAEAAAALAAUAAQABAAEAAAAMAAUAAQABAAEAAAAZAAgAAQABAAEAAAAYAAgAAQABAAEAAAAXAAgAAQABAAEAAAAWAAcAAQABAAEAAAAVAAcAAQABAAEAAAAUAAcAAQABAAEAAAATAAcAAQABAAEAAAASAAYAAQABAAEAAAARAAYAAQABAAEAAAAQAAYAAQABAAEAAAAPAAYAAQABAAEAAAAOAAUAAQABAAEAAAANAAUAAQABAAEAAAAKACAAAQABAAEAAAALACAAAQABAAEAAAAMACAAAQABAAEAAAANACAAAQABAAEAAAAOACAAAQABAAEAAAAPACAAAQABAAEAAABVACYAAQABAAEAAABWACYAAQABAAEAAABXACYAAQABAAEAAABUAAcAAQABAAEAAABUAAgAAQABAAEAAABUAAkAAQABAAEAAABUAAoAAQABAAEAAABUAAsAAQABAAEAAABUAAwAAQABAAEAAABUAA0AAQABAAEAAABUAA4AAQABAAEAAABUAA8AAQABAAEAAABUABAAAQABAAEAAABUABEAAQABAAEAAABUABIAAQABAAEAAABUABMAAQABAAEAAABUABQAAQABAAEAAABUABUAAQABAAEAAABUABYAAQABAAEAAABUABcAAQABAAEAAABUABgAAQABAAEAAABUABkAAQABAAEAAABUABoAAQABAAEAAABUABsAAQABAAEAAABUABwAAQABAAEAAABUAB0AAQABAAEAAABUAB4AAQABAAEAAABUAB8AAQABAAEAAABUACAAAQABAAEAAABUACEAAQABAAEAAABUACIAAQABAAEAAABUACMAAQABAAEAAABUACQAAQABAAEAAABUACUAAQABAAEAAABYACUAAQABAAEAAABYACQAAQABAAEAAABYACMAAQABAAEAAABYACIAAQABAAEAAABYACEAAQABAAEAAABYACAAAQABAAEAAABYAB8AAQABAAEAAABYAB4AAQABAAEAAABYAB0AAQABAAEAAABYABwAAQABAAEAAABYABsAAQABAAEAAABYABoAAQABAAEAAABYABkAAQABAAEAAABYABgAAQABAAEAAABYABcAAQABAAEAAABYABYAAQABAAEAAABYABUAAQABAAEAAABYABQAAQABAAEAAABYABMAAQABAAEAAABYABIAAQABAAEAAABYABEAAQABAAEAAABYABAAAQABAAEAAABYAA8AAQABAAEAAABYAA4AAQABAAEAAABYAA0AAQABAAEAAABYAAwAAQABAAEAAABYAAsAAQABAAEAAABYAAoAAQABAAEAAABYAAkAAQABAAEAAABYAAgAAQABAAEAAABYAAcAAQABAAEAAABXAAYAAQABAAEAAABWAAYAAQABAAEAAABVAAYAAQABAAEAAAA=")
 tile_set = SubResource("3")
 
 [node name="Characters" type="Node" parent="."]
 
 [node name="FishingRod" parent="Characters" instance=ExtResource("6")]
-position = Vector2(1100, 450)
+position = Vector2(650, 270)
 SPEED = 100
 
 [node name="FishingRodItem" parent="Characters" groups=["player"] instance=ExtResource("14")]
 z_index = 1
-position = Vector2(450, 650)
+position = Vector2(200, 420)
 rotation = 0.785398
 scale = Vector2(0.03, 0.2)
-SPEED = 300
+SPEED = 100
 
 [node name="FishBox" parent="Characters" instance=ExtResource("24")]
-position = Vector2(3020, 850)
+position = Vector2(1294, 340.12)
+SPEED = 100
 
 [node name="RadarItemTimer" type="Timer" parent="Characters"]
 wait_time = 3.0
@@ -366,7 +345,7 @@ wait_time = 15.0
 [node name="SeaBG" type="Node2D" parent="."]
 
 [node name="BG" type="Sprite2D" parent="SeaBG"]
-position = Vector2(3200, 0)
+position = Vector2(1366, 0)
 rotation = 1.5708
 texture = ExtResource("32_pub7m")
 centered = false
@@ -379,11 +358,12 @@ visible = false
 
 [node name="Timer" type="Node2D" parent="."]
 z_index = 2
-position = Vector2(1600, 0)
+position = Vector2(683, 0)
 
 [node name="BGTimer" type="Sprite2D" parent="Timer"]
+position = Vector2(0, -80)
 rotation = -1.5708
-scale = Vector2(1, 3.5)
+scale = Vector2(1, 1.62181)
 texture = ExtResource("31")
 offset = Vector2(45, -2)
 

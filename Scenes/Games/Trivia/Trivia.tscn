@@ -1,29 +1,29 @@
 [gd_scene load_steps=39 format=3 uid="uid://iaid7b8jcy4n"]
 
-[ext_resource type="Texture2D" uid="uid://c2ssb8gm6n3o" path="res://Assets/Images/Trivia/Fondo casas del caribe.png" id="1"]
-[ext_resource type="Texture2D" uid="uid://by4mqrguk5olr" path="res://Assets/Images/Trivia/ruleta.png" id="2"]
-[ext_resource type="Texture2D" uid="uid://ipg0cj8n18q" path="res://Assets/Images/Trivia/girar ruleta.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://bwwoaml6r60x7" path="res://Assets/Images/Trivia/Fondo casas del caribe.png" id="1"]
+[ext_resource type="Texture2D" uid="uid://cr6xfckcfwwyl" path="res://Assets/Images/Trivia/ruleta.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://chowh02swfwhi" path="res://Assets/Images/Trivia/girar ruleta.png" id="3"]
 [ext_resource type="Script" uid="uid://g1gu1qefgbpi" path="res://Scenes/Games/Trivia/Trivia.gd" id="4"]
-[ext_resource type="Texture2D" uid="uid://cgstcl3x0yrhq" path="res://Assets/Images/Trivia/Encabezado geografía.png" id="5"]
-[ext_resource type="Texture2D" uid="uid://b85mp45th1gka" path="res://Assets/Images/Animaciones/Caminando/Tres cuartos a la derecha/Derecha 9.png" id="6"]
-[ext_resource type="Texture2D" uid="uid://bjwsaapcic6vt" path="res://Assets/Images/Trivia/Tabla de preguntas.png" id="7"]
-[ext_resource type="FontFile" uid="uid://b2wbfrap8ifi4" path="res://Assets/Fonts/Marujo.ttf" id="8"]
-[ext_resource type="Texture2D" uid="uid://d0a1nnoytuigp" path="res://Assets/Images/Trivia/Tabla de respuestas.png" id="9"]
+[ext_resource type="Texture2D" uid="uid://myi2upw5qlqr" path="res://Assets/Images/Trivia/Encabezado geografía.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://bprtvgyc8fk1j" path="res://Assets/Images/Animaciones/Caminando/Tres cuartos a la derecha/Derecha 9.png" id="6"]
+[ext_resource type="Texture2D" uid="uid://ce41oqlmxt5dx" path="res://Assets/Images/Trivia/Tabla de preguntas.png" id="7"]
+[ext_resource type="FontFile" uid="uid://dwuhhld1o3c7v" path="res://Assets/Fonts/Marujo.ttf" id="8"]
+[ext_resource type="Texture2D" uid="uid://c8i4y75ygmwtp" path="res://Assets/Images/Trivia/Tabla de respuestas.png" id="9"]
 [ext_resource type="FontFile" path="res://Assets/Fonts/Trivia.tres" id="10"]
-[ext_resource type="Texture2D" uid="uid://bb3vx4fecpbt7" path="res://Assets/Images/Trivia/Respuesta acertada.png" id="11"]
+[ext_resource type="Texture2D" uid="uid://ov532rqixah2" path="res://Assets/Images/Trivia/Respuesta acertada.png" id="11"]
 [ext_resource type="PackedScene" uid="uid://bx3dd0gnp366n" path="res://Scenes/Pause/PauseMenu.tscn" id="12"]
 [ext_resource type="PackedScene" uid="uid://7jnwei6j4avo" path="res://Scenes/Utility/Contador.tscn" id="13"]
-[ext_resource type="AudioStream" uid="uid://beaasutr35fag" path="res://Assets/Sounds/trivia.ogg" id="14"]
-[ext_resource type="Texture2D" uid="uid://rnq5bma0jvak" path="res://Assets/Images/Trivia/Encabezado contaminación.png" id="15"]
-[ext_resource type="Texture2D" uid="uid://lv0sicmv3jfl" path="res://Assets/Images/Trivia/Encabezado flora y fauna.png" id="16"]
-[ext_resource type="Texture2D" uid="uid://2kud0ouq6vqs" path="res://Assets/Images/Trivia/Respuesta fallada.png" id="17"]
-[ext_resource type="Texture2D" uid="uid://vg4ldcjv7m84" path="res://Assets/Images/btn_arrow.png" id="18"]
-[ext_resource type="Texture2D" uid="uid://clkmbpd63s5fy" path="res://Assets/Images/Trivia/Encabezado Reciclaje.png" id="19"]
-[ext_resource type="AudioStream" uid="uid://bwkqaogcrblqo" path="res://Assets/Sounds/SFX/button_press.wav" id="20"]
+[ext_resource type="AudioStream" uid="uid://bhrod7v16cb5n" path="res://Assets/Sounds/trivia.ogg" id="14"]
+[ext_resource type="Texture2D" uid="uid://5k2y26gyur2x" path="res://Assets/Images/Trivia/Encabezado contaminación.png" id="15"]
+[ext_resource type="Texture2D" uid="uid://cvuy77t4iogom" path="res://Assets/Images/Trivia/Encabezado flora y fauna.png" id="16"]
+[ext_resource type="Texture2D" uid="uid://cbr555qj82voc" path="res://Assets/Images/Trivia/Respuesta fallada.png" id="17"]
+[ext_resource type="Texture2D" uid="uid://cglbu2j8astnv" path="res://Assets/Images/btn_arrow.png" id="18"]
+[ext_resource type="Texture2D" uid="uid://3w33lbhms5ca" path="res://Assets/Images/Trivia/Encabezado Reciclaje.png" id="19"]
+[ext_resource type="AudioStream" uid="uid://iapirq7tctl" path="res://Assets/Sounds/SFX/button_press.wav" id="20"]
 [ext_resource type="PackedScene" uid="uid://vdvws6110l8g" path="res://Scenes/Utility/GameOver/GameOver.tscn" id="21"]
 [ext_resource type="PackedScene" uid="uid://dhpnyngl8a034" path="res://Scenes/Utility/Win/Win.tscn" id="22"]
 [ext_resource type="FontFile" uid="uid://byvaqdf2liiep" path="res://Assets/Fonts/btnFont.tres" id="23"]
-[ext_resource type="Texture2D" uid="uid://cxcyi67pybsat" path="res://Assets/Images/Fondo de contador de puntos.png" id="24"]
+[ext_resource type="Texture2D" uid="uid://dfykkbqn7eqei" path="res://Assets/Images/Fondo de contador de puntos.png" id="24"]
 
 [sub_resource type="Animation" id="5"]
 resource_name = "Correct"
@@ -36,7 +36,7 @@ tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
 "handle_modes": PackedInt32Array(0, 0, 0, 0),
-"points": PackedFloat32Array(-800, -0.25, 0, 0.25, 0, 1600, -0.25, 0, 0.25, 0, 1600, -0.25, 0, 0.25, 0, 4000, -0.25, 0, 0.25, 0),
+"points": PackedFloat32Array(-800, -0.25, 0, 0.25, 0, 420, -0.25, 0, 0.25, 0, 420, -0.25, 0, 0.25, 0, 1700, -0.25, 0, 0.25, 0),
 "times": PackedFloat32Array(0, 1, 1.5, 2.5)
 }
 tracks/1/type = "bezier"
@@ -74,7 +74,7 @@ tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
 "handle_modes": PackedInt32Array(0, 0, 0, 0),
-"points": PackedFloat32Array(-800, -0.25, 0, 0.25, 0, 1600, -0.25, 0, 0.25, 0, 1600, -0.25, 0, 0.25, 0, 4000, -0.25, 0, 0.25, 0),
+"points": PackedFloat32Array(-800, -0.25, 0, 0.25, 0, 370, -0.25, 0, 0.25, 0, 370, -0.25, 0, 0.25, 0, 4000, -0.25, 0, 0.25, 0),
 "times": PackedFloat32Array(0, 1, 1.5, 2.5)
 }
 tracks/1/type = "bezier"
@@ -696,6 +696,7 @@ _data = {
 }
 
 [sub_resource type="FontFile" id="4"]
+resource_name = ""
 fallbacks = Array[Font]([ExtResource("8")])
 cache/0/16/0/ascent = 0.0
 cache/0/16/0/descent = 0.0
@@ -719,6 +720,7 @@ cache/0/150/0/underline_thickness = 0.0
 cache/0/150/0/scale = 1.0
 
 [sub_resource type="FontFile" id="8"]
+resource_name = ""
 fallbacks = Array[Font]([ExtResource("8")])
 cache/0/16/0/ascent = 0.0
 cache/0/16/0/descent = 0.0
@@ -737,6 +739,7 @@ cache/0/150/0/underline_thickness = 0.0
 cache/0/150/0/scale = 1.0
 
 [sub_resource type="FontFile" id="11"]
+resource_name = ""
 fallbacks = Array[Font]([ExtResource("8")])
 cache/0/16/0/ascent = 0.0
 cache/0/16/0/descent = 0.0
@@ -748,6 +751,11 @@ cache/0/75/0/descent = 0.0
 cache/0/75/0/underline_position = 0.0
 cache/0/75/0/underline_thickness = 0.0
 cache/0/75/0/scale = 1.0
+cache/0/45/0/ascent = 0.0
+cache/0/45/0/descent = 0.0
+cache/0/45/0/underline_position = 0.0
+cache/0/45/0/underline_thickness = 0.0
+cache/0/45/0/scale = 1.0
 
 [node name="Trivia" type="Node2D"]
 script = ExtResource("4")
@@ -757,7 +765,7 @@ trivia_file = "res://Assets/JSON/Trivia/trivia.json"
 z_index = 1
 
 [node name="PauseMenu" parent="." instance=ExtResource("12")]
-position = Vector2(3200, 1750)
+position = Vector2(1295, 680)
 
 [node name="BgImage" type="Sprite2D" parent="."]
 scale = Vector2(1, 1.3)
@@ -767,7 +775,7 @@ centered = false
 [node name="Roulette" type="Node2D" parent="."]
 
 [node name="Sprite2D" type="Sprite2D" parent="Roulette"]
-position = Vector2(1600, 900)
+position = Vector2(683, 384)
 texture = ExtResource("2")
 
 [node name="BtnLoop" type="TextureButton" parent="Roulette"]
@@ -776,11 +784,15 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = 1360.0
-offset_top = 650.0
-offset_right = 2512.0
-offset_bottom = 1917.0
+offset_left = 577.0
+offset_top = 271.0
+offset_right = 1068.0
+offset_bottom = 811.0
+grow_horizontal = 2
+grow_vertical = 2
 scale = Vector2(0.4, 0.4)
+size_flags_horizontal = 4
+size_flags_vertical = 4
 texture_normal = ExtResource("3")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Roulette"]
@@ -797,7 +809,7 @@ modulate = Color(1, 1, 1, 0)
 
 [node name="TitleGeografia" type="Sprite2D" parent="Trivia"]
 visible = false
-position = Vector2(-13, -23)
+position = Vector2(-13, -10)
 scale = Vector2(0.572, 0.6)
 texture = ExtResource("5")
 centered = false
@@ -818,13 +830,12 @@ texture = ExtResource("19")
 centered = false
 
 [node name="Illea" type="Sprite2D" parent="Trivia"]
-position = Vector2(2800, 1150)
-scale = Vector2(3, 3)
+position = Vector2(1147, 519)
 texture = ExtResource("6")
 flip_h = true
 
 [node name="Question" type="Sprite2D" parent="Trivia"]
-position = Vector2(1200, 500)
+position = Vector2(506, 197)
 scale = Vector2(0.4, 0.3)
 texture = ExtResource("7")
 
@@ -834,71 +845,86 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -4796.0
-offset_top = -955.5
-offset_right = -892.0
-offset_bottom = -704.5
+offset_left = -2141.0
+offset_top = -467.0
+offset_right = -271.0
+offset_bottom = -216.0
+grow_horizontal = 2
+grow_vertical = 2
 theme_override_fonts/font = ExtResource("10")
-theme_override_font_sizes/font_size = 125
+theme_override_font_sizes/font_size = 75
 horizontal_alignment = 1
 vertical_alignment = 1
-autowrap_mode = 2
+autowrap_mode = 3
 
 [node name="Answers" type="Sprite2D" parent="Trivia"]
-position = Vector2(1200, 1100)
+position = Vector2(513, 454)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("9")
 
 [node name="Btn1" type="TextureButton" parent="Trivia/Answers"]
 anchors_preset = 10
 anchor_right = 1.0
-offset_left = -1536.0
-offset_top = -604.0
-offset_right = -2068.0
-offset_bottom = -268.0
+offset_left = -630.0
+offset_top = -258.0
+offset_right = -904.0
+offset_bottom = -124.0
+grow_horizontal = 2
 
 [node name="Option" type="Label" parent="Trivia/Answers/Btn1"]
 layout_mode = 0
 anchor_right = 1.0
 anchor_bottom = 1.0
 theme_override_fonts/font = ExtResource("10")
-theme_override_font_sizes/font_size = 100
+theme_override_font_sizes/font_size = 40
+text = "hola probando"
 horizontal_alignment = 1
 vertical_alignment = 1
+autowrap_mode = 3
 
 [node name="Btn3" type="TextureButton" parent="Trivia/Answers"]
 anchors_preset = 10
 anchor_right = 1.0
-offset_left = -1536.0
-offset_top = 266.0
-offset_right = -2068.0
-offset_bottom = 592.0
+offset_left = -636.0
+offset_top = 114.0
+offset_right = -904.0
+offset_bottom = 252.0
+grow_horizontal = 2
 
 [node name="Option" type="Label" parent="Trivia/Answers/Btn3"]
 layout_mode = 0
 anchor_right = 1.0
 anchor_bottom = 1.0
 theme_override_fonts/font = ExtResource("10")
-theme_override_font_sizes/font_size = 100
+theme_override_font_sizes/font_size = 40
 horizontal_alignment = 1
 vertical_alignment = 1
+autowrap_mode = 3
 
 [node name="Btn2" type="TextureButton" parent="Trivia/Answers"]
 anchors_preset = 10
 anchor_right = 1.0
-offset_left = -1536.0
-offset_top = -160.0
-offset_right = -2068.0
-offset_bottom = 160.0
+offset_left = -642.0
+offset_top = -70.0
+offset_right = -894.0
+offset_bottom = 62.0
+grow_horizontal = 2
 
 [node name="Option" type="Label" parent="Trivia/Answers/Btn2"]
-layout_mode = 0
+layout_mode = 1
+anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = 6.0
+offset_top = 2.0
+offset_right = 4.0
+grow_horizontal = 2
+grow_vertical = 2
 theme_override_fonts/font = ExtResource("10")
-theme_override_font_sizes/font_size = 100
+theme_override_font_sizes/font_size = 40
 horizontal_alignment = 1
 vertical_alignment = 1
+autowrap_mode = 3
 
 [node name="CorrectTitle" type="Sprite2D" parent="Trivia"]
 visible = false
@@ -911,10 +937,12 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -555.5
-offset_top = -125.5
-offset_right = 555.5
-offset_bottom = 125.5
+offset_left = -217.5
+offset_top = -632.5
+offset_right = 893.5
+offset_bottom = -381.5
+grow_horizontal = 2
+grow_vertical = 2
 theme_override_colors/font_shadow_color = Color(0, 0.745098, 0, 1)
 theme_override_fonts/font = SubResource("4")
 theme_override_font_sizes/font_size = 150
@@ -932,10 +960,12 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -555.5
-offset_top = -125.5
-offset_right = 555.5
-offset_bottom = 125.5
+offset_left = -230.5
+offset_top = -632.5
+offset_right = 880.5
+offset_bottom = -381.5
+grow_horizontal = 2
+grow_vertical = 2
 theme_override_colors/font_shadow_color = Color(0.745098, 0, 0, 1)
 theme_override_fonts/font = SubResource("8")
 theme_override_font_sizes/font_size = 150
@@ -947,7 +977,7 @@ vertical_alignment = 1
 
 [node name="CorrectOption1" type="Sprite2D" parent="Trivia/Correct"]
 visible = false
-position = Vector2(1200, 877)
+position = Vector2(513, 359)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("11")
 
@@ -955,18 +985,22 @@ texture = ExtResource("11")
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -1800.0
-offset_top = -281.0
-offset_right = -1800.0
-offset_bottom = -281.0
+offset_left = -642.0
+offset_top = -64.0
+offset_right = -896.0
+offset_bottom = -169.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 1
 theme_override_fonts/font = ExtResource("10")
-theme_override_font_sizes/font_size = 100
+theme_override_font_sizes/font_size = 40
 horizontal_alignment = 1
 vertical_alignment = 1
+autowrap_mode = 3
 
 [node name="CorrectOption2" type="Sprite2D" parent="Trivia/Correct"]
 visible = false
-position = Vector2(1200, 1094)
+position = Vector2(513, 452)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("11")
 
@@ -974,18 +1008,21 @@ texture = ExtResource("11")
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -1800.0
-offset_top = -281.0
-offset_right = -1800.0
-offset_bottom = -281.0
+offset_left = -650.0
+offset_top = -66.0
+offset_right = -892.0
+offset_bottom = -164.0
+grow_horizontal = 2
+grow_vertical = 2
 theme_override_fonts/font = ExtResource("10")
-theme_override_font_sizes/font_size = 100
+theme_override_font_sizes/font_size = 40
 horizontal_alignment = 1
 vertical_alignment = 1
+autowrap_mode = 3
 
 [node name="CorrectOption3" type="Sprite2D" parent="Trivia/Correct"]
 visible = false
-position = Vector2(1200, 1310)
+position = Vector2(513, 544)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("11")
 
@@ -993,20 +1030,23 @@ texture = ExtResource("11")
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -1800.0
-offset_top = -281.0
-offset_right = -1800.0
-offset_bottom = -281.0
+offset_left = -624.0
+offset_top = -70.0
+offset_right = -884.0
+offset_bottom = -168.0
+grow_horizontal = 2
+grow_vertical = 2
 theme_override_fonts/font = ExtResource("10")
-theme_override_font_sizes/font_size = 100
+theme_override_font_sizes/font_size = 40
 horizontal_alignment = 1
 vertical_alignment = 1
+autowrap_mode = 3
 
 [node name="Incorrect" type="Node" parent="Trivia"]
 
 [node name="IncorrectOption1" type="Sprite2D" parent="Trivia/Incorrect"]
 visible = false
-position = Vector2(1200, 877)
+position = Vector2(513, 359)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("17")
 
@@ -1014,18 +1054,21 @@ texture = ExtResource("17")
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -1800.0
-offset_top = -281.0
-offset_right = -1800.0
-offset_bottom = -281.0
+offset_left = -646.0
+offset_top = -70.0
+offset_right = -890.0
+offset_bottom = -152.0
+grow_horizontal = 2
+grow_vertical = 2
 theme_override_fonts/font = ExtResource("10")
-theme_override_font_sizes/font_size = 100
+theme_override_font_sizes/font_size = 40
 horizontal_alignment = 1
 vertical_alignment = 1
+autowrap_mode = 3
 
 [node name="IncorrectOption2" type="Sprite2D" parent="Trivia/Incorrect"]
 visible = false
-position = Vector2(1200, 1094)
+position = Vector2(513, 453)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("17")
 
@@ -1033,18 +1076,21 @@ texture = ExtResource("17")
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -1800.0
-offset_top = -281.0
-offset_right = -1800.0
-offset_bottom = -281.0
+offset_left = -646.0
+offset_top = -70.0
+offset_right = -888.0
+offset_bottom = -151.0
+grow_horizontal = 2
+grow_vertical = 2
 theme_override_fonts/font = ExtResource("10")
-theme_override_font_sizes/font_size = 100
+theme_override_font_sizes/font_size = 40
 horizontal_alignment = 1
 vertical_alignment = 1
+autowrap_mode = 3
 
 [node name="IncorrectOption3" type="Sprite2D" parent="Trivia/Incorrect"]
 visible = false
-position = Vector2(1200, 1310)
+position = Vector2(513, 542)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("17")
 
@@ -1052,29 +1098,32 @@ texture = ExtResource("17")
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -1800.0
-offset_top = -281.0
-offset_right = -1800.0
-offset_bottom = -281.0
+offset_left = -646.0
+offset_top = -70.0
+offset_right = -890.0
+offset_bottom = -144.0
+grow_horizontal = 2
+grow_vertical = 2
 theme_override_fonts/font = ExtResource("10")
-theme_override_font_sizes/font_size = 100
+theme_override_font_sizes/font_size = 40
 horizontal_alignment = 1
 vertical_alignment = 1
+autowrap_mode = 3
 
 [node name="DialogBG" type="ColorRect" parent="."]
 visible = false
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_right = 3200.0
-offset_bottom = 1800.0
+offset_right = 1366.0
+offset_bottom = 768.0
 color = Color(0, 0, 0, 0.705882)
 
 [node name="Dialog" type="Node2D" parent="."]
 visible = false
 
 [node name="Fence" type="Sprite2D" parent="Dialog"]
-position = Vector2(1600, 900)
+position = Vector2(693, 363)
 scale = Vector2(0.5, 0.7)
 texture = ExtResource("7")
 
@@ -1084,12 +1133,14 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -4971.0
-offset_top = -1083.0
-offset_right = -713.0
-offset_bottom = -565.0
+offset_left = -2144.0
+offset_top = -464.0
+offset_right = -264.0
+offset_bottom = -231.0
+grow_horizontal = 2
+grow_vertical = 2
 theme_override_fonts/font = SubResource("11")
-theme_override_font_sizes/font_size = 75
+theme_override_font_sizes/font_size = 45
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 2
@@ -1100,10 +1151,12 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = 2783.0
-offset_top = 1182.0
-offset_right = 3038.0
-offset_bottom = 1455.0
+offset_left = 1195.0
+offset_top = 511.0
+offset_right = 1303.0
+offset_bottom = 627.0
+grow_horizontal = 2
+grow_vertical = 2
 rotation = 3.14159
 scale = Vector2(0.5, 0.5)
 texture_normal = ExtResource("18")
@@ -1126,7 +1179,8 @@ visible = false
 
 [node name="Timer" type="Node2D" parent="."]
 z_index = 2
-position = Vector2(1600, 1800)
+position = Vector2(683, 761)
+scale = Vector2(0.5, 0.5)
 
 [node name="BGTimer" type="Sprite2D" parent="Timer"]
 rotation = 1.5708

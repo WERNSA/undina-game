@@ -40,7 +40,8 @@
 	  "title": "¿Cuáles son los océanos que a la vista no se mezclan?",
 	  "options": [
 		"Oceano Atlantico, Oceano Pacifico",
-		"Océano Antártico, Océano Ártico"
+		"Océano Antártico, Océano Ártico",
+		"Océano Pacifico, Océano Ártico"
 	  ],
 	  "answer": "Oceano Atlantico, Oceano Pacifico",
 	  "long_answer": "La explicación se encuentra en los llamados “eddies” que se producen en el golfo de Alaska, son remolinos de cientos de kilómetros de diámetro que forman las corrientes en el océano Atlántico y el océano Pacifico, esto produce que los dos tipos de agua choquen entre sí."
@@ -473,7 +474,7 @@
 	},
 	{
 	  "title": "¿Es importante practicar el reciclaje en casa?",
-	  "options": ["Si", "No"],
+	  "options": ["Si", "No", "Tal vez"],
 	  "answer": "Si",
 	  "long_answer": "¡Es sumamente importante que puedas realizar pequeñas tareas que fomenten el reciclaje dentro de tu hogar, tú puedes!"
 	},
@@ -509,7 +510,7 @@
 	},
 	{
 	  "title": "¿Reciclar puede convertirse en una idea de negocio?",
-	  "options": ["Si", "No"],
+	  "options": ["Si", "No", "Tal vez"],
 	  "answer": "Si",
 	  "long_answer": "Con el reciclaje se crean plantas procesadoras de residuos, se utilizan nuevas materias primas y se genera más empleo"
 	},

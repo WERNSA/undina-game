@@ -78,7 +78,7 @@ theme_override_font_sizes/font_size = 35
 vertical_alignment = 1
 
 [node name="FondoL" type="Sprite2D" parent="."]
-position = Vector2(-488, -163)
+position = Vector2(-490, -163)
 rotation = -3.14159
 scale = Vector2(0.54, 0.54)
 texture = ExtResource("2")

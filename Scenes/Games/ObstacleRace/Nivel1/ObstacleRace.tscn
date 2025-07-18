@@ -98,7 +98,7 @@ z_index = 100
 [node name="PauseMenu" parent="Pause" instance=ExtResource("3")]
 modulate = Color(1, 1, 1, 0.588235)
 z_index = 100
-position = Vector2(1295, 710)
+position = Vector2(1295, 680)
 
 [node name="GameOver" parent="." instance=ExtResource("16")]
 visible = false
@@ -111,9 +111,9 @@ z_index = 2
 position = Vector2(683, 0)
 
 [node name="BGTimer" type="Sprite2D" parent="Timer"]
-position = Vector2(0, -27)
+position = Vector2(2.5, -27)
 rotation = -1.5708
-scale = Vector2(1, 2)
+scale = Vector2(1, 1.622)
 texture = ExtResource("19")
 offset = Vector2(125, -2)
 
