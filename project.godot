@@ -79,8 +79,9 @@ text/autopauses={}
 
 window/size/viewport_width=3200
 window/size/viewport_height=1800
-window/size/window_width_override=1280
-window/size/window_height_override=720
+window/size/mode=3
+window/size/window_width_override=854
+window/size/window_height_override=480
 window/stretch/mode="viewport"
 
 [editor_plugins]

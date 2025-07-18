@@ -1,10 +1,10 @@
 [gd_scene load_steps=11 format=3 uid="uid://dq7nvmwx1jpeg"]
 
-[ext_resource type="AudioStream" uid="uid://cnkmpqc44gpln" path="res://Scenes/Splash/Sounds/sea-waves.ogg" id="1"]
+[ext_resource type="AudioStream" uid="uid://ckrrv2bsgb7pp" path="res://Scenes/Splash/Sounds/sea-waves.ogg" id="1"]
 [ext_resource type="Script" uid="uid://psrilxlxfin5" path="res://Scenes/Splash/Scripts/Splash.gd" id="2"]
-[ext_resource type="Texture2D" uid="uid://b04dwg3f6ald1" path="res://Scenes/Splash/Images/wern-logo.png" id="3"]
-[ext_resource type="Texture2D" uid="uid://hp7w06220i47" path="res://Scenes/Splash/Images/fzt-logo.png" id="4"]
-[ext_resource type="Texture2D" uid="uid://daf2ic8wuwyx2" path="res://Assets/Images/bg_main.jpg" id="5"]
+[ext_resource type="Texture2D" uid="uid://06jw0av1w1nr" path="res://Scenes/Splash/Images/wern-logo.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://fk8j8udvdbpf" path="res://Scenes/Splash/Images/fzt-logo.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://blmavxof5ahw6" path="res://Assets/Images/bg_main.jpg" id="5"]
 [ext_resource type="FontFile" uid="uid://byvaqdf2liiep" path="res://Assets/Fonts/btnFont.tres" id="6"]
 
 [sub_resource type="Animation" id="3"]

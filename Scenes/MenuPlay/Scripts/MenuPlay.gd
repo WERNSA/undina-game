@@ -29,7 +29,7 @@ func _ready():
 	else:
 		mini_games = []
 	
-	check_minigames_locked()
+	#check_minigames_locked()
 
 
 func _on_BtnBack_pressed():

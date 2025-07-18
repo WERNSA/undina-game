@@ -1,41 +1,41 @@
 [gd_scene load_steps=46 format=4 uid="uid://cibnyynhphu76"]
 
-[ext_resource type="PackedScene" uid="uid://gi1blgmjctq6" path="res://Scenes/Utility/shader/ShaderWindWakerBeach.tscn" id="1"]
 [ext_resource type="PackedScene" uid="uid://7jnwei6j4avo" path="res://Scenes/Utility/Contador.tscn" id="2"]
-[ext_resource type="Texture2D" uid="uid://cshicesnovic5" path="res://Assets/Images/PescaSobreAgua/Lancha costado.png" id="3"]
-[ext_resource type="Texture2D" uid="uid://6m1qb7qvrgyq" path="res://Assets/Images/PescaSobreAgua/FishingRod/Cania de pescar.png" id="4"]
-[ext_resource type="AudioStream" uid="uid://6vb216b1rvo5" path="res://Assets/Sounds/pesca_sobre_agua.ogg" id="5"]
+[ext_resource type="Texture2D" uid="uid://bw75gx6p8f4ft" path="res://Assets/Images/PescaSobreAgua/Lancha costado.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://b5obklcdgxok0" path="res://Assets/Images/PescaSobreAgua/FishingRod/Cania de pescar.png" id="4"]
+[ext_resource type="AudioStream" uid="uid://bb1pvuahavsdy" path="res://Assets/Sounds/pesca_sobre_agua.ogg" id="5"]
 [ext_resource type="PackedScene" uid="uid://cth3iu2lap5nq" path="res://Scenes/Entity/FishingRod/FishingRod.tscn" id="6"]
-[ext_resource type="Texture2D" uid="uid://ddctdi6k2jmmh" path="res://Assets/Images/PescaSobreAgua/Radar/Radar.png" id="7"]
-[ext_resource type="Texture2D" uid="uid://cq32w0l7hkx7a" path="res://Assets/Images/PescaSobreAgua/Sensor/Sensor de pesca.png" id="8"]
-[ext_resource type="Texture2D" uid="uid://ddi25m0kannbs" path="res://Assets/Images/Story/Characters/Main/Ilea/Illea leyendo.png" id="8_qtfhm"]
-[ext_resource type="Texture2D" uid="uid://wuxfjkxkmkve" path="res://Assets/Images/PescaSobreAgua/Radar/BtnFishInactive.png" id="9"]
-[ext_resource type="Texture2D" uid="uid://bnrnt3w3mmd8i" path="res://Assets/Images/board_label.png" id="9_pub7m"]
-[ext_resource type="Texture2D" uid="uid://c8frk8ero32jh" path="res://Assets/Images/PescaSobreAgua/Radar/BtnFishActive.png" id="10"]
+[ext_resource type="Texture2D" uid="uid://ceoc7h7ny0wnd" path="res://Assets/Images/PescaSobreAgua/Radar/Radar.png" id="7"]
+[ext_resource type="Texture2D" uid="uid://dyk7j2fcakvvb" path="res://Assets/Images/PescaSobreAgua/Sensor/Sensor de pesca.png" id="8"]
+[ext_resource type="Texture2D" uid="uid://bcmm6qal5c0lc" path="res://Assets/Images/Story/Characters/Main/Ilea/Illea leyendo.png" id="8_qtfhm"]
+[ext_resource type="Texture2D" uid="uid://dgrx4vpb5yv1k" path="res://Assets/Images/PescaSobreAgua/Radar/BtnFishInactive.png" id="9"]
+[ext_resource type="Texture2D" uid="uid://d34k3ng8vcgm6" path="res://Assets/Images/board_label.png" id="9_pub7m"]
+[ext_resource type="Texture2D" uid="uid://8r4vb74unhl8" path="res://Assets/Images/PescaSobreAgua/Radar/BtnFishActive.png" id="10"]
 [ext_resource type="PackedScene" uid="uid://b17rf02r12bmp" path="res://Scenes/Utility/analog/Analog.tscn" id="11"]
 [ext_resource type="PackedScene" uid="uid://bx3dd0gnp366n" path="res://Scenes/Pause/PauseMenu.tscn" id="12"]
-[ext_resource type="Texture2D" uid="uid://5n2c0rkd2lum" path="res://Assets/Images/Tilesets/Bloque.png" id="13"]
+[ext_resource type="Texture2D" uid="uid://bb0atwvb5pnpm" path="res://Assets/Images/Tilesets/Bloque.png" id="13"]
 [ext_resource type="PackedScene" uid="uid://c1vnk2846spqf" path="res://Scenes/Entity/FishingRodItem/FishingRodItem.tscn" id="14"]
 [ext_resource type="PackedScene" uid="uid://bk3kntw4c4uf1" path="res://Scenes/Entity/RadarItem/RadarItem.tscn" id="15"]
 [ext_resource type="Script" uid="uid://duyywp041vv4u" path="res://Scenes/Games/PescaSobreAgua/Nivel1/PescaSobreAgua.gd" id="16"]
-[ext_resource type="AudioStream" uid="uid://bwkqaogcrblqo" path="res://Assets/Sounds/SFX/button_press.wav" id="17"]
-[ext_resource type="AudioStream" uid="uid://d2gedssbihwi7" path="res://Assets/Sounds/SFX/fishing_rod_throw.mp3" id="18"]
-[ext_resource type="AudioStream" uid="uid://c1r00qegwyg6w" path="res://Assets/Sounds/SFX/fishing_rod_get.mp3" id="19"]
-[ext_resource type="Texture2D" uid="uid://priw8xyd8crs" path="res://Assets/Images/PescaSobreAgua/FishingRod/Manivela.png" id="20"]
-[ext_resource type="Texture2D" uid="uid://0crfxf4p5310" path="res://Assets/Images/PescaSobreAgua/Sensor/Manivela de sensor de pesca.png" id="21"]
+[ext_resource type="AudioStream" uid="uid://mvh8v1pu68rp" path="res://Assets/Sounds/SFX/button_press.wav" id="17"]
+[ext_resource type="AudioStream" uid="uid://d3ys56gr1eyfb" path="res://Assets/Sounds/SFX/fishing_rod_throw.mp3" id="18"]
+[ext_resource type="AudioStream" uid="uid://srug4ry0384m" path="res://Assets/Sounds/SFX/fishing_rod_get.mp3" id="19"]
+[ext_resource type="Texture2D" uid="uid://bg6ftdbmse5ma" path="res://Assets/Images/PescaSobreAgua/FishingRod/Manivela.png" id="20"]
+[ext_resource type="Texture2D" uid="uid://d4nuo040h0mi6" path="res://Assets/Images/PescaSobreAgua/Sensor/Manivela de sensor de pesca.png" id="21"]
 [ext_resource type="PackedScene" uid="uid://c8x105gq6ieqg" path="res://Scenes/Entity/FishOverSea/Trash/Trash.tscn" id="22"]
 [ext_resource type="PackedScene" uid="uid://cenweaaa06ab4" path="res://Scenes/Entity/FishOverSea/Fish/Fish.tscn" id="23"]
 [ext_resource type="PackedScene" uid="uid://brb4l6a0f1a1n" path="res://Scenes/Entity/FishOverSea/FishBox/FishBox.tscn" id="24"]
-[ext_resource type="Texture2D" uid="uid://dp6a8vwfsw2fd" path="res://Assets/Images/AudioSettings/Botones/Barra de sonido activado.png" id="24_vkxo2"]
-[ext_resource type="Texture2D" uid="uid://d3op0bg02eneh" path="res://Assets/Images/PescaSobreAgua/Sensor/Membrana del sensor de pesca.png" id="25"]
-[ext_resource type="AudioStream" uid="uid://b7yrfq5st0a5" path="res://Assets/Sounds/SFX/water_splash.mp3" id="26"]
+[ext_resource type="Texture2D" uid="uid://cb163kn88752c" path="res://Assets/Images/AudioSettings/Botones/Barra de sonido activado.png" id="24_vkxo2"]
+[ext_resource type="Texture2D" uid="uid://tr3a4irhngbf" path="res://Assets/Images/PescaSobreAgua/Sensor/Membrana del sensor de pesca.png" id="25"]
+[ext_resource type="AudioStream" uid="uid://bne5ltykqppi0" path="res://Assets/Sounds/SFX/water_splash.mp3" id="26"]
 [ext_resource type="PackedScene" uid="uid://vdvws6110l8g" path="res://Scenes/Utility/GameOver/GameOver.tscn" id="27"]
-[ext_resource type="Texture2D" uid="uid://bpcgsqia5tpjf" path="res://Assets/Images/AudioSettings/Botones/Barra de sonido.png" id="28"]
+[ext_resource type="Texture2D" uid="uid://dfe07lh8t04cs" path="res://Assets/Images/AudioSettings/Botones/Barra de sonido.png" id="28"]
 [ext_resource type="Theme" uid="uid://y1ufudag5d7f" path="res://Assets/InputTheme/input_theme.tres" id="29"]
 [ext_resource type="PackedScene" uid="uid://dhpnyngl8a034" path="res://Scenes/Utility/Win/Win.tscn" id="30"]
-[ext_resource type="Texture2D" uid="uid://cxcyi67pybsat" path="res://Assets/Images/Fondo de contador de puntos.png" id="31"]
+[ext_resource type="Texture2D" uid="uid://dsngw3k2bi3qg" path="res://Assets/Images/Fondo de contador de puntos.png" id="31"]
 [ext_resource type="FontFile" uid="uid://byvaqdf2liiep" path="res://Assets/Fonts/btnFont.tres" id="32"]
-[ext_resource type="AudioStream" uid="uid://c8hxugccgxws8" path="res://Assets/Sounds/SFX/ender_punch.wav" id="33"]
+[ext_resource type="Texture2D" uid="uid://cop6wi8nuxnc7" path="res://Assets/Images/ObstacleRace/Fondo-juego-tortuga.png" id="32_pub7m"]
+[ext_resource type="AudioStream" uid="uid://d3asnuik5xvj8" path="res://Assets/Sounds/SFX/ender_punch.wav" id="33"]
 
 [sub_resource type="Animation" id="4"]
 resource_name = "Fishing"
@@ -185,9 +185,6 @@ offset_right = 7.0
 offset_bottom = 400.0
 texture = ExtResource("3")
 expand_mode = 1
-
-[node name="ShaderWindWakerBeach" parent="Background" instance=ExtResource("1")]
-z_index = -1
 
 [node name="Ilea" type="Sprite2D" parent="Background"]
 position = Vector2(2254, 1687)
@@ -365,6 +362,14 @@ autostart = true
 
 [node name="FishingTimer" type="Timer" parent="Characters"]
 wait_time = 15.0
+
+[node name="SeaBG" type="Node2D" parent="."]
+
+[node name="BG" type="Sprite2D" parent="SeaBG"]
+position = Vector2(3200, 0)
+rotation = 1.5708
+texture = ExtResource("32_pub7m")
+centered = false
 
 [node name="GameOver" parent="." instance=ExtResource("27")]
 visible = false

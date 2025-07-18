@@ -135,3 +135,7 @@ func _on_Timer_timeout():
 	tries = 0
 	move_turtle_to(Vector2(3400, $Characters/Turtle.position.y), 2.0)
 	_game_over()
+
+
+func _on_delete_area_area_entered(area: Area2D) -> void:
+	area.queue_free()
