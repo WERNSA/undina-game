@@ -696,7 +696,6 @@ _data = {
 }
 
 [sub_resource type="FontFile" id="4"]
-resource_name = ""
 fallbacks = Array[Font]([ExtResource("8")])
 cache/0/16/0/ascent = 0.0
 cache/0/16/0/descent = 0.0
@@ -720,7 +719,6 @@ cache/0/150/0/underline_thickness = 0.0
 cache/0/150/0/scale = 1.0
 
 [sub_resource type="FontFile" id="8"]
-resource_name = ""
 fallbacks = Array[Font]([ExtResource("8")])
 cache/0/16/0/ascent = 0.0
 cache/0/16/0/descent = 0.0
@@ -739,7 +737,6 @@ cache/0/150/0/underline_thickness = 0.0
 cache/0/150/0/scale = 1.0
 
 [sub_resource type="FontFile" id="11"]
-resource_name = ""
 fallbacks = Array[Font]([ExtResource("8")])
 cache/0/16/0/ascent = 0.0
 cache/0/16/0/descent = 0.0

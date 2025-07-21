@@ -16,7 +16,7 @@ var fish_final_positions = [
 	Vector2(-300, 650), Vector2(-300, 850), Vector2(-300, 1050),
 	Vector2(-300, 1250), Vector2(-300, 1450), Vector2(-300, 1650),
 ]
-var barracuda_position = [Vector2(650, 1800), Vector2(650, 1400)]
+var barracuda_position = [Vector2(260, 700), Vector2(260, 600)]
 
 @onready var turtle_position_idx := 0
 @onready var actual_trash_position := Vector2.ZERO

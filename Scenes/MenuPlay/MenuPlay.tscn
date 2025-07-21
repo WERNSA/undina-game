@@ -12,7 +12,6 @@
 [ext_resource type="AudioStream" uid="uid://iapirq7tctl" path="res://Assets/Sounds/SFX/button_press.wav" id="10"]
 
 [sub_resource type="FontFile" id="1"]
-resource_name = ""
 fallbacks = Array[Font]([ExtResource("6")])
 cache/0/16/0/ascent = 0.0
 cache/0/16/0/descent = 0.0
@@ -31,7 +30,6 @@ cache/0/55/0/underline_thickness = 0.0
 cache/0/55/0/scale = 1.0
 
 [sub_resource type="FontFile" id="2"]
-resource_name = ""
 fallbacks = Array[Font]([ExtResource("6")])
 cache/0/16/0/ascent = 0.0
 cache/0/16/0/descent = 0.0
@@ -305,7 +303,6 @@ cache/0/75/0/underline_thickness = 0.0
 cache/0/75/0/scale = 1.0
 
 [sub_resource type="FontFile" id="3"]
-resource_name = ""
 fallbacks = Array[Font]([ExtResource("6")])
 cache/0/16/0/ascent = 0.0
 cache/0/16/0/descent = 0.0
@@ -324,7 +321,6 @@ cache/0/35/0/underline_thickness = 0.0
 cache/0/35/0/scale = 1.0
 
 [sub_resource type="FontFile" id="4"]
-resource_name = ""
 fallbacks = Array[Font]([ExtResource("6")])
 cache/0/16/0/ascent = 0.0
 cache/0/16/0/descent = 0.0
