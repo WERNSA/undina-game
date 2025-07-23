@@ -1,18 +1,18 @@
 [gd_scene load_steps=21 format=3 uid="uid://b7y1dci7cjerv"]
 
-[ext_resource type="Texture2D" uid="uid://by8dqypul06w6" path="res://Assets/Images/Animaciones/Buceando/Illea Buzo Derecha/Illea Buzo Derecha 6.png" id="2"]
-[ext_resource type="Texture2D" uid="uid://ywj02l1daeuo" path="res://Assets/Images/Animaciones/Buceando/Illea Buzo Derecha/Illea Buzo Derecha 3.png" id="4"]
-[ext_resource type="Texture2D" uid="uid://denfdjt34rwbc" path="res://Assets/Images/Animaciones/Buceando/Illea Buzo Derecha/Illea Buzo Derecha 4.png" id="5"]
-[ext_resource type="Texture2D" uid="uid://bed57i66m8wgg" path="res://Assets/Images/Animaciones/Buceando/Illea Buzo Derecha/Illea Buzo Derecha 1.png" id="6"]
-[ext_resource type="Texture2D" uid="uid://bo8k0ydhpoqnj" path="res://Assets/Images/Animaciones/Buceando/Illea Buzo Derecha/Illea Buzo Derecha 5.png" id="7"]
+[ext_resource type="Texture2D" uid="uid://c3xlawd7lmiax" path="res://Assets/Images/Animaciones/Buceando/Illea Buzo Derecha/Illea Buzo Derecha 6.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://ovj1y8xmlcrx" path="res://Assets/Images/Animaciones/Buceando/Illea Buzo Derecha/Illea Buzo Derecha 3.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://di8ytcl5dscf2" path="res://Assets/Images/Animaciones/Buceando/Illea Buzo Derecha/Illea Buzo Derecha 4.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://chhpc5y5uw6ih" path="res://Assets/Images/Animaciones/Buceando/Illea Buzo Derecha/Illea Buzo Derecha 1.png" id="6"]
+[ext_resource type="Texture2D" uid="uid://debskfcve4shh" path="res://Assets/Images/Animaciones/Buceando/Illea Buzo Derecha/Illea Buzo Derecha 5.png" id="7"]
 [ext_resource type="Script" uid="uid://dayd6rdy6hpa0" path="res://Scenes/Entity/Illea/Buceando/IlleaBuceando.gd" id="8"]
-[ext_resource type="Texture2D" uid="uid://c05k6od6oi7wd" path="res://Assets/Images/Animaciones/Buceando/Cayendo derecha/Cayendo derecha 1.png" id="9"]
-[ext_resource type="Texture2D" uid="uid://cqg640hhjynxd" path="res://Assets/Images/Animaciones/Buceando/Illea golpeada/Illea golpeada.png" id="10"]
-[ext_resource type="Texture2D" uid="uid://dw7jvc1htxvhg" path="res://Assets/Images/Animaciones/Buceando/Illea sujetando derecha/Illea sujetando derecha.png" id="11"]
-[ext_resource type="Texture2D" uid="uid://bbkg2vfw8npjx" path="res://Assets/Images/Animaciones/Buceando/Cayendo derecha/Cayendo derecha 3.png" id="12"]
-[ext_resource type="Texture2D" uid="uid://nxvuowep5lkr" path="res://Assets/Images/Animaciones/Buceando/Cayendo derecha/Cayendo derecha 2.png" id="13"]
-[ext_resource type="Texture2D" uid="uid://ddmvsf7alnouq" path="res://Assets/Images/Animaciones/Buceando/Cayendo derecha/Cayendo derecha 4.png" id="14"]
-[ext_resource type="Texture2D" uid="uid://i4iaqpds62ya" path="res://Assets/Images/Animaciones/Buceando/Illea Buzo Derecha/Illea Buzo Derecha 2.png" id="15"]
+[ext_resource type="Texture2D" uid="uid://cu3j4kfro3gbq" path="res://Assets/Images/Animaciones/Buceando/Cayendo derecha/Cayendo derecha 1.png" id="9"]
+[ext_resource type="Texture2D" uid="uid://b4iral3g40hca" path="res://Assets/Images/Animaciones/Buceando/Illea golpeada/Illea golpeada.png" id="10"]
+[ext_resource type="Texture2D" uid="uid://b5uiogj1dj3h8" path="res://Assets/Images/Animaciones/Buceando/Illea sujetando derecha/Illea sujetando derecha.png" id="11"]
+[ext_resource type="Texture2D" uid="uid://dn7nggibrq4br" path="res://Assets/Images/Animaciones/Buceando/Cayendo derecha/Cayendo derecha 3.png" id="12"]
+[ext_resource type="Texture2D" uid="uid://lsgskmyy57d2" path="res://Assets/Images/Animaciones/Buceando/Cayendo derecha/Cayendo derecha 2.png" id="13"]
+[ext_resource type="Texture2D" uid="uid://bgr3wl4pjkwlk" path="res://Assets/Images/Animaciones/Buceando/Cayendo derecha/Cayendo derecha 4.png" id="14"]
+[ext_resource type="Texture2D" uid="uid://c0jr8g6qtpqoc" path="res://Assets/Images/Animaciones/Buceando/Illea Buzo Derecha/Illea Buzo Derecha 2.png" id="15"]
 
 [sub_resource type="Animation" id="6"]
 resource_name = "Grab"
@@ -105,7 +105,6 @@ radius = 69.2308
 height = 184.615
 
 [node name="IlleaBuceando" type="CharacterBody2D"]
-scale = Vector2(0.13, 0.13)
 script = ExtResource("8")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
@@ -122,7 +121,7 @@ libraries = {
 shape = SubResource("1")
 
 [node name="RayEnemy" type="RayCast2D" parent="."]
-position = Vector2(0, 110)
+position = Vector2(0, 50)
 target_position = Vector2(70, 0)
 
 [node name="RayBoat" type="RayCast2D" parent="."]

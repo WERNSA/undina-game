@@ -1,9 +1,9 @@
 extends CharacterBody2D
 
-const SPEED = 100
-const SPEED_RUN = 150 ## RUN SPEED
+const SPEED = 65
+const SPEED_RUN = 80 ## RUN SPEED
 const FLOOR = Vector2(0, -1)
-const GRAVITY =  1
+const GRAVITY =  0.7
 @onready var motion = Vector2.ZERO
 const CAST_ENEMY = 70 # Esta constante es para definir la distancia de colisión con los enemigos.
 @onready var level = get_tree().get_nodes_in_group("level_pesca")[0]
