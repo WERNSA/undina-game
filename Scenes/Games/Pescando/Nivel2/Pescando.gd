@@ -1,70 +1,73 @@
 extends Node2D
+
 var TRASH_COUNT = 0
-@onready var trash_qty = 29
-@onready var tries = 3
-@onready var game_over : bool = false
-@onready var ilea_position = Vector2(1600, 600)
+
+var trash_qty := 0
+@export var tries := 3
+@export var game_over: bool = false
+@export var ilea_position := Vector2(530, 230)
 @export var FishBG: PackedScene
+
+var fish_initial_positions = [
+	Vector2(1470, 273), Vector2(1470, 357), Vector2(1470, 441),
+	Vector2(1470, 525), Vector2(1470, 609), Vector2(1470, 693),
+]
+var fish_final_positions = [
+	Vector2(-300, 273), Vector2(-300, 850), Vector2(-300, 441),
+	Vector2(-300, 525), Vector2(-300, 357), Vector2(-300, 693),
+]
 
 var coral_rock_position = {
 	"initial": [
-		Vector2(2650, 1250),
-		Vector2(2500, 1450)
+		Vector2(1185, 532),
+		Vector2(1013, 644)
 	],
 	"final": [
-		Vector2(2475, 1250),
-		Vector2(2650, 1450)
+		Vector2(1065, 532),
+		Vector2(1170, 644)
 	]
 }
 
-var fish_initial_positions = [
-	Vector2(3500, 650),
-	Vector2(3500, 850),
-	Vector2(3500, 1050),
-	Vector2(3500, 1250),
-	Vector2(3500, 1450),
-	Vector2(3500, 1650),
-]
-var fish_final_positions = [
-	Vector2(-300, 650),
-	Vector2(-300, 850),
-	Vector2(-300, 1050),
-	Vector2(-300, 1250),
-	Vector2(-300, 1450),
-	Vector2(-300, 1650),
-]
-var barracuda_position = [
-	Vector2(2900, 1900),
-	Vector2(2900, 1700),
-]
+var barracuda_position = [Vector2(1230, 800), Vector2(1230, 700)]
 
-@onready var turtle_position_idx : int = 0
-@onready var actual_trash_position : Vector2 = Vector2.ZERO
+@onready var turtle_position_idx := 0
+@onready var actual_trash_position := Vector2.ZERO
+
+#var turtle_initial_position = [
+	#Vector2(1000, 1900), Vector2(2900, 1900), Vector2(1400, 1900)
+#]
+
 var turtle_initial_position = [
-	Vector2(1000, 1900),
-	Vector2(2900, 1900),
-	Vector2(1400, 1900)
+	Vector2(357, 1000), Vector2(1035, 1000), Vector2(499, 1000)
 ]
 
+#var turtle_trash_position = [
+	#{
+		#"turtle": Vector2(725, 1430),
+		#"trash": Vector2(850, 1430),
+	#},
+#]
 @onready var turtle_trash_position : Array[Node] = $Trash.get_children()
 
-# Called when the node enters the scene tree for the first time.
 func _ready():
+	trash_qty = $Trash.get_children().size()
 	randomize()
 	$Contador.set_count(str(TRASH_COUNT))
 	$HUD/GameOver/CenterContainer/HBoxContainer/BtnTry.pressed.connect(_on_try_again)
 	$HUD/Win/CenterContainer/HBoxContainer/BtnTry.pressed.connect(_on_try_again)
-
+	
 	spawn_fish_bg()
 	$FishBG/SpawnFishBGTimer.start()
 	$Fish/BarracudaTimer.start()
 	move_barracuda()
 	move_turtle()
-	$Timer/MarginContainer/VBoxContainer/LblTries.text = "INTENTOS: " + str(tries)
+	$Timer/MarginContainer/VBoxContainer/LblTries.text = "iNTENTOS: %s" % tries
+	$Boat/Claw/AnimatedSprite2D.play("default")
+	evaluate_coral_rock()
 
 func _physics_process(delta):
 	var wave_velocity = 35
-	get_node("Background/Wave").scroll_base_offset += Vector2(1, 0) * wave_velocity * delta
+	$Background/Wave.scroll_offset += Vector2(1, 0) * wave_velocity * delta
 	$Timer/MarginContainer/VBoxContainer/LblTimer.text = Global.get_timer($Timer/Timer.time_left)
 
 func add_trash_count():
@@ -72,7 +75,7 @@ func add_trash_count():
 	trash_qty -= 1
 	$Contador.set_count(str(TRASH_COUNT))
 	$Songs/GetSound.play()
-	if trash_qty == 0:
+	if trash_qty <= 0:
 		_game_win()
 
 func get_sound():
@@ -82,27 +85,59 @@ func _on_SpawnFishBGTimer_timeout():
 	spawn_fish_bg()
 
 func spawn_fish_bg():
-	var options_initial = Global.random_int(0, fish_initial_positions.size() - 1)
-	var options_final = Global.random_int(0, fish_final_positions.size() - 1)
-	var _position_initial = fish_initial_positions[options_initial]
-	var _position_final = fish_final_positions[options_final]
+	var start_pos = fish_initial_positions[Global.random_int(0, fish_initial_positions.size() - 1)]
+	var end_pos = fish_final_positions[Global.random_int(0, fish_final_positions.size() - 1)]
 	var fish_bg = FishBG.instantiate()
-	fish_bg.position = _position_initial
+	fish_bg.position = start_pos
 	fish_bg.z_index = -1
 	add_child(fish_bg)
 
-	$FishBG.create_tween().tween_property(
-		fish_bg, "position", _position_final, 10
-	).set_trans(Tween.TRANS_LINEAR).set_ease(Tween.EASE_IN_OUT)
+	var tween = create_tween()
+	tween.tween_property(fish_bg, "position", end_pos, 5.0).set_trans(Tween.TRANS_LINEAR).set_ease(Tween.EASE_IN_OUT)
 
 func _on_BarracudaTimer_timeout():
 	move_barracuda()
+	evaluate_coral_rock()
+
+func evaluate_coral_rock():
+	if $Placeholder/CoralRock.position == coral_rock_position["initial"][0]:
+		move_coral_rock(
+			$Placeholder/CoralRock,
+			coral_rock_position["initial"][0],
+			coral_rock_position["final"][0]
+		)
+		move_coral_rock(
+			$Placeholder/CoralRock2,
+			coral_rock_position["initial"][1],
+			coral_rock_position["final"][1]
+		)
+	else:
+		move_coral_rock(
+			$Placeholder/CoralRock,
+			coral_rock_position["final"][0],
+			coral_rock_position["initial"][0]
+		)
+		move_coral_rock(
+			$Placeholder/CoralRock2,
+			coral_rock_position["final"][1],
+			coral_rock_position["initial"][1]
+		)
+		
+func move_coral_rock(_coral_rock, _initial_pos, _final_pos):
+	var tween = create_tween()
+	tween.tween_property(
+		_coral_rock,
+		"position",
+		_final_pos,
+		2
+	)\
+	.set_trans(Tween.TRANS_LINEAR)\
+	.set_ease(Tween.EASE_IN_OUT)
 
 func move_barracuda():
-	var target = barracuda_position[1] if $Fish/Barracuda.position == barracuda_position[0] else barracuda_position[0]
-	$FishBG.create_tween().tween_property(
-		$Fish/Barracuda, "position", target, 2
-	).set_trans(Tween.TRANS_LINEAR).set_ease(Tween.EASE_IN_OUT)
+	var target_pos = barracuda_position[1] if $Fish/Barracuda.position == barracuda_position[0] else barracuda_position[0]
+	var tween = create_tween()
+	tween.tween_property($Fish/Barracuda, "position", target_pos, 1.0).set_trans(Tween.TRANS_LINEAR).set_ease(Tween.EASE_IN_OUT)
 
 func get_trash_index():
 	turtle_position_idx = Global.random_int(0, turtle_trash_position.size() - 1)
@@ -123,7 +158,7 @@ func move_turtle():
 		$FishBG/Turtle,
 		"position",
 		final_pos.position,
-		3
+		2
 	).set_trans(Tween.TRANS_LINEAR).set_ease(Tween.EASE_IN_OUT)
 	tween.connect("finished", _on_TurtleTween_tween_completed)
 
@@ -138,7 +173,7 @@ func _on_TurtleTween_tween_completed():
 			show_timer(true)
 			var flipped = $FishBG/Turtle.position.x > turtle_trash_position[turtle_position_idx].position.x
 			$FishBG/Turtle._set_flip_h(flipped)
-			var margin_pos = 100
+			var margin_pos = 50
 			$FishBG/Turtle.position.x += margin_pos if flipped else (margin_pos * -1)
 			$FishBG/Turtle._set_eating(true)
 		else:
@@ -146,45 +181,50 @@ func _on_TurtleTween_tween_completed():
 
 func _on_Timer_timeout():
 	$Timer/Timer.stop()
-	if not game_over:
-		var _found = false
-		var _trash
-		for p in get_tree().get_nodes_in_group("enemy"):
-			if p.position == actual_trash_position:
-				_found = true
-				_trash = p
-				break
-		if _found:
-			$Songs/GetSound.play()
-			_trash.queue_free()
-			tries -= 1
-			trash_qty -= 1
-			TRASH_COUNT -= 10
-			$Contador.set_count(str(TRASH_COUNT))
-			$Timer/MarginContainer/VBoxContainer/LblTries.text = "INTENTOS: " + str(tries)
-		if tries == 0:
-			_game_over()
-		elif trash_qty == 0:
-			_game_win()
-		else:
-			hide_turtle()
-		if $Timer.position.y != -200:
-			show_timer(false)
+	if game_over:
+		return
 
-func show_timer(is_show : bool):
-	var _initial_pos_y = -200 if is_show else 0
-	var _final_pos_y = 0 if is_show else -200
+	var found = false
+	var trash_group = get_tree().get_nodes_in_group("enemy")
+	for p in trash_group:
+		if p.position == actual_trash_position:
+			found = true
+			p.queue_free()
+			break
 
-	$FishBG.create_tween().tween_property(
-		$Timer, "position", Vector2(1600, _final_pos_y), 0.5
+	if found:
+		$Songs/GetSound.play()
+		trash_qty -= 1
+		tries -= 1
+		TRASH_COUNT -= 10
+		$Contador.set_count(str(TRASH_COUNT))
+		$Timer/MarginContainer/VBoxContainer/LblTries.text = "iNTENTOS: %s" % tries
+
+	if tries == 0:
+		_game_over()
+	elif trash_qty == 0:
+		_game_win()
+	else:
+		hide_turtle()
+
+	if $Timer.position.y != -200:
+		show_timer(false)
+
+func show_timer(is_show: bool):
+	var start_y = -100 if is_show else 0
+	var end_y = 0 if is_show else -100
+	var tween = create_tween()
+	tween.tween_property(
+		$Timer,
+		"position",
+		Vector2(643, end_y),
+		0.5
 	).set_trans(Tween.TRANS_LINEAR).set_ease(Tween.EASE_IN_OUT)
-
-	$Timer/Timer.start()
 
 func remove_trash_turtle(pos: Vector2):
 	var index := -1
 	for i in turtle_trash_position.size():
-		if is_instance_valid(turtle_initial_position[i]):
+		if is_instance_valid(turtle_trash_position[i]):
 			if turtle_trash_position[i].position == pos:
 				index = i
 				break
@@ -198,14 +238,17 @@ func remove_trash_turtle(pos: Vector2):
 
 func hide_turtle():
 	$FishBG/Turtle._set_eating(false)
-	var _initial_position = $FishBG/Turtle.position
-	var _final_position = turtle_initial_position[Global.random_int(0, turtle_initial_position.size() - 1)]
-	$FishBG/Turtle._set_flip_h(_initial_position.x > _final_position.x)
+	var start_pos = $FishBG/Turtle.position
+	var end_pos = turtle_initial_position[Global.random_int(0, turtle_initial_position.size() - 1)]
+	$FishBG/Turtle._set_flip_h(start_pos.x > end_pos.x)
 
-	$FishBG.create_tween().tween_property(
-		$FishBG/Turtle, "position", _final_position, 3
+	var tween = create_tween()
+	tween.tween_property(
+		$FishBG/Turtle,
+		"position",
+		end_pos,
+		3
 	).set_trans(Tween.TRANS_LINEAR).set_ease(Tween.EASE_IN_OUT)
-
 	$FishBG/TurtleTimer.start()
 
 func _on_TurtleTimer_timeout():
@@ -235,25 +278,19 @@ func _game_over():
 	$FishBG/Turtle._set_dead(true)
 	$FishBG/Turtle/Sprite2D.flip_v = true
 
-	$FishBG.create_tween().tween_property(
-		$FishBG/Turtle, "position", Vector2($FishBG/Turtle.position.x, 400), 5
+	var tween = create_tween()
+	tween.tween_property(
+		$FishBG/Turtle,
+		"position",
+		Vector2($FishBG/Turtle.position.x, 180),
+		2
 	).set_trans(Tween.TRANS_LINEAR).set_ease(Tween.EASE_IN_OUT)
 
 	$IlleaBuceando.can_move = false
 
 func _on_try_again():
-	get_tree().change_scene_to_file("res://Scenes/Games/Pescando/Nivel2/Pescando.tscn")
+	get_tree().reload_current_scene()
 
-func _on_CoralRockTimer_timeout():
-	var pos = $Placeholder/CoralRock.position
-	if pos == coral_rock_position["initial"][0]:
-		move_coral_rock($Placeholder/CoralRock, coral_rock_position["initial"][0], coral_rock_position["final"][0])
-		move_coral_rock($Placeholder/CoralRock2, coral_rock_position["initial"][1], coral_rock_position["final"][1])
-	else:
-		move_coral_rock($Placeholder/CoralRock, coral_rock_position["final"][0], coral_rock_position["initial"][0])
-		move_coral_rock($Placeholder/CoralRock2, coral_rock_position["final"][1], coral_rock_position["initial"][1])
 
-func move_coral_rock(_coral_rock, _initial_pos, _final_pos):
-	$FishBG.create_tween().tween_property(
-		_coral_rock, "position", _final_pos, 2
-	).set_trans(Tween.TRANS_LINEAR).set_ease(Tween.EASE_IN_OUT)
+func _on_bg_song_finished() -> void:
+	$Songs/BGSong.play()
