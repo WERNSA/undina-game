@@ -1,42 +1,42 @@
-[gd_scene load_steps=45 format=3 uid="uid://wwvm0tjq73m0"]
+[gd_scene load_steps=46 format=3 uid="uid://wwvm0tjq73m0"]
 
-[ext_resource type="Texture2D" uid="uid://dtun1ob242oq6" path="res://Assets/Images/Animaciones/Recogiendo basura/De frente/Illea de frente 8.png" id="2"]
-[ext_resource type="Texture2D" uid="uid://bddg7f8gd5jea" path="res://Assets/Images/Animaciones/Recogiendo basura/De frente/Illea de frente 2.png" id="3"]
-[ext_resource type="Texture2D" uid="uid://b46hng32iqiac" path="res://Assets/Images/Animaciones/Recogiendo basura/De frente/Illea de frente 5.png" id="4"]
-[ext_resource type="Texture2D" uid="uid://coreef4mx1cyb" path="res://Assets/Images/Animaciones/Recogiendo basura/De frente/Illea de frente 1.png" id="5"]
-[ext_resource type="Texture2D" uid="uid://c66homl5gcoe8" path="res://Assets/Images/Animaciones/Recogiendo basura/De frente/Illea de frente 3.png" id="6"]
-[ext_resource type="Texture2D" uid="uid://bkaisjle8p4hv" path="res://Assets/Images/Animaciones/Recogiendo basura/De frente/Illea de frente 7.png" id="7"]
-[ext_resource type="Texture2D" uid="uid://cs36jcmt2mde0" path="res://Assets/Images/Animaciones/Recogiendo basura/Tres cuartos derecha/Illea tres cuartos derecha 3.png" id="8"]
-[ext_resource type="Texture2D" uid="uid://83sqc58lbts7" path="res://Assets/Images/Animaciones/Recogiendo basura/De frente/Illea de frente 9.png" id="9"]
-[ext_resource type="Texture2D" uid="uid://b0mvsiu86ky4b" path="res://Assets/Images/Animaciones/Recogiendo basura/De frente/Illea de frente 4.png" id="10"]
-[ext_resource type="Texture2D" uid="uid://dmlmjkpc303ns" path="res://Assets/Images/Animaciones/Recogiendo basura/Tres cuartos derecha/Illea tres cuartos derecha 7.png" id="11"]
-[ext_resource type="Texture2D" uid="uid://r7kpr2s47shk" path="res://Assets/Images/Animaciones/Recogiendo basura/Espalda/Illea espalda 2.png" id="12"]
-[ext_resource type="Texture2D" uid="uid://bd3m1t0p556tt" path="res://Assets/Images/Animaciones/Recogiendo basura/Tres cuartos derecha/Illea tres cuartos derecha 6.png" id="13"]
-[ext_resource type="Texture2D" uid="uid://bwm36q0f0h7im" path="res://Assets/Images/Animaciones/Caminando/De espalda/De espalda 3.png" id="14"]
-[ext_resource type="Texture2D" uid="uid://1xen8gkgu0wy" path="res://Assets/Images/Animaciones/Recogiendo basura/Espalda/Illea espalda 6.png" id="15"]
-[ext_resource type="Texture2D" uid="uid://d64sx5r51err" path="res://Assets/Images/Animaciones/Recogiendo basura/Tres cuartos derecha/Illea tres cuartos derecha 5.png" id="16"]
-[ext_resource type="Texture2D" uid="uid://dd6ibjpnwl8d7" path="res://Assets/Images/Animaciones/Recogiendo basura/Tres cuartos derecha/Illea tres cuartos derecha 9.png" id="17"]
-[ext_resource type="Texture2D" uid="uid://djog3mnr0a0g1" path="res://Assets/Images/Animaciones/Recogiendo basura/Espalda/Illea espalda 1.png" id="18"]
-[ext_resource type="Texture2D" uid="uid://donpxmu2dsonv" path="res://Assets/Images/Animaciones/Recogiendo basura/Espalda/Illea espalda 7.png" id="19"]
-[ext_resource type="Texture2D" uid="uid://bvswh3a65bxfn" path="res://Assets/Images/Animaciones/Recogiendo basura/Espalda/Illea espalda 5.png" id="20"]
-[ext_resource type="Texture2D" uid="uid://chig6abdnmqhe" path="res://Assets/Images/Animaciones/Recogiendo basura/Tres cuartos derecha/Illea tres cuartos derecha 1.png" id="21"]
-[ext_resource type="Texture2D" uid="uid://bbuudmvms1x3o" path="res://Assets/Images/Animaciones/Recogiendo basura/Tres cuartos derecha/Illea tres cuartos derecha 8.png" id="22"]
-[ext_resource type="Texture2D" uid="uid://ce3j8ipumy0l6" path="res://Assets/Images/Animaciones/Recogiendo basura/Espalda/Illea espalda 9.png" id="23"]
-[ext_resource type="Texture2D" uid="uid://cqhq2xhq7urg" path="res://Assets/Images/Animaciones/Recogiendo basura/Tres cuartos derecha/Illea tres cuartos derecha 2.png" id="24"]
-[ext_resource type="Texture2D" uid="uid://7fd8y0pgwm2o" path="res://Assets/Images/Animaciones/Recogiendo basura/Espalda/Illea espalda 8.png" id="25"]
-[ext_resource type="Texture2D" uid="uid://dfqtuhsxvnhc5" path="res://Assets/Images/Animaciones/Recogiendo basura/Tres cuartos derecha/Illea tres cuartos derecha 4.png" id="26"]
-[ext_resource type="Texture2D" uid="uid://d0ghmnauv8jdd" path="res://Assets/Images/Animaciones/Recogiendo basura/Espalda/Illea espalda 4.png" id="27"]
-[ext_resource type="Texture2D" uid="uid://b7o3vm6yekp5" path="res://Assets/Images/Animaciones/Recogiendo basura/Tres cuartos derecha espalda/Tres cuartos derecha espalda 9.png" id="28"]
-[ext_resource type="Texture2D" uid="uid://dv1pxay388tdl" path="res://Assets/Images/Animaciones/Recogiendo basura/Tres cuartos derecha espalda/Tres cuartos derecha espalda 8.png" id="29"]
-[ext_resource type="Texture2D" uid="uid://b4p4j0aboqclk" path="res://Assets/Images/Animaciones/Recogiendo basura/Tres cuartos derecha espalda/Tres cuartos derecha espalda 1.png" id="30"]
-[ext_resource type="Texture2D" uid="uid://bvdrfyre45vfv" path="res://Assets/Images/Animaciones/Recogiendo basura/Tres cuartos derecha espalda/Tres cuartos derecha espalda 2.png" id="31"]
-[ext_resource type="Texture2D" uid="uid://cb1v26vb5mabx" path="res://Assets/Images/Animaciones/Recogiendo basura/Tres cuartos derecha espalda/Tres cuartos derecha espalda 3.png" id="32"]
-[ext_resource type="Texture2D" uid="uid://cockxixamrktd" path="res://Assets/Images/Animaciones/Recogiendo basura/Tres cuartos derecha espalda/Tres cuartos derecha espalda 4.png" id="33"]
-[ext_resource type="Texture2D" uid="uid://bkra45p37gtb5" path="res://Assets/Images/Animaciones/Recogiendo basura/Tres cuartos derecha espalda/Tres cuartos derecha espalda 5.png" id="34"]
-[ext_resource type="Texture2D" uid="uid://dgdbqwhqwqn5l" path="res://Assets/Images/Animaciones/Recogiendo basura/Tres cuartos derecha espalda/Tres cuartos derecha espalda 6.png" id="35"]
-[ext_resource type="Texture2D" uid="uid://bwqh5sf3pj57u" path="res://Assets/Images/Animaciones/Recogiendo basura/Tres cuartos derecha espalda/Tres cuartos derecha espalda 7.png" id="36"]
+[ext_resource type="Texture2D" uid="uid://bltsgvislpmll" path="res://Assets/Images/Animaciones/Recogiendo basura/De frente/Illea de frente 8.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://qgl1qto311ws" path="res://Assets/Images/Animaciones/Recogiendo basura/De frente/Illea de frente 2.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://c2ky6dmvyvlm6" path="res://Assets/Images/Animaciones/Recogiendo basura/De frente/Illea de frente 5.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://bqyxkbf1c5evj" path="res://Assets/Images/Animaciones/Recogiendo basura/De frente/Illea de frente 1.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://cx5bsusi1p3tf" path="res://Assets/Images/Animaciones/Recogiendo basura/De frente/Illea de frente 3.png" id="6"]
+[ext_resource type="Texture2D" uid="uid://dpwuv68vb7kdf" path="res://Assets/Images/Animaciones/Recogiendo basura/De frente/Illea de frente 7.png" id="7"]
+[ext_resource type="Texture2D" uid="uid://bexvkdmce3dgp" path="res://Assets/Images/Animaciones/Recogiendo basura/Tres cuartos derecha/Illea tres cuartos derecha 3.png" id="8"]
+[ext_resource type="Texture2D" uid="uid://j61p4h47y3e2" path="res://Assets/Images/Animaciones/Recogiendo basura/De frente/Illea de frente 9.png" id="9"]
+[ext_resource type="Texture2D" uid="uid://dp6qwoogop1h7" path="res://Assets/Images/Animaciones/Recogiendo basura/De frente/Illea de frente 4.png" id="10"]
+[ext_resource type="Texture2D" uid="uid://d3u841te2lnv4" path="res://Assets/Images/Animaciones/Recogiendo basura/Tres cuartos derecha/Illea tres cuartos derecha 7.png" id="11"]
+[ext_resource type="Texture2D" uid="uid://v3sayux7yyu7" path="res://Assets/Images/Animaciones/Recogiendo basura/Espalda/Illea espalda 2.png" id="12"]
+[ext_resource type="Texture2D" uid="uid://04m2q3f15iof" path="res://Assets/Images/Animaciones/Recogiendo basura/Tres cuartos derecha/Illea tres cuartos derecha 6.png" id="13"]
+[ext_resource type="Texture2D" uid="uid://b0jd5kihxcadc" path="res://Assets/Images/Animaciones/Caminando/De espalda/De espalda 3.png" id="14"]
+[ext_resource type="Texture2D" uid="uid://blxtut76qb0ad" path="res://Assets/Images/Animaciones/Recogiendo basura/Espalda/Illea espalda 6.png" id="15"]
+[ext_resource type="Texture2D" uid="uid://wflxa5aajk6y" path="res://Assets/Images/Animaciones/Recogiendo basura/Tres cuartos derecha/Illea tres cuartos derecha 5.png" id="16"]
+[ext_resource type="Texture2D" uid="uid://oj1k4co14s28" path="res://Assets/Images/Animaciones/Recogiendo basura/Tres cuartos derecha/Illea tres cuartos derecha 9.png" id="17"]
+[ext_resource type="Texture2D" uid="uid://dy0vucho5u3vc" path="res://Assets/Images/Animaciones/Recogiendo basura/Espalda/Illea espalda 1.png" id="18"]
+[ext_resource type="Texture2D" uid="uid://dlwrgnfg82ij4" path="res://Assets/Images/Animaciones/Recogiendo basura/Espalda/Illea espalda 7.png" id="19"]
+[ext_resource type="Texture2D" uid="uid://b8tpdtucn5xv" path="res://Assets/Images/Animaciones/Recogiendo basura/Espalda/Illea espalda 5.png" id="20"]
+[ext_resource type="Texture2D" uid="uid://letarn4ojg22" path="res://Assets/Images/Animaciones/Recogiendo basura/Tres cuartos derecha/Illea tres cuartos derecha 1.png" id="21"]
+[ext_resource type="Texture2D" uid="uid://bdqtmhef4e1qk" path="res://Assets/Images/Animaciones/Recogiendo basura/Tres cuartos derecha/Illea tres cuartos derecha 8.png" id="22"]
+[ext_resource type="Texture2D" uid="uid://bta4cppnxbx4d" path="res://Assets/Images/Animaciones/Recogiendo basura/Espalda/Illea espalda 9.png" id="23"]
+[ext_resource type="Texture2D" uid="uid://cuy07jlldm2fb" path="res://Assets/Images/Animaciones/Recogiendo basura/Tres cuartos derecha/Illea tres cuartos derecha 2.png" id="24"]
+[ext_resource type="Texture2D" uid="uid://bcpy6xogpxqb7" path="res://Assets/Images/Animaciones/Recogiendo basura/Espalda/Illea espalda 8.png" id="25"]
+[ext_resource type="Texture2D" uid="uid://b1dnw0k4xo7me" path="res://Assets/Images/Animaciones/Recogiendo basura/Tres cuartos derecha/Illea tres cuartos derecha 4.png" id="26"]
+[ext_resource type="Texture2D" uid="uid://dnmarhk7nba2c" path="res://Assets/Images/Animaciones/Recogiendo basura/Espalda/Illea espalda 4.png" id="27"]
+[ext_resource type="Texture2D" uid="uid://uc2gtafps6tv" path="res://Assets/Images/Animaciones/Recogiendo basura/Tres cuartos derecha espalda/Tres cuartos derecha espalda 9.png" id="28"]
+[ext_resource type="Texture2D" uid="uid://chnurb87dd1ne" path="res://Assets/Images/Animaciones/Recogiendo basura/Tres cuartos derecha espalda/Tres cuartos derecha espalda 8.png" id="29"]
+[ext_resource type="Texture2D" uid="uid://dsetv67ltotye" path="res://Assets/Images/Animaciones/Recogiendo basura/Tres cuartos derecha espalda/Tres cuartos derecha espalda 1.png" id="30"]
+[ext_resource type="Texture2D" uid="uid://ckdwmqp10vu3s" path="res://Assets/Images/Animaciones/Recogiendo basura/Tres cuartos derecha espalda/Tres cuartos derecha espalda 2.png" id="31"]
+[ext_resource type="Texture2D" uid="uid://l8b4sxulkdc4" path="res://Assets/Images/Animaciones/Recogiendo basura/Tres cuartos derecha espalda/Tres cuartos derecha espalda 3.png" id="32"]
+[ext_resource type="Texture2D" uid="uid://c3inf4yw0uovx" path="res://Assets/Images/Animaciones/Recogiendo basura/Tres cuartos derecha espalda/Tres cuartos derecha espalda 4.png" id="33"]
+[ext_resource type="Texture2D" uid="uid://dkeub5dajuplc" path="res://Assets/Images/Animaciones/Recogiendo basura/Tres cuartos derecha espalda/Tres cuartos derecha espalda 5.png" id="34"]
+[ext_resource type="Texture2D" uid="uid://dvfgc4naxbew8" path="res://Assets/Images/Animaciones/Recogiendo basura/Tres cuartos derecha espalda/Tres cuartos derecha espalda 6.png" id="35"]
+[ext_resource type="Texture2D" uid="uid://bu5a4sclid64i" path="res://Assets/Images/Animaciones/Recogiendo basura/Tres cuartos derecha espalda/Tres cuartos derecha espalda 7.png" id="36"]
 [ext_resource type="Script" uid="uid://c46j4kuvwu5cg" path="res://Scenes/Entity/Illea/Caminando/IlleaCaminando.gd" id="37"]
-[ext_resource type="Texture2D" uid="uid://1far08xoufpl" path="res://Assets/Images/Animaciones/Recogiendo basura/De frente/Illea de frente 6.png" id="38"]
+[ext_resource type="Texture2D" uid="uid://cgdsmnjojflxe" path="res://Assets/Images/Animaciones/Recogiendo basura/De frente/Illea de frente 6.png" id="38"]
 
 [sub_resource type="Animation" id="5"]
 resource_name = "Down"
@@ -131,6 +131,16 @@ tracks/0/keys = {
 "values": [ExtResource("30"), ExtResource("31"), ExtResource("32"), ExtResource("33"), ExtResource("34"), ExtResource("35"), ExtResource("36"), ExtResource("29"), ExtResource("28")]
 }
 
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ghkre"]
+_data = {
+&"Down": SubResource("5"),
+&"DownWalk": SubResource("9"),
+&"Idle": SubResource("6"),
+&"RESET": SubResource("7"),
+&"Up": SubResource("8"),
+&"UpWalk": SubResource("10")
+}
+
 [sub_resource type="CapsuleShape2D" id="4"]
 radius = 57.0
 height = 278.0
@@ -142,18 +152,15 @@ script = ExtResource("37")
 texture = ExtResource("5")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-anims/Down = SubResource("5")
-anims/DownWalk = SubResource("9")
-anims/Idle = SubResource("6")
-anims/RESET = SubResource("7")
-anims/Up = SubResource("8")
-anims/UpWalk = SubResource("10")
+libraries = {
+&"": SubResource("AnimationLibrary_ghkre")
+}
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 24)
 shape = SubResource("4")
 
 [node name="RayTrash" type="RayCast2D" parent="."]
 position = Vector2(0, 80)
 scale = Vector2(1, 20)
-enabled = true
 target_position = Vector2(70, 0)

@@ -18,7 +18,7 @@ func _ready():
 	$GameOver/CenterContainer/HBoxContainer/BtnTry.connect("pressed", Callable(self, "_on_try_again"))
 	$Win/CenterContainer/HBoxContainer/BtnTry.connect("pressed", Callable(self, "_on_try_again"))
 	$Contador.set_count(str(points))
-	$Timer/VBoxContainer/Tries/Label.text = "INTENTOS: " + str(tries)
+	$Timer/VBoxContainer/Tries/Label.text = "iNTENTOS: " + str(tries)
 	questions = load_file()
 
 func _process(_delta):
@@ -150,7 +150,7 @@ func add_points():
 func remove_points():
 	points = max(points - 10, 0)
 	tries -= 1
-	$Timer/VBoxContainer/Tries/Label.text = "INTENTOS: " + str(tries)
+	$Timer/VBoxContainer/Tries/Label.text = "iNTENTOS: " + str(tries)
 	$Contador.set_count(str(points))
 
 func _game_win():

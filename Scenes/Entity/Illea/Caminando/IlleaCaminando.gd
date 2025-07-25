@@ -1,7 +1,7 @@
 extends CharacterBody2D
 const FLOOR = Vector2(0, -1)
-const SPEED = 150
-const SPEED_RUN = 250
+const SPEED = 75
+const SPEED_RUN = 80
 const CAST_ENEMY = 70 # Esta constante es para definir la distancia de colisión con los enemigos.
 # EL ONREADY ES COMO DECLARARLA EN LA FUNCION READY
 @onready var motion = Vector2.ZERO # ESTA PROP DEL VECTOR ES LO MISMO QUE (0,0)

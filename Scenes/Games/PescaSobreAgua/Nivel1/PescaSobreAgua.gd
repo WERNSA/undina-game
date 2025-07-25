@@ -50,7 +50,7 @@ func set_dialog(_is_fishable):
 		$Background/Dialog/Label/Label.add_theme_color_override("font_color", Color(color_red))
 
 func _process(_delta):
-	$Timer/VBoxContainer/Tries/Label.text = "INTENTOS: " + str(tries)
+	$Timer/VBoxContainer/Tries/Label.text = "iNTENTOS: " + str(tries)
 	$Timer/VBoxContainer/Timer/Label.text = Global.get_timer($Timer/Timer.time_left)
 
 func _on_RadarItemTimer_timeout():
@@ -135,7 +135,7 @@ func add_fishing_points():
 	if points >= $Sensor/SliderPoints.max_value:
 		if options == 0:
 			tries -= 1
-			$Timer/VBoxContainer/Tries/Label.text = "INTENTOS: " + str(tries)
+			$Timer/VBoxContainer/Tries/Label.text = "iNTENTOS: " + str(tries)
 			TRASH_COUNT -= 10
 			$Contador.set_count(str(TRASH_COUNT))
 			$Sounds/SoundSplash.play()

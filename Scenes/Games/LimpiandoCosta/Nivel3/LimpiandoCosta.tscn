@@ -1,56 +1,56 @@
-[gd_scene load_steps=50 format=4 uid="uid://bo74lv1r0kmv7"]
+[gd_scene load_steps=48 format=4 uid="uid://bo74lv1r0kmv7"]
 
-[ext_resource type="Texture2D" uid="uid://bd2mx2iqusecf" path="res://Assets/Images/LimpiandoCosta/Pantalla 1/Arena de Fondo.png" id="1"]
-[ext_resource type="Texture2D" uid="uid://dufigfolrijj8" path="res://Assets/Images/LimpiandoCosta/Pantalla 1/Mar/Primera capa mar.png" id="2"]
-[ext_resource type="Texture2D" uid="uid://bexbta3b37f55" path="res://Assets/Images/LimpiandoCosta/Pantalla 1/Mar/Segunda capa mar.png" id="3"]
-[ext_resource type="Texture2D" uid="uid://b38evwxivqkot" path="res://Assets/Images/LimpiandoCosta/Pantalla 1/Mar/Tercera capa mar.png" id="4"]
-[ext_resource type="Texture2D" uid="uid://cjjd7hkreg3wh" path="res://Assets/Images/LimpiandoCosta/Pantalla 1/Mar/Ola.png" id="5"]
-[ext_resource type="Texture2D" uid="uid://cnyif80vbe48r" path="res://Assets/Images/LimpiandoCosta/Pantalla 1/Mar/Espuma.png" id="6"]
-[ext_resource type="Texture2D" uid="uid://s5audmb0b55a" path="res://Assets/Images/LimpiandoCosta/Pantalla 2/Calle.png" id="7"]
-[ext_resource type="Texture2D" uid="uid://bkk4oomiapxyx" path="res://Assets/Images/LimpiandoCosta/Pantalla 3/Casa estilo colonial.png" id="8"]
-[ext_resource type="Texture2D" uid="uid://cm86pyxofhyxl" path="res://Assets/Images/LimpiandoCosta/Pantalla 1/Detalles de la arena.png" id="9"]
-[ext_resource type="Texture2D" uid="uid://cxi0pihi1eqvc" path="res://Assets/Images/LimpiandoCosta/Pantalla 1/Mar/Arena humeda.png" id="10"]
-[ext_resource type="Texture2D" uid="uid://bbaantl2q2sah" path="res://Assets/Images/LimpiandoCosta/Pantalla 1/Banca.png" id="12"]
-[ext_resource type="Texture2D" uid="uid://cm38j3rkn073j" path="res://Assets/Images/LimpiandoCosta/Pantalla 1/Farol.png" id="13"]
-[ext_resource type="Texture2D" uid="uid://x6yfi52ig5bp" path="res://Assets/Images/LimpiandoCosta/Pantalla 2/Basurero.png" id="14"]
-[ext_resource type="Texture2D" uid="uid://2nmvypeq4qoj" path="res://Assets/Images/LimpiandoCosta/Pantalla 1/Palmeras/Palmera 3.png" id="16"]
-[ext_resource type="Texture2D" uid="uid://01i78kf35dyh" path="res://Assets/Images/LimpiandoCosta/Pantalla 1/Palmeras/Palmera 4.png" id="17"]
-[ext_resource type="Texture2D" uid="uid://do5eupnf4ct7" path="res://Assets/Images/LimpiandoCosta/Pantalla 1/Palmeras/Palmera 1.png" id="18"]
-[ext_resource type="AudioStream" uid="uid://2kpqcqhovnk0" path="res://Assets/Sounds/limpiando_costa.ogg" id="19"]
-[ext_resource type="Texture2D" uid="uid://brlwiy2ba45rw" path="res://Assets/Images/LimpiandoCosta/Pantalla 1/Arbusto.png" id="20"]
+[ext_resource type="Texture2D" uid="uid://kerabp1lxnl4" path="res://Assets/Images/LimpiandoCosta/Pantalla 1/Arena de Fondo.png" id="1"]
+[ext_resource type="Texture2D" uid="uid://dur4x4fakyonm" path="res://Assets/Images/LimpiandoCosta/Pantalla 1/Mar/Primera capa mar.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://bnyhk875wncek" path="res://Assets/Images/LimpiandoCosta/Pantalla 1/Mar/Segunda capa mar.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://bs603ohm1bfi4" path="res://Assets/Images/LimpiandoCosta/Pantalla 1/Mar/Tercera capa mar.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://rjtg6mspalvs" path="res://Assets/Images/LimpiandoCosta/Pantalla 1/Mar/Ola.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://cxiwwdm127a5p" path="res://Assets/Images/LimpiandoCosta/Pantalla 1/Mar/Espuma.png" id="6"]
+[ext_resource type="Texture2D" uid="uid://bu42b0yuk3ju" path="res://Assets/Images/LimpiandoCosta/Pantalla 2/Calle.png" id="7"]
+[ext_resource type="Texture2D" uid="uid://ceh6txvpocc0e" path="res://Assets/Images/LimpiandoCosta/Pantalla 3/Casa estilo colonial.png" id="8"]
+[ext_resource type="Texture2D" uid="uid://og2h1a84hqce" path="res://Assets/Images/LimpiandoCosta/Pantalla 1/Detalles de la arena.png" id="9"]
+[ext_resource type="Texture2D" uid="uid://dy2sqbqk7b00q" path="res://Assets/Images/LimpiandoCosta/Pantalla 1/Mar/Arena humeda.png" id="10"]
+[ext_resource type="Texture2D" uid="uid://b7k07mey3on51" path="res://Assets/Images/LimpiandoCosta/Pantalla 1/Banca.png" id="12"]
+[ext_resource type="Texture2D" uid="uid://dlgbqw1ndxerq" path="res://Assets/Images/LimpiandoCosta/Pantalla 1/Farol.png" id="13"]
+[ext_resource type="Texture2D" uid="uid://d0a6lk6du762x" path="res://Assets/Images/LimpiandoCosta/Pantalla 2/Basurero.png" id="14"]
+[ext_resource type="Texture2D" uid="uid://d0g35hc0pj646" path="res://Assets/Images/LimpiandoCosta/Pantalla 1/Palmeras/Palmera 3.png" id="16"]
+[ext_resource type="Texture2D" uid="uid://c6upr5v3pg5oo" path="res://Assets/Images/LimpiandoCosta/Pantalla 1/Palmeras/Palmera 4.png" id="17"]
+[ext_resource type="Texture2D" uid="uid://msyh3yd2i56i" path="res://Assets/Images/LimpiandoCosta/Pantalla 1/Palmeras/Palmera 1.png" id="18"]
+[ext_resource type="AudioStream" uid="uid://dsjkncot7hlg8" path="res://Assets/Sounds/limpiando_costa.ogg" id="19"]
+[ext_resource type="Texture2D" uid="uid://bqglkldl6brsh" path="res://Assets/Images/LimpiandoCosta/Pantalla 1/Arbusto.png" id="20"]
 [ext_resource type="PackedScene" uid="uid://wwvm0tjq73m0" path="res://Scenes/Entity/Illea/Caminando/IlleaCaminando.tscn" id="21"]
-[ext_resource type="Texture2D" uid="uid://bb0atwvb5pnpm" path="res://Assets/Images/Tilesets/Bloque.png" id="22"]
+[ext_resource type="Texture2D" uid="uid://gfksgacmdrdq" path="res://Assets/Images/Tilesets/Bloque.png" id="22"]
 [ext_resource type="PackedScene" uid="uid://7jnwei6j4avo" path="res://Scenes/Utility/Contador.tscn" id="23"]
 [ext_resource type="Script" uid="uid://dcsoad8tfhc0u" path="res://Scenes/Games/Pescando/Trash/Botella.gd" id="24"]
-[ext_resource type="Script" uid="uid://bcybbewon6ehi" path="res://Scenes/Games/Pescando/Trash/Cuchara.gd" id="25"]
 [ext_resource type="Script" uid="uid://coj4uy0xh84g8" path="res://Scenes/Games/Pescando/Trash/SeguroLata.gd" id="26"]
-[ext_resource type="Texture2D" uid="uid://d2s0okndxwwl6" path="res://Assets/Images/UnderSeaBG/Items/Trash/Jeringa.png" id="27"]
-[ext_resource type="Texture2D" uid="uid://bx3axxhcpxhtk" path="res://Assets/Images/UnderSeaBG/Items/Trash/lata.png" id="28"]
-[ext_resource type="Texture2D" uid="uid://b6qfcl40eov4n" path="res://Assets/Images/UnderSeaBG/Items/Trash/Máquina de afeitar.png" id="29"]
-[ext_resource type="Texture2D" uid="uid://0x2dv2bjd2lh" path="res://Assets/Images/UnderSeaBG/Items/Seguro para latas.png" id="30"]
-[ext_resource type="Texture2D" uid="uid://ctu4k45t42kfj" path="res://Assets/Images/UnderSeaBG/Items/botella.png" id="31"]
-[ext_resource type="Texture2D" uid="uid://cgpr6q7ash5jv" path="res://Assets/Images/UnderSeaBG/Items/Trash/Calcetín.png" id="32"]
-[ext_resource type="Texture2D" uid="uid://sm77l28ywijm" path="res://Assets/Images/UnderSeaBG/Items/Trash/mascarilla.png" id="33"]
-[ext_resource type="Texture2D" uid="uid://b2m01vyp0bykx" path="res://Assets/Images/UnderSeaBG/Items/Trash/Cuchara.png" id="34"]
+[ext_resource type="Texture2D" uid="uid://cedkgmq12pgfe" path="res://Assets/Images/UnderSeaBG/Items/Trash/Jeringa.png" id="27"]
+[ext_resource type="Texture2D" uid="uid://5nw0wvgdi06r" path="res://Assets/Images/UnderSeaBG/Items/Trash/lata.png" id="28"]
+[ext_resource type="Texture2D" uid="uid://bbx0c1wtk2w63" path="res://Assets/Images/UnderSeaBG/Items/Trash/Máquina de afeitar.png" id="29"]
+[ext_resource type="Texture2D" uid="uid://bf2mbvg2v5x5h" path="res://Assets/Images/UnderSeaBG/Items/Seguro para latas.png" id="30"]
+[ext_resource type="Texture2D" uid="uid://ma1rs5u3iol4" path="res://Assets/Images/UnderSeaBG/Items/botella.png" id="31"]
+[ext_resource type="Texture2D" uid="uid://bk5mrt8t7dmxg" path="res://Assets/Images/UnderSeaBG/Items/Trash/Calcetín.png" id="32"]
+[ext_resource type="Texture2D" uid="uid://djuisd7sa2i77" path="res://Assets/Images/UnderSeaBG/Items/Trash/mascarilla.png" id="33"]
 [ext_resource type="Script" uid="uid://cddjha7dmtwqi" path="res://Scenes/Games/LimpiandoCosta/Nivel3/LimpiandoCosta.gd" id="35"]
 [ext_resource type="PackedScene" uid="uid://bx3dd0gnp366n" path="res://Scenes/Pause/PauseMenu.tscn" id="36"]
-[ext_resource type="Texture2D" uid="uid://ljsh3pifcei" path="res://Assets/Images/LimpiandoCosta/Pantalla 1/arena humeda final .png" id="37"]
-[ext_resource type="AudioStream" uid="uid://c80nvutqbddct" path="res://Assets/Sounds/SFX/get_item.wav" id="39"]
-[ext_resource type="AudioStream" uid="uid://d3asnuik5xvj8" path="res://Assets/Sounds/SFX/ender_punch.wav" id="40"]
+[ext_resource type="Texture2D" uid="uid://1rcnsadjv83" path="res://Assets/Images/LimpiandoCosta/Pantalla 1/arena humeda final .png" id="37"]
+[ext_resource type="AudioStream" uid="uid://cbwd4abylq4ap" path="res://Assets/Sounds/SFX/get_item.wav" id="39"]
+[ext_resource type="AudioStream" uid="uid://dp7o0f7swlalw" path="res://Assets/Sounds/SFX/ender_punch.wav" id="40"]
 [ext_resource type="Theme" uid="uid://y1ufudag5d7f" path="res://Assets/InputTheme/input_theme.tres" id="40_48f3y"]
 [ext_resource type="PackedScene" uid="uid://b17rf02r12bmp" path="res://Scenes/Utility/analog/Analog.tscn" id="41"]
 [ext_resource type="PackedScene" uid="uid://d1qxdr7vxtiqw" path="res://Scenes/Entity/CleanBeach/Crab/Crab.tscn" id="42"]
 [ext_resource type="PackedScene" uid="uid://vdvws6110l8g" path="res://Scenes/Utility/GameOver/GameOver.tscn" id="43"]
 [ext_resource type="PackedScene" uid="uid://dhpnyngl8a034" path="res://Scenes/Utility/Win/Win.tscn" id="44"]
 [ext_resource type="FontFile" uid="uid://byvaqdf2liiep" path="res://Assets/Fonts/btnFont.tres" id="45"]
-[ext_resource type="Texture2D" uid="uid://dsngw3k2bi3qg" path="res://Assets/Images/Fondo de contador de puntos.png" id="46"]
+[ext_resource type="Texture2D" uid="uid://dfykkbqn7eqei" path="res://Assets/Images/Fondo de contador de puntos.png" id="46"]
 
 [sub_resource type="RectangleShape2D" id="5"]
-size = Vector2(140, 80)
+size = Vector2(123, 60.38)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_48f3y"]
 texture = ExtResource("22")
-texture_region_size = Vector2i(80, 80)
+texture_region_size = Vector2i(25, 25)
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-12.5, -12.5, 12.5, -12.5, 12.5, 12.5, -12.5, 12.5)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_l1467"]
 texture = ExtResource("22")
@@ -86,7 +86,7 @@ texture_region_size = Vector2i(60, 60)
 0:0/7/physics_layer_0/polygon_0/points = PackedVector2Array(8, 8, 8, -8, -8, -8, -8, 8)
 
 [sub_resource type="TileSet" id="TileSet_qgmoo"]
-tile_size = Vector2i(60, 60)
+tile_size = Vector2i(25, 25)
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_48f3y")
 sources/1 = SubResource("TileSetAtlasSource_l1467")
@@ -108,7 +108,7 @@ texture = ExtResource("1")
 centered = false
 
 [node name="WetSand" type="Sprite2D" parent="Background/Wave"]
-position = Vector2(0, 800)
+position = Vector2(0, 336)
 texture = ExtResource("10")
 centered = false
 
@@ -120,51 +120,51 @@ centered = false
 [node name="First" type="ParallaxLayer" parent="Background/Wave"]
 
 [node name="Sea" type="Sprite2D" parent="Background/Wave/First"]
-position = Vector2(-4, 800)
+position = Vector2(-1.68, 336)
 texture = ExtResource("2")
 centered = false
 
 [node name="Wave" type="Sprite2D" parent="Background/Wave/First"]
 z_index = 1
-position = Vector2(0, 880)
+position = Vector2(0, 369.6)
 texture = ExtResource("5")
 centered = false
 
 [node name="Second" type="ParallaxLayer" parent="Background/Wave"]
 
 [node name="Sea" type="Sprite2D" parent="Background/Wave/Second"]
-position = Vector2(-4, 908)
+position = Vector2(-1.68, 381.36)
 texture = ExtResource("3")
 centered = false
 
 [node name="Wave" type="Sprite2D" parent="Background/Wave/Second"]
 z_index = 1
-position = Vector2(0, 1100)
+position = Vector2(0, 462)
 texture = ExtResource("5")
 centered = false
 
 [node name="Third" type="ParallaxLayer" parent="Background/Wave"]
 
 [node name="Sea" type="Sprite2D" parent="Background/Wave/Third"]
-position = Vector2(-4, 886)
+position = Vector2(-1.68, 372.12)
 texture = ExtResource("4")
 centered = false
 
 [node name="Wave" type="Sprite2D" parent="Background/Wave/Third"]
 z_index = 1
-position = Vector2(0, 1400)
+position = Vector2(0, 588)
 texture = ExtResource("5")
 centered = false
 
 [node name="Bubbles" type="ParallaxLayer" parent="Background/Wave"]
 
 [node name="Sprite2D" type="Sprite2D" parent="Background/Wave/Bubbles"]
-position = Vector2(0, 1050)
+position = Vector2(0, 441)
 texture = ExtResource("6")
 centered = false
 
 [node name="SandDetail" type="Sprite2D" parent="Background/Wave"]
-position = Vector2(0, 256)
+position = Vector2(0, 107.52)
 scale = Vector2(1.07962, 1.34797)
 texture = ExtResource("9")
 centered = false
@@ -172,77 +172,77 @@ centered = false
 [node name="Ambience" type="Node2D" parent="Background"]
 
 [node name="Road" type="Sprite2D" parent="Background/Ambience"]
-position = Vector2(0, -50)
+position = Vector2(0, -21)
 texture = ExtResource("7")
 centered = false
 flip_h = true
 flip_v = true
 
 [node name="House" type="Sprite2D" parent="Background/Ambience"]
-position = Vector2(599, -123)
+position = Vector2(251.58, -51.66)
 texture = ExtResource("8")
 
 [node name="IlleaCaminando" parent="Background/Ambience" instance=ExtResource("21")]
-position = Vector2(2504, 1100)
-scale = Vector2(0.4, 0.4)
+position = Vector2(1051.68, 462)
+scale = Vector2(0.23, 0.23)
 
 [node name="Chair1" type="Sprite2D" parent="Background/Ambience"]
 z_index = 1
-position = Vector2(2692, 602)
+position = Vector2(1130.64, 252.84)
 texture = ExtResource("12")
 
 [node name="Light1" type="Sprite2D" parent="Background/Ambience"]
-position = Vector2(2473, 552)
+position = Vector2(1038.66, 231.84)
 texture = ExtResource("13")
 
 [node name="Light2" type="Sprite2D" parent="Background/Ambience"]
-position = Vector2(1447, 620)
+position = Vector2(607.74, 260.4)
 texture = ExtResource("13")
 
 [node name="Light3" type="Sprite2D" parent="Background/Ambience"]
-position = Vector2(202, 496)
+position = Vector2(84.84, 208.32)
 texture = ExtResource("13")
 
 [node name="Light4" type="Sprite2D" parent="Background/Ambience"]
-position = Vector2(1007, 366)
+position = Vector2(422.94, 153.72)
 texture = ExtResource("13")
 
 [node name="Palmera1" type="Sprite2D" parent="Background/Ambience"]
-position = Vector2(1660, 556)
+position = Vector2(697.2, 233.52)
 texture = ExtResource("18")
 
 [node name="Trash" type="Area2D" parent="Background/Ambience"]
-position = Vector2(2245, 711)
+position = Vector2(942.9, 298.62)
 
 [node name="Trash" type="Sprite2D" parent="Background/Ambience/Trash"]
 texture = ExtResource("14")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Background/Ambience/Trash"]
-position = Vector2(2, 35)
+position = Vector2(0.599976, 25.19)
 shape = SubResource("5")
 
 [node name="Palmera3" type="Sprite2D" parent="Background/Ambience"]
-position = Vector2(175, 575)
+position = Vector2(73.5, 241.5)
 texture = ExtResource("16")
 
 [node name="Palmera4" type="Sprite2D" parent="Background/Ambience"]
-position = Vector2(2831, 272)
+position = Vector2(1189.02, 114.24)
 texture = ExtResource("17")
 
 [node name="Grass1" type="Sprite2D" parent="Background/Ambience"]
-position = Vector2(150, 758)
+position = Vector2(63, 318.36)
 texture = ExtResource("20")
 
 [node name="Grass2" type="Sprite2D" parent="Background/Ambience"]
-position = Vector2(1548, 826)
+position = Vector2(650.16, 346.92)
 texture = ExtResource("20")
 
 [node name="Grass3" type="Sprite2D" parent="Background/Ambience"]
-position = Vector2(1694, 836)
+position = Vector2(711.48, 351.12)
 texture = ExtResource("20")
 
 [node name="Chair2" type="Sprite2D" parent="Background/Ambience"]
-position = Vector2(1483, 879)
+position = Vector2(622.86, 369.18)
 texture = ExtResource("12")
 
 [node name="Contador" parent="Background" instance=ExtResource("23")]
@@ -254,13 +254,13 @@ texture = ExtResource("12")
 [node name="Layer0" type="TileMapLayer" parent="Collisions/Terrain"]
 visible = false
 use_parent_material = true
-tile_map_data = PackedByteArray("AAD//w0AAQAAAAAAAAD//w4AAQAAAAAAAAAAAA4AAQAAAAAAAAADAA8AAQAAAAAAAAABAA4AAQAAAAAAAAACAA4AAQAAAAAAAAADAA4AAQAAAAAAAAAEAA4AAQAAAAAAAAAEAA8AAQAAAAAAAAAFAA8AAQAAAAAAAAAFABAAAQAAAAAAAAAGABAAAQAAAAAAAAAHABAAAQAAAAAAAAAHABEAAQAAAAAAAAAIABEAAQAAAAAAAAAJABEAAQAAAAAAAAAKABIAAQAAAAAAAAAKABEAAQAAAAAAAAALABIAAQAAAAAAAAAMABIAAQAAAAAAAAAMABMAAQAAAAAAAAANABMAAQAAAAAAAAANABQAAQAAAAAAAAAOABQAAQAAAAAAAAAOABUAAQAAAAAAAAAPABUAAQAAAAAAAAAPABYAAQAAAAAAAAAQABYAAQAAAAAAAAARABYAAQAAAAAAAAASABYAAQAAAAAAAAATABYAAQAAAAAAAAATABcAAQAAAAAAAAAUABcAAQAAAAAAAAAUABgAAQAAAAAAAAAVABgAAQAAAAAAAAAWABgAAQAAAAAAAAAWABkAAQAAAAAAAAAXABkAAQAAAAAAAAAYABkAAQAAAAAAAAAZABkAAQAAAAAAAAAbABkAAQAAAAAAAAAcABkAAQAAAAAAAAAdABkAAQAAAAAAAAAaABkAAQAAAAAAAAAeABkAAQAAAAAAAAAfABkAAQAAAAAAAAAgABkAAQAAAAAAAAAhABkAAQAAAAAAAAAiABkAAQAAAAAAAAAjABkAAQAAAAAAAAAkABkAAQAAAAAAAAAlABkAAQAAAAAAAAAmABkAAQAAAAAAAAAmABgAAQAAAAAAAAAnABgAAQAAAAAAAAAoABgAAQAAAAAAAAAoABcAAQAAAAAAAAApABcAAQAAAAAAAAAqABcAAQAAAAAAAAArABcAAQAAAAAAAAAsABcAAQAAAAAAAAAsABYAAQAAAAAAAAAtABYAAQAAAAAAAAAuABYAAQAAAAAAAAAuABUAAQAAAAAAAAAvABUAAQAAAAAAAAAvABQAAQAAAAAAAAAwABQAAQAAAAAAAAAwABMAAQAAAAAAAAAxABMAAQAAAAAAAAAxABIAAQAAAAAAAAAyABIAAQAAAAAAAAAyABEAAQAAAAAAAAAzABEAAQAAAAAAAAAzABAAAQAAAAAAAAA0ABAAAQAAAAAAAAA0AA8AAQAAAAAAAAA1AA8AAQAAAAAAAAAzAA8AAQAAAAAAAAD//wwAAQAAAAAAAAA1AAAAAQAAAAAAAAA1AAEAAQAAAAAAAAA1AAIAAQAAAAAAAAA1AAMAAQAAAAAAAAA1AAQAAQAAAAAAAAA1AAUAAQAAAAAAAAA1AAYAAQAAAAAAAAA1AAcAAQAAAAAAAAA1AAgAAQAAAAAAAAA1AAkAAQAAAAAAAAA1AAoAAQAAAAAAAAA1AAsAAQAAAAAAAAA1AAwAAQAAAAAAAAA1AA0AAQAAAAAAAAA1AA4AAQAAAAAAAAD//wsAAQAAAAAAAAD//woAAQAAAAAAAAD//wkAAQAAAAAAAAD//wgAAQAAAAAAAAD//wcAAQAAAAAAAAD//wYAAQAAAAAAAAD//wUAAQAAAAAAAAD//wQAAQAAAAAAAAD//wMAAQAAAAAAAAD//wIAAQAAAAAAAAD//wEAAQAAAAAAAAD//wAAAQAAAAAAAAD/////AQAAAAAAAAAAAP//AQAAAAAAAAAWAA8AAQAAAAAAAAAaAA8AAQAAAAAAAAAbAA4AAQAAAAAAAAAcAA4AAQAAAAAAAAAbAA0AAQAAAAAAAAAaAA0AAQAAAAAAAAAZAA0AAQAAAAAAAAAZAA4AAQAAAAAAAAAaAA4AAQAAAAAAAAAcAA0AAQAAAAAAAAAYAAwAAQAAAAAAAAAlAAwAAQAAAAAAAAApAAwAAQAAAAAAAAApAAsAAQAAAAAAAAArAAoAAQAAAAAAAAAsAAoAAQAAAAAAAAArAAkAAQAAAAAAAAAsAAkAAQAAAAAAAAAtAAkAAQAAAAAAAAAtAAoAAQAAAAAAAAAuAAoAAQAAAAAAAAAuAAkAAQAAAAAAAAAvAAkAAQAAAAAAAAAwAAkAAQAAAAAAAAAwAAgAAQAAAAAAAAAvAAgAAQAAAAAAAAAuAAgAAQAAAAAAAAAtAAgAAQAAAAAAAAAQAAgAAQAAAAAAAAAQAAkAAQAAAAAAAAAAAAAAAQAAAAAAAAAAAAEAAQAAAAAAAAABAAEAAQAAAAAAAAABAAIAAQAAAAAAAAABAAMAAQAAAAAAAAACAAMAAQAAAAAAAAACAAQAAQAAAAAAAAADAAQAAQAAAAAAAAADAAUAAQAAAAAAAAAEAAUAAQAAAAAAAAAEAAYAAQAAAAAAAAAFAAYAAQAAAAAAAAAFAAUAAQAAAAAAAAAGAAUAAQAAAAAAAAAHAAUAAQAAAAAAAAAHAAQAAQAAAAAAAAAIAAQAAQAAAAAAAAAJAAQAAQAAAAAAAAAKAAQAAQAAAAAAAAAKAAMAAQAAAAAAAAALAAMAAQAAAAAAAAAMAAMAAQAAAAAAAAANAAMAAQAAAAAAAAAOAAMAAQAAAAAAAAAOAAIAAQAAAAAAAAAPAAIAAQAAAAAAAAAQAAIAAQAAAAAAAAAQAAEAAQAAAAAAAAARAAEAAQAAAAAAAAASAAEAAQAAAAAAAAATAAEAAQAAAAAAAAATAAAAAQAAAAAAAAAUAAAAAQAAAAAAAAAUAP//AQAAAAAAAAAVAP//AQAAAAAAAAAWAP//AQAAAAAAAAAXAP//AQAAAAAAAAAYAP//AQAAAAAAAAAZAP//AQAAAAAAAAAaAP//AQAAAAAAAAAbAP//AQAAAAAAAAAcAP//AQAAAAAAAAAdAP//AQAAAAAAAAAeAP//AQAAAAAAAAAfAP//AQAAAAAAAAAgAP//AQAAAAAAAAAhAP//AQAAAAAAAAAiAP//AQAAAAAAAAAjAP//AQAAAAAAAAAkAP//AQAAAAAAAAAlAP//AQAAAAAAAAAmAP//AQAAAAAAAAAnAP//AQAAAAAAAAAoAP//AQAAAAAAAAApAP//AQAAAAAAAAAqAP//AQAAAAAAAAArAP//AQAAAAAAAAAsAP//AQAAAAAAAAAtAP//AQAAAAAAAAAuAP//AQAAAAAAAAAvAP//AQAAAAAAAAAwAP//AQAAAAAAAAAxAP//AQAAAAAAAAAyAP//AQAAAAAAAAAzAP//AQAAAAAAAAA0AP//AQAAAAAAAAA1AP//AQAAAAAAAAAEAA0AAQAAAAAAAAADAA0AAQAAAAAAAAADAAwAAQAAAAAAAAACAAwAAQAAAAAAAAABAAwAAQAAAAAAAAABAAsAAQAAAAAAAAAAAAsAAQAAAAAAAAA=")
+tile_map_data = PackedByteArray("AAD//w0AAQAAAAAAAAD//w4AAQAAAAAAAAAAAA4AAQAAAAAAAAADAA8AAQAAAAAAAAABAA4AAQAAAAAAAAACAA4AAQAAAAAAAAADAA4AAQAAAAAAAAAEAA4AAQAAAAAAAAAEAA8AAQAAAAAAAAD//wwAAQAAAAAAAAD//wsAAQAAAAAAAAD//woAAQAAAAAAAAD//wkAAQAAAAAAAAD//wgAAQAAAAAAAAD//wcAAQAAAAAAAAD//wYAAQAAAAAAAAD//wUAAQAAAAAAAAD//wQAAQAAAAAAAAD//wMAAQAAAAAAAAD//wIAAQAAAAAAAAD//wEAAQAAAAAAAAD//wAAAQAAAAAAAAD/////AQAAAAAAAAAAAP//AQAAAAAAAAAWAA8AAQAAAAAAAAAaAA8AAQAAAAAAAAAbAA4AAQAAAAAAAAAcAA4AAQAAAAAAAAAbAA0AAQAAAAAAAAAaAA0AAQAAAAAAAAAZAA0AAQAAAAAAAAAZAA4AAQAAAAAAAAAaAA4AAQAAAAAAAAAcAA0AAQAAAAAAAAAYAAwAAQAAAAAAAAAlAAwAAQAAAAAAAAApAAwAAQAAAAAAAAApAAsAAQAAAAAAAAArAAoAAQAAAAAAAAAsAAoAAQAAAAAAAAArAAkAAQAAAAAAAAAsAAkAAQAAAAAAAAAtAAkAAQAAAAAAAAAtAAoAAQAAAAAAAAAuAAoAAQAAAAAAAAAuAAkAAQAAAAAAAAAvAAkAAQAAAAAAAAAwAAkAAQAAAAAAAAAwAAgAAQAAAAAAAAAvAAgAAQAAAAAAAAAuAAgAAQAAAAAAAAAtAAgAAQAAAAAAAAAQAAgAAQAAAAAAAAAQAAkAAQAAAAAAAAAAAAAAAQAAAAAAAAAAAAEAAQAAAAAAAAABAAEAAQAAAAAAAAABAAIAAQAAAAAAAAABAAMAAQAAAAAAAAACAAMAAQAAAAAAAAACAAQAAQAAAAAAAAADAAQAAQAAAAAAAAADAAUAAQAAAAAAAAAEAAUAAQAAAAAAAAAEAAYAAQAAAAAAAAAFAAYAAQAAAAAAAAAFAAUAAQAAAAAAAAAGAAUAAQAAAAAAAAAHAAUAAQAAAAAAAAAHAAQAAQAAAAAAAAAIAAQAAQAAAAAAAAAJAAQAAQAAAAAAAAAKAAQAAQAAAAAAAAAKAAMAAQAAAAAAAAALAAMAAQAAAAAAAAAMAAMAAQAAAAAAAAANAAMAAQAAAAAAAAAOAAMAAQAAAAAAAAAOAAIAAQAAAAAAAAAPAAIAAQAAAAAAAAAQAAIAAQAAAAAAAAAQAAEAAQAAAAAAAAARAAEAAQAAAAAAAAASAAEAAQAAAAAAAAATAAEAAQAAAAAAAAATAAAAAQAAAAAAAAAUAAAAAQAAAAAAAAAUAP//AQAAAAAAAAAVAP//AQAAAAAAAAAWAP//AQAAAAAAAAAXAP//AQAAAAAAAAAYAP//AQAAAAAAAAAZAP//AQAAAAAAAAAaAP//AQAAAAAAAAAbAP//AQAAAAAAAAAcAP//AQAAAAAAAAAdAP//AQAAAAAAAAAeAP//AQAAAAAAAAAfAP//AQAAAAAAAAAgAP//AQAAAAAAAAAhAP//AQAAAAAAAAAiAP//AQAAAAAAAAAjAP//AQAAAAAAAAAkAP//AQAAAAAAAAAlAP//AQAAAAAAAAAmAP//AQAAAAAAAAAnAP//AQAAAAAAAAAoAP//AQAAAAAAAAApAP//AQAAAAAAAAAqAP//AQAAAAAAAAArAP//AQAAAAAAAAAsAP//AQAAAAAAAAAtAP//AQAAAAAAAAAuAP//AQAAAAAAAAAvAP//AQAAAAAAAAAwAP//AQAAAAAAAAAxAP//AQAAAAAAAAAyAP//AQAAAAAAAAAzAP//AQAAAAAAAAA0AP//AQAAAAAAAAA1AP//AQAAAAAAAAAEAA0AAQAAAAAAAAADAA0AAQAAAAAAAAADAAwAAQAAAAAAAAACAAwAAQAAAAAAAAABAAwAAQAAAAAAAAABAAsAAQAAAAAAAAAAAAsAAQAAAAAAAAAFAA8AAAAAAAAAAAAGABAAAAAAAAAAAAAHABAAAAAAAAAAAAAIABEAAAAAAAAAAAAJABIAAAAAAAAAAAAKABIAAAAAAAAAAAALABMAAAAAAAAAAAAMABQAAAAAAAAAAAANABQAAAAAAAAAAAAOABUAAAAAAAAAAAAPABUAAAAAAAAAAAAQABYAAAAAAAAAAAARABcAAAAAAAAAAAASABcAAAAAAAAAAAATABgAAAAAAAAAAAAUABkAAAAAAAAAAAAVABkAAAAAAAAAAAAWABoAAAAAAAAAAAAXABsAAAAAAAAAAAAYABsAAAAAAAAAAAAZABwAAAAAAAAAAAAaABwAAAAAAAAAAAAbABwAAAAAAAAAAAAcABwAAAAAAAAAAAAdABwAAAAAAAAAAAAeABwAAAAAAAAAAAAfABsAAAAAAAAAAAAgABsAAAAAAAAAAAAhABsAAAAAAAAAAAAiABsAAAAAAAAAAAAjABsAAAAAAAAAAAAkABsAAAAAAAAAAAAlABsAAAAAAAAAAAAmABsAAAAAAAAAAAAnABsAAAAAAAAAAAAoABoAAAAAAAAAAAApABoAAAAAAAAAAAAqABoAAAAAAAAAAAArABoAAAAAAAAAAAAsABoAAAAAAAAAAAAtABkAAAAAAAAAAAAuABgAAAAAAAAAAAAvABgAAAAAAAAAAAAwABcAAAAAAAAAAAAxABYAAAAAAAAAAAAyABYAAAAAAAAAAAAzABUAAAAAAAAAAAA0ABQAAAAAAAAAAAA1ABMAAAAAAAAAAAA2ABMAAAAAAAAAAAA2ABIAAAAAAAAAAAA2ABEAAAAAAAAAAAA2ABAAAAAAAAAAAAA2AA8AAAAAAAAAAAA2AA4AAAAAAAAAAAA2AA0AAAAAAAAAAAA2AAwAAAAAAAAAAAA2AAsAAAAAAAAAAAA2AAoAAAAAAAAAAAA2AAkAAAAAAAAAAAA2AAgAAAAAAAAAAAA2AAcAAAAAAAAAAAA2AAYAAAAAAAAAAAA2AAUAAAAAAAAAAAA2AAQAAAAAAAAAAAA2AAMAAAAAAAAAAAA2AAIAAAAAAAAAAAA2AAEAAAAAAAAAAAA2AAAAAAAAAAAAAAA2AP//AAAAAAAAAAA=")
 tile_set = SubResource("TileSet_qgmoo")
 
 [node name="Trash" type="Node" parent="."]
 
 [node name="SeguroLata" type="CharacterBody2D" parent="Trash" groups=["enemy"]]
-position = Vector2(1500, 1200)
+position = Vector2(630, 504)
 scale = Vector2(0.5, 0.5)
 script = ExtResource("26")
 
@@ -273,7 +273,7 @@ rotation = 1.13446
 shape = SubResource("4")
 
 [node name="SeguroLata2" type="CharacterBody2D" parent="Trash" groups=["enemy"]]
-position = Vector2(1800, 1050)
+position = Vector2(756, 441)
 scale = Vector2(0.5, 0.5)
 script = ExtResource("26")
 
@@ -286,7 +286,7 @@ rotation = 1.13446
 shape = SubResource("4")
 
 [node name="SeguroLata3" type="CharacterBody2D" parent="Trash" groups=["enemy"]]
-position = Vector2(750, 900)
+position = Vector2(315, 378)
 scale = Vector2(0.5, 0.5)
 script = ExtResource("26")
 
@@ -299,7 +299,7 @@ rotation = 1.13446
 shape = SubResource("4")
 
 [node name="Botella" type="CharacterBody2D" parent="Trash" groups=["enemy"]]
-position = Vector2(1800, 1285)
+position = Vector2(756, 539.7)
 scale = Vector2(0.5, 0.5)
 script = ExtResource("24")
 
@@ -310,20 +310,8 @@ texture = ExtResource("31")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Trash/Botella"]
 shape = SubResource("4")
 
-[node name="Botella2" type="CharacterBody2D" parent="Trash" groups=["enemy"]]
-position = Vector2(2700, 850)
-scale = Vector2(0.5, 0.5)
-script = ExtResource("24")
-
-[node name="Sprite2D" type="Sprite2D" parent="Trash/Botella2"]
-scale = Vector2(0.6, 0.6)
-texture = ExtResource("31")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Trash/Botella2"]
-shape = SubResource("4")
-
 [node name="Botella3" type="CharacterBody2D" parent="Trash" groups=["enemy"]]
-position = Vector2(3000, 750)
+position = Vector2(1260, 315)
 scale = Vector2(0.5, 0.5)
 script = ExtResource("24")
 
@@ -335,7 +323,7 @@ texture = ExtResource("31")
 shape = SubResource("4")
 
 [node name="Botella4" type="CharacterBody2D" parent="Trash" groups=["enemy"]]
-position = Vector2(3100, 450)
+position = Vector2(1302, 189)
 scale = Vector2(0.5, 0.5)
 script = ExtResource("24")
 
@@ -347,7 +335,7 @@ texture = ExtResource("31")
 shape = SubResource("4")
 
 [node name="Botella5" type="CharacterBody2D" parent="Trash" groups=["enemy"]]
-position = Vector2(1150, 500)
+position = Vector2(483, 210)
 scale = Vector2(0.5, 0.5)
 script = ExtResource("24")
 
@@ -359,7 +347,7 @@ texture = ExtResource("31")
 shape = SubResource("4")
 
 [node name="Calcetin" type="CharacterBody2D" parent="Trash" groups=["enemy"]]
-position = Vector2(1150, 1150)
+position = Vector2(483, 483)
 scale = Vector2(0.5, 0.5)
 script = ExtResource("24")
 
@@ -372,7 +360,7 @@ rotation = 1.5708
 shape = SubResource("4")
 
 [node name="Calcetin2" type="CharacterBody2D" parent="Trash" groups=["enemy"]]
-position = Vector2(750, 500)
+position = Vector2(315, 210)
 scale = Vector2(0.5, 0.5)
 script = ExtResource("24")
 
@@ -384,34 +372,8 @@ texture = ExtResource("32")
 rotation = 1.5708
 shape = SubResource("4")
 
-[node name="Calcetin3" type="CharacterBody2D" parent="Trash" groups=["enemy"]]
-position = Vector2(450, 350)
-scale = Vector2(0.5, 0.5)
-script = ExtResource("24")
-
-[node name="Sprite2D" type="Sprite2D" parent="Trash/Calcetin3"]
-scale = Vector2(0.6, 0.6)
-texture = ExtResource("32")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Trash/Calcetin3"]
-rotation = 1.5708
-shape = SubResource("4")
-
-[node name="Mascarilla" type="CharacterBody2D" parent="Trash" groups=["enemy"]]
-position = Vector2(1200, 700)
-scale = Vector2(0.5, 0.5)
-script = ExtResource("24")
-
-[node name="Sprite2D" type="Sprite2D" parent="Trash/Mascarilla"]
-scale = Vector2(0.6, 0.6)
-texture = ExtResource("33")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Trash/Mascarilla"]
-rotation = 1.5708
-shape = SubResource("4")
-
 [node name="Mascarilla2" type="CharacterBody2D" parent="Trash" groups=["enemy"]]
-position = Vector2(1000, 750)
+position = Vector2(420, 315)
 scale = Vector2(0.5, 0.5)
 script = ExtResource("24")
 
@@ -423,34 +385,8 @@ texture = ExtResource("33")
 rotation = 1.5708
 shape = SubResource("4")
 
-[node name="Mascarilla3" type="CharacterBody2D" parent="Trash" groups=["enemy"]]
-position = Vector2(1500, 650)
-scale = Vector2(0.5, 0.5)
-script = ExtResource("24")
-
-[node name="Sprite2D" type="Sprite2D" parent="Trash/Mascarilla3"]
-scale = Vector2(0.6, 0.6)
-texture = ExtResource("33")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Trash/Mascarilla3"]
-rotation = 1.5708
-shape = SubResource("4")
-
-[node name="Mascarilla4" type="CharacterBody2D" parent="Trash" groups=["enemy"]]
-position = Vector2(1850, 650)
-scale = Vector2(0.5, 0.5)
-script = ExtResource("24")
-
-[node name="Sprite2D" type="Sprite2D" parent="Trash/Mascarilla4"]
-scale = Vector2(0.6, 0.6)
-texture = ExtResource("33")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Trash/Mascarilla4"]
-rotation = 1.5708
-shape = SubResource("4")
-
 [node name="Mascarilla5" type="CharacterBody2D" parent="Trash" groups=["enemy"]]
-position = Vector2(2300, 500)
+position = Vector2(966, 210)
 scale = Vector2(0.5, 0.5)
 script = ExtResource("24")
 
@@ -463,7 +399,7 @@ rotation = 1.5708
 shape = SubResource("4")
 
 [node name="Mascarilla6" type="CharacterBody2D" parent="Trash" groups=["enemy"]]
-position = Vector2(2650, 400)
+position = Vector2(1113, 168)
 scale = Vector2(0.5, 0.5)
 script = ExtResource("24")
 
@@ -476,7 +412,7 @@ rotation = 1.5708
 shape = SubResource("4")
 
 [node name="Afeitadora" type="CharacterBody2D" parent="Trash" groups=["enemy"]]
-position = Vector2(2850, 1000)
+position = Vector2(1197, 420)
 scale = Vector2(0.5, 0.5)
 script = ExtResource("24")
 
@@ -488,21 +424,8 @@ texture = ExtResource("29")
 rotation = 1.5708
 shape = SubResource("4")
 
-[node name="Afeitadora2" type="CharacterBody2D" parent="Trash" groups=["enemy"]]
-position = Vector2(1900, 850)
-scale = Vector2(0.5, 0.5)
-script = ExtResource("24")
-
-[node name="Sprite2D" type="Sprite2D" parent="Trash/Afeitadora2"]
-scale = Vector2(0.6, 0.6)
-texture = ExtResource("29")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Trash/Afeitadora2"]
-rotation = 1.5708
-shape = SubResource("4")
-
 [node name="Lata" type="CharacterBody2D" parent="Trash" groups=["enemy"]]
-position = Vector2(500, 700)
+position = Vector2(210, 294)
 scale = Vector2(0.5, 0.5)
 script = ExtResource("24")
 
@@ -514,21 +437,8 @@ texture = ExtResource("28")
 rotation = 1.5708
 shape = SubResource("4")
 
-[node name="Lata2" type="CharacterBody2D" parent="Trash" groups=["enemy"]]
-position = Vector2(400, 500)
-scale = Vector2(0.5, 0.5)
-script = ExtResource("24")
-
-[node name="Sprite2D" type="Sprite2D" parent="Trash/Lata2"]
-scale = Vector2(0.6, 0.6)
-texture = ExtResource("28")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Trash/Lata2"]
-rotation = 1.5708
-shape = SubResource("4")
-
 [node name="Lata3" type="CharacterBody2D" parent="Trash" groups=["enemy"]]
-position = Vector2(2050, 520)
+position = Vector2(861, 218.4)
 scale = Vector2(0.5, 0.5)
 script = ExtResource("24")
 
@@ -541,7 +451,7 @@ rotation = 1.5708
 shape = SubResource("4")
 
 [node name="Jeringa" type="CharacterBody2D" parent="Trash" groups=["enemy"]]
-position = Vector2(2300, 1300)
+position = Vector2(966, 546)
 scale = Vector2(0.5, 0.5)
 script = ExtResource("24")
 
@@ -550,32 +460,6 @@ scale = Vector2(0.6, 0.6)
 texture = ExtResource("27")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Trash/Jeringa"]
-rotation = 1.5708
-shape = SubResource("4")
-
-[node name="Cuchara" type="CharacterBody2D" parent="Trash" groups=["enemy"]]
-position = Vector2(2100, 1000)
-scale = Vector2(0.5, 0.5)
-script = ExtResource("25")
-
-[node name="Sprite2D" type="Sprite2D" parent="Trash/Cuchara"]
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("34")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Trash/Cuchara"]
-rotation = 1.5708
-shape = SubResource("4")
-
-[node name="Cuchara2" type="CharacterBody2D" parent="Trash" groups=["enemy"]]
-position = Vector2(2300, 950)
-scale = Vector2(0.5, 0.5)
-script = ExtResource("25")
-
-[node name="Sprite2D" type="Sprite2D" parent="Trash/Cuchara2"]
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("34")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Trash/Cuchara2"]
 rotation = 1.5708
 shape = SubResource("4")
 
@@ -598,7 +482,7 @@ bus = &"SFX"
 [node name="Crab" type="Node" parent="."]
 
 [node name="Crab" parent="Crab" instance=ExtResource("42")]
-position = Vector2(1200, 1960)
+position = Vector2(504, 835)
 scale = Vector2(0.4, 0.4)
 
 [node name="WaitTimer" type="Timer" parent="Crab"]
@@ -610,11 +494,12 @@ wait_time = 3.0
 
 [node name="Tries" type="Node2D" parent="."]
 z_index = 2
-position = Vector2(1600, 0)
+position = Vector2(683, 0)
 
 [node name="BGTries" type="Sprite2D" parent="Tries"]
+position = Vector2(-2.61548, -33.4949)
 rotation = -1.5708
-scale = Vector2(1, 3.2)
+scale = Vector2(0.909228, 1.33703)
 texture = ExtResource("46")
 offset = Vector2(100, -2.5)
 
@@ -640,7 +525,7 @@ vertical_alignment = 1
 
 [node name="Analog" parent="HUD" instance=ExtResource("41")]
 z_index = 100
-position = Vector2(214, 1581)
+position = Vector2(95, 670)
 scale = Vector2(2, 2)
 
 [node name="Pause" type="Node2D" parent="HUD"]
@@ -649,7 +534,7 @@ position = Vector2(1, -1)
 
 [node name="PauseMenu" parent="HUD/Pause" instance=ExtResource("36")]
 z_index = 100
-position = Vector2(3200, 1750)
+position = Vector2(1300, 710)
 
 [node name="GameOver" parent="HUD" instance=ExtResource("43")]
 visible = false

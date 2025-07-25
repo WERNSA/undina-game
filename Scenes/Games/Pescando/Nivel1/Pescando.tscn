@@ -839,11 +839,11 @@ position = Vector2(1, -1)
 [node name="PauseMenu" parent="HUD/Pause" instance=ExtResource("40")]
 modulate = Color(1, 1, 1, 0.588235)
 z_index = 100
-position = Vector2(1299, 709)
+position = Vector2(1300, 710)
 
 [node name="Analog" parent="HUD" instance=ExtResource("23")]
 z_index = 100
-position = Vector2(96, 669)
+position = Vector2(95, 670)
 scale = Vector2(2, 2)
 
 [node name="GameOver" parent="HUD" instance=ExtResource("52")]
