@@ -1,16 +1,16 @@
 [gd_scene load_steps=15 format=3 uid="uid://cvovq5vfp4iko"]
 
 [ext_resource type="Script" uid="uid://dv25i8ac00aae" path="res://Scenes/Menu/Scripts/Menu.gd" id="1"]
-[ext_resource type="Texture2D" uid="uid://b681qfvw3i4ko" path="res://Assets/Images/bg_main.jpg" id="2"]
-[ext_resource type="Texture2D" uid="uid://b44wfel5ld3t3" path="res://Scenes/Menu/Images/logo.png" id="3"]
-[ext_resource type="AudioStream" uid="uid://cs3lm6h2uwe2q" path="res://Scenes/Menu/Sounds/sea-waves.ogg" id="4"]
-[ext_resource type="Texture2D" uid="uid://b605pt1ywufls" path="res://Assets/Images/btn_yellow.png" id="5"]
-[ext_resource type="FontFile" uid="uid://byvaqdf2liiep" path="res://Assets_old/Fonts/btnFont.tres" id="6"]
-[ext_resource type="FontFile" uid="uid://b4c2f613d82li" path="res://Assets/Fonts/Marujo.ttf" id="7"]
+[ext_resource type="Texture2D" uid="uid://c2tk6n1u4318e" path="res://Assets/Images/bg_main.jpg" id="2"]
+[ext_resource type="Texture2D" uid="uid://c16fjwko2nf32" path="res://Scenes/Menu/Images/logo.png" id="3"]
+[ext_resource type="AudioStream" uid="uid://dq0gr2hmlkfe2" path="res://Scenes/Menu/Sounds/sea-waves.ogg" id="4"]
+[ext_resource type="Texture2D" uid="uid://dc3qhay80s484" path="res://Assets/Images/btn_yellow.png" id="5"]
+[ext_resource type="FontFile" uid="uid://byvaqdf2liiep" path="res://Assets/Fonts/btnFont.tres" id="6"]
+[ext_resource type="FontFile" uid="uid://bpcifx103ng5u" path="res://Assets/Fonts/Marujo.ttf" id="7"]
 [ext_resource type="PackedScene" uid="uid://cujr43bnq6o6h" path="res://Scenes/Options/Options.tscn" id="8"]
-[ext_resource type="Texture2D" uid="uid://bihlx3gji6v5l" path="res://Assets/Images/btn_yellow_disabled.png" id="9"]
-[ext_resource type="AudioStream" uid="uid://oqgbfhnjnj70" path="res://Assets/Sounds/main_menu.ogg" id="10"]
-[ext_resource type="AudioStream" uid="uid://bdp1xdh7k8sa3" path="res://Assets/Sounds/SFX/button_press.wav" id="11"]
+[ext_resource type="Texture2D" uid="uid://b2u8u61j0ap15" path="res://Assets/Images/btn_yellow_disabled.png" id="9"]
+[ext_resource type="AudioStream" uid="uid://djmgwlj4744r5" path="res://Assets/Sounds/main_menu.ogg" id="10"]
+[ext_resource type="AudioStream" uid="uid://imikfgk50o61" path="res://Assets/Sounds/SFX/button_press.wav" id="11"]
 
 [sub_resource type="FontFile" id="1"]
 fallbacks = Array[Font]([ExtResource("7")])
@@ -151,7 +151,7 @@ layout_mode = 2
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_constants/shadow_offset_x = -3
 theme_override_fonts/font = ExtResource("6")
-theme_override_font_sizes/font_size = 50
+theme_override_font_sizes/font_size = 35
 text = "JUGAR"
 
 [node name="Learn" type="Node2D" parent="ButtonsContainer"]
