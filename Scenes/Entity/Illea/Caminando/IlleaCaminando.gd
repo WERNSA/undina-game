@@ -14,7 +14,7 @@ var pointing : int = 1
 func _ready():
 	$AnimationPlayer.play("Idle")
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	if can_move:
 		motion_ctrl()
 		direction_ctrl()
@@ -54,11 +54,11 @@ func motion_ctrl(): # Controlador de Movimiento
 		trash.set_velocity(motion)
 		trash.set_up_direction(FLOOR)
 		trash.move_and_slide()
-		trash.velocity
-	raycast_ctrl(motion)
+		#trash.velocity
+	raycast_ctrl()
 	
 
-func raycast_ctrl(mot):
+func raycast_ctrl():
 	var col = $RayTrash.get_collider() # Mismo procedimiento que el Raycast de la pared.
 	if $RayTrash.is_colliding():
 		if col.is_in_group("enemy"):
