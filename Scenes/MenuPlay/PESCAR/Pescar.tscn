@@ -1,15 +1,15 @@
 [gd_scene load_steps=14 format=3 uid="uid://dfqpjipvo2q1a"]
 
-[ext_resource type="FontFile" uid="uid://byvaqdf2liiep" path="res://Assets_old/Fonts/btnFont.tres" id="1"]
-[ext_resource type="Texture2D" uid="uid://byecdevf5dvrx" path="res://Assets/Images/bg_underwater.png" id="2"]
+[ext_resource type="FontFile" uid="uid://byvaqdf2liiep" path="res://Assets/Fonts/btnFont.tres" id="1"]
+[ext_resource type="Texture2D" uid="uid://dy0qgf0xfosfy" path="res://Assets/Images/bg_underwater.png" id="2"]
 [ext_resource type="PackedScene" uid="uid://cujr43bnq6o6h" path="res://Scenes/Options/Options.tscn" id="3"]
-[ext_resource type="Texture2D" uid="uid://b605pt1ywufls" path="res://Assets/Images/btn_yellow.png" id="4"]
-[ext_resource type="Texture2D" uid="uid://bihlx3gji6v5l" path="res://Assets/Images/btn_yellow_disabled.png" id="5"]
-[ext_resource type="FontFile" uid="uid://b4c2f613d82li" path="res://Assets/Fonts/Marujo.ttf" id="6"]
-[ext_resource type="Theme" uid="uid://y1ufudag5d7f" path="res://Assets_old/InputTheme/input_theme.tres" id="6_m4quj"]
+[ext_resource type="Texture2D" uid="uid://dc3qhay80s484" path="res://Assets/Images/btn_yellow.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://b2u8u61j0ap15" path="res://Assets/Images/btn_yellow_disabled.png" id="5"]
+[ext_resource type="FontFile" uid="uid://bpcifx103ng5u" path="res://Assets/Fonts/Marujo.ttf" id="6"]
+[ext_resource type="Theme" uid="uid://y1ufudag5d7f" path="res://Assets/InputTheme/input_theme.tres" id="6_m4quj"]
 [ext_resource type="Script" uid="uid://ciu8pv80xne2x" path="res://Scenes/MenuPlay/PESCAR/Pescar.gd" id="7"]
-[ext_resource type="Texture2D" uid="uid://gelv02wuf7r6" path="res://Assets/Images/btn_arrow.png" id="8"]
-[ext_resource type="AudioStream" uid="uid://ctj86wdkh2lgv" path="res://Assets/Sounds/menu_play.ogg" id="9"]
+[ext_resource type="Texture2D" uid="uid://cxkw71e63x821" path="res://Assets/Images/btn_arrow.png" id="8"]
+[ext_resource type="AudioStream" uid="uid://b8epluc0oedys" path="res://Assets/Sounds/menu_play.ogg" id="9"]
 
 [sub_resource type="FontFile" id="1"]
 fallbacks = Array[Font]([ExtResource("6")])

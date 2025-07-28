@@ -1,9 +1,19 @@
 [gd_resource type="FontFile" load_steps=2 format=3 uid="uid://byvaqdf2liiep"]
 
-[ext_resource type="FontFile" uid="uid://dwuhhld1o3c7v" path="res://Assets/Fonts/Marujo.ttf" id="1"]
+[ext_resource type="FontFile" uid="uid://bpcifx103ng5u" path="res://Assets/Fonts/Marujo.ttf" id="1"]
 
 [resource]
 fallbacks = Array[Font]([ExtResource("1")])
+cache/0/35/0/ascent = 0.0
+cache/0/35/0/descent = 0.0
+cache/0/35/0/underline_position = 0.0
+cache/0/35/0/underline_thickness = 0.0
+cache/0/35/0/scale = 1.0
+cache/0/75/0/ascent = 0.0
+cache/0/75/0/descent = 0.0
+cache/0/75/0/underline_position = 0.0
+cache/0/75/0/underline_thickness = 0.0
+cache/0/75/0/scale = 1.0
 cache/0/16/0/ascent = 0.0
 cache/0/16/0/descent = 0.0
 cache/0/16/0/underline_position = 0.0
@@ -179,11 +189,6 @@ cache/0/34/0/descent = 0.0
 cache/0/34/0/underline_position = 0.0
 cache/0/34/0/underline_thickness = 0.0
 cache/0/34/0/scale = 1.0
-cache/0/35/0/ascent = 0.0
-cache/0/35/0/descent = 0.0
-cache/0/35/0/underline_position = 0.0
-cache/0/35/0/underline_thickness = 0.0
-cache/0/35/0/scale = 1.0
 cache/0/36/0/ascent = 0.0
 cache/0/36/0/descent = 0.0
 cache/0/36/0/underline_position = 0.0
@@ -374,11 +379,6 @@ cache/0/74/0/descent = 0.0
 cache/0/74/0/underline_position = 0.0
 cache/0/74/0/underline_thickness = 0.0
 cache/0/74/0/scale = 1.0
-cache/0/75/0/ascent = 0.0
-cache/0/75/0/descent = 0.0
-cache/0/75/0/underline_position = 0.0
-cache/0/75/0/underline_thickness = 0.0
-cache/0/75/0/scale = 1.0
 cache/0/76/0/ascent = 0.0
 cache/0/76/0/descent = 0.0
 cache/0/76/0/underline_position = 0.0

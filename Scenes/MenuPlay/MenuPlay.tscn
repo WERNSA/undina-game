@@ -1,15 +1,15 @@
 [gd_scene load_steps=15 format=3 uid="uid://t8mjf6n5lwo"]
 
 [ext_resource type="FontFile" uid="uid://byvaqdf2liiep" path="res://Assets/Fonts/btnFont.tres" id="1"]
-[ext_resource type="Texture2D" uid="uid://6uqar0e2ho4m" path="res://Assets/Images/bg_underwater.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://dy0qgf0xfosfy" path="res://Assets/Images/bg_underwater.png" id="2"]
 [ext_resource type="PackedScene" uid="uid://cujr43bnq6o6h" path="res://Scenes/Options/Options.tscn" id="3"]
-[ext_resource type="Texture2D" uid="uid://d26b12ag1yaxq" path="res://Assets/Images/btn_yellow.png" id="4"]
-[ext_resource type="Texture2D" uid="uid://cpkj0jf8wdxo" path="res://Assets/Images/btn_yellow_disabled.png" id="5"]
-[ext_resource type="FontFile" uid="uid://dwuhhld1o3c7v" path="res://Assets/Fonts/Marujo.ttf" id="6"]
+[ext_resource type="Texture2D" uid="uid://dc3qhay80s484" path="res://Assets/Images/btn_yellow.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://b2u8u61j0ap15" path="res://Assets/Images/btn_yellow_disabled.png" id="5"]
+[ext_resource type="FontFile" uid="uid://bpcifx103ng5u" path="res://Assets/Fonts/Marujo.ttf" id="6"]
 [ext_resource type="Script" uid="uid://c6qjm1ljmj25s" path="res://Scenes/MenuPlay/Scripts/MenuPlay.gd" id="7"]
-[ext_resource type="Texture2D" uid="uid://cglbu2j8astnv" path="res://Assets/Images/btn_arrow.png" id="8"]
-[ext_resource type="AudioStream" uid="uid://b1eyqmydgy3f" path="res://Assets/Sounds/menu_play.ogg" id="9"]
-[ext_resource type="AudioStream" uid="uid://iapirq7tctl" path="res://Assets/Sounds/SFX/button_press.wav" id="10"]
+[ext_resource type="Texture2D" uid="uid://cxkw71e63x821" path="res://Assets/Images/btn_arrow.png" id="8"]
+[ext_resource type="AudioStream" uid="uid://b8epluc0oedys" path="res://Assets/Sounds/menu_play.ogg" id="9"]
+[ext_resource type="AudioStream" uid="uid://imikfgk50o61" path="res://Assets/Sounds/SFX/button_press.wav" id="10"]
 
 [sub_resource type="FontFile" id="1"]
 fallbacks = Array[Font]([ExtResource("6")])
@@ -319,6 +319,16 @@ cache/0/35/0/descent = 0.0
 cache/0/35/0/underline_position = 0.0
 cache/0/35/0/underline_thickness = 0.0
 cache/0/35/0/scale = 1.0
+cache/0/25/0/ascent = 0.0
+cache/0/25/0/descent = 0.0
+cache/0/25/0/underline_position = 0.0
+cache/0/25/0/underline_thickness = 0.0
+cache/0/25/0/scale = 1.0
+cache/0/30/0/ascent = 0.0
+cache/0/30/0/descent = 0.0
+cache/0/30/0/underline_position = 0.0
+cache/0/30/0/underline_thickness = 0.0
+cache/0/30/0/scale = 1.0
 
 [sub_resource type="FontFile" id="4"]
 fallbacks = Array[Font]([ExtResource("6")])
@@ -357,10 +367,9 @@ layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -272.0
-offset_top = 1.0
-offset_right = 325.0
-offset_bottom = 207.0
+offset_left = -298.5
+offset_right = 298.5
+offset_bottom = 206.0
 grow_horizontal = 2
 
 [node name="PlayerName" type="Label" parent="TitleContainer"]
@@ -373,6 +382,7 @@ horizontal_alignment = 1
 
 [node name="PlayerPoints" type="Label" parent="TitleContainer"]
 layout_mode = 2
+size_flags_horizontal = 4
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_constants/shadow_offset_x = -3
 theme_override_fonts/font = SubResource("1")
@@ -387,68 +397,12 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -420.0
-offset_top = -233.0
-offset_right = 451.0
-offset_bottom = 366.0
+offset_left = -352.0
+offset_top = -195.0
+offset_right = 352.0
+offset_bottom = 195.0
 grow_horizontal = 2
 grow_vertical = 2
-
-[node name="QuizContainer" type="HBoxContainer" parent="VBoxContainer"]
-layout_mode = 2
-size_flags_horizontal = 4
-
-[node name="BtnStory" type="TextureButton" parent="VBoxContainer/QuizContainer"]
-layout_mode = 2
-texture_normal = ExtResource("4")
-texture_pressed = ExtResource("5")
-texture_hover = ExtResource("5")
-texture_disabled = ExtResource("5")
-
-[node name="LblStory" type="Label" parent="VBoxContainer/QuizContainer/BtnStory"]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -69.5
-offset_top = -24.5
-offset_right = 118.5
-offset_bottom = 51.5
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_constants/shadow_offset_x = -3
-theme_override_fonts/font = ExtResource("1")
-theme_override_font_sizes/font_size = 40
-text = "HISTORIA"
-
-[node name="BtnQuiz" type="TextureButton" parent="VBoxContainer/QuizContainer"]
-layout_mode = 2
-texture_normal = ExtResource("4")
-texture_pressed = ExtResource("5")
-texture_hover = ExtResource("5")
-texture_disabled = ExtResource("5")
-
-[node name="LblQuiz" type="Label" parent="VBoxContainer/QuizContainer/BtnQuiz"]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -60.5
-offset_top = -28.5
-offset_right = 127.5
-offset_bottom = 47.5
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_constants/shadow_offset_x = -3
-theme_override_fonts/font = ExtResource("1")
-theme_override_font_sizes/font_size = 45
-text = "TRIVIA"
 
 [node name="ButtonsContainer" type="HBoxContainer" parent="VBoxContainer"]
 layout_mode = 2
@@ -456,6 +410,37 @@ size_flags_horizontal = 4
 
 [node name="FirstContainer" type="VBoxContainer" parent="VBoxContainer/ButtonsContainer"]
 layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="HistoryContainer" type="CenterContainer" parent="VBoxContainer/ButtonsContainer/FirstContainer"]
+layout_mode = 2
+
+[node name="BtnStory" type="TextureButton" parent="VBoxContainer/ButtonsContainer/FirstContainer/HistoryContainer"]
+layout_mode = 2
+texture_normal = ExtResource("4")
+texture_pressed = ExtResource("5")
+texture_hover = ExtResource("5")
+texture_disabled = ExtResource("5")
+
+[node name="LblStory" type="Label" parent="VBoxContainer/ButtonsContainer/FirstContainer/HistoryContainer/BtnStory"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -60.5
+offset_top = -19.0
+offset_right = 57.5
+offset_bottom = 17.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = -3
+theme_override_fonts/font = ExtResource("1")
+theme_override_font_sizes/font_size = 35
+text = "HISTORIA"
 
 [node name="FishContainer" type="CenterContainer" parent="VBoxContainer/ButtonsContainer/FirstContainer"]
 layout_mode = 2
@@ -498,6 +483,37 @@ vertical_alignment = 1
 
 [node name="SecondContainer" type="VBoxContainer" parent="VBoxContainer/ButtonsContainer"]
 layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+
+[node name="TriviaContainer" type="CenterContainer" parent="VBoxContainer/ButtonsContainer/SecondContainer"]
+layout_mode = 2
+
+[node name="BtnQuiz" type="TextureButton" parent="VBoxContainer/ButtonsContainer/SecondContainer/TriviaContainer"]
+layout_mode = 2
+texture_normal = ExtResource("4")
+texture_pressed = ExtResource("5")
+texture_hover = ExtResource("5")
+texture_disabled = ExtResource("5")
+
+[node name="LblQuiz" type="Label" parent="VBoxContainer/ButtonsContainer/SecondContainer/TriviaContainer/BtnQuiz"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -41.5
+offset_top = -20.0
+offset_right = 46.5
+offset_bottom = 16.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = -3
+theme_override_fonts/font = ExtResource("1")
+theme_override_font_sizes/font_size = 35
+text = "TRIVIA"
 
 [node name="ObstacleContainer" type="CenterContainer" parent="VBoxContainer/ButtonsContainer/SecondContainer"]
 layout_mode = 2
@@ -510,13 +526,17 @@ texture_pressed = ExtResource("5")
 texture_hover = ExtResource("5")
 texture_disabled = ExtResource("5")
 
-[node name="LblObstacle" type="Label" parent="VBoxContainer/ButtonsContainer/SecondContainer/ObstacleContainer"]
-custom_minimum_size = Vector2(350, 150)
+[node name="LblObstacle" type="Label" parent="VBoxContainer/ButtonsContainer/SecondContainer/ObstacleContainer/BtnObstacle"]
+custom_minimum_size = Vector2(341, 150)
 layout_mode = 2
+offset_left = -63.0
+offset_top = 23.0
+offset_right = 278.0
+offset_bottom = 173.0
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_constants/shadow_offset_x = -3
 theme_override_fonts/font = SubResource("3")
-theme_override_font_sizes/font_size = 35
+theme_override_font_sizes/font_size = 30
 text = "CARRERA
 OBSTÁCULOS"
 horizontal_alignment = 1
@@ -559,10 +579,10 @@ bus = &"Music"
 [node name="SoundPress" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("10")
 
-[connection signal="pressed" from="VBoxContainer/QuizContainer/BtnStory" to="." method="_on_btn_story_pressed"]
-[connection signal="pressed" from="VBoxContainer/QuizContainer/BtnQuiz" to="." method="_on_BtnQuiz_pressed"]
+[connection signal="pressed" from="VBoxContainer/ButtonsContainer/FirstContainer/HistoryContainer/BtnStory" to="." method="_on_btn_story_pressed"]
 [connection signal="pressed" from="VBoxContainer/ButtonsContainer/FirstContainer/FishContainer/BtnFish" to="." method="_on_BtnFish_pressed"]
 [connection signal="pressed" from="VBoxContainer/ButtonsContainer/FirstContainer/TimeContainer/BtnTime" to="." method="_on_BtnTime_pressed"]
+[connection signal="pressed" from="VBoxContainer/ButtonsContainer/SecondContainer/TriviaContainer/BtnQuiz" to="." method="_on_BtnQuiz_pressed"]
 [connection signal="pressed" from="VBoxContainer/ButtonsContainer/SecondContainer/ObstacleContainer/BtnObstacle" to="." method="_on_BtnObstacle_pressed"]
 [connection signal="pressed" from="VBoxContainer/ButtonsContainer/SecondContainer/CleanContainer/BtnClean" to="." method="_on_BtnClean_pressed"]
 [connection signal="pressed" from="BtnBack" to="." method="_on_BtnBack_pressed"]

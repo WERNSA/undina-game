@@ -1,27 +1,27 @@
 [gd_scene load_steps=27 format=3 uid="uid://cujr43bnq6o6h"]
 
-[ext_resource type="Texture2D" uid="uid://bwjpqv34fu8ay" path="res://Scenes/Options/Images/btnSettings.png" id="1"]
-[ext_resource type="Texture2D" uid="uid://dw0vyay6vw5og" path="res://Scenes/Options/Images/btnExit.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://bbfmyxmufrnq2" path="res://Scenes/Options/Images/btnSettings.png" id="1"]
+[ext_resource type="Texture2D" uid="uid://cekswprdu4jbw" path="res://Scenes/Options/Images/btnExit.png" id="2"]
 [ext_resource type="Script" uid="uid://db74myokeyayp" path="res://Scenes/Options/Scripts/Options.gd" id="3"]
-[ext_resource type="FontFile" uid="uid://bxhrsx1hirpw8" path="res://Assets/Fonts/MouseMemoirs-Regular.ttf" id="4"]
-[ext_resource type="Texture2D" uid="uid://bsmragjsdexsj" path="res://Assets/Images/btn_yes.png" id="5"]
-[ext_resource type="Texture2D" uid="uid://cnugttm7s1nw3" path="res://Assets/Images/btn_no.png" id="6"]
+[ext_resource type="FontFile" uid="uid://dhyj51cxfg2cj" path="res://Assets/Fonts/MouseMemoirs-Regular.ttf" id="4"]
+[ext_resource type="Texture2D" uid="uid://c17cquj2bhqta" path="res://Assets/Images/btn_yes.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://drt5fs0jsmcoc" path="res://Assets/Images/btn_no.png" id="6"]
 [ext_resource type="FontFile" path="res://Assets/Fonts/settingsFonts.tres" id="7"]
-[ext_resource type="Texture2D" uid="uid://gelv02wuf7r6" path="res://Assets/Images/btn_arrow.png" id="8"]
-[ext_resource type="FontFile" uid="uid://byvaqdf2liiep" path="res://Assets_old/Fonts/btnFont.tres" id="9"]
-[ext_resource type="Texture2D" uid="uid://cki0scgggmop3" path="res://Assets/Images/board.png" id="10"]
-[ext_resource type="Texture2D" uid="uid://ds3b05u0q1jy" path="res://Assets/Images/AudioSettings/Taba opción de audio.png" id="11"]
-[ext_resource type="Texture2D" uid="uid://bihlx3gji6v5l" path="res://Assets/Images/btn_yellow_disabled.png" id="12"]
-[ext_resource type="Texture2D" uid="uid://b605pt1ywufls" path="res://Assets/Images/btn_yellow.png" id="13"]
-[ext_resource type="Texture2D" uid="uid://701uhcffrwde" path="res://Assets/Images/AudioSettings/Botones/Ícono de música.png" id="14"]
-[ext_resource type="Texture2D" uid="uid://btbochj2t4ica" path="res://Assets/Images/AudioSettings/Botones/Ícono bocina con sonido.png" id="15"]
-[ext_resource type="Texture2D" uid="uid://jg84ssv0vktu" path="res://Assets/Images/AudioSettings/Botones/Botón mute off.png" id="16"]
-[ext_resource type="Texture2D" uid="uid://bx6a83idqanby" path="res://Assets/Images/AudioSettings/Botones/Botón mute on.png" id="17"]
-[ext_resource type="Texture2D" uid="uid://b4g56101o3bah" path="res://Assets/Images/AudioSettings/Botones/Barra de sonido.png" id="18"]
-[ext_resource type="Texture2D" uid="uid://c2mpbcb62lylw" path="res://Assets/Images/AudioSettings/Botones/Barra de sonido activado.png" id="19"]
-[ext_resource type="Texture2D" uid="uid://b10rdmtih7exr" path="res://Assets/Images/AudioSettings/Botones/Slider pelota.png" id="20"]
-[ext_resource type="Theme" uid="uid://y1ufudag5d7f" path="res://Assets_old/InputTheme/input_theme.tres" id="21"]
-[ext_resource type="AudioStream" uid="uid://bdp1xdh7k8sa3" path="res://Assets/Sounds/SFX/button_press.wav" id="22"]
+[ext_resource type="Texture2D" uid="uid://cxkw71e63x821" path="res://Assets/Images/btn_arrow.png" id="8"]
+[ext_resource type="FontFile" uid="uid://byvaqdf2liiep" path="res://Assets/Fonts/btnFont.tres" id="9"]
+[ext_resource type="Texture2D" uid="uid://devluov3qg18r" path="res://Assets/Images/board.png" id="10"]
+[ext_resource type="Texture2D" uid="uid://b3qqa5ylhgrx6" path="res://Assets/Images/AudioSettings/Taba opción de audio.png" id="11"]
+[ext_resource type="Texture2D" uid="uid://b2u8u61j0ap15" path="res://Assets/Images/btn_yellow_disabled.png" id="12"]
+[ext_resource type="Texture2D" uid="uid://dc3qhay80s484" path="res://Assets/Images/btn_yellow.png" id="13"]
+[ext_resource type="Texture2D" uid="uid://8xeqhw3xbj5q" path="res://Assets/Images/AudioSettings/Botones/Ícono de música.png" id="14"]
+[ext_resource type="Texture2D" uid="uid://ckhjcw7nfvdlq" path="res://Assets/Images/AudioSettings/Botones/Ícono bocina con sonido.png" id="15"]
+[ext_resource type="Texture2D" uid="uid://bf5p2m824e0kv" path="res://Assets/Images/AudioSettings/Botones/Botón mute off.png" id="16"]
+[ext_resource type="Texture2D" uid="uid://kv85ykh41fit" path="res://Assets/Images/AudioSettings/Botones/Botón mute on.png" id="17"]
+[ext_resource type="Texture2D" uid="uid://i2u3a8nw1axb" path="res://Assets/Images/AudioSettings/Botones/Barra de sonido.png" id="18"]
+[ext_resource type="Texture2D" uid="uid://bg1emeo2l56ky" path="res://Assets/Images/AudioSettings/Botones/Barra de sonido activado.png" id="19"]
+[ext_resource type="Texture2D" uid="uid://b120ivl0n1v47" path="res://Assets/Images/AudioSettings/Botones/Slider pelota.png" id="20"]
+[ext_resource type="Theme" uid="uid://y1ufudag5d7f" path="res://Assets/InputTheme/input_theme.tres" id="21"]
+[ext_resource type="AudioStream" uid="uid://imikfgk50o61" path="res://Assets/Sounds/SFX/button_press.wav" id="22"]
 
 [sub_resource type="FontFile" id="1"]
 fallbacks = Array[Font]([ExtResource("4")])
@@ -1094,29 +1094,33 @@ texture_normal = ExtResource("6")
 visible = false
 layout_mode = 3
 anchors_preset = 0
-offset_right = 3200.0
-offset_bottom = 1800.0
+offset_right = 1366.0
+offset_bottom = 768.0
 
 [node name="ColorRect" type="ColorRect" parent="AudioSettings"]
 layout_mode = 0
-offset_right = 3200.0
-offset_bottom = 1800.0
+offset_top = -1.0
+offset_right = 1366.0
+offset_bottom = 767.0
 color = Color(0, 0, 0, 0.588235)
 
 [node name="Board" type="Sprite2D" parent="AudioSettings"]
-position = Vector2(1600, 900)
+position = Vector2(688, 370)
 texture = ExtResource("11")
 
 [node name="BtnAccept" type="TextureButton" parent="AudioSettings"]
-layout_mode = 0
+layout_mode = 1
+anchors_preset = 7
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -245.0
-offset_top = -553.0
-offset_right = 245.0
-offset_bottom = -280.0
+offset_left = 33.0
+offset_top = 536.0
+offset_right = 523.0
+offset_bottom = 809.0
+grow_horizontal = 2
+grow_vertical = 0
 texture_normal = ExtResource("13")
 texture_pressed = ExtResource("12")
 texture_hover = ExtResource("12")
@@ -1141,21 +1145,21 @@ horizontal_alignment = 1
 
 [node name="LblMusic" type="Label" parent="AudioSettings"]
 layout_mode = 0
-offset_left = 1267.5
-offset_top = 653.914
-offset_right = 1998.5
-offset_bottom = 721.914
+offset_left = 561.0
+offset_top = 216.0
+offset_right = 644.0
+offset_bottom = 266.0
 pivot_offset = Vector2(-552.951, 118.944)
 theme_override_fonts/font = ExtResource("7")
-theme_override_font_sizes/font_size = 60
+theme_override_font_sizes/font_size = 30
 text = "MÚSICA"
 
 [node name="SliderMusic" type="HSlider" parent="AudioSettings"]
 layout_mode = 0
-offset_left = 1225.0
-offset_top = 687.0
-offset_right = 1845.0
-offset_bottom = 822.0
+offset_left = 526.0
+offset_top = 222.0
+offset_right = 936.0
+offset_bottom = 312.0
 theme = ExtResource("21")
 theme_override_icons/grabber = ExtResource("20")
 theme_override_icons/grabber_highlight = ExtResource("20")
@@ -1169,21 +1173,21 @@ max_value = 0.0
 
 [node name="LblVoices" type="Label" parent="AudioSettings"]
 layout_mode = 0
-offset_left = 1267.5
-offset_top = 791.914
-offset_right = 1998.5
-offset_bottom = 859.914
+offset_left = 560.0
+offset_top = 290.0
+offset_right = 626.0
+offset_bottom = 337.0
 pivot_offset = Vector2(-552.951, 118.944)
 theme_override_fonts/font = ExtResource("7")
-theme_override_font_sizes/font_size = 60
+theme_override_font_sizes/font_size = 30
 text = "VOCES"
 
 [node name="SliderVoices" type="HSlider" parent="AudioSettings"]
 layout_mode = 0
-offset_left = 1225.0
-offset_top = 826.0
-offset_right = 1845.0
-offset_bottom = 961.0
+offset_left = 526.0
+offset_top = 300.0
+offset_right = 936.0
+offset_bottom = 390.0
 theme = ExtResource("21")
 theme_override_icons/grabber = ExtResource("20")
 theme_override_icons/grabber_highlight = ExtResource("20")
@@ -1197,21 +1201,21 @@ max_value = 0.0
 
 [node name="LblSFX" type="Label" parent="AudioSettings"]
 layout_mode = 0
-offset_left = 1267.5
-offset_top = 925.914
-offset_right = 1998.5
-offset_bottom = 993.914
+offset_left = 558.0
+offset_top = 370.0
+offset_right = 767.0
+offset_bottom = 417.0
 pivot_offset = Vector2(-552.951, 118.944)
 theme_override_fonts/font = ExtResource("7")
-theme_override_font_sizes/font_size = 60
+theme_override_font_sizes/font_size = 30
 text = "EFECTOS DE SONIDO"
 
 [node name="SliderSFX" type="HSlider" parent="AudioSettings"]
 layout_mode = 0
-offset_left = 1225.0
-offset_top = 963.0
-offset_right = 1845.0
-offset_bottom = 1098.0
+offset_left = 526.0
+offset_top = 383.086
+offset_right = 936.0
+offset_bottom = 473.086
 theme = ExtResource("21")
 theme_override_icons/grabber = ExtResource("20")
 theme_override_icons/grabber_highlight = ExtResource("20")
@@ -1223,49 +1227,49 @@ theme_override_styles/grabber_area_highlight = SubResource("StyleBoxTexture_hccr
 min_value = -40.0
 max_value = 0.0
 
-[node name="BtnBack" type="TextureButton" parent="AudioSettings"]
-layout_mode = 0
-offset_right = 255.0
-offset_bottom = 273.0
-texture_normal = ExtResource("8")
-
 [node name="IconMusic" type="Sprite2D" parent="AudioSettings"]
-position = Vector2(1167, 738)
+position = Vector2(511, 265)
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("14")
 
 [node name="IconVoices" type="Sprite2D" parent="AudioSettings"]
-position = Vector2(1167, 880)
+position = Vector2(512, 343)
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("15")
 
 [node name="IconSFX" type="Sprite2D" parent="AudioSettings"]
-position = Vector2(1167, 1005)
+position = Vector2(516, 422)
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("15")
 
 [node name="LblMute" type="Label" parent="AudioSettings"]
 layout_mode = 0
-offset_left = 1235.0
-offset_top = 1074.0
-offset_right = 1966.0
-offset_bottom = 1142.0
+offset_left = 659.0
+offset_top = 454.0
+offset_right = 743.0
+offset_bottom = 490.0
 pivot_offset = Vector2(-552.951, 118.944)
 theme_override_fonts/font = ExtResource("7")
-theme_override_font_sizes/font_size = 60
+theme_override_font_sizes/font_size = 30
 text = "SILENCIAR"
 horizontal_alignment = 1
 
 [node name="BtnMute" type="TextureButton" parent="AudioSettings"]
 layout_mode = 0
-offset_left = 1314.0
-offset_top = 1128.0
-offset_right = 3158.0
-offset_bottom = 1604.0
+offset_left = 571.0
+offset_top = 482.0
+offset_right = 1358.0
+offset_bottom = 685.0
 scale = Vector2(0.3, 0.3)
 action_mode = 0
 texture_normal = ExtResource("16")
 texture_disabled = ExtResource("17")
+
+[node name="BtnBack" type="TextureButton" parent="AudioSettings"]
+layout_mode = 0
+offset_right = 108.0
+offset_bottom = 116.0
+texture_normal = ExtResource("8")
 
 [node name="SoundPress" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("22")
@@ -1278,5 +1282,5 @@ stream = ExtResource("22")
 [connection signal="value_changed" from="AudioSettings/SliderMusic" to="." method="_on_SliderMusic_value_changed"]
 [connection signal="value_changed" from="AudioSettings/SliderVoices" to="." method="_on_SliderMusic_value_changed"]
 [connection signal="value_changed" from="AudioSettings/SliderSFX" to="." method="_on_SliderMusic_value_changed"]
-[connection signal="pressed" from="AudioSettings/BtnBack" to="." method="_on_BtnBack_pressed"]
 [connection signal="pressed" from="AudioSettings/BtnMute" to="." method="_on_BtnMute_pressed"]
+[connection signal="pressed" from="AudioSettings/BtnBack" to="." method="_on_BtnBack_pressed"]
