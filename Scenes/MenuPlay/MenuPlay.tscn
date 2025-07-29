@@ -1,15 +1,15 @@
 [gd_scene load_steps=15 format=3 uid="uid://t8mjf6n5lwo"]
 
 [ext_resource type="FontFile" uid="uid://byvaqdf2liiep" path="res://Assets/Fonts/btnFont.tres" id="1"]
-[ext_resource type="Texture2D" uid="uid://dy0qgf0xfosfy" path="res://Assets/Images/bg_underwater.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://6uqar0e2ho4m" path="res://Assets/Images/bg_underwater.png" id="2"]
 [ext_resource type="PackedScene" uid="uid://cujr43bnq6o6h" path="res://Scenes/Options/Options.tscn" id="3"]
-[ext_resource type="Texture2D" uid="uid://dc3qhay80s484" path="res://Assets/Images/btn_yellow.png" id="4"]
-[ext_resource type="Texture2D" uid="uid://b2u8u61j0ap15" path="res://Assets/Images/btn_yellow_disabled.png" id="5"]
-[ext_resource type="FontFile" uid="uid://bpcifx103ng5u" path="res://Assets/Fonts/Marujo.ttf" id="6"]
+[ext_resource type="Texture2D" uid="uid://d26b12ag1yaxq" path="res://Assets/Images/btn_yellow.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://cpkj0jf8wdxo" path="res://Assets/Images/btn_yellow_disabled.png" id="5"]
+[ext_resource type="FontFile" uid="uid://dwuhhld1o3c7v" path="res://Assets/Fonts/Marujo.ttf" id="6"]
 [ext_resource type="Script" uid="uid://c6qjm1ljmj25s" path="res://Scenes/MenuPlay/Scripts/MenuPlay.gd" id="7"]
-[ext_resource type="Texture2D" uid="uid://cxkw71e63x821" path="res://Assets/Images/btn_arrow.png" id="8"]
-[ext_resource type="AudioStream" uid="uid://b8epluc0oedys" path="res://Assets/Sounds/menu_play.ogg" id="9"]
-[ext_resource type="AudioStream" uid="uid://imikfgk50o61" path="res://Assets/Sounds/SFX/button_press.wav" id="10"]
+[ext_resource type="Texture2D" uid="uid://cglbu2j8astnv" path="res://Assets/Images/btn_arrow.png" id="8"]
+[ext_resource type="AudioStream" uid="uid://b1eyqmydgy3f" path="res://Assets/Sounds/menu_play.ogg" id="9"]
+[ext_resource type="AudioStream" uid="uid://iapirq7tctl" path="res://Assets/Sounds/SFX/button_press.wav" id="10"]
 
 [sub_resource type="FontFile" id="1"]
 fallbacks = Array[Font]([ExtResource("6")])

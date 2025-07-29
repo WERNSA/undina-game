@@ -10,11 +10,12 @@ config_version=5
 
 [application]
 
-config/name="okeanos-undine-game"
+config/name="undina"
+config/version="0.8.1"
 run/main_scene="res://Scenes/Splash/Splash.tscn"
 config/features=PackedStringArray("4.4")
 boot_splash/image="res://Scenes/Splash/Images/boot-splash.png"
-config/icon="res://icon.png"
+config/icon="uid://bnitn4v17fnv7"
 
 [autoload]
 
