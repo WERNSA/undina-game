@@ -1,35 +1,54 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=9 format=3 uid="uid://dohs20mgg24lq"]
 
-[ext_resource path="res://plugins/touchJoyPad/dpad/buttonPressed.png" type="Texture" id=1]
-[ext_resource path="res://plugins/touchJoyPad/dpad/button.png" type="Texture" id=2]
+[sub_resource type="Resource" id="Resource_gp7t6"]
+metadata/__load_path__ = "res://plugins/touchJoyPad/dpad/button.png"
 
+[sub_resource type="Resource" id="Resource_1u2nj"]
+metadata/__load_path__ = "res://plugins/touchJoyPad/dpad/buttonPressed.png"
 
+[sub_resource type="Resource" id="Resource_lf4d4"]
+metadata/__load_path__ = "res://plugins/touchJoyPad/dpad/button.png"
+
+[sub_resource type="Resource" id="Resource_k11nj"]
+metadata/__load_path__ = "res://plugins/touchJoyPad/dpad/buttonPressed.png"
+
+[sub_resource type="Resource" id="Resource_oih7q"]
+metadata/__load_path__ = "res://plugins/touchJoyPad/dpad/button.png"
+
+[sub_resource type="Resource" id="Resource_fq03l"]
+metadata/__load_path__ = "res://plugins/touchJoyPad/dpad/buttonPressed.png"
+
+[sub_resource type="Resource" id="Resource_se67r"]
+metadata/__load_path__ = "res://plugins/touchJoyPad/dpad/button.png"
+
+[sub_resource type="Resource" id="Resource_rd0yo"]
+metadata/__load_path__ = "res://plugins/touchJoyPad/dpad/buttonPressed.png"
 
 [node name="d-pad" type="Node2D"]
 
 [node name="left" type="TouchScreenButton" parent="."]
-position = Vector2( -80, -31 )
-normal = ExtResource( 2 )
-pressed = ExtResource( 1 )
+position = Vector2(-80, -31)
+normal = SubResource("Resource_gp7t6")
+pressed = SubResource("Resource_1u2nj")
 action = "ui_left"
 
 [node name="up" type="TouchScreenButton" parent="."]
-position = Vector2( 31, -80 )
+position = Vector2(31, -80)
 rotation = 1.5708
-normal = ExtResource( 2 )
-pressed = ExtResource( 1 )
+normal = SubResource("Resource_lf4d4")
+pressed = SubResource("Resource_k11nj")
 action = "ui_up"
 
 [node name="down" type="TouchScreenButton" parent="."]
-position = Vector2( -30, 80 )
+position = Vector2(-30, 80)
 rotation = 4.71239
-normal = ExtResource( 2 )
-pressed = ExtResource( 1 )
+normal = SubResource("Resource_oih7q")
+pressed = SubResource("Resource_fq03l")
 action = "ui_down"
 
 [node name="right" type="TouchScreenButton" parent="."]
-position = Vector2( 80, 31 )
+position = Vector2(80, 31)
 rotation = 3.14159
-normal = ExtResource( 2 )
-pressed = ExtResource( 1 )
+normal = SubResource("Resource_se67r")
+pressed = SubResource("Resource_rd0yo")
 action = "ui_right"

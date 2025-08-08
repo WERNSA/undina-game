@@ -1,31 +1,37 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=8 format=3 uid="uid://bki73mh3vhkpl"]
 
-[ext_resource path="res://Assets/Images/bg_underwater.png" type="Texture" id=1]
-[ext_resource path="res://Assets/Images/btn_arrow.png" type="Texture" id=2]
-[ext_resource path="res://Assets/Fonts/MouseMemoirs-Regular.ttf" type="DynamicFontData" id=3]
-[ext_resource path="res://Assets/Fonts/creditsFonts.tres" type="DynamicFont" id=4]
-[ext_resource path="res://Scenes/Credits/Scripts/Credits.gd" type="Script" id=5]
+[ext_resource type="Texture2D" uid="uid://bhd135ao41ocl" path="res://Assets/Images/bg_underwater.png" id="1"]
+[ext_resource type="Texture2D" uid="uid://vg4ldcjv7m84" path="res://Assets/Images/btn_arrow.png" id="2"]
+[ext_resource type="FontFile" uid="uid://bx0c36dl0omdf" path="res://Assets/Fonts/MouseMemoirs-Regular.ttf" id="3"]
+[ext_resource type="FontFile" path="res://Assets/Fonts/creditsFonts.tres" id="4"]
+[ext_resource type="Script" uid="uid://7trm2o3750vb" path="res://Scenes/Credits/Scripts/Credits.gd" id="5"]
 
-[sub_resource type="DynamicFont" id=1]
-size = 150
-outline_color = Color( 0, 0, 0, 1 )
-font_data = ExtResource( 3 )
+[sub_resource type="FontFile" id="1"]
+fallbacks = Array[Font]([ExtResource("3")])
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
 
-[sub_resource type="DynamicFont" id=2]
-size = 100
-outline_color = Color( 0, 0, 0, 1 )
-font_data = ExtResource( 3 )
+[sub_resource type="FontFile" id="2"]
+fallbacks = Array[Font]([ExtResource("3")])
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
 
 [node name="Credits" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-script = ExtResource( 5 )
+script = ExtResource("5")
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="BgImage" type="Sprite" parent="."]
-texture = ExtResource( 1 )
+[node name="BgImage" type="Sprite2D" parent="."]
+texture = ExtResource("1")
 centered = false
 
 [node name="CreditsContainer" type="VBoxContainer" parent="."]
@@ -33,96 +39,96 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -399.0
-margin_top = -315.5
-margin_right = 399.0
-margin_bottom = 315.5
+offset_left = -399.0
+offset_top = -315.5
+offset_right = 399.0
+offset_bottom = 315.5
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="LblGameby" type="Label" parent="CreditsContainer"]
-margin_right = 798.0
-margin_bottom = 173.0
-custom_fonts/font = SubResource( 1 )
+offset_right = 798.0
+offset_bottom = 173.0
+theme_override_fonts/font = SubResource("1")
 text = "UN JUEGO DE:"
 align = 1
 
 [node name="LblWERN" type="Label" parent="CreditsContainer"]
-margin_top = 177.0
-margin_right = 798.0
-margin_bottom = 292.0
-custom_fonts/font = SubResource( 2 )
+offset_top = 177.0
+offset_right = 798.0
+offset_bottom = 292.0
+theme_override_fonts/font = SubResource("2")
 text = "WERN"
 align = 1
 
 [node name="SupervisorContainer" type="VBoxContainer" parent="CreditsContainer"]
-margin_top = 296.0
-margin_right = 798.0
-margin_bottom = 461.0
+offset_top = 296.0
+offset_right = 798.0
+offset_bottom = 461.0
 
 [node name="Label" type="Label" parent="CreditsContainer/SupervisorContainer"]
-margin_right = 798.0
-margin_bottom = 165.0
-custom_fonts/font = ExtResource( 4 )
+offset_right = 798.0
+offset_bottom = 165.0
+theme_override_fonts/font = ExtResource("4")
 text = "SUPERVISOR:
 HANSEL WAVES"
 align = 1
 
 [node name="TeamContainer" type="HBoxContainer" parent="CreditsContainer"]
-margin_top = 465.0
-margin_right = 798.0
-margin_bottom = 631.0
+offset_top = 465.0
+offset_right = 798.0
+offset_bottom = 631.0
 
 [node name="DevContainer" type="VBoxContainer" parent="CreditsContainer/TeamContainer"]
-margin_right = 323.0
-margin_bottom = 166.0
+offset_right = 323.0
+offset_bottom = 166.0
 
 [node name="Label" type="Label" parent="CreditsContainer/TeamContainer/DevContainer"]
-margin_right = 323.0
-margin_bottom = 81.0
-custom_fonts/font = ExtResource( 4 )
+offset_right = 323.0
+offset_bottom = 81.0
+theme_override_fonts/font = ExtResource("4")
 text = "DESARROLLADOR:"
 
 [node name="Label2" type="Label" parent="CreditsContainer/TeamContainer/DevContainer"]
-margin_top = 85.0
-margin_right = 323.0
-margin_bottom = 166.0
-custom_fonts/font = ExtResource( 4 )
+offset_top = 85.0
+offset_right = 323.0
+offset_bottom = 166.0
+theme_override_fonts/font = ExtResource("4")
 text = "JORGE VALVERDE"
 
 [node name="Spacing" type="Label" parent="CreditsContainer/TeamContainer"]
-margin_left = 327.0
-margin_top = 42.0
-margin_right = 567.0
-margin_bottom = 123.0
-custom_fonts/font = ExtResource( 4 )
+offset_left = 327.0
+offset_top = 42.0
+offset_right = 567.0
+offset_bottom = 123.0
+theme_override_fonts/font = ExtResource("4")
 text = "                    "
 
 [node name="DesignerContainer" type="VBoxContainer" parent="CreditsContainer/TeamContainer"]
-margin_left = 571.0
-margin_right = 798.0
-margin_bottom = 166.0
+offset_left = 571.0
+offset_right = 798.0
+offset_bottom = 166.0
 
 [node name="Label2" type="Label" parent="CreditsContainer/TeamContainer/DesignerContainer"]
-margin_right = 227.0
-margin_bottom = 81.0
-custom_fonts/font = ExtResource( 4 )
+offset_right = 227.0
+offset_bottom = 81.0
+theme_override_fonts/font = ExtResource("4")
 text = "DISEÑADOR:"
 
 [node name="Label3" type="Label" parent="CreditsContainer/TeamContainer/DesignerContainer"]
-margin_top = 85.0
-margin_right = 227.0
-margin_bottom = 166.0
-custom_fonts/font = ExtResource( 4 )
+offset_top = 85.0
+offset_right = 227.0
+offset_bottom = 166.0
+theme_override_fonts/font = ExtResource("4")
 text = "JOSÉ CÉSAR"
 
 [node name="BtnBack" type="TextureButton" parent="."]
 anchor_top = 1.0
 anchor_bottom = 1.0
-margin_top = -273.0
-margin_right = 255.0
-texture_normal = ExtResource( 2 )
+offset_top = -273.0
+offset_right = 255.0
+texture_normal = ExtResource("2")
 __meta__ = {
 "_edit_use_anchors_": false
 }

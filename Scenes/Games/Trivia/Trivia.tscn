@@ -1,1080 +1,1226 @@
-[gd_scene load_steps=38 format=2]
+[gd_scene load_steps=39 format=3 uid="uid://iaid7b8jcy4n"]
 
-[ext_resource path="res://Assets/Images/Trivia/Fondo casas del caribe.png" type="Texture" id=1]
-[ext_resource path="res://Assets/Images/Trivia/ruleta.png" type="Texture" id=2]
-[ext_resource path="res://Assets/Images/Trivia/girar ruleta.png" type="Texture" id=3]
-[ext_resource path="res://Scenes/Games/Trivia/Trivia.gd" type="Script" id=4]
-[ext_resource path="res://Assets/Images/Trivia/Encabezado geografía.png" type="Texture" id=5]
-[ext_resource path="res://Assets/Images/Animaciones/Caminando/Tres cuartos a la derecha/Derecha 9.png" type="Texture" id=6]
-[ext_resource path="res://Assets/Images/Trivia/Tabla de preguntas.png" type="Texture" id=7]
-[ext_resource path="res://Assets/Fonts/Marujo.ttf" type="DynamicFontData" id=8]
-[ext_resource path="res://Assets/Images/Trivia/Tabla de respuestas.png" type="Texture" id=9]
-[ext_resource path="res://Assets/Fonts/Trivia.tres" type="DynamicFont" id=10]
-[ext_resource path="res://Assets/Images/Trivia/Respuesta acertada.png" type="Texture" id=11]
-[ext_resource path="res://Scenes/Pause/PauseMenu.tscn" type="PackedScene" id=12]
-[ext_resource path="res://Scenes/Utility/Contador.tscn" type="PackedScene" id=13]
-[ext_resource path="res://Assets/Sounds/trivia.ogg" type="AudioStream" id=14]
-[ext_resource path="res://Assets/Images/Trivia/Encabezado contaminación.png" type="Texture" id=15]
-[ext_resource path="res://Assets/Images/Trivia/Encabezado flora y fauna.png" type="Texture" id=16]
-[ext_resource path="res://Assets/Images/Trivia/Respuesta fallada.png" type="Texture" id=17]
-[ext_resource path="res://Assets/Images/btn_arrow.png" type="Texture" id=18]
-[ext_resource path="res://Assets/Images/Trivia/Encabezado Reciclaje.png" type="Texture" id=19]
-[ext_resource path="res://Assets/Sounds/SFX/button_press.wav" type="AudioStream" id=20]
-[ext_resource path="res://Scenes/Utility/GameOver/GameOver.tscn" type="PackedScene" id=21]
-[ext_resource path="res://Scenes/Utility/Win/Win.tscn" type="PackedScene" id=22]
-[ext_resource path="res://Assets/Fonts/btnFont.tres" type="DynamicFont" id=23]
-[ext_resource path="res://Assets/Images/Fondo de contador de puntos.png" type="Texture" id=24]
+[ext_resource type="Texture2D" uid="uid://bwwoaml6r60x7" path="res://Assets/Images/Trivia/Fondo casas del caribe.png" id="1"]
+[ext_resource type="Texture2D" uid="uid://cr6xfckcfwwyl" path="res://Assets/Images/Trivia/ruleta.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://chowh02swfwhi" path="res://Assets/Images/Trivia/girar ruleta.png" id="3"]
+[ext_resource type="Script" uid="uid://g1gu1qefgbpi" path="res://Scenes/Games/Trivia/Trivia.gd" id="4"]
+[ext_resource type="Texture2D" uid="uid://myi2upw5qlqr" path="res://Assets/Images/Trivia/Encabezado geografía.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://cuov1mtq5i8fd" path="res://Assets/Images/Animaciones/Caminando/Tres cuartos a la derecha/Derecha 9.png" id="6"]
+[ext_resource type="Texture2D" uid="uid://ce41oqlmxt5dx" path="res://Assets/Images/Trivia/Tabla de preguntas.png" id="7"]
+[ext_resource type="FontFile" uid="uid://dwuhhld1o3c7v" path="res://Assets/Fonts/Marujo.ttf" id="8"]
+[ext_resource type="Texture2D" uid="uid://c8i4y75ygmwtp" path="res://Assets/Images/Trivia/Tabla de respuestas.png" id="9"]
+[ext_resource type="FontFile" path="res://Assets/Fonts/Trivia.tres" id="10"]
+[ext_resource type="Texture2D" uid="uid://ov532rqixah2" path="res://Assets/Images/Trivia/Respuesta acertada.png" id="11"]
+[ext_resource type="PackedScene" uid="uid://bx3dd0gnp366n" path="res://Scenes/Pause/PauseMenu.tscn" id="12"]
+[ext_resource type="PackedScene" uid="uid://7jnwei6j4avo" path="res://Scenes/Utility/Contador.tscn" id="13"]
+[ext_resource type="AudioStream" uid="uid://bhrod7v16cb5n" path="res://Assets/Sounds/trivia.ogg" id="14"]
+[ext_resource type="Texture2D" uid="uid://5k2y26gyur2x" path="res://Assets/Images/Trivia/Encabezado contaminación.png" id="15"]
+[ext_resource type="Texture2D" uid="uid://cvuy77t4iogom" path="res://Assets/Images/Trivia/Encabezado flora y fauna.png" id="16"]
+[ext_resource type="Texture2D" uid="uid://cbr555qj82voc" path="res://Assets/Images/Trivia/Respuesta fallada.png" id="17"]
+[ext_resource type="Texture2D" uid="uid://cglbu2j8astnv" path="res://Assets/Images/btn_arrow.png" id="18"]
+[ext_resource type="Texture2D" uid="uid://3w33lbhms5ca" path="res://Assets/Images/Trivia/Encabezado Reciclaje.png" id="19"]
+[ext_resource type="AudioStream" uid="uid://iapirq7tctl" path="res://Assets/Sounds/SFX/button_press.wav" id="20"]
+[ext_resource type="PackedScene" uid="uid://vdvws6110l8g" path="res://Scenes/Utility/GameOver/GameOver.tscn" id="21"]
+[ext_resource type="PackedScene" uid="uid://dhpnyngl8a034" path="res://Scenes/Utility/Win/Win.tscn" id="22"]
+[ext_resource type="FontFile" uid="uid://byvaqdf2liiep" path="res://Assets/Fonts/btnFont.tres" id="23"]
+[ext_resource type="Texture2D" uid="uid://dfykkbqn7eqei" path="res://Assets/Images/Fondo de contador de puntos.png" id="24"]
 
-[sub_resource type="Animation" id=5]
+[sub_resource type="Animation" id="5"]
 resource_name = "Correct"
 length = 2.5
 tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
 tracks/0/path = NodePath("../Trivia/CorrectTitle:position:x")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
 tracks/0/keys = {
-"points": PoolRealArray( -800, -0.25, 0, 0.25, 0, 1600, -0.25, 0, 0.25, 0, 1600, -0.25, 0, 0.25, 0, 4000, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 0, 1, 1.5, 2.5 )
+"handle_modes": PackedInt32Array(0, 0, 0, 0),
+"points": PackedFloat32Array(-800, -0.25, 0, 0.25, 0, 420, -0.25, 0, 0.25, 0, 420, -0.25, 0, 0.25, 0, 1700, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 1, 1.5, 2.5)
 }
 tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
 tracks/1/path = NodePath("../Trivia/CorrectTitle:position:y")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
-tracks/1/imported = false
-tracks/1/enabled = true
 tracks/1/keys = {
-"points": PoolRealArray( 900, -0.25, 0, 0.25, 0, 900, -0.25, 0, 0.25, 0, 900, -0.25, 0, 0.25, 0, 900, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 0, 1, 1.5, 2.5 )
+"handle_modes": PackedInt32Array(0, 0, 0, 0),
+"points": PackedFloat32Array(900, -0.25, 0, 0.25, 0, 900, -0.25, 0, 0.25, 0, 900, -0.25, 0, 0.25, 0, 900, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 1, 1.5, 2.5)
 }
 tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
 tracks/2/path = NodePath("../Trivia/CorrectTitle:visible")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
-tracks/2/imported = false
-tracks/2/enabled = true
 tracks/2/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [ true ]
+"values": [true]
 }
 
-[sub_resource type="Animation" id=9]
+[sub_resource type="Animation" id="9"]
 resource_name = "Incorrect"
 length = 2.5
 tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
 tracks/0/path = NodePath("../Trivia/IncorrectTitle:position:x")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
 tracks/0/keys = {
-"points": PoolRealArray( -800, -0.25, 0, 0.25, 0, 1600, -0.25, 0, 0.25, 0, 1600, -0.25, 0, 0.25, 0, 4000, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 0, 1, 1.5, 2.5 )
+"handle_modes": PackedInt32Array(0, 0, 0, 0),
+"points": PackedFloat32Array(-800, -0.25, 0, 0.25, 0, 370, -0.25, 0, 0.25, 0, 370, -0.25, 0, 0.25, 0, 4000, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 1, 1.5, 2.5)
 }
 tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
 tracks/1/path = NodePath("../Trivia/IncorrectTitle:position:y")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
-tracks/1/imported = false
-tracks/1/enabled = true
 tracks/1/keys = {
-"points": PoolRealArray( 900, -0.25, 0, 0.25, 0, 900, -0.25, 0, 0.25, 0, 900, -0.25, 0, 0.25, 0, 900, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 0, 1, 1.5, 2.5 )
+"handle_modes": PackedInt32Array(0, 0, 0, 0),
+"points": PackedFloat32Array(900, -0.25, 0, 0.25, 0, 900, -0.25, 0, 0.25, 0, 900, -0.25, 0, 0.25, 0, 900, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 1, 1.5, 2.5)
 }
 tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
 tracks/2/path = NodePath("../Trivia/IncorrectTitle:visible")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
-tracks/2/imported = false
-tracks/2/enabled = true
 tracks/2/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [ true ]
+"values": [true]
 }
 
-[sub_resource type="Animation" id=1]
+[sub_resource type="Animation" id="1"]
 length = 0.001
 tracks/0/type = "bezier"
-tracks/0/path = NodePath("Sprite:rotation_degrees")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:rotation_degrees")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
 tracks/0/keys = {
-"points": PoolRealArray( 0, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 0 )
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
 }
 tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
 tracks/1/path = NodePath(".:modulate:r")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
-tracks/1/imported = false
-tracks/1/enabled = true
 tracks/1/keys = {
-"points": PoolRealArray( 1, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 0 )
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
 }
 tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
 tracks/2/path = NodePath(".:modulate:g")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
-tracks/2/imported = false
-tracks/2/enabled = true
 tracks/2/keys = {
-"points": PoolRealArray( 1, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 0 )
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
 }
 tracks/3/type = "bezier"
+tracks/3/imported = false
+tracks/3/enabled = true
 tracks/3/path = NodePath(".:modulate:b")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
-tracks/3/imported = false
-tracks/3/enabled = true
 tracks/3/keys = {
-"points": PoolRealArray( 1, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 0 )
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
 }
 tracks/4/type = "bezier"
+tracks/4/imported = false
+tracks/4/enabled = true
 tracks/4/path = NodePath(".:modulate:a")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
-tracks/4/imported = false
-tracks/4/enabled = true
 tracks/4/keys = {
-"points": PoolRealArray( 1, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 0 )
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
 }
 tracks/5/type = "bezier"
+tracks/5/imported = false
+tracks/5/enabled = true
 tracks/5/path = NodePath("../Trivia:modulate:r")
 tracks/5/interp = 1
 tracks/5/loop_wrap = true
-tracks/5/imported = false
-tracks/5/enabled = true
 tracks/5/keys = {
-"points": PoolRealArray( 1, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 0 )
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
 }
 tracks/6/type = "bezier"
+tracks/6/imported = false
+tracks/6/enabled = true
 tracks/6/path = NodePath("../Trivia:modulate:g")
 tracks/6/interp = 1
 tracks/6/loop_wrap = true
-tracks/6/imported = false
-tracks/6/enabled = true
 tracks/6/keys = {
-"points": PoolRealArray( 1, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 0 )
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
 }
 tracks/7/type = "bezier"
+tracks/7/imported = false
+tracks/7/enabled = true
 tracks/7/path = NodePath("../Trivia:modulate:b")
 tracks/7/interp = 1
 tracks/7/loop_wrap = true
-tracks/7/imported = false
-tracks/7/enabled = true
 tracks/7/keys = {
-"points": PoolRealArray( 1, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 0 )
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
 }
 tracks/8/type = "bezier"
+tracks/8/imported = false
+tracks/8/enabled = true
 tracks/8/path = NodePath("../Trivia:modulate:a")
 tracks/8/interp = 1
 tracks/8/loop_wrap = true
-tracks/8/imported = false
-tracks/8/enabled = true
 tracks/8/keys = {
-"points": PoolRealArray( 0, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 0 )
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
 }
 tracks/9/type = "bezier"
+tracks/9/imported = false
+tracks/9/enabled = true
 tracks/9/path = NodePath("../Trivia/CorrectTitle:position:x")
 tracks/9/interp = 1
 tracks/9/loop_wrap = true
-tracks/9/imported = false
-tracks/9/enabled = true
 tracks/9/keys = {
-"points": PoolRealArray( -800, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 0 )
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(-800, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
 }
 tracks/10/type = "bezier"
+tracks/10/imported = false
+tracks/10/enabled = true
 tracks/10/path = NodePath("../Trivia/CorrectTitle:position:y")
 tracks/10/interp = 1
 tracks/10/loop_wrap = true
-tracks/10/imported = false
-tracks/10/enabled = true
 tracks/10/keys = {
-"points": PoolRealArray( 900, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 0 )
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(900, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
 }
 tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
 tracks/11/path = NodePath("../Trivia/CorrectTitle:visible")
 tracks/11/interp = 1
 tracks/11/loop_wrap = true
-tracks/11/imported = false
-tracks/11/enabled = true
 tracks/11/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [ false ]
+"values": [false]
 }
 tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
 tracks/12/path = NodePath("../Trivia:visible")
 tracks/12/interp = 1
 tracks/12/loop_wrap = true
-tracks/12/imported = false
-tracks/12/enabled = true
 tracks/12/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [ false ]
+"values": [false]
 }
 tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
 tracks/13/path = NodePath("../Trivia/IncorrectTitle:position")
 tracks/13/interp = 1
 tracks/13/loop_wrap = true
-tracks/13/imported = false
-tracks/13/enabled = true
 tracks/13/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [ Vector2( -800, 900 ) ]
+"values": [Vector2(-800, 900)]
 }
 tracks/14/type = "bezier"
+tracks/14/imported = false
+tracks/14/enabled = true
 tracks/14/path = NodePath("../Trivia/IncorrectTitle:position:x")
 tracks/14/interp = 1
 tracks/14/loop_wrap = true
-tracks/14/imported = false
-tracks/14/enabled = true
 tracks/14/keys = {
-"points": PoolRealArray( -800, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 0 )
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(-800, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
 }
 tracks/15/type = "bezier"
+tracks/15/imported = false
+tracks/15/enabled = true
 tracks/15/path = NodePath("../Trivia/IncorrectTitle:position:y")
 tracks/15/interp = 1
 tracks/15/loop_wrap = true
-tracks/15/imported = false
-tracks/15/enabled = true
 tracks/15/keys = {
-"points": PoolRealArray( 900, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 0 )
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(900, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
 }
 tracks/16/type = "value"
+tracks/16/imported = false
+tracks/16/enabled = true
 tracks/16/path = NodePath("../Trivia/Correct/CorrectOption1:visible")
 tracks/16/interp = 1
 tracks/16/loop_wrap = true
-tracks/16/imported = false
-tracks/16/enabled = true
 tracks/16/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [ false ]
+"values": [false]
 }
 tracks/17/type = "value"
+tracks/17/imported = false
+tracks/17/enabled = true
 tracks/17/path = NodePath("../Trivia/Correct/CorrectOption2:visible")
 tracks/17/interp = 1
 tracks/17/loop_wrap = true
-tracks/17/imported = false
-tracks/17/enabled = true
 tracks/17/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [ false ]
+"values": [false]
 }
 tracks/18/type = "value"
+tracks/18/imported = false
+tracks/18/enabled = true
 tracks/18/path = NodePath("../Trivia/Correct/CorrectOption3:visible")
 tracks/18/interp = 1
 tracks/18/loop_wrap = true
-tracks/18/imported = false
-tracks/18/enabled = true
 tracks/18/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [ false ]
+"values": [false]
 }
 tracks/19/type = "value"
+tracks/19/imported = false
+tracks/19/enabled = true
 tracks/19/path = NodePath("../Trivia/Incorrect/IncorrectOption1:visible")
 tracks/19/interp = 1
 tracks/19/loop_wrap = true
-tracks/19/imported = false
-tracks/19/enabled = true
 tracks/19/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [ false ]
+"values": [false]
 }
 tracks/20/type = "value"
+tracks/20/imported = false
+tracks/20/enabled = true
 tracks/20/path = NodePath("../Trivia/Incorrect/IncorrectOption2:visible")
 tracks/20/interp = 1
 tracks/20/loop_wrap = true
-tracks/20/imported = false
-tracks/20/enabled = true
 tracks/20/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [ false ]
+"values": [false]
 }
 tracks/21/type = "value"
+tracks/21/imported = false
+tracks/21/enabled = true
 tracks/21/path = NodePath("../Trivia/Incorrect/IncorrectOption3:visible")
 tracks/21/interp = 1
 tracks/21/loop_wrap = true
-tracks/21/imported = false
-tracks/21/enabled = true
 tracks/21/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [ false ]
+"values": [false]
 }
 tracks/22/type = "value"
+tracks/22/imported = false
+tracks/22/enabled = true
 tracks/22/path = NodePath("../Trivia/IncorrectTitle:visible")
 tracks/22/interp = 1
 tracks/22/loop_wrap = true
-tracks/22/imported = false
-tracks/22/enabled = true
 tracks/22/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [ true ]
+"values": [true]
 }
 tracks/23/type = "value"
+tracks/23/imported = false
+tracks/23/enabled = true
 tracks/23/path = NodePath(".:visible")
 tracks/23/interp = 1
 tracks/23/loop_wrap = true
-tracks/23/imported = false
-tracks/23/enabled = true
 tracks/23/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [ true ]
+"values": [true]
 }
 
-[sub_resource type="Animation" id=12]
+[sub_resource type="Animation" id="12"]
 resource_name = "RESET_ALL"
 length = 0.001
 tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
 tracks/0/path = NodePath("../Trivia:visible")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [ false ]
+"values": [false]
 }
 tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
 tracks/1/path = NodePath(".:visible")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
-tracks/1/imported = false
-tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [ true ]
+"values": [true]
 }
 
-[sub_resource type="Animation" id=10]
+[sub_resource type="Animation" id="10"]
 resource_name = "ResetOptions"
 tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
 tracks/0/path = NodePath("../Trivia/Correct/CorrectOption1:visible")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [ false ]
+"values": [false]
 }
 tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
 tracks/1/path = NodePath("../Trivia/Correct/CorrectOption2:visible")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
-tracks/1/imported = false
-tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [ false ]
+"values": [false]
 }
 tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
 tracks/2/path = NodePath("../Trivia/Correct/CorrectOption3:visible")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
-tracks/2/imported = false
-tracks/2/enabled = true
 tracks/2/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [ false ]
+"values": [false]
 }
 tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
 tracks/3/path = NodePath("../Trivia/Incorrect/IncorrectOption1:visible")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
-tracks/3/imported = false
-tracks/3/enabled = true
 tracks/3/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [ false ]
+"values": [false]
 }
 tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
 tracks/4/path = NodePath("../Trivia/Incorrect/IncorrectOption2:visible")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
-tracks/4/imported = false
-tracks/4/enabled = true
 tracks/4/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [ false ]
+"values": [false]
 }
 tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
 tracks/5/path = NodePath("../Trivia/Incorrect/IncorrectOption3:visible")
 tracks/5/interp = 1
 tracks/5/loop_wrap = true
-tracks/5/imported = false
-tracks/5/enabled = true
 tracks/5/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [ false ]
+"values": [false]
 }
 
-[sub_resource type="Animation" id=13]
+[sub_resource type="Animation" id="13"]
 resource_name = "RouletteContaminacion"
 length = 5.0
 tracks/0/type = "bezier"
-tracks/0/path = NodePath("Sprite:rotation_degrees")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:rotation_degrees")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
 tracks/0/keys = {
-"points": PoolRealArray( 0, -0.25, 0, 2.2, 1069.27, 2050, -2.5, -3.8717, 0.3, -7.41235 ),
-"times": PoolRealArray( 0, 5 )
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 2.2, 1069.27, 2050, -2.5, -3.8717, 0.3, -7.41235),
+"times": PackedFloat32Array(0, 5)
 }
 tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
 tracks/1/path = NodePath("../Trivia:visible")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
-tracks/1/imported = false
-tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0, 5 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array(0, 5),
+"transitions": PackedFloat32Array(1, 1),
 "update": 1,
-"values": [ false, true ]
+"values": [false, true]
 }
 
-[sub_resource type="Animation" id=6]
+[sub_resource type="Animation" id="6"]
 resource_name = "RouletteFloraFauna"
 length = 5.0
 tracks/0/type = "bezier"
-tracks/0/path = NodePath("Sprite:rotation_degrees")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:rotation_degrees")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
 tracks/0/keys = {
-"points": PoolRealArray( 0, -0.25, 0, 1.9, 1423.6, 2150, -1.1, -8.33057, 0.25, 0 ),
-"times": PoolRealArray( 0, 5 )
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 1.9, 1423.6, 2150, -1.1, -8.33057, 0.25, 0),
+"times": PackedFloat32Array(0, 5)
 }
 tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
 tracks/1/path = NodePath("../Trivia:visible")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
-tracks/1/imported = false
-tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0, 5 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array(0, 5),
+"transitions": PackedFloat32Array(1, 1),
 "update": 1,
-"values": [ false, true ]
+"values": [false, true]
 }
 
-[sub_resource type="Animation" id=2]
+[sub_resource type="Animation" id="2"]
 resource_name = "RouletteGeografia"
 length = 5.0
 tracks/0/type = "bezier"
-tracks/0/path = NodePath("Sprite:rotation_degrees")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:rotation_degrees")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
 tracks/0/keys = {
-"points": PoolRealArray( 0, -0.25, 0, 2.1, 1741.79, 2260, -0.8, 2.06445, 0.25, 0 ),
-"times": PoolRealArray( 0, 5 )
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 2.1, 1741.79, 2260, -0.8, 2.06445, 0.25, 0),
+"times": PackedFloat32Array(0, 5)
 }
 tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
 tracks/1/path = NodePath("../Trivia:visible")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
-tracks/1/imported = false
-tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0, 5 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array(0, 5),
+"transitions": PackedFloat32Array(1, 1),
 "update": 1,
-"values": [ false, true ]
+"values": [false, true]
 }
 
-[sub_resource type="Animation" id=7]
+[sub_resource type="Animation" id="7"]
 resource_name = "RouletteReciclaje"
 length = 5.0
 tracks/0/type = "bezier"
-tracks/0/path = NodePath("Sprite:rotation_degrees")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:rotation_degrees")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
 tracks/0/keys = {
-"points": PoolRealArray( 0, -0.25, 0, 0.6, 954.92, 2000, -1.8, -4.52417, 0.25, 0 ),
-"times": PoolRealArray( 0, 5 )
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.6, 954.92, 2000, -1.8, -4.52417, 0.25, 0),
+"times": PackedFloat32Array(0, 5)
 }
 tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
 tracks/1/path = NodePath("../Trivia:visible")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
-tracks/1/imported = false
-tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0, 5 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array(0, 5),
+"transitions": PackedFloat32Array(1, 1),
 "update": 1,
-"values": [ false, true ]
+"values": [false, true]
 }
 
-[sub_resource type="Animation" id=3]
+[sub_resource type="Animation" id="3"]
 resource_name = "Trivia"
 tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
 tracks/0/path = NodePath(".:modulate:r")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
 tracks/0/keys = {
-"points": PoolRealArray( 1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 0, 0.5 )
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.5)
 }
 tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
 tracks/1/path = NodePath(".:modulate:g")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
-tracks/1/imported = false
-tracks/1/enabled = true
 tracks/1/keys = {
-"points": PoolRealArray( 1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 0, 0.5 )
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.5)
 }
 tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
 tracks/2/path = NodePath(".:modulate:b")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
-tracks/2/imported = false
-tracks/2/enabled = true
 tracks/2/keys = {
-"points": PoolRealArray( 1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 0, 0.5 )
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.5)
 }
 tracks/3/type = "bezier"
+tracks/3/imported = false
+tracks/3/enabled = true
 tracks/3/path = NodePath(".:modulate:a")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
-tracks/3/imported = false
-tracks/3/enabled = true
 tracks/3/keys = {
-"points": PoolRealArray( 1, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 0, 0.5 )
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.5)
 }
 tracks/4/type = "bezier"
+tracks/4/imported = false
+tracks/4/enabled = true
 tracks/4/path = NodePath("../Trivia:modulate:r")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
-tracks/4/imported = false
-tracks/4/enabled = true
 tracks/4/keys = {
-"points": PoolRealArray( 1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 0, 0.5, 1 )
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.5, 1)
 }
 tracks/5/type = "bezier"
+tracks/5/imported = false
+tracks/5/enabled = true
 tracks/5/path = NodePath("../Trivia:modulate:g")
 tracks/5/interp = 1
 tracks/5/loop_wrap = true
-tracks/5/imported = false
-tracks/5/enabled = true
 tracks/5/keys = {
-"points": PoolRealArray( 1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 0, 0.5, 1 )
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.5, 1)
 }
 tracks/6/type = "bezier"
+tracks/6/imported = false
+tracks/6/enabled = true
 tracks/6/path = NodePath("../Trivia:modulate:b")
 tracks/6/interp = 1
 tracks/6/loop_wrap = true
-tracks/6/imported = false
-tracks/6/enabled = true
 tracks/6/keys = {
-"points": PoolRealArray( 1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 0, 0.5, 1 )
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.5, 1)
 }
 tracks/7/type = "bezier"
+tracks/7/imported = false
+tracks/7/enabled = true
 tracks/7/path = NodePath("../Trivia:modulate:a")
 tracks/7/interp = 1
 tracks/7/loop_wrap = true
-tracks/7/imported = false
-tracks/7/enabled = true
 tracks/7/keys = {
-"points": PoolRealArray( 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 0, 0.5, 1 )
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.5, 1)
 }
 
-[sub_resource type="DynamicFont" id=4]
-size = 250
-outline_size = 8
-outline_color = Color( 0.243137, 0.788235, 0.101961, 1 )
-font_data = ExtResource( 8 )
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_s8jes"]
+_data = {
+&"Correct": SubResource("5"),
+&"Incorrect": SubResource("9"),
+&"RESET": SubResource("1"),
+&"RESET_ALL": SubResource("12"),
+&"ResetOptions": SubResource("10"),
+&"RouletteContaminacion": SubResource("13"),
+&"RouletteFloraFauna": SubResource("6"),
+&"RouletteGeografia": SubResource("2"),
+&"RouletteReciclaje": SubResource("7"),
+&"Trivia": SubResource("3")
+}
 
-[sub_resource type="DynamicFont" id=8]
-size = 250
-outline_size = 8
-outline_color = Color( 0.788235, 0.301961, 0.101961, 1 )
-font_data = ExtResource( 8 )
+[sub_resource type="FontFile" id="4"]
+fallbacks = Array[Font]([ExtResource("8")])
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/75/0/ascent = 0.0
+cache/0/75/0/descent = 0.0
+cache/0/75/0/underline_position = 0.0
+cache/0/75/0/underline_thickness = 0.0
+cache/0/75/0/scale = 1.0
+cache/0/100/0/ascent = 0.0
+cache/0/100/0/descent = 0.0
+cache/0/100/0/underline_position = 0.0
+cache/0/100/0/underline_thickness = 0.0
+cache/0/100/0/scale = 1.0
+cache/0/150/0/ascent = 0.0
+cache/0/150/0/descent = 0.0
+cache/0/150/0/underline_position = 0.0
+cache/0/150/0/underline_thickness = 0.0
+cache/0/150/0/scale = 1.0
 
-[sub_resource type="DynamicFont" id=11]
-size = 150
-outline_color = Color( 0, 0, 0, 1 )
-font_data = ExtResource( 8 )
+[sub_resource type="FontFile" id="8"]
+fallbacks = Array[Font]([ExtResource("8")])
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/75/0/ascent = 0.0
+cache/0/75/0/descent = 0.0
+cache/0/75/0/underline_position = 0.0
+cache/0/75/0/underline_thickness = 0.0
+cache/0/75/0/scale = 1.0
+cache/0/150/0/ascent = 0.0
+cache/0/150/0/descent = 0.0
+cache/0/150/0/underline_position = 0.0
+cache/0/150/0/underline_thickness = 0.0
+cache/0/150/0/scale = 1.0
+
+[sub_resource type="FontFile" id="11"]
+fallbacks = Array[Font]([ExtResource("8")])
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/75/0/ascent = 0.0
+cache/0/75/0/descent = 0.0
+cache/0/75/0/underline_position = 0.0
+cache/0/75/0/underline_thickness = 0.0
+cache/0/75/0/scale = 1.0
+cache/0/45/0/ascent = 0.0
+cache/0/45/0/descent = 0.0
+cache/0/45/0/underline_position = 0.0
+cache/0/45/0/underline_thickness = 0.0
+cache/0/45/0/scale = 1.0
 
 [node name="Trivia" type="Node2D"]
-script = ExtResource( 4 )
+script = ExtResource("4")
 trivia_file = "res://Assets/JSON/Trivia/trivia.json"
 
-[node name="Contador" parent="." instance=ExtResource( 13 )]
+[node name="Contador" parent="." instance=ExtResource("13")]
 z_index = 1
 
-[node name="PauseMenu" parent="." instance=ExtResource( 12 )]
-position = Vector2( 3200, 1750 )
+[node name="PauseMenu" parent="." instance=ExtResource("12")]
+position = Vector2(1295, 680)
 
-[node name="BgImage" type="Sprite" parent="."]
-scale = Vector2( 1, 1.3 )
-texture = ExtResource( 1 )
+[node name="BgImage" type="Sprite2D" parent="."]
+scale = Vector2(1, 1.3)
+texture = ExtResource("1")
 centered = false
 
 [node name="Roulette" type="Node2D" parent="."]
 
-[node name="Sprite" type="Sprite" parent="Roulette"]
-position = Vector2( 1600, 900 )
-texture = ExtResource( 2 )
+[node name="Sprite2D" type="Sprite2D" parent="Roulette"]
+position = Vector2(683, 384)
+texture = ExtResource("2")
 
 [node name="BtnLoop" type="TextureButton" parent="Roulette"]
+anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = 1360.0
-margin_top = 650.0
-margin_right = 2512.0
-margin_bottom = 1917.0
-rect_scale = Vector2( 0.4, 0.4 )
-texture_normal = ExtResource( 3 )
+offset_left = 577.0
+offset_top = 271.0
+offset_right = 1068.0
+offset_bottom = 811.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.4, 0.4)
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("3")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Roulette"]
-anims/Correct = SubResource( 5 )
-anims/Incorrect = SubResource( 9 )
-anims/RESET = SubResource( 1 )
-anims/RESET_ALL = SubResource( 12 )
-anims/ResetOptions = SubResource( 10 )
-anims/RouletteContaminacion = SubResource( 13 )
-anims/RouletteFloraFauna = SubResource( 6 )
-anims/RouletteGeografia = SubResource( 2 )
-anims/RouletteReciclaje = SubResource( 7 )
-anims/Trivia = SubResource( 3 )
+libraries = {
+&"": SubResource("AnimationLibrary_s8jes")
+}
 
 [node name="Timer" type="Timer" parent="Roulette"]
 one_shot = true
 
 [node name="Trivia" type="Node2D" parent="."]
 visible = false
-modulate = Color( 1, 1, 1, 0 )
+modulate = Color(1, 1, 1, 0)
 
-[node name="TitleGeografia" type="Sprite" parent="Trivia"]
+[node name="TitleGeografia" type="Sprite2D" parent="Trivia"]
 visible = false
-position = Vector2( -13, -23 )
-scale = Vector2( 0.572, 0.6 )
-texture = ExtResource( 5 )
+position = Vector2(-13, -10)
+scale = Vector2(0.572, 0.6)
+texture = ExtResource("5")
 centered = false
 
-[node name="TitleFloraFauna" type="Sprite" parent="Trivia"]
+[node name="TitleFloraFauna" type="Sprite2D" parent="Trivia"]
 visible = false
-texture = ExtResource( 16 )
+texture = ExtResource("16")
 centered = false
 
-[node name="TitleContaminacion" type="Sprite" parent="Trivia"]
+[node name="TitleContaminacion" type="Sprite2D" parent="Trivia"]
 visible = false
-texture = ExtResource( 15 )
+texture = ExtResource("15")
 centered = false
 
-[node name="TitleReciclaje" type="Sprite" parent="Trivia"]
+[node name="TitleReciclaje" type="Sprite2D" parent="Trivia"]
 visible = false
-texture = ExtResource( 19 )
+texture = ExtResource("19")
 centered = false
 
-[node name="Illea" type="Sprite" parent="Trivia"]
-position = Vector2( 2800, 1150 )
-scale = Vector2( 3, 3 )
-texture = ExtResource( 6 )
+[node name="Illea" type="Sprite2D" parent="Trivia"]
+position = Vector2(1147, 519)
+texture = ExtResource("6")
 flip_h = true
 
-[node name="Question" type="Sprite" parent="Trivia"]
-position = Vector2( 1200, 500 )
-scale = Vector2( 0.4, 0.3 )
-texture = ExtResource( 7 )
+[node name="Question" type="Sprite2D" parent="Trivia"]
+position = Vector2(506, 197)
+scale = Vector2(0.4, 0.3)
+texture = ExtResource("7")
 
 [node name="Label" type="Label" parent="Trivia/Question"]
+anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -4796.0
-margin_top = -955.5
-margin_right = -892.0
-margin_bottom = -704.5
-custom_fonts/font = ExtResource( 10 )
-align = 1
-valign = 1
-autowrap = true
+offset_left = -2141.0
+offset_top = -467.0
+offset_right = -271.0
+offset_bottom = -216.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("10")
+theme_override_font_sizes/font_size = 75
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
 
-[node name="Answers" type="Sprite" parent="Trivia"]
-position = Vector2( 1200, 1100 )
-scale = Vector2( 0.5, 0.5 )
-texture = ExtResource( 9 )
+[node name="Answers" type="Sprite2D" parent="Trivia"]
+position = Vector2(513, 454)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("9")
 
 [node name="Btn1" type="TextureButton" parent="Trivia/Answers"]
+anchors_preset = 10
 anchor_right = 1.0
-margin_left = -1536.0
-margin_top = -604.0
-margin_right = -2068.0
-margin_bottom = -268.0
+offset_left = -630.0
+offset_top = -258.0
+offset_right = -904.0
+offset_bottom = -124.0
+grow_horizontal = 2
 
 [node name="Option" type="Label" parent="Trivia/Answers/Btn1"]
+layout_mode = 0
 anchor_right = 1.0
 anchor_bottom = 1.0
-custom_fonts/font = ExtResource( 10 )
-align = 1
-valign = 1
-autowrap = true
+theme_override_fonts/font = ExtResource("10")
+theme_override_font_sizes/font_size = 40
+text = "hola probando"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
 
 [node name="Btn3" type="TextureButton" parent="Trivia/Answers"]
+anchors_preset = 10
 anchor_right = 1.0
-margin_left = -1536.0
-margin_top = 266.0
-margin_right = -2068.0
-margin_bottom = 592.0
+offset_left = -636.0
+offset_top = 114.0
+offset_right = -904.0
+offset_bottom = 252.0
+grow_horizontal = 2
 
 [node name="Option" type="Label" parent="Trivia/Answers/Btn3"]
+layout_mode = 0
 anchor_right = 1.0
 anchor_bottom = 1.0
-custom_fonts/font = ExtResource( 10 )
-align = 1
-valign = 1
-autowrap = true
+theme_override_fonts/font = ExtResource("10")
+theme_override_font_sizes/font_size = 40
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
 
 [node name="Btn2" type="TextureButton" parent="Trivia/Answers"]
+anchors_preset = 10
 anchor_right = 1.0
-margin_left = -1536.0
-margin_top = -160.0
-margin_right = -2068.0
-margin_bottom = 160.0
+offset_left = -642.0
+offset_top = -70.0
+offset_right = -894.0
+offset_bottom = 62.0
+grow_horizontal = 2
 
 [node name="Option" type="Label" parent="Trivia/Answers/Btn2"]
+layout_mode = 1
+anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-custom_fonts/font = ExtResource( 10 )
-align = 1
-valign = 1
-autowrap = true
+offset_left = 6.0
+offset_top = 2.0
+offset_right = 4.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("10")
+theme_override_font_sizes/font_size = 40
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
 
-[node name="CorrectTitle" type="Sprite" parent="Trivia"]
+[node name="CorrectTitle" type="Sprite2D" parent="Trivia"]
 visible = false
-position = Vector2( -800, 900 )
 z_index = 1
+position = Vector2(-800, 900)
 
 [node name="Label" type="Label" parent="Trivia/CorrectTitle"]
+anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -555.5
-margin_top = -125.5
-margin_right = 555.5
-margin_bottom = 125.5
-custom_fonts/font = SubResource( 4 )
+offset_left = -217.5
+offset_top = -632.5
+offset_right = 893.5
+offset_bottom = -381.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_shadow_color = Color(0, 0.745098, 0, 1)
+theme_override_fonts/font = SubResource("4")
+theme_override_font_sizes/font_size = 150
 text = "¡cORRECTO!"
-align = 1
-valign = 1
+horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="IncorrectTitle" type="Sprite" parent="Trivia"]
-position = Vector2( -800, 900 )
+[node name="IncorrectTitle" type="Sprite2D" parent="Trivia"]
 z_index = 1
+position = Vector2(-800, 900)
 
 [node name="Label" type="Label" parent="Trivia/IncorrectTitle"]
+anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -555.5
-margin_top = -125.5
-margin_right = 555.5
-margin_bottom = 125.5
-custom_fonts/font = SubResource( 8 )
-text = "¡INCORRECTO!"
-align = 1
-valign = 1
+offset_left = -230.5
+offset_top = -632.5
+offset_right = 880.5
+offset_bottom = -381.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_shadow_color = Color(0.745098, 0, 0, 1)
+theme_override_fonts/font = SubResource("8")
+theme_override_font_sizes/font_size = 150
+text = "¡iNCORRECTO!"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="Correct" type="Node" parent="Trivia"]
 
-[node name="CorrectOption1" type="Sprite" parent="Trivia/Correct"]
+[node name="CorrectOption1" type="Sprite2D" parent="Trivia/Correct"]
 visible = false
-position = Vector2( 1200, 877 )
-scale = Vector2( 0.5, 0.5 )
-texture = ExtResource( 11 )
+position = Vector2(513, 359)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("11")
 
 [node name="Label" type="Label" parent="Trivia/Correct/CorrectOption1"]
+anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = -1800.0
-margin_top = -281.0
-margin_right = -1800.0
-margin_bottom = -281.0
-custom_fonts/font = ExtResource( 10 )
-align = 1
-valign = 1
-autowrap = true
+offset_left = -642.0
+offset_top = -64.0
+offset_right = -896.0
+offset_bottom = -169.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 1
+theme_override_fonts/font = ExtResource("10")
+theme_override_font_sizes/font_size = 40
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
 
-[node name="CorrectOption2" type="Sprite" parent="Trivia/Correct"]
+[node name="CorrectOption2" type="Sprite2D" parent="Trivia/Correct"]
 visible = false
-position = Vector2( 1200, 1094 )
-scale = Vector2( 0.5, 0.5 )
-texture = ExtResource( 11 )
+position = Vector2(513, 452)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("11")
 
 [node name="Label" type="Label" parent="Trivia/Correct/CorrectOption2"]
+anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = -1800.0
-margin_top = -281.0
-margin_right = -1800.0
-margin_bottom = -281.0
-custom_fonts/font = ExtResource( 10 )
-align = 1
-valign = 1
-autowrap = true
+offset_left = -650.0
+offset_top = -66.0
+offset_right = -892.0
+offset_bottom = -164.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("10")
+theme_override_font_sizes/font_size = 40
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
 
-[node name="CorrectOption3" type="Sprite" parent="Trivia/Correct"]
+[node name="CorrectOption3" type="Sprite2D" parent="Trivia/Correct"]
 visible = false
-position = Vector2( 1200, 1310 )
-scale = Vector2( 0.5, 0.5 )
-texture = ExtResource( 11 )
+position = Vector2(513, 544)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("11")
 
 [node name="Label" type="Label" parent="Trivia/Correct/CorrectOption3"]
+anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = -1800.0
-margin_top = -281.0
-margin_right = -1800.0
-margin_bottom = -281.0
-custom_fonts/font = ExtResource( 10 )
-align = 1
-valign = 1
-autowrap = true
+offset_left = -624.0
+offset_top = -70.0
+offset_right = -884.0
+offset_bottom = -168.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("10")
+theme_override_font_sizes/font_size = 40
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
 
 [node name="Incorrect" type="Node" parent="Trivia"]
 
-[node name="IncorrectOption1" type="Sprite" parent="Trivia/Incorrect"]
+[node name="IncorrectOption1" type="Sprite2D" parent="Trivia/Incorrect"]
 visible = false
-position = Vector2( 1200, 877 )
-scale = Vector2( 0.5, 0.5 )
-texture = ExtResource( 17 )
+position = Vector2(513, 359)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("17")
 
 [node name="Label" type="Label" parent="Trivia/Incorrect/IncorrectOption1"]
+anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = -1800.0
-margin_top = -281.0
-margin_right = -1800.0
-margin_bottom = -281.0
-custom_fonts/font = ExtResource( 10 )
-align = 1
-valign = 1
-autowrap = true
+offset_left = -646.0
+offset_top = -70.0
+offset_right = -890.0
+offset_bottom = -152.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("10")
+theme_override_font_sizes/font_size = 40
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
 
-[node name="IncorrectOption2" type="Sprite" parent="Trivia/Incorrect"]
+[node name="IncorrectOption2" type="Sprite2D" parent="Trivia/Incorrect"]
 visible = false
-position = Vector2( 1200, 1094 )
-scale = Vector2( 0.5, 0.5 )
-texture = ExtResource( 17 )
+position = Vector2(513, 453)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("17")
 
 [node name="Label" type="Label" parent="Trivia/Incorrect/IncorrectOption2"]
+anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = -1800.0
-margin_top = -281.0
-margin_right = -1800.0
-margin_bottom = -281.0
-custom_fonts/font = ExtResource( 10 )
-align = 1
-valign = 1
-autowrap = true
+offset_left = -646.0
+offset_top = -70.0
+offset_right = -888.0
+offset_bottom = -151.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("10")
+theme_override_font_sizes/font_size = 40
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
 
-[node name="IncorrectOption3" type="Sprite" parent="Trivia/Incorrect"]
+[node name="IncorrectOption3" type="Sprite2D" parent="Trivia/Incorrect"]
 visible = false
-position = Vector2( 1200, 1310 )
-scale = Vector2( 0.5, 0.5 )
-texture = ExtResource( 17 )
+position = Vector2(513, 542)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("17")
 
 [node name="Label" type="Label" parent="Trivia/Incorrect/IncorrectOption3"]
+anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = -1800.0
-margin_top = -281.0
-margin_right = -1800.0
-margin_bottom = -281.0
-custom_fonts/font = ExtResource( 10 )
-align = 1
-valign = 1
-autowrap = true
+offset_left = -646.0
+offset_top = -70.0
+offset_right = -890.0
+offset_bottom = -144.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("10")
+theme_override_font_sizes/font_size = 40
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
 
 [node name="DialogBG" type="ColorRect" parent="."]
 visible = false
+anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_right = 3200.0
-margin_bottom = 1800.0
-color = Color( 0, 0, 0, 0.705882 )
+offset_right = 1366.0
+offset_bottom = 768.0
+color = Color(0, 0, 0, 0.705882)
 
 [node name="Dialog" type="Node2D" parent="."]
 visible = false
 
-[node name="Fence" type="Sprite" parent="Dialog"]
-position = Vector2( 1600, 900 )
-scale = Vector2( 0.5, 0.7 )
-texture = ExtResource( 7 )
+[node name="Fence" type="Sprite2D" parent="Dialog"]
+position = Vector2(693, 363)
+scale = Vector2(0.5, 0.7)
+texture = ExtResource("7")
 
 [node name="Label" type="Label" parent="Dialog/Fence"]
+anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -4971.0
-margin_top = -1083.0
-margin_right = -713.0
-margin_bottom = -565.0
-custom_fonts/font = SubResource( 11 )
-align = 1
-valign = 1
-autowrap = true
+offset_left = -2144.0
+offset_top = -464.0
+offset_right = -264.0
+offset_bottom = -231.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = SubResource("11")
+theme_override_font_sizes/font_size = 45
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
 
 [node name="btnContinue" type="TextureButton" parent="Dialog"]
+anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = 2783.0
-margin_top = 1182.0
-margin_right = 3038.0
-margin_bottom = 1455.0
-rect_rotation = 180.0
-rect_scale = Vector2( 0.5, 0.5 )
-texture_normal = ExtResource( 18 )
+offset_left = 1195.0
+offset_top = 511.0
+offset_right = 1303.0
+offset_bottom = 627.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 3.14159
+scale = Vector2(0.5, 0.5)
+texture_normal = ExtResource("18")
 
 [node name="Sounds" type="Node" parent="."]
 
 [node name="BgSong" type="AudioStreamPlayer" parent="Sounds"]
-stream = ExtResource( 14 )
+stream = ExtResource("14")
 volume_db = -10.0
 autoplay = true
 
 [node name="SoundPress" type="AudioStreamPlayer" parent="Sounds"]
-stream = ExtResource( 20 )
+stream = ExtResource("20")
 
-[node name="GameOver" parent="." instance=ExtResource( 21 )]
+[node name="GameOver" parent="." instance=ExtResource("21")]
 visible = false
 
-[node name="Win" parent="." instance=ExtResource( 22 )]
+[node name="Win" parent="." instance=ExtResource("22")]
 visible = false
 
 [node name="Timer" type="Node2D" parent="."]
-position = Vector2( 1600, 1800 )
 z_index = 2
+position = Vector2(683, 761)
+scale = Vector2(0.5, 0.5)
 
-[node name="BGTimer" type="Sprite" parent="Timer"]
+[node name="BGTimer" type="Sprite2D" parent="Timer"]
 rotation = 1.5708
-scale = Vector2( 1, 3.5 )
-texture = ExtResource( 24 )
-offset = Vector2( 40, 0 )
+scale = Vector2(1, 3.5)
+texture = ExtResource("24")
+offset = Vector2(40, 0)
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Timer"]
+anchors_preset = 7
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-margin_left = -189.0
-margin_top = -172.0
-margin_right = 189.0
+offset_left = -189.0
+offset_top = -172.0
+offset_right = 189.0
 alignment = 1
 
 [node name="Timer" type="MarginContainer" parent="Timer/VBoxContainer"]
-margin_top = 5.0
-margin_right = 378.0
-margin_bottom = 84.0
+layout_mode = 2
 
 [node name="Label" type="Label" parent="Timer/VBoxContainer/Timer"]
-margin_right = 378.0
-margin_bottom = 79.0
-custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
-custom_constants/shadow_offset_x = -3
-custom_fonts/font = ExtResource( 23 )
+layout_mode = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = -3
+theme_override_fonts/font = ExtResource("23")
+theme_override_font_sizes/font_size = 75
 text = "00:00"
-align = 1
-valign = 1
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="Tries" type="MarginContainer" parent="Timer/VBoxContainer"]
-margin_top = 88.0
-margin_right = 378.0
-margin_bottom = 167.0
+layout_mode = 2
 
 [node name="Label" type="Label" parent="Timer/VBoxContainer/Tries"]
-margin_right = 378.0
-margin_bottom = 79.0
-custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
-custom_constants/shadow_offset_x = -3
-custom_fonts/font = ExtResource( 23 )
-text = "INTENTOS: 0"
-align = 1
-valign = 1
+layout_mode = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = -3
+theme_override_fonts/font = ExtResource("23")
+theme_override_font_sizes/font_size = 75
+text = "iNTENTOS: 0"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="Timer" type="Timer" parent="Timer"]
 wait_time = 180.0
@@ -1086,4 +1232,5 @@ wait_time = 180.0
 [connection signal="pressed" from="Trivia/Answers/Btn3" to="." method="_on_Btn3_pressed"]
 [connection signal="pressed" from="Trivia/Answers/Btn2" to="." method="_on_Btn2_pressed"]
 [connection signal="pressed" from="Dialog/btnContinue" to="." method="_on_btnContinue_pressed"]
+[connection signal="finished" from="Sounds/BgSong" to="." method="_on_bg_song_finished"]
 [connection signal="timeout" from="Timer/Timer" to="." method="_on_Timer_Timer_timeout"]

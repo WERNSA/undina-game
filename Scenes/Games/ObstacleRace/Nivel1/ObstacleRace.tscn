@@ -1,74 +1,73 @@
-[gd_scene load_steps=21 format=2]
+[gd_scene load_steps=23 format=3 uid="uid://3hb18o8n62d"]
 
-[ext_resource path="res://Scenes/Utility/Contador.tscn" type="PackedScene" id=1]
-[ext_resource path="res://Scenes/Utility/analog/Analog.tscn" type="PackedScene" id=2]
-[ext_resource path="res://Scenes/Pause/PauseMenu.tscn" type="PackedScene" id=3]
-[ext_resource path="res://Scenes/Utility/shader/ShaderWindWakerBeach.tscn" type="PackedScene" id=4]
-[ext_resource path="res://Scenes/Entity/Turtle/Turtle.tscn" type="PackedScene" id=5]
-[ext_resource path="res://Scenes/Entity/Illea/Nadando/IleaNadando.tscn" type="PackedScene" id=6]
-[ext_resource path="res://Scenes/Games/ObstacleRace/Nivel1/ObstacleRace.gd" type="Script" id=7]
-[ext_resource path="res://Scenes/Entity/Islands/Island1/Island.tscn" type="PackedScene" id=8]
-[ext_resource path="res://Scenes/Entity/Islands/Island2/Island.tscn" type="PackedScene" id=9]
-[ext_resource path="res://Scenes/Entity/Islands/Trash/Trash2/Trash.tscn" type="PackedScene" id=10]
-[ext_resource path="res://Scenes/Entity/Islands/Trash/Trash1/Trash.tscn" type="PackedScene" id=11]
-[ext_resource path="res://Scenes/Entity/Islands/Trash/Trash3/Trash.tscn" type="PackedScene" id=12]
-[ext_resource path="res://Scenes/Entity/Islands/Trash/Trash4/Trash.tscn" type="PackedScene" id=13]
-[ext_resource path="res://Assets/Sounds/obstacle_race.ogg" type="AudioStream" id=14]
-[ext_resource path="res://Assets/Sounds/SFX/get_item.wav" type="AudioStream" id=15]
-[ext_resource path="res://Scenes/Utility/GameOver/GameOver.tscn" type="PackedScene" id=16]
-[ext_resource path="res://Scenes/Utility/Win/Win.tscn" type="PackedScene" id=17]
-[ext_resource path="res://Assets/Fonts/btnFont.tres" type="DynamicFont" id=18]
-[ext_resource path="res://Assets/Images/Fondo de contador de puntos.png" type="Texture" id=19]
+[ext_resource type="PackedScene" uid="uid://7jnwei6j4avo" path="res://Scenes/Utility/Contador.tscn" id="1"]
+[ext_resource type="PackedScene" uid="uid://b17rf02r12bmp" path="res://Scenes/Utility/analog/Analog.tscn" id="2"]
+[ext_resource type="PackedScene" uid="uid://bx3dd0gnp366n" path="res://Scenes/Pause/PauseMenu.tscn" id="3"]
+[ext_resource type="PackedScene" uid="uid://dcqx8mh5yw26n" path="res://Scenes/Entity/Turtle/Turtle.tscn" id="5"]
+[ext_resource type="PackedScene" uid="uid://bmjjc5rg4u26d" path="res://Scenes/Entity/Illea/Nadando/IleaNadando.tscn" id="6"]
+[ext_resource type="Script" uid="uid://d0xynw7a8ntdp" path="res://Scenes/Games/ObstacleRace/Nivel1/ObstacleRace.gd" id="7"]
+[ext_resource type="PackedScene" uid="uid://c3b8p6hdar22c" path="res://Scenes/Entity/Islands/Island1/Island.tscn" id="8"]
+[ext_resource type="PackedScene" uid="uid://behcgy3reshms" path="res://Scenes/Entity/Islands/Island2/Island.tscn" id="9"]
+[ext_resource type="PackedScene" uid="uid://80eyv44c2m6c" path="res://Scenes/Entity/Islands/Trash/Trash2/Trash.tscn" id="10"]
+[ext_resource type="PackedScene" uid="uid://d2a8k8we0jmd4" path="res://Scenes/Entity/Islands/Trash/Trash1/Trash.tscn" id="11"]
+[ext_resource type="PackedScene" uid="uid://c1vbo0ga7irbc" path="res://Scenes/Entity/Islands/Trash/Trash3/Trash.tscn" id="12"]
+[ext_resource type="PackedScene" uid="uid://c8dfg0jcclk0q" path="res://Scenes/Entity/Islands/Trash/Trash4/Trash.tscn" id="13"]
+[ext_resource type="AudioStream" uid="uid://2hrk56lenlnu" path="res://Assets/Sounds/obstacle_race.ogg" id="14"]
+[ext_resource type="Texture2D" uid="uid://c4xbclgevnvsm" path="res://Assets/Images/ObstacleRace/Fondo-juego-tortuga.png" id="14_kr6ct"]
+[ext_resource type="AudioStream" uid="uid://cbwd4abylq4ap" path="res://Assets/Sounds/SFX/get_item.wav" id="15"]
+[ext_resource type="PackedScene" uid="uid://vdvws6110l8g" path="res://Scenes/Utility/GameOver/GameOver.tscn" id="16"]
+[ext_resource type="PackedScene" uid="uid://dhpnyngl8a034" path="res://Scenes/Utility/Win/Win.tscn" id="17"]
+[ext_resource type="FontFile" uid="uid://byvaqdf2liiep" path="res://Assets/Fonts/btnFont.tres" id="18"]
+[ext_resource type="Texture2D" uid="uid://dfykkbqn7eqei" path="res://Assets/Images/Fondo de contador de puntos.png" id="19"]
+[ext_resource type="Theme" uid="uid://y1ufudag5d7f" path="res://Assets/InputTheme/input_theme.tres" id="19_kr6ct"]
 
-[sub_resource type="Curve2D" id=1]
+[sub_resource type="Curve2D" id="1"]
 _data = {
-"points": PoolVector2Array( 0, 0, 0, 0, 3200, 2, 0, 0, 0, 0, 3200, 1798 )
+"points": PackedVector2Array(0, 0, 0, 0, 1366, 2, 0, 0, 0, 0, 1366, 766)
 }
+point_count = 2
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kr6ct"]
+size = Vector2(100, 1000)
 
 [node name="ObstacleRace" type="Node2D" groups=["level_obstacle_race"]]
-script = ExtResource( 7 )
-Island1 = ExtResource( 8 )
-Island2 = ExtResource( 9 )
-Trash1 = ExtResource( 11 )
-Trash2 = ExtResource( 10 )
-Trash3 = ExtResource( 12 )
-Trash4 = ExtResource( 13 )
+script = ExtResource("7")
+Island1 = ExtResource("8")
+Island2 = ExtResource("9")
+Trash1 = ExtResource("11")
+Trash2 = ExtResource("10")
+Trash3 = ExtResource("12")
+Trash4 = ExtResource("13")
 
-[node name="Contador" parent="." instance=ExtResource( 1 )]
+[node name="Contador" parent="." instance=ExtResource("1")]
 z_index = 2
 
-[node name="Analog" parent="." instance=ExtResource( 2 )]
-position = Vector2( 213, 1582 )
-scale = Vector2( 2, 2 )
+[node name="Analog" parent="." instance=ExtResource("2")]
 z_index = 100
-
-[node name="Background" type="Node" parent="."]
-
-[node name="ShaderWindWakerBeach" parent="Background" instance=ExtResource( 4 )]
-z_index = -1
+position = Vector2(120, 660)
+scale = Vector2(2, 2)
 
 [node name="Characters" type="Node" parent="."]
 
-[node name="Turtle" parent="Characters" groups=["obstacle_race_turtle"] instance=ExtResource( 5 )]
-position = Vector2( 2784, 832 )
+[node name="Turtle" parent="Characters" groups=["obstacle_race_turtle"] instance=ExtResource("5")]
+position = Vector2(1138.33, 383)
 rotation = 1.5708
 
-[node name="IleaNadando" parent="Characters" instance=ExtResource( 6 )]
-position = Vector2( 250, 900 )
+[node name="IleaNadando" parent="Characters" instance=ExtResource("6")]
+position = Vector2(125, 384)
 rotation = 1.5708
-
-[node name="Tween" type="Tween" parent="Characters"]
 
 [node name="Spawn" type="Node" parent="."]
 
 [node name="IslandPath" type="Path2D" parent="Spawn"]
-curve = SubResource( 1 )
+curve = SubResource("1")
 
 [node name="IslandSpawn" type="PathFollow2D" parent="Spawn/IslandPath"]
-position = Vector2( 3200, 2 )
-rotation = 1.57073
+position = Vector2(1366, 2)
+rotation = 1.5708
 
 [node name="IslandTimer" type="Timer" parent="Spawn"]
+wait_time = 2.0
 
 [node name="IslandSpeedTimer" type="Timer" parent="Spawn"]
 wait_time = 5.0
@@ -76,69 +75,86 @@ wait_time = 5.0
 [node name="Sounds" type="Node" parent="."]
 
 [node name="BGSong" type="AudioStreamPlayer" parent="Sounds"]
-stream = ExtResource( 14 )
+stream = ExtResource("14")
 volume_db = -10.0
 autoplay = true
-bus = "Music"
+bus = &"Music"
 
 [node name="GetSound" type="AudioStreamPlayer" parent="Sounds"]
-stream = ExtResource( 15 )
-bus = "SFX"
+stream = ExtResource("15")
+bus = &"SFX"
+
+[node name="Background" type="Node2D" parent="."]
+
+[node name="BG" type="Sprite2D" parent="Background"]
+position = Vector2(1366, 0)
+rotation = 1.5708
+texture = ExtResource("14_kr6ct")
+centered = false
 
 [node name="Pause" type="Node2D" parent="."]
 z_index = 100
 
-[node name="PauseMenu" parent="Pause" instance=ExtResource( 3 )]
-modulate = Color( 1, 1, 1, 0.588235 )
-position = Vector2( 3200, 1750 )
+[node name="PauseMenu" parent="Pause" instance=ExtResource("3")]
+modulate = Color(1, 1, 1, 0.588235)
 z_index = 100
+position = Vector2(1295, 680)
 
-[node name="GameOver" parent="." instance=ExtResource( 16 )]
+[node name="GameOver" parent="." instance=ExtResource("16")]
 visible = false
 
-[node name="Win" parent="." instance=ExtResource( 17 )]
+[node name="Win" parent="." instance=ExtResource("17")]
 visible = false
 
 [node name="Timer" type="Node2D" parent="."]
-position = Vector2( 1600, 0 )
 z_index = 2
+position = Vector2(683, 0)
 
-[node name="BGTimer" type="Sprite" parent="Timer"]
+[node name="BGTimer" type="Sprite2D" parent="Timer"]
+position = Vector2(2.5, -27)
 rotation = -1.5708
-scale = Vector2( 1, 2 )
-texture = ExtResource( 19 )
-offset = Vector2( 125, -2 )
+scale = Vector2(1, 1.622)
+texture = ExtResource("19")
+offset = Vector2(125, -2)
 
 [node name="Timer" type="Timer" parent="Timer"]
 wait_time = 240.0
 autostart = true
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Timer"]
+anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-margin_left = -189.0
-margin_right = 189.0
-margin_bottom = 162.0
+offset_left = -189.0
+offset_right = 189.0
+offset_bottom = 162.0
 
 [node name="Timer" type="MarginContainer" parent="Timer/VBoxContainer"]
-margin_right = 378.0
-margin_bottom = 79.0
+layout_mode = 2
 
 [node name="Label" type="Label" parent="Timer/VBoxContainer/Timer"]
-margin_right = 378.0
-margin_bottom = 79.0
-custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
-custom_constants/shadow_offset_x = -3
-custom_fonts/font = ExtResource( 18 )
+layout_mode = 2
+theme = ExtResource("19_kr6ct")
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = -3
+theme_override_fonts/font = ExtResource("18")
 text = "00:00"
-align = 1
-valign = 1
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="StepTimer" type="Timer" parent="Timer"]
 wait_time = 30.0
 autostart = true
 
+[node name="DeleteArea" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DeleteArea"]
+position = Vector2(-600, 383)
+shape = SubResource("RectangleShape2D_kr6ct")
+
 [connection signal="timeout" from="Spawn/IslandTimer" to="." method="_on_IslandTimer_timeout"]
 [connection signal="timeout" from="Spawn/IslandSpeedTimer" to="." method="_on_IslandSpeedTimer_timeout"]
+[connection signal="finished" from="Sounds/BGSong" to="." method="_on_bg_song_finished"]
 [connection signal="timeout" from="Timer/Timer" to="." method="_on_Timer_timeout"]
 [connection signal="timeout" from="Timer/StepTimer" to="." method="_on_StepTimer_timeout"]
+[connection signal="area_entered" from="DeleteArea" to="." method="_on_delete_area_area_entered"]

@@ -4,10 +4,15 @@ extends Node
 # Declare member variables here. Examples:
 var player_name
 var player_points
-onready var rng : RandomNumberGenerator = RandomNumberGenerator.new()
+var mini_games = []
+var active_story
+var story_checkpoint
+@onready var rng : RandomNumberGenerator = RandomNumberGenerator.new()
 const const_enemy_speed : int = 400
-onready var min_enemy_speed : int = 400
-onready var max_enemy_speed : int = 600
+@onready var min_enemy_speed : int = 400
+@onready var max_enemy_speed : int = 600
+@onready var _mgames = ['cocosta','coralimpio','pescando','carrera_obstaculos','trivia']
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass # Replace with function body.
@@ -17,37 +22,86 @@ func _ready():
 #func _process(delta):
 #	pass
 
+func story_game(game):
+	active_story = game
+
+func clean_story_game():
+	active_story = null
+	
+func array_to_string(arr: Array) -> String:
+	var s = ""
+	var c = 1
+	if len(arr) == 1:
+		s += String(arr[0])
+	for i in arr:
+		if c == len(arr):
+			s += String(i)
+		else:
+			s += String(i) + ","
+			c += 1
+	return s
+
 func read_data(): 
-	var file = File.new()
 	var dir = "user://data.txt"
-	if not file.file_exists(dir):
-		return null 
-	file.open(dir, File.READ)
+	if not FileAccess.file_exists(dir):
+		return null
+	
+	var file = FileAccess.open(dir, FileAccess.READ)
 	var data = file.get_as_text() 
 	file.close()
 	return data
 
 func write_data(text):
-	var file = File.new()
 	var dir = "user://data.txt"
-	file.open(dir, File.WRITE)
+	var file = FileAccess.open(dir, FileAccess.WRITE)
 	file.store_string(text)
 	file.close()
 
 func read_points(): 
-	var file = File.new()
 	var dir = "user://points.txt"
-	if not file.file_exists(dir):
+	if not FileAccess.file_exists(dir):
 		return 0 
-	file.open(dir, File.READ)
+	var file = FileAccess.open(dir, FileAccess.READ)
 	var data = file.get_as_text() 
 	file.close()
 	return int(data)
 
 func write_points(text):
-	var file = File.new()
 	var dir = "user://points.txt"
-	file.open(dir, File.WRITE)
+	var file = FileAccess.open(dir, FileAccess.WRITE)
+	file.store_string(str(text))
+	file.close()
+	
+func read_minigames(): 
+	var dir = "user://minigames.txt"
+	if not FileAccess.file_exists(dir):
+		return null
+	var file = FileAccess.open(dir, FileAccess.READ)
+	var data = file.get_as_text() 
+	file.close()
+	return data
+
+func write_minigames(text):
+	var dir = "user://minigames.txt"
+	if mini_games:
+		mini_games.push_back(text)
+		text = array_to_string(mini_games)
+	var file = FileAccess.open(dir, FileAccess.WRITE)
+	file.store_string(str(text))
+	file.close()
+
+func read_story_checkpoint(): 
+	var dir = "user://checkpoint.txt"
+	if not FileAccess.file_exists(dir):
+		return 0 
+	var file = FileAccess.open(dir, FileAccess.READ)
+	var data = file.get_as_text() 
+	file.close()
+	return data
+
+func write_story_checkpoint(text):
+	var dir = "user://checkpoint.txt"
+	var file = FileAccess.open(dir, FileAccess.WRITE)
 	file.store_string(str(text))
 	file.close()
 

@@ -1,0 +1,13 @@
+andres: Al día siguiente muy temprano por la mañana, hablamos con mi papá, luego de plantearle la idea que tenía Ilea, decidió ayudarnos y nos aventuramos en una hermosa travesía por los demás cayos de la región.
+andres: Sin más demoras los tres partimos al cayo más cerca y más pequeño de los tres grandes cayos\: Cayo IONI
+[background arg="res://Assets/Images/Story/Scene11/Fondo2.jpg" fade="1.0"]
+andres: Ilea muy curiosa quería saber cuánto tiempo nos íbamos a tardar y que cosas conocía el capitán sobre este cayo así que se acercó a mi papá...
+illea: Don capitán, ¿Cuánto tiempo nos tardaremos?, dígame, ¿Qué sabe de la otra isla?
+george: Ilea, ya sabes, Llámame capitán o Don George, según lo que estimo llegaremos en unos diez minutos, el Cayo Ioni es el más pequeño de los tres grandes cayos, tiene una pequeña comunidad de gente viviendo en el...
+george: aprovechando que se encuentran en suelo fértil, sé que se llama Ioni en honor a la fundadora, quién era una mujer muy parecida a ti...
+Amaba la naturaleza y el mar con todo su ser.
+illea: ¡Capitán, espere un momento, deténgase por favor! Antes de llegar a tierra firme quiero aprovechar a pescar la basura que se encuentra alrededor nuestro.
+george: ¡Está bien Ilea, hagamoslo!
+do Global.write_story_checkpoint("Scene11")
+do Global.story_game("res://Scenes/Story/Scene12/Scene12.tscn")
+[signal arg="finished"]

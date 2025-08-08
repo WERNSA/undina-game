@@ -1,11 +1,11 @@
-extends KinematicBody2D
+extends CharacterBody2D
 
 const SPEED = 300
 # EL ONREADY ES COMO DECLARARLA EN LA FUNCION READY
-onready var motion = Vector2.ZERO # ESTA PROP DEL VECTOR ES LO MISMO QUE (0,0)
-onready var can_move : bool = true
-onready var screensize = get_viewport_rect().size # tamaño de la ventana
-onready var is_punch : bool = false
+@onready var motion = Vector2.ZERO # ESTA PROP DEL VECTOR ES LO MISMO QUE (0,0)
+@onready var can_move : bool = true
+@onready var screensize = get_viewport_rect().size # tamaño de la ventana
+@onready var is_punch : bool = false
 
 
 func _physics_process(delta):

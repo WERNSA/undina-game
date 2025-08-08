@@ -1,0 +1,9 @@
+andres: Al llegar a su casa su mamá y su papá se dieron cuenta que había llegado más temprano de lo que acostumbraba y la notaron preocupada...
+andres: A lo que su mamá preguntó qué era aquello que la traía tan agobiada.
+illea (Ilea asustada): Estaba como siempre jugando cerca de las piedras, haciendo castillos de arena y jugando con las conchitas pero luego me aburrí, me senté y comencé a observar que la playa que se encontraba llena de basura, incluso vi peces atorados con ella.
+papa: Hum, ahora que lo dices no lo había notado tampoco, es preocupante como pinta esa escena.
+mama: He pasado tanto por la playa y he visto mucha gente tirando basura ahí, tienes razón cariño.
+[signal arg="change_ilea"]
+illea: Mamá, Papá, ¡tenemos que hacer algo!
+andres: Su mamá y su papá le dieron ideas por donde comenzar, le aconsejaron que se informara y salió de su casa corriendo como un torbellino directo a la biblioteca del pueblo.
+[signal arg="finished"]

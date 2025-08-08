@@ -1,0 +1,17 @@
+andres: Una vez que Ilea recolectó toda la información, pensó en buscar a sus amigos, para concientizarlos y emprender poco a poco la tarea de limpiar la basura de la playa.
+andresBoy: Mientras ella se preparaba para dejar la biblioteca y buscarnos me la volví a encontrar.
+join andresBoy (Default) left
+andresBoy: ¡Hey Ilea!
+[signal arg="hide_ilea"]
+join illea (Default) right
+illea: ¡Hola Andrés!, ven que necesito tu ayuda, vamos a la playa que el océano nos necesita.
+andresBoy: ¿Qué estás haciendo? ¿Qué nos necesita quién?
+illea (Ilea asustada): El océano Andrés, nos necesita y necesitamos comenzar a ayudar, y limpiar la basura de las costas puede ser un buen inicio, ¿Has visto cuán sucia se encuentra la playa?
+andresBoy: Pues yo la vi normal, como todos los días.
+andres: Que ignorante fuí en ese entonces Ilea...
+illea (Ilea asustada): ¿Cómo puedes decir que es normal ver peces atrancados, muertos en la orilla? ¡Mira a tu alrededor!, la gente a diario usa la costa como si fuera un basurero.
+andresBoy (AndresSad): Vaya Ilea, tienes mucha razón, tus palabras me han abierto los ojos.
+illea (Default): ¡Vamos entonces a buscar a los demás!
+do Global.write_story_checkpoint("Scene6")
+do Global.story_game("res://Scenes/Story/Scene7/Scene7.tscn")
+[signal arg="finished"]

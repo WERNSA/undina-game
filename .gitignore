@@ -1,12 +1,41 @@
 # Godot-specific ignores
 .import/
+*.import
 export.cfg
 export_presets.cfg
-*.import
 
-# Imported translations (automatically generated from CSV files)
+# Godot editor/cache data (local-only)
+.godot/
+.godot/editor/
+.godot/shader_cache/
+
+# Built/temporary files
 *.translation
+*.tmp
+*.log
 
-# Mono-specific ignores
+# Mono-specific (if using C#)
 .mono/
-data_*/
+data_*/%
+mono_crash.*
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# Linux
+*~
+
+# VS Code (optional, if using it)
+.vscode/
+
+# JetBrains IDEs (optional)
+.idea/
+
+# User-generated config files (optional - if you store local player settings)
+user_config.cfg
+
+android/*

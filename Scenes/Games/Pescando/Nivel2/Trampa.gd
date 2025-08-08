@@ -1,6 +1,6 @@
 extends RigidBody2D
 const GRAVITY =  16
-onready var motion = Vector2.ZERO
+@onready var motion = Vector2.ZERO
 const FLOOR = Vector2(0, -1)
 
 #func _process(_delta):

@@ -1,195 +1,226 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=14 format=3 uid="uid://dfqpjipvo2q1a"]
 
-[ext_resource path="res://Assets/Fonts/btnFont.tres" type="DynamicFont" id=1]
-[ext_resource path="res://Assets/Images/bg_underwater.png" type="Texture" id=2]
-[ext_resource path="res://Scenes/Options/Options.tscn" type="PackedScene" id=3]
-[ext_resource path="res://Assets/Images/btn_yellow.png" type="Texture" id=4]
-[ext_resource path="res://Assets/Images/btn_yellow_disabled.png" type="Texture" id=5]
-[ext_resource path="res://Assets/Fonts/Marujo.ttf" type="DynamicFontData" id=6]
-[ext_resource path="res://Scenes/MenuPlay/PESCAR/Pescar.gd" type="Script" id=7]
-[ext_resource path="res://Assets/Images/btn_arrow.png" type="Texture" id=8]
-[ext_resource path="res://Assets/Sounds/menu_play.ogg" type="AudioStream" id=9]
+[ext_resource type="FontFile" uid="uid://byvaqdf2liiep" path="res://Assets/Fonts/btnFont.tres" id="1"]
+[ext_resource type="Texture2D" uid="uid://6uqar0e2ho4m" path="res://Assets/Images/bg_underwater.png" id="2"]
+[ext_resource type="PackedScene" uid="uid://cujr43bnq6o6h" path="res://Scenes/Options/Options.tscn" id="3"]
+[ext_resource type="Texture2D" uid="uid://d26b12ag1yaxq" path="res://Assets/Images/btn_yellow.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://cpkj0jf8wdxo" path="res://Assets/Images/btn_yellow_disabled.png" id="5"]
+[ext_resource type="FontFile" uid="uid://dwuhhld1o3c7v" path="res://Assets/Fonts/Marujo.ttf" id="6"]
+[ext_resource type="Theme" uid="uid://y1ufudag5d7f" path="res://Assets/InputTheme/input_theme.tres" id="6_m4quj"]
+[ext_resource type="Script" uid="uid://ciu8pv80xne2x" path="res://Scenes/MenuPlay/PESCAR/Pescar.gd" id="7"]
+[ext_resource type="Texture2D" uid="uid://cglbu2j8astnv" path="res://Assets/Images/btn_arrow.png" id="8"]
+[ext_resource type="AudioStream" uid="uid://b1eyqmydgy3f" path="res://Assets/Sounds/menu_play.ogg" id="9"]
 
-[sub_resource type="DynamicFont" id=1]
-size = 100
-outline_color = Color( 0, 0, 0, 1 )
-font_data = ExtResource( 6 )
+[sub_resource type="FontFile" id="1"]
+fallbacks = Array[Font]([ExtResource("6")])
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/75/0/ascent = 0.0
+cache/0/75/0/descent = 0.0
+cache/0/75/0/underline_position = 0.0
+cache/0/75/0/underline_thickness = 0.0
+cache/0/75/0/scale = 1.0
+cache/0/100/0/ascent = 0.0
+cache/0/100/0/descent = 0.0
+cache/0/100/0/underline_position = 0.0
+cache/0/100/0/underline_thickness = 0.0
+cache/0/100/0/scale = 1.0
 
-[sub_resource type="DynamicFont" id=5]
-size = 150
-outline_color = Color( 0, 0, 0, 1 )
-font_data = ExtResource( 6 )
+[sub_resource type="FontFile" id="5"]
+fallbacks = Array[Font]([ExtResource("6")])
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/150/0/ascent = 0.0
+cache/0/150/0/descent = 0.0
+cache/0/150/0/underline_position = 0.0
+cache/0/150/0/underline_thickness = 0.0
+cache/0/150/0/scale = 1.0
+cache/0/100/0/ascent = 0.0
+cache/0/100/0/descent = 0.0
+cache/0/100/0/underline_position = 0.0
+cache/0/100/0/underline_thickness = 0.0
+cache/0/100/0/scale = 1.0
+cache/0/130/0/ascent = 0.0
+cache/0/130/0/descent = 0.0
+cache/0/130/0/underline_position = 0.0
+cache/0/130/0/underline_thickness = 0.0
+cache/0/130/0/scale = 1.0
 
-[sub_resource type="DynamicFont" id=4]
-size = 85
-outline_color = Color( 0, 0, 0, 1 )
-font_data = ExtResource( 6 )
+[sub_resource type="FontFile" id="4"]
+fallbacks = Array[Font]([ExtResource("6")])
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/75/0/ascent = 0.0
+cache/0/75/0/descent = 0.0
+cache/0/75/0/underline_position = 0.0
+cache/0/75/0/underline_thickness = 0.0
+cache/0/75/0/scale = 1.0
+cache/0/45/0/ascent = 0.0
+cache/0/45/0/descent = 0.0
+cache/0/45/0/underline_position = 0.0
+cache/0/45/0/underline_thickness = 0.0
+cache/0/45/0/scale = 1.0
 
 [node name="Pescar" type="Control"]
+layout_mode = 3
+anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-script = ExtResource( 7 )
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("7")
 
-[node name="BgImage" type="Sprite" parent="."]
-scale = Vector2( 1, 1.29286 )
-texture = ExtResource( 2 )
+[node name="BgImage" type="Sprite2D" parent="."]
+scale = Vector2(1, 1.29286)
+texture = ExtResource("2")
 centered = false
 
 [node name="PlayerName" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-margin_left = -517.5
-margin_right = 517.5
-margin_bottom = 101.0
-custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
-custom_constants/shadow_offset_x = -3
-custom_fonts/font = SubResource( 1 )
-align = 1
-__meta__ = {
-"_edit_use_anchors_": false
-}
+offset_left = -503.0
+offset_top = 21.0
+offset_right = 532.0
+offset_bottom = 122.0
+grow_horizontal = 2
+theme = ExtResource("6_m4quj")
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = -3
+theme_override_fonts/font = SubResource("1")
+theme_override_font_sizes/font_size = 100
+horizontal_alignment = 1
 
 [node name="GameName" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
 anchor_left = 0.5
-anchor_top = 0.5
 anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = -517.5
-margin_top = -452.5
-margin_right = 517.5
-margin_bottom = -301.5
-custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
-custom_constants/shadow_offset_x = -3
-custom_fonts/font = SubResource( 5 )
+offset_left = -517.5
+offset_top = 27.0
+offset_right = 517.5
+offset_bottom = 178.0
+grow_horizontal = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = -3
+theme_override_fonts/font = SubResource("5")
+theme_override_font_sizes/font_size = 130
 text = "CORALIMPIO"
-align = 1
+horizontal_alignment = 1
 
 [node name="ButtonsContainer" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -739.0
-margin_top = -136.5
-margin_right = 739.0
-margin_bottom = 136.5
+offset_left = -317.5
+offset_top = -75.0
+offset_right = 317.5
+offset_bottom = 75.0
+grow_horizontal = 2
+grow_vertical = 2
 
 [node name="FirstContainer" type="VBoxContainer" parent="ButtonsContainer"]
-margin_right = 490.0
-margin_bottom = 273.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
 
 [node name="FishContainer" type="CenterContainer" parent="ButtonsContainer/FirstContainer"]
-margin_right = 490.0
-margin_bottom = 273.0
+layout_mode = 2
 
 [node name="BtnFish" type="TextureButton" parent="ButtonsContainer/FirstContainer/FishContainer"]
-margin_right = 490.0
-margin_bottom = 273.0
-texture_normal = ExtResource( 4 )
-texture_pressed = ExtResource( 5 )
-texture_hover = ExtResource( 5 )
-texture_disabled = ExtResource( 5 )
-__meta__ = {
-"_editor_description_": ""
-}
+layout_mode = 2
+texture_normal = ExtResource("4")
+texture_pressed = ExtResource("5")
+texture_hover = ExtResource("5")
+texture_disabled = ExtResource("5")
 
 [node name="LblFish" type="Label" parent="ButtonsContainer/FirstContainer/FishContainer"]
-margin_left = 132.0
-margin_top = 97.0
-margin_right = 358.0
-margin_bottom = 176.0
-custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
-custom_constants/shadow_offset_x = -3
-custom_fonts/font = ExtResource( 1 )
+layout_mode = 2
+theme = ExtResource("6_m4quj")
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = -3
+theme_override_fonts/font = ExtResource("1")
+theme_override_font_sizes/font_size = 45
 text = "NIVEL 1"
 
 [node name="SecondContainer" type="VBoxContainer" parent="ButtonsContainer"]
-margin_left = 494.0
-margin_right = 984.0
-margin_bottom = 273.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
 
 [node name="CleanContainer" type="CenterContainer" parent="ButtonsContainer/SecondContainer"]
-margin_right = 490.0
-margin_bottom = 273.0
+layout_mode = 2
 
 [node name="BtnClean" type="TextureButton" parent="ButtonsContainer/SecondContainer/CleanContainer"]
-margin_right = 490.0
-margin_bottom = 273.0
-texture_normal = ExtResource( 4 )
-texture_pressed = ExtResource( 5 )
-texture_hover = ExtResource( 5 )
-texture_disabled = ExtResource( 5 )
-__meta__ = {
-"_editor_description_": ""
-}
+layout_mode = 2
+texture_normal = ExtResource("4")
+texture_pressed = ExtResource("5")
+texture_hover = ExtResource("5")
+texture_disabled = ExtResource("5")
 
 [node name="LblClean" type="Label" parent="ButtonsContainer/SecondContainer/CleanContainer"]
-margin_left = 70.0
-margin_top = 61.0
-margin_right = 420.0
-margin_bottom = 211.0
-rect_min_size = Vector2( 350, 150 )
-custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
-custom_constants/shadow_offset_x = -3
-custom_fonts/font = SubResource( 4 )
+layout_mode = 2
+theme = ExtResource("6_m4quj")
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = -3
+theme_override_fonts/font = SubResource("4")
+theme_override_font_sizes/font_size = 45
 text = "NIVEL 2"
-align = 1
-valign = 1
-autowrap = true
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="ThirdContainer" type="VBoxContainer" parent="ButtonsContainer"]
-margin_left = 988.0
-margin_right = 1478.0
-margin_bottom = 273.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
 
 [node name="Container" type="CenterContainer" parent="ButtonsContainer/ThirdContainer"]
-margin_right = 490.0
-margin_bottom = 273.0
+layout_mode = 2
 
 [node name="BtnLvl3" type="TextureButton" parent="ButtonsContainer/ThirdContainer/Container"]
-margin_right = 490.0
-margin_bottom = 273.0
-texture_normal = ExtResource( 4 )
-texture_pressed = ExtResource( 5 )
-texture_hover = ExtResource( 5 )
-texture_disabled = ExtResource( 5 )
-__meta__ = {
-"_editor_description_": ""
-}
+layout_mode = 2
+texture_normal = ExtResource("4")
+texture_pressed = ExtResource("5")
+texture_hover = ExtResource("5")
+texture_disabled = ExtResource("5")
 
 [node name="LblLvl3" type="Label" parent="ButtonsContainer/ThirdContainer/Container"]
-margin_left = 70.0
-margin_top = 61.0
-margin_right = 420.0
-margin_bottom = 211.0
-rect_min_size = Vector2( 350, 150 )
-custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
-custom_constants/shadow_offset_x = -3
-custom_fonts/font = SubResource( 4 )
+layout_mode = 2
+theme = ExtResource("6_m4quj")
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = -3
+theme_override_fonts/font = SubResource("4")
+theme_override_font_sizes/font_size = 45
 text = "NIVEL 3"
-align = 1
-valign = 1
-autowrap = true
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="BtnBack" type="TextureButton" parent="."]
-margin_right = 255.0
-margin_bottom = 273.0
-texture_normal = ExtResource( 8 )
+layout_mode = 0
+offset_right = 108.0
+offset_bottom = 116.0
+texture_normal = ExtResource("8")
 
-[node name="Options" parent="." instance=ExtResource( 3 )]
+[node name="Options" parent="." instance=ExtResource("3")]
 
 [node name="BGSong" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 9 )
+stream = ExtResource("9")
+volume_db = -10.0
 autoplay = true
+bus = &"Music"
 
 [connection signal="pressed" from="ButtonsContainer/FirstContainer/FishContainer/BtnFish" to="." method="_on_BtnFish_pressed"]
 [connection signal="pressed" from="ButtonsContainer/SecondContainer/CleanContainer/BtnClean" to="." method="_on_BtnClean_pressed"]

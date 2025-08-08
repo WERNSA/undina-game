@@ -1,121 +1,128 @@
-[gd_scene load_steps=20 format=2]
+[gd_scene load_steps=21 format=3 uid="uid://b7y1dci7cjerv"]
 
-[ext_resource path="res://Assets/Images/Animaciones/Buceando/Illea Buzo Derecha/Illea Buzo Derecha 6.png" type="Texture" id=2]
-[ext_resource path="res://Assets/Images/Animaciones/Buceando/Illea Buzo Derecha/Illea Buzo Derecha 3.png" type="Texture" id=4]
-[ext_resource path="res://Assets/Images/Animaciones/Buceando/Illea Buzo Derecha/Illea Buzo Derecha 4.png" type="Texture" id=5]
-[ext_resource path="res://Assets/Images/Animaciones/Buceando/Illea Buzo Derecha/Illea Buzo Derecha 1.png" type="Texture" id=6]
-[ext_resource path="res://Assets/Images/Animaciones/Buceando/Illea Buzo Derecha/Illea Buzo Derecha 5.png" type="Texture" id=7]
-[ext_resource path="res://Scenes/Entity/Illea/Buceando/IlleaBuceando.gd" type="Script" id=8]
-[ext_resource path="res://Assets/Images/Animaciones/Buceando/Cayendo derecha/Cayendo derecha 1.png" type="Texture" id=9]
-[ext_resource path="res://Assets/Images/Animaciones/Buceando/Illea golpeada/Illea golpeada.png" type="Texture" id=10]
-[ext_resource path="res://Assets/Images/Animaciones/Buceando/Illea sujetando derecha/Illea sujetando derecha.png" type="Texture" id=11]
-[ext_resource path="res://Assets/Images/Animaciones/Buceando/Cayendo derecha/Cayendo derecha 3.png" type="Texture" id=12]
-[ext_resource path="res://Assets/Images/Animaciones/Buceando/Cayendo derecha/Cayendo derecha 2.png" type="Texture" id=13]
-[ext_resource path="res://Assets/Images/Animaciones/Buceando/Cayendo derecha/Cayendo derecha 4.png" type="Texture" id=14]
-[ext_resource path="res://Assets/Images/Animaciones/Buceando/Illea Buzo Derecha/Illea Buzo Derecha 2.png" type="Texture" id=15]
+[ext_resource type="Texture2D" uid="uid://c3xlawd7lmiax" path="res://Assets/Images/Animaciones/Buceando/Illea Buzo Derecha/Illea Buzo Derecha 6.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://ovj1y8xmlcrx" path="res://Assets/Images/Animaciones/Buceando/Illea Buzo Derecha/Illea Buzo Derecha 3.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://di8ytcl5dscf2" path="res://Assets/Images/Animaciones/Buceando/Illea Buzo Derecha/Illea Buzo Derecha 4.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://chhpc5y5uw6ih" path="res://Assets/Images/Animaciones/Buceando/Illea Buzo Derecha/Illea Buzo Derecha 1.png" id="6"]
+[ext_resource type="Texture2D" uid="uid://debskfcve4shh" path="res://Assets/Images/Animaciones/Buceando/Illea Buzo Derecha/Illea Buzo Derecha 5.png" id="7"]
+[ext_resource type="Script" uid="uid://dayd6rdy6hpa0" path="res://Scenes/Entity/Illea/Buceando/IlleaBuceando.gd" id="8"]
+[ext_resource type="Texture2D" uid="uid://cu3j4kfro3gbq" path="res://Assets/Images/Animaciones/Buceando/Cayendo derecha/Cayendo derecha 1.png" id="9"]
+[ext_resource type="Texture2D" uid="uid://b4iral3g40hca" path="res://Assets/Images/Animaciones/Buceando/Illea golpeada/Illea golpeada.png" id="10"]
+[ext_resource type="Texture2D" uid="uid://b5uiogj1dj3h8" path="res://Assets/Images/Animaciones/Buceando/Illea sujetando derecha/Illea sujetando derecha.png" id="11"]
+[ext_resource type="Texture2D" uid="uid://dn7nggibrq4br" path="res://Assets/Images/Animaciones/Buceando/Cayendo derecha/Cayendo derecha 3.png" id="12"]
+[ext_resource type="Texture2D" uid="uid://lsgskmyy57d2" path="res://Assets/Images/Animaciones/Buceando/Cayendo derecha/Cayendo derecha 2.png" id="13"]
+[ext_resource type="Texture2D" uid="uid://bgr3wl4pjkwlk" path="res://Assets/Images/Animaciones/Buceando/Cayendo derecha/Cayendo derecha 4.png" id="14"]
+[ext_resource type="Texture2D" uid="uid://c0jr8g6qtpqoc" path="res://Assets/Images/Animaciones/Buceando/Illea Buzo Derecha/Illea Buzo Derecha 2.png" id="15"]
 
-[sub_resource type="Animation" id=6]
+[sub_resource type="Animation" id="6"]
 resource_name = "Grab"
 tracks/0/type = "value"
-tracks/0/path = NodePath("Sprite:texture")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 1 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
 "update": 1,
-"values": [ ExtResource( 11 ), ExtResource( 11 ) ]
+"values": [ExtResource("11"), ExtResource("11")]
 }
 
-[sub_resource type="Animation" id=2]
+[sub_resource type="Animation" id="2"]
 resource_name = "Idle"
 tracks/0/type = "value"
-tracks/0/path = NodePath("Sprite:texture")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.2, 0.4, 0.6 ),
-"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 1,
-"values": [ ExtResource( 9 ), ExtResource( 13 ), ExtResource( 12 ), ExtResource( 14 ) ]
+"values": [ExtResource("9"), ExtResource("13"), ExtResource("12"), ExtResource("14")]
 }
 
-[sub_resource type="Animation" id=7]
+[sub_resource type="Animation" id="7"]
 resource_name = "Move"
 length = 0.6
+loop_mode = 1
 tracks/0/type = "value"
-tracks/0/path = NodePath("Sprite:texture")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": [ ExtResource( 6 ), ExtResource( 15 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 7 ), ExtResource( 2 ) ]
+"values": [ExtResource("6"), ExtResource("15"), ExtResource("4"), ExtResource("5"), ExtResource("7"), ExtResource("2")]
 }
 
-[sub_resource type="Animation" id=5]
+[sub_resource type="Animation" id="5"]
 resource_name = "Punch"
 tracks/0/type = "value"
-tracks/0/path = NodePath("Sprite:texture")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 1 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
 "update": 1,
-"values": [ ExtResource( 10 ), ExtResource( 10 ) ]
+"values": [ExtResource("10"), ExtResource("10")]
 }
 
-[sub_resource type="Animation" id=4]
+[sub_resource type="Animation" id="4"]
 length = 0.001
 tracks/0/type = "value"
-tracks/0/path = NodePath("Sprite:texture")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [ ExtResource( 6 ) ]
+"values": [ExtResource("6")]
 }
 
-[sub_resource type="CapsuleShape2D" id=1]
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_li5lg"]
+_data = {
+&"Grab": SubResource("6"),
+&"Idle": SubResource("2"),
+&"Move": SubResource("7"),
+&"Punch": SubResource("5"),
+&"RESET": SubResource("4")
+}
+
+[sub_resource type="CapsuleShape2D" id="1"]
 radius = 69.2308
 height = 184.615
 
-[node name="IlleaBuceando" type="KinematicBody2D"]
-scale = Vector2( 0.13, 0.13 )
-script = ExtResource( 8 )
+[node name="IlleaBuceando" type="CharacterBody2D"]
+script = ExtResource("8")
 
-[node name="Sprite" type="Sprite" parent="."]
-texture = ExtResource( 6 )
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(3.8147e-06, 0)
+scale = Vector2(0.617142, 0.617142)
+texture = ExtResource("6")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-anims/Grab = SubResource( 6 )
-anims/Idle = SubResource( 2 )
-anims/Move = SubResource( 7 )
-anims/Punch = SubResource( 5 )
-anims/RESET = SubResource( 4 )
+libraries = {
+&"": SubResource("AnimationLibrary_li5lg")
+}
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource( 1 )
+shape = SubResource("1")
 
 [node name="RayEnemy" type="RayCast2D" parent="."]
-position = Vector2( 0, 110 )
-enabled = true
-cast_to = Vector2( 70, 0 )
+position = Vector2(0, 50)
+target_position = Vector2(70, 0)
 
 [node name="RayBoat" type="RayCast2D" parent="."]
-enabled = true
-cast_to = Vector2( 0, -200 )
+target_position = Vector2(0, -200)

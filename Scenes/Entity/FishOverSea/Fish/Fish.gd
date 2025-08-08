@@ -1,9 +1,9 @@
 extends Area2D
-export(Vector2) var FishingPositionMin
-export(Vector2) var FishingPositionMax
-export(int) var speed
+@export var FishingPositionMin: Vector2
+@export var FishingPositionMax: Vector2
+@export var speed: int
 var is_colliding : bool = false
-onready var level = get_tree().get_nodes_in_group('sea_fish_level')[0]
+@onready var level = get_tree().get_nodes_in_group('sea_fish_level')[0]
 
 func _process(delta):
 	if is_colliding:

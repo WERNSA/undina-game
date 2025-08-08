@@ -1,14 +1,16 @@
 extends Node2D
 
-onready var TRASH_COUNT = 0
+@onready var TRASH_COUNT = 0
 var trash_array
-onready var actual_trash = null
-onready var position_offset = 60
-onready var position_out_screen = 1900 + position_offset
-onready var trash_transition_time = 15
-onready var game_over = false
-onready var tries = 3
+@onready var actual_trash = null
+@onready var position_offset = 20
+@onready var position_out_screen = 810 + position_offset
+@onready var trash_transition_time = 15
+@onready var game_over = false
+@onready var tries = 3
 var trash_qty
+var tween_crab : Tween
+var tween_trash : Tween
 
 func _ready():
 	randomize()
@@ -16,9 +18,9 @@ func _ready():
 	trash_array = get_tree().get_nodes_in_group('enemy')
 	trash_qty = len(trash_array)
 	$Crab/SpawnTimer.start()
-	$Tries/MarginContainer/LblTries.text = "INTENTOS: " + str(tries)
-	$HUD/GameOver/CenterContainer/HBoxContainer/BtnTry.connect("pressed", self, "_on_try_again")
-	$HUD/Win/CenterContainer/HBoxContainer/BtnTry.connect("pressed", self, "_on_try_again")
+	$Tries/MarginContainer/LblTries.text = "iNTENTOS: " + str(tries)
+	$HUD/GameOver/CenterContainer/HBoxContainer/BtnTry.connect("pressed", Callable(self, "_on_try_again"))
+	$HUD/Win/CenterContainer/HBoxContainer/BtnTry.connect("pressed", Callable(self, "_on_try_again"))
 
 func add_trash_count():
 	trash_qty -= 1
@@ -31,10 +33,13 @@ func add_trash_count():
 func get_trash(_trash):
 	get_sound()
 	if actual_trash and _trash == actual_trash.get_ref():
-		$Trash/TrashTween.stop_all()
 		var _idx = trash_array.find(actual_trash.get_ref())
 		trash_array.pop_at(_idx)
 		actual_trash = null
+		if tween_crab:
+			tween_crab.kill()
+		if tween_trash:
+			tween_trash.kill()
 		hide_crab()
 
 func get_sound():
@@ -47,51 +52,51 @@ func _on_Trash_body_entered(body):
 func move_crab():
 	var _idx = Global.random_int(0, len(trash_array) - 1)
 	actual_trash = weakref(trash_array[_idx])
+
 	if actual_trash.get_ref():
 		var _actual_trash = actual_trash.get_ref()
-		$Crab/InitTween.interpolate_property(
+		tween_crab = create_tween()
+		$Crab/Crab.position.x = _actual_trash.position.x
+		tween_crab.tween_property(
 			$Crab/Crab, "position",
-			Vector2(_actual_trash.position.x, position_out_screen),
 			Vector2(_actual_trash.position.x, _actual_trash.position.y + position_offset),
-			5, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT
+			3.0
 		)
-		$Crab/InitTween.start()
+		tween_crab.connect("finished", Callable(self, "_on_InitTween_tween_all_completed"))
 
 func _on_InitTween_tween_all_completed():
 	$Crab/WaitTimer.start()
 
 func _on_WaitTimer_timeout():
-	$Crab/FinalTween.interpolate_property(
+	tween_crab = create_tween()
+	tween_crab.tween_property(
 		$Crab/Crab, "position",
-		$Crab/Crab.position,
 		Vector2($Crab/Crab.position.x, position_out_screen),
-		trash_transition_time, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT
+		trash_transition_time
 	)
+	tween_crab.connect("finished", Callable(self, "_on_FinalTween_tween_all_completed"))
+
 	if actual_trash and actual_trash.get_ref() in trash_array:
 		var _actual_trash = actual_trash.get_ref()
-		$Trash/TrashTween.interpolate_property(
+		tween_trash = create_tween()
+		tween_trash.tween_property(
 			_actual_trash, "position",
-			_actual_trash.position,
 			Vector2(_actual_trash.position.x, position_out_screen - position_offset),
-			trash_transition_time, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT
+			trash_transition_time
 		)
-		$Trash/TrashTween.start()
-	$Crab/FinalTween.start()
 
 func hide_crab():
-	$Crab/InitTween.stop_all()
-	$Crab/FinalTween.stop_all()
 	$Crab/WaitTimer.stop()
-	$Crab/HideTween.interpolate_property(
+	tween_crab = create_tween()
+	tween_crab.tween_property(
 		$Crab/Crab, "position",
-		$Crab/Crab.position,
 		Vector2($Crab/Crab.position.x, position_out_screen),
-		3, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT
+		3.0
 	)
-	$Crab/HideTween.start()
+	tween_crab.connect("finished", Callable(self, "_on_HideTween_tween_all_completed"))
 
 func _on_FinalTween_tween_all_completed():
-	if actual_trash and actual_trash.get_ref() and actual_trash.get_ref().position.y > 1800:
+	if actual_trash and actual_trash.get_ref() and actual_trash.get_ref().position.y > 770:
 		var _idx = trash_array.find(actual_trash.get_ref())
 		trash_array.pop_at(_idx)
 		actual_trash = null
@@ -103,7 +108,7 @@ func remove_trash_count():
 	TRASH_COUNT -= 10
 	tries -= 1
 	trash_qty -= 1
-	$Tries/MarginContainer/LblTries.text = "INTENTOS: " + str(tries)
+	$Tries/MarginContainer/LblTries.text = "iNTENTOS: " + str(tries)
 	$Background/Contador.set_count(str(TRASH_COUNT))
 	if tries == 0:
 		_game_over()
@@ -138,4 +143,8 @@ func _game_over():
 	$Background/Ambience/IlleaCaminando.can_move = false
 
 func _on_try_again():
-	get_tree().change_scene("res://Scenes/Games/LimpiandoCosta/Nivel2/LimpiandoCosta.tscn")
+	get_tree().reload_current_scene()
+
+
+func _on_bg_song_finished() -> void:
+	$Songs/BGSong.play()

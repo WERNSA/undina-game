@@ -1,16 +1,16 @@
-extends KinematicBody2D
+extends CharacterBody2D
 
-const SPEED = 100
-const SPEED_RUN = 150 ## RUN SPEED
+const SPEED = 65
+const SPEED_RUN = 80 ## RUN SPEED
 const FLOOR = Vector2(0, -1)
-const GRAVITY =  1
-onready var motion = Vector2.ZERO
+const GRAVITY =  0.7
+@onready var motion = Vector2.ZERO
 const CAST_ENEMY = 70 # Esta constante es para definir la distancia de colisión con los enemigos.
-onready var level = get_tree().get_nodes_in_group("level_pesca")[0]
-onready var trash = []
+@onready var level = get_tree().get_nodes_in_group("level_pesca")[0]
+@onready var trash = []
 var box
 var pointing : int = 1
-onready var can_move = true
+@onready var can_move = true
 """ STATE MACHINE """
 
 func _ready():
@@ -50,13 +50,19 @@ func motion_ctrl():
 	if Input.is_action_pressed("grab"):
 		$AnimationPlayer.play("Grab")
 	if get_axis().x == 0:
-		$Sprite.flip_h = pointing == -1
+		$Sprite2D.flip_h = pointing == -1
 	elif !Input.is_action_pressed("grab"):
-		$Sprite.flip_h = get_axis().x == -1 ## DIRECCIÓN EN LA QUE EL SPRITE MIRA
-	motion = move_and_slide(motion, FLOOR)
+		$Sprite2D.flip_h = get_axis().x == -1 ## DIRECCIÓN EN LA QUE EL SPRITE MIRA
+	set_velocity(motion)
+	set_up_direction(FLOOR)
+	move_and_slide()
+	motion = velocity
 	for t in trash:
 		if t != null:
-			t.move_and_slide(motion, FLOOR)
+			t.set_velocity(motion)
+			t.set_up_direction(FLOOR)
+			t.move_and_slide()
+			t.velocity
 	raycast_ctrl(motion)
 	
 
@@ -67,7 +73,7 @@ func raycast_ctrl(mot):
 		free_trash()
 	if $RayEnemy.is_colliding():
 		if col.is_in_group("enemy"):
-			if trash.empty():
+			if trash.is_empty():
 				level.remove_trash_turtle(col.position)
 				level.get_sound()
 				trash.append(col)
@@ -87,4 +93,4 @@ func free_trash():
 # Como es probable que se vayan agregando componentes creamos esta función para mantener cierto orden en el código e indicar la dirección de ciertos elementos.
 func direction_ctrl(): 
 	# MOVER EL RAYCAST EN LA DIRECCIÓN QUE VA EL PLAYER
-	$RayEnemy.cast_to.x = CAST_ENEMY * get_axis().x
+	$RayEnemy.target_position.x = CAST_ENEMY * get_axis().x

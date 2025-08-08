@@ -1,13 +1,13 @@
 extends Node2D
 
 const INACTIVE_IDX = -1;
-export var AnalogTapToShow = false setget set_tap_to_show
-export var AnalogTapToShowContainer = ""
-export var mapAnalogToDpad = true
+@export var AnalogTapToShow = false: set = set_tap_to_show
+@export var AnalogTapToShowContainer = ""
+@export var mapAnalogToDpad = true
 
-onready var ball = $ball
-onready var animation_player = $AnimationPlayer
-onready var halfSize = $bg.texture.get_size()/2
+@onready var ball = $ball
+@onready var animation_player = $AnimationPlayer
+@onready var halfSize = $bg.texture.get_size()/2
 
 var centerPoint = Vector2(0,0)
 var currentForce = Vector2(0,0)
@@ -72,8 +72,8 @@ func process_input(event):
 	calculateForce(event.position.x - global_position.x, event.position.y - global_position.y)
 	updateBallPos()
 	
-	var isReleased = isReleased(event)
-	if isReleased:
+	var isReleasedVar = isReleased(event)
+	if isReleasedVar:
 		reset()
 
 
@@ -91,7 +91,7 @@ func showAtPos(pos):
 		animation_player.play("alpha_in", 0.2)
 		global_position = pos
 	
-func hide():
+func play_hide_animation():
 	animation_player.play("alpha_out", 0.2) 
 
 func updateBallPos():
@@ -111,7 +111,7 @@ func isReleased(event):
 	elif event is InputEventMouseButton:
 		return !event.is_pressed()
 
-func calculateForce(var x, var y):
+func calculateForce(x, y):
 	#get direction
 	currentForce.x = (x - centerPoint.x)/halfSize.x
 	currentForce.y = -(y - centerPoint.y)/halfSize.y
@@ -124,10 +124,10 @@ func set_tap_to_show(value):
 	if value:
 		modulate.a = 0
 		
-		if not AnalogTapToShowContainer is ViewportContainer:
+		if not AnalogTapToShowContainer is SubViewportContainer:
 			assert(
-				AnalogTapToShowContainer is ViewportContainer, 
-				"To use tag AnalogDynamicShowing you need to put GamePad inside a ViewportContainer"
+				AnalogTapToShowContainer is SubViewportContainer, 
+				"To use tag AnalogDynamicShowing you need to put GamePad inside a SubViewportContainer"
 			)
 	
 	AnalogTapToShow = value
@@ -138,7 +138,24 @@ func sendSignal2Listener():
 		map_analog_dpad()
 
 func map_analog_dpad():
-	Input.action_press("ui_left") if currentForce.x < -0.2 else Input.action_release("ui_left")
-	Input.action_press("ui_right") if currentForce.x > 0.2 else Input.action_release("ui_right")
-	Input.action_press("ui_down") if currentForce.y < -0.2 else Input.action_release("ui_down")
-	Input.action_press("ui_up") if currentForce.y > 0.2 else Input.action_release("ui_up")
+		# EJE X (izquierda / derecha)
+	if currentForce.x < -0.2:
+		Input.action_press("ui_left")
+		Input.action_release("ui_right")
+	elif currentForce.x > 0.2:
+		Input.action_press("ui_right")
+		Input.action_release("ui_left")
+	else:
+		Input.action_release("ui_left")
+		Input.action_release("ui_right")
+
+	# EJE Y (arriba / abajo)
+	if currentForce.y < -0.2:
+		Input.action_press("ui_down")
+		Input.action_release("ui_up")
+	elif currentForce.y > 0.2:
+		Input.action_press("ui_up")
+		Input.action_release("ui_down")
+	else:
+		Input.action_release("ui_up")
+		Input.action_release("ui_down")

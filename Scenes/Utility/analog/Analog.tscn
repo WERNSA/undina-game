@@ -1,93 +1,99 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=3 uid="uid://b17rf02r12bmp"]
 
-[ext_resource path="res://Scenes/Utility/analog/analog.gd" type="Script" id=1]
-[ext_resource path="res://Scenes/Utility/analog/small_circle.png" type="Texture" id=2]
-[ext_resource path="res://Scenes/Utility/analog/big_circle.png" type="Texture" id=3]
+[ext_resource type="Script" uid="uid://cxmbiy2uv3pj4" path="res://Scenes/Utility/analog/analog.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://dpjfercylu6kj" path="res://Scenes/Utility/analog/small_circle.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://dqolo3qjyeote" path="res://Scenes/Utility/analog/big_circle.png" id="3"]
 
-[sub_resource type="Animation" id=1]
+[sub_resource type="Animation" id="1"]
 length = 5.0
 tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
 tracks/0/path = NodePath(".:modulate")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [ Color( 1, 1, 1, 1 ) ]
+"values": [Color(1, 1, 1, 1)]
 }
 
-[sub_resource type="Animation" id=2]
+[sub_resource type="Animation" id="2"]
 step = 1.0
 tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
 tracks/0/path = NodePath(".:modulate")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 0 ),
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(0),
 "update": 0,
-"values": [ Color( 0, 0, 0, 0 ) ]
+"values": [Color(0, 0, 0, 0)]
 }
 
-[sub_resource type="Animation" id=3]
+[sub_resource type="Animation" id="3"]
 tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
 tracks/0/path = NodePath("ball:rotation_degrees")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [ 0.0 ]
+"values": [0.0]
 }
 tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
 tracks/1/path = NodePath("ball:position")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
-tracks/1/imported = false
-tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [ Vector2( 0, 0 ) ]
+"values": [Vector2(0, 0)]
 }
 
-[sub_resource type="Animation" id=4]
+[sub_resource type="Animation" id="4"]
 tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
 tracks/0/path = NodePath(".:modulate")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [ Color( 1, 1, 1, 1 ) ]
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_a4ful"]
+_data = {
+&"alpha_in": SubResource("1"),
+&"alpha_out": SubResource("2"),
+&"ball_center": SubResource("3"),
+&"default": SubResource("4")
 }
 
 [node name="Analog" type="Node2D"]
-script = ExtResource( 1 )
-__meta__ = {
-"__editor_plugin_screen__": "2D"
-}
+script = ExtResource("1")
 
-[node name="bg" type="Sprite" parent="."]
-texture = ExtResource( 3 )
+[node name="bg" type="Sprite2D" parent="."]
+scale = Vector2(0.35, 0.35)
+texture = ExtResource("3")
 
-[node name="ball" type="Sprite" parent="."]
-texture = ExtResource( 2 )
+[node name="ball" type="Sprite2D" parent="."]
+scale = Vector2(0.35, 0.35)
+texture = ExtResource("2")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." groups=["JoyStick"]]
-anims/alpha_in = SubResource( 1 )
-anims/alpha_out = SubResource( 2 )
-anims/ball_center = SubResource( 3 )
-anims/default = SubResource( 4 )
+libraries = {
+&"": SubResource("AnimationLibrary_a4ful")
+}
