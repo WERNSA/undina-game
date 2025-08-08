@@ -12,7 +12,7 @@ Este juego no solo entretiene, también educa y transforma. ⛵
 
 ### ✨ Creado por
 
-[WERN](https://www.wern.co/), con el apoyo de la [Fundación Zamora Terán.](https://fundacionzt.org/)
+[WERN](https://www.wern.co/), con el apoyo de [Fundación Zamora Terán.](https://fundacionzt.org/)
 
 ---
 
