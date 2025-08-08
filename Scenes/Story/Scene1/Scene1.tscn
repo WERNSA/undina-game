@@ -1,10 +1,10 @@
 [gd_scene load_steps=11 format=3 uid="uid://crebd7w826u3p"]
 
-[ext_resource type="Texture2D" uid="uid://drwfwtvlwhvu" path="res://Assets/Images/Story/Scene1/Mar.png" id="1"]
-[ext_resource type="Texture2D" uid="uid://cuycs058gtxxr" path="res://Assets/Images/Story/Scene1/Olas.png" id="2"]
-[ext_resource type="Texture2D" uid="uid://cjk2rdc5r8ds" path="res://Assets/Images/Story/Scene1/Cayo Glass.png" id="3"]
-[ext_resource type="Texture2D" uid="uid://dd2hxk7lu7pmd" path="res://Assets/Images/Story/Scene1/Cayo Ioni.png" id="4"]
-[ext_resource type="Texture2D" uid="uid://dx1nal7veg6bl" path="res://Assets/Images/Story/Scene1/Cayo Teal.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://d2xkaw11jco4o" path="res://Assets/Images/Story/Scene1/Mar.png" id="1"]
+[ext_resource type="Texture2D" uid="uid://c841t3y5injso" path="res://Assets/Images/Story/Scene1/Olas.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://b7ftotv0a6xa2" path="res://Assets/Images/Story/Scene1/Cayo Glass.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://us6km6dp1tu2" path="res://Assets/Images/Story/Scene1/Cayo Ioni.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://c5imdftwwexoa" path="res://Assets/Images/Story/Scene1/Cayo Teal.png" id="5"]
 [ext_resource type="Script" uid="uid://c5gexytdrpy0w" path="res://Scenes/Story/Scene1/Scene1.gd" id="7"]
 
 [sub_resource type="Animation" id="3"]
@@ -303,20 +303,20 @@ texture = ExtResource("2")
 centered = false
 
 [node name="Islands" type="Node2D" parent="."]
-position = Vector2(1600, 900)
+position = Vector2(672, 378)
 scale = Vector2(0.1, 0.1)
 
 [node name="GlassCay" type="Sprite2D" parent="Islands"]
-position = Vector2(-1600, -900)
+position = Vector2(-672, -378)
 texture = ExtResource("3")
 centered = false
 
 [node name="IoniCay" type="Sprite2D" parent="Islands"]
-position = Vector2(800, 500)
+position = Vector2(336, 210)
 texture = ExtResource("4")
 
 [node name="TealCay" type="Sprite2D" parent="Islands"]
-position = Vector2(900, -500)
+position = Vector2(378, -210)
 texture = ExtResource("5")
 
 [node name="Timer" type="Timer" parent="."]

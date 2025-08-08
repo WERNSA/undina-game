@@ -154,6 +154,7 @@ shape = SubResource("RectangleShape2D_kr6ct")
 
 [connection signal="timeout" from="Spawn/IslandTimer" to="." method="_on_IslandTimer_timeout"]
 [connection signal="timeout" from="Spawn/IslandSpeedTimer" to="." method="_on_IslandSpeedTimer_timeout"]
+[connection signal="finished" from="Sounds/BGSong" to="." method="_on_bg_song_finished"]
 [connection signal="timeout" from="Timer/Timer" to="." method="_on_Timer_timeout"]
 [connection signal="timeout" from="Timer/StepTimer" to="." method="_on_StepTimer_timeout"]
 [connection signal="area_entered" from="DeleteArea" to="." method="_on_delete_area_area_entered"]

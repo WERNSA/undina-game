@@ -6,7 +6,7 @@ func show_trash():
 	$Characters/BoyWatermelon.visible = false
 	$Characters/GirlWatermelon.visible = false
 	$Characters/IleaSide.flip_h = true
-	$Characters/IleaSide.position.y += 200
+	$Characters/IleaSide.position.y += 35
 
 func _ready():
 	Dialogic.start("Scene7")

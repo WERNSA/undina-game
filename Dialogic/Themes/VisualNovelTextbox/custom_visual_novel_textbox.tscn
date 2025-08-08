@@ -7,7 +7,7 @@
 [ext_resource type="Script" uid="uid://b7j8pts45hudw" path="res://addons/dialogic/Modules/Text/node_type_sound.gd" id="4_ma5mw"]
 [ext_resource type="Script" uid="uid://mw7dn36onaws" path="res://addons/dialogic/Modules/Text/node_next_indicator.gd" id="5_40a50"]
 [ext_resource type="Script" uid="uid://bjqkbykv0323l" path="res://Dialogic/Themes/VisualNovelTextbox/autoadvance_indicator.gd" id="6_07xym"]
-[ext_resource type="Texture2D" uid="uid://b0rpqfg4fhebk" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Textbox/next.svg" id="6_uch03"]
+[ext_resource type="Texture2D" uid="uid://bf026dep2b5uj" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Textbox/next.svg" id="6_uch03"]
 [ext_resource type="Script" uid="uid://3o7x6u3go4fo" path="res://addons/dialogic/Modules/Text/node_name_label.gd" id="7_bi7sh"]
 [ext_resource type="StyleBox" uid="uid://m7gyepkysu83" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Textbox/vn_textbox_name_label_panel.tres" id="9_yg8ig"]
 
@@ -275,8 +275,8 @@ metadata/_edit_layout_mode = 1
 
 [node name="MarginContainer2" type="MarginContainer" parent="Anchor/AnimationParent/Sizer/DialogTextPanel"]
 layout_mode = 2
-theme_override_constants/margin_left = 50
-theme_override_constants/margin_top = 50
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
 
 [node name="DialogicNode_DialogText" type="RichTextLabel" parent="Anchor/AnimationParent/Sizer/DialogTextPanel/MarginContainer2" node_paths=PackedStringArray("textbox_root")]
 unique_name_in_owner = true
@@ -301,8 +301,8 @@ play_every_character = 0
 [node name="MarginContainer" type="MarginContainer" parent="Anchor/AnimationParent/Sizer/DialogTextPanel"]
 layout_mode = 2
 size_flags_vertical = 8
-theme_override_constants/margin_left = 130
-theme_override_constants/margin_bottom = -20
+theme_override_constants/margin_left = 55
+theme_override_constants/margin_bottom = -8
 
 [node name="NextIndicator" type="Control" parent="Anchor/AnimationParent/Sizer/DialogTextPanel/MarginContainer"]
 unique_name_in_owner = true

@@ -211,7 +211,7 @@ func _game_win():
 	Global.write_points(TRASH_COUNT)
 	$HUD/Win.set_score(TRASH_COUNT)
 	$HUD/Win.visible = true
-	$Sounds/BGSong.stop()
+	$Songs/BGSong.stop()
 	$IlleaBuceando.can_move = false
 	if $Timer.position.y != -200:
 		show_timer(false)

@@ -1,9 +1,9 @@
 [gd_scene load_steps=5 format=3 uid="uid://3ennvohfgh8u"]
 
-[ext_resource type="Texture2D" uid="uid://cnwdl5vbgjjcl" path="res://Assets/Images/Story/Characters/Main/Ilea/Illea.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://l7bw776hvvqq" path="res://Assets/Images/Story/Characters/Main/Ilea/Illea.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://dfxcuseanq0lt" path="res://Assets/Images/Story/Scene4/Padres.png" id="2_nyqf0"]
 [ext_resource type="Script" uid="uid://cl5ay72217aqx" path="res://Scenes/Story/Scene4/Scene4.gd" id="3"]
-[ext_resource type="Texture2D" uid="uid://xliwwaqoi4xk" path="res://Assets/Images/Story/Scene4/Padres.jpg" id="6"]
-[ext_resource type="Texture2D" uid="uid://o7cx7h5hfpgh" path="res://Assets/Images/Story/Characters/Main/Ilea/Illea asustada.png" id="7"]
+[ext_resource type="Texture2D" uid="uid://dhaa1i1ocrwqk" path="res://Assets/Images/Story/Characters/Main/Ilea/Illea asustada.png" id="7"]
 
 [node name="Scene4" type="Node2D"]
 script = ExtResource("3")
@@ -11,16 +11,16 @@ script = ExtResource("3")
 [node name="Background2" type="Node2D" parent="."]
 
 [node name="Padres" type="Sprite2D" parent="Background2"]
-texture = ExtResource("6")
+texture = ExtResource("2_nyqf0")
 centered = false
 
 [node name="IlleaAsustada" type="Sprite2D" parent="Background2"]
-position = Vector2(560, 1063)
+position = Vector2(235.2, 446.46)
 scale = Vector2(0.7, 0.7)
 texture = ExtResource("7")
 
 [node name="IlleaMotivada" type="Sprite2D" parent="Background2"]
 visible = false
-position = Vector2(560, 1063)
+position = Vector2(235.2, 446.46)
 scale = Vector2(0.7, 0.7)
 texture = ExtResource("2")

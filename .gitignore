@@ -37,3 +37,5 @@ desktop.ini
 
 # User-generated config files (optional - if you store local player settings)
 user_config.cfg
+
+android/*

@@ -27,7 +27,7 @@ func _on_Dialog_timeline_end():
 	tween.tween_property(
 		$Islands,
 		"position",
-		Vector2(3300, 1100), 2
+		Vector2(1386, 462), 2
 	)
 	tween.tween_property(
 		$Islands,

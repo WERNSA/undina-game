@@ -11,11 +11,12 @@ config_version=5
 [application]
 
 config/name="undina"
-config/version="0.8.1"
+config/version="1.0.0"
 run/main_scene="res://Scenes/Splash/Splash.tscn"
 config/features=PackedStringArray("4.4")
 boot_splash/image="res://Scenes/Splash/Images/boot-splash.png"
 config/icon="uid://bnitn4v17fnv7"
+config/windows_native_icon="res://Assets/icons/icon.ico"
 
 [autoload]
 
@@ -25,6 +26,14 @@ Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 [dialogic]
 
 directories/dch_directory={
+"Characters/andrea": "res://android/build/assetPacks/installTime/src/main/assets/Dialogic/Characters/andrea.dch",
+"Characters/andres": "res://android/build/assetPacks/installTime/src/main/assets/Dialogic/Characters/andres.dch",
+"Characters/andresBoy": "res://android/build/assetPacks/installTime/src/main/assets/Dialogic/Characters/andresBoy.dch",
+"Characters/anfitrite": "res://android/build/assetPacks/installTime/src/main/assets/Dialogic/Characters/anfitrite.dch",
+"Characters/george": "res://android/build/assetPacks/installTime/src/main/assets/Dialogic/Characters/george.dch",
+"Characters/illea": "res://android/build/assetPacks/installTime/src/main/assets/Dialogic/Characters/illea.dch",
+"Characters/mama": "res://android/build/assetPacks/installTime/src/main/assets/Dialogic/Characters/mama.dch",
+"Characters/papa": "res://android/build/assetPacks/installTime/src/main/assets/Dialogic/Characters/papa.dch",
 "andrea": "res://Dialogic/Characters/andrea.dch",
 "andres": "res://Dialogic/Characters/andres.dch",
 "andresBoy": "res://Dialogic/Characters/andresBoy.dch",
@@ -49,6 +58,21 @@ directories/dtl_directory={
 "Scene7": "res://Dialogic/Timelines/Scene7.dtl",
 "Scene8": "res://Dialogic/Timelines/Scene8.dtl",
 "Scene9": "res://Dialogic/Timelines/Scene9.dtl",
+"Timelines/Scene10": "res://android/build/assetPacks/installTime/src/main/assets/Dialogic/Timelines/Scene10.dtl",
+"Timelines/Scene11": "res://android/build/assetPacks/installTime/src/main/assets/Dialogic/Timelines/Scene11.dtl",
+"Timelines/Scene12": "res://android/build/assetPacks/installTime/src/main/assets/Dialogic/Timelines/Scene12.dtl",
+"Timelines/Scene13": "res://android/build/assetPacks/installTime/src/main/assets/Dialogic/Timelines/Scene13.dtl",
+"Timelines/Scene14": "res://android/build/assetPacks/installTime/src/main/assets/Dialogic/Timelines/Scene14.dtl",
+"Timelines/Scene15": "res://android/build/assetPacks/installTime/src/main/assets/Dialogic/Timelines/Scene15.dtl",
+"Timelines/Scene2": "res://android/build/assetPacks/installTime/src/main/assets/Dialogic/Timelines/Scene2.dtl",
+"Timelines/Scene3": "res://android/build/assetPacks/installTime/src/main/assets/Dialogic/Timelines/Scene3.dtl",
+"Timelines/Scene4": "res://android/build/assetPacks/installTime/src/main/assets/Dialogic/Timelines/Scene4.dtl",
+"Timelines/Scene5": "res://android/build/assetPacks/installTime/src/main/assets/Dialogic/Timelines/Scene5.dtl",
+"Timelines/Scene6": "res://android/build/assetPacks/installTime/src/main/assets/Dialogic/Timelines/Scene6.dtl",
+"Timelines/Scene7": "res://android/build/assetPacks/installTime/src/main/assets/Dialogic/Timelines/Scene7.dtl",
+"Timelines/Scene8": "res://android/build/assetPacks/installTime/src/main/assets/Dialogic/Timelines/Scene8.dtl",
+"Timelines/Scene9": "res://android/build/assetPacks/installTime/src/main/assets/Dialogic/Timelines/Scene9.dtl",
+"Timelines/intro": "res://android/build/assetPacks/installTime/src/main/assets/Dialogic/Timelines/intro.dtl",
 "intro": "res://Dialogic/Timelines/intro.dtl"
 }
 glossary/default_case_sensitive=true
@@ -80,6 +104,7 @@ text/autopauses={}
 
 window/size/viewport_width=1366
 window/size/viewport_height=768
+window/size/mode=3
 window/stretch/mode="viewport"
 
 [editor_plugins]

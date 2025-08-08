@@ -1,10 +1,14 @@
 extends Control
+var actual_checkpoint : String
 
+func _ready() -> void:
+	actual_checkpoint = Global.read_story_checkpoint()
+	if not actual_checkpoint:
+		$ButtonsContainer/SecondContainer/CleanContainer/BtnClean.visible = false
 
 
 func _on_BtnClean_pressed():
 	$SoundPress.play()
-	var actual_checkpoint = Global.read_story_checkpoint()
 	if actual_checkpoint:
 		get_tree().call_deferred("change_scene_to_file", "res://Scenes/Story/"+String(actual_checkpoint)+"/"+String(actual_checkpoint)+".tscn")
 

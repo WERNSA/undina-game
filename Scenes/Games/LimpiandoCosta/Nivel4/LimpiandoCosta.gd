@@ -142,3 +142,7 @@ func _game_over():
 
 func _on_try_again():
 	get_tree().reload_current_scene()
+
+
+func _on_bg_song_finished() -> void:
+	$Songs/BGSong.play()

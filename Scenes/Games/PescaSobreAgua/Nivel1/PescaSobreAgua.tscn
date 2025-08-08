@@ -7,7 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://cth3iu2lap5nq" path="res://Scenes/Entity/FishingRod/FishingRod.tscn" id="6"]
 [ext_resource type="Texture2D" uid="uid://doybghpxqnbpx" path="res://Assets/Images/PescaSobreAgua/Radar/Radar.png" id="7"]
 [ext_resource type="Texture2D" uid="uid://mryqwoyilb56" path="res://Assets/Images/PescaSobreAgua/Sensor/Sensor de pesca.png" id="8"]
-[ext_resource type="Texture2D" uid="uid://ciug1ywrlymx1" path="res://Assets/Images/Story/Characters/Main/Ilea/Illea leyendo.png" id="8_qtfhm"]
+[ext_resource type="Texture2D" uid="uid://cunphppd6ocmf" path="res://Assets/Images/Story/Characters/Main/Ilea/Illea leyendo.png" id="8_qtfhm"]
 [ext_resource type="Texture2D" uid="uid://blfqfj8htqu7j" path="res://Assets/Images/PescaSobreAgua/Radar/BtnFishInactive.png" id="9"]
 [ext_resource type="Texture2D" uid="uid://fsycvd8lld1o" path="res://Assets/Images/board_label.png" id="9_pub7m"]
 [ext_resource type="Texture2D" uid="uid://b7b014o85c6s7" path="res://Assets/Images/PescaSobreAgua/Radar/BtnFishActive.png" id="10"]
@@ -283,11 +283,11 @@ editable = false
 
 [node name="PointsBar" type="TextureProgressBar" parent="Sensor"]
 offset_left = 1320.0
-offset_top = 643.12
-offset_right = 2894.0
-offset_bottom = 1033.12
+offset_top = 635.12
+offset_right = 1991.0
+offset_bottom = 801.12
 rotation = -1.5708
-scale = Vector2(0.38, 0.109)
+scale = Vector2(0.87, 0.251)
 size_flags_horizontal = 4
 size_flags_vertical = 4
 max_value = 400.0
@@ -368,7 +368,7 @@ texture = ExtResource("31")
 offset = Vector2(45, -2)
 
 [node name="Timer" type="Timer" parent="Timer"]
-wait_time = 180.0
+wait_time = 90.0
 autostart = true
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Timer"]
@@ -405,6 +405,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [connection signal="animation_finished" from="Items/FishingRodLever/AnimationPlayer" to="." method="_on_AnimationPlayer_animation_finished"]
+[connection signal="finished" from="Sounds/BGSong" to="." method="_on_bg_song_finished"]
 [connection signal="pressed" from="Sensor/BtnFish" to="." method="_on_BtnFish_pressed"]
 [connection signal="timeout" from="Characters/RadarItemTimer" to="." method="_on_RadarItemTimer_timeout"]
 [connection signal="timeout" from="Characters/FishingTimer" to="." method="_on_FishingTimer_timeout"]

@@ -1,14 +1,14 @@
 [gd_scene load_steps=11 format=3 uid="uid://b1whupf0ylahl"]
 
-[ext_resource type="Texture2D" uid="uid://e27i64f0flh1" path="res://Assets/Images/Story/Scene5/Luz.png" id="2"]
-[ext_resource type="Texture2D" uid="uid://bnmqdcyuotjd0" path="res://Assets/Images/Story/Scene5/Piso.png" id="3"]
-[ext_resource type="Texture2D" uid="uid://bh11lxkvgkd0" path="res://Assets/Images/Story/Scene5/Librero.png" id="4"]
-[ext_resource type="Texture2D" uid="uid://dvjdnl67xnfjb" path="res://Assets/Images/Story/Scene6/Humo.png" id="5"]
-[ext_resource type="Texture2D" uid="uid://c6pc2c4yx4ui" path="res://Assets/Images/Story/Scene6/Pila de Libros izquierda.png" id="6"]
-[ext_resource type="Texture2D" uid="uid://hrymb8j4u5bs" path="res://Assets/Images/Story/Scene6/Mesa con libros y papeles.png" id="7"]
-[ext_resource type="Texture2D" uid="uid://bkhksbj6jgm5y" path="res://Assets/Images/Story/Scene6/Silla.png" id="8"]
-[ext_resource type="Texture2D" uid="uid://cy8eevuicwmib" path="res://Assets/Images/Story/Scene6/Pila de Libros derecha.png" id="9"]
-[ext_resource type="Texture2D" uid="uid://ddi25m0kannbs" path="res://Assets/Images/Story/Characters/Main/Ilea/Illea leyendo.png" id="10"]
+[ext_resource type="Texture2D" uid="uid://d2xnwumrpakdh" path="res://Assets/Images/Story/Scene5/Luz.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://cxkknq5p1mr27" path="res://Assets/Images/Story/Scene5/Piso.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://clons46hxlanx" path="res://Assets/Images/Story/Scene5/Librero.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://tt66fklretw6" path="res://Assets/Images/Story/Scene6/Humo.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://cm8m2hd4refpw" path="res://Assets/Images/Story/Scene6/Pila de Libros izquierda.png" id="6"]
+[ext_resource type="Texture2D" uid="uid://3gdwre61mhy5" path="res://Assets/Images/Story/Scene6/Mesa con libros y papeles.png" id="7"]
+[ext_resource type="Texture2D" uid="uid://c64nqcvhenq2p" path="res://Assets/Images/Story/Scene6/Silla.png" id="8"]
+[ext_resource type="Texture2D" uid="uid://bdjuvkktubxp8" path="res://Assets/Images/Story/Scene6/Pila de Libros derecha.png" id="9"]
+[ext_resource type="Texture2D" uid="uid://cunphppd6ocmf" path="res://Assets/Images/Story/Characters/Main/Ilea/Illea leyendo.png" id="10"]
 [ext_resource type="Script" uid="uid://cejlhs620dvio" path="res://Scenes/Story/Scene6/Scene6.gd" id="11"]
 
 [node name="Scene6" type="Node2D"]
@@ -17,7 +17,7 @@ script = ExtResource("11")
 [node name="Background" type="Node2D" parent="."]
 
 [node name="Piso" type="Sprite2D" parent="Background"]
-position = Vector2(0, 1300)
+position = Vector2(0, 546)
 texture = ExtResource("3")
 centered = false
 
@@ -32,25 +32,25 @@ centered = false
 [node name="Environment" type="Node2D" parent="."]
 
 [node name="Humo" type="Sprite2D" parent="Environment"]
-position = Vector2(1600, 400)
+position = Vector2(672, 168)
 texture = ExtResource("5")
 
 [node name="Table" type="Sprite2D" parent="Environment"]
-position = Vector2(1600, 1425)
+position = Vector2(672, 598.5)
 texture = ExtResource("7")
 
 [node name="PilaDeLibrosDerecha" type="Sprite2D" parent="Environment"]
-position = Vector2(2900, 1500)
+position = Vector2(1218, 630)
 texture = ExtResource("9")
 
 [node name="PilaDeLibrosIzquierda" type="Sprite2D" parent="Environment"]
-position = Vector2(300, 1500)
+position = Vector2(126, 630)
 texture = ExtResource("6")
 
 [node name="IlleaLeyendo" type="Sprite2D" parent="Environment"]
-position = Vector2(1602, 1207)
+position = Vector2(672.84, 506.94)
 texture = ExtResource("10")
 
 [node name="Silla" type="Sprite2D" parent="Environment"]
-position = Vector2(1600, 1525)
+position = Vector2(672, 640.5)
 texture = ExtResource("8")

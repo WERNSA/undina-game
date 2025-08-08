@@ -53,8 +53,6 @@ func read_data():
 
 func write_data(text):
 	var dir = "user://data.txt"
-	if not FileAccess.file_exists(dir):
-		return null
 	var file = FileAccess.open(dir, FileAccess.WRITE)
 	file.store_string(text)
 	file.close()
@@ -77,7 +75,7 @@ func write_points(text):
 func read_minigames(): 
 	var dir = "user://minigames.txt"
 	if not FileAccess.file_exists(dir):
-		return 0 
+		return null
 	var file = FileAccess.open(dir, FileAccess.READ)
 	var data = file.get_as_text() 
 	file.close()

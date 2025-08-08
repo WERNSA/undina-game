@@ -139,3 +139,7 @@ func _on_Timer_timeout():
 
 func _on_delete_area_area_entered(area: Area2D) -> void:
 	area.queue_free()
+
+
+func _on_bg_song_finished() -> void:
+	$Sounds/BGSong.play()

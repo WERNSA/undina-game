@@ -183,3 +183,7 @@ func disable_buttons(val: bool):
 	$Trivia/Answers/Btn1.disabled = val
 	$Trivia/Answers/Btn2.disabled = val
 	$Trivia/Answers/Btn3.disabled = val
+
+
+func _on_bg_song_finished() -> void:
+	$Sounds/BgSong.play()

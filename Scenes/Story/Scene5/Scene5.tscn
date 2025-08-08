@@ -1,9 +1,9 @@
 [gd_scene load_steps=5 format=3 uid="uid://c16pqgratbxgp"]
 
-[ext_resource type="Texture2D" uid="uid://bh11lxkvgkd0" path="res://Assets/Images/Story/Scene5/Librero.png" id="1"]
+[ext_resource type="Texture2D" uid="uid://clons46hxlanx" path="res://Assets/Images/Story/Scene5/Librero.png" id="1"]
 [ext_resource type="Script" uid="uid://d0y5sjmnlkxjn" path="res://Scenes/Story/Scene5/Scene5.gd" id="1_kag8n"]
-[ext_resource type="Texture2D" uid="uid://e27i64f0flh1" path="res://Assets/Images/Story/Scene5/Luz.png" id="3"]
-[ext_resource type="Texture2D" uid="uid://bnmqdcyuotjd0" path="res://Assets/Images/Story/Scene5/Piso.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://d2xnwumrpakdh" path="res://Assets/Images/Story/Scene5/Luz.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://cxkknq5p1mr27" path="res://Assets/Images/Story/Scene5/Piso.png" id="4"]
 
 [node name="Scene5" type="Node2D"]
 script = ExtResource("1_kag8n")
@@ -11,7 +11,7 @@ script = ExtResource("1_kag8n")
 [node name="Background" type="Node2D" parent="."]
 
 [node name="Piso" type="Sprite2D" parent="Background"]
-position = Vector2(0, 1300)
+position = Vector2(0, 546)
 texture = ExtResource("4")
 centered = false
 

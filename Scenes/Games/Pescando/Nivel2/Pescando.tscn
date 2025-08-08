@@ -274,6 +274,7 @@ height = 180.156
 
 [node name="Pescando" type="Node2D" groups=["level_pesca"]]
 script = ExtResource("10")
+tries = 4
 ilea_position = Vector2(680, 250)
 FishBG = ExtResource("48")
 

@@ -206,3 +206,7 @@ func _on_Timer_timeout():
 		_game_win()
 	else:
 		_game_over()
+
+
+func _on_bg_song_finished() -> void:
+	$Sounds/BGSong.play()

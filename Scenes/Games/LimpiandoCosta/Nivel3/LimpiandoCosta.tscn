@@ -545,5 +545,6 @@ visible = false
 position = Vector2(1, -1)
 
 [connection signal="body_entered" from="Background/Ambience/Trash" to="." method="_on_Trash_body_entered"]
+[connection signal="finished" from="Songs/BGSong" to="." method="_on_bg_song_finished"]
 [connection signal="timeout" from="Crab/WaitTimer" to="." method="_on_WaitTimer_timeout"]
 [connection signal="timeout" from="Crab/SpawnTimer" to="." method="_on_SpawnTimer_timeout"]

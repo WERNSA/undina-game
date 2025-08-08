@@ -12,6 +12,6 @@ func _ready():
 
 func _on_dialogic_signal(argument:String):
 	if argument == "finished":
-		get_tree().change_scene_to_file("res://Scenes/Story/Scene7/Scene7.tscn")
+		get_tree().change_scene_to_file("res://Scenes/Games/LimpiandoCosta/Nivel3/LimpiandoCosta.tscn")
 	elif argument == "hide_ilea":
 		hide_ilea()

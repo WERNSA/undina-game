@@ -1,27 +1,27 @@
 [gd_scene load_steps=27 format=3 uid="uid://1fa3jo3j6pn6"]
 
-[ext_resource type="Texture2D" uid="uid://b33v8ww4pmxd6" path="res://Assets/Images/LimpiandoCosta/Pantalla 1/Arena de Fondo.png" id="1"]
-[ext_resource type="Texture2D" uid="uid://ccrwclwna8lw7" path="res://Assets/Images/Story/Scene2/Grama.png" id="2"]
-[ext_resource type="Texture2D" uid="uid://bc0xox0tdx7ug" path="res://Assets/Images/Story/Scene2/Parque.png" id="3"]
-[ext_resource type="Texture2D" uid="uid://x3dcyn3dnw6c" path="res://Assets/Images/Story/Scene2/Estatua de Illea.png" id="4"]
-[ext_resource type="Texture2D" uid="uid://xskjo5fpyaqh" path="res://Assets/Images/Story/Scene2/Casa de madera.png" id="5"]
-[ext_resource type="Texture2D" uid="uid://ddvu28g8bt1hm" path="res://Assets/Images/Story/Scene2/Casa grande.png" id="6"]
-[ext_resource type="Texture2D" uid="uid://e3u8513sk67m" path="res://Assets/Images/Story/Scene2/Basurero.png" id="7"]
-[ext_resource type="Texture2D" uid="uid://csli36e8v4g5a" path="res://Assets/Images/Story/Scene2/Banca a la derecha.png" id="8"]
-[ext_resource type="Texture2D" uid="uid://doy71kxb1qxjr" path="res://Assets/Images/Story/Scene2/Banca.png" id="9"]
-[ext_resource type="Texture2D" uid="uid://becypvqfx2246" path="res://Assets/Images/LimpiandoCosta/Pantalla 1/Farol.png" id="10"]
-[ext_resource type="Texture2D" uid="uid://dyrltflos7dw1" path="res://Assets/Images/LimpiandoCosta/Pantalla 1/Palmeras/Palmera 1.png" id="11"]
-[ext_resource type="Texture2D" uid="uid://dm8ppwkpvvl7v" path="res://Assets/Images/LimpiandoCosta/Pantalla 1/Arbusto.png" id="12"]
-[ext_resource type="Texture2D" uid="uid://cr171owvmwe5d" path="res://Assets/Images/Story/Characters/Secondary/BoyPitahaya.png" id="13"]
-[ext_resource type="Texture2D" uid="uid://30e68o61afp6" path="res://Assets/Images/Story/Characters/Secondary/Mujer.png" id="14"]
-[ext_resource type="Texture2D" uid="uid://c0hf7t1kkhcxw" path="res://Assets/Images/Story/Characters/Secondary/PaloMayo.png" id="15"]
-[ext_resource type="Texture2D" uid="uid://chv4f71hqlcaa" path="res://Assets/Images/Story/Characters/Secondary/GirlWatermelon.png" id="16"]
-[ext_resource type="Texture2D" uid="uid://d28gb1vs47le8" path="res://Assets/Images/Story/Characters/Secondary/BoyWatermelon.png" id="17"]
-[ext_resource type="Texture2D" uid="uid://drjhnkvlrck8g" path="res://Assets/Images/Story/Characters/Secondary/Captain.png" id="18"]
-[ext_resource type="Texture2D" uid="uid://de2hclj0a3o3p" path="res://Assets/Images/Story/Characters/Secondary/Girl.png" id="19"]
-[ext_resource type="Texture2D" uid="uid://bii5dw1t0b5ti" path="res://Assets/Images/Story/Characters/Main/Andres/Andres.png" id="20"]
-[ext_resource type="Texture2D" uid="uid://bs5rlwqxqebq0" path="res://Assets/Images/Story/Characters/Secondary/Bibliotecaria.png" id="21"]
-[ext_resource type="Texture2D" uid="uid://bumujsn6qvvxm" path="res://Assets/Images/Story/Characters/Secondary/DogKabu.png" id="22"]
+[ext_resource type="Texture2D" uid="uid://kerabp1lxnl4" path="res://Assets/Images/LimpiandoCosta/Pantalla 1/Arena de Fondo.png" id="1"]
+[ext_resource type="Texture2D" uid="uid://67wbpmcgign5" path="res://Assets/Images/Story/Scene2/Grama.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://ddv2np3oplxfg" path="res://Assets/Images/Story/Scene2/Parque.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://bwv4w03f4eru" path="res://Assets/Images/Story/Scene2/Estatua de Illea.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://ceo2rsbowno28" path="res://Assets/Images/Story/Scene2/Casa de madera.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://bp0le3djdh4km" path="res://Assets/Images/Story/Scene2/Casa grande.png" id="6"]
+[ext_resource type="Texture2D" uid="uid://cwlnjxlqagrt6" path="res://Assets/Images/Story/Scene2/Basurero.png" id="7"]
+[ext_resource type="Texture2D" uid="uid://cene12flwfa1y" path="res://Assets/Images/Story/Scene2/Banca a la derecha.png" id="8"]
+[ext_resource type="Texture2D" uid="uid://x5xq2ywxv5t" path="res://Assets/Images/Story/Scene2/Banca.png" id="9"]
+[ext_resource type="Texture2D" uid="uid://dlgbqw1ndxerq" path="res://Assets/Images/LimpiandoCosta/Pantalla 1/Farol.png" id="10"]
+[ext_resource type="Texture2D" uid="uid://msyh3yd2i56i" path="res://Assets/Images/LimpiandoCosta/Pantalla 1/Palmeras/Palmera 1.png" id="11"]
+[ext_resource type="Texture2D" uid="uid://bqglkldl6brsh" path="res://Assets/Images/LimpiandoCosta/Pantalla 1/Arbusto.png" id="12"]
+[ext_resource type="Texture2D" uid="uid://cg2ehs8xa3elg" path="res://Assets/Images/Story/Characters/Secondary/BoyPitahaya.png" id="13"]
+[ext_resource type="Texture2D" uid="uid://cn6ocdm7vg5el" path="res://Assets/Images/Story/Characters/Secondary/Mujer.png" id="14"]
+[ext_resource type="Texture2D" uid="uid://s37ed25rlmcx" path="res://Assets/Images/Story/Characters/Secondary/PaloMayo.png" id="15"]
+[ext_resource type="Texture2D" uid="uid://djfaxrxj7i60v" path="res://Assets/Images/Story/Characters/Secondary/GirlWatermelon.png" id="16"]
+[ext_resource type="Texture2D" uid="uid://dqjdwlg5sxqa7" path="res://Assets/Images/Story/Characters/Secondary/BoyWatermelon.png" id="17"]
+[ext_resource type="Texture2D" uid="uid://d1hhpmw7awo44" path="res://Assets/Images/Story/Characters/Secondary/Captain.png" id="18"]
+[ext_resource type="Texture2D" uid="uid://chbicdc8x1wxr" path="res://Assets/Images/Story/Characters/Secondary/Girl.png" id="19"]
+[ext_resource type="Texture2D" uid="uid://8heweam1uu0r" path="res://Assets/Images/Story/Characters/Main/Andres/Andres.png" id="20"]
+[ext_resource type="Texture2D" uid="uid://b3ure8pgf2vly" path="res://Assets/Images/Story/Characters/Secondary/Bibliotecaria.png" id="21"]
+[ext_resource type="Texture2D" uid="uid://dh2u1bbapjf86" path="res://Assets/Images/Story/Characters/Secondary/DogKabu.png" id="22"]
 [ext_resource type="Script" uid="uid://duqpnd2p00tfh" path="res://Scenes/Story/Scene2/Scene2.gd" id="23"]
 
 [sub_resource type="Animation" id="1"]
@@ -138,137 +138,138 @@ texture = ExtResource("2")
 centered = false
 
 [node name="Park" type="Sprite2D" parent="Background"]
-position = Vector2(1600, 1000)
+position = Vector2(672, 420)
 texture = ExtResource("3")
 
 [node name="Statue" type="Sprite2D" parent="Background/Park"]
-position = Vector2(-10, -220)
+position = Vector2(-4.2, -92.4)
 texture = ExtResource("4")
 
 [node name="Light1" type="Sprite2D" parent="Background/Park"]
-position = Vector2(-515, -400)
+position = Vector2(-216.3, -168)
 texture = ExtResource("10")
 
 [node name="Light2" type="Sprite2D" parent="Background/Park"]
-position = Vector2(515, -400)
+position = Vector2(216.3, -168)
 texture = ExtResource("10")
 
 [node name="Light3" type="Sprite2D" parent="Background/Park"]
-position = Vector2(-515, 50)
+position = Vector2(-216.3, 21)
 texture = ExtResource("10")
 
 [node name="Light4" type="Sprite2D" parent="Background/Park"]
-position = Vector2(515, 50)
+position = Vector2(216.3, 21)
 texture = ExtResource("10")
 
 [node name="Environment" type="Node2D" parent="."]
 
 [node name="HouseBig" type="Sprite2D" parent="Environment"]
-position = Vector2(3800, 0)
+position = Vector2(1596, 0)
 texture = ExtResource("6")
 
 [node name="Palmera2" type="Sprite2D" parent="Environment"]
-position = Vector2(2899, 765)
+position = Vector2(1217.58, 321.3)
 texture = ExtResource("11")
 
 [node name="Arbusto" type="Sprite2D" parent="Environment/Palmera2"]
-position = Vector2(-100, 289)
+position = Vector2(-42, 121.38)
 texture = ExtResource("12")
 
 [node name="Arbusto2" type="Sprite2D" parent="Environment/Palmera2"]
-position = Vector2(50, 289)
+position = Vector2(21, 121.38)
 texture = ExtResource("12")
 
 [node name="HouseSmall" type="Sprite2D" parent="Environment"]
-position = Vector2(3150, 1100)
+position = Vector2(1323, 462)
 texture = ExtResource("5")
 
 [node name="Basurero" type="Sprite2D" parent="Environment"]
-position = Vector2(775, 35)
+position = Vector2(325.5, 14.7)
 texture = ExtResource("7")
 
 [node name="ChairL" type="Sprite2D" parent="Environment"]
-position = Vector2(1200, 114)
+position = Vector2(504, 47.88)
 texture = ExtResource("9")
 
 [node name="ChairR" type="Sprite2D" parent="Environment"]
-position = Vector2(2000, 114)
+position = Vector2(840, 47.88)
 texture = ExtResource("9")
 
 [node name="ChairRightU" type="Sprite2D" parent="Environment"]
-position = Vector2(2480, 583)
+position = Vector2(1041.6, 244.86)
 texture = ExtResource("8")
 flip_h = true
 
 [node name="ChairRightD" type="Sprite2D" parent="Environment"]
-position = Vector2(2480, 1383)
+position = Vector2(1041.6, 580.86)
 texture = ExtResource("8")
 flip_h = true
 
 [node name="ChairLeftU" type="Sprite2D" parent="Environment"]
-position = Vector2(718, 583)
+position = Vector2(301.56, 244.86)
 texture = ExtResource("8")
 
 [node name="ChairLeftD" type="Sprite2D" parent="Environment"]
-position = Vector2(718, 1383)
+position = Vector2(301.56, 580.86)
 texture = ExtResource("8")
 
 [node name="Palmera1" type="Sprite2D" parent="Environment"]
-position = Vector2(415, 1350)
+position = Vector2(174.3, 567)
 texture = ExtResource("11")
 
 [node name="Arbusto" type="Sprite2D" parent="Environment/Palmera1"]
-position = Vector2(-32, 289)
+position = Vector2(-13.44, 121.38)
 texture = ExtResource("12")
 
 [node name="Arbusto2" type="Sprite2D" parent="Environment/Palmera1"]
-position = Vector2(65, 289)
+position = Vector2(27.3, 121.38)
 texture = ExtResource("12")
 
 [node name="Arbusto3" type="Sprite2D" parent="Environment/Palmera1"]
-position = Vector2(-135, 289)
+position = Vector2(-56.7, 121.38)
 texture = ExtResource("12")
 
 [node name="Characters" type="Node2D" parent="."]
 
 [node name="PaloMayo" type="Sprite2D" parent="Characters"]
-position = Vector2(600, 199)
+position = Vector2(252, 83.58)
 texture = ExtResource("15")
 
 [node name="Mujer" type="Sprite2D" parent="Characters"]
-position = Vector2(237, 217)
+position = Vector2(99.54, 91.14)
 texture = ExtResource("14")
 
 [node name="Girl" type="Sprite2D" parent="Characters"]
-position = Vector2(369, 270)
+position = Vector2(154.98, 113.4)
 texture = ExtResource("19")
 
 [node name="Captain" type="Sprite2D" parent="Characters"]
-position = Vector2(814, 826)
+position = Vector2(341.88, 346.92)
 texture = ExtResource("18")
 
 [node name="Bibliotecaria" type="Sprite2D" parent="Characters"]
-position = Vector2(2582, 228)
+position = Vector2(1084.44, 95.76)
 texture = ExtResource("21")
 
 [node name="DogKabu" type="Sprite2D" parent="Characters"]
-position = Vector2(1545, 292)
+position = Vector2(648.9, 122.64)
 texture = ExtResource("22")
 
 [node name="BoyWatermelon" type="Sprite2D" parent="Characters/DogKabu"]
-position = Vector2(-421, -214)
+position = Vector2(-176.82, -89.88)
 texture = ExtResource("17")
 
 [node name="GirlWatermelon" type="Sprite2D" parent="Characters/DogKabu"]
-position = Vector2(-335, -200)
+position = Vector2(-140.7, -84)
 texture = ExtResource("16")
 
 [node name="BoyPitahaya" type="Sprite2D" parent="Characters/DogKabu"]
-position = Vector2(-264, -196)
+position = Vector2(-110.88, -82.32)
 texture = ExtResource("13")
 
 [node name="Andres" type="Sprite2D" parent="Characters/DogKabu"]
-position = Vector2(-560, -132)
+position = Vector2(-235.2, -55.44)
+scale = Vector2(0.4, 0.4)
 texture = ExtResource("20")
 
 [node name="FadeIn" type="ColorRect" parent="."]

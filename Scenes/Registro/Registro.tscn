@@ -1,18 +1,18 @@
 [gd_scene load_steps=18 format=3 uid="uid://eumhu2g77q1s"]
 
 [ext_resource type="Script" uid="uid://c1is25q8db6vf" path="res://Scenes/Registro/Scripts/Registro.gd" id="1"]
-[ext_resource type="Texture2D" uid="uid://c2tk6n1u4318e" path="res://Assets/Images/bg_main.jpg" id="2"]
-[ext_resource type="Texture2D" uid="uid://devluov3qg18r" path="res://Assets/Images/board.png" id="3"]
-[ext_resource type="Texture2D" uid="uid://dsyr362ldxdp6" path="res://Assets/Images/board_name.png" id="4"]
-[ext_resource type="Texture2D" uid="uid://bquwv16hvbcr0" path="res://Assets/Images/board_label.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://l7cnjed04pwq" path="res://Assets/Images/bg_main.jpg" id="2"]
+[ext_resource type="Texture2D" uid="uid://cpql8pnh01fr" path="res://Assets/Images/board.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://ydgap0srw4r8" path="res://Assets/Images/board_name.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://fsycvd8lld1o" path="res://Assets/Images/board_label.png" id="5"]
 [ext_resource type="FontFile" uid="uid://byvaqdf2liiep" path="res://Assets/Fonts/btnFont.tres" id="6"]
-[ext_resource type="Texture2D" uid="uid://dc3qhay80s484" path="res://Assets/Images/btn_yellow.png" id="7"]
-[ext_resource type="Texture2D" uid="uid://g7avpeink2bn" path="res://Assets/Images/Animaciones/Recogiendo basura/De frente/Illea de frente 1.png" id="8"]
-[ext_resource type="Texture2D" uid="uid://d3bjjuhbhdfg0" path="res://Assets/Images/board_dialog.png" id="9"]
+[ext_resource type="Texture2D" uid="uid://d26b12ag1yaxq" path="res://Assets/Images/btn_yellow.png" id="7"]
+[ext_resource type="Texture2D" uid="uid://ccjfekfxvbots" path="res://Assets/Images/Animaciones/Recogiendo basura/De frente/Illea de frente 1.png" id="8"]
+[ext_resource type="Texture2D" uid="uid://bpknltd85tedu" path="res://Assets/Images/board_dialog.png" id="9"]
 [ext_resource type="FontFile" path="res://Assets/Fonts/dialogFont.tres" id="10"]
-[ext_resource type="Texture2D" uid="uid://cxkw71e63x821" path="res://Assets/Images/btn_arrow.png" id="11"]
-[ext_resource type="AudioStream" uid="uid://dq0gr2hmlkfe2" path="res://Scenes/Menu/Sounds/sea-waves.ogg" id="12"]
-[ext_resource type="Texture2D" uid="uid://b2u8u61j0ap15" path="res://Assets/Images/btn_yellow_disabled.png" id="13"]
+[ext_resource type="Texture2D" uid="uid://cglbu2j8astnv" path="res://Assets/Images/btn_arrow.png" id="11"]
+[ext_resource type="AudioStream" uid="uid://brm3lk2n3jy15" path="res://Scenes/Menu/Sounds/sea-waves.ogg" id="12"]
+[ext_resource type="Texture2D" uid="uid://cpkj0jf8wdxo" path="res://Assets/Images/btn_yellow_disabled.png" id="13"]
 
 [sub_resource type="StyleBoxEmpty" id="1"]
 
@@ -28,7 +28,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(3203, 550)]
+"values": [Vector2(1367.26, 231)]
 }
 
 [sub_resource type="Animation" id="2"]
@@ -104,7 +104,7 @@ tracks/5/keys = {
 "times": PackedFloat32Array(0, 0.5, 1),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [Vector2(3203, 550), Vector2(3203, 550), Vector2(2475, 550)]
+"values": [Vector2(1375, 230), Vector2(1200, 231), Vector2(1200, 231)]
 }
 tracks/6/type = "value"
 tracks/6/imported = false
@@ -304,10 +304,10 @@ anchor_left = 1.0
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 1837.0
-offset_top = -218.0
-offset_right = 2041.0
-offset_bottom = 186.0
+offset_left = 1.26001
+offset_top = -537.0
+offset_right = 205.26
+offset_bottom = -133.0
 grow_horizontal = 0
 grow_vertical = 0
 texture = ExtResource("8")
@@ -338,6 +338,7 @@ scale = Vector2(1.5, 1.7)
 texture = ExtResource("9")
 
 [node name="LblDialog" type="Label" parent="."]
+visible = false
 modulate = Color(1, 1, 1, 0)
 layout_mode = 1
 anchors_preset = 8
@@ -355,6 +356,7 @@ theme_override_fonts/font = ExtResource("10")
 theme_override_font_sizes/font_size = 35
 
 [node name="btnContinue" type="TextureButton" parent="."]
+visible = false
 modulate = Color(1, 1, 1, 0)
 layout_mode = 1
 anchors_preset = 8

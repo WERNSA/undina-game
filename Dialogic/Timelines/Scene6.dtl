@@ -12,6 +12,6 @@ andres: Que ignorante fuí en ese entonces Ilea...
 illea (Ilea asustada): ¿Cómo puedes decir que es normal ver peces atrancados, muertos en la orilla? ¡Mira a tu alrededor!, la gente a diario usa la costa como si fuera un basurero.
 andresBoy (AndresSad): Vaya Ilea, tienes mucha razón, tus palabras me han abierto los ojos.
 illea (Default): ¡Vamos entonces a buscar a los demás!
-[signal arg="write_story_checkpoint"]
-[signal arg="story_game"]
+do Global.write_story_checkpoint("Scene6")
+do Global.story_game("res://Scenes/Story/Scene7/Scene7.tscn")
 [signal arg="finished"]

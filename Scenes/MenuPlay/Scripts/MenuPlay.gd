@@ -6,12 +6,13 @@ var mini_games
 	{'name': 'coralimpio', 'button': 'btnFish', 'src': 'VBoxContainer/ButtonsContainer/FirstContainer/FishContainer/BtnFish'},
 	{'name': 'pescando', 'button': 'btnTime', 'src': 'VBoxContainer/ButtonsContainer/FirstContainer/TimeContainer/BtnTime'},
 	{'name': 'carrera_obstaculos', 'button': 'btnObstacle', 'src': 'VBoxContainer/ButtonsContainer/SecondContainer/ObstacleContainer/BtnObstacle'},
-	{'name': 'trivia', 'button': 'btnQuiz', 'src': 'VBoxContainer/QuizContainer/BtnQuiz'}
+	{'name': 'trivia', 'button': 'btnQuiz', 'src': 'VBoxContainer/ButtonsContainer/SecondContainer/TriviaContainer/BtnQuiz'}
 ]
 
 func check_minigames_locked():
 	for game in all_minigames:
-		get_node(game['src']).disabled = !game['name'] in mini_games
+		var btn : TextureButton = get_node(game['src'])
+		btn.disabled = !game['name'] in mini_games
 
 
 # Called when the node enters the scene tree for the first time.
@@ -29,7 +30,7 @@ func _ready():
 	else:
 		mini_games = []
 	
-	#check_minigames_locked()
+	check_minigames_locked()
 
 
 func _on_BtnBack_pressed():
