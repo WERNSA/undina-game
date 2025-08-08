@@ -1,0 +1,210 @@
+[gd_scene load_steps=15 format=3 uid="uid://cvovq5vfp4iko"]
+
+[ext_resource type="Script" uid="uid://dv25i8ac00aae" path="res://Scenes/Menu/Scripts/Menu.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://l7cnjed04pwq" path="res://Assets/Images/bg_main.jpg" id="2"]
+[ext_resource type="Texture2D" uid="uid://bgpn141fga45d" path="res://Scenes/Menu/Images/logo.png" id="3"]
+[ext_resource type="AudioStream" uid="uid://brm3lk2n3jy15" path="res://Scenes/Menu/Sounds/sea-waves.ogg" id="4"]
+[ext_resource type="Texture2D" uid="uid://d26b12ag1yaxq" path="res://Assets/Images/btn_yellow.png" id="5"]
+[ext_resource type="FontFile" uid="uid://byvaqdf2liiep" path="res://Assets/Fonts/btnFont.tres" id="6"]
+[ext_resource type="FontFile" uid="uid://dwuhhld1o3c7v" path="res://Assets/Fonts/Marujo.ttf" id="7"]
+[ext_resource type="PackedScene" uid="uid://cujr43bnq6o6h" path="res://Scenes/Options/Options.tscn" id="8"]
+[ext_resource type="Texture2D" uid="uid://cpkj0jf8wdxo" path="res://Assets/Images/btn_yellow_disabled.png" id="9"]
+[ext_resource type="AudioStream" uid="uid://cf4ok6vhc01q1" path="res://Assets/Sounds/main_menu.ogg" id="10"]
+[ext_resource type="AudioStream" uid="uid://iapirq7tctl" path="res://Assets/Sounds/SFX/button_press.wav" id="11"]
+
+[sub_resource type="FontFile" id="1"]
+fallbacks = Array[Font]([ExtResource("7")])
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/75/0/ascent = 0.0
+cache/0/75/0/descent = 0.0
+cache/0/75/0/underline_position = 0.0
+cache/0/75/0/underline_thickness = 0.0
+cache/0/75/0/scale = 1.0
+cache/0/55/0/ascent = 0.0
+cache/0/55/0/descent = 0.0
+cache/0/55/0/underline_position = 0.0
+cache/0/55/0/underline_thickness = 0.0
+cache/0/55/0/scale = 1.0
+
+[sub_resource type="Animation" id="2"]
+resource_name = "Init"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Options:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("ButtonsContainer:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_5buhm"]
+_data = {
+&"Init": SubResource("2")
+}
+
+[node name="Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 3200.0
+offset_bottom = 1800.0
+script = ExtResource("1")
+
+[node name="BgSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4")
+autoplay = true
+bus = &"Music"
+
+[node name="BgSong" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("10")
+volume_db = -10.0
+autoplay = true
+bus = &"Music"
+
+[node name="SoundPress" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("11")
+
+[node name="BgImage" type="Sprite2D" parent="."]
+texture = ExtResource("2")
+centered = false
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -1224.0
+offset_top = 9.0
+offset_right = -627.0
+offset_bottom = 215.0
+grow_horizontal = 2
+
+[node name="PlayerName" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = -3
+theme_override_fonts/font = SubResource("1")
+theme_override_font_sizes/font_size = 55
+horizontal_alignment = 1
+
+[node name="PlayerPoints" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = -3
+theme_override_fonts/font = SubResource("1")
+theme_override_font_sizes/font_size = 55
+text = "PUNTUACIÓN: 0"
+horizontal_alignment = 1
+
+[node name="Logo" type="Sprite2D" parent="."]
+position = Vector2(674, 255)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("3")
+
+[node name="ButtonsContainer" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -1597.0
+offset_top = -486.0
+offset_right = -234.0
+offset_bottom = -349.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="PlayContainer" type="CenterContainer" parent="ButtonsContainer"]
+layout_mode = 2
+
+[node name="BtnPlay" type="TextureButton" parent="ButtonsContainer/PlayContainer"]
+layout_mode = 2
+texture_normal = ExtResource("5")
+texture_pressed = ExtResource("9")
+texture_hover = ExtResource("9")
+texture_disabled = ExtResource("9")
+
+[node name="LblPlay" type="Label" parent="ButtonsContainer/PlayContainer"]
+layout_mode = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = -3
+theme_override_fonts/font = ExtResource("6")
+theme_override_font_sizes/font_size = 35
+text = "JUGAR"
+
+[node name="Learn" type="Node2D" parent="ButtonsContainer"]
+visible = false
+
+[node name="LearnContainer" type="CenterContainer" parent="ButtonsContainer/Learn"]
+offset_left = 494.0
+offset_right = 984.0
+offset_bottom = 273.0
+
+[node name="BtnLearn" type="TextureButton" parent="ButtonsContainer/Learn/LearnContainer"]
+layout_mode = 2
+texture_normal = ExtResource("5")
+texture_pressed = ExtResource("9")
+texture_hover = ExtResource("9")
+texture_disabled = ExtResource("9")
+
+[node name="LblLearn" type="Label" parent="ButtonsContainer/Learn/LearnContainer"]
+layout_mode = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = -3
+theme_override_fonts/font = ExtResource("6")
+text = "APRENDER"
+
+[node name="Credit" type="Node2D" parent="ButtonsContainer"]
+visible = false
+
+[node name="CreditContainer" type="CenterContainer" parent="ButtonsContainer/Credit"]
+offset_left = 494.0
+offset_right = 984.0
+offset_bottom = 273.0
+
+[node name="BtnCredits" type="TextureButton" parent="ButtonsContainer/Credit/CreditContainer"]
+layout_mode = 2
+texture_normal = ExtResource("5")
+texture_pressed = ExtResource("9")
+texture_hover = ExtResource("9")
+texture_disabled = ExtResource("9")
+
+[node name="LblCredits" type="Label" parent="ButtonsContainer/Credit/CreditContainer"]
+layout_mode = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = -3
+theme_override_fonts/font = ExtResource("6")
+text = "CRÉDITOS"
+
+[node name="Options" parent="." instance=ExtResource("8")]
+
+[node name="AnimationInit" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_5buhm")
+}
+
+[connection signal="pressed" from="ButtonsContainer/PlayContainer/BtnPlay" to="." method="_on_BtnPlay_pressed"]
+[connection signal="pressed" from="ButtonsContainer/Learn/LearnContainer/BtnLearn" to="." method="_on_BtnLearn_pressed"]
+[connection signal="pressed" from="ButtonsContainer/Credit/CreditContainer/BtnCredits" to="." method="_on_BtnCredits_pressed"]

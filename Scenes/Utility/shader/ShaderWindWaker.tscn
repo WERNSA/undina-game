@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://d4crqrjwtts5"]
+
+[ext_resource type="Shader" uid="uid://ki3gnvo1jbps" path="res://Scenes/Utility/shader/windwaker.gdshader" id="1"]
+
+[sub_resource type="ShaderMaterial" id="1"]
+shader = ExtResource("1")
+shader_parameter/WATER_COL = Color(0.04, 0.38, 0.88, 1)
+shader_parameter/WATER2_COL = Color(0.04, 0.35, 0.78, 1)
+shader_parameter/FOAM_COL = Color(0.8125, 0.9609, 0.9648, 1)
+shader_parameter/distortion_speed = 1.0
+shader_parameter/tile = Vector2(10, 10)
+shader_parameter/wave_speed = 1.0
+
+[node name="ShaderWindWaker" type="Node2D"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+show_behind_parent = true
+material = SubResource("1")
+offset_right = 3200.0
+offset_bottom = 1800.0

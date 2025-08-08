@@ -1,0 +1,7 @@
+[wait time="5.0"]
+En algún lugar en el Caribe, se encuentra la hermosa región de Cabia y dentro del canvas multicolor donde los tonos\: azules, verdes y blancos, impera la hermosa región de Baracuá, rodeada de un enorme arrecife de coral, nos encontramos con la maravillosa villa de cayo Cristal.
+join andres left
+andres: En cayo Cristal reside un hombre con un gran corazón y una nobleza que lo caracteriza, el capitán Andrés Omier...
+join illea right
+illea: Quién vivió junto a Ilea, la protagonista de nuestra historia, una gran aventura llena de muchas travesías.
+[signal arg="finished"]

@@ -1,0 +1,12 @@
+andres: Al llegar, la bibliotecaria con curiosidad preguntó...
+join andrea (AndreaSpeak) right
+andrea: Hola Ilea, ¿Qué te trae por la biblioteca? y tan agitada.
+update andrea (Default) right
+join illea (Ilea asustada) left
+illea: Es que necesito libros, e… el océano, mu… mucha basura
+andrea (AndreaSad): Calma Ilea, despacio...
+illea: Mis padres y yo hemos notado que el océano está muy sucio y consideramos que eso traerá muchos problemas para la vida del mar, necesitamos saber como ayudar a resolver este problema, y de seguro hay libros que puedan proporcionar la información que nos guiará.
+andrea (AndreaSpeak): ¡Felicidades por tu iniciativa Ilea! déjame ayudarte a encontrarlos.
+leave andrea [animation="Slide Out Right" length="1.0"]
+andres: La bibliotecaria muy amablemente fue a buscar los libros que Ilea necesitaba para poder iniciar su misión deseándole suerte.
+[signal arg="finished"]

@@ -1,0 +1,117 @@
+[gd_scene load_steps=10 format=3 uid="uid://b01rllaywbk8n"]
+
+[ext_resource type="Texture2D" uid="uid://d26b12ag1yaxq" path="res://Assets/Images/btn_yellow.png" id="2"]
+[ext_resource type="AudioStream" uid="uid://b1eyqmydgy3f" path="res://Assets/Sounds/menu_play.ogg" id="3"]
+[ext_resource type="Theme" uid="uid://y1ufudag5d7f" path="res://Assets/InputTheme/input_theme.tres" id="3_h7cv5"]
+[ext_resource type="Texture2D" uid="uid://cpkj0jf8wdxo" path="res://Assets/Images/btn_yellow_disabled.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://6uqar0e2ho4m" path="res://Assets/Images/bg_underwater.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://cglbu2j8astnv" path="res://Assets/Images/btn_arrow.png" id="6"]
+[ext_resource type="PackedScene" uid="uid://cujr43bnq6o6h" path="res://Scenes/Options/Options.tscn" id="8"]
+[ext_resource type="Script" uid="uid://dpc67dk57cewr" path="res://Scenes/MenuPlay/Story/Story.gd" id="9"]
+[ext_resource type="AudioStream" uid="uid://iapirq7tctl" path="res://Assets/Sounds/SFX/button_press.wav" id="10"]
+
+[node name="Story" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("9")
+
+[node name="BgImage" type="Sprite2D" parent="."]
+scale = Vector2(1, 1.29286)
+texture = ExtResource("5")
+centered = false
+
+[node name="PlayerName" type="Label" parent="."]
+layout_mode = 0
+anchor_left = 0.5
+anchor_right = 0.5
+theme = ExtResource("3_h7cv5")
+horizontal_alignment = 1
+
+[node name="GameName" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -203.0
+offset_top = 153.0
+offset_right = 203.0
+offset_bottom = 274.0
+grow_horizontal = 2
+theme = ExtResource("3_h7cv5")
+theme_override_font_sizes/font_size = 120
+text = "HISTORIA"
+horizontal_alignment = 1
+
+[node name="ButtonsContainer" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -211.0
+offset_top = 6.0
+offset_right = 211.0
+offset_bottom = 122.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="FirstContainer" type="VBoxContainer" parent="ButtonsContainer"]
+layout_mode = 2
+
+[node name="FishContainer" type="CenterContainer" parent="ButtonsContainer/FirstContainer"]
+layout_mode = 2
+
+[node name="BtnFish" type="TextureButton" parent="ButtonsContainer/FirstContainer/FishContainer"]
+layout_mode = 2
+texture_normal = ExtResource("2")
+texture_pressed = ExtResource("4")
+texture_hover = ExtResource("4")
+texture_disabled = ExtResource("4")
+
+[node name="LblFish" type="Label" parent="ButtonsContainer/FirstContainer/FishContainer"]
+layout_mode = 2
+theme = ExtResource("3_h7cv5")
+text = "NUEVA
+PARTIDA"
+
+[node name="SecondContainer" type="VBoxContainer" parent="ButtonsContainer"]
+layout_mode = 2
+
+[node name="CleanContainer" type="CenterContainer" parent="ButtonsContainer/SecondContainer"]
+layout_mode = 2
+
+[node name="BtnClean" type="TextureButton" parent="ButtonsContainer/SecondContainer/CleanContainer"]
+layout_mode = 2
+texture_normal = ExtResource("2")
+texture_pressed = ExtResource("4")
+texture_hover = ExtResource("4")
+texture_disabled = ExtResource("4")
+
+[node name="LblClean" type="Label" parent="ButtonsContainer/SecondContainer/CleanContainer"]
+layout_mode = 2
+theme = ExtResource("3_h7cv5")
+text = "CONTINUAR"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BtnBack" type="TextureButton" parent="."]
+layout_mode = 0
+texture_normal = ExtResource("6")
+
+[node name="Options" parent="." instance=ExtResource("8")]
+
+[node name="BGSong" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3")
+volume_db = -10.0
+autoplay = true
+
+[node name="SoundPress" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("10")
+
+[connection signal="pressed" from="ButtonsContainer/FirstContainer/FishContainer/BtnFish" to="." method="_on_BtnFish_pressed"]
+[connection signal="pressed" from="ButtonsContainer/SecondContainer/CleanContainer/BtnClean" to="." method="_on_BtnClean_pressed"]

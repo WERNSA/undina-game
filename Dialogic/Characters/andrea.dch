@@ -1,0 +1,47 @@
+{
+"@path": "res://addons/dialogic/Resources/character.gd",
+"@subpath": NodePath(""),
+&"_translation_id": "",
+&"color": Color(1, 1, 1, 1),
+&"custom_info": {
+"sound_mood_default": "",
+"sound_moods": {},
+"style": "Custom"
+},
+&"default_portrait": "Default",
+&"description": "Bibliotecaria",
+&"display_name": "Andrea",
+&"mirror": false,
+&"nicknames": [""],
+&"offset": Vector2(0, 0),
+&"portraits": {
+"AndreaSad": {
+"export_overrides": {
+"image": "\"res://Assets/Images/Story/Characters/Secondary/Andrea/AndreaSad.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 0.7,
+"scene": ""
+},
+"AndreaSpeak": {
+"export_overrides": {
+"image": "\"res://Assets/Images/Story/Characters/Secondary/Andrea/AndreaSpeak.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 0.7,
+"scene": ""
+},
+"Default": {
+"export_overrides": {
+"image": "\"res://Assets/Images/Story/Characters/Secondary/Andrea/Andrea.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 0.7,
+"scene": ""
+}
+},
+&"scale": 1.0
+}

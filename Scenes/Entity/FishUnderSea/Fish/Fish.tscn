@@ -1,0 +1,34 @@
+[gd_scene load_steps=9 format=3 uid="uid://cpin1y8v60vls"]
+
+[ext_resource type="Script" uid="uid://bwu2sd1rx4ej5" path="res://Scenes/Entity/FishUnderSea/Fish/Fish.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://ba3o4b7ou2omk" path="res://Assets/Images/PescaBajoAgua/Pez loro.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://t3xt5yijm3ow" path="res://Assets/Images/PescaBajoAgua/Pez ángel.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://doc63hfg38c8j" path="res://Assets/Images/PescaBajoAgua/Mantaraya.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://djf4vnlqitbs5" path="res://Assets/Images/PescaBajoAgua/Tiburón.png" id="5"]
+[ext_resource type="Shader" uid="uid://lxowyx3c70bc" path="res://Scenes/Utility/shader/UnderWater2D_obj.gdshader" id="6"]
+
+[sub_resource type="ShaderMaterial" id="2"]
+shader = ExtResource("6")
+shader_parameter/wave_speed = 2.0
+shader_parameter/wave_freq = 2.0
+shader_parameter/wave_width = 4.0
+shader_parameter/enable_scroll = false
+shader_parameter/scroll_direction = Vector2(1, 0)
+shader_parameter/scrolling_speed = 1.0
+
+[sub_resource type="CapsuleShape2D" id="1"]
+
+[node name="Fish" type="Area2D"]
+scale = Vector2(0.5, 0.5)
+script = ExtResource("1")
+Option1 = ExtResource("4")
+Option2 = ExtResource("2")
+Option3 = ExtResource("3")
+Option4 = ExtResource("5")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+material = SubResource("2")
+scale = Vector2(0.03, 0.03)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("1")
